@@ -1,0 +1,435 @@
+<template>
+  <main class="main-container">
+    <section class="banner-area">
+      <div class="banner-container">
+        <div class="banner-content">
+          <h1 class="website-title"><span>Best Personal</span> <span>Loan 2021</span></h1>
+          <p class="sub-title">Compare Top Personal Loan Rates</p>
+          <div class="content">
+            <p>Personal loans can be used for financing large purchases, home improvement projects, and more. We compared the Best Personal Loans for you, so you can choose the loan for your specific situation.</p>
+          </div>
+          <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
+          <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a>
+        </div>
+        <img src="@/assets/img/banner.png" alt="Toploansadviser" class="banner-img">
+
+      </div>
+    </section>
+    <div class="container">
+      <section class="product-area">
+        <div class="product-container">
+          <div class="product-container-top-box">
+            <div class="filter-box">
+              <span class="title">Filter By</span>
+              <div class="filter-list">
+
+                <div class="filter-item">
+                  <div class="title-box">Loan Amount</div>
+                  <div class="filter-name">
+                    <span class="name filter-amount-title">
+                      <span class="text">{{filter_amount_text}}</span>
+                      <span class="iconfont">&#xe601;</span>
+                    </span>
+                    <ul class="filter-list-box filter-amount-list">
+                      <li v-if="filter_amount_text != 'Show all'" @click="changeAmount({ min: 0, max: Infinity, text: 'Show all' })"><span>Show all</span></li>
+                      <li v-if="filter_amount_text != 'Less than $5000'" @click="changeAmount({ min: 0, max: 5000, text: '<$5000' })"><span><$5000</span></li>
+                      <li v-if="filter_amount_text != '$5000-$20000'" @click="changeAmount({ min: 5000, max: 20000, text: '$5000-$20000' })"><span>$5000-$20000</span></li>
+                      <li v-if="filter_amount_text != '$20000-$50000'" @click="changeAmount({ min: 20000, max: 50000, text: '$20000-$50000' })"><span>$20000-$50000</span></li>
+                      <li v-if="filter_amount_text != 'More than $50000'" @click="changeAmount({ min: 50000, max: Infinity, text: '>$50000' })"><span>>$50000</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-item">
+                  <div class="title-box">Credit Score</div>
+                  <div class="filter-name">
+                    <span class="name filter-credit-score-title">
+                      <span class="text">{{filter_credit_score_text}}</span>
+                      <span class="iconfont">&#xe601;</span>
+                    </span>
+                    <ul class="filter-list-box filter-credit-score-list">
+                      <li v-if="filter_credit_score_text != 'Show all'" @click="changeCreditScore({ min: 0, max: Infinity, text: 'Show all' })"><span>Show all</span></li>
+                      <li v-if="filter_credit_score_text != '<640'" @click="changeCreditScore({ min: 0, max: 640, text: '<640' })"><span>&lt;640</span></li>
+                      <li v-if="filter_credit_score_text != '640-690'" @click="changeCreditScore({ min: 640, max: 699, text: '640-690' })"><span>640-699</span></li>
+                      <li v-if="filter_credit_score_text != '700-749'" @click="changeCreditScore({ min: 700, max: 749, text: '700-749' })"><span>700-749</span></li>
+                      <li v-if="filter_credit_score_text != '>749'" @click="changeCreditScore({ min: 749, max: Infinity, text: '>749' })"><span>&gt;749</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="disclosure">
+              <nuxt-link to="/disclosure" class="title">Advertising Disclosure</nuxt-link>
+             
+              
+            </div>
+
+          </div>
+          <div class="product-list-box">
+            <div class="product-title-box">
+              <div class="title lenders"><span class="text">Lenders</span></div>
+              <div class="title score">
+                <span class="text">
+                  Score 
+                  <el-popover
+                    placement="bottom"
+                    width="320"
+                    trigger="hover"
+                    >
+                    <span class="iconfont" slot="reference">&#xe669;</span>
+                    <div class="content">
+                      <p>The ratings on our website are determined by our editorial team. The scoring formula for loan products takes into account more than 50 data points across multiple categories, including repayment options, customer service, lender transparency, loan eligibility and underwriting criteria.</p>
+                      
+                    </div>
+                  </el-popover>
+                </span>
+              </div>
+              <div class="title features"><span class="text">Loan Features</span></div>
+              <div class="title terms"><span class="text">Loan Amount</span></div>
+              
+            </div>
+            <div class="product-list" v-if="products.length != 0">
+              <div class="product-item" v-for="(item,index) in products" :key="index">
+                <div class="corner-box" v-if="index == 0">
+                  <span class="text">Best Choice</span>
+                </div>
+                <div class="visited-box" v-if="index == 0">
+                  <span class="iconfont"></span>
+                  <span class="text">503 users chose this site today</span>
+                </div>
+                <div class="product-item-container">
+                  <div class="img-score-box">
+                    <div class="img-box">
+                      <img v-lazy="item.logo" alt="">
+                    </div>
+                    <div class="rate-box">
+                      <div class="rate">
+                        <span class="score">{{item.rate.score}}</span>
+                        <div class="trustpilot-box" v-if="index == 0">
+                          <div class="text-box">
+                            <span class="iconfont">&#xe64c;</span>
+                            <span class="text">Trustpilot</span>
+                          </div>
+                          <ul class="star-list">
+                            <li>
+                              <span class="iconfont">&#xe64c;</span>
+                            </li>
+                            <li>
+                              <span class="iconfont">&#xe64c;</span>
+                            </li>
+                            <li>
+                              <span class="iconfont">&#xe64c;</span>
+                            </li>
+                            <li>
+                              <span class="iconfont">&#xe64c;</span>
+                            </li>
+                            <li>
+                              <span class="iconfont">&#xe64c;</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="star-box" v-else>
+                          <el-rate
+                          disabled
+                          :value="computeScore(item.rate.score)"
+                          :colors="['#29b674','#29b674','#29b674']"
+                          ></el-rate>
+                        </div>
+                        <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features-terms-box">
+                    <div class="list-box">
+                      <dl class="features-list">
+                        <dt>
+                          <span class="pc-text">{{item.introduce}}</span>
+                          <span class="phone-text">Loan Features</span>
+                        </dt>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}</p>
+                        </dd>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">APR：{{item.compare.apr.min}}% - {{item.compare.apr.max}}%</p>
+                        </dd>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">Term：{{item.compare.term}}</p>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="terms-box">
+                      <span v-if="item.amount.max !== 'Infinty'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
+                      <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
+                    </div>
+
+                  </div>
+                  <div class="btn-box">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                      <span class="text">Check My Rate</span>
+                      <span class="iconfont">&#xe63c;</span>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="no-results" v-else>
+              <span class="iconfont">&#xe60b;</span>
+            </div>
+            
+          </div>
+          <div class="more-box">
+            <button v-if="isNull && count > pageSize" class="btn" @click="loadMore">
+              <span class="text">SEE MORE</span>
+             <span class="iconfont">&#xe600;</span>
+            </button>
+            <button v-else-if="!isNull && count > pageSize" class="btn close" @click="closeMore">
+              <span class="text">COLLAPSE</span>
+             <span class="iconfont">&#xe600;</span>
+            </button>
+            
+          </div>
+        </div>
+      </section>
+      <section class="best-overall-area">
+        <div class="best-overall-title-box">
+          <h3 class="best-overall-title">Best Overall</h3>
+          
+        </div>
+        <div class="card-list">
+          <div class="product-item" v-for="(item,index) in overallData" :key="index">
+                <div class="corner-box" v-if="index == 0">
+                  <span class="text">Best Choice</span>
+                </div>
+                <div class="corner-box green" v-if="index == 1">
+                  <span class="text">Quick Funding</span>
+                </div>
+                <div class="product-item-container">
+                  <div class="img-score-box">
+                    <div class="img-box">
+                      <img v-lazy="item.logo" alt="">
+                    </div>
+                    <div class="rate-box">
+                      <div class="rate">
+                        <span class="score">{{item.rate.score}}</span>
+                        <div class="star-box">
+                          <el-rate
+                          disabled
+                          :value="computeScore(item.rate.score)"
+                          :colors="['#29b674','#29b674','#29b674']"
+                          ></el-rate>
+                        </div>
+                        <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="features-terms-box">
+                    <div class="list-box">
+                      <dl class="features-list">
+                        <dt>
+                          <span class="pc-text">{{item.introduce}}</span>
+                          <span class="phone-text">Loan Features</span>
+                        </dt>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}</p>
+                        </dd>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">APR：{{item.compare.apr.min}}% - {{item.compare.apr.max}}%</p>
+                        </dd>
+                        <dd>
+                          <span class="iconfont">&#xe65a;</span>
+                          <p class="text">Term：{{item.compare.term}}</p>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="terms-box">
+                      <span v-if="item.amount.max !== 'Infinty'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
+                      <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
+                    </div>
+
+                  </div>
+                  <div class="btn-box">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                      <span class="text">Check My Rate</span>
+                      <span class="iconfont">&#xe63c;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+      </section>
+      <section class="faq-area">
+        <div class="faq-area-title-box">
+          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <div class="faq-content">
+            <h3 class="faq-title">
+              <span>FAQ's</span>
+              <span>About Personal Loans</span>
+            </h3>
+            <div class="content">
+              <p>Before taking a personal loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about personal loans below.</p>
+            </div>
+          </div>
+        </div>
+        <fold-the-card :data="questionData"></fold-the-card>
+        <div class="footer-card-list">
+          <div class="footer-card-item">
+            <div class="footer-card-top-box" @click="handleOpen(0)">
+              <h6 class="title">Why you should trust us?</h6>
+              <span class="icon"></span>
+            </div>
+            <div class="footer-card-content">
+              <p>Finding the best products and services means setting a high standard. Our diverse team is serious about research. Once our editors select a topic, the team tests (if possible) and evaluates products and services related to those topics. While our comparison lists are the nucleus of toploansadviser.com, we also feature product reviews, feature comparisons, guides, articles, and tutorials. We also have a scoring system for products and services based on data compiled from various factors.</p>
+              <div class="img-box">
+                <img src="@/assets/img/q1.png" alt=""
+                ><img src="@/assets/img/q2.png" alt="">
+                <img src="@/assets/img/q3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    
+  </main>
+</template>
+
+<script>
+import { computeScore, formatNum } from '../utils/index'
+import { updateTime } from '../utils/date'
+export default {
+  async asyncData({ $axios, redirect }) {
+
+    try {
+      
+      let products_results = await $axios.$get('/data/person_loan_product.json');
+      let question_results = await $axios.$get('/data/person_loan_question.json');
+      return {
+        allProducts: products_results.data,
+        // count: products_results.data.length,
+        overallData: products_results.data.slice(0,2),
+        questionData: question_results.data
+      }
+    } catch (error) {
+      redirect('/error')
+    }
+  },
+  data() {
+    return {
+      isNull: true,
+      page: 1,
+      pageSize: 5,
+      count: 0,
+      products: [],
+      filterData: [],
+      filter_amount_text: 'Show all',
+      filter_credit_score_text: 'Show all',
+      loan_amount: {
+        min: 0,
+        max: Infinity
+      },
+      credit_score: {
+        min: 0,
+        max: Infinity
+      }
+    }
+  },
+  methods: {
+    computeScore,
+    formatNum,
+    updateTime,
+    loadMore() {
+      let data = this.filterData.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+      this.products = this.products.concat(data)
+      this.page++;
+      if (this.products.length == this.count) {
+        this.isNull = false
+      }
+    },
+    closeMore() {
+      this.isNull = true;
+      this.page = 1;
+      this.products = [];
+      this.loadMore();
+    },
+    changeAmount(params) {
+      this.loan_amount = {
+        min: params.min,
+        max: params.max
+      };
+      this.filter_amount_text = params.text;
+      this.handleFilter();
+
+      $('.product-container .filter-box .filter-list .filter-name .filter-amount-list').slideUp('fast');
+       $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title .iconfont').removeClass('rotate')
+    },
+    changeCreditScore(params) {
+      this.credit_score = {
+        min: params.min,
+        max: params.max
+      };
+      this.filter_credit_score_text = params.text
+      this.handleFilter();
+      $('.product-container .filter-box .filter-list .filter-name .filter-credit-score-list').slideUp('fast');
+      $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title .iconfont').removeClass('rotate')
+    },
+    // 点击展开问题 or 关闭问题
+    handleOpen(index) {
+        $('.faq-area .footer-card-list .footer-card-item .footer-card-top-box .icon').eq(index).toggleClass('current');
+        $('.faq-area .footer-card-list .footer-card-item .footer-card-content').eq(index).slideToggle('fast');
+    },
+    filterByAmount(options) {
+      // 如果当前的最小值，大于要比较的值的最大值，或者当前的最大值小于要比较的最小值
+      if ( options.min > this.loan_amount.max || options.max < this.loan_amount.min ) {
+        return false;
+      }
+
+      return true;
+    },
+    filterByCreditScore(score) {
+
+      return score >= this.credit_score.min && score <= this.credit_score.max;
+    },
+
+    
+    // 筛选数据
+    handleFilter() {
+
+      let data = this.allProducts.filter(ele => {
+        return this.filterByAmount(ele.amount) && this.filterByCreditScore(ele.compare.credit_score);
+      })
+      this.count = data.length;
+      this.filterData = data;
+      this.closeMore();
+
+    }
+  },
+  created() {
+    this.handleFilter();
+    // this.loadMore();
+  },
+  mounted() {
+    this.$nextTick(() => {
+      $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title').on('click',() => {
+        $('.product-container .filter-box .filter-list .filter-name .filter-amount-list').slideToggle('fast');
+        $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title .iconfont').toggleClass('rotate')
+      })
+      $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title').on('click',() => {
+        $('.product-container .filter-box .filter-list .filter-name .filter-credit-score-list').slideToggle('fast');
+        $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title .iconfont').toggleClass('rotate')
+      })
+    })
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+@import '~assets/scss/index.scss'
+</style>

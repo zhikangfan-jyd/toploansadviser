@@ -1,0 +1,23 @@
+$rootWidth: 1088px;
+
+$theme-color: #29b674;
+$theme-font-color: #787e8b;
+$theme-change-color: #1f9a61;
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@mixin ellipsis($line) {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: $line;
+}

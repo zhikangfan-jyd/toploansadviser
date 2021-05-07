@@ -1,0 +1,84 @@
+.main-container {
+    padding-top: 80px;
+    .banner-area {
+        position: relative;
+        width: 100%;
+        background-color: #f5faf6;
+        .banner-container {
+            
+            display: flex;
+            align-items: center;
+            width: $rootWidth;
+            height: 360px;
+            margin: 0 auto;
+            .banner-content {
+                max-width: 730px;
+                .website-title {
+                    font-size: 42px;
+                    font-weight: normal;
+                    font-family: 'Poppins-Bold';
+                    line-height: 56px;
+                    color: #001139;
+                    span {
+                        display: block;
+                    }
+                }
+                .update {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    color: $theme-color;
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        .banner-img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 230px;
+        }
+    }
+
+    .disclosure-container {
+        width: $rootWidth;
+        margin: 0 auto;
+        padding: 80px 0;
+        font-size: 16px;
+    }
+}
+
+.main-container {
+    
+    @media screen and (max-width: 750px) {
+        padding-top: 70px;
+        .banner-area {
+            .banner-container {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 140px 20px;
+
+                .banner-content {
+                    .website-title {
+                        font-size: 28px;
+                        line-height: 45px;
+                    }
+                    .update {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .banner-img {
+                height: 130px;
+            }
+        }
+
+        .disclosure-container {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 50px 20px;
+        }
+    }
+}

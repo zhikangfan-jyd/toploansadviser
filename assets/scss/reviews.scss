@@ -1,0 +1,487 @@
+.main-container {
+    padding-top: 80px;
+    .banner-area {
+
+        width: 100%;
+        height: 340px;
+        background-color: #f5faf6;
+
+        .banner-container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: space-between;
+            width: $rootWidth;
+            margin: 0 auto; 
+
+            .banner-content-box {
+                margin-top: 60px;
+                align-self: flex-start;
+                .text {
+                    font-size: 0;
+                    margin-top: 100px;
+                    a {
+                        font-size: 18px;
+                        color: #8f8f8f;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration-line: underline;
+                            text-decoration-color: $theme-color;
+                            color: $theme-color;
+                        }
+                    }
+                }
+                .title {
+                    margin: 15px 0;
+                    font-size: 48px;
+                    color: #001139;
+                }
+                .info {
+                    font-size: 18px;
+                    color: #00174b;
+                    .line {
+                        display: inline-block;
+                        margin: 0 15px;
+                    }
+                }
+            }
+
+            .rate-score-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 0;
+                .logo {
+                    height: 60px;
+                }
+                .score {
+                    display: inline-block;
+                    margin: 10px 0;
+                    font-size: 49px;
+                    color: #001139;
+                }
+            }
+        }
+    }
+
+    .reviews-container {
+        position: relative;
+        width: $rootWidth;
+        margin: 0 auto;
+        padding-top: 40px;
+
+        .reviews-container-left {
+            width: 750px;
+            .content-item {
+                margin-bottom: 50px;
+                .title-box {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 27px;
+                    .box {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                    }
+                    .title {
+                        margin-left: 22px;
+                        font-size: 34px;
+                        color: #001139;
+                    }
+                }
+                .content {
+                    font-size: 18px;
+                    color: #787e8b;
+                    line-height: 30px;
+                    p {
+                        margin: 20px 0;
+                    }
+                }
+            }
+            .table-list {
+                width: 100%;
+                border-radius: 18px;
+                background-color: #f5faf6;
+                margin-bottom: 60px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    height: 80px;
+                    padding: 0 45px;
+                    box-sizing: border-box;
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-align: center;
+                    border-bottom: 1px solid $theme-color;
+                    .key {
+                        flex: 1;
+                        flex-shrink: 0;
+                        
+                        color: #001139;
+                    }
+                     .value {
+                        flex: 1;
+                        color: $theme-color;
+                    }
+                    &:nth-last-of-type(1) {
+                        border: none;
+                    }
+                }
+            }
+            .pros-cons-box {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+                border-radius: 18px;
+                margin-top: 35px;
+                background-color: rgb(244,251,248);
+                overflow: hidden;
+                .pros,.cons {
+                    flex: 1;
+
+                    .title-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 60px;
+                        line-height: 60px;
+                        font-size: 18px;
+                        color: #fff;
+                        background-color: $theme-color;
+                        .iconfont {
+                            font-size: 22px;
+                            display: inline-block;
+                            margin-right: 5px;
+                        }
+                    }
+                    .list {
+                        list-style: disc;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        border-right: 1px solid rgba(0, 22, 75, 0.1);
+                        padding: 32px;
+                        box-sizing: border-box;
+                        li {
+                            font-size: 18px;
+                            color: #001139;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                .cons {
+                    .title-box {
+                        background-color: #ff8b8b;
+                    }
+                }
+            }
+
+            .btn-box {
+                text-align: center;
+                margin-top: 45px;
+                margin-bottom: 45px;
+                font-size: 0;
+                .btn {
+                    display: inline-block;
+                    width: 300px;
+                    height: 55px;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 55px;
+                    color: #fff;
+                    background-color: $theme-color;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    transition: all linear 0.1s;
+                    &:hover {
+                        background-color: $theme-change-color;
+
+                    }
+                }
+            }
+        }
+        .top-area {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 310px;
+            font-size: 0;
+            border: 1px solid #3ebd82;
+            box-sizing: border-box;
+            border-radius: 9px;
+            overflow: hidden;
+            .title {
+                display: inline-block;
+                height: 60px;
+                width: 100%;
+                line-height: 60px;
+                color: #fff;
+                font-size: 19px;
+                background-color: $theme-color;
+                text-align: center;
+            }
+            .top-list {
+                background-color: #fff;
+                .top-item {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0 18px;
+                    height: 70px;
+                    border-bottom: 1px solid rgba(0, 23, 75, .1);
+                    &:nth-last-of-type(1) {
+                        border: none;
+                    }
+
+                    .logo {
+                        height: 55px;
+                        min-width: 20px;
+                    }
+                    a {
+                        display: inline-block;
+                        width: 100px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        background-color: #f5f6f8;
+                        color: $theme-color;
+                        font-size: 16px;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        box-sizing: border-box;
+                        &:hover {
+                            border: 1px solid $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .reviews-bottom-area {
+        width: $rootWidth;
+        margin: 0 auto;
+        padding-bottom: 80px;
+        .author-info {
+            width: 100%;
+            display: flex;
+            border-radius: 18px;
+            box-sizing: border-box;
+            padding: 42px 34px;
+            margin: 65px 0;
+            background-color: rgb(244,251,248);
+            .pic {
+                flex-shrink: 0;
+                width: 107px;
+                height: 107px;
+                margin-right: 33px;
+                border-radius: 50%;
+            }
+            .info-box {
+                .name {
+                    font-size: 21px;
+                    color: #001139;
+                    font-family: 'Poppins-Bold';
+                }
+                .text {
+                    margin: 15px 0;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #787e8b;
+                }
+                a {
+                    color: $theme-color;
+                    font-size: 18px;
+                    text-decoration-line: underline;
+                    text-decoration-color: $theme-color;
+                }
+            }
+        }
+        
+        .also-like-box {
+            .title-box {
+                display: flex;
+                justify-content: space-between;
+                .title {
+                    font-size: 24px;
+                    color: #001139;
+                }
+                .share-box {
+                    display: flex;
+                    align-items: center;
+                    .text {
+                        font-size: 18px;
+                        color: #001139;
+                    }
+                    button {
+                        margin-left: 52px;
+                        font-size: 40px;
+                        color: $theme-color;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        
+                    }
+                }
+            }
+
+            .list-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 300px;
+                    height: 320px;
+                    border-radius: 16px;
+                    background-color: rgb(244,251,248);
+                    .logo {
+                        min-width: 50px;
+                        height: 100px;
+                    }
+                    .rate-box {
+                        margin-top: 5px;
+                        margin-bottom: 45px;
+                        font-size: 0;
+                    }
+                    .btn {
+                        display: inline-block;
+                        width: 210px;
+                        height: 52px;
+                        text-align: center;
+                        line-height: 52px;
+                        color: #fff;
+                        font-size: 16px;
+                        background-color: $theme-color;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        transition: all linear 0.1s;
+                        &:hover {
+                            background-color: $theme-change-color;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+.main-container {
+    @media screen and (max-width: 750px){
+        padding-top: 70px;
+        .banner-area {
+            height: 480px;
+            .banner-container {
+                width: 100%;
+                flex-direction: column;
+                justify-content: flex-start;
+                box-sizing: border-box;
+                padding: 50px 20px;
+
+                .banner-content-box {
+                    margin-top: 0;
+                    .text {
+                        margin-top: 20px;
+                        font-size: 16px;
+                    }
+                    .title {
+                        font-size: 32px;
+                    }
+                    .info {
+                        font-size: 14px;
+                    }
+                }
+
+                .rate-score-box {
+                    margin-top: 40px;
+                }
+            }
+        }
+    
+        .reviews-container {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            .top-area {
+                display: none;
+            }
+
+            .reviews-container-left {
+                width: 100%;
+
+                .pros-cons-box {
+                    flex-direction: column;
+                }
+                .content-item {
+                    .title-box {
+                        .box {
+                            width: 34px;
+                            height: 34px;
+                        }
+                        .title {
+                            font-size: 24px;
+                        }
+                    }
+                    .content {
+                        font-size: 14px;
+                    }
+                }
+            }
+        } 
+        .reviews-bottom-area {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            .author-info {
+                flex-direction: column;
+                align-items: center;
+                .pic {
+                    margin-right: 0;
+                    margin-bottom: 14px;
+                }
+                .info-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    
+
+                }
+            }
+            .also-like-box {
+                .title-box {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    .title {
+                        order: 2;
+                    }
+                    .share-box {
+                        order: 1;
+                        margin-bottom: 54px;
+                        button {
+                            margin-left: 22px;
+                        }
+                    }
+                }
+                .list-box {
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    .item {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }  
+    }
+}

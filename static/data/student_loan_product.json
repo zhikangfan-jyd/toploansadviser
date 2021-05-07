@@ -1,0 +1,231 @@
+{
+    "data": [
+        
+        {
+            "name": "credible",
+            "review_key": "credible",
+            "link": "/",
+            "logo": "/data/images/credible.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "14.50"
+                },
+                "variable_rate": {
+                    "min_rate": "1.21",
+                    "max_rate": "12.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "Monevo",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/monevo.png",
+            "rate": {
+                "max": 10,
+                "score": "9.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.59",
+                    "max_rate": "12.39"
+                },
+                "variable_rate": {
+                    "min_rate": "1.25",
+                    "max_rate": "11.15"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "Lendkey",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/lendkey.png",
+            "rate": {
+                "max": 10,
+                "score": "9.2"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.25",
+                    "max_rate": "12.35"
+                },
+                "variable_rate": {
+                    "min_rate": "1.25",
+                    "max_rate": "11.10"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        
+        {
+            "name": "SoFi",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/sofi.png",
+            "rate": {
+                "max": 10,
+                "score": "8.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.13",
+                    "max_rate": "11.37"
+                },
+                "variable_rate": {
+                    "min_rate": "1.77",
+                    "max_rate": "11.89"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "Discover",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/discover.png",
+            "rate": {
+                "max": 10,
+                "score": "8.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.59",
+                    "max_rate": "12.39"
+                },
+                "variable_rate": {
+                    "min_rate": "1.47",
+                    "max_rate": "10.87"
+                }
+            },
+            "loan_term": {
+                "min_term": "10",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "Ascent",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/ascent.png",
+            "rate": {
+                "max": 10,
+                "score": "8.1"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.53",
+                    "max_rate": "14.50"
+                },
+                "variable_rate": {
+                    "min_rate": "2.69",
+                    "max_rate": "12.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "10",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "Salliemae",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/salliemae.png",
+            "rate": {
+                "max": 10,
+                "score": "7.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.25",
+                    "max_rate": "12.35"
+                },
+                "variable_rate": {
+                    "min_rate": "1.25",
+                    "max_rate": "11.15"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "College Ave",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/collegeave.png",
+            "rate": {
+                "max": 10,
+                "score": "7.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "12.99"
+                },
+                "variable_rate": {
+                    "min_rate": "1.24",
+                    "max_rate": "11.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "earnest",
+            "review_key": "",
+            "link": "/",
+            "logo": "/data/images/earnest.png",
+            "rate": {
+                "max": 10,
+                "score": "7.3"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "12.78"
+                },
+                "variable_rate": {
+                    "min_rate": "1.24",
+                    "max_rate": "11.44"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        }
+    ]
+}

@@ -1,0 +1,245 @@
+{
+    "data": [
+        {
+
+            "name": "credible",
+            "review_key": "credible",
+            "link": "https://hotsale.featuredproduct.news/75010aa3-ce40-4d0b-9615-94024e4b04da?msclkid={msclkid}&keyword={keyword}",
+            "logo": "/data/images/credible.png",
+            "upto": "100000",
+            "introduce": "Free to use, no hidden fees",
+            "amount": {
+                "min": 1000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.9"
+            },
+            "compare": {
+                "credit_score": "600",
+                "apr": {
+                    "min": "3.49",
+                    "max": "35.99"
+                },
+                "term": "24-84 months"
+            }
+        },
+        {
+            "name": "monevo",
+            "review_key": "monevo",
+            "link": "https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w",
+            "logo": "/data/images/monevo.png",
+            "upto": "1000000",
+            "introduce": "Receive money quickly & easily",
+            "amount": {
+                "min": 500,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.6"
+            },
+            "compare": {
+                "credit_score": "500",
+                "apr": {
+                    "min": "3.49",
+                    "max": "35.99"
+                },
+                "term": "3-144 months"
+            }
+        },
+        {
+            "name": "drcredit",
+            "review_key": "drcredit",
+            "link": "https://www.drcredit.com/591.html",
+            "logo": "/data/images/drcredit.png",
+            "upto": "1000000",
+            "introduce": "Quick approval process",
+            "amount": {
+                "min": 50000,
+                "max": "Infinity"
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.3"
+            },
+            "compare": {
+                "credit_score": "480",
+                "apr": {
+                    "min": "7.99",
+                    "max": "35.99"
+                },
+                "term": "3-84 months"
+            }
+        },
+        {
+            "name": "upstart",
+            "review_key": "upstart",
+            "link": "https://upstart.9c65.net/Gv3Y9",
+            "logo": "/data/images/upstart.png",
+            "upto": "1000000",
+            "introduce": "Check your rate in 5 minutes",
+            "amount": {
+                "min": 1000,
+                "max": 50000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.0"
+            },
+            "compare": {
+                "credit_score": "620",
+                "apr": {
+                    "min": "7.99",
+                    "max": "35.99"
+                },
+                "term": "36-60 months"
+            }
+        },
+        {
+            "name": "personalLoan",
+            "review_key": "",
+            "link": "https://www.dpbolvw.net/click-100176895-13991650",
+            "logo": "/data/images/personal.png",
+            "upto": "1000000",
+            "introduce": "Excellent customer service",
+            "amount": {
+                "min": 1000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.8"
+            },
+            "compare": {
+                "credit_score": "500",
+                "apr": {
+                    "min": "5.99",
+                    "max": "35.99"
+                },
+                "term": "3-72 months"
+            }
+        },
+        {
+            "name": "lightstream",
+            "review_key": "lightstream",
+            "link": "https://www.lightstream.com/",
+            "logo": "/data/images/lightstream.png",
+            "upto": "1000000",
+            "introduce": "Low fixed rates ",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.5"
+            },
+            "compare": {
+                "credit_score": "660",
+                "apr": {
+                    "min": "3.49",
+                    "max": "19.99"
+                },
+                "term": "24-84 months"
+            }
+        },
+        {
+            "name": "avant",
+            "review_key": "avant",
+            "link": "https://www.avant.com/",
+            "logo": "/data/images/avant.png",
+            "upto": "1000000",
+            "introduce": "Clear and transparent process",
+            "amount": {
+                "min": 2000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.3"
+            },
+            "compare": {
+                "credit_score": "580",
+                "apr": {
+                    "min": "9.95",
+                    "max": "35.99"
+                },
+                "term": "24-60 months"
+            }
+        },
+        {
+            "name": "lendingclub",
+            "review_key": "",
+            "link": "https://www.lendingclub.com/",
+            "logo": "/data/images/lendingclub.png",
+            "upto": "1000000",
+            "introduce": "Simple APP, quick funding",
+            "amount": {
+                "min": 1000,
+                "max": 40000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.0"
+            },
+            "compare": {
+                "credit_score": "640",
+                "apr": {
+                    "min": "6.95",
+                    "max": "35.89"
+                },
+                "term": "36-60 months"
+            }
+        },
+        {
+            "name": "sofi",
+            "review_key": "sofi",
+            "link": "https://www.sofi.com/",
+            "logo": "/data/images/sofi.png",
+            "upto": "1000000",
+            "introduce": "",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "7.8"
+            },
+            "compare": {
+                "credit_score": "680",
+                "apr": {
+                    "min": "5.99",
+                    "max": "19.96"
+                },
+                "term": "24-84 months"
+            }
+        },
+        {
+            "name": "upgrade",
+            "review_key": "",
+            "link": "https://www.upgrade.com/",
+            "logo": "/data/images/upgrade.png",
+            "upto": "1000000",
+            "introduce": "",
+            "amount": {
+                "min": 1000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "7.5"
+            },
+            "compare": {
+                "credit_score": "670",
+                "apr": {
+                    "min": "7.99",
+                    "max": "35.97"
+                },
+                "term": "12-84 months"
+            }
+        }
+    ]
+}
