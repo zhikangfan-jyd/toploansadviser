@@ -39,7 +39,7 @@
                     >
                     <span class="iconfont" slot="reference">&#xe669;</span>
                     <div class="content">
-                      <p>The ratings on our website are determined by our editorial team. The scoring formula for loan products takes into account more than 50 data points across multiple categories, including repayment options, customer service, lender transparency, loan eligibility and underwriting criteria.</p>
+                      <p>The ratings and ranking on our website are determined by our editorial team. The scoring mechanism for loan products takes into account more than 10 data points across multiple categories, such as APR, repayment options, customer service, lender transparency, loan eligibility and others.</p>
                       
                     </div>
                   </el-popover>

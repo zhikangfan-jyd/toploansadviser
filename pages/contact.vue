@@ -12,15 +12,6 @@
       
     </section> 
     <div class="contact-container">
-      <div class="content-container">
-        <h3 class="content-title">Why Work With Toploansadviser ?</h3>
-        <p>We Partner With The Best</p>
-        <p>We provide high value customer acquisition for top brands across dozens of different industries.</p>
-        <p>We Attract High-intent Users</p>
-        <p>As a top 50 Google advertiser, and a global leader in intent marketing, we dominate non-branded searches</p>
-        <p>We Deliver A Strong ROI</p>
-        <p>Our comparison websites give users confidence to navigate towards brands’ websites and make a purchase.</p>
-      </div>
       <div class="form-box">
         <h3 class="form-title">To be Toploansadviser partners, please fill the form</h3>
         <form @submit.prevent="submitForm" class="form">

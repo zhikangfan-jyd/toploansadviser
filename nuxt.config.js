@@ -105,10 +105,10 @@ export default {
     }
   },
   axios: {
-    baseURL: 'http://192.168.50.171:8090'
+    baseURL: 'http://127.0.0.1:8090'
   },
   server: {
     port: '8090',
-    host: '192.168.50.171'
+    host: '127.0.0.1'
   }
 }

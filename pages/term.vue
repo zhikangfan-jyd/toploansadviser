@@ -104,11 +104,11 @@ Toploansadviser doesn't guarantee any scholarships offered or promoted on its�
         <div class="content-item">
           <div class="content-title">10. INDEMNIFICATION</div>
           <div class="content">
-            <p>You comply with defend, indemnify and hold harmless Toploansadviser, its administrators, officers, staff and agents from and against any and every one claims, damages, losses, liabilities, prices or debt, and expenses (including cheap attorneys’ fees) that arise or result from (i) your violation of those Terms of Use, including, however not restricted to, any obligation, representation, or warrant created herein; (ii) your violation of any third party right, as well as while not limitation any holding right, ownership, or privacy right; and (iii) your negligence or breach of any agreement with users of the location. This defense and indemnification obligation can survive termination of those Terms of Use and your use of the location. </p>
+            <p>You comply with defend, indemnify and hold harmless Toploansadviser, its administrators, officers, staff and agents from and against any and every one claims, damages, losses, liabilities, prices or debt, and expenses (including cheap attorneys’ fees) that arise or result from (i) your violation of those Terms of Use, including, however not restricted to, any obligation, representation, or warrant created herein; (ii) your violation of any third party right, as well as while not limitation any holding right, ownership, or privacy right; and (iii) your negligence or breach of any agreement with users of the location. This defense and indemnification obligation can survive termination of those Terms of Use and your use of the location.</p>
           </div>
         </div>
         <div class="content-item">
-          <div class="content-title">11. NOTICE </div>
+          <div class="content-title">11. NOTICE</div>
           <div class="content">
             <p>Toploansadviser can offer you any necessary notices by posting them on the location. You authorize Toploansadviser to send notices via piece of email further if it decides, in its sole discretion, to do so. You comply with check the location for notices, which you may be thought of to possess received a notice once it's created on the market to you by posting on the location.</p>
           </div>

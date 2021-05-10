@@ -199,7 +199,7 @@
             "link": "https://www.sofi.com/",
             "logo": "/data/images/sofi.png",
             "upto": "1000000",
-            "introduce": "",
+            "introduce": "Prequalify for your rate in 3 minutes",
             "amount": {
                 "min": 5000,
                 "max": 100000
@@ -223,7 +223,7 @@
             "link": "https://www.upgrade.com/",
             "logo": "/data/images/upgrade.png",
             "upto": "1000000",
-            "introduce": "",
+            "introduce": "No fees",
             "amount": {
                 "min": 1000,
                 "max": 35000

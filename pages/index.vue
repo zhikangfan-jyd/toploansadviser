@@ -6,7 +6,7 @@
           <h1 class="website-title"><span>Best Personal</span> <span>Loan 2021</span></h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
-            <p>Personal loans can be used for financing large purchases, home improvement projects, and more. We compared the Best Personal Loans for you, so you can choose the loan for your specific situation.</p>
+            <p>To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
           </div>
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
           <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a>
@@ -77,7 +77,7 @@
                     >
                     <span class="iconfont" slot="reference">&#xe669;</span>
                     <div class="content">
-                      <p>The ratings on our website are determined by our editorial team. The scoring formula for loan products takes into account more than 50 data points across multiple categories, including repayment options, customer service, lender transparency, loan eligibility and underwriting criteria.</p>
+                      <p>The ratings and ranking on our website are determined by our editorial team. The scoring mechanism for loan products takes into account more than 10 data points across multiple categories, such as APR, repayment options, customer service, lender transparency, loan eligibility and others.</p>
                       
                     </div>
                   </el-popover>
@@ -160,7 +160,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <span v-if="item.amount.max !== 'Infinty'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
+                      <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
 
@@ -248,7 +248,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <span v-if="item.amount.max !== 'Infinty'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
+                      <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
 
@@ -273,7 +273,7 @@
               <span>About Personal Loans</span>
             </h3>
             <div class="content">
-              <p>Before taking a personal loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about personal loans below.</p>
+              <p>It's essential for you to comprehend all associated terms and conditions before taking a personal loan. The following frequently asked questions regarding personal loans have been outlined for your convenience below.</p>
             </div>
           </div>
         </div>

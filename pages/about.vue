@@ -15,9 +15,6 @@
       
     </section>
     <div class="desc-area">
-      <div class="content">
-        <p>Toploansadviser was founded to help consumers make educated financial decisions while learning more about various financial products. We offer in-depth reviews and comparison tables where interested users can compare features such as loan terms, eligibility and more. Instead of scrolling through countless search results and sifting through endless content, Toploansadviser  makes it easy to discover and compare financial products. With our advanced ranking system and expert reviews, you will be able to compare services and make a decision in minutes.</p>
-      </div>
       <div class="content-item first">
         <div class="pic-box">
         <img src="@/assets/img/about-pic-1.png" alt="Toploansadviser" class="pic">
@@ -25,13 +22,13 @@
         </div>
         <div class="text-box">
           <span class="title">Overview</span>
-          <p class="text">We offer in-depth reviews and comparison tables where interested users can compare features such as loan terms, eligibility and more. Instead of scrolling through countless search results and sifting through endless content, Toploansadviser makes it easy to discover and compare financial products. With our advanced ranking system and expert reviews, you will be able to compare services and make a decision in minutes.</p>
+          <p class="text">Through countless search results and sifting through unbounded content, Toploansadviser makes it easy to discover and compare financial products. With our ranking system and expert reviews, you will be able to compare lenders and make a choice in minutes.</p>
         </div>
       </div>
       <div class="content-item second">
         <div class="text-box">
           <span class="title">Our Mission</span>
-          <p class="text">Consumers make poor decisions when ill-informed. Our mission is to match consumers to their perfect bank. Using a combination of technology and money management expertise, we provide personal finance comparison tools and educational experiences that optimize your relationships with banks and lenders.</p>
+          <p class="text">Consumers make poor selections when ill-informed. Our mission is to match consumers to their perfect bank. Using a combination of technology and money management expertise, we provide personal finance comparison tables and educational experiences that make your relationships with banks and lenders better.</p>
         </div>
         <div class="pic-box">
                   <img src="@/assets/img/about-pic-2.png" alt="Toploansadviser" class="pic">
@@ -45,7 +42,7 @@
         </div>
         <div class="text-box">
           <span class="title">Our Value</span>
-          <p class="text">We believe that people aren't well enough equipped with the knowledge and tools to handle their everyday finances. Every day people trade their time for money and their money for “stuff”. We believe by providing tools and education we can help people optimize their finances to regain control of their future.</p>
+          <p class="text">We believe that people aren't well enough equipped with the knowledge and tools to handle their everyday finances. Every day people commerce their time for money and their money for “thing”. We believe by providing access and education we can help people optimize their finances to regain control of their future.</p>
         </div>
       </div>
     </div>
