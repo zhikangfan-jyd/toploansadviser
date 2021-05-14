@@ -67,11 +67,15 @@
                     color: #575454;
                     line-height: 26px;
                 }
-                p {
+                ul {
+                    list-style-type: disc;
+                }
+                p,li {
                     margin: 20px 0;
                     line-height: 35px;
                     font-size: 18px;
                     color: #575454;
+                    word-break: break-all;
                 }
                 dl {
                     font-size: 18px;

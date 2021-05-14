@@ -9,7 +9,7 @@
             <p>To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
           </div>
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
-          <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a>
+          <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
         </div>
         <img src="@/assets/img/banner.png" alt="Toploansadviser" class="banner-img">
 
@@ -26,7 +26,7 @@
                 <div class="filter-item">
                   <div class="title-box">Loan Amount</div>
                   <div class="filter-name">
-                    <span class="name filter-amount-title">
+                    <span class="name filter-amount-title" @click="handleSlideAmount">
                       <span class="text">{{filter_amount_text}}</span>
                       <span class="iconfont">&#xe601;</span>
                     </span>
@@ -42,7 +42,7 @@
                 <div class="filter-item">
                   <div class="title-box">Credit Score</div>
                   <div class="filter-name">
-                    <span class="name filter-credit-score-title">
+                    <span class="name filter-credit-score-title" @click="handleSlideCreditScore">
                       <span class="text">{{filter_credit_score_text}}</span>
                       <span class="iconfont">&#xe601;</span>
                     </span>
@@ -100,7 +100,22 @@
                   <div class="img-score-box">
                     <div class="img-box">
                       <img v-lazy="item.logo" alt="">
+                      <div class="disclaimer" v-if="item.disclaimer != ''">
+                      Disclaimer 
+                      <el-popover
+                        placement="bottom"
+                        width="320"
+                        trigger="hover"
+                        >
+                        <span class="iconfont" slot="reference">&#xe669;</span>
+                        <div class="content">
+                          <p>{{item.disclaimer}}</p>
+                          
+                        </div>
+                      </el-popover>
                     </div>
+                    </div>
+                    
                     <div class="rate-box">
                       <div class="rate">
                         <span class="score">{{item.rate.score}}</span>
@@ -147,7 +162,20 @@
                         </dt>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}</p>
+                          <p class="text">Min. Credit Score: {{item.compare.credit_score}} 
+                            <el-popover
+                              placement="bottom"
+                              width="280"
+                              trigger="hover"
+                              v-if="item.compare.credit_text != ''"
+                              >
+                              <span class="iconfont" slot="reference">&#xe669;</span>
+                              <div class="content">
+                                <p>{{item.compare.credit_text}}</p>
+                                
+                              </div>
+                            </el-popover>
+                          </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
@@ -210,6 +238,20 @@
                   <div class="img-score-box">
                     <div class="img-box">
                       <img v-lazy="item.logo" alt="">
+                      <div class="disclaimer" v-if="item.disclaimer != ''">
+                      Disclaimer 
+                      <el-popover
+                        placement="bottom"
+                        width="320"
+                        trigger="hover"
+                        >
+                        <span class="iconfont" slot="reference">&#xe669;</span>
+                        <div class="content">
+                          <p>{{item.disclaimer}}</p>
+                          
+                        </div>
+                      </el-popover>
+                    </div>
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -235,7 +277,21 @@
                         </dt>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}</p>
+                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}
+
+                            <el-popover
+                              placement="bottom"
+                              width="280"
+                              trigger="hover"
+                              v-if="item.compare.credit_text != ''"
+                              >
+                              <span class="iconfont" slot="reference">&#xe669;</span>
+                              <div class="content">
+                                <p>{{item.compare.credit_text}}</p>
+                                
+                              </div>
+                            </el-popover>
+                          </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
@@ -398,6 +454,14 @@ export default {
       return score >= this.credit_score.min && score <= this.credit_score.max;
     },
 
+    handleSlideAmount() {
+      $('.product-container .filter-box .filter-list .filter-name .filter-amount-list').slideToggle('fast');
+      $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title .iconfont').toggleClass('rotate')
+    },
+    handleSlideCreditScore() {
+      $('.product-container .filter-box .filter-list .filter-name .filter-credit-score-list').slideToggle('fast');
+      $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title .iconfont').toggleClass('rotate')
+    },
     
     // 筛选数据
     handleFilter() {
@@ -413,20 +477,7 @@ export default {
   },
   created() {
     this.handleFilter();
-    // this.loadMore();
   },
-  mounted() {
-    this.$nextTick(() => {
-      $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title').on('click',() => {
-        $('.product-container .filter-box .filter-list .filter-name .filter-amount-list').slideToggle('fast');
-        $('.product-container .filter-box .filter-list .filter-name .name.filter-amount-title .iconfont').toggleClass('rotate')
-      })
-      $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title').on('click',() => {
-        $('.product-container .filter-box .filter-list .filter-name .filter-credit-score-list').slideToggle('fast');
-        $('.product-container .filter-box .filter-list .filter-name .name.filter-credit-score-title .iconfont').toggleClass('rotate')
-      })
-    })
-  }
 }
 </script>
 

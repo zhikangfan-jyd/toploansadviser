@@ -4,7 +4,7 @@
 
             "name": "credible",
             "review_key": "credible",
-            "link": "https://hotsale.featuredproduct.news/75010aa3-ce40-4d0b-9615-94024e4b04da?msclkid={msclkid}&keyword={keyword}",
+            "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
             "logo": "/data/images/credible.png",
             "upto": "100000",
             "introduce": "Free to use, no hidden fees",
@@ -18,12 +18,40 @@
             },
             "compare": {
                 "credit_score": "600",
+                "credit_text": "",
                 "apr": {
                     "min": "3.49",
                     "max": "35.99"
                 },
                 "term": "24-84 months"
-            }
+            },
+            "disclaimer": ""
+        },
+        {
+            "name": "Marcus",
+            "review_key": "marcus",
+            "link": "https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0",
+            "logo": "/data/images/marcus.png",
+            "upto": "1000000",
+            "introduce": "Low interest rate, easy to apply",
+            "amount": {
+                "min": 3500,
+                "max": 40000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "compare": {
+                "credit_score": "660",
+                "credit_text": "600 minimum VantageScore® 3.0 and 660 minimum FICO® 9.0.",
+                "apr": {
+                    "min": "6.99",
+                    "max": "19.99"
+                },
+                "term": "36-72 months"
+            },
+            "disclaimer": "Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans  Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions."
         },
         {
             "name": "monevo",
@@ -42,12 +70,14 @@
             },
             "compare": {
                 "credit_score": "500",
+                "credit_text": "",
                 "apr": {
                     "min": "3.49",
                     "max": "35.99"
                 },
                 "term": "3-144 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "drcredit",
@@ -66,12 +96,14 @@
             },
             "compare": {
                 "credit_score": "480",
+                "credit_text": "",
                 "apr": {
                     "min": "7.99",
                     "max": "35.99"
                 },
                 "term": "3-84 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "upstart",
@@ -90,16 +122,18 @@
             },
             "compare": {
                 "credit_score": "620",
+                "credit_text": "",
                 "apr": {
                     "min": "7.99",
                     "max": "35.99"
                 },
                 "term": "36-60 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
-            "name": "personalLoan",
-            "review_key": "",
+            "name": "personalLoans",
+            "review_key": "personalloans",
             "link": "https://www.dpbolvw.net/click-100176895-13991650",
             "logo": "/data/images/personal.png",
             "upto": "1000000",
@@ -114,12 +148,14 @@
             },
             "compare": {
                 "credit_score": "500",
+                "credit_text": "",
                 "apr": {
                     "min": "5.99",
                     "max": "35.99"
                 },
                 "term": "3-72 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "lightstream",
@@ -138,12 +174,14 @@
             },
             "compare": {
                 "credit_score": "660",
+                "credit_text": "",
                 "apr": {
                     "min": "3.49",
                     "max": "19.99"
                 },
                 "term": "24-84 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "avant",
@@ -162,12 +200,14 @@
             },
             "compare": {
                 "credit_score": "580",
+                "credit_text": "",
                 "apr": {
                     "min": "9.95",
                     "max": "35.99"
                 },
                 "term": "24-60 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "lendingclub",
@@ -186,12 +226,14 @@
             },
             "compare": {
                 "credit_score": "640",
+                "credit_text": "",
                 "apr": {
                     "min": "6.95",
                     "max": "35.89"
                 },
                 "term": "36-60 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "sofi",
@@ -210,12 +252,14 @@
             },
             "compare": {
                 "credit_score": "680",
+                "credit_text": "",
                 "apr": {
                     "min": "5.99",
                     "max": "19.96"
                 },
                 "term": "24-84 months"
-            }
+            },
+            "disclaimer": ""
         },
         {
             "name": "upgrade",
@@ -234,12 +278,14 @@
             },
             "compare": {
                 "credit_score": "670",
+                "credit_text": "",
                 "apr": {
                     "min": "7.99",
                     "max": "35.97"
                 },
                 "term": "12-84 months"
-            }
+            },
+            "disclaimer": ""
         }
     ]
 }

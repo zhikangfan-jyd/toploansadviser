@@ -9,7 +9,20 @@
             <span class="line">|</span>
             <span>{{review.date}}</span>
           </p>
-          <p class="text"><nuxt-link to="/disclosure">Advertising Disclosure</nuxt-link></p>
+          <p class="text"><nuxt-link to="/disclosure">Advertising Disclosure</nuxt-link>
+          <el-popover
+              placement="bottom"
+              width="280"
+              trigger="hover"
+              v-if="product.review_key == 'marcus'"
+              >
+              <span class="iconfont" style="font-size: 16px;" slot="reference">Editorial Disclosure</span>
+              <div class="content">
+                <p>All reviews are prepared by Toploansadviser staff. Reviews expressed therein are solely those of the reviewer and have not been reviewed or approved by any advertiser. The information, including rates and fees, appeared in the review is accurate as of the date of the review. Check the lender's website for the newest information.</p>
+                
+              </div>
+            </el-popover>
+          </p>
 
         </div>
         <div class="rate-score-box">
@@ -21,6 +34,21 @@
               :colors="['#fd9c28','#fd9c28','#fd9c28']"
               :value="computeScore(product.rate.score)"
               ></el-rate>
+          </div>
+          <div class="popover-box">
+
+            <el-popover
+              placement="bottom"
+              width="280"
+              trigger="hover"
+              
+              >
+              <span class="iconfont" slot="reference">How we rank?</span>
+              <div class="content">
+                <p>The ratings and ranking on our website are determined by our editorial team. The scoring mechanism for loan products takes into account more than 10 data points across multiple categories, such as APR, repayment options, customer service, lender transparency, loan eligibility and others.</p>
+                
+              </div>
+            </el-popover>
           </div>
         </div>
 
@@ -55,7 +83,21 @@
           </li>
           <li>
             <span class="key">Minimum credit score</span>
-            <span class="value">{{product.compare.credit_score}}</span>
+            <span class="value">{{product.compare.credit_score}} 
+
+              <el-popover
+                placement="bottom"
+                width="280"
+                trigger="hover"
+                v-if="product.compare.credit_text != ''"
+                >
+                <span class="iconfont" slot="reference">&#xe669;</span>
+                <div class="content">
+                  <p>{{product.compare.credit_text}}</p>
+                  
+                </div>
+              </el-popover>
+            </span>
           </li>
           <li>
             <span class="key">Loan term</span>
@@ -189,6 +231,16 @@
         <div class="btn-box">
           <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Check My Rate</a>
         </div>
+        <div class="content-item" v-if="product.review_key == 'marcus'">
+          <div class="title-box">
+            <!-- <img src="@/assets/img/r-14.svg" alt="" class="box"> -->
+            <h5 class="title" style="font-size: 20px;margin-left: 0;">Terms And Conditions</h5>
+          </div>
+          <div class="content" style="font-size: 16px; line-height: 25px;">
+            <p>Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans  Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions.</p>
+          </div>
+        </div>
+        
       </div>
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
@@ -264,7 +316,6 @@ export default {
       })
       let source = '/data/reviews/' + name + '.json';
       let results = await $axios.$get(source);
-      
       return {
         product: product,
         mainLink: mainLink,
@@ -277,7 +328,9 @@ export default {
     }
   },
   data() {
-    
+    return {
+      timer: null
+    }
   },
   methods: {
     computeScore,
@@ -287,6 +340,7 @@ export default {
     handleScroll() {
       let navHeight = $('.header-container').height();
       let right = $('.reviews-container').offset().left;
+      
       let top = $('.reviews-container .top-area').offset().top;
       let positionTop = $('.reviews-container .top-area').position().top
       let areaHeight = $('.reviews-container .top-area').height();
@@ -319,10 +373,18 @@ export default {
 
     }
   },
+  
   mounted() {
     this.$nextTick(() => {
-      this.handleScroll();
+      this.timer = setTimeout(() => {
+        this.handleScroll();
+        clearTimeout(this.timer);
+      },100)
+      
     })
+  },
+  destroyed() {
+    clearTimeout(this.timer);
   }
 }
 </script>

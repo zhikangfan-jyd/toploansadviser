@@ -22,13 +22,13 @@
         </div>
         <div class="text-box">
           <span class="title">Overview</span>
-          <p class="text">Through countless search results and sifting through unbounded content, Toploansadviser makes it easy to discover and compare financial products. With our ranking system and expert reviews, you will be able to compare lenders and make a choice in minutes.</p>
+          <p class="text">At Toploanadviser, we give our clients in-depth information about diverse financial products and the necessary information to succeed in a complicated financial world. By reviewing and comparing different products and services, we provide readers with a comprehensive look at the many options out there. That way, they can decide which ones are best suited to their individual needs. We condense the most reliable information in one place, using clear and straightforward language. Our experts make it easy to plan your financial future. </p>
         </div>
       </div>
       <div class="content-item second">
         <div class="text-box">
           <span class="title">Our Mission</span>
-          <p class="text">Consumers make poor selections when ill-informed. Our mission is to match consumers to their perfect bank. Using a combination of technology and money management expertise, we provide personal finance comparison tables and educational experiences that make your relationships with banks and lenders better.</p>
+          <p class="text">Most of us are unfortunately lacking in financial literacy. That’s where we come in. Our goal is to provide our clients with all the essential information to choose the bank best fitting their financial needs. To accomplish this goal, we leverage our financial knowledge with the latest technology, giving you all the tools to succeed in your commercial relationships. </p>
         </div>
         <div class="pic-box">
                   <img src="@/assets/img/about-pic-2.png" alt="Toploansadviser" class="pic">
@@ -42,7 +42,7 @@
         </div>
         <div class="text-box">
           <span class="title">Our Value</span>
-          <p class="text">We believe that people aren't well enough equipped with the knowledge and tools to handle their everyday finances. Every day people commerce their time for money and their money for “thing”. We believe by providing access and education we can help people optimize their finances to regain control of their future.</p>
+          <p class="text">As members of a consumer’s society, it’s easy to get trapped in the spending hamster wheel: earn money, spend money, repeat. It’s our firm belief that people should have the tools to step off the wheel and achieve financial security. By sharing our expertise, we will help you become the master of your money so you can stop stressing and start living. </p>
         </div>
       </div>
     </div>

@@ -316,6 +316,7 @@
                                     align-items: center;
                                     .img-box {
                                         display: flex;
+                                        flex-direction: column;
                                         align-items: center;
                                         justify-content: center;
                                         flex: 1;
@@ -323,7 +324,24 @@
                                         img {
                                             height: 80px;
                                         }
+
+                                        .disclaimer {
+                                            font-size: 14px;
+                                            color: #484644;
+                                            .iconfont {
+                                                display: inline-block;
+                                                width: 19px;
+                                                height: 19px;
+                                                
+                                                border-radius: 50%;
+                                                text-align: center;
+                                                line-height: 19px;
+                                                background-color: #00174b0d;
+                                                cursor: pointer;
+                                            }
+                                        }
                                     }
+                                    
                                     .rate-box {
                                         flex: 1;
                                         display: flex;
@@ -418,6 +436,17 @@
                                                 .text {
                                                     margin-left: 12px;
                                                     color: #484644;
+                                                    .iconfont {
+                                                        display: inline-block;
+                                                        width: 19px;
+                                                        height: 19px;
+                                                        color: #484644;
+                                                        border-radius: 50%;
+                                                        text-align: center;
+                                                        line-height: 19px;
+                                                        background-color: #00174b0d;
+                                                        cursor: pointer;
+                                                    }
                                                 }
                                             }
                                         }
@@ -590,12 +619,28 @@
                             align-items: center;
                             .img-box {
                                 display: flex;
+                                flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
                                 flex: 1;
                                 margin-right: 7px;
                                 img {
                                     height: 80px;
+                                }
+                                .disclaimer {
+                                    font-size: 14px;
+                                    color: #484644;
+                                    .iconfont {
+                                        display: inline-block;
+                                        width: 19px;
+                                        height: 19px;
+                                        
+                                        border-radius: 50%;
+                                        text-align: center;
+                                        line-height: 19px;
+                                        background-color: #00174b0d;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
                             .rate-box {
@@ -662,6 +707,18 @@
                                             margin-left: 12px;
                                             // color: #787E8B;
                                             color: #484644;
+
+                                            .iconfont {
+                                                display: inline-block;
+                                                width: 19px;
+                                                height: 19px;
+                                                color: #484644;
+                                                border-radius: 50%;
+                                                text-align: center;
+                                                line-height: 19px;
+                                                background-color: #00174b0d;
+                                                cursor: pointer;
+                                            }
                                         }
                                     }
                                 }

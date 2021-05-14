@@ -5,6 +5,10 @@
             "name": "Credible"
         },
         {
+            "key": "marcus",
+            "name": "marcus"
+        },
+        {
             "key": "sofi",
             "name": "SoFi"
         },
@@ -27,6 +31,10 @@
         {
             "key": "upstart",
             "name": "UPSTART"
+        },
+        {
+            "key": "personalloans",
+            "name": "PersonalLoans"
         }
     ]
 }

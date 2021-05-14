@@ -4,7 +4,7 @@
         {
             "name": "credible",
             "review_key": "credible",
-            "link": "/",
+            "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
             "logo": "/data/images/credible.png",
             "rate": {
                 "max": 10,
@@ -29,7 +29,7 @@
         {
             "name": "Monevo",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.monevo.com",
             "logo": "/data/images/monevo.png",
             "rate": {
                 "max": 10,
@@ -54,7 +54,7 @@
         {
             "name": "Lendkey",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.lendkey.com",
             "logo": "/data/images/lendkey.png",
             "rate": {
                 "max": 10,
@@ -80,7 +80,7 @@
         {
             "name": "SoFi",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.sofi.com",
             "logo": "/data/images/sofi.png",
             "rate": {
                 "max": 10,
@@ -105,7 +105,7 @@
         {
             "name": "Discover",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.discover.com",
             "logo": "/data/images/discover.png",
             "rate": {
                 "max": 10,
@@ -130,7 +130,7 @@
         {
             "name": "Ascent",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.ascentfunding.com/",
             "logo": "/data/images/ascent.png",
             "rate": {
                 "max": 10,
@@ -155,7 +155,7 @@
         {
             "name": "Salliemae",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.salliemae.com",
             "logo": "/data/images/salliemae.png",
             "rate": {
                 "max": 10,
@@ -180,7 +180,7 @@
         {
             "name": "College Ave",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.collegeave.com",
             "logo": "/data/images/collegeave.png",
             "rate": {
                 "max": 10,
@@ -205,7 +205,7 @@
         {
             "name": "earnest",
             "review_key": "",
-            "link": "/",
+            "link": "https://www.earnest.com",
             "logo": "/data/images/earnest.png",
             "rate": {
                 "max": 10,

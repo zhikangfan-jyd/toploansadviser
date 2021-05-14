@@ -17,6 +17,9 @@
                 <nuxt-link to="/reviews/credible" class="link">Credible</nuxt-link>
               </li>
               <li>
+                <nuxt-link to="/reviews/marcus" class="link">Marcus</nuxt-link>
+              </li>
+              <li>
                 <nuxt-link to="/reviews/monevo" class="link">Monevo</nuxt-link>
               </li>
               <li>
@@ -34,6 +37,9 @@
               <li>
                 <nuxt-link to="/reviews/upstart" class="link">Upstart</nuxt-link>
               </li>
+              <li>
+                <nuxt-link to="/reviews/personalloans" class="link">PersonalLoans</nuxt-link>
+              </li>
             </ul>
           </li>
           <li>
@@ -44,6 +50,7 @@
       </div>
     </header>
     <Nuxt />
+    <!-- <Message /> -->
     <footer class="footer-container">
       <div class="footer-wrapper">
 
@@ -122,13 +129,18 @@
 </template>
 
 <script>
+import Message from '../components/Message'
 export default {
+  comments: {
+    Message
+  },
   data() {
     return {
       email: '',
       timer: null
     }
   },
+  
   methods: {
     sendMail() {
       const reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");

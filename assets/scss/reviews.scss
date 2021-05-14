@@ -8,7 +8,7 @@
 
         .banner-container {
             display: flex;
-            align-items: center;
+            // align-items: center;
             height: 100%;
             justify-content: space-between;
             width: $rootWidth;
@@ -21,15 +21,22 @@
                     font-size: 0;
                     margin-top: 100px;
                     a {
+                        margin-right: 40px
+                        
+                    }
+                    a,.iconfont {
                         font-size: 18px;
                         color: #8f8f8f;
                         text-decoration: none;
+                        font-family: 'Poppins-Regular';
                         &:hover {
                             text-decoration-line: underline;
                             text-decoration-color: $theme-color;
                             color: $theme-color;
                         }
                     }
+
+                    
                 }
                 .title {
                     margin: 15px 0;
@@ -51,6 +58,7 @@
                 flex-direction: column;
                 align-items: center;
                 font-size: 0;
+                margin-top: 74px;
                 .logo {
                     height: 60px;
                 }
@@ -59,6 +67,15 @@
                     margin: 10px 0;
                     font-size: 49px;
                     color: #001139;
+                }
+                .popover-box {
+                    margin-top: 47px;
+                    font-size: 14px;
+                    font-family: 'Poppins-Regular';
+
+                    .iconfont {
+                        color: #8f8f8f;
+                    }
                 }
             }
         }
@@ -122,6 +139,17 @@
                      .value {
                         flex: 1;
                         color: $theme-color;
+
+                        .iconfont {
+                            display: inline-block;
+                            width: 19px;
+                            height: 19px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 19px;
+                            background-color: #00174b0d;
+                            cursor: pointer;
+                        }
                     }
                     &:nth-last-of-type(1) {
                         border: none;
