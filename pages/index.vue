@@ -194,7 +194,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -310,7 +310,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -401,6 +401,9 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    handleTracking() {
+      window.tracking();
+    },
     loadMore() {
       let data = this.filterData.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
       this.products = this.products.concat(data)

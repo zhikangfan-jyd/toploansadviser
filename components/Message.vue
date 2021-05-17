@@ -142,20 +142,27 @@ export default {
     },
     mounted() {
         this.timer2 = setTimeout(() => {
-            $('body').on('mouseenter',() => {
-                $('body').one('mouseleave',() => {
-                    if (this.count == 0) {
-                        this.showAlert();
-                    }
-                    this.count ++;
+
+            this.showAlert();
+
+            this.timer3 = setTimeout(() => {
+                $('body').on('mouseenter',() => {
+                    $('body').one('mouseleave',() => {
+                        if (this.count == 0) {
+                            this.showAlert();
+                        }
+                        this.count ++;
+                    })
                 })
-            })
+            },10000)
+            
         },20000)
         
     },
     destroyed() {
         clearInterval(this.timer);
-        clearTimeout(this.timer2)
+        clearTimeout(this.timer2);
+        clearTimeout(this.timer3);
     }
 }
 </script>

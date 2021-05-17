@@ -130,7 +130,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
 
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
@@ -214,7 +214,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -250,7 +250,6 @@ import { updateTime } from '../utils/date'
 export default {
   async asyncData({ $axios, redirect }) {
     try {
-      
       // 获取所有产品
       let product_results = await $axios.$get('/data/student_loan_product.json');
       // 获取答疑问题的数据
@@ -259,7 +258,6 @@ export default {
       return {
         count: product_results.data.length,
         allProducts: product_results.data,
-        // products: product_results.data.slice(0,5),
         questionData: question_results.data,
         overallData: product_results.data.slice(0,2)
       }
@@ -278,6 +276,9 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    handleTracking() {
+      window.tracking();
+    },
     // 点击加载更多数据
     loadMore() {
       let data = this.allProducts.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);

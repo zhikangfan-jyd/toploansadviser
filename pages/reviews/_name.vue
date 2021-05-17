@@ -105,7 +105,7 @@
           </li>
         </ul>
         <div class="btn-box">
-          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Check My Rate</a>
+          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">Check My Rate</a>
         </div>
         <div class="content-item" v-if="review.loan_account != ''">
           <div class="title-box">
@@ -229,7 +229,7 @@
 
         </div>
         <div class="btn-box">
-          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Check My Rate</a>
+          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn" @click="handleTracking">Check My Rate</a>
         </div>
         <div class="content-item" v-if="product.review_key == 'marcus'">
           <div class="title-box">
@@ -247,7 +247,7 @@
         <ul class="top-list">
           <li class="top-item" v-for="(item,index) in topLoans">
             <img :src="item.logo" :alt="item.name" class="logo">
-            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow">Visit Site</a>
+            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking">Visit Site</a>
           </li>
         </ul>
       </div>
@@ -337,6 +337,9 @@ export default {
     shareToFB,
     shareToTwitter,
     formatNum,
+    handleTracking() {
+      window.tracking();
+    },
     handleScroll() {
       let navHeight = $('.header-container').height();
       let right = $('.reviews-container').offset().left;

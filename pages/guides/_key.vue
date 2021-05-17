@@ -48,7 +48,7 @@
         <ul class="top-list">
           <li class="top-item" v-for="(item,index) in toploans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo">
-            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow">Visit Site</a>
+            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking">Visit Site</a>
           </li>
         </ul>
       </div>
@@ -116,6 +116,9 @@ export default {
   methods: {
     shareToFB,
     shareToTwitter,
+    handleTracking() {
+      window.tracking();
+    },
     handleScroll() {
       const container = $('.guides-container');
       const fixedBox = $('.guides-container .top-area')
