@@ -50,7 +50,7 @@
       </div>
     </header>
     <Nuxt />
-    <!-- <Message /> -->
+    <Message />
     <footer class="footer-container">
       <div class="footer-wrapper">
 

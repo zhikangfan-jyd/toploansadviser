@@ -1,36 +1,76 @@
 <template>
   <div class="alert-wrapper">
       <div class="alert-content">
-          <div class="step-box-1">
-              <div class="step-box-left">
-                  <h3 class="title">Compare Personal Loan Rates From Top Lenders</h3>
-                <p class="desc">
-                    <span class="iconfont"></span>
-                    <span class="text">Estimate your credit score</span>
-                </p>
+          <div class="steps-box-1" v-if="!isHidden">
+              <h3 class="title">Compare Personal Loan Rates From Top Lenders</h3>
+              <div class="steps-content">
+                  <p class="desc">
+                      <span class="iconfont">&#xe65b;</span>
+                      <span class="text">What's your credit score?</span>
+                  </p>
+                  <div class="btn-box">
+                      <div class="box">
+
+                      
+                        <button class="btn" @click="nextStep">
+                            <span class="tag-name">Poor</span>
+                            <span class="tag-value">(350 - 640)</span>
+                        </button>
+                        <button class="btn" @click="nextStep">
+                            <span class="tag-name">Below</span>
+                            <span class="tag-value">(640 - 699)</span>
+                        </button>
+                      </div>
+                      <div class="box">
+
+                      
+                        <button class="btn" @click="nextStep">
+                            <span class="tag-name">Average</span>
+                            <span class="tag-value">(700 - 749)</span>
+                        </button>
+                        <button class="btn" @click="nextStep">
+                            <span class="tag-name">Good</span>
+                            <span class="tag-value">(749 - 850)</span>
+                        </button>
+                      </div>
+                  </div>
               </div>
-              <div class="step-box-right">
-                  <div class="box-1">
-                      <div class="credit-score-item">
-                            <button class="credit-score">&lt; 640</button>
-                            <span class="text">Poor</span>
-                        </div>
-                        <div class="credit-score-item">
-                            <button class="credit-score">640 - 699</button>
-                            <span class="text">Below</span>
-                        </div>
+          </div>
+          <div class="steps-box-2" v-else>
+              <div class="steps-content">
+                  <p class="desc">
+                      <span class="iconfont">&#xe610;</span>
+                      <span class="text">How much money would you 
+like to borrow?</span>
+                  </p>
+                  <div class="btn-box">
+                      <div class="box">
+                        <button :class="{ 'btn': true, 'current': btnIndex == 0 }" @click="nextSecondStep(0)">
+                            <span class="tag-value">Less than $5000</span>
+                        </button>
+                        <button :class="{ 'btn': true, 'current': btnIndex == 1 }" @click="nextSecondStep(1)">
+                            <span class="tag-value">$20000 - $50000</span>
+                        </button>
+                      </div>
+                      <div class="box">
+
+                      
+                        <button :class="{ 'btn': true, 'current': btnIndex == 2 }" @click="nextSecondStep(2)">
+                            <span class="tag-value">$5000 - $20000</span>
+                        </button>
+                        <button :class="{ 'btn': true, 'current': btnIndex == 3 }" @click="nextSecondStep(3)">
+                            <span class="tag-value">More than $50000</span>
+                        </button>
+                      </div>
+                      <div class="start-box">
+                          <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer nofollow" class="start-btn disabled" v-if="isDisabled">Get Started</a>
+                          <a href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=" target="_blank" rel="noopener noreferrer nofollow" class="start-btn" v-else>Get Started</a>
+                          <div class="power">
+                              <span class="text">Powered by</span>
+                              <img src="/data/images/credible.png" alt="" class="logo">
+                          </div>
+                      </div>
                   </div>
-                  <div class="box-1">
-                      <div class="credit-score-item">
-                        <button class="credit-score">700 - 749</button>
-                        <span class="text"></span>
-                    </div>
-                    <div class="credit-score-item">
-                        <button class="credit-score">&gt; 749</button>
-                        <span class="text">Good</span>
-                    </div>
-                  </div>
-                  
               </div>
           </div>
           <div class="steps-container">
@@ -38,7 +78,7 @@
                   <span class="steps-num">1</span>/2 steps
               </div>
               <div class="steps-box">
-                  <div class="bar"></div>
+                  <div :class="{ 'bar': true, 'full': isHidden }"></div>
               </div>
           </div>
           <span class="close icon" @click="closeAlert"></span>
@@ -54,7 +94,10 @@ export default {
         return {
             timer: null,
             timer2: null,
-            count: 0
+            count: 0,
+            isHidden: false,
+            isDisabled: true,
+            btnIndex: -1
         }
     },
     methods: {
@@ -88,6 +131,13 @@ export default {
                 
                 
             })
+        },
+        nextStep() {
+            this.isHidden = true;
+        },
+        nextSecondStep(index) {
+            this.isDisabled = false;
+            this.btnIndex = index;
         }
     },
     mounted() {
@@ -100,7 +150,7 @@ export default {
                     this.count ++;
                 })
             })
-        },1000)
+        },20000)
         
     },
     destroyed() {

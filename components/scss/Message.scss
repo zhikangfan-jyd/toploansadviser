@@ -50,59 +50,146 @@
                 transform: translate(-50%,-50%) rotateZ(-45deg);
             }
         }
-        .step-box-1 {
-            display: flex;
-            .step-box-left {
-                .title {
-                    font-family: 'Poppins-Bold';
-                    font-size: 22px;
-                    color: $theme-color;
+        .steps-box-1 {
+            margin-bottom: 30px;
+            .title {
+                font-family: 'Poppins-Bold';
+                font-size: 25px;
+                color: $theme-color;
+            }
+            .steps-content {
+                display: flex;
+                align-items: center;
+                margin-top: 36px;
+                .desc {
+                    font-size: 18px;
+
+                    .iconfont {
+                        font-size: 50px;
+                        color: $theme-color;
+                    }
+
+                }
+
+                .btn-box {
+                    margin-left: 38px;
+                    .btn {
+                        width: 170px;
+                        height: 40px;
+                        outline: none;
+                        margin: 10px 15px;
+                        border: 1px solid #398440;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        cursor: pointer;
+                        box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+                        transition: all linear 0.1s;
+                        &:hover {
+                            background-color: #C3DFC7;
+                        }
+                    }
                 }
             }
             
-            .step-box-right {
-                flex-shrink: 0;
-                padding: 15px 25px;
-                margin-left: 60px;
-                border-radius: 12px;
-                box-sizing: border-box;
-                border: 1px solid $theme-color;
-                .box-1 {
+            
+        }
+        .steps-box-2 {
+            margin-bottom: 20px;
+            .steps-content {
+                display: flex;
+                .desc {
                     display: flex;
-                    
 
-                    &:nth-of-type(1) {
-                        margin-bottom: 20px;
+                    font-size: 18px;
+                    margin-top: 20px;
+                    .text {
+                        display: inline-block;
+                        margin-top: 5px;
+                        line-height: 22px;
+
                     }
-                    .credit-score-item {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: 0px 11px;
-                        .credit-score {
-                            display: inline-block;
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 50%;
-                            line-height: 60px;
-                            text-align: center;
-                            font-size: 8px;
-                            background-color: pink;
-                            outline: none;
-                            border: none;
-                            cursor: pointer;
+                    .iconfont {
+                        flex-shrink: 0;
+                        display: inline-block;
+                        margin-right: 15px;
+                        font-size: 50px;
+                        color: $theme-color;
+                    }
+
+                }
+
+                .btn-box {
+                    flex-shrink: 0;
+                    margin-left: 38px;
+                    .btn {
+                        width: 170px;
+                        height: 40px;
+                        outline: none;
+                        margin: 10px 15px;
+                        border: 1px solid #398440;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        cursor: pointer;
+                        box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+                        transition: all linear 0.1s;
+                        &:hover {
+                            background-color: #C3DFC7;
                         }
+                        &.current {
+                            background-color: #C3DFC7; 
+                        }
+                    }
+
+
+                }
+
+                .start-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 20px;
+                    .start-btn {
+                        display: inline-block;
+                        width: 170px;
+                        height: 35px;
+                        border-radius: 3px;
+                        color: #fff;
+                        background-color: #398440;
+                        text-align: center;
+                        line-height: 35px;
+                        font-weight: 700;
+                        text-decoration: none;
+                        transition: all linear 0.1s;
+                        &.disabled {
+                            background-color: #9e9c9c;
+                            cursor: not-allowed;
+
+                            &:hover {
+                                background-color: #9e9c9c;
+                            }
+                        }
+                        &:hover {
+                            background-color: $theme-change-color;
+                        }
+                    }
+                    .power {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 5px;
                         .text {
-                            margin-top: 5px;
-                            font-size: 12px;
+                            font-size: 14px;
+                        }
+                        .logo {
+                            height: 30px;
                         }
                     }
                 }
-                
             }
+            
+            
         }
         .steps-container {
-            margin-top: 22px;
+            
             .steps-text-box {
                 font-size: 14px;
             }
@@ -114,6 +201,10 @@
                     width: 50%;
                     height: 100%;
                     background-color: $theme-color;
+                    transition: all linear 0.3s;
+                    &.full {
+                        width: 100%;
+                    }
                 }
             }
         }
