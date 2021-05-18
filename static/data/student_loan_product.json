@@ -4,7 +4,7 @@
         {
             "name": "credible",
             "review_key": "credible",
-            "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
+            "link": "https://www.credible.com/refinance-student-loans/?utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
             "logo": "/data/images/credible.png",
             "rate": {
                 "max": 10,
@@ -27,13 +27,38 @@
             }
         },
         {
+            "name": "SoFi",
+            "review_key": "",
+            "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
+            "logo": "/data/images/sofi.png",
+            "rate": {
+                "max": 10,
+                "score": "9.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.13",
+                    "max_rate": "11.37"
+                },
+                "variable_rate": {
+                    "min_rate": "1.77",
+                    "max_rate": "11.89"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        },
+        {
             "name": "Monevo",
             "review_key": "",
             "link": "https://www.monevo.com",
             "logo": "/data/images/monevo.png",
             "rate": {
                 "max": 10,
-                "score": "9.5"
+                "score": "9.2"
             },
             "compare": {
                 "credit_score": "600",
@@ -58,7 +83,7 @@
             "logo": "/data/images/lendkey.png",
             "rate": {
                 "max": 10,
-                "score": "9.2"
+                "score": "8.8"
             },
             "compare": {
                 "credit_score": "600",
@@ -77,31 +102,7 @@
             }
         },
         
-        {
-            "name": "SoFi",
-            "review_key": "",
-            "link": "https://www.sofi.com",
-            "logo": "/data/images/sofi.png",
-            "rate": {
-                "max": 10,
-                "score": "8.8"
-            },
-            "compare": {
-                "credit_score": "600",
-                "fixed_rate": {
-                    "min_rate": "4.13",
-                    "max_rate": "11.37"
-                },
-                "variable_rate": {
-                    "min_rate": "1.77",
-                    "max_rate": "11.89"
-                }
-            },
-            "loan_term": {
-                "min_term": "5",
-                "max_term": "20"
-            }
-        },
+        
         {
             "name": "Discover",
             "review_key": "",

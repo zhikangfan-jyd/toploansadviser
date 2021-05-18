@@ -10,27 +10,23 @@
                   </p>
                   <div class="btn-box">
                       <div class="box">
-
-                      
                         <button class="btn" @click="nextStep">
                             <span class="tag-name">Poor</span>
-                            <span class="tag-value">(350 - 640)</span>
+                            <span class="tag-value">(&lt;500)</span>
                         </button>
                         <button class="btn" @click="nextStep">
-                            <span class="tag-name">Below</span>
-                            <span class="tag-value">(640 - 699)</span>
+                            <span class="tag-name">Average</span>
+                            <span class="tag-value">(500 - 699)</span>
                         </button>
                       </div>
                       <div class="box">
-
-                      
                         <button class="btn" @click="nextStep">
-                            <span class="tag-name">Average</span>
+                            <span class="tag-name">Good</span>
                             <span class="tag-value">(700 - 749)</span>
                         </button>
                         <button class="btn" @click="nextStep">
-                            <span class="tag-name">Good</span>
-                            <span class="tag-value">(749 - 850)</span>
+                            <span class="tag-name">Excellent</span>
+                            <span class="tag-value">(&gt;749)</span>
                         </button>
                       </div>
                   </div>
@@ -40,8 +36,7 @@
               <div class="steps-content">
                   <p class="desc">
                       <span class="iconfont">&#xe610;</span>
-                      <span class="text">How much money would you 
-like to borrow?</span>
+                      <span class="text">How much money would you like to borrow?</span>
                   </p>
                   <div class="btn-box">
                       <div class="box">
@@ -75,7 +70,7 @@ like to borrow?</span>
           </div>
           <div class="steps-container">
               <div class="steps-text-box">
-                  <span class="steps-num">1</span>/2 steps
+                  <span class="steps-num">{{step}}</span>/2 steps
               </div>
               <div class="steps-box">
                   <div :class="{ 'bar': true, 'full': isHidden }"></div>
@@ -95,6 +90,7 @@ export default {
             timer: null,
             timer2: null,
             count: 0,
+            step: 1,
             isHidden: false,
             isDisabled: true,
             btnIndex: -1
@@ -102,6 +98,10 @@ export default {
     },
     methods: {
         showAlert() {
+                this.isHidden = false;
+                this.isDisabled = true;
+                this.btnIndex = -1;
+                this.step = 1;
                 $('.alert-wrapper').css({
                     display: 'block'
                     
@@ -134,6 +134,7 @@ export default {
         },
         nextStep() {
             this.isHidden = true;
+            this.step = 2;
         },
         nextSecondStep(index) {
             this.isDisabled = false;
