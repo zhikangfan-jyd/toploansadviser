@@ -122,7 +122,7 @@ export default {
     shareToFB,
     shareToTwitter,
     handleTracking(params) {
-      window.tracking();
+      // window.tracking();
       if (typeof window.uba != 'function') { return }
       window.uba(params);
     },

@@ -248,12 +248,26 @@
 import { computeScore } from '../utils/index'
 import { updateTime } from '../utils/date'
 export default {
-  async asyncData({ $axios, redirect }) {
+  async asyncData({ $axios, redirect, route }) {
+
+    // 拼接 msclkid 参数
+    const changeLink = (url) => {
+      let msclkid = route.query['msclkid'];
+      return `${url}&msclkid=${msclkid}`
+    }
+
     try {
       // 获取所有产品
       let product_results = await $axios.$get('/data/student_loan_product.json');
       // 获取答疑问题的数据
       let question_results = await $axios.$get('/data/student_loan_question.json');
+
+      // 给所有 是www.creditble.com 的链接后面都拼接 参数
+      product_results.data.forEach(ele => {
+        if (ele.link.indexOf('www.credible.com') != -1) {
+          ele.link = changeLink(ele.link);
+        }
+      })
 
       return {
         count: product_results.data.length,
@@ -277,7 +291,7 @@ export default {
     computeScore,
     updateTime,
     handleTracking(params) {
-      window.tracking();
+      // window.tracking();
       if (typeof window.uba != 'function') { return }
       window.uba(params);
     },

@@ -299,7 +299,14 @@
 import { computeScore, formatNum } from '../../utils/index'
 import { shareToFB, shareToTwitter } from '../../utils/share'
 export default {
-  async asyncData({ $axios, params, redirect }) {
+  async asyncData({ $axios, params, redirect, route }) {
+
+    // 拼接 msclkid 参数
+    const changeLink = (url) => {
+      let msclkid = route.query['msclkid'];
+      return `${url}&msclkid=${msclkid}`
+    }
+
     try {
       const name = params.name;
       let productsResults = await $axios.$get('/data/person_loan_product.json');
@@ -307,6 +314,11 @@ export default {
       let mainLink = '';
       let alsoLike = [];
       productsResults.data.forEach(ele => {
+
+        if (ele.link.indexOf('www.credible.com') != -1) {
+          ele.link = changeLink(ele.link);
+        }
+        
         if (ele.review_key == name) {
           product = ele;
           mainLink = ele.link;
@@ -338,7 +350,7 @@ export default {
     shareToTwitter,
     formatNum,
     handleTracking(params) {
-      window.tracking();
+      // window.tracking();
       if (typeof window.uba != 'function') { return }
       window.uba(params);
     },
