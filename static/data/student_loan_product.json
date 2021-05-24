@@ -2,7 +2,7 @@
     "data": [
         
         {
-            "name": "credible",
+            "name": "credible_stu",
             "review_key": "credible",
             "link": "https://www.credible.com/refinance-student-loans/?utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
             "logo": "/data/images/credible.png",
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name": "SoFi",
+            "name": "SoFi_stu",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
             "logo": "/data/images/sofi.png",
@@ -52,7 +52,7 @@
             }
         },
         {
-            "name": "Monevo",
+            "name": "Monevo_stu",
             "review_key": "",
             "link": "https://www.monevo.com",
             "logo": "/data/images/monevo.png",

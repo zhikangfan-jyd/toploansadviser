@@ -59,7 +59,7 @@
                       </div>
                       <div class="start-box">
                           <a href="javascript:void(0);" target="_blank" rel="noopener noreferrer nofollow" class="start-btn disabled" v-if="isDisabled">Get Started</a>
-                          <a href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=" target="_blank" rel="noopener noreferrer nofollow" class="start-btn" v-else>Get Started</a>
+                          <a href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=" target="_blank" rel="noopener noreferrer nofollow" class="start-btn" v-else @click="handleTracking({name: 'credible',click_time: new Date().getTime(),link: 'https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content='})">Get Started</a>
                           <div class="power">
                               <span class="text">Powered by</span>
                               <img src="/data/images/credible.png" alt="" class="logo">
@@ -97,6 +97,10 @@ export default {
         }
     },
     methods: {
+        handleTracking(params) {
+            if (typeof window.uba != 'function') { return }
+            window.uba(params);
+        },
         showAlert() {
                 this.isHidden = false;
                 this.isDisabled = true;
@@ -144,6 +148,9 @@ export default {
     mounted() {
         this.timer2 = setTimeout(() => {
 
+            if ($(window).width() < 750) {
+                return ;
+            }
             this.showAlert();
 
             this.timer3 = setTimeout(() => {

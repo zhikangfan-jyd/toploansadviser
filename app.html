@@ -14,6 +14,18 @@
 
   gtag('config', 'UA-158718871-1');
 </script>
+<script>
+  (function () {
+      var jq = document.createElement('script');
+      jq.src = 'https://cdn.bootcdn.net/ajax/libs/jquery/2.1.2/jquery.min.js'
+      var script = document.createElement('script');
+      script.src = 'https://collect.toploansadviser.com/js/collect.js';
+      // script.src = 'http://127.0.0.1:3020/js/collect.js';
+      document.head.appendChild(jq);
+      document.head.appendChild(script);
+  })()
+  
+</script>
 <!-- 追踪按钮点击 -->
 <script>
   (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"17559000"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");

@@ -130,7 +130,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})" class="btn">
 
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
@@ -214,7 +214,7 @@
 
                   </div>
                   <div class="btn-box">
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})" class="btn">
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -276,8 +276,10 @@ export default {
   methods: {
     computeScore,
     updateTime,
-    handleTracking() {
+    handleTracking(params) {
       window.tracking();
+      if (typeof window.uba != 'function') { return }
+      window.uba(params);
     },
     // 点击加载更多数据
     loadMore() {

@@ -105,7 +105,7 @@
           </li>
         </ul>
         <div class="btn-box">
-          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking" class="btn">Check My Rate</a>
+          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: product.name,click_time: new Date().getTime(),link: mainLink})" class="btn">Check My Rate</a>
         </div>
         <div class="content-item" v-if="review.loan_account != ''">
           <div class="title-box">
@@ -229,7 +229,7 @@
 
         </div>
         <div class="btn-box">
-          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn" @click="handleTracking">Check My Rate</a>
+          <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn" @click="handleTracking({name: product.name,click_time: new Date().getTime(),link: mainLink})">Check My Rate</a>
         </div>
         <div class="content-item" v-if="product.review_key == 'marcus'">
           <div class="title-box">
@@ -247,7 +247,7 @@
         <ul class="top-list">
           <li class="top-item" v-for="(item,index) in topLoans">
             <img :src="item.logo" :alt="item.name" class="logo">
-            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking">Visit Site</a>
+            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})">Visit Site</a>
           </li>
         </ul>
       </div>
@@ -337,8 +337,10 @@ export default {
     shareToFB,
     shareToTwitter,
     formatNum,
-    handleTracking() {
+    handleTracking(params) {
       window.tracking();
+      if (typeof window.uba != 'function') { return }
+      window.uba(params);
     },
     handleScroll() {
       let navHeight = $('.header-container').height();

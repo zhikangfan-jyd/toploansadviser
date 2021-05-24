@@ -48,7 +48,7 @@
         <ul class="top-list">
           <li class="top-item" v-for="(item,index) in toploans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo">
-            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking">Visit Site</a>
+            <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})">Visit Site</a>
           </li>
         </ul>
       </div>
@@ -113,11 +113,18 @@ export default {
       redirect('/error');
     }
   },
+  data() {
+    return {
+      timer: null
+    }
+  },
   methods: {
     shareToFB,
     shareToTwitter,
-    handleTracking() {
+    handleTracking(params) {
       window.tracking();
+      if (typeof window.uba != 'function') { return }
+      window.uba(params);
     },
     handleScroll() {
       const container = $('.guides-container');
@@ -158,8 +165,14 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      this.handleScroll();
+      this.timer = setTimeout(() => {
+        this.handleScroll();
+        clearTimeout(this.timer);
+      },100)
     })
+  },
+  destroyed() {
+    clearTimeout(this.timer);
   }
 }
 </script>
