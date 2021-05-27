@@ -5,5 +5,6 @@ Vue.use(VueLazyload, {
     preLoad: 1.3,
     error: '/data/images/img-loading.gif',
     loading: '/data/images/img-loading.gif',
-    attempt: 1
+    attempt: 1,
+    lazyComponent: true
 })

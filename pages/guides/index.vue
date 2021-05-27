@@ -26,6 +26,7 @@
         <ul class="blog-list">
           <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
             <div class="img-box">
+              
               <img v-lazy="item.picture" alt="">
             </div>
             <h6 class="blog-title">{{item.title}}</h6>
@@ -83,7 +84,7 @@ export default {
           endIndex = (this.personal_page - 1) * this.pageSize + this.pageSize;
       let data = this.personalAllData.slice(startIndex,endIndex);
       this.personal_blogs = this.personal_blogs.concat(data);
-
+      
       if (this.personal_blogs.length >= this.personalTotal) {
         this.personal_isNull = true;
       } else {

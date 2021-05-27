@@ -99,7 +99,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" alt="">
+                        <img v-lazy="item.logo" alt="">
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                       Disclaimer 
                       <el-popover
@@ -113,7 +113,7 @@
                           
                         </div>
                       </el-popover>
-                    </div>
+                      </div>
                     </div>
                     
                     <div class="rate-box">
@@ -153,6 +153,7 @@
                       </div>
                     </div>
                   </div>
+                  <p class="phone-slogan">{{item.introduce}}</p>
                   <div class="features-terms-box">
                     <div class="list-box">
                       <dl class="features-list">
@@ -223,7 +224,7 @@
       </section>
       <section class="best-overall-area">
         <div class="best-overall-title-box">
-          <h3 class="best-overall-title">Best Overall</h3>
+          <h3 class="best-overall-title">Best for debt consolidation</h3>
           
         </div>
         <div class="card-list">
@@ -268,6 +269,7 @@
                       </div>
                     </div>
                   </div>
+                  <p class="phone-slogan">{{item.introduce}}</p>
                   <div class="features-terms-box">
                     <div class="list-box">
                       <dl class="features-list">
@@ -383,7 +385,7 @@ export default {
       return {
         allProducts: products_results.data,
         // count: products_results.data.length,
-        overallData: products_results.data.slice(0,2),
+        overallData: [products_results.data[0],products_results.data[2]],
         questionData: question_results.data
       }
     } catch (error) {
@@ -421,6 +423,7 @@ export default {
     },
     loadMore() {
       let data = this.filterData.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+      
       this.products = this.products.concat(data)
       this.page++;
       if (this.products.length == this.count) {
@@ -489,6 +492,7 @@ export default {
       })
       this.count = data.length;
       this.filterData = data;
+      
       this.closeMore();
 
     }

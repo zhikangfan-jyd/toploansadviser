@@ -407,6 +407,12 @@
                                         }
                                     }
                                 }
+                                .phone-slogan {
+                                    display: none;
+                                    font-size: 16px;
+                                    margin: 15px 0;
+                                    color: #001139;
+                                }
                                 .features-terms-box {
                                     flex: 50;
                                     
@@ -676,6 +682,12 @@
                                     }
                                 }
                             }
+                        }
+                        .phone-slogan {
+                            display: none;
+                            font-size: 16px;
+                            margin: 15px 0;
+                            color: #001139;
                         }
                         .features-terms-box {
                             flex: 50;
@@ -1003,8 +1015,11 @@
                                         }
                                     }
 
+                                    .phone-slogan {
+                                        display: block;
+
+                                    }
                                     .features-terms-box {
-                                        margin-top: 22px;
                                         align-items: flex-start;
                                         
                                         .list-box {
@@ -1081,9 +1096,11 @@
                                     border: none;
                                 }
                             }
+                            .phone-slogan {
+                                display: block;
 
+                            }
                             .features-terms-box {
-                                margin-top: 22px;
                                 align-items: flex-start;
                                 
                                 .list-box {

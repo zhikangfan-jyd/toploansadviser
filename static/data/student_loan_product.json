@@ -52,10 +52,10 @@
             }
         },
         {
-            "name": "Monevo_stu",
+            "name": "Citizens_Bank",
             "review_key": "",
-            "link": "https://www.monevo.com",
-            "logo": "/data/images/monevo.png",
+            "link": "https://www.credible.com/a/dd-citizens/?utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
+            "logo": "/data/images/citizens_bank.png",
             "rate": {
                 "max": 10,
                 "score": "9.2"
@@ -77,10 +77,10 @@
             }
         },
         {
-            "name": "Lendkey",
+            "name": "MEFA",
             "review_key": "",
-            "link": "https://www.lendkey.com",
-            "logo": "/data/images/lendkey.png",
+            "link": "https://www.credible.com/a/fh-mefa/?utm_source=westwin&utm_medium=referral&utm_campaign=mefa_slr&utm_content=",
+            "logo": "/data/images/mefa.png",
             "rate": {
                 "max": 10,
                 "score": "8.8"
@@ -104,10 +104,10 @@
         
         
         {
-            "name": "Discover",
+            "name": "PenFed",
             "review_key": "",
-            "link": "https://www.discover.com",
-            "logo": "/data/images/discover.png",
+            "link": "https://www.credible.com/a/dd-penfed/?utm_source=westwin&utm_medium=referral&utm_campaign=penfed_slr&utm_content=",
+            "logo": "/data/images/penfed.png",
             "rate": {
                 "max": 10,
                 "score": "8.5"
@@ -129,10 +129,10 @@
             }
         },
         {
-            "name": "Ascent",
+            "name": "RISLA",
             "review_key": "",
-            "link": "https://www.ascentfunding.com/",
-            "logo": "/data/images/ascent.png",
+            "link": "https://www.credible.com/a/dd-risla-slr/?utm_source=westwin&utm_medium=referral&utm_campaign=risla_slr&utm_content=",
+            "logo": "/data/images/risla.png",
             "rate": {
                 "max": 10,
                 "score": "8.1"
