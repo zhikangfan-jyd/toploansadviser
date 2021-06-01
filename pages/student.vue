@@ -3,8 +3,8 @@
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content">
-          <h1 class="website-title"><span>Best Student</span> <span>Loan 2021</span></h1>
-          
+          <h1 class="website-title"><span>Best Student Loan</span> <span>Refinance Companies 2021</span></h1>
+          <p class="sub-title">Compare Top Student Refinance Rates</p>
           <div class="content">
             <p>Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for your specific situation.</p>
           </div>

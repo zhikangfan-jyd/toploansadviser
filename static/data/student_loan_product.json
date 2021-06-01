@@ -38,12 +38,12 @@
             "compare": {
                 "credit_score": "600",
                 "fixed_rate": {
-                    "min_rate": "4.13",
-                    "max_rate": "11.37"
+                    "min_rate": "2.74",
+                    "max_rate": "6.39"
                 },
                 "variable_rate": {
-                    "min_rate": "1.77",
-                    "max_rate": "11.89"
+                    "min_rate": "2.25",
+                    "max_rate": "6.39"
                 }
             },
             "loan_term": {
@@ -63,12 +63,12 @@
             "compare": {
                 "credit_score": "600",
                 "fixed_rate": {
-                    "min_rate": "4.59",
-                    "max_rate": "12.39"
+                    "min_rate": "2.97",
+                    "max_rate": "9.15"
                 },
                 "variable_rate": {
-                    "min_rate": "1.25",
-                    "max_rate": "11.15"
+                    "min_rate": "2.24",
+                    "max_rate": "8.90"
                 }
             },
             "loan_term": {
@@ -115,12 +115,12 @@
             "compare": {
                 "credit_score": "600",
                 "fixed_rate": {
-                    "min_rate": "4.59",
-                    "max_rate": "12.39"
+                    "min_rate": "2.89",
+                    "max_rate": "5.63"
                 },
                 "variable_rate": {
-                    "min_rate": "1.47",
-                    "max_rate": "10.87"
+                    "min_rate": "2.15",
+                    "max_rate": "5.27"
                 }
             },
             "loan_term": {

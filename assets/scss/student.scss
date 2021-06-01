@@ -13,7 +13,7 @@
             .banner-content {
                 max-width: 730px;
                 .website-title {
-                    margin-top: 70px;
+                    margin-top: 50px;
                     margin-bottom: 20px;
                     font-size: 42px;
                     font-weight: normal;
@@ -23,16 +23,25 @@
                 }
                 .update {
                     justify-self: flex-end;
-                    margin-top: 40px;
+                    margin-top: 10px;
                     margin-bottom: 20px;
                     color: #000;
                     font-size: 14px;
                     font-style: italic;
                 }
+                .sub-title {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    color: $theme-color;
+                    font-size: 20px;
+                }
                 .content {
                     font-size: 18px;
                     line-height: 24px;
                     color: #000;
+                    p {
+                        margin: 5px 0;
+                    }
                 }
             }
             
@@ -632,6 +641,9 @@
                 min-height: 450px;
                 padding: 50px 20px;
                 box-sizing: border-box;
+                .banner-img {
+                    z-index: -1;
+                }
                 .banner-content {
                     .website-title {
                         margin-top: 0;
@@ -644,6 +656,7 @@
                     .content {
                         font-size: 16px;
                     }
+                    
                 }
             }
             .banner-img {

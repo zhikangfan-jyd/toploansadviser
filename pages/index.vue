@@ -385,7 +385,7 @@ export default {
       return {
         allProducts: products_results.data,
         // count: products_results.data.length,
-        overallData: [products_results.data[0],products_results.data[2]],
+        overallData: [products_results.data[0],products_results.data[1]],
         questionData: question_results.data
       }
     } catch (error) {

@@ -34,9 +34,9 @@
               <!-- <li>
                 <nuxt-link to="/reviews/drcredit" class="link">DrCredit</nuxt-link>
               </li> -->
-              <li>
+              <!-- <li>
                 <nuxt-link to="/reviews/upstart" class="link">Upstart</nuxt-link>
-              </li>
+              </li> -->
               <li>
                 <nuxt-link to="/reviews/personalloans" class="link">PersonalLoans</nuxt-link>
               </li>
