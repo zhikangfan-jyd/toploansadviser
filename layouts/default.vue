@@ -8,7 +8,7 @@
             <nuxt-link to="/" exact class="link">Personal Loan</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/student" class="link">Student Loan</nuxt-link>
+            <nuxt-link to="/student-loan" class="link">Student Loan</nuxt-link>
           </li>
           <li class="reviews">
             <span class="reviews-title link">Reviews</span>
@@ -69,7 +69,7 @@
           </li>
           
           <li>
-            <nuxt-link to="/student">Student Loan</nuxt-link>
+            <nuxt-link to="/student-loan">Student Loan</nuxt-link>
           </li>
           
           <li>
