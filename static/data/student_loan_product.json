@@ -4,7 +4,7 @@
         {
             "name": "credible_stu",
             "review_key": "credible",
-            "link": "https://www.credible.com/refinance-student-loans/??utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
+            "link": "https://www.credible.com/refinance-student-loans/?utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
             "logo": "/data/images/credible.png",
             "rate": {
                 "max": 10,
@@ -29,7 +29,7 @@
         {
             "name": "SoFi_stu",
             "review_key": "",
-            "link": "https://www.credible.com/a/dd-sofi/??utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
+            "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
             "logo": "/data/images/sofi.png",
             "rate": {
                 "max": 10,
@@ -54,7 +54,7 @@
         {
             "name": "Citizens_Bank",
             "review_key": "",
-            "link": "https://www.credible.com/a/dd-citizens/??utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
+            "link": "https://www.credible.com/a/dd-citizens/?utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
             "logo": "/data/images/citizens_bank.png",
             "rate": {
                 "max": 10,
@@ -79,7 +79,7 @@
         {
             "name": "MEFA",
             "review_key": "",
-            "link": "https://www.credible.com/a/fh-mefa/??utm_source=westwin&utm_medium=referral&utm_campaign=mefa_slr&utm_content=",
+            "link": "https://www.credible.com/a/fh-mefa/?utm_source=westwin&utm_medium=referral&utm_campaign=mefa_slr&utm_content=",
             "logo": "/data/images/mefa.png",
             "rate": {
                 "max": 10,
@@ -106,7 +106,7 @@
         {
             "name": "PenFed",
             "review_key": "",
-            "link": "https://www.credible.com/a/dd-penfed/??utm_source=westwin&utm_medium=referral&utm_campaign=penfed_slr&utm_content=",
+            "link": "https://www.credible.com/a/dd-penfed/?utm_source=westwin&utm_medium=referral&utm_campaign=penfed_slr&utm_content=",
             "logo": "/data/images/penfed.png",
             "rate": {
                 "max": 10,
@@ -131,7 +131,7 @@
         {
             "name": "RISLA",
             "review_key": "",
-            "link": "https://www.credible.com/a/dd-risla-slr/??utm_source=westwin&utm_medium=referral&utm_campaign=risla_slr&utm_content=",
+            "link": "https://www.credible.com/a/dd-risla-slr/?utm_source=westwin&utm_medium=referral&utm_campaign=risla_slr&utm_content=",
             "logo": "/data/images/risla.png",
             "rate": {
                 "max": 10,
