@@ -3,15 +3,15 @@ const webpack = require('webpack');
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Best personal loan 2021',
+    title: 'Best personal loans and mortgage loans of 2021- Toploansadviser',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Personal loans can be used for financing large purchases, home improvement projects, and more. We compared the Best Personal Loans for you, so you can choose the loan for your specific situation.' },
-      { hid: 'keyword', name: 'keyword', content: 'personal loan, student loan, loan comparison, credible loan' }
+      { hid: 'description', name: 'description', content: 'We chose The Best Rated Personal Loans and Mortgage Loans for your needs' },
+      { hid: 'keyword', name: 'keyword', content: 'personal loans, mortgage loans, loan reviews' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -33,7 +33,7 @@ export default {
   // loading: '~/components/loading.vue',
   loading: false,
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

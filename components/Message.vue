@@ -41,20 +41,20 @@
                   <div class="btn-box">
                       <div class="box">
                         <button :class="{ 'btn': true, 'current': btnIndex == 0 }" @click="nextSecondStep(0)">
-                            <span class="tag-value">Less than $5000</span>
+                            <span class="tag-value">Less than $5,000</span>
                         </button>
                         <button :class="{ 'btn': true, 'current': btnIndex == 1 }" @click="nextSecondStep(1)">
-                            <span class="tag-value">$20000 - $50000</span>
+                            <span class="tag-value">$20,000 - $50,000</span>
                         </button>
                       </div>
                       <div class="box">
 
                       
                         <button :class="{ 'btn': true, 'current': btnIndex == 2 }" @click="nextSecondStep(2)">
-                            <span class="tag-value">$5000 - $20000</span>
+                            <span class="tag-value">$5,000 - $20,000</span>
                         </button>
                         <button :class="{ 'btn': true, 'current': btnIndex == 3 }" @click="nextSecondStep(3)">
-                            <span class="tag-value">More than $50000</span>
+                            <span class="tag-value">More than $50,000</span>
                         </button>
                       </div>
                       <div class="start-box">

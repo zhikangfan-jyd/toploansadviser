@@ -189,6 +189,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
+                      <p class="title">Loan Amount</p>
                       <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
@@ -224,7 +225,7 @@
       </section>
       <section class="best-overall-area">
         <div class="best-overall-title-box">
-          <h3 class="best-overall-title">Best for debt consolidation</h3>
+          <h2 class="best-overall-title">Best for debt consolidation</h2>
           
         </div>
         <div class="card-list">
@@ -306,6 +307,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
+                      <p class="title">Loan Amount</p>
                       <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
@@ -326,10 +328,10 @@
         <div class="faq-area-title-box">
           <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
           <div class="faq-content">
-            <h3 class="faq-title">
+            <h2 class="faq-title">
               <span>FAQ's</span>
               <span>About Personal Loans</span>
-            </h3>
+            </h2>
             <div class="content">
               <p>It's essential for you to comprehend all associated terms and conditions before taking a personal loan. The following frequently asked questions regarding personal loans have been outlined for your convenience below.</p>
             </div>
@@ -362,7 +364,11 @@
 <script>
 import { computeScore, formatNum } from '../utils/index'
 import { updateTime } from '../utils/date'
+import FoldTheCard from '../components/FoldTheCard'
 export default {
+  components: {
+    FoldTheCard
+  },
   async asyncData({ $axios, redirect, route }) {
 
     // 拼接 msclkid 参数

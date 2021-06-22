@@ -1,0 +1,463 @@
+{
+    "data": [
+        {
+            "name": "LoanDepot",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/loandepot.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "No Login/Registration Required",
+            "meritList": [
+                {
+                    "text": "Has funded over $65 billion in home loans"
+                },
+                {
+                    "text": "Clearance in as little as 8 days"
+                },
+                {
+                    "text": "Mello smartloan™ digital asset verification"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "purchase, refinance, adjustable & fixed rates, jumbo & more",
+                "credit_score": "620",
+                "apr": "depends on type of loan & lender",
+                "NMLS": "174457"
+            },
+            "pros": [
+                {
+                    "text": "Can choose face-to-face interaction by accessing over 150 affiliated loan stores in the United States"
+                },
+                {
+                    "text": "Experienced FHA and VA lender"
+                },
+                {
+                    "text": "Fannie Mae HomeStyle home improvement and FHA 302K fixer-upper loans available"
+                },
+                {
+                    "text": "100% digital asset, employment, and income verification available"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "No home equity line of credit or loan products available"
+                },
+                {
+                    "text": "USDA Rural Development loans not available"
+                }
+            ]
+            
+        },
+        {
+            "name": "AmeriSave",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/amerisave.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Accurate Quotes, Not Estimates",
+            "meritList": [
+                {
+                    "text": "Free personalized rates in minutes"
+                },
+                {
+                    "text": "Variety of mortgage types available"
+                },
+                {
+                    "text": "Pre-qualify with a soft credit pull"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "Purchase, refinance, adjustable, fixed, jumbo, FHA, VA, and USD",
+                "credit_score": "600",
+                "apr": "",
+                "NMLS": "1168"
+            },
+            "pros": [
+                {
+                    "text": "Easy online application process"
+                },
+                {
+                    "text": "Diverse loan options available"
+                },
+                {
+                    "text": "Transparent information on their website"
+                },
+                {
+                    "text": "3% minimum down payment available"
+                },
+                {
+                    "text": "Accurate quotes, not estimates"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "$500 application fee"
+                },
+                {
+                    "text": "No home equity loans or HELOC products"
+                }
+            ]
+            
+        },
+        {
+            "name": "Better",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/better.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Homeownership Simplified",
+            "meritList": [
+                {
+                    "text": "Honest rate quotes & access to experts"
+                },
+                {
+                    "text": "No origination fees"
+                },
+                {
+                    "text": "Have issued tens of thousands of loans"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "purchase or refinance",
+                "credit_score": "620",
+                "apr": "starting at 3.61%",
+                "NMLS": "330511"
+            },
+            "pros": [
+                {
+                    "text": "Better Mortgage offers a Low Price Promise"
+                },
+                {
+                    "text": "No origination fees, lender fees, or commission fees"
+                },
+                {
+                    "text": "100% online-based and available 24/7"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Better Mortgage only works with customers who have credit scores above 620"
+                },
+                {
+                    "text": "If applying for a loan with a co-borrower, underwriters use the lowest credit score for qualification purposes"
+                },
+                {
+                    "text": "No government-backed loans such as USDA or VA mortgages"
+                }
+            ]
+            
+        },
+        {
+            "name": "Figure",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/figure.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Unlock Your Financial Potential",
+            "meritList": [
+                {
+                    "text": "An all-digital app, no hassle"
+                },
+                {
+                    "text": "Easily find your rate in minutes"
+                },
+                {
+                    "text": "Dedicated support team"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "HELOCs, rate refinance, cash-out refinance",
+                "credit_score": "620",
+                "apr": "dependent on loan type",
+                "NMLS": "1717824"
+            },
+            "pros": [
+                
+                {
+                    "text": "Fast funding times"
+                },
+                {
+                    "text": "Speed digital application with eNotary"
+                },
+                {
+                    "text": "Several customer service channels"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Fairly large origination fee"
+                },
+                {
+                    "text": "Fees on mortgage refinancing loans"
+                }
+            ]
+            
+        },
+        {
+            "name": "Quicken Loans",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/Quicken_Loans.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "A+ Customer Satisfaction",
+            "meritList": [
+                {
+                    "text": "35 years of experience"
+                },
+                {
+                    "text": "Fully automated, online process"
+                },
+                {
+                    "text": "Pre-approval available"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
+                "credit_score": "620",
+                "apr": "set by lender",
+                "NMLS": "3030"
+            },
+            "pros": [
+                {
+                    "text": "Rate Lock"
+                },
+                {
+                    "text": "Online application process"
+                },
+                {
+                    "text": "Good reputation for customer satisfaction"
+                },
+                {
+                    "text": "Pre-approval available"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Fees could potentially be high"
+                },
+                {
+                    "text": "No home equity loans available"
+                },
+                {
+                    "text": "No physical branches available"
+                }
+            ]
+            
+        },
+        {
+            "name": "Zillow",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/zillow_home_loans.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Simple Solutions for Every Step",
+            "meritList": [
+                {
+                    "text": "Competitive refinancing rates"
+                },
+                {
+                    "text": "Provides great refinancing calculators"
+                },
+                {
+                    "text": "Variety of refinancing options"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "Home Equity Loans, Mortgage Refinance (cash in & cash out), FHA, VA",
+                "credit_score": "620",
+                "apr": "set by lender",
+                "NMLS": "3901"
+            },
+            "pros": [
+                {
+                    "text": "Competitive refinancing rates"
+                },
+                {
+                    "text": "Useful calculators"
+                },
+                {
+                    "text": "Reputable lender"
+                },
+                {
+                    "text": "Variety of refinancing options"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Not available in all states"
+                },
+                {
+                    "text": "Origination fee of $1,500 to be paid"
+                }
+            ]
+            
+        },
+        {
+            "name": "Credible",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/credible.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "1 Application, Several Offers",
+            "meritList": [
+                {
+                    "text": "Compare rates in minutes"
+                },
+                {
+                    "text": "Easy process, 100% online"
+                },
+                {
+                    "text": "Secured website with data encryption"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "jumbo, conventional, refinance",
+                "credit_score": "620",
+                "apr": "set by lender",
+                "NMLS": "1681276"
+            },
+            "pros": [
+                {
+                    "text": "No fees to use Credible’s services"
+                },
+                {
+                    "text": "Find out your actual rate without a hard credit check"
+                },
+                {
+                    "text": "E-verification for many financial documents"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Credible doesn’t operate in several large states"
+                },
+                {
+                    "text": "No face-to-face customer support"
+                }
+            ]
+            
+        },
+        {
+            "name": "lendingtree",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/lendingtree.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Pre-Qualify in 3 Minutes",
+            "meritList": [
+                {
+                    "text": "Offers free credit score check"
+                },
+                {
+                    "text": "20+ years in the lending business"
+                },
+                {
+                    "text": "SSN needed to pre-qualify"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "Home purchase, equity, or refinance",
+                "credit_score": "500",
+                "apr": "set by lender",
+                "NMLS": "1136"
+            },
+            "pros": [
+                
+                {
+                    "text": "Lenders in the LendingTree network uniquely offer manufactured or mobile home loans and multi-family home loans"
+                },
+                {
+                    "text": "You can apply for a mortgage through LendingTree as a primary home, secondary home, or rental property"
+                },
+                {
+                    "text": "Getting several offers with a single application makes it easier to negotiate for the best possible rates"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Customers receive many emails and phone calls from various companies"
+                },
+                {
+                    "text": "Each lender runs a hard credit check, which could reduce credit scores by a few points"
+                }
+            ]
+            
+        },
+        {
+            "name": "New American Funding",
+            "review_key": "",
+            "link": "",
+            "logo": "/data/images/new_american_funding.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "Your Mortgage, Your Terms",
+            "meritList": [
+                {
+                    "text": "Historically Low Rates"
+                },
+                {
+                    "text": "A+ BBB Rating"
+                },
+                {
+                    "text": "Offers low-down-payment loans"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "Variety of home purchase, equity, & refinance",
+                "credit_score": "580/620",
+                "apr": "dependent on loan type",
+                "NMLS": "6606"
+            },
+            "pros": [
+                {
+                    "text": "Manual underwriting available to evaluate credit"
+                },
+                {
+                    "text": "One of the few non-bank lenders offering equity lending and reverse mortgages"
+                },
+                {
+                    "text": "Can participate in the entire process online"
+                },
+                {
+                    "text": "English and Spanish-speaking loan officers available"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "No mortgages in Hawaii or New York"
+                },
+                {
+                    "text": "Doesn’t work with down payment assistance programs in all states"
+                }
+            ]
+            
+        }
+        
+    ]
+}

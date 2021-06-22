@@ -7,8 +7,12 @@
           <li>
             <nuxt-link to="/" exact class="link">Personal Loan</nuxt-link>
           </li>
+          
           <li>
             <nuxt-link to="/student-loan" class="link">Student Loan</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/mortgage" exact class="link">Mortgage Loan</nuxt-link>
           </li>
           <li class="reviews">
             <span class="reviews-title link">Reviews</span>
@@ -50,7 +54,7 @@
       </div>
     </header>
     <Nuxt />
-    <Message />
+    <!-- <Message /> -->
     <footer class="footer-container">
       <div class="footer-wrapper">
 
@@ -131,7 +135,7 @@
 <script>
 import Message from '../components/Message'
 export default {
-  comments: {
+  components: {
     Message
   },
   data() {

@@ -56,7 +56,7 @@
                 </div>
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
-                  <span class="text">155 users chose this site today</span>
+                  <span class="text">354 users chose this site today</span>
                 </div>
                 
                 <div class="product-item-container">
@@ -155,7 +155,7 @@
       </section>
       <section class="best-overall-area">
         <div class="best-overall-title-box">
-          <h3 class="best-overall-title">Best Overall</h3>
+          <h2 class="best-overall-title">Best Overall</h2>
           
         </div>
         <div class="card-list">
@@ -228,10 +228,10 @@
         <div class="faq-area-title-box">
           <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
           <div class="faq-content">
-            <h3 class="faq-title">
+            <h2 class="faq-title">
               <span>FAQ's</span>
               <span>About Student Loans</span>
-            </h3>
+            </h2>
             <div class="content">
               <p>Before taking a student loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about student loans below.</p>
             </div>
@@ -245,9 +245,13 @@
 </template>
 
 <script>
+import FoldTheCard from '../components/FoldTheCard'
 import { computeScore } from '../utils/index'
 import { updateTime } from '../utils/date'
 export default {
+  components: {
+    FoldTheCard
+  },
   async asyncData({ $axios, redirect, route }) {
 
     // 拼接 msclkid 参数

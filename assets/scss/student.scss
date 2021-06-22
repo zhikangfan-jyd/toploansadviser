@@ -706,6 +706,11 @@
                                     .img-score-box {
                                         padding-bottom: 20px;
                                         border-bottom: 1px solid #00164b1a;
+                                        .img-box {
+                                            img{
+                                                height: 70px;
+                                            }
+                                        }
                                         .rate-box {
                                             border: none;
                                         }
@@ -714,34 +719,46 @@
                                     .features-terms-box {
                                         margin-top: 22px;
                                         align-items: flex-start;
-                                        
+                                        flex-direction: column;
                                         .list-box {
+                                            order: 2;
                                             flex: 2;
+                                            padding-left: 0;
+                                            padding-right: 0;
                                             .features-list {
                                                 font-size: 14px;
+                                                
                                                 dt {
-                                                    margin-bottom: 16px;
+                                                    margin-bottom: 5px;
                                                     .phone-text {
                                                         display: inline-block;
-
+                                                        color: #001139ab;
                                                     }
                                                     .pc-text {
                                                         display: none;
                                                     }
                                                 }
+                                                dd {
+                                                    .text {
+                                                        font-size: 16px;
+                                                    }
+                                                }
                                              }
                                         }
                                         .terms-box {
+                                            order: 1;
                                             flex: 1;
                                             border: none;
                                             font-size: 18px;
                                             display: flex;
                                             flex-direction: column;
-
+                                            align-items: flex-start;
+                                            margin-bottom: 10px;
                                             .title {
                                                 display: block;
                                                 font-size: 14px;
-                                                margin-bottom: 16px;
+                                                margin-bottom: 5px;
+                                                color: #001139ab;;
                                             }
                                         }
                                         
@@ -785,6 +802,11 @@
                             .img-score-box {
                                 padding-bottom: 20px;
                                 border-bottom: 1px solid #00164b1a;
+                                .img-box {
+                                    img{
+                                        height: 70px;
+                                    }
+                                }
                                 .rate-box {
                                     border: none;
                                 }
@@ -793,34 +815,46 @@
                             .features-terms-box {
                                 margin-top: 22px;
                                 align-items: flex-start;
-                                
+                                flex-direction: column;
                                 .list-box {
+                                    order: 2;
                                     flex: 2;
+                                    padding-left: 0;
+                                    padding-right: 0;
                                     .features-list {
                                         font-size: 14px;
+                                        
                                         dt {
-                                            margin-bottom: 16px;
+                                            margin-bottom: 5px;
                                             .phone-text {
                                                 display: inline-block;
-
+                                                color: #001139ab;
                                             }
                                             .pc-text {
                                                 display: none;
                                             }
                                         }
+                                        dd {
+                                            .text {
+                                                font-size: 16px;
+                                            }
+                                        }
                                      }
                                 }
                                 .terms-box {
+                                    order: 1;
                                     flex: 1;
                                     border: none;
                                     font-size: 18px;
                                     display: flex;
                                     flex-direction: column;
-
+                                    align-items: flex-start;
+                                    margin-bottom: 10px;
                                     .title {
                                         display: block;
                                         font-size: 14px;
-                                        margin-bottom: 16px;
+                                        margin-bottom: 5px;
+                                        color: #001139ab;;
                                     }
                                 }
                                 
