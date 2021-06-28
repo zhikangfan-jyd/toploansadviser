@@ -56,7 +56,7 @@
                 </div>
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
-                  <span class="text">354 users chose this site today</span>
+                  <span class="text"><strong>354 users</strong> chose this site today</span>
                 </div>
                 
                 <div class="product-item-container">

@@ -1,0 +1,326 @@
+{
+    "data": [
+        {
+
+            "name": "Credible",
+            "review_key": "credible",
+            "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
+            "logo": "/data/images/credible.svg",
+            "upto": "100000",
+            "introduce": "Free to use, no hidden fees",
+            "amount": {
+                "min": 1000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.9"
+            },
+            "compare": {
+                "credit_score": "600",
+                "credit_text": "",
+                "apr": {
+                    "min": "2.49",
+                    "max": "35.99"
+                },
+                "term": "24-84 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Free-to-use marketplace with a choice of vetted lending partners."
+                },
+                {
+                    "text": "Borrowers are in control and can compare competitive loan options."
+                },
+                {
+                    "text": "No prepayment fees and origination fees as low as 0%"
+                },
+                {
+                    "text": "Max Loan Amount: $100K"
+                }
+            ],
+            "disclaimer": "Credible Disclaimer: “Personal Loans Rate and Terms Disclosure: Rates for personal loans provided by lenders on the Credible platform range between 2.49-35.99% APR with terms from 24 to 84 months. Rates presented include lender discounts for enrolling in autopay and loyalty programs, where applicable. Actual rates may be different from the rates advertised and/or shown and will be based on the lender’s eligibility criteria, which include factors such as credit score, loan amount, loan term, credit usage and history, and vary based on loan purpose. The lowest rates available typically require excellent credit, and for some lenders, may be reserved for specific loan purposes and/or shorter loan terms. The origination fee charged by the lenders on our platform ranges from 0% to 8%. Each lender has their own qualification criteria with respect to their autopay and loyalty discounts (e.g., some lenders require the borrower to elect autopay prior to loan funding in order to qualify for the autopay discount). All rates are determined by the lender and must be agreed upon between the borrower and the borrower’s chosen lender. For a loan of $10,000 with a three year repayment period, an interest rate of 7.99%, a $350 origination fee and an APR of 11.51%, the borrower will receive $9,650 at the time of loan funding and will make 36 monthly payments of $313.32. Assuming all on-time payments, and full performance of all terms and conditions of the loan contract and any discount programs enrolled in included in the APR/interest rate throughout the life of the loan, the borrower will pay a total of $11,279.43. As of March 12, 2019, none of the lenders on our platform require a down payment nor do they charge any prepayment penalties.”"
+        },
+        {
+            "name": "Best Egg",
+            "review_key": "",
+            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
+            "logo": "/data/images/best_egg.png",
+            "upto": "1000000",
+            "introduce": "Get funding in as little as 1 day",
+            "amount": {
+                "min": "50000",
+                "max": "Infinity"
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "credit_text": "",
+                "apr": {
+                    "min": "5.99",
+                    "max": "29.99"
+                },
+                "term": "36-60 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Competitive rates among fair-credit lenders."
+                },
+                {
+                    "text": "Able to fund loans within one business day."
+                },
+                {
+                    "text": "Secured loan option for homeowners."
+                },
+                {
+                    "text": "Max Loan Amount: $50K"
+                }
+            ],
+            "disclaimer": "Best Egg loans are unsecured personal loans made by Cross River Bank, a New Jersey State Chartered Commercial Bank, Member FDIC. Equal Housing Lender. “Best Egg” is a trademark of Marlette Funding, LLC. All uses of “Best Egg” refer to “the Best Egg personal loan” and/or “Best Egg on behalf of Cross River Bank, as originator of the Best Egg personal loan,” as applicable.<br/> The term, amount and APR of any loan we offer to you will depend on your credit score, income, debt payment obligations, loan amount, credit history and other factors. If offered, your loan agreement will contain specific terms and conditions. The timing of available funds upon loan approval may vary depending upon your bank’s policies.<br/> Loan amounts range from $2,000–$50,000. Residents of Massachusetts have a minimum loan amount of $6,500; New Mexico and Ohio, $5,000; and Georgia, $3,000. For a second Best Egg loan, your total existing Best Egg loan balances cannot exceed $50,000.<br/> Best Egg loans can be repaid at any time without penalty. Barring any unforeseen circumstances, Best Egg loans have a minimum term of 36 months and a maximum term of 60 months."
+        },
+        {
+            "name": "Lending Club",
+            "review_key": "",
+            "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content=",
+            "logo": "/data/images/lendingclub.svg",
+            "upto": "1000000",
+            "introduce": "Choice for debt consolidation",
+            "amount": {
+                "min": 1000,
+                "max": 40000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.6"
+            },
+            "compare": {
+                "credit_score": "480",
+                "credit_text": "",
+                "apr": {
+                    "min": "8.05",
+                    "max": "25.89"
+                },
+                "term": "36-60 months"
+            },
+            "key_facts": [
+                {
+                    "text": "One of the largest P2P lending partners & investing companies"
+                },
+                {
+                    "text": "15-day grace period for late fees"
+                },
+                {
+                    "text": "Apply in just minutes and receive competitive offers"
+                },
+                {
+                    "text": "Max Loan Amount: $40K"
+                }
+            ],
+            "disclaimer": "A representative example of loan payment terms is as follows: you receive a loan of $13,411 for a term of 36 months, with an interest rate of 12.16% and a 5.30% origination fee of $711, for an APR of 15.99%. In this example, you will receive $12,700 and will make 36 monthly payments of $446.46. Loan amounts range from $1,000 to $40,000 and loan term lengths are 36 months or 60 months. Some amounts and term lengths may be unavailable in certain states. APR ranges from 8.05% to 35.89% and is determined at the time of application. Origination fee ranges from 3% to 6% of the loan amount. Lowest APR is available to borrowers with excellent credit. Advertised rates are subject to change without notice. Loans are made by LendingClub Bank, N.A., Member FDIC, Equal Housing Lender (“LendingClub Bank”), a wholly-owned subsidiary of LendingClub Corporation, NMLS ID 167439. LendingClub Bank is not an affiliate of [PARNTER LEGAL NAME] and is not responsible for the products and services provided by [PARNTER NICKNAME]. Loans are subject to credit approval and sufficient investor commitment before they can be funded or issued. Certain information that LendingClub Bank subsequently obtains as part of the application process (including but not limited to information in your consumer report, your income, the loan amount that your request, the purpose of your loan, and qualifying debt) will be considered and could affect your ability to obtain a loan. Loan closing is contingent on accepting all required agreements and disclosures at Lendingclub.com. “LendingClub” is a trademark of LendingClub Bank."
+        },
+        
+        {
+            "name": "LightStream",
+            "review_key": "lightstream",
+            "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl&utm_content=",
+            "logo": "/data/images/lightstream.svg",
+            "upto": "1000000",
+            "introduce": "Low fixed rates ",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.3"
+            },
+            "compare": {
+                "credit_score": "660",
+                "credit_text": "",
+                "apr": {
+                    "min": "3.49",
+                    "max": "19.99"
+                },
+                "term": "24-84 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Good credit gets low rates and zero fees"
+                },
+                {
+                    "text": "Fast and easy online process"
+                },
+                {
+                    "text": "$100 Loan Experience Guarantee¹"
+                },
+                {
+                    "text": "Max Loan Amount: $100K"
+                }
+            ],
+            "disclaimer": "*Your loan terms, including APR, may differ based on loan purpose, amount, term length, and your credit profile. Lowest rates require excellent credit. Rateis quoted with AutoPay discount. AutoPay discount is only available prior to loan funding. Rates without AutoPay are 0.50% points higher. Subject to credit approval. Conditions and limitations apply. Advertised rates and terms are subject to change without notice. Payment example: Monthly payments for a $10,000 loan at 4.99% APR with a term of 3 years would result in 36 monthly payments of $299.66. 1After receiving your loan from us, if you are not completely satisfied with your experience, please contact us. We will email you a questionnaire so we can improve our services. When we receive your completed questionnaire, we will send you $100. Our guarantee expires 30 days after you receive your loan. We reserve the right to change or discontinue our guarantee at any time. Limited to one $100 payment per funded loan. Truist teammates do not qualify for the Loan Experience Guarantee. Truist Bank is an Equal Housing Lender. © 2021 Truist Financial Corporation. SunTrust, Truist, LightStream, the LightStream logo, and the SunTrust logo are service marks of Truist Financial Corporation. All other trademarks are the property of their respective owners. Lending services provided by Truist Bank."
+        },
+        {
+            "name": "PersonalLoans",
+            "review_key": "personalloans",
+            "link": "https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
+            "logo": "/data/images/personal.png",
+            "upto": "1000000",
+            "introduce": "Excellent customer service",
+            "amount": {
+                "min": 1000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.0"
+            },
+            "compare": {
+                "credit_score": "500",
+                "credit_text": "",
+                "apr": {
+                    "min": "5.99",
+                    "max": "35.99"
+                },
+                "term": "3-72 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Fast funding - 1 business day"
+                },
+                {
+                    "text": "Quick and simple online process"
+                },
+                {
+                    "text": "Large lender network"
+                },
+                {
+                    "text": "Max Loan Amount: $35K"
+                }
+            ],
+            "disclaimer": "The Annual Percentage Rate (APR) is the rate at which your loan accrues interest and is based upon the amount, cost and term of your loan, repayment amounts and timing of payments. APR range for lenders in our network can generally range from 5.99% to 35.89%, with loan terms from 61 days to 96 months. Your actual rate will depend upon your credit score, loan amount, loan term, and credit usage and history. Some states have laws limiting the APR that a lender can charge you. Lenders are legally required to show you the APR and other terms of your loan before you execute a loan agreement."
+        },
+        {
+            "name": "Upgrade",
+            "review_key": "",
+            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
+            "logo": "/data/images/upgrade.png",
+            "upto": "1000000",
+            "introduce": "No fees",
+            "amount": {
+                "min": 1000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.8"
+            },
+            "compare": {
+                "credit_score": "670",
+                "credit_text": "",
+                "apr": {
+                    "min": "7.99",
+                    "max": "35.97"
+                },
+                "term": "12-84 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Allows secured, co-signed and joint loans."
+                },
+                {
+                    "text": "Offers rate discount with direct payment to creditors on debt consolidation loans."
+                },
+                {
+                    "text": "Rate discount for autopay."
+                },
+                {
+                    "text": "Max Loan Amount: $50K"
+                }
+            ],
+            "disclaimer": "* Earn unlimited 1.5% cash back on all purchases when you pay them back. Your cash back will typically be applied to your balance after your next scheduled monthly payment. Cash back rewards applied to your balance will not satisfy or reduce your regular monthly payments. Payments on non-purchase transactions, such as sending funds electronically to your bank account, are not eligible to earn rewards. Certain limitations apply. Please refer to your Cardholder Agreement for more information. Rewards associated with the Upgrade Card, when applicable, are provided by Upgrade, Inc.<br/> ** Credit Lines opened through Upgrade feature APRs of 8.99% - 29.99% and line amounts ranging $500 - $50,000. The lowest rates require Autopay and the majority of the line amounts will be $25,000 or under. For example, a $5,000 transaction with a 36 month term and a 19.99% APR has a required monthly payment of $187.90. The APR on your draw may be higher or lower. Your rate, line amount, and default term depend on maintaining a qualifying credit score, your credit usage history, requested amount, and other factors."
+        },
+        {
+            "name": "Avant",
+            "review_key": "avant",
+            "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl&utm_content=",
+            "logo": "/data/images/avant.png",
+            "upto": "1000000",
+            "introduce": "Clear and transparent process",
+            "amount": {
+                "min": 2000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.5"
+            },
+            "compare": {
+                "credit_score": "580",
+                "credit_text": "",
+                "apr": {
+                    "min": "9.95",
+                    "max": "35.99"
+                },
+                "term": "24-60 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Approval/funding in 2-3 business day"
+                },
+                {
+                    "text": "No repayment fees"
+                },
+                {
+                    "text": "Low credit score requirement: 580"
+                },
+                {
+                    "text": "Max Loan Amount: $50K"
+                }
+            ],
+            "disclaimer": "Loan amounts range from $2,000 to $35,000. APR ranges from 9.95% to 35.99%.<br/> Loan lengths range from 24 to 60 months. Administration fee up to 4.75%.<br/> * The actual loan amount, term, and APR amount of loan that a customer qualifies for may vary based on credit determination and state law. Minimum loan amounts vary by state. <br/>** Example: A $5,700 loan with an administration fee of 4.75% and an amount financed of $5,429.25, repayable in 36 monthly installments, would have an APR of 29.95% and monthly payments of $230.33."
+        },
+        {
+            "name": "SoFi",
+            "review_key": "sofi",
+            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
+            "logo": "/data/images/sofi.svg",
+            "upto": "1000000",
+            "introduce": "Prequalify for your rate in 3 minutes",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.3"
+            },
+            "compare": {
+                "credit_score": "680",
+                "credit_text": "",
+                "apr": {
+                    "min": "5.99",
+                    "max": "18.85"
+                },
+                "term": "24-84 months"
+            },
+            "key_facts": [
+                {
+                    "text": "Competitive rates available for good credit scores and income source"
+                },
+                {
+                    "text": "Access to financial advisors, private networking events, & unemployment protection"
+                },
+                {
+                    "text": "Flexible terms & payment options with no fees whatsoever"
+                },
+                {
+                    "text": "Max Loan Amount: $100K"
+                }
+            ],
+            "disclaimer": "Sofi Disclaimer: “Fixed rates from 5.99% APR to 16.99% APR (with AutoPay). Variable rates from 5.74% APR to 14.70% APR (with AutoPay). SoFi rate ranges are current as of March 18, 2019 and are subject to change without notice. Not all rates and amounts available in all states. See Personal Loan eligibility details. Not all applicants qualify for the lowest rate. If approved for a loan, to qualify for the lowest rate, you must have a responsible financial history and meet other conditions. Your actual rate will be within the range of rates listed above and will depend on a variety of factors, including evaluation of your credit worthiness, years of professional experience, income and other factors. See APR examples and terms. Interest rates on variable rate loans are capped at 14.95%. Lowest variable rate of 5.74% APR assumes current 1-month LIBOR rate of 2.49% plus 4.28% margin minus 0.25% AutoPay discount. For the SoFi variable rate loan, the 1-month LIBOR index will adjust monthly and the loan payment will be re-amortized and may change monthly. APRs for variable rate loans may increase after origination if the LIBOR index increases. The SoFi 0.25% AutoPay interest rate reduction requires you to agree to make monthly principal and interest payments by an automatic monthly deduction from a savings or checking account. The benefit will discontinue and be lost for periods in which you do not pay by automatic deduction from a savings or checking account. Loan example: A $6,000 loan with a 24.99% APR that is repayable in 60 monthly installments would have monthly payments of $176.07 to a total of $10,565.2”"
+        }
+    ]
+}

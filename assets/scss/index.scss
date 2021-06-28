@@ -289,7 +289,7 @@
                                 border-radius: 7px;
                                 border: 1px solid #e5e6e6;
                                 box-shadow: 0px 9px 12px rgba(134,135,136,.16);
-                                font-size: 12px;
+                                font-size: 14px;
                                 // color: #262525;
                                 color: #484644;
                                 background-color: #fff;
@@ -304,8 +304,15 @@
                                     background-size: cover;
                                     vertical-align: middle;
                                 }
+                                strong {
+                                    font-weight: normal;
+                                    font-family: 'Poppins-Bold';
+                                    // color: #484644;
+                                    
+                                }
                                 .text {
                                     vertical-align: middle;
+                                    // color: $theme-color;
                                 }
                             }
                             .product-item-container {

@@ -75,9 +75,8 @@
           <li>
             <nuxt-link to="/student-loan">Student Loan</nuxt-link>
           </li>
-          
           <li>
-            <nuxt-link to="/reviews">Reviews</nuxt-link>
+            <nuxt-link to="/mortgage">Mortgage Loan</nuxt-link>
           </li>
           
           <li>

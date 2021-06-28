@@ -1,0 +1,1107 @@
+.main-container {
+    $rootWidth: 1200px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #555;
+    .banner-area {
+        .banner-container {
+            width: $rootWidth;
+            margin: 0 auto;
+            padding: 24px;
+            box-sizing: border-box;
+            .title {
+                font-family: 'Nunito-Bold';
+                font-size: 40px;
+                color: #333;
+                line-height: .63;
+            }
+            .update {
+                display: inline-block;
+                font-size: 18px;
+                font-family: 'Nunito-Bold';
+                color: #5a4fef;
+                line-height: 1.04;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .desc {
+
+                font-size: 18px;
+                color: #555;
+                line-height: 1.56;
+
+            }
+            .small-desc {
+                font-size: 12px;
+                color: #555;
+                margin: 15px 0 20px;
+                line-height: 1.3;
+                .small {
+                    text-decoration-line: underline;
+                    color: #555;
+                }
+            }
+            .feature-box {
+                display: flex;
+                align-items: center;
+                .feature-item {
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 10px;
+                    }
+                    .text {
+                        font-size: 14px;
+                        line-height: 1.43;
+                        color: #888;
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .product-area {
+        width: 100%;
+        padding: 24px 0 0;
+        background-color: #fafafa;
+        box-sizing: border-box;
+        .product-container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            box-sizing: border-box;
+
+            .filter-container {
+                flex: 3;
+                padding-right: 15px;
+                box-sizing: border-box;
+                .slide-box {
+                    .slide-title {
+                        font-size: 20px;
+                        background-color: #ebecf4;
+                        border-radius: 10px 10px  0 0;
+                        padding: 7px 14px;
+                        font-size: 20px;
+                        font-family: 'Nunito-Bold';
+                        color: #333;
+                    }
+
+                    .slide {
+                        background-color: #e1e1ee;
+                        border: none;
+                        margin-top: 0;
+                        border-radius: 0 0 10px 10px;
+                        padding: 15px 20px;
+                        box-sizing: border-box;
+                        label {
+                            position: relative;
+                            font-size: 14px;
+                            line-height: 1.57;
+                            color: #5a4fef;
+
+                            svg {
+                                margin-left: 5px;
+                                width: 13px;
+                                height: 13px;
+                                cursor: pointer;
+                                vertical-align: middle;
+
+                            }
+
+                            .popup {
+                                display: none;
+                                left: 131px;
+                                bottom: -28px;
+                                width: 270px;
+                                position: absolute;
+                                border-radius: 3px;
+                                box-shadow: 0 4px 24px 0 rgba(0, 0, 0 , 0.17);
+                                border: 1px solid rgba(152,159,170,.49);
+                                background: #fff;
+                                z-index: 1;
+                                padding: 15px;
+                                color: #555;
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    left: -6px;
+                                    top: 45%;
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #fff;
+                                    transform: rotate(-45deg);
+                                    border-left: 1px solid rgba(152,159,170,.49);
+                                    border-top: 1px solid rgba(152,159,170,.49);
+                                }
+
+                                &.loanAmount {
+                                    left: 117px;
+                                    bottom: -50px;
+                                }
+                            }
+
+                            
+                            
+                        }
+                        .select-block {
+                            word-wrap: normal;
+                            position: relative;
+                            background-color: transparent;
+                            padding: 10px 10px 5px 2px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            border-radius: 0;
+                            border: none;
+                            border-bottom: 1px solid rgba(0,0,0,.12);
+                            width: 100%;
+                            outline: none;
+                            margin-bottom: 35px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            background: url(../assets/img/ic_arrow_down.svg) no-repeat;
+                            background-position: 100% calc(50% + 2px);
+                            background-size: 12px 9px;
+                            cursor: pointer;
+
+                        
+                        }
+
+                        .money-box {
+                            margin-top: 15px;
+                            font-size: 22px;
+                            color: #333;
+                            font-family: 'Nunito-Bold';
+                            text-align: center;
+                        }
+                        .slider_track {
+                            .value-box {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin: -10px;
+                                .min,.max {
+                                    color: #333;
+                                    font-size: 12px;}
+                            }
+                        }
+
+                        .clear-all {
+                            margin-top: 15px;
+                            text-align: right;
+                            .clear-button {
+                                font-size: 14px;
+                                line-height: 1.57;
+                                color: #555;
+                                cursor: pointer;
+                                font-family: 'Nunito';
+                            }
+                        }
+                    }
+                }
+            }
+
+            .products-list-container {
+                flex: 9;
+                padding-left: 15px;
+                box-sizing: border-box;
+                .list-container {
+                    opacity: 0;
+                    &.fadeEffect {
+                        opacity: 1;
+                        transition: all .5s ease-in;
+                    }
+                    .card {
+                        .card-container {
+                            border-radius: 8px;
+                            box-shadow: 0 0 4px 0 rgba(151, 169 ,197, .55);
+                            transition: border .5s ease 0s, box-shadow .2s ease 0s, transform .2s ease 0s;
+                            background-color: #fff;
+                            margin-bottom: 9px;
+                            overflow: hidden;
+                            &:hover {
+                                box-shadow: 0 0 46px 0 rgba(151,169,197,.55);
+                                transform: translateY(-2px);
+                            }
+                            .card-content {
+                                position: relative;
+                                display: flex;
+                                min-height: 200px;
+                                box-sizing: border-box;
+                                align-items: center;
+                                
+                                &.first {
+                                    background: url('../assets/img/tax_bg_ribbon_long_new.svg') no-repeat 0 0;
+                                
+                                }
+                                .ribbon-container {
+                                    position: absolute;
+                                    font-size: 16px;
+                                    font-family: 'Nunito-Bold';
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.25;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #fff;
+                                    top: 5px;
+                                    left: 7px;
+                                    z-index: 1;
+                                }
+                                a {
+                                    text-decoration: none;
+                                }
+                                .logo-box {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    position: relative;
+                                    flex: 29;
+                                    min-height: 190px;
+                                    box-sizing: border-box;
+                                    flex-shrink: 0;
+                                    .logo {
+                                        width: 100%;
+                                        max-width: 170px;
+                                        max-height: 73px;
+                                    }
+    
+                                    .details {
+                                        position: absolute;
+                                        left: 33.5%;
+                                        bottom: 10%;
+                                        cursor: pointer;
+                                        font-size: 13px;
+                                        color: #78769e;
+                                        display: flex;
+                                        align-items: center;
+    
+                                        svg {
+                                            margin-left: 5px;
+                                            height: 7px;
+                                            opacity: .8;
+                                            width: 12px;
+                                            pointer-events: none;
+                                            transition: .3s;
+                                        }
+                                        &.rotate {
+                                            svg {
+                                                transform: rotateZ(180deg);
+                                            }
+                                           
+                                        }
+                                        &::before {
+                                            content: 'View details'
+                                        }
+                                    }
+    
+                                    &::after {
+                                        content: '';
+                                        border-left: 1px solid #e2e2e2;
+                                        position: absolute;
+                                        height: 80%;
+                                        right: 0;
+                                        top: 10%;
+                                    }
+                                }
+                                .details-box {
+                                    position: relative;
+                                    flex: 42;
+                                    flex-shrink: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 20px 0px 20px 40px;
+                                    box-sizing: border-box;
+                                    .name {
+                                        font-size: 20px;
+                                        color: #353449;
+                                        font-family: 'Nunito-Bold';
+                                        line-height: 1;
+                                        text-align: left;
+                                    }
+    
+                                    .min-debt {
+                                        border-radius: 7px;
+                                        border: 1.5px solid rgba(93,81,243,.4);
+                                        background-color: #fff;
+                                        font-size: 15px;
+                                        font-family: 'Nunito-Bold';
+                                        line-height: 1.33;
+                                        text-align: center;
+                                        padding: 2px 10px;
+                                        color: #5d51f3;
+                                        margin-top: 7px;
+                                        margin-bottom: 19px;
+                                    }
+    
+                                    .meritList-box {
+                                        width: 95%;
+                                        ul {
+                                            margin: 0 0 20px;
+                                            padding: 0;
+                                            min-width: 80%;
+                                            li {
+                                                font-size: 14px;
+                                                color: #555;
+                                                display: flex;
+                                                margin-bottom: 10px;
+                                                line-height: 1;
+                                                // font-family: 'Nunito-Light';
+                                                padding: 0;
+                                                &::before {
+                                                    content: '';
+                                                    background: url('../assets/img/checkmark-green.svg') no-repeat 50%/cover;
+                                                    display: block;
+                                                    min-width: 13px;
+                                                    min-height: 10px;
+                                                    margin-top: 1px;
+                                                    margin-right: 10px;
+                                                    position: relative;
+                                                    top: 0;
+    
+    
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &::after {
+                                        content: '';
+                                        border-left: 1px solid #e2e2e2;
+                                        position: absolute;
+                                        height: 80%;
+                                        right: 0;
+                                        top: 10%;
+                                    }
+                                    
+    
+                                }
+                                .btn-box {
+                                    flex-shrink: 0;
+                                    flex: 29;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+    
+    
+                                    .btn {
+                                        display: inline-block;
+                                        margin: 29px 0 10px;
+                                        margin-top: 0;
+                                        background-color: #38b559;
+                                        padding: 10px 20px 9px;
+                                        width: 180px;
+                                        font-size: 18px;
+                                        font-family: 'Nunito-Bold';
+                                        line-height: 1.22;
+                                        color: #fff;
+                                        box-sizing: border-box;
+                                        border-radius: 100px;
+                                        transition: all linear 0.1s;
+                                        &:hover {
+                                            
+                                            padding-right: 25px;
+                                        }
+                                    }
+                                    .visit-site {
+                                        font-size: 14px;
+                                        line-height: 1.36;
+                                        color: #127dff;
+                                        &:hover {
+                                            text-decoration-line: underline;
+                                        }
+                                    }
+                                }
+                            }
+    
+                            .full {
+                                display: flex;
+                                transition: all .5s;
+                                background-color: #f6f6f8;
+                                padding: 0;
+                                max-height: 0;
+                                box-sizing: border-box;
+                                &.show-full {
+                                    border-top: 1px solid #dbdbdb;
+                                    max-height: 1000px;
+                                    // padding: 20px;
+                                }
+
+                                .full-container {
+                                    display: flex;
+                                    padding: 20px;
+                                }
+    
+                                .left-part {
+                                    width: 40%;
+                                    box-sizing: border-box;
+                                    padding-top: 20px;
+                                    padding-right: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    .title {
+                                        font-size: 18px;
+                                        line-height: 1.25;
+                                        color: #555;
+                                        padding-bottom: 18px;
+                                        font-family: 'Nunito-Bold';
+                                    }
+    
+                                   ul {
+                                       margin-bottom: 25px;
+                                       li {
+                                            color: #555;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 1.46;
+                                            margin-bottom: 10px;
+                                            position: relative;
+                                            display: flex;
+                                            align-items: flex-start;
+
+                                            &::before {
+                                                content: "";
+                                                background: url('../assets/img/checkmark-green.svg') no-repeat 50%/cover;
+                                                display: block;
+                                                width: 5%;
+                                                min-width: 16px;
+                                                min-height: 12px;
+                                                margin-top: 7px;
+                                                margin-right: 10px;
+                                            }
+                                       }
+                                   }
+    
+                                    .read-review {
+                                        font-size: 16px;
+                                        color: #298aff;
+                                        line-height: 1.56;
+                                    }
+                                    
+                                } 
+    
+                                .right-part {
+                                    width: 60%;
+                                    box-sizing: border-box;
+                                    border-left: 1px solid #dbdbdb;
+                                    padding: 20px 20px 5px;
+                                    
+                                    font-family: 'Nunito-Light';
+                                    line-height: 1.5;
+                                    
+                                    p {
+                                        font-size: 12px;
+                                        color: #555;
+                                        margin-bottom: 15px;
+                                        color: #555;
+
+                                        small {
+                                            font-size: 80%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+            
+        }
+        
+    }
+    // .cross-banner-area {
+    //     width: 100%;
+    //     padding: 30px 0;
+    //     background-color: #eeeff3;
+
+    //     .cross-container {
+    //         display: flex;
+
+    //         padding: 24px 0;
+    //         width: 1200px;
+    //         margin: 0 auto;
+
+    //         .white-block {
+    //             flex: 3;
+    //         }
+    //         .cross-box {
+    //             flex: 9;
+    //             padding-left: 30px;
+    //             box-sizing: border-box;
+    //             .title {
+    //                 font-size: 24px;
+    //                 color: #333;
+    //                 font-family: 'Nunito-Bold';
+    //             }
+
+    //             .date {
+
+    //                 font-size: 18px;
+    //                 font-family: 'Nunito-Bold';
+    //                 color: #5a4fef;
+    //                 line-height: 1.39;
+    //                 margin-top: 20px;
+    //                 margin-bottom: 10px;
+    //             }
+
+    //             .card {
+    //                 .card-container {
+    //                     border-radius: 8px;
+    //                     box-shadow: 0 0 4px 0 rgba(151, 169 ,197, .55);
+    //                     transition: border .5s ease 0s, box-shadow .2s ease 0s, transform .2s ease 0s;
+    //                     background-color: #fff;
+    //                     margin-bottom: 9px;
+    //                     overflow: hidden;
+    //                     &:hover {
+    //                         box-shadow: 0 0 46px 0 rgba(151,169,197,.55);
+    //                         transform: translateY(-2px);
+    //                     }
+    //                     .card-content {
+    //                         display: flex;
+    //                         min-height: 190px;
+    //                         box-sizing: border-box;
+    //                         align-items: center;
+    //                         a {
+    //                             text-decoration: none;
+    //                         }
+    //                         .logo-box {
+    //                             display: flex;
+    //                             flex-direction: column;
+    //                             align-items: center;
+    //                             justify-content: center;
+    //                             text-align: center;
+    //                             position: relative;
+    //                             flex: 29;
+    //                             min-height: 190px;
+    //                             box-sizing: border-box;
+    //                             flex-shrink: 0;
+    //                             .logo {
+    //                                 width: 100%;
+    //                                 max-width: 170px;
+    //                                 max-height: 73px;
+    //                             }
+
+    //                             .details {
+    //                                 position: absolute;
+    //                                 left: 33.5%;
+    //                                 bottom: 10%;
+    //                                 cursor: pointer;
+    //                                 font-size: 13px;
+    //                                 color: #78769e;
+    //                                 display: flex;
+    //                                 align-items: center;
+
+    //                                 svg {
+    //                                     margin-left: 5px;
+    //                                     height: 7px;
+    //                                     opacity: .8;
+    //                                     width: 12px;
+    //                                     pointer-events: none;
+    //                                     transition: .3s;
+    //                                 }
+    //                                 &.rotate {
+    //                                     svg {
+    //                                         transform: rotateZ(180deg);
+    //                                     }
+                                       
+    //                                 }
+    //                                 &::before {
+    //                                     content: 'View details'
+    //                                 }
+    //                             }
+
+    //                             &::after {
+    //                                 content: '';
+    //                                 border-left: 1px solid #e2e2e2;
+    //                                 position: absolute;
+    //                                 height: 80%;
+    //                                 right: 0;
+    //                                 top: 10%;
+    //                             }
+    //                         }
+    //                         .details-box {
+    //                             position: relative;
+    //                             flex: 42;
+    //                             flex-shrink: 0;
+    //                             display: flex;
+    //                             flex-direction: column;
+    //                             align-items: flex-start;
+    //                             padding: 20px 0px 20px 40px;
+    //                             box-sizing: border-box;
+    //                             .name {
+    //                                 font-size: 20px;
+    //                                 color: #353449;
+    //                                 font-family: 'Nunito-Bold';
+    //                                 line-height: 1;
+    //                                 text-align: left;
+    //                             }
+
+    //                             .min-debt {
+    //                                 border-radius: 7px;
+    //                                 border: 1.5px solid rgba(93,81,243,.4);
+    //                                 background-color: #fff;
+    //                                 font-size: 15px;
+    //                                 font-family: 'Nunito-Bold';
+    //                                 line-height: 1.33;
+    //                                 text-align: center;
+    //                                 padding: 2px 10px;
+    //                                 color: #5d51f3;
+    //                                 margin-top: 7px;
+    //                                 margin-bottom: 19px;
+    //                             }
+
+    //                             .meritList-box {
+    //                                 width: 95%;
+    //                                 ul {
+    //                                     margin: 0 0 20px;
+    //                                     padding: 0;
+    //                                     min-width: 80%;
+    //                                     li {
+    //                                         font-size: 14px;
+    //                                         color: #555;
+    //                                         display: flex;
+    //                                         margin-bottom: 10px;
+    //                                         line-height: 1;
+    //                                         // font-family: 'Nunito-Light';
+    //                                         padding: 0;
+    //                                         &::before {
+    //                                             content: '';
+    //                                             background: url('../assets/img/checkmark-green.svg') no-repeat 50%/cover;
+    //                                             display: block;
+    //                                             min-width: 13px;
+    //                                             min-height: 10px;
+    //                                             margin-top: 1px;
+    //                                             margin-right: 10px;
+    //                                             position: relative;
+    //                                             top: 0;
+
+
+    //                                         }
+    //                                     }
+    //                                 }
+    //                             }
+
+    //                             &::after {
+    //                                 content: '';
+    //                                 border-left: 1px solid #e2e2e2;
+    //                                 position: absolute;
+    //                                 height: 80%;
+    //                                 right: 0;
+    //                                 top: 10%;
+    //                             }
+                                
+
+    //                         }
+    //                         .btn-box {
+    //                             flex-shrink: 0;
+    //                             flex: 29;
+    //                             display: flex;
+    //                             flex-direction: column;
+    //                             align-items: center;
+    //                             justify-content: center;
+    //                             text-align: center;
+
+
+    //                             .btn {
+    //                                 display: inline-block;
+    //                                 margin: 29px 0 10px;
+    //                                 margin-top: 0;
+    //                                 background-color: #38b559;
+    //                                 padding: 10px 20px 9px;
+    //                                 width: 180px;
+    //                                 font-size: 18px;
+    //                                 font-family: 'Nunito-Bold';
+    //                                 line-height: 1.22;
+    //                                 color: #fff;
+    //                                 box-sizing: border-box;
+    //                                 border-radius: 100px;
+    //                             }
+    //                             .visit-site {
+    //                                 font-size: 14px;
+    //                                 line-height: 1.36;
+    //                                 color: #127dff;
+    //                                 &:hover {
+    //                                     text-decoration-line: underline;
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+
+    //                     .full {
+    //                         display: flex;
+    //                         transition: all .5s;
+    //                         background-color: #f6f6f8;
+    //                         padding: 0;
+    //                         max-height: 0;
+    //                         box-sizing: border-box;
+    //                         &.show-full {
+    //                             border-top: 1px solid #dbdbdb;
+    //                             max-height: 1000px;
+                                
+    //                         }
+
+    //                         .full-container {
+    //                             display: flex;
+    //                             padding: 20px;
+    //                         }
+
+    //                         .left-part {
+    //                             width: 40%;
+    //                             box-sizing: border-box;
+    //                             padding-top: 20px;
+    //                             padding-right: 20px;
+    //                             display: flex;
+    //                             flex-direction: column;
+
+                               
+                                    
+                                    
+
+    //                             .title {
+    //                                 font-size: 18px;
+    //                                 line-height: 1.25;
+    //                                 color: #555;
+    //                                 padding-bottom: 18px;
+    //                                 font-family: 'Nunito-Bold';
+    //                             }
+
+    //                             .debt-list {
+    //                                 color: #555;
+    //                                 font-size: 16px;
+    //                                 font-family: 'Nunito-Light';
+    //                                 line-height: 1.4;
+    //                                 margin-bottom: 18px;
+
+    //                                 p {
+    //                                     padding-bottom: 18px;
+    //                                 }
+    //                             }
+
+    //                             .read-review {
+    //                                 font-size: 16px;
+    //                                 color: #298aff;
+    //                                 line-height: 1.56;
+    //                             }
+                                
+    //                         } 
+
+    //                         .right-part {
+    //                             width: 60%;
+    //                             box-sizing: border-box;
+    //                             border-left: 1px solid #dbdbdb;
+    //                             padding: 20px 20px 5px;
+    //                             font-size: 12px;
+    //                             font-family: 'Nunito-Light';
+    //                             line-height: 1.5;
+    //                             color: #555;
+
+    //                             p {
+    //                                 font-size: 18px;
+    //                                 margin-bottom: 15px;
+    //                                 color: #555;
+
+    //                                 &.title {
+    //                                     font-size: 18px;
+    //                                     line-height: 1.25;
+    //                                     color: #555;
+    //                                     font-family: 'Nunito-Bold';
+    //                                 }
+    //                             }
+    //                             ul {
+    //                                 padding-left: 36px;
+    //                                 margin-bottom: 10px;
+
+    //                                 li {
+    //                                     list-style: disc;
+    //                                     color: #555;
+    //                                     font-size: 16px;
+    //                                     font-family: 'Nunito-Light';
+    //                                     line-height: 1.46;
+    //                                     margin-bottom: 4px;
+    //                                 }
+    //                             }
+    //                         }
+    //                     }
+
+                        
+    //                 }
+    //             }
+    //         }
+            
+    //     }
+    // }
+
+    .text-block {
+        padding: 30px 0;
+        .text-block-container {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            box-sizing: border-box;
+            .aside-container {
+                flex: 3;
+
+                .aside-item {
+                    width: 100%;
+                    border-radius: 5px;
+                    background-color: #f0f0f2;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    margin-bottom: 40px;
+                    .title {
+                        font-size: 24px;
+                        font-family: 'Nunito-Bold';
+                        margin-top: 10px;
+                        padding-bottom: 15px;
+                        color: #333;
+                        text-align: center;
+                    }
+
+                    .single_faq {
+                        overflow: hidden;
+                        
+                        .faq-title {
+                            display: flex;
+                            align-items: center;
+                            font-size: 16px;
+                            font-family: 'Nunito-Bold';
+                            padding: 15px 0 10px;
+                            border-top: 1px solid #d8dade;
+                            color: #333;
+                            line-height: 1.56;
+                            cursor: pointer;
+                            .icon {
+                                display: inline-block;
+                                width: 14px;
+                                height: 14px;
+                                margin-right: 10px;
+                                background: url('../assets/img/plus.svg') no-repeat 50%;
+                            }
+                        }
+
+                        .faq-text {
+                            max-height: 0;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 1.5;
+                            text-align: left;
+                            box-sizing: border-box;
+                            color: #888;
+                            transition: all linear .5s;
+                        }
+
+                        &.single_faq_show {
+                            .faq-text {
+                                max-height: 1000px;
+                                padding-bottom: 20px;
+                            }
+                        }
+                        
+                        
+                    }
+                }
+
+                .article-box {
+                    .article-item {
+                        padding-bottom: 15px;
+                        
+                        a {
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration-line: underline;
+                            }
+                        }
+
+                        .article-title {
+                            display: block;
+                            border-top: 1px solid #d8dade;
+                            padding: 10px 0 5px;
+                            font-size: 16px;
+                            font-family: 'Nunito-Bold';
+                            color: #333;
+                            line-height: 1.56;
+                            
+                        }
+
+                        .article-text {
+                            font-size: 16px;
+                            font-family: 'Nunito-Light';
+                            color: #555;
+                            line-height: 1.5;
+                        }
+                        .read-review {
+                            font-size: 13px;
+                            color: #127dff;
+                            font-family: 'Nunito-Light';
+                            line-height: 1.92;
+                            
+                        }
+                    }
+                }
+            }
+            .text-content {
+                flex: 9;
+                padding-left: 30px;
+
+                h2 {
+                    font-size: 28px;
+                    font-family: 'Nunito-Bold';
+                    color: #333;
+                    margin: 0 auto 15px;
+                    line-height: 1;
+                    padding: 15px 0 0;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-family: 'Nunito-Bold';
+                    color: #333;
+                    margin: 10px auto;
+                    line-height: 1;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: 'Nunito-Light';
+                    color: #555;
+                    margin-bottom: 18px;
+                }
+                b {
+                    font-family: 'Nunito-Bold';
+                }
+                a {
+                    text-decoration: none;
+                    color: #5a4fef;
+
+                    &:hover {
+                        color: #555;
+                    }
+                }
+                strong {
+                    font-family: 'Nunito-Bold';
+                }
+                table {
+                    width: 100%;
+                    margin: 24px auto 0;
+                    padding: 10px;
+                    font-size: 16px;
+                    margin-bottom: 18px;
+                    tbody {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid hsla(0, 0%, 80%, .49);
+                        
+                        tr {
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            &:nth-of-type(odd) {
+                                background-color: #edeef2;
+                            }
+                            td {
+                                flex: 1;
+                                display: inline-block;
+                                
+                                padding: 15px;
+                                box-sizing: border-box;
+                                font-size: 16px;
+                                box-sizing: border-box;
+                                font-family: 'Nunito-Light';
+                                color: #333;
+                                text-align: left;
+                                border: none;
+                                word-break: break-word;
+                                &:nth-of-type(odd) {
+                                    border-right: 1px solid #fff;
+                                }
+                            }
+                        }
+                    
+                    }
+                }
+                ul {
+                    padding: 0 0 0 20px;
+                    margin: 20px 0;
+                    li {
+                        position: relative;
+                        font-size: 18px;
+                        font-family: 'Nunito-Light';
+                        line-height: 28px;
+                        padding: 10px 0 0 30px;
+                        color: #555;
+
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            width: 16px;
+                            height: 12px;
+                            position: absolute;
+                            top: 17px;
+                            left: 0;
+                            background: url('../assets/img/checkmark-blue.svg') 50% no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        .scroll-box {
+            
+
+            .ticker-container {
+               display: flex;
+               width: 1200px;
+                margin: 0 auto;  
+                border-top: 1px dotted #e5e7e9;
+                overflow: hidden;
+
+                @keyframes a {
+                    0% {
+                        transform: translateX(0%);
+                    }
+                    100% {
+                        transform: translateX(-100%);
+                    }
+                    
+                }
+                .ticker {
+                    display: flex;
+                    justify-content: space-between;
+                    animation: a 40s infinite linear;
+
+                    .single-brand {
+                        min-width: 220px;
+                        margin: 0;
+
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 20px 0;
+                            width: 100%;
+                            height: 100%;
+
+                            img {
+                                max-height: 48px;
+                                max-width: 145px;
+                            }
+                            
+                            
+                        }
+                    }
+                }
+            }
+      }
+    }
+}

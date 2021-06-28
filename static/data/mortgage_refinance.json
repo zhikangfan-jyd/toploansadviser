@@ -1,13 +1,61 @@
 {
     "data": [
         {
+            "name": "Credible",
+            "review_key": "",
+            "link": "https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content=",
+            "logo": "/data/images/credible.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "slogan": "1 Application, Several Offers",
+            "meritList": [
+                {
+                    "text": "Compare rates in minutes"
+                },
+                {
+                    "text": "Easy process, 100% online"
+                },
+                {
+                    "text": "Secured website with data encryption"
+                }
+            ],
+            "key_facts": {
+                "mortgage_types": "jumbo, conventional, refinance",
+                "credit_score": "620",
+                "apr": "set by lender",
+                "NMLS": "1681276"
+            },
+            "pros": [
+                {
+                    "text": "No fees to use Credible’s services"
+                },
+                {
+                    "text": "Find out your actual rate without a hard credit check"
+                },
+                {
+                    "text": "E-verification for many financial documents"
+                }
+            ],
+            "cons": [
+                {
+                    "text": "Credible doesn’t operate in several large states"
+                },
+                {
+                    "text": "No face-to-face customer support"
+                }
+            ]
+            
+        },
+        {
             "name": "LoanDepot",
             "review_key": "",
             "link": "https://www.loandepot.com/",
             "logo": "/data/images/loandepot.png",
             "rate": {
                 "max": 10,
-                "score": "9.8"
+                "score": "9.6"
             },
             "slogan": "No Login/Registration Required",
             "meritList": [
@@ -58,7 +106,7 @@
             "logo": "/data/images/rocket_mortgage.png",
             "rate": {
                 "max": 10,
-                "score": "9.6"
+                "score": "9.5"
             },
             "slogan": "Discover custom home loan option",
             "meritList": [
@@ -107,7 +155,7 @@
             "logo": "/data/images/caliber.png",
             "rate": {
                 "max": 10,
-                "score": "9.5"
+                "score": "9.3"
             },
             "slogan": "Simple Solution for Every Step",
             "meritList": [
@@ -148,54 +196,7 @@
             ]
             
         },
-        {
-            "name": "Credible",
-            "review_key": "",
-            "link": "https://www.credible.com/",
-            "logo": "/data/images/credible.png",
-            "rate": {
-                "max": 10,
-                "score": "9.3"
-            },
-            "slogan": "1 Application, Several Offers",
-            "meritList": [
-                {
-                    "text": "Compare rates in minutes"
-                },
-                {
-                    "text": "Easy process, 100% online"
-                },
-                {
-                    "text": "Secured website with data encryption"
-                }
-            ],
-            "key_facts": {
-                "mortgage_types": "jumbo, conventional, refinance",
-                "credit_score": "620",
-                "apr": "set by lender",
-                "NMLS": "1681276"
-            },
-            "pros": [
-                {
-                    "text": "No fees to use Credible’s services"
-                },
-                {
-                    "text": "Find out your actual rate without a hard credit check"
-                },
-                {
-                    "text": "E-verification for many financial documents"
-                }
-            ],
-            "cons": [
-                {
-                    "text": "Credible doesn’t operate in several large states"
-                },
-                {
-                    "text": "No face-to-face customer support"
-                }
-            ]
-            
-        },
+        
         
         {
             "name": "Sterns loan",

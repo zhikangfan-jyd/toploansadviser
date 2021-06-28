@@ -4,10 +4,11 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">Best Mortgage Lenders 2021</h1>
-          <p class="sub-title">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
+          
           <div class="content">
               <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best refinance rates for you.</p>
           </div>
+          <p class="sub-title update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
         <img src="@/assets/img/mortgage-banner.png" alt="Toploansadviser" class="banner-img">
 
@@ -86,11 +87,11 @@
             <div class="product-list" v-if="!loading">
               <div class="product-item" v-for="(item,index) in products" :key="item.name">
                 <div class="corner-box" v-if="index == 0">
-                  <span class="text">LOW RATES</span>
+                  <span class="text">{{cornerText}}</span>
                 </div>
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
-                  <span class="text">285 users chose this site today</span>
+                  <span class="text"><strong>{{choseNum}} users</strong> chose this site today</span>
                 </div>
                 
                 <div class="product-item-container">
@@ -101,7 +102,7 @@
                     <div class="rate-box">
                       <div class="rate">
                         <span class="score">{{item.rate.score}}</span>
-                        <!-- <div class="trustpilot-box" v-if="index == 0">
+                        <div class="trustpilot-box" v-if="index == 0">
                           <div class="text-box">
                             <span class="iconfont">&#xe64c;</span>
                             <span class="text">Trustpilot</span>
@@ -123,8 +124,8 @@
                               <span class="iconfont">&#xe64c;</span>
                             </li>
                           </ul>
-                        </div> -->
-                        <div class="star-box">
+                        </div>
+                        <div class="star-box" v-else>
                           <el-rate
                           disabled
                           :value="computeScore(item.rate.score)"
@@ -132,7 +133,7 @@
                           ></el-rate>
                         </div>
                         <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                        <span class="score-text"><strong>LoanAdviser</strong> score</span>
+                        <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                       </div>
                     </div>
                   </div>
@@ -152,11 +153,11 @@
                         </dd>
                       </dl>
                       <div class="details-box" @click="handleShow(index)">
-                          <span class="text">view detail</span>
+                          <span class="text">View detail</span>
                           <span class="iconfont">&#xe600;</span>
                       </div>
                       <div class="phone-details-box" @click="handlePhoneShow(index)">
-                          <span class="text">view detail</span>
+                          <span class="text">View detail</span>
                           <span class="iconfont">&#xe600;</span>
                       </div>
                     </div>
@@ -188,13 +189,13 @@
                     <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})" class="btn">
 
                       <span class="text">View Rates</span>
-                      <span class="iconfont">&#xeb1b;</span>
+                      <span class="iconfont">&#xe63c;</span>
                     </a>
-                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                        <span class="text">Visit Quicken Loans</span>
+                    <!-- <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
+                        <span class="text">Visit {{item.name}}</span>
                         <span class="iconfont">&#xe63c;</span>
 
-                    </a>
+                    </a> -->
                   </div>
                 </div>
                 <div class="product-content-container">
@@ -323,7 +324,7 @@
                             ></el-rate>
                           </div>
                           <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                          <span class="score-text"><strong>LoanAdviser</strong> score</span>
+                          <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                         </div>
                       </div>
                     </div>
@@ -343,11 +344,11 @@
                           </dd>
                         </dl>
                         <div class="details-box purchase-details" @click="handlePickShow('purchase')">
-                            <span class="text">view detail</span>
+                            <span class="text">View detail</span>
                             <span class="iconfont">&#xe600;</span>
                         </div>
                         <div class="phone-details-box purchase-phone-details" @click="handlePhonePickShow('purchase')">
-                          <span class="text">view detail</span>
+                          <span class="text">View detail</span>
                           <span class="iconfont">&#xe600;</span>
                         </div>
                       </div>
@@ -379,13 +380,13 @@
                       <a :href="purchase_product.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: purchase_product.name,click_time: new Date().getTime(),link: purchase_product.link})" class="btn">
 
                         <span class="text">View Rates</span>
-                        <span class="iconfont">&#xeb1b;</span>
+                        <span class="iconfont">&#xe63c;</span>
                       </a>
-                      <a :href="purchase_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                          <span class="text">Visit Quicken Loans</span>
+                      <!-- <a :href="purchase_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
+                          <span class="text">Visit {{purchase_product.name}}</span>
                           <span class="iconfont">&#xe63c;</span>
 
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                   <div class="product-content-container purchase-container">
@@ -452,7 +453,7 @@
             <h2 class="area-title">Our Pick For Refinance</h2>
             <div class="product-item">
                   <div class="corner-box suitable">
-                    <span class="text">SUITABLE</span>
+                    <span class="text">Multiple Lenders</span>
                   </div>
                   <div class="product-item-container">
                     <div class="img-score-box">
@@ -493,7 +494,7 @@
                             ></el-rate>
                           </div>
                           <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                          <span class="score-text"><strong>LoanAdviser</strong> score</span>
+                          <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                         </div>
                       </div>
                     </div>
@@ -513,11 +514,11 @@
                           </dd>
                         </dl>
                         <div class="details-box refinance-details" @click="handlePickShow('refinance')">
-                            <span class="text">view detail</span>
+                            <span class="text">View detail</span>
                             <span class="iconfont">&#xe600;</span>
                         </div>
                         <div class="phone-details-box refinance-phone-details" @click="handlePhonePickShow('refinance')">
-                          <span class="text">view detail</span>
+                          <span class="text">View detail</span>
                           <span class="iconfont">&#xe600;</span>
                         </div>
                       </div>
@@ -549,13 +550,13 @@
                       <a :href="refinance_product.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: refinance_product.name,click_time: new Date().getTime(),link: refinance_product.link})" class="btn">
 
                         <span class="text">View Rates</span>
-                        <span class="iconfont">&#xeb1b;</span>
+                        <span class="iconfont">&#xe63c;</span>
                       </a>
-                      <a :href="refinance_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                          <span class="text">Visit Quicken Loans</span>
+                      <!-- <a :href="refinance_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
+                          <span class="text">Visit {{refinance_product.name}}</span>
                           <span class="iconfont">&#xe63c;</span>
 
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                   <div class="product-content-container refinance-container">
@@ -629,7 +630,7 @@
               <span>About Mortgage Loans</span>
             </h2>
             <div class="content">
-              <p>Before taking a student loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about student loans below.</p>
+              <p>Before taking a mortgage loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about mortgage loans below.</p>
             </div>
           </div>
         </div>
@@ -899,6 +900,8 @@ export default {
   // },
   data() {
     return {
+      cornerText: 'Low Rates',
+      choseNum: 285,
       loading: false,
       filterName: '',
       count: 0,
@@ -963,7 +966,7 @@ export default {
             "logo": "/data/images/loandepot.png",
             "rate": {
                 "max": 10,
-                "score": "9.8"
+                "score": "9.6"
             },
             "slogan": "No Login/Registration Required",
             "meritList": [
@@ -1017,9 +1020,10 @@ export default {
       this.filterName = name;
       // 拼接 msclkid 参数
       const changeLink = (url) => {
-        let msclkid = this.$route.query['msclkid'];
+        // let msclkid = this.$route.query['msclkid'];
 
-        return `${url}&msclkid=${msclkid}`
+        // return `${url}&msclkid=${msclkid}`
+        return url;
       }
 
       let path = '/data/mortgage_' + name + '.json'
@@ -1037,6 +1041,13 @@ export default {
       this.page = 1;
       this.products = [];
       this.isNull = true;
+      if (name == 'purchase') {
+        this.cornerText = 'Low Rates';
+        this.choseNum = 285;
+      } else if (name == 'refinance') {
+        this.cornerText = 'Multiple Lenders';
+        this.choseNum = 368;
+      }
       this.loadMore();
 
     },
