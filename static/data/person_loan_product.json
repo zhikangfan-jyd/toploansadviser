@@ -23,7 +23,7 @@
                     "min": "2.49",
                     "max": "35.99"
                 },
-                "term": "24-84 months"
+                "term": "12-84 months"
             },
             "disclaimer": ""
         },
@@ -43,7 +43,7 @@
                 "score": "9.8"
             },
             "compare": {
-                "credit_score": "600",
+                "credit_score": "500",
                 "credit_text": "",
                 "apr": {
                     "min": "5.99",

@@ -6,7 +6,7 @@
           <h1 class="website-title"><span>Best Personal</span> <span>Loan 2021</span></h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
-            <p>To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
+            <div>To <h2 style="display: inline; font-weight: normal;">find the best personal loan for your financial situation</h2>, it's best to shop around and <h2 style="display: inline; font-weight: normal;">compare personal loan rates from multiple lenders</h2>.</div>
           </div>
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
           <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
@@ -48,10 +48,10 @@
                     </span>
                     <ul class="filter-list-box filter-credit-score-list">
                       <li v-if="filter_credit_score_text != 'Show all'" @click="changeCreditScore({ min: 0, max: Infinity, text: 'Show all' })"><span>Show all</span></li>
-                      <li v-if="filter_credit_score_text != '<640'" @click="changeCreditScore({ min: 0, max: 640, text: '<640' })"><span>&lt;640</span></li>
-                      <li v-if="filter_credit_score_text != '640-690'" @click="changeCreditScore({ min: 640, max: 699, text: '640-690' })"><span>640-699</span></li>
-                      <li v-if="filter_credit_score_text != '700-749'" @click="changeCreditScore({ min: 700, max: 749, text: '700-749' })"><span>700-749</span></li>
-                      <li v-if="filter_credit_score_text != '>749'" @click="changeCreditScore({ min: 749, max: Infinity, text: '>749' })"><span>&gt;749</span></li>
+                      <li v-if="filter_credit_score_text != '<640'" @click="changeCreditScore({ min: 300, max: 480, text: '300-480' })"><span>300-480</span></li>
+                      <li v-if="filter_credit_score_text != '640-690'" @click="changeCreditScore({ min: 481, max: 600, text: '481-600' })"><span>481-600</span></li>
+                      <li v-if="filter_credit_score_text != '700-749'" @click="changeCreditScore({ min: 601, max: 720, text: '601-720' })"><span>601-749</span></li>
+                      <li v-if="filter_credit_score_text != '>749'" @click="changeCreditScore({ min: 721, max: 850, text: '721-850' })"><span>721-850</span></li>
                     </ul>
                   </div>
                 </div>
@@ -83,8 +83,8 @@
                   </el-popover>
                 </span>
               </div>
-              <div class="title features"><span class="text">Loan Features</span></div>
-              <div class="title terms"><span class="text">Loan Amount</span></div>
+              <h5 class="title features"><span class="text">Loan Features</span></h5>
+              <h5 class="title terms"><span class="text">Loan Amount</span></h5>
               
             </div>
             <div class="product-list" v-if="products.length != 0">
@@ -159,11 +159,11 @@
                       <dl class="features-list">
                         <dt>
                           <span class="pc-text">{{item.introduce}}</span>
-                          <span class="phone-text">Loan Features</span>
+                          <h5 class="phone-text">Loan Features</h5>
                         </dt>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Min. Credit Score: {{item.compare.credit_score}} 
+                          <h3 class="text" style="display: inline; font-weight: normal;">Min. Credit Score: {{item.compare.credit_score}} 
                             <el-popover
                               placement="bottom"
                               width="280"
@@ -176,7 +176,7 @@
                                 
                               </div>
                             </el-popover>
-                          </p>
+                          </h3>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
@@ -189,7 +189,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <p class="title">Loan Amount</p>
+                      <h5 class="title">Loan Amount</h5>
                       <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
@@ -197,7 +197,7 @@
                   </div>
                   <div class="btn-box">
                     <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})" class="btn">
-                      <span class="text">Check My Rate</span>
+                      <h3 class="text" style="display: inline; font-weight: normal;">Check My Rate</h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     
@@ -276,11 +276,11 @@
                       <dl class="features-list">
                         <dt>
                           <span class="pc-text">{{item.introduce}}</span>
-                          <span class="phone-text">Loan Features</span>
+                          <h5 class="phone-text">Loan Features</h5>
                         </dt>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Min. Credit Score: {{item.compare.credit_score}}
+                          <h3 class="text" style="display: inline; font-weight: normal;">Min. Credit Score: {{item.compare.credit_score}}
 
                             <el-popover
                               placement="bottom"
@@ -294,7 +294,7 @@
                                 
                               </div>
                             </el-popover>
-                          </p>
+                          </h3>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
@@ -307,7 +307,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <p class="title">Loan Amount</p>
+                      <h5 class="title">Loan Amount</h5>
                       <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
                       <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
                     </div>
@@ -315,7 +315,7 @@
                   </div>
                   <div class="btn-box">
                     <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})" class="btn">
-                      <span class="text">Check My Rate</span>
+                      <h3 class="text" style="display: inline; font-weight: normal;">Check My Rate</h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                   </div>
@@ -328,10 +328,10 @@
         <div class="faq-area-title-box">
           <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
           <div class="faq-content">
-            <h2 class="faq-title">
+            <h4 class="faq-title">
               <span>FAQ's</span>
               <span>About Personal Loans</span>
-            </h2>
+            </h4>
             <div class="content">
               <p>It's essential for you to comprehend all associated terms and conditions before taking a personal loan. The following frequently asked questions regarding personal loans have been outlined for your convenience below.</p>
             </div>
@@ -341,7 +341,7 @@
         <div class="footer-card-list">
           <div class="footer-card-item">
             <div class="footer-card-top-box" @click="handleOpen(0)">
-              <h6 class="title">Why you should trust us?</h6>
+              <h4 class="title">Why you should trust us?</h4>
               <span class="icon"></span>
             </div>
             <div class="footer-card-content">

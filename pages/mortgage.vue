@@ -6,7 +6,7 @@
           <h1 class="website-title">Best Mortgage Lenders 2021</h1>
           
           <div class="content">
-              <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best refinance rates for you.</p>
+              <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best purchase and refinance rates for you.</p>
           </div>
           <p class="sub-title update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
