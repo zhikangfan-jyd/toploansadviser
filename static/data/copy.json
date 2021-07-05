@@ -17,7 +17,7 @@
                 "score": "9.9"
             },
             "compare": {
-                "credit_score": "600",
+                "credit_score": "550",
                 "credit_text": "",
                 "apr": {
                     "min": "2.49",
@@ -57,7 +57,7 @@
                 "score": "9.8"
             },
             "compare": {
-                "credit_score": "500",
+                "credit_score": "600",
                 "credit_text": "",
                 "apr": {
                     "min": "5.99",
@@ -97,7 +97,7 @@
                 "score": "9.6"
             },
             "compare": {
-                "credit_score": "480",
+                "credit_score": "600",
                 "credit_text": "",
                 "apr": {
                     "min": "8.05",

@@ -510,7 +510,6 @@ export default {
             } else if (this.credit_score == 5) {
                 credit_score_obj = { min: -Infinity, max: Infinity }
             }
-            console.log(this.loan_amount);
             let filterData = this.allData.filter(item => {
                 return (this.loan_amount <= item.amount.max) && (item.compare.credit_score >= credit_score_obj.min && item.compare.credit_score <= credit_score_obj.max);
             })

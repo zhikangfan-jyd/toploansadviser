@@ -99,7 +99,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                        <img v-lazy="item.logo" alt="">
+                        <img v-lazy="item.logo" :alt="item.name">
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                       Disclaimer 
                       <el-popover
@@ -153,7 +153,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="phone-slogan">{{item.introduce}}</p>
+                  <!-- <p class="phone-slogan">{{item.introduce}}</p> -->
                   <div class="features-terms-box">
                     <div class="list-box">
                       <dl class="features-list">
@@ -190,8 +190,8 @@
                     </div>
                     <div class="terms-box">
                       <h5 class="title">Loan Amount</h5>
-                      <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
-                      <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
+                      <span class="text-box" v-if="item.amount.max !== 'Infinity'"><span>${{formatNum(String(item.amount.min))}}-</span><span>${{formatNum(String(item.amount.max))}}</span></span>
+                      <span class="text-box" v-else><span>up to</span> <span>${{formatNum(String(item.amount.min))}}</span></span>
                     </div>
 
                   </div>
@@ -239,7 +239,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" alt="">
+                      <img v-lazy="item.logo" :alt="item.name">
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                       Disclaimer 
                       <el-popover
@@ -270,7 +270,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="phone-slogan">{{item.introduce}}</p>
+                  <!-- <p class="phone-slogan">{{item.introduce}}</p> -->
                   <div class="features-terms-box">
                     <div class="list-box">
                       <dl class="features-list">
@@ -308,8 +308,8 @@
                     </div>
                     <div class="terms-box">
                       <h5 class="title">Loan Amount</h5>
-                      <span v-if="item.amount.max !== 'Infinity'">${{formatNum(String(item.amount.min))}}-${{formatNum(String(item.amount.max))}}</span>
-                      <span v-else>up to ${{formatNum(String(item.amount.min))}}</span>
+                      <span v-if="item.amount.max !== 'Infinity'" class="text-box"><span>${{formatNum(String(item.amount.min))}}-</span><span>${{formatNum(String(item.amount.max))}}</span></span>
+                      <span class="text-box" v-else><span>up to</span> <span>${{formatNum(String(item.amount.min))}}</span></span>
                     </div>
 
                   </div>
@@ -347,9 +347,9 @@
             <div class="footer-card-content">
               <p>Finding the best products and services means setting a high standard. Our diverse team is serious about research. Once our editors select a topic, the team tests (if possible) and evaluates products and services related to those topics. While our comparison lists are the nucleus of toploansadviser.com, we also feature product reviews, feature comparisons, guides, articles, and tutorials. We also have a scoring system for products and services based on data compiled from various factors.</p>
               <div class="img-box">
-                <img src="@/assets/img/q1.png" alt=""
-                ><img src="@/assets/img/q2.png" alt="">
-                <img src="@/assets/img/q3.png" alt="">
+                <img src="@/assets/img/q1.png" alt="toploansadviser"
+                ><img src="@/assets/img/q2.png" alt="toploansadviser">
+                <img src="@/assets/img/q3.png" alt="toploansadviser">
               </div>
             </div>
           </div>

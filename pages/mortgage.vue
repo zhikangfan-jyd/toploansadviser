@@ -97,7 +97,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" alt="">
+                      <img v-lazy="item.logo" :alt="item.name">
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -259,7 +259,7 @@
               </div>
             </div>
              <div class="loading-box" v-else style="display: flex; justify-content: center; align-items: center;">
-                <img src="~/assets/img/img-loading.gif" alt="" style="height: 200px;">
+                <img src="~/assets/img/img-loading.gif" alt="toploansadviser" style="height: 200px;">
               </div>
           </div>
           
@@ -288,7 +288,7 @@
                   <div class="product-item-container">
                     <div class="img-score-box">
                       <div class="img-box">
-                        <img v-lazy="purchase_product.logo" alt="">
+                        <img v-lazy="purchase_product.logo" :alt="purchase_product.name">
                       </div>
                       <div class="rate-box">
                         <div class="rate">
@@ -458,7 +458,7 @@
                   <div class="product-item-container">
                     <div class="img-score-box">
                       <div class="img-box">
-                        <img v-lazy="refinance_product.logo" alt="">
+                        <img v-lazy="refinance_product.logo" :alt="refinance_product.name">
                       </div>
                       <div class="rate-box">
                         <div class="rate">

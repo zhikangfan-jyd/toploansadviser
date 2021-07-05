@@ -10,7 +10,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'We chose The Best Rated Personal Loans and Mortgage Loans for your needs' },
+      { hid: 'description', name: 'description', content: 'We reviewed the Best Rated Personal Loans and Mortgage Loans, you can compare them and choose the best one for you. Get started with Toploansadviser.' },
       { hid: 'keyword', name: 'keyword', content: 'personal loans, mortgage loans, loan reviews' }
     ],
     link: [
@@ -105,10 +105,10 @@ export default {
     }
   },
   axios: {
-    baseURL: 'http://127.0.0.1:8090'
+    baseURL: 'http://127.0.0.1:3100'
   },
   server: {
-    port: '8090',
+    port: '3100',
     host: '127.0.0.1'
   }
 }

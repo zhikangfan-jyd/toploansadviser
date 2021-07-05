@@ -62,7 +62,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" alt="">
+                      <img v-lazy="item.logo" :alt="item.name">
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -125,7 +125,7 @@
                     </div>
                     <div class="terms-box">
                       <span class="title">Loan Terms</span>
-                      <span>{{item.loan_term.min_term}} - {{item.loan_term.max_term}} years</span>
+                      <span class="text-box">{{item.loan_term.min_term}} - {{item.loan_term.max_term}} years</span>
                     </div>
 
                   </div>

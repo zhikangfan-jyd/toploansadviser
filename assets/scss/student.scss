@@ -693,13 +693,16 @@
                             .product-item {
                                 height: auto;
                                 margin-bottom: 15px;
-                                padding: 30px;
+                                padding: 20px;
                                 border: 1px solid #00164b1a;
                                 box-sizing: border-box;
                                 border-radius: 18px;
                                 box-shadow: 0px 3px 6px rgba(0,0,0,.16);
                                 &:nth-last-of-type(1) {
                                     border: 1px solid #00164b1a;
+                                }
+                                &:nth-of-type(1) {
+                                    padding: 30px 20px;
                                 }
                                 .visited-box {
                                     display: none;
@@ -764,6 +767,9 @@
                                                 margin-bottom: 5px;
                                                 color: #001139ab;;
                                             }
+                                            // .text-box {
+                                            //     text-align: right;
+                                            // }
                                         }
                                         
                                     }
