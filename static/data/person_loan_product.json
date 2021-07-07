@@ -107,28 +107,28 @@
             "disclaimer": ""
         },
         {
-            "name": "personalLoans",
-            "review_key": "personalloans",
-            "link": "https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
-            "logo": "/data/images/personal.png",
+            "name": "sofi",
+            "review_key": "sofi",
+            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
+            "logo": "/data/images/sofi.png",
             "upto": "1000000",
-            "introduce": "Excellent customer service",
+            "introduce": "Prequalify for your rate in 3 minutes",
             "amount": {
-                "min": 1000,
-                "max": 35000
+                "min": 5000,
+                "max": 100000
             },
             "rate": {
                 "max": 10,
-                "score": "9.0"
+                "score": "8.8"
             },
             "compare": {
-                "credit_score": "500",
+                "credit_score": "680",
                 "credit_text": "",
                 "apr": {
                     "min": "5.99",
-                    "max": "35.99"
+                    "max": "18.85"
                 },
-                "term": "3-72 months"
+                "term": "24-84 months"
             },
             "disclaimer": ""
         },
@@ -145,7 +145,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "8.8"
+                "score": "8.5"
             },
             "compare": {
                 "credit_score": "670",
@@ -171,7 +171,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "8.5"
+                "score": "8.3"
             },
             "compare": {
                 "credit_score": "580",
@@ -184,32 +184,7 @@
             },
             "disclaimer": ""
         },
-        {
-            "name": "sofi",
-            "review_key": "sofi",
-            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
-            "logo": "/data/images/sofi.png",
-            "upto": "1000000",
-            "introduce": "Prequalify for your rate in 3 minutes",
-            "amount": {
-                "min": 5000,
-                "max": 100000
-            },
-            "rate": {
-                "max": 10,
-                "score": "8.3"
-            },
-            "compare": {
-                "credit_score": "680",
-                "credit_text": "",
-                "apr": {
-                    "min": "5.99",
-                    "max": "18.85"
-                },
-                "term": "24-84 months"
-            },
-            "disclaimer": ""
-        },
+        
         
         
         {

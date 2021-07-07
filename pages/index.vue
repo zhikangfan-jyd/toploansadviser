@@ -92,6 +92,9 @@
                 <div class="corner-box" v-if="index == 0">
                   <span class="text">Best Choice</span>
                 </div>
+                <div class="corner-box green" v-if="item.name == 'best_egg'">
+                  <span class="text">Quick Funding</span>
+                </div>
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"><strong>503 users</strong> chose this site today</span>

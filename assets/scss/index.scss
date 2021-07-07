@@ -280,6 +280,15 @@
                                     border-right: 4px solid #faa137;
                                     border-bottom: 4px solid #faa137;
                                 }
+                                &.green {
+                            
+                                    background-color: $theme-color;
+                                    
+                                    &::before {
+                                        border-right: 4px solid $theme-color;
+                                    border-bottom: 4px solid $theme-color;
+                                    }
+                                }
                             }
                             .visited-box {
                                 position: absolute;
