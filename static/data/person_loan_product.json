@@ -28,6 +28,32 @@
             "disclaimer": ""
         },
         {
+            "name": "lightstream",
+            "review_key": "lightstream",
+            "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl&utm_content=",
+            "logo": "/data/images/lightstream.png",
+            "upto": "1000000",
+            "introduce": "Low fixed rates ",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "compare": {
+                "credit_score": "660",
+                "credit_text": "",
+                "apr": {
+                    "min": "3.49",
+                    "max": "19.99"
+                },
+                "term": "24-84 months"
+            },
+            "disclaimer": ""
+        },
+        {
             "name": "best_egg",
             "review_key": "",
             "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
@@ -40,7 +66,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "9.8"
+                "score": "9.6"
             },
             "compare": {
                 "credit_score": "600",
@@ -66,7 +92,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "9.6"
+                "score": "9.5"
             },
             "compare": {
                 "credit_score": "600",
@@ -80,32 +106,7 @@
             "disclaimer": ""
         },
         
-        {
-            "name": "lightstream",
-            "review_key": "lightstream",
-            "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl&utm_content=",
-            "logo": "/data/images/lightstream.png",
-            "upto": "1000000",
-            "introduce": "Low fixed rates ",
-            "amount": {
-                "min": 5000,
-                "max": 100000
-            },
-            "rate": {
-                "max": 10,
-                "score": "9.3"
-            },
-            "compare": {
-                "credit_score": "660",
-                "credit_text": "",
-                "apr": {
-                    "min": "3.49",
-                    "max": "19.99"
-                },
-                "term": "24-84 months"
-            },
-            "disclaimer": ""
-        },
+        
         {
             "name": "sofi",
             "review_key": "sofi",

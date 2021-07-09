@@ -92,8 +92,8 @@
                 <div class="corner-box" v-if="index == 0">
                   <span class="text">Best Choice</span>
                 </div>
-                <div class="corner-box green" v-if="item.name == 'best_egg'">
-                  <span class="text">Quick Funding</span>
+                <div class="corner-box green" v-if="item.name == 'lightstream'">
+                  <span class="text">Low Rates</span>
                 </div>
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
@@ -203,6 +203,7 @@
                       <h3 class="text" style="display: inline; font-weight: normal;">Check My Rate</h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="visit-btn">Visit site  »</a>
                     
                   </div>
                 </div>
@@ -237,7 +238,7 @@
                   <span class="text">Best Choice</span>
                 </div>
                 <div class="corner-box green" v-if="index == 1">
-                  <span class="text">Quick Funding</span>
+                  <span class="text">Low Rates</span>
                 </div>
                 <div class="product-item-container">
                   <div class="img-score-box">
@@ -321,6 +322,7 @@
                       <h3 class="text" style="display: inline; font-weight: normal;">Check My Rate</h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
+                    <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="visit-btn">Visit site  »</a>
                   </div>
                 </div>
               </div>
