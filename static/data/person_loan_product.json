@@ -186,37 +186,6 @@
             "disclaimer": ""
         },
         
-        
-        
-        {
-            "name": "monevo",
-            "review_key": "monevo",
-            "link": "https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w",
-            "logo": "/data/images/monevo.png",
-            "upto": "1000000",
-            "introduce": "Receive money quickly & easily",
-            "amount": {
-                "min": 500,
-                "max": 100000
-            },
-            "rate": {
-                "max": 10,
-                "score": "8.0"
-            },
-            "compare": {
-                "credit_score": "500",
-                "credit_text": "",
-                "apr": {
-                    "min": "2.49",
-                    "max": "35.99"
-                },
-                "term": "3-144 months"
-            },
-            "disclaimer": ""
-        },
-        
-        
-        
         {
             "name": "Marcus",
             "review_key": "marcus",

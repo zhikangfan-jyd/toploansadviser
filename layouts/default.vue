@@ -24,9 +24,6 @@
                 <nuxt-link to="/reviews/marcus" class="link">Marcus</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/reviews/monevo" class="link">Monevo</nuxt-link>
-              </li>
-              <li>
                 <nuxt-link to="/reviews/lightstream" class="link">Lightstream</nuxt-link>
               </li>
               <li>
