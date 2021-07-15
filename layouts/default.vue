@@ -2,7 +2,9 @@
   <div class="page-container">
     <header class="header-container">
       <div class="header-wrapper">
-        <img src="@/assets/img/website-logo.png" alt="Toploansadviser" class="website-logo">
+        <a href="/" target="_self" rel="noopener noreferrer">
+          <img src="@/assets/img/website-logo.png" alt="Toploansadviser" class="website-logo">
+        </a>
         <ul class="header-nav-list">
           <li>
             <nuxt-link to="/" exact class="link">Personal Loan</nuxt-link>
@@ -12,7 +14,7 @@
             <nuxt-link to="/student-loan" class="link">Student Loan</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/mortgage" exact class="link">Mortgage Loan</nuxt-link>
+            <nuxt-link to="/mortgage" class="link">Mortgage Loan</nuxt-link>
           </li>
           <li class="reviews">
             <span class="reviews-title link">Reviews</span>
@@ -56,7 +58,9 @@
       <div class="footer-wrapper">
 
         <div class="footer-info-box">
-          <img src="@/assets/img/website-footer-logo.png" alt="Toploansadviser" class="footer-logo">
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <img src="@/assets/img/website-footer-logo.png" alt="Toploansadviser" class="footer-logo">
+          </a>
           <!-- <p class="desc">277-279 Chiswick High Road, Chiswick, London, United Kingdom, W4 4PU</p> -->
         </div>
         <div class="footer-nav-box">
