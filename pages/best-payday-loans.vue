@@ -3,7 +3,7 @@
       <section class="banner-area">
           <div class="banner-container">
               <div class="banner-content">
-                  <h1 class="website-title">Best Payday Loans For Bad Credit of 2021</h1>
+                  <h1 class="website-title"><span>Best Payday Loans</span> <span>For Bad Credit of 2021</span></h1>
                   <p class="desc">A payday lender can spot you some cash until your next payday, whatever your credit rating.</p>
                   <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
               </div>
@@ -43,11 +43,13 @@
                               
                           </div>
                           <div class="interest-box">
+                              <span class="phone-title">Loan interest</span>
                               <span class="interest">
                                   {{company.interest}}
                               </span>
                           </div>
                           <div class="term-box">
+                              <span class="phone-title">Loan term</span>
                               <span class="term">
                                   {{company.term}}
                               </span>
@@ -66,6 +68,20 @@
                                 
                           </div>
                       </div>
+                      <div class="phone-card-center">
+                          <div class="loan-amount-box">
+                              <span class="loan-amount">{{company.loan_amount}}</span>
+                          </div>
+                          <div class="btn-star-box">
+                                <div class="start-box">
+                                    <Star :score="Number(company.score)"/>
+                                </div>
+                                <a :href="company.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                                    <span class="text">Start Now</span>
+                                    <span class="iconfont">&#xe63c;</span>
+                                </a>
+                            </div>
+                      </div>
                       <div class="card-bottom">
                           <div class="features-box">
                               <span class="features-title">Loan Features</span>
@@ -81,8 +97,7 @@
                             <div class="detail-box">
                                 <a :href="company.link" target="_blank" rel="noopener noreferrer" class="detail-btn">
                                     <span class="text">Click here for official site, terms, and details.</span>
-                                    <!-- <span class="iconfont">&#xe63c;</span> -->
-                                </a>
+                                 </a>
                             </div>
                             
                         </div>
@@ -152,7 +167,7 @@
                     <p>If you have insufficient funds in your account, you’ll be hit with an NSF penalty from your bank and late fees from the lender. You’ll then have to rollover your loan to your next pay cycle, triggering more fees and interest charges.</p>
                     <p>The main reason to get a payday loan is that your minimum credit score is much less important than your income. Some lenders may even skip a hard credit check as long as you can document enough reliable income to show you’ll be able to repay the loan on time. This is important because, unlike a secured loan or car title loan, a paycheck cash advance is an unsecured loan without the backing of collateral.</p>
                     <p>You may not be in a position to come up with a lump sum repayment of a payday loan due in one or two weeks. If so, consider an installment loan instead. This is a bad credit personal loan with a monthly payment term lasting three to 72 months.</p>
-                    <img src="@/assets/img/person_loans-vs-cash_advance_loans.png" alt="Personal loans vs" style="display: block; width: 50%; margin: 25px auto;">
+                    <img src="@/assets/img/person_loans-vs-cash_advance_loans.png" alt="Personal loans vs">
                     <p>Typically, a personal loan charges a lower interest rate than that associated with payday loans but is more likely to require a credit check. A personal loan takes longer to repay, so the interest can mount up over time. Keep in mind that 85% of payday loans get rolled over at least once, so they too can suffer from swollen interest charges.</p>
                 </div>
             </div>
@@ -161,7 +176,7 @@
                 <div class="faq-content">
                     <p>While you could go to a local brick-and-mortar payday advance store to get your money in a few minutes, it may be more convenient to obtain your loan online if you can wait until the next business day.</p>
                     <p>Naturally, you must live somewhere reasonably close to a payday store to get an in-store paycheck cash advance. Some states outlaw payday loans, so getting one may require you to travel to a neighboring state.</p>
-                    <img src="@/assets/img/Loan-distribution-map.png" alt="Where Can I Get a Payday Loan?" style="display: block; margin: 25px auto; width: 50%;">
+                    <img src="@/assets/img/Loan-distribution-map.png" alt="Where Can I Get a Payday Loan?">
                     <p>The online lender-connection services reviewed in this article have national networks that allow folks in most states to take a small loan on a short-term basis.</p>
                     <p>Most of the reviewed lenders provide personal loans instead of, or in addition to, payday loans. Only one, Utah-based CashAdvance, is strictly devoted to payday loans. MoneyMutual offers both types of short-term loans.</p>
                     <p>Online payday loans are available in most states, but you’ll have to check with the lender to see if your state is eligible. The states of Connecticut, Maryland, Massachusetts, Pennsylvania, Vermont, and West Virginia never permitted payday loans, and the District of Columbia repealed its permission.</p>
@@ -186,7 +201,7 @@
                     <p>A payday lender is more interested in your ability to repay a loan than your credit record. For bad credit consumers, payday loans may be easier to obtain than personal loans. However, if no credit check is done, you won’t have the opportunity to improve your credit score by having your on-time payment transactions posted to a credit bureau.</p>
                     <p>In other words, if you want the benefits of payment tracking from a credit bureau, you’ll have to submit to a hard credit check.</p>
                     <p>A no-credit-check loan usually carries a higher interest rate than loans that pull your credit. There’s nothing mysterious going on — when you ask a lender to ignore your credit history, you are admitting that the history is unfavorable.</p>
-                    <img src="@/assets/img/example-cost-of-a-no-credit-check-loan.png" alt="example-cost-of-a-no-credit-check-loan" style="display: block; width: 50%; margin: 25px auto;">
+                    <img src="@/assets/img/example-cost-of-a-no-credit-check-loan.png" alt="example-cost-of-a-no-credit-check-loan" >
                     <p>The higher interest rate compensates lenders for the greater risk they undertake by offering you a loan.</p>
                 </div>
             </div>

@@ -35,6 +35,10 @@
                     font-style: italic;
                 }
             }
+
+            img {
+                width: 325px;
+            }
         }
     }
 
@@ -71,6 +75,8 @@
                     border-right: 1px solid #c1efdb;
                     border-left: 1px solid #c1efdb;
                     box-sizing: border-box;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
                     .title-item {
                         display: flex;
                         align-items: center;
@@ -139,6 +145,10 @@
                         .term-box {
                             flex: 22;
                         }
+
+                        .phone-title {
+                            display: none;
+                        }
                         .loan-amount-box {
                             flex: 45;
                             display: flex;
@@ -176,6 +186,10 @@
                                 }
                             }
                         }
+                    }
+
+                    .phone-card-center {
+                        display: none;
                     }
                     .card-bottom {
                         display: flex;
@@ -219,7 +233,7 @@
                                 margin-bottom: 10px;
                             }
                             .detail-box {
-                                text-align: right;
+                                text-align: left;
                                 .detail-btn {
                                     font-size: 16px;
                                     color: $theme-color;
@@ -314,6 +328,190 @@
                         .text {
                             margin-left: 10px;
                         }
+                    }
+                }
+
+                img {
+                   display: block; 
+                   width: 50%; 
+                   margin: 25px auto;
+                }
+            }
+        }
+    }
+}
+
+.main-container {
+    @media screen and (max-width: 750px) {
+        padding-top: 70px;
+
+        .banner-area {
+
+            .banner-container {
+                width: 100%;
+                box-sizing: border-box;
+                height: auto;
+                padding: 40px 20px;
+                .banner-content {
+                    max-width: 100%;
+                    .website-title {
+                        font-size: 28px;
+                        line-height: 40px;
+                        text-align: center;
+                        span {
+                            display: block;
+                        }
+                    }
+
+                    .update {
+                        text-align: center;
+                    }
+
+
+                    .desc {
+                        text-align: center;
+                    }
+                }
+                .pic {
+                    display: none;
+                }
+            }
+        }
+
+
+        .main-area {
+
+            .container {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 20px;
+
+                .desc-box {
+                    display: none;
+                    .stronger {
+                        line-height: 25px;
+                    }
+                }
+
+                .company-card-container {
+                    .company-title-box {
+                        display: none;
+                    }
+
+                    .company-card-item {
+                        border-top-left-radius: 25px;
+                        border-top-right-radius: 25px;
+                        .card-top {
+                            .company-logo-box, .interest-box , .term-box {
+                                font-size: 14px;
+                                font-family: 'Poppins-Regular';
+                                font-weight: 700;
+                            }
+                            .company-logo-box {
+                                flex: 18;
+
+                                margin-left: 0;
+                            }
+                            .loan-amount-box {
+                                display: none;
+                            }
+
+                            .interest-box, .term-box {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            .interest-box > .interest, .term-box > .term {
+                                transform: translateY(-10px);
+                            }
+                            .phone-title {
+                                display: block;
+                                transform: translateY(-13px);
+                                font-size: 14px;
+                                color: #707070;
+                            }
+                        }
+                        .phone-card-center {
+                            display: flex;
+                            align-items: center;
+                            box-sizing: border-box;
+                            padding: 15px 20px;
+                            .loan-amount-box {
+                                flex: 1;
+
+                                .loan-amount {
+                                    font-size: 18px;
+                                    font-family: 'Poppins-Bold';
+                                    color: #000;
+                                }
+                            }
+
+                            .btn-star-box {
+                                .btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 170px;
+                                    height: 46px;
+                                    font-size: 16px;
+                                    color: #fff;
+                                    background-color: $theme-color;
+                                    text-decoration: none;
+                                    border-radius: 8px;
+                                    transition: all linear 0.1s;
+                                    &:hover {
+                                        background-color: $theme-change-color;
+                                    }
+                                    .iconfont {
+                                        display: inline-block;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                        .card-bottom {
+
+                            .card-bottom-right {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .faq-area {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+
+            .faq-area-title-box {
+                height: auto;
+                margin-bottom: 35px;
+                .pic {
+                    width: auto;
+                    height: 100px;
+                    margin: 0;
+                }
+                .faq-content {
+                    
+                    .faq-title {
+                        margin-top: 27px;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+                    .content {
+                        display: none;
+                    }
+                }
+            }
+
+            .faq-item {
+                .faq-content {
+                    img {
+                        width: 100%;
                     }
                 }
             }

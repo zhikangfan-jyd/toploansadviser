@@ -3,7 +3,7 @@
         {
             "name": "Bad Credit Loan",
             "logo": "/data/images/bad-credit-loans.png",
-            "link": "https://www.kqzyfj.com/click-100176895-13991869",
+            "link": "https://www.badcreditloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
             "interest": "5.99%-35.99%",
             "term": "90-day-72 months",
             "loan_amount": "$500-$10,000",
@@ -28,13 +28,37 @@
             "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
         },
         {
+            "name": "CashUSA.com",
+            "logo": "/data/images/cash-usa.png",
+            "link": "https://www.cashusa.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
+            "interest": "5.99%-35.99%",
+            "term": "3-72 months",
+            "loan_amount": "$500-$10,000",
+            "score": 4.5,
+            "features": [
+                {
+                    "text": "Loans from $500 to $10,000"
+                },
+                {
+                    "text": "Receive a loan decision in minutes"
+                },
+                {
+                    "text": "Get funds directly to your bank account"
+                },
+                {
+                    "text": "Use the loan for any purpose"
+                }
+            ],
+            "desc": "Representative Example: If you borrow $1500 over a term of 2 years with a representative APR of 7.9%, you will have 24 monthly payments of $67.77, for a total amount payable of $1626.54"
+        },
+        {
             "name": "Loan Ploner",
             "logo": "/data/images/loan-ploner.png",
             "link": "https://www.anrdoezrs.net/click-100176895-13904365",
             "interest": "5.9%-35.99%",
             "term": "3-36 months",
             "loan_amount": "$100-$5,000",
-            "score": 4.5,
+            "score": 4,
             "features": [
                 {
                     "text": "Safe & secure online form"
@@ -76,28 +100,7 @@
             ],
             "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
         },
-        {
-            "name": "Nextpayday Advance",
-            "logo": "/data/images/next-payday-advance.png",
-            "link": "https://secureconv-wh.com/?a=126374&c=266354&mt=4",
-            "interest": "varies",
-            "term": "varies",
-            "loan_amount": "$100-$2,500",
-            "score": 4,
-            "features": [
-                 
-                {
-                    "text": "Fast, real-time requests"
-                },
-                {
-                    "text": "All credit types welcome"
-                },
-                {
-                    "text": "Funds directly deposited"
-                }
-            ],
-            "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
-        },
+        
         {
             "name": "Up Lenders",
             "logo": "/data/images/up-lenders.png",
