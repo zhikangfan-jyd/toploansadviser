@@ -1,17 +1,41 @@
 {
     "data": [
         {
+            "name": "Personalloans.com",
+            "logo": "/data/images/personal-loans.jpeg",
+            "link": "https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
+            "interest": "5.99%-35.99%",
+            "term": "3-72 months",
+            "loan_amount": "$1,000-$35,000",
+            "score": 5,
+            "features": [
+                {
+                    "text": "Our service is free to use"
+                },
+                {
+                    "text": "Get funding fast, directly to your account"
+                },
+                {
+                    "text": "Request a loan for any occasion"
+                },
+                {
+                    "text": "Competitive Rates Available"
+                },
+                {
+                    "text": "Privacy, security, 24/7 service"
+                }
+            ],
+            "desc": "PersonalLoans.com <strong style=\"font-weight: 700; color: #000;\">does not charge any fee</strong> or cost to submit a loan request and there is no obligation to agree to the terms of any loan offer presented to you."
+        },
+        {
             "name": "Bad Credit Loan",
             "logo": "/data/images/bad-credit-loans.png",
             "link": "https://www.badcreditloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
             "interest": "5.99%-35.99%",
-            "term": "90-day-72 months",
+            "term": "3-72 months",
             "loan_amount": "$500-$10,000",
-            "score": 5,
+            "score": 4.5,
             "features": [
-                {
-                    "text": "Privacy, security, 24/7 service"
-                },
                 {
                     "text": "Easy to apply, all online"
                 },

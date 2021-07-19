@@ -35,6 +35,9 @@
                       </div>
                   </div>
                   <div :class="{ 'company-card-item': true, 'company-first': id === 0 }" v-for="(company,id) in companys" :key="id">
+                      <div class="corner-box" v-if="id === 0">
+                          <span class="text">Best Choice</span>
+                      </div>
                       <div class="card-top">
                           <div class="company-logo-box">
                               <a :href="company.link" target="_blank" rel="noopener noreferrer nofollow">
@@ -61,7 +64,9 @@
                                         <Star :score="Number(company.score)"/>
                                     </div>
                                     <a :href="company.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
-                                        <span class="text">Start Now</span>
+                                        <span class="text">
+                                            Check My Rate
+                                        </span>
                                         <span class="iconfont">&#xe63c;</span>
                                     </a>
                                 </div>
@@ -77,7 +82,9 @@
                                     <Star :score="Number(company.score)"/>
                                 </div>
                                 <a :href="company.link" target="_blank" rel="noopener noreferrer nofollow" class="btn">
-                                    <span class="text">Start Now</span>
+                                    <span class="text">
+                                        Check My Rate
+                                    </span>
                                     <span class="iconfont">&#xe63c;</span>
                                 </a>
                             </div>
@@ -93,7 +100,7 @@
                                 </ul>
                           </div>
                         <div class="card-bottom-right">
-                            <p class="desc">{{company.desc}}</p>
+                            <p class="desc" v-html="company.desc"></p>
                             <div class="detail-box">
                                 <a :href="company.link" target="_blank" rel="noopener noreferrer" class="detail-btn">
                                     <span class="text">Click here for official site, terms, and details.</span>
