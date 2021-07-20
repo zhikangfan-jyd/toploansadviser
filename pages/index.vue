@@ -89,10 +89,10 @@
             </div>
             <div class="product-list" v-if="products.length != 0">
               <div class="product-item" v-for="(item,index) in products" :key="index">
-                <div class="corner-box" v-if="index == 0">
+                <div class="corner-box" v-if="index == 0 && item.name !== 'lightstream'">
                   <span class="text">Best Choice</span>
                 </div>
-                <div class="corner-box green" v-if="item.name == 'lightstream'">
+                <div class="corner-box green" v-else-if="item.name == 'lightstream'">
                   <span class="text">Low Rates</span>
                 </div>
                 <div class="visited-box" v-if="index == 0">
