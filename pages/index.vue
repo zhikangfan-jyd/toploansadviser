@@ -32,10 +32,10 @@
                     </span>
                     <ul class="filter-list-box filter-amount-list">
                       <li v-if="filter_amount_text != 'Show all'" @click="changeAmount({ min: 0, max: Infinity, text: 'Show all' })"><span>Show all</span></li>
-                      <li v-if="filter_amount_text != 'Less than $5000'" @click="changeAmount({ min: 0, max: 5000, text: '<$5000' })"><span><$5000</span></li>
+                      <li v-if="filter_amount_text != 'Less than $5000'" @click="changeAmount({ min: 0, max: 5000, text: '<$5000' })"><span>&lt;$5000</span></li>
                       <li v-if="filter_amount_text != '$5000-$20000'" @click="changeAmount({ min: 5000, max: 20000, text: '$5000-$20000' })"><span>$5000-$20000</span></li>
                       <li v-if="filter_amount_text != '$20000-$50000'" @click="changeAmount({ min: 20000, max: 50000, text: '$20000-$50000' })"><span>$20000-$50000</span></li>
-                      <li v-if="filter_amount_text != 'More than $50000'" @click="changeAmount({ min: 50000, max: Infinity, text: '>$50000' })"><span>>$50000</span></li>
+                      <li v-if="filter_amount_text != 'More than $50000'" @click="changeAmount({ min: 50000, max: Infinity, text: '>$50000' })"><span>&gt;$50000</span></li>
                     </ul>
                   </div>
                 </div>
