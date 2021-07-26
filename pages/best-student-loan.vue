@@ -1,6 +1,6 @@
 <template>
     <main class="main-container">
-        <section class="banner-area">
+       <section class="banner-area">
             <div class="banner-container">
                 <div class="banner-content">
                     <div class="logo-box">
@@ -11,7 +11,10 @@
                     <h1 class="website-title">The Reliable Way to Refinance Student Loan</h1>
                     <p class="sub-title">Whether your college plans involve heading to campus or logging on for online learning, one thing is certain: You will need a way to pay.</p>
                     <p class="desc">With our trusted partner, Credible, you can compare prequalified rates from up to 12 of the best student loan refinance companies for in minutes. Plus, checking your rates is free and doesn't affect your credit score. Get your rate and see how much you can save today!</p>
-                    <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Compare Now</a>
+                    <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                        <span class="text">Get My Rates</span>
+                        <span class="iconfont">&#xe63c;</span>
+                    </a>
                 </div>
                 <div class="img-box">
                     <img src="@/assets/img/school-loans-banner.png" alt="" class="pic">
@@ -32,9 +35,9 @@
         <section class="paretner-area">
             <div class="paretner-container">
                 <ul class="step-box">
-                    <li class="step-item"><span class="icon"></span><span class="text">Student Loans Refinannce FAQs</span></li>
-                    <li class="step-item"><span class="icon"></span><span class="text">Best Student Loan Companies</span></li>
-                    <li class="step-item"><span class="icon"></span><span class="text">Student Loans Refinannce Articles</span></li>
+                    <li class="step-item" @click="quickJump('quick-faq')"><span class="icon"></span><span class="text">Student Loans Refinannce FAQs</span></li>
+                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Student Loan Companies</span></li>
+                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Private Student Loan Companies</span></li>
                 </ul>
                 <div class="title-box">
                     <div class="img-box">
@@ -89,12 +92,15 @@
             </div>
             
         </section>
-        <section class="product-area">
+        <section class="product-area" id="quick-companies">
             <div class="product-container">
 
                 <div class="title-box">
-                    <h2 class="area-title">Best Student Loan Refinance Companies for in 2021</h2>
-                    <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Compare Now</a>
+                    <h2 class="area-title">Best Student Loan Refinance Companies in 2021</h2>
+                    <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+                        <span class="text">Get My Rates</span>
+                        <span class="iconfont">&#xe63c;</span>
+                    </a>
                 </div>
                 <div class="product-list-box">
                     <div class="product-title-box">
@@ -180,7 +186,6 @@
                             <div class="list-box">
                             <dl class="features-list">
                                 <dt>
-                                <!-- <span class="pc-text">Easily Compare & Save</span> -->
                                 <span class="phone-text">Loan Features</span>
                                 </dt>
                                 <dd>
@@ -235,21 +240,44 @@
                         <p class="desc">users and counting...</p>
                     </div>
                     <div class="info-right">
-                        <p class="text">We help national student to get the <span class="green">refinance  and provite school loans</span></p>
+                        <p class="text">We help national student to get the <span class="green">refinance and private student loans</span></p>
                     </div>
                 </div>
                 <img src="@/assets/img/info.jpg" alt="" class="pic">
-                <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Compare Now</a>
+                <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
+
+                    <span class="text">Get My Rates</span>
+                    <span class="iconfont">&#xe63c;</span>
+                </a>
                 <p class="small-text">Get personalized student loan refi rates in 2 minutes</p>
             </div>
         </section>
+        <section class="faq-area" id="quick-faq">
+        <div class="faq-area-title-box">
+          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <div class="faq-content">
+            <h2 class="faq-title">
+              <span>FAQ's</span>
+              <span>About Student Loans</span>
+            </h2>
+            <div class="content">
+              <p>Before taking a student loan be sure you familiarize yourself with all the terms and conditions associated with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about student loans below.</p>
+            </div>
+          </div>
+        </div>
+        <fold-the-card :data="questionData"></fold-the-card>
+      </section>
     </main>
 
 </template>
 
 <script>
+import FoldTheCard from '../components/FoldTheCard'
 import { computeScore } from '../utils/index'
 export default {
+    components: {
+        FoldTheCard
+    },
     async asyncData({ $axios, redirect, route }) {
 
     // 拼接 msclkid 参数
@@ -275,7 +303,6 @@ export default {
         count: product_results.data.length,
         allProducts: product_results.data,
         questionData: question_results.data,
-        overallData: product_results.data.slice(0,2),
         mainLink: product_results.data[0].link
       }
     } catch (error) {
@@ -295,24 +322,33 @@ export default {
         handleTracking(params) {
         // window.tracking();
         if (typeof window.uba != 'function') { return }
-        window.uba(params);
+            window.uba(params);
         },
         // 点击加载更多数据
         loadMore() {
-        let data = this.allProducts.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
-        this.products = this.products.concat(data)
-        this.page++;
-        if (this.products.length == this.count) {
-            this.isNull = false
-        }
+            let data = this.allProducts.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
+            this.products = this.products.concat(data)
+            this.page++;
+            if (this.products.length == this.count) {
+                this.isNull = false
+            }
         
         },
         // 关闭更多
         closeMore() {
-        this.isNull = true;
-        this.page = 1;
-        this.products = [];
-        this.loadMore();
+            this.isNull = true;
+            this.page = 1;
+            this.products = [];
+            this.loadMore();
+        },
+        quickJump(id) {
+            this.$nextTick(() => {
+                let top = $('#'+id).offset().top;
+                window.scrollTo({
+                    top: top - 100,
+                    behavior: 'smooth'
+                })
+            })
         }
     },
     created() {
@@ -322,5 +358,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/school-loans.scss';
+@import '~/assets/scss/best-student-loan.scss';
 </style>
