@@ -54,8 +54,6 @@
                         <li><img src="@/assets/img/RISLA.png" alt="" class="pic"></li>
                         <li><img src="@/assets/img/College_Ave.png" alt="" class="pic"></li>
                         <li><img src="@/assets/img/SoFi.png" alt="" class="pic"></li>
-                    </ul>
-                    <ul class="logo-list">
                         <li><img src="@/assets/img/PenFed.png" alt="" class="pic"></li>
                         <li><img src="@/assets/img/INvestEd.png" alt="" class="pic"></li>
                         <li><img src="@/assets/img/ELFI.png" alt="" class="pic"></li>

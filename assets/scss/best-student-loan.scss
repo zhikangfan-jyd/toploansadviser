@@ -214,10 +214,11 @@
                 background-color: rgb(247,248,250);
                 .logo-list {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
                     padding: 0 50px;
                     li {
-                        flex: 1;
+                        width: 20%;
                         margin: 20px 0;
                     }
                 }
@@ -793,7 +794,11 @@
                 .logo-container {
                     padding: 30px 0;
                     .logo-list {
+                        padding: 0 15px;
                         flex-wrap: wrap;
+                        li {
+                            width: 50%;
+                        }
                     }
                 }
             }
@@ -829,6 +834,7 @@
                     margin-bottom: 50px;
                     .area-title {
                         font-size: 24px;
+                        padding: 0 20px;
                     }
                 }
                 .product-list-box {
