@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="img-box">
-                    <img src="@/assets/img/school-loans-banner.png" alt="" class="pic">
+                    <img src="@/assets/img/best-mortgage-loan-banner.png" alt="" class="pic">
                     <div class="trustpilot-box">
                         <span class="iconfont big-star">&#xe64c;</span>
                         <span class="text">Trustpilot</span>
@@ -240,7 +240,9 @@
                         <p class="desc">users and counting...</p>
                     </div>
                     <div class="info-right">
-                        <p class="text">We help national student to get the <span class="green">refinance and private student loans</span></p>
+                        
+
+                        <p class="text">We help national people get their <span class="green">refinance mortgage loans</span></p>
                     </div>
                 </div>
                 <img src="@/assets/img/info.jpg" alt="" class="pic">
@@ -249,7 +251,7 @@
                     <span class="text">Get My Rates</span>
                     <span class="iconfont">&#xe63c;</span>
                 </a>
-                <p class="small-text">Get personalized student loan refi rates in 2 minutes</p>
+                <p class="small-text">Get personalized mortgage loan refi rates in 2 minutes</p>
             </div>
         </section>
         <section class="faq-area" id="quick-faq">
@@ -497,87 +499,12 @@
 </template>
 
 <script>
-import FoldTheCard from '../components/FoldTheCard'
-import { computeScore } from '../utils/index'
 export default {
-    components: {
-        FoldTheCard
-    },
-    async asyncData({ $axios, redirect, route }) {
-
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let msclkid = route.query['msclkid'];
-      return `${url}&msclkid=${msclkid}`
-    }
-
-    try {
-      // 获取所有产品
-      let product_results = await $axios.$get('/data/student_loan_product.json');
-      // 获取答疑问题的数据
-      let question_results = await $axios.$get('/data/student_loan_question.json');
-
-      // 给所有 是www.creditble.com 的链接后面都拼接 参数
-      product_results.data.forEach(ele => {
-        if (ele.link.indexOf('www.credible.com') != -1) {
-          ele.link = changeLink(ele.link);
-        }
-      })
-
-      return {
-        count: product_results.data.length,
-        allProducts: product_results.data,
-        questionData: question_results.data,
-        mainLink: product_results.data[0].link
-      }
-    } catch (error) {
-      redirect('/error')
-    }
-  },
     data() {
         return {
-        isNull: true,
-        page: 1,
-        pageSize: 5,
-        products: []
-        }
-    },
-    methods: {
-        computeScore,
-        handleTracking(params) {
-        // window.tracking();
-        if (typeof window.uba != 'function') { return }
-            window.uba(params);
-        },
-        // 点击加载更多数据
-        loadMore() {
-            let data = this.allProducts.slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
-            this.products = this.products.concat(data)
-            this.page++;
-            if (this.products.length == this.count) {
-                this.isNull = false
-            }
+            mainLink: 'https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content='
         
-        },
-        // 关闭更多
-        closeMore() {
-            this.isNull = true;
-            this.page = 1;
-            this.products = [];
-            this.loadMore();
-        },
-        quickJump(id) {
-            this.$nextTick(() => {
-                let top = $('#'+id).offset().top;
-                window.scrollTo({
-                    top: top - 100,
-                    behavior: 'smooth'
-                })
-            })
         }
-    },
-    created() {
-        this.loadMore();
     }
 }
 </script>
