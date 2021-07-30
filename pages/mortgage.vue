@@ -914,7 +914,7 @@ export default {
       purchase_product: {
             "name": "Credible",
             "review_key": "",
-            "link": "https://www.credible.com/",
+            "link": "https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
             "logo": "/data/images/credible.png",
             "rate": {
                 "max": 10,

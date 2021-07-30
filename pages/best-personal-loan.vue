@@ -385,7 +385,7 @@ export default {
 
     try {
       
-      let products_results = await $axios.$get('/data/person_loan_product.json');
+      let products_results = await $axios.$get('/data/best-personal-loan.json');
       let question_results = await $axios.$get('/data/person_loan_question.json');
 
       // 给所有 是www.creditble.com 的链接后面都拼接 参数
@@ -406,7 +406,7 @@ export default {
   },
   data() {
     return {
-        mainLink: 'https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=',
+        mainLink: 'https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=',
       isNull: true,
       page: 1,
       pageSize: 5,
