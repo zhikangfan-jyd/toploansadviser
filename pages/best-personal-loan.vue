@@ -32,39 +32,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="paretner-area">
-            <div class="paretner-container">
-                <ul class="step-box">
-                    <li class="step-item" @click="quickJump('quick-faq')"><span class="icon"></span><span class="text">Student Loans Refinannce FAQs</span></li>
-                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Student Loan Companies</span></li>
-                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Private Student Loan Companies</span></li>
-                </ul>
-                <div class="title-box">
-                    <div class="img-box">
-                        <img src="@/assets/img/website-logo.png" alt="toploansadviser" class="website-logo">
-                        <span class="cha-icon"></span>
-                        <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
-                    </div>
-                    <span class="text">CREDIBLE LENDERS</span>
-                </div>
-                <div class="logo-container">
-                    <ul class="logo-list">
-                        <li><img src="@/assets/img/AEL.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/brazos.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/RISLA.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/College_Ave.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/SoFi.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/PenFed.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/INvestEd.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/ELFI.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/MEFA.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/Citizens_Bank.png" alt="" class="pic"></li>
-                    </ul>
-                </div>
-            </div>
-            
-        </section> -->
-        <section class="how-it-work-area">
+       <section class="how-it-work-area">
             <div class="how-it-work-container">
                 <div class="title-box">
                     <span class="text">CREDITBLE LENDERS</span>

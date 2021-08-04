@@ -134,100 +134,7 @@
         }
     }
 
-    .paretner-area {
-        .paretner-container {
-            width: $rootWidth;
-            margin: 0 auto;
-
-            .step-box {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 85px 0;
-
-                .step-item {
-                    &:hover {
-                        cursor: pointer;
-                        text-decoration-line: underline;
-                    }
-                    .icon {
-                        display: inline-block;
-                        width: 12px;
-                        height: 15px;
-                        background-image: url('../assets/img/jiantou.png');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center center;
-                    }
-
-                    .text {
-                        margin-left: 10px;
-                        font-size: 15px;
-                        color: #000;
-                    }
-                }
-            }
-            .title-box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 25px;
-                .img-box {
-                    display: flex;
-                    align-items: center;
-
-                    .website-logo {
-                        height: 56px;
-                        transform: translateY(-5px);
-                    }
-                    .cha-icon {
-                        position: relative;
-                        display: inline-block;
-                        width: 20px;
-                        height: 20px;
-                        margin: 0 13px;
-                        &::after, &::before {
-                            position: absolute;
-                            top: 50%;
-                            content: '';
-                            width: 20px;
-                            height: 4px;
-                            background-color: #00174b;
-                        }
-
-                        &::before {
-                            transform: rotateZ(-45deg);
-                        }
-                        &::after {
-                            transform: rotateZ(45deg);
-                        }
-                    }
-                    .credible-logo {
-                        height: 56px;
-                    }
-                }
-                .text {
-                    font-size: 18px;
-                    color: $theme-color;
-                }
-            }
-            .logo-container {
-                width: 100%;
-                padding: 55px 0;
-                background-color: rgb(247,248,250);
-                .logo-list {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    padding: 0 50px;
-                    li {
-                        width: 20%;
-                        margin: 20px 0;
-                    }
-                }
-            }
-        }
-    }
+    
 
     .how-it-work-area {
         margin-top: 75px;
@@ -1028,31 +935,6 @@
             }
         }
 
-        .paretner-area {
-            .paretner-container {
-                width: 100%;
-                padding: 20px;
-                box-sizing: border-box;
-                .step-box {
-                    flex-direction: column;
-                    align-items: flex-start;
-                    margin: 40px 0;
-                    .step-item {
-                        margin: 5px 0;
-                    }
-                }
-                .logo-container {
-                    padding: 30px 0;
-                    .logo-list {
-                        padding: 0 15px;
-                        flex-wrap: wrap;
-                        li {
-                            width: 50%;
-                        }
-                    }
-                }
-            }
-        }
 
         .how-it-work-area {
             .how-it-work-container {
