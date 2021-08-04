@@ -54,31 +54,32 @@
             "disclaimer": ""
         },
         {
-            "name": "best_egg",
+            "name": "upgrade",
             "review_key": "",
-            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
-            "logo": "/data/images/best_egg.png",
+            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
+            "logo": "/data/images/upgrade.png",
             "upto": "1000000",
-            "introduce": "Get funding in as little as 1 day",
+            "introduce": "No fees",
             "amount": {
-                "min": "50000",
-                "max": "Infinity"
+                "min": 1000,
+                "max": 35000
             },
             "rate": {
                 "max": 10,
                 "score": "9.6"
             },
             "compare": {
-                "credit_score": "600",
+                "credit_score": "670",
                 "credit_text": "",
                 "apr": {
-                    "min": "5.99",
-                    "max": "29.99"
+                    "min": "7.99",
+                    "max": "35.97"
                 },
                 "term": "36-60 months"
             },
             "disclaimer": ""
         },
+        
         {
             "name": "lendingclub",
             "review_key": "",
@@ -134,26 +135,26 @@
             "disclaimer": ""
         },
         {
-            "name": "upgrade",
+            "name": "best_egg",
             "review_key": "",
-            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
-            "logo": "/data/images/upgrade.png",
+            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
+            "logo": "/data/images/best_egg.png",
             "upto": "1000000",
-            "introduce": "No fees",
+            "introduce": "Get funding in as little as 1 day",
             "amount": {
-                "min": 1000,
-                "max": 35000
+                "min": "50000",
+                "max": "Infinity"
             },
             "rate": {
                 "max": 10,
                 "score": "8.5"
             },
             "compare": {
-                "credit_score": "670",
+                "credit_score": "600",
                 "credit_text": "",
                 "apr": {
-                    "min": "7.99",
-                    "max": "35.97"
+                    "min": "5.99",
+                    "max": "29.99"
                 },
                 "term": "36-60 months"
             },
