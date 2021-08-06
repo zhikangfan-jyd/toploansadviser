@@ -8,7 +8,7 @@
                         <span class="cha-icon"></span>
                         <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
                     </div>
-                <h1 class="website-title">Get the Cash You Need & the Rate You Deserve</h1>
+                <h1 class="website-title">Help You Get the Best Mortgage Loans Online</h1>
                 <p class="sub-title">Planning to buy in the next 45 days?</p>
                 <p class="desc">If you are planning to buy in the next 45 days, it's important to get pre-qualified since many sellers only consider pre-qualified offers. Getting pre-qualified is also the next step toward pre-approval, where you can lock in your interest rate? With our trusted partner, Credible has many advantages!</p>
                 <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
