@@ -68,6 +68,21 @@ html,body {
         transform: scale(1.6);
     }
 }
+
+.swiper-pagination {
+    .my-bullet {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        &.my-bullet-active {
+            background: #E9AF87;
+        }
+    }
+}
 @font-face {
     font-family: 'Poppins-Regular';
     src: url('../fonts/Poppins-Regular.eot');
