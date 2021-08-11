@@ -6,11 +6,11 @@
                     <div class="logo-box">
                         <img src="@/assets/img/website-logo.png" alt="toploansadviser.com" class="website-logo">
                         <span class="cha-icon"></span>
-                        <img src="/data/images/personal.png" alt="personalloan.com" class="credible-logo">
+                        <img src="/data/images/credible.png" alt="Credible" class="credible-logo">
                     </div>
                     <h1 class="website-title">The Fastest Way to Get Personal Loan</h1>
                     <p class="sub-title">To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
-                    <p class="desc">With our trusted partner, Personalloans.com, you can compare prequalified rates from up to 12 of the best personal loan lenders for in minutes. Plus, checking your rates is free and doesn't affect your credit score. Get your rate and see how much you can save today!</p>
+                    <p class="desc">With our trusted partner, Credible, you can compare prequalified rates from up to 12 of the best personal loan lenders for in minutes. Plus, checking your rates is free and doesn't affect your credit score. Get your rate and see how much you can save today!</p>
                     <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
                         <span class="text">Get My Rates</span>
                         <span class="iconfont">&#xe63c;</span>
@@ -374,7 +374,7 @@ export default {
   },
   data() {
     return {
-        mainLink: 'https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}',
+        mainLink: ' https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=',
       isNull: true,
       page: 1,
       pageSize: 5,
