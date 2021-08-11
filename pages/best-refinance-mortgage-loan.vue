@@ -8,9 +8,9 @@
                         <span class="cha-icon"></span>
                         <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
                     </div>
-                <h1 class="website-title">Help You Get the Best Mortgage Loans Online</h1>
+                <h1 class="website-title">Best Refinancing Mortgage Loans Online</h1>
                 <p class="sub-title">Planning to buy in the next 45 days?</p>
-                <p class="desc">If you are planning to buy in the next 45 days, it's important to get pre-qualified since many sellers only consider pre-qualified offers. Getting pre-qualified is also the next step toward pre-approval, where you can lock in your interest rate? With our trusted partner, Credible has many advantages!</p>
+                <p class="desc">If you are planning to buy in the next 45 days, it's important to get pre-qualified since many sellers only consider pre-qualified offers. Getting pre-qualified is also the next step toward pre-approval, where you can lock in your interest rate.With our trusted partner, Credible, you can compare prequalified rates from up to 12 of the best Mortgage loan companies for in minutes. Plus, checking your rates is free and doesn't affect your credit score. Get your rate and see how much you can save today!</p>
                 <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
                     <span class="text">Get My Rates</span>
                     <span class="iconfont">&#xe63c;</span>
@@ -37,7 +37,7 @@
     </section>
     <section class="why-choose-credible-area">
         <div class="why-choose-credible-container">
-            <h2 class="area-title">Why Choose Credible?</h2>
+            <h2 class="area-title">Best Mortgage Refinancing Lender 2021</h2>
             <p class="sub-desc">Credible made it easy and straightforward to see which lender was best for you</p>
             <div class="container-box">
                 <img src="@/assets/img/family.png" alt="" class="pic">
