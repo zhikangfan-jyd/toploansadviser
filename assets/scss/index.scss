@@ -1,4 +1,5 @@
 .home-page {
+    font-size: 0;
     .swiper-area {
         padding-top: 80px;
         width: 100%;
@@ -9,9 +10,70 @@
             height: 100%;
             
             .my-swiper-slide {
+                width: 100%;
+                height: 100%;
+                background-image: url('../assets/img/home-bg.png');
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
+
+                .swiper-content {
+                    display: flex;
+                    align-self: center;
+                    height: 100%;
+                    width: $rootWidth;
+                    margin: 0 auto;
+                    .content-left {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: #fff;
+                    }
+
+                    .content-right {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 80px;
+                        .content-right-box {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .website-title {
+                            font-size: 42px;
+                            color: #00174B;
+                            text-align: center;
+                            line-height: 58px;
+                        }
+
+                        .pic {
+                            height: 180px;
+                            margin-top: 20px;
+                            margin-bottom: 50px;
+                        }
+                        .btn {
+                            display: block;
+                            width: 250px;
+                            font-size: 30px;
+                            height: 70px;
+                            line-height: 70px;
+                            text-align: center;
+                            border-radius: 30px;
+                            color: #ffff;
+                            background: #ED963E;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                left: -15%;
             }
         }
     }
@@ -22,6 +84,7 @@
             margin: 0 auto;
 
             .area-title {
+                margin-top: 80px;
                 font-size: 40px;
                 text-align: center;
                 color: #00174B;
@@ -30,21 +93,36 @@
 
             .desc-title-card {
                 width: 100%;
-                padding: 15px 10px;
+                margin: 45px 0;
+                padding: 20px 35px;
                 border-radius: 36px;
                 background-image: linear-gradient(45deg, rgb(249,240,230), rgb(197,232,201));
             
                 .title {
-                    font-size: 35px;
+                    margin-bottom: 20px;
+                    font-size: 26px;
                     color: #00174B;
                 }
                 .card-bottom {
+                    display: flex;
+                    justify-content: space-between;
                     .sub-title {
-                        font-size: 30px;
+                        font-size: 20px;
                         color: #00174B;
+
+                        .icon {
+                            display: inline-block;
+                            width: 16px;
+                            height: 20px;
+                            vertical-align: middle;
+                            background-image: url('../assets/img/jiantou.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                        }
                     }
                     a {
-                        font-size: 20px;
+                        font-size: 16px;
                         color: $theme-color;
                     }
                 }
@@ -55,10 +133,29 @@
                 .text {
                     font-size: 18px;
                     color: #00174B;
+
                 }
 
                 .desc-item {
+                    margin: 45px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:nth-of-type(1) {
+                        .pic {
+                            margin-right: 75px;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        .pic {
+                            margin-left: 75px;
+                        }
+                    }
+                    .pic {
+                        width: 415px;
+                    }
                     .desc-content {
+                        width: 40%;
                         .desc-item-title {
                             font-size: 18px;
                             color: #00174B;
@@ -70,6 +167,302 @@
                         }
                     }
                 }
+            }
+
+            .counter-container {
+                display: flex;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 20px 20px 20px 60px;
+                border-radius: 36px;
+                background-image: linear-gradient(45deg, rgb(249,240,230), rgb(197,232,201));
+                .input-left {
+                    flex: 1;
+
+                    .amount-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .title {
+                            font-size: 16px;
+                            color: #00174B;
+                            font-family: 'Poppins-Medium';
+                        }
+
+                        .amount-input {
+                            margin-left: 100px;
+                            height: 30px;
+                        }
+                    }
+                    input {
+                        margin: 10px 0;
+                        font-family: 'Poppins-Medium';
+                        outline: none;
+                        border: none;
+                        background-color: #fff;
+                        border-radius: 30px;
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        
+                        &::-webkit-input-placeholder { /* Edge */
+                            color: #00174B;
+                            font-size: 16px;
+                          }
+                          
+                          &::-ms-input-placeholder { /* Internet Explorer 10-11 */
+                            color: #00174B;
+                            font-size: 16px;
+                          }
+                          
+                          &::placeholder {
+                            color: #00174B;
+                            font-size: 16px;
+                          }
+                    }
+                    .rate-annualy-input, .year-input, .months-input {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 20px;
+                        
+                        
+                    }
+
+                    .text {
+                        font-size: 16px;
+                        font-family: 'Poppins-Medium';
+                        color: $theme-color;
+                    }
+                }
+
+                .results-right {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .title {
+                        font-size: 41px;
+                        margin-bottom: 18px;
+                        color: #00174B;
+                        .green {
+                            color: $theme-color;
+                        }
+                    }
+
+                    .results-container {
+                        display: flex;
+                        align-items: center;
+                        .submit-btn {
+                            width: 80px;
+                            height: 80px;
+                            margin-right: 55px;
+                            border-radius: 50%;
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            background-image: url('../assets/img/btn-bg.png');
+                            background-size: cover;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            cursor: pointer;
+                        }
+
+                        .results-box {
+
+                            .results-item {
+                                display: flex;
+                                align-items: center;
+                                .icon {
+                                    font-size: 50px;
+                                    font-weight: bold;
+                                    margin-right: 18px;
+                                }
+
+                                .results {
+                                    display: flex;
+                                    flex-direction: column;
+                                    line-height: 33px;
+                                    .value {
+                                        font-size: 40px;
+                                        &.month-price {
+                                            font-weight: bold;
+                                        }
+
+                                    }
+
+                                    .value-title {
+                                        font-size: 25px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .compare-container {
+                margin: 45px 0;
+                .compare-title {
+                    text-align: center;
+                    .icon {
+                        display: inline-block;
+                        width: 16px;
+                        height: 20px;
+                        vertical-align: middle;
+                        background-image: url('../assets/img/jiantou.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                        vertical-align: middle;
+                    }
+
+                    .text {
+                        font-size: 22px;
+                        color: #00174B;
+                        vertical-align: middle;
+                        margin-left: 15px;
+                    }
+                }
+                .scroll-box {
+            
+
+                    .ticker-container {
+                       display: flex;
+                       width: $rootWidth;
+                        margin: 0 auto;  
+                        // border-top: 1px dotted #e5e7e9;
+                        overflow: hidden;
+        
+                        @keyframes a {
+                            0% {
+                                transform: translateX(0%);
+                            }
+                            100% {
+                                transform: translateX(-100%);
+                            }
+                            
+                        }
+                        .ticker {
+                            display: flex;
+                            justify-content: space-between;
+                            animation: a 40s infinite linear;
+        
+                            .single-brand {
+                                min-width: 220px;
+                                margin: 0;
+        
+                                a {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 20px 0;
+                                    width: 100%;
+                                    height: 100%;
+        
+                                    img {
+                                        // max-height: 48px;
+                                        max-width: 145px;
+                                    }
+                                    
+                                    
+                                }
+                            }
+                        }
+                    }
+              }
+            }
+
+            .blog-container {
+                margin-bottom: 100px;
+                .blog-list {
+                    .blog-item {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 60px 0;
+                        .blog-info {
+                            margin-bottom: 10px;
+                            p {
+                                font-size: 18px;
+                                color: #00174B;
+                                line-height: 25px;
+                                font-weight: bold;
+                            }
+                        }
+                        .blog-box {
+                            display: flex;
+                            height: 170px;
+                            border-radius: 36px;
+                            border: 2px solid $theme-color;
+                            box-sizing: border-box;
+                            padding: 25px;
+                            .blog-left {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                .blog-title {
+                                    font-size: 18px;
+                                    color: #00174B;
+                                    line-height: 30px;
+                                }
+                                .link {
+                                    font-size: 16px;
+                                    color: $theme-color;
+
+                                }
+                            }
+                            .img-box {
+                                flex: 1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                .pic {
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                        &:nth-of-type(even) {
+                            .blog-info {
+                                align-self: flex-end;
+                            }
+                            .blog-box {
+                                .blog-left {
+                                    order: 1;
+                                }
+                                .pic {
+                                    order: 2;
+                                }
+                            }
+                        }
+                    }
+                }
+                .more-link-box {
+                    text-align: center;
+
+                    .more-link {
+                        text-decoration-color: #00174B;
+                        .icon {
+                            display: inline-block;
+                            width: 16px;
+                            height: 20px;
+                            vertical-align: middle;
+                            background-image: url('../assets/img/jiantou.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            vertical-align: middle;
+                        }
+    
+                        .text {
+                            font-size: 22px;
+                            color: #00174B;
+                            vertical-align: middle;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                
             }
 
         }
