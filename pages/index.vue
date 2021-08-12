@@ -48,10 +48,10 @@
                     </span>
                     <ul class="filter-list-box filter-credit-score-list">
                       <li v-if="filter_credit_score_text != 'Show all'" @click="changeCreditScore({ min: 0, max: Infinity, text: 'Show all' })"><span>Show all</span></li>
-                      <li v-if="filter_credit_score_text != '<640'" @click="changeCreditScore({ min: 300, max: 480, text: '300-480' })"><span>300-480</span></li>
-                      <li v-if="filter_credit_score_text != '640-690'" @click="changeCreditScore({ min: 481, max: 600, text: '481-600' })"><span>481-600</span></li>
-                      <li v-if="filter_credit_score_text != '700-749'" @click="changeCreditScore({ min: 601, max: 720, text: '601-720' })"><span>601-749</span></li>
-                      <li v-if="filter_credit_score_text != '>749'" @click="changeCreditScore({ min: 721, max: 850, text: '721-850' })"><span>721-850</span></li>
+                      <li v-if="filter_credit_score_text != '300-480'" @click="changeCreditScore({ min: 300, max: 480, text: '300-480' })"><span>300-480</span></li>
+                      <li v-if="filter_credit_score_text != '481-600'" @click="changeCreditScore({ min: 481, max: 600, text: '481-600' })"><span>481-600</span></li>
+                      <li v-if="filter_credit_score_text != '601-719'" @click="changeCreditScore({ min: 601, max: 719, text: '601-719' })"><span>601-719</span></li>
+                      <li v-if="filter_credit_score_text != '720-850'" @click="changeCreditScore({ min: 720, max: 850, text: '720-850' })"><span>720-850</span></li>
                     </ul>
                   </div>
                 </div>
