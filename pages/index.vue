@@ -82,12 +82,12 @@
                 <div class="input-left">
                     <div class="amount-box">
                         <span class="title">Amount $</span>
-                        <input type="text" class="amount-input" v-model="form.amount">
+                        <input type="text" class="amount-input" v-model="form.amount" @input="changeAmount">
                     </div>
-                    <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annualy">
-                    <input type="text" class="year-input" v-model="form.year" placeholder="Year">
+                    <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annualy" @input="changeRate">
+                    <input type="text" class="year-input" v-model="form.year" placeholder="Year" @input="changeYear">
                     <span class="text">or</span>
-                    <input type="text" class="months-input" v-model="form.month" placeholder="Months">
+                    <input type="text" class="months-input" v-model="form.month" placeholder="Months" @input="changeMonth">
                 </div>
                 <div class="results-right">
                     <h6 class="title"><span class="green">Loan</span> <span>Calculator</span></h6>
@@ -226,8 +226,8 @@ export default {
                 rate: '',
                 year: '',
                 month: '',
-                per_month: 0.00,
-                total: 38.06
+                per_month: 0,
+                total: 0
             },
             swiperOptions: {
                 // autoplay: {
@@ -249,8 +249,80 @@ export default {
         }
     },
     methods: {
+        changeYear(e) {
+            let value = e.target.value;
+            if (isNaN(Number(value))) {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                return ;
+            }
+            this.form.month = value * 12 == 0 ? '' : value * 12;
+        },
+
+        changeMonth(e) {
+            let value = e.target.value;
+            if (isNaN(Number(value))) {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                return ;
+            }
+            this.form.year = (value / 12).toFixed(1) == 0 ? '' : (value / 12).toFixed(1);
+        },
+        changeAmount(e) {
+            let value = e.target.value;
+            if (isNaN(Number(value))) {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                return ;
+            }
+        },
+        changeRate(e) {
+            let value = e.target.value;
+            if (isNaN(Number(value))) {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                return ;
+            }
+        },
+        validate() {
+
+        },
         submit() {
-            
+            // 判断用户输入的是不是合法值
+            // if () {
+
+            // }
+            if (this.form.year == '' || this.form.amount == '' || this.form.month == '' || this.form.rate == '') {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                return ;
+            }
+            if (isNaN(Number(this.form.year)) || isNaN(Number(this.form.amount)) || isNaN(Number(this.form.month)) || isNaN(Number(this.form.rate))) {
+                this.$message({
+                    showClose: false,
+                    message: 'Please enter a valid value!',
+                    type: 'error'
+                })
+                retrun ;
+            }
+            let pmt = (Number(this.form.amount)*(Number(this.form.rate) / 12)) / (1- 1 / Math.pow(1 + (Number(this.form.rate)/ 12), Number(this.form.month)));
+            this.form.per_month = pmt.toFixed(2);
+            this.form.total = (this.form.per_month * this.form.month).toFixed(2)
         }
     }
 }
