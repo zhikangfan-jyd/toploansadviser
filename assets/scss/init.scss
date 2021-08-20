@@ -70,13 +70,14 @@ html,body {
 }
 
 .swiper-pagination {
+    
     .my-bullet {
         display: inline-block;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         background: #fff;
         border-radius: 50%;
-        margin: 0 5px;
+        margin: 0 8px;
         cursor: pointer;
         &.my-bullet-active {
             background: #E9AF87;

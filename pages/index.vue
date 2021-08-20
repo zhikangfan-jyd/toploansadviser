@@ -5,12 +5,14 @@
             <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                     <div class="content-left">
-                        <p>To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
+                        <h2 class="website-title">We Compare, you choose</h2>
+                        <p class="desc">To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
                     </div>
                     <div class="content-right">
                         <div class="content-right-box">
+                             <img src="@/assets/img/banner.png" alt="" class="pic">
                             <h1 class="website-title">Best Personal Loan 2021</h1>
-                            <img src="@/assets/img/banner.png" alt="" class="pic">
+                           
                             <a href="/personal" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
                         </div>
                     </div>
@@ -19,12 +21,14 @@
             <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                     <div class="content-left">
-                        <p>Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for your specific situation.</p>
+                        <h2 class="website-title">We Compare, you choose</h2>
+                        <p class="desc">Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for your specific situation.</p>
                     </div>
                     <div class="content-right">
                         <div class="content-right-box">
-                            <h1 class="website-title">Best Student Loan Refinance Companies 2021</h1>
                             <img src="@/assets/img/student-banner.png" alt="" class="pic">
+                            <h1 class="website-title">Best Student Loan Refinance Companies 2021</h1>
+                            
                             <a href="/student-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
                         </div>
                     </div>
@@ -33,12 +37,14 @@
             <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                     <div class="content-left">
-                        <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best purchase and refinance rates for you.</p>
+                        <h2 class="website-title">We Compare, you choose</h2>
+                        <p class="desc">Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best purchase and refinance rates for you.</p>
                     </div>
                     <div class="content-right">
                         <div class="content-right-box">
+                            <img src="@/assets/img/mortgage-banner.png" alt="" class="pic">
                             <h1 class="website-title">Best Mortgage Lenders 2021</h1>
-                        <img src="@/assets/img/mortgage-banner.png" alt="" class="pic">
+                        
                         <a href="/mortgage" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
                         </div>
                         
@@ -50,8 +56,10 @@
            
       </section>
       <section class="home-page-main-area">
+          <canvas id="my-canvas" width="1080" height="1500"></canvas>
           <div class="home-page-main-container">
-            <h2 class="area-title">Choose us is a better choice for life</h2>
+            
+            <h2 class="area-title">Comparison helps you get more wisdom</h2>
             <div class="desc-title-card">
                 <h6 class="title">Who we are?</h6>
                 <div class="card-bottom">
@@ -75,7 +83,7 @@
                         <h6 class="desc-item-title">Most of us are unfortunately lacking in financial literacy.</h6>
                         <p class="content">Our goal is to provide our clients with all the essential information to choose the bank best fitting their financial needs.</p>
                     </div>
-                    <img src="@/assets/img/index-pic-1.png" alt="" class="pic">
+                    <img src="@/assets/img/about-pic-3.png" alt="" class="pic">
                 </div>
             </div>
             <div class="counter-container">
@@ -84,7 +92,10 @@
                         <span class="title">Amount $</span>
                         <input type="text" class="amount-input" v-model="form.amount" @input="changeAmount">
                     </div>
-                    <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annualy" @input="changeRate">
+                    <div class="rate-box">
+                        <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annualy" @input="changeRate">
+                    </div>
+                    
                     <input type="text" class="year-input" v-model="form.year" placeholder="Year" @input="changeYear">
                     <span class="text">or</span>
                     <input type="text" class="months-input" v-model="form.month" placeholder="Months" @input="changeMonth">
@@ -145,38 +156,16 @@
             </div>
             <div class="blog-container">
                 <h2 class="area-title">The lastest news and stocks</h2>
-                <div class="blog-list">
-                    <div class="blog-item">
-                        <div class="blog-info">
-                            <p>From The New Times</p>
-                            <p>News Loan & Interest</p>
+                <ul class="blog-list">
+                    <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
+                        <div class="img-box">
+                        
+                        <img v-lazy="item.picture" alt="">
                         </div>
-                        <div class="blog-box">
-                            <div class="blog-left">
-                                <h6 class="blog-title">Do You Qualify For The Student Loan Payment and Interest Pause?</h6>
-                                <a href="/guides/s1" target="_blank" rel="noopener noreferrer" class="link">Read more here</a>
-                            </div>
-                            <div class="img-box">
-                                <img src="/data/blogs/img/s-1.jpg" alt="" class="pic">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-item">
-                        <div class="blog-info">
-                            <p>From The New Times</p>
-                            <p>News Loan & Interest</p>
-                        </div>
-                        <div class="blog-box">
-                            <div class="blog-left">
-                                <h6 class="blog-title">6 Primary Advantages To Filing An Early FAFSA</h6>
-                                <a href="/guides/s2" target="_blank" rel="noopener noreferrer" class="link">Read more here</a>
-                            </div>
-                            <div class="img-box">
-                                <img src="/data/blogs/img/s-2.jpg" alt="" class="pic">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        <h6 class="blog-title">{{item.title}}</h6>
+                        <nuxt-link :to="'/guides/' + item.key" class="link">Read full Article</nuxt-link>
+                    </li>
+                </ul>
                 <div class="more-link-box">
                     <a href="http://" target="_blank" rel="noopener noreferrer" class="more-link">
                         <span class="icon"></span><span class="icon"></span>
@@ -229,6 +218,7 @@ export default {
                 per_month: 0,
                 total: 0
             },
+            personal_blogs: [],
             swiperOptions: {
                 // autoplay: {
                 //     delay: 3000,
@@ -249,6 +239,10 @@ export default {
         }
     },
     methods: {
+        async getBlog() {
+            let personal_results = await this.$axios.get('/data/blogs/personal.json');
+           this.personal_blogs = personal_results.data.data.slice(0,3)
+        },
         changeYear(e) {
             let value = e.target.value;
             if (isNaN(Number(value))) {
@@ -301,9 +295,6 @@ export default {
         },
         submit() {
             // 判断用户输入的是不是合法值
-            // if () {
-
-            // }
             if (this.form.year == '' || this.form.amount == '' || this.form.month == '' || this.form.rate == '') {
                 this.$message({
                     showClose: false,
@@ -320,10 +311,38 @@ export default {
                 })
                 retrun ;
             }
-            let pmt = (Number(this.form.amount)*(Number(this.form.rate) / 12)) / (1- 1 / Math.pow(1 + (Number(this.form.rate)/ 12), Number(this.form.month)));
+
+            let rate = this.form.rate / 100;
+            let pmt = (Number(this.form.amount)*(Number(rate) / 12)) / (1- 1 / Math.pow(1 + (Number(rate)/ 12), Number(this.form.month)));
             this.form.per_month = pmt.toFixed(2);
             this.form.total = (this.form.per_month * this.form.month).toFixed(2)
         }
+    },
+    created() {
+        this.getBlog();
+    },
+    mounted() {
+        let canvas = document.getElementById('my-canvas');
+        let ctx = canvas.getContext('2d');
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = '#29b674';
+        ctx.beginPath();
+        ctx.moveTo(1063.5,4);
+        ctx.bezierCurveTo(956.5, 136,212.5, 5,87.5 ,200);
+        ctx.stroke();
+        ctx.moveTo(87.5 ,200);
+        ctx.bezierCurveTo(183.5 ,414,1061.5, 248,904.5,518);
+        ctx.stroke();
+        ctx.moveTo(904.5,518);
+        ctx.bezierCurveTo(813.5, 624,324.5 ,430,160.5, 684);
+        ctx.stroke();
+        ctx.moveTo(160.5, 684);
+        ctx.bezierCurveTo(69.5 ,934,615.5 ,745,784.5,930);
+        ctx.stroke();
+        ctx.moveTo(784.5,930);
+        ctx.bezierCurveTo(963.5 ,1184,726.5 ,1310, 267.5 ,1430);
+        ctx.stroke();
+
     }
 }
 </script>
