@@ -12,7 +12,7 @@
                           <a href="/student-loan" target="_blank" rel="noopener noreferrer">Student Loan</a>
                       </li>
                       <li>
-                          <a href="/mortgage" target="_blank" rel="noopener noreferrer">Mortgage Loan</a>
+                          <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">Mortgage Loan</a>
                       </li>
                       <li>
                           <a href="/guides" target="_blank" rel="noopener noreferrer">Guides</a>
@@ -32,12 +32,12 @@
                               <li><a href="/personal-loans" target="_blank" rel="noopener noreferrer">Personal Loan</a></li>
 
                               <li><a href="/student-loan" target="_blank" rel="noopener noreferrer">Student Loan</a></li>
-                              <li><a href="/mortgage" target="_blank" rel="noopener noreferrer">Mortgage Loan</a></li>
-                              <li><a href="/about" target="_blank" rel="noopener noreferrer">About Us</a></li>
+                              <li><a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">Mortgage Loan</a></li>
+                              <li><a href="/about-us" target="_blank" rel="noopener noreferrer">About Us</a></li>
                               <li><a href="/guides" target="_blank" rel="noopener noreferrer">Guides</a></li>
-                              <li><a href="/contact" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
-                              <li><a href="/term" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
-                              <li><a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                              <li><a href="/contact-us" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+                              <li><a href="/term-of-use" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
+                              <li><a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
                                
                           </ul>
                       </div>
@@ -52,7 +52,7 @@
                           <textarea class="content" placeholder="Your Message"></textarea>
                       </div>
                       <div class="form-bottom">
-                          <p class="text">Your information will be handled as detailed in our <a href="/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+                          <p class="text">Your information will be handled as detailed in our <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
                           <button class="btn">Send</button>
                       </div>
                   </div>

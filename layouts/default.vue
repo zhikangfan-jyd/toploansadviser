@@ -14,7 +14,7 @@
             <nuxt-link to="/student-loan" class="link">Student Loan</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/mortgage" class="link">Mortgage Loan</nuxt-link>
+            <nuxt-link to="/mortgage-loan" class="link">Mortgage Loan</nuxt-link>
           </li>
           <li class="reviews">
             <span class="reviews-title link">Reviews</span>
@@ -77,7 +77,7 @@
             <nuxt-link to="/student-loan">Student Loan</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/mortgage">Mortgage Loan</nuxt-link>
+            <nuxt-link to="/mortgage-loan">Mortgage Loan</nuxt-link>
           </li>
           
           <li>
@@ -86,16 +86,16 @@
           </ul>
           <ul class="footer-nav-list">
             <li>
-            <nuxt-link to="/about">About Us</nuxt-link>
+            <nuxt-link to="/about-us">About Us</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/contact">Contact Us</nuxt-link>
+            <nuxt-link to="/contact-us">Contact Us</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/term">Term of Use</nuxt-link>
+            <nuxt-link to="/term-of-use">Term of Use</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/privacy">Privacy Policy</nuxt-link>
+            <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
           </li>
           </ul>
           </div>

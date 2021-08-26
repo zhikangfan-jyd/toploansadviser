@@ -37,7 +37,7 @@
                                 <img src="@/assets/img/mortgage-banner.png" alt="" class="pic">
                                     <h1 class="website-title">Best Mortgage Lenders 2021</h1>
                                 
-                                <a href="/mortgage" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
+                                <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
                                 
                             </div>
                         </swiper-slide>
@@ -59,8 +59,8 @@
             <div class="desc-title-card">
                 <h6 class="title">Who we are?</h6>
                 <div class="card-bottom">
-                    <p class="sub-title"><a href="/about" target="_blank" rel="noopener noreferrer nofollow">about Toploansadviser</a> <span class="icon"></span><span class="icon"></span></p>
-                    <a href="http://" target="_blank" rel="noopener noreferrer nofollow">more information here</a>
+                    <p class="sub-title"><a href="/about-us" target="_blank" rel="noopener noreferrer nofollow">about Toploansadviser</a> <span class="icon"></span><span class="icon"></span></p>
+                    <a href="/personal-loan" target="_blank" rel="noopener noreferrer nofollow">more information here</a>
                 </div>
                 
             </div>
@@ -131,7 +131,7 @@
             <div class="compare-container">
                 <div class="compare-title">
                     <span class="icon"></span><span class="icon"></span>
-                    <span class="text"><a href="/personal" target="_blank" rel="noopener noreferrer">Compare rates</a></span>
+                    <span class="text"><a href="/personal-loan" target="_blank" rel="noopener noreferrer">Compare rates</a></span>
                 </div>
 
                 <div class="scroll-box">
@@ -171,7 +171,7 @@
                     </li>
                 </ul>
                 <div class="more-link-box">
-                    <a href="http://" target="_blank" rel="noopener noreferrer" class="more-link">
+                    <a href="/guides" target="_blank" rel="noopener noreferrer" class="more-link">
                         <span class="icon"></span><span class="icon"></span>
                         <span class="text">See the lists</span>
                     </a>

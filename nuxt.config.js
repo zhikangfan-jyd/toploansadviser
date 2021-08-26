@@ -105,7 +105,7 @@ export default {
     }
   },
   axios: {
-    baseURL: 'http://127.0.0.1:3100'
+    baseURL: ''
   },
   server: {
     port: '3100',
