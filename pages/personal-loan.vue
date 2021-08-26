@@ -517,5 +517,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/scss/personal.scss'
+@import '~assets/scss/personal-loan.scss'
 </style>

@@ -72,8 +72,8 @@
         <ul class="table-list">
           <li>
             <span class="key">Loan amount</span>
-            <span class="value" v-if="product.amount.min == 'Infinity'"><${{formatNum(String(product.amount.max))}}</span>
-            <span class="value" v-else-if="product.amount.max == 'Infinity'">>${{formatNum(String(product.amount.min))}}</span>
+            <span class="value" v-if="product.amount.min == 'Infinity'">&lt;${{formatNum(String(product.amount.max))}}</span>
+            <span class="value" v-else-if="product.amount.max == 'Infinity'">&gt;${{formatNum(String(product.amount.min))}}</span>
             <span class="value" v-else>${{formatNum(String(product.amount.min))}} - ${{formatNum(String(product.amount.max))}}</span>
             
           </li>
@@ -245,7 +245,7 @@
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
         <ul class="top-list">
-          <li class="top-item" v-for="(item,index) in topLoans">
+          <li class="top-item" v-for="(item,index) in topLoans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo">
             <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: item.name,click_time: new Date().getTime(),link: item.link})">Visit Site</a>
           </li>

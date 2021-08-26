@@ -54,61 +54,6 @@
             "disclaimer": ""
         },
         {
-            "name": "upgrade",
-            "review_key": "",
-            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
-            "logo": "/data/images/upgrade.png",
-            "upto": "1000000",
-            "introduce": "No fees",
-            "amount": {
-                "min": 1000,
-                "max": 35000
-            },
-            "rate": {
-                "max": 10,
-                "score": "9.6"
-            },
-            "compare": {
-                "credit_score": "670",
-                "credit_text": "",
-                "apr": {
-                    "min": "7.99",
-                    "max": "35.97"
-                },
-                "term": "36-60 months"
-            },
-            "disclaimer": ""
-        },
-        
-        {
-            "name": "lendingclub",
-            "review_key": "",
-            "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content=",
-            "logo": "/data/images/lendingclub.png",
-            "upto": "1000000",
-            "introduce": "Choice for debt consolidation",
-            "amount": {
-                "min": 1000,
-                "max": 40000
-            },
-            "rate": {
-                "max": 10,
-                "score": "9.5"
-            },
-            "compare": {
-                "credit_score": "600",
-                "credit_text": "",
-                "apr": {
-                    "min": "8.05",
-                    "max": "25.89"
-                },
-                "term": "36-60 months"
-            },
-            "disclaimer": ""
-        },
-        
-        
-        {
             "name": "sofi",
             "review_key": "sofi",
             "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
@@ -121,7 +66,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "8.8"
+                "score": "9.6"
             },
             "compare": {
                 "credit_score": "680",
@@ -131,32 +76,6 @@
                     "max": "18.85"
                 },
                 "term": "24-84 months"
-            },
-            "disclaimer": ""
-        },
-        {
-            "name": "best_egg",
-            "review_key": "",
-            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
-            "logo": "/data/images/best_egg.png",
-            "upto": "1000000",
-            "introduce": "Get funding in as little as 1 day",
-            "amount": {
-                "min": "50000",
-                "max": "Infinity"
-            },
-            "rate": {
-                "max": 10,
-                "score": "8.5"
-            },
-            "compare": {
-                "credit_score": "600",
-                "credit_text": "",
-                "apr": {
-                    "min": "5.99",
-                    "max": "29.99"
-                },
-                "term": "36-60 months"
             },
             "disclaimer": ""
         },
@@ -173,7 +92,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "8.3"
+                "score": "9.5"
             },
             "compare": {
                 "credit_score": "580",
@@ -186,6 +105,90 @@
             },
             "disclaimer": ""
         },
+        {
+            "name": "lendingclub",
+            "review_key": "",
+            "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content=",
+            "logo": "/data/images/lendingclub.png",
+            "upto": "1000000",
+            "introduce": "Choice for debt consolidation",
+            "amount": {
+                "min": 1000,
+                "max": 40000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "credit_text": "",
+                "apr": {
+                    "min": "8.05",
+                    "max": "25.89"
+                },
+                "term": "36-60 months"
+            },
+            "disclaimer": ""
+        },
+        {
+            "name": "upgrade",
+            "review_key": "",
+            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
+            "logo": "/data/images/upgrade.png",
+            "upto": "1000000",
+            "introduce": "No fees",
+            "amount": {
+                "min": 1000,
+                "max": 35000
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.5"
+            },
+            "compare": {
+                "credit_score": "670",
+                "credit_text": "",
+                "apr": {
+                    "min": "7.99",
+                    "max": "35.97"
+                },
+                "term": "36-60 months"
+            },
+            "disclaimer": ""
+        },
+        
+        
+        
+        
+        
+        {
+            "name": "best_egg",
+            "review_key": "",
+            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
+            "logo": "/data/images/best_egg.png",
+            "upto": "1000000",
+            "introduce": "Get funding in as little as 1 day",
+            "amount": {
+                "min": "50000",
+                "max": "Infinity"
+            },
+            "rate": {
+                "max": 10,
+                "score": "8.3"
+            },
+            "compare": {
+                "credit_score": "600",
+                "credit_text": "",
+                "apr": {
+                    "min": "5.99",
+                    "max": "29.99"
+                },
+                "term": "36-60 months"
+            },
+            "disclaimer": ""
+        },
+        
         
         {
             "name": "Marcus",

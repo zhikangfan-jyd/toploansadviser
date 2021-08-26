@@ -7,7 +7,7 @@
         </a>
         <ul class="header-nav-list">
           <li>
-            <nuxt-link to="/" exact class="link">Personal Loan</nuxt-link>
+            <nuxt-link to="/personal-loan" exact class="link">Personal Loan</nuxt-link>
           </li>
           
           <li>
@@ -70,7 +70,7 @@
           
           <ul class="footer-nav-list">
             <li>
-            <nuxt-link to="/">Personal Loan</nuxt-link>
+            <nuxt-link to="/personal-loan">Personal Loan</nuxt-link>
           </li>
           
           <li>

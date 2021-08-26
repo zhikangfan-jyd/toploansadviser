@@ -105,10 +105,10 @@ export default {
     }
   },
   axios: {
-    baseURL: 'http://192.168.50.203:3100'
+    baseURL: 'http://127.0.0.1:3100'
   },
   server: {
     port: '3100',
-    host: '192.168.50.203'
+    host: '127.0.0.1'
   }
 }
