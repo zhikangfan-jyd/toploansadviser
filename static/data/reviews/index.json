@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "key": "credible",
+            "name": "Credible"
+        },
+        {
+            "key": "marcus",
+            "name": "marcus"
+        },
+        {
+            "key": "sofi",
+            "name": "SoFi"
+        },
+        {
+            "key": "lightstream",
+            "name": "Lightstream"
+        },
+        {
+            "key": "lendingtree",
+            "name": "LendingTree"
+        },
+        {
+            "key": "avant",
+            "name": "Avant"
+        },
+        {
+            "key": "drcredit",
+            "name": "DrCredit"
+        },
+        {
+            "key": "upstart",
+            "name": "UPSTART"
+        },
+        {
+            "key": "personalloans",
+            "name": "PersonalLoans"
+        }
+    ]
+}

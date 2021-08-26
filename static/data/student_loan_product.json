@@ -1,0 +1,232 @@
+{
+    "data": [
+        
+        {
+            "name": "credible_stu",
+            "review_key": "credible",
+            "link": "https://www.credible.com/refinance-student-loans/?utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
+            "logo": "/data/images/credible.png",
+            "rate": {
+                "max": 10,
+                "score": "9.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "14.50"
+                },
+                "variable_rate": {
+                    "min_rate": "1.21",
+                    "max_rate": "12.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "SoFi_stu",
+            "review_key": "",
+            "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
+            "logo": "/data/images/sofi.png",
+            "rate": {
+                "max": 10,
+                "score": "9.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "2.74",
+                    "max_rate": "6.39"
+                },
+                "variable_rate": {
+                    "min_rate": "2.25",
+                    "max_rate": "6.39"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "Citizens_Bank",
+            "review_key": "",
+            "link": "https://www.credible.com/a/dd-citizens/?utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
+            "logo": "/data/images/citizens_bank.png",
+            "rate": {
+                "max": 10,
+                "score": "9.2"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "2.97",
+                    "max_rate": "9.15"
+                },
+                "variable_rate": {
+                    "min_rate": "2.24",
+                    "max_rate": "8.90"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "MEFA",
+            "review_key": "",
+            "link": "https://www.credible.com/a/fh-mefa/?utm_source=westwin&utm_medium=referral&utm_campaign=mefa_slr&utm_content=",
+            "logo": "/data/images/mefa.png",
+            "rate": {
+                "max": 10,
+                "score": "8.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.25",
+                    "max_rate": "12.35"
+                },
+                "variable_rate": {
+                    "min_rate": "1.25",
+                    "max_rate": "11.10"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        
+        
+        {
+            "name": "PenFed",
+            "review_key": "",
+            "link": "https://www.credible.com/a/dd-penfed/?utm_source=westwin&utm_medium=referral&utm_campaign=penfed_slr&utm_content=",
+            "logo": "/data/images/penfed.png",
+            "rate": {
+                "max": 10,
+                "score": "8.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "2.89",
+                    "max_rate": "5.63"
+                },
+                "variable_rate": {
+                    "min_rate": "2.15",
+                    "max_rate": "5.27"
+                }
+            },
+            "loan_term": {
+                "min_term": "10",
+                "max_term": "20"
+            }
+        },
+        {
+            "name": "RISLA",
+            "review_key": "",
+            "link": "https://www.credible.com/a/dd-risla-slr/?utm_source=westwin&utm_medium=referral&utm_campaign=risla_slr&utm_content=",
+            "logo": "/data/images/risla.png",
+            "rate": {
+                "max": 10,
+                "score": "8.1"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.53",
+                    "max_rate": "14.50"
+                },
+                "variable_rate": {
+                    "min_rate": "2.69",
+                    "max_rate": "12.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "10",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "Salliemae",
+            "review_key": "",
+            "link": "https://www.salliemae.com",
+            "logo": "/data/images/salliemae.png",
+            "rate": {
+                "max": 10,
+                "score": "7.8"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "4.25",
+                    "max_rate": "12.35"
+                },
+                "variable_rate": {
+                    "min_rate": "1.25",
+                    "max_rate": "11.15"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "College Ave",
+            "review_key": "",
+            "link": "https://www.collegeave.com",
+            "logo": "/data/images/collegeave.png",
+            "rate": {
+                "max": 10,
+                "score": "7.5"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "12.99"
+                },
+                "variable_rate": {
+                    "min_rate": "1.24",
+                    "max_rate": "11.98"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "15"
+            }
+        },
+        {
+            "name": "earnest",
+            "review_key": "",
+            "link": "https://www.earnest.com",
+            "logo": "/data/images/earnest.png",
+            "rate": {
+                "max": 10,
+                "score": "7.3"
+            },
+            "compare": {
+                "credit_score": "600",
+                "fixed_rate": {
+                    "min_rate": "3.49",
+                    "max_rate": "12.78"
+                },
+                "variable_rate": {
+                    "min_rate": "1.24",
+                    "max_rate": "11.44"
+                }
+            },
+            "loan_term": {
+                "min_term": "5",
+                "max_term": "20"
+            }
+        }
+    ]
+}

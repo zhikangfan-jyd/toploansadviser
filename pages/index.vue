@@ -17,7 +17,7 @@
                                 <img src="@/assets/img/banner.png" alt="" class="pic">
                                 <h1 class="website-title">Best Personal Loan 2021</h1>
                                 
-                                <a href="/personal" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
+                                <a href="/personal-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
                                 
                             </div>
                         </swiper-slide>
