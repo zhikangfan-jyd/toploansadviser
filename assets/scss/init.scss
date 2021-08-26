@@ -68,6 +68,23 @@ html,body {
         transform: scale(1.6);
     }
 }
+
+.swiper-pagination {
+    left: 15%;
+    bottom: 35px;
+    .my-bullet {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 8px;
+        cursor: pointer;
+        &.my-bullet-active {
+            background: #E9AF87;
+        }
+    }
+}
 @font-face {
     font-family: 'Poppins-Regular';
     src: url('../fonts/Poppins-Regular.eot');
@@ -138,9 +155,9 @@ html,body {
 
 @font-face {
     font-family: 'iconfont';  /* Project id 2472982 */
-    src: url('//at.alicdn.com/t/font_2472982_gz68t9upo95.woff2?t=1626336302458') format('woff2'),
-         url('//at.alicdn.com/t/font_2472982_gz68t9upo95.woff?t=1626336302458') format('woff'),
-         url('//at.alicdn.com/t/font_2472982_gz68t9upo95.ttf?t=1626336302458') format('truetype');
+    src: url('//at.alicdn.com/t/font_2472982_wtzwweq9sgq.woff2?t=1629791040134') format('woff2'),
+         url('//at.alicdn.com/t/font_2472982_wtzwweq9sgq.woff?t=1629791040134') format('woff'),
+         url('//at.alicdn.com/t/font_2472982_wtzwweq9sgq.ttf?t=1629791040134') format('truetype');
   }
 .iconfont {
     font-family: 'iconfont';
