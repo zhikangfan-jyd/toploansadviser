@@ -307,7 +307,7 @@
                                     display: inline-block;
                                     width: 23px;
                                     height: 23px;
-                                    background-image: url('../assets/img/person-icon.png');
+                                    background-image: url('../assets/img/person-icon.webp');
                                     background-repeat: no-repeat;
                                     background-position: center center;
                                     background-size: cover;
@@ -866,14 +866,14 @@
                             display: inline-block;
                             width: 30px;
                             height: 30px;
-                            background-image: url('../assets/img/subtract.png');
+                            background-image: url('../assets/img/subtract.webp');
                             background-size: cover;
                             background-position: center center;
                             background-repeat: no-repeat;
                             cursor: pointer;
 
                             &.current {
-                                background-image: url('../assets/img/add.png');
+                                background-image: url('../assets/img/add.webp');
                             
                             }
                         }

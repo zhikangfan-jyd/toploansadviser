@@ -1,7 +1,7 @@
 <template>
   <main class="error-container">
     <div class="content">
-      <img src="@/assets/img/error.png" alt="error">
+      <img src="@/assets/img/error.webp" alt="error">
     </div>
   </main>
 </template>

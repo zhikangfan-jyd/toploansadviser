@@ -3,7 +3,7 @@
         "name": "Quicken Loans",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/Quicken_Loans.png",
+        "logo": "/data/images/Quicken_Loans.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -57,7 +57,7 @@
         "name": "AmeriSave",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/amerisave.png",
+        "logo": "/data/images/amerisave.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -112,7 +112,7 @@
         "name": "Better",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/better.png",
+        "logo": "/data/images/better.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -164,7 +164,7 @@
         "name": "Zillow",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/zillow_home_loans.png",
+        "logo": "/data/images/zillow_home_loans.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -215,7 +215,7 @@
         "name": "New American Funding",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/new_american_funding.png",
+        "logo": "/data/images/new_american_funding.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -267,7 +267,7 @@
         "name": "AmeriSave",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/amerisave.png",
+        "logo": "/data/images/amerisave.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -321,7 +321,7 @@
         "name": "Better",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/better.png",
+        "logo": "/data/images/better.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -372,7 +372,7 @@
         "name": "Quicken Loans",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/Quicken_Loans.png",
+        "logo": "/data/images/Quicken_Loans.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -426,7 +426,7 @@
         "name": "New American Funding",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/new_american_funding.png",
+        "logo": "/data/images/new_american_funding.webp",
         "rate": {
             "max": 10,
             "score": "9.8"
@@ -477,7 +477,7 @@
         "name": "Zillow",
         "review_key": "",
         "link": "",
-        "logo": "/data/images/zillow_home_loans.png",
+        "logo": "/data/images/zillow_home_loans.webp",
         "rate": {
             "max": 10,
             "score": "9.8"

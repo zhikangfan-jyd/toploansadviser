@@ -11,7 +11,7 @@
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
           <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
         </div>
-        <img src="@/assets/img/banner.png" alt="Toploansadviser" class="banner-img">
+        <img src="@/assets/img/banner.webp" alt="personal loan on the cover" class="banner-img">
 
       </div>
     </section>
@@ -331,7 +331,7 @@
       </section>
       <section class="faq-area">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="answear or questions about personal loans" class="pic">
           <div class="faq-content">
             <h4 class="faq-title">
               <span>FAQ's</span>
@@ -352,9 +352,9 @@
             <div class="footer-card-content">
               <p>Finding the best products and services means setting a high standard. Our diverse team is serious about research. Once our editors select a topic, the team tests (if possible) and evaluates products and services related to those topics. While our comparison lists are the nucleus of toploansadviser.com, we also feature product reviews, feature comparisons, guides, articles, and tutorials. We also have a scoring system for products and services based on data compiled from various factors.</p>
               <div class="img-box">
-                <img src="@/assets/img/q1.png" alt="toploansadviser"
-                ><img src="@/assets/img/q2.png" alt="toploansadviser">
-                <img src="@/assets/img/q3.png" alt="toploansadviser">
+                <img src="@/assets/img/q1.webp" alt="article about reliability"
+                ><img src="@/assets/img/q2.webp" alt="article about reliability">
+                <img src="@/assets/img/q3.webp" alt="article about reliability">
               </div>
             </div>
           </div>

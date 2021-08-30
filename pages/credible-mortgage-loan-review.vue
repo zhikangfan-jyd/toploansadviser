@@ -13,9 +13,9 @@
             </ul>
             <section class="content-area">
                 <h1 class="area-title website-title">I Finally Discovered How To Get My Refinancing Mortgage Loan In Low Rates, <span class="orange">WITHOUT Perfect Credit Score</span></h1>
-                <img src="@/assets/img/credible-review/credible-pic-1.png" alt="Credible" class="pic">
+                <img src="@/assets/img/credible-review/credible-pic-1.webp" alt="Credible" class="pic">
                 <div class="author-box">
-                    <img src="@/assets/img/credible-review/author.png" alt="Angela Boston" class="author-img">
+                    <img src="@/assets/img/credible-review/author.webp" alt="Angela Boston" class="author-img">
                     <p class="author-info">
                         <span class="name">Angela Boston</span>
                         <span class="time">Updating on 2nd August 2021</span>
@@ -28,7 +28,7 @@
             </section>
             <section class="content-area">
                 <h2 class="area-title quick-title">What is Credible?</h2>
-                <img src="@/assets/img/credible-review/credible-pic-2.png" alt="Credible" class="pic">
+                <img src="@/assets/img/credible-review/credible-pic-2.webp" alt="Credible" class="pic">
                 <p class="text medium">You probably look at <span class="highlight">Credible</span> and figure it’s just like Lending Tree or other mortgage comparison sites, right?</p>
                 <p class="text" style="font-size: 20px; font-weight: bold;">I did too until I used it.</p>
                 <p class="text"><span class="highlight">Credible</span> is so much more than a comparison website. Think of it as the computer version of a mortgage broker. If you aren’t familiar with a mortgage broker – it’s a ‘middleman’ between you and the mortgage company. You don’t work directly with the lender you’re securing the loan from but instead work with the broker that offers wholesale rates rather than retail rates.</p>
@@ -93,7 +93,7 @@
             </section>
             <section class="content-area">
                 <h2 class="area-title quick-title">What is the Cost?</h2>
-                <img src="@/assets/img/credible-review/credible-pic-3.jpg" alt="Credible" class="pic">
+                <img src="@/assets/img/credible-review/credible-pic-3.webp" alt="Credible" class="pic">
                 <p class="text medium"><strong>I know you’ll love this – Credible costs the homeowner NOTHING. That’s right, I used <span class="highlight">Credible</span> for my home purchase and didn’t pay them a dime.</strong></p>
                 <p class="text">The same is true if you refinance your mortgage, but how?                </p>
                 <p class="text"><span class="highlight">Credible</span> is the middleman – the entity between you and the lender. Rather than you paying Credible – the lender pays them. Credible is like the marketing piece for lenders. If a lender signs up with Credible, they agree to pay Credible a percentage of each loan that closes.</p>
@@ -152,7 +152,7 @@
                 <p class="text medium">Since <span class="highlight">Credible</span> works with so many lenders, they don’t have specific qualification requirements you must meet. It’s in your best interest to have a great credit score, low debt ratio, and stable income, though.                </p>
                 <p class="text">If you have less-than-perfect credit or a high debt ratio, it doesn’t mean you’re automatically out of luck – it just means you may not secure the lowest interest rates.
                 </p>
-                <img src="@/assets/img/credible-review/credible-pic-5.jpg" alt="credible" class="pic">
+                <img src="@/assets/img/credible-review/credible-pic-5.webp" alt="credible" class="pic">
                 <p class="text medium"><span class="highlight">Credible</span> works with many lenders, some of whom have more flexible requirements. In general, though, I would aim for:</p>
                 <ul class="default-ul-list">
                     <li class="default-ul-list-item">660+ credit score</li>
@@ -181,7 +181,7 @@
             </section>
             <section class="content-area">
                 <h2 class="area-title quick-title">Who Should Use Credible?</h2>
-                <img src="@/assets/img/credible-review/credible-pic-6.jpg" alt="credible" class="pic">
+                <img src="@/assets/img/credible-review/credible-pic-6.webp" alt="credible" class="pic">
                 <p class="text medium">Everyone wants to know – is Credible right for me?
                 </p>
                 <p class="text">I would say it is right for anyone looking to buy a home or refinance an existing mortgage as long as you don’t have unique circumstances.</p>
@@ -212,7 +212,7 @@
         <aside class="fixed-area">
             <div class="fixed-container">
                 <div class="card-container">
-                    <img src="@/assets/img/credible-review/credible-logo.png" alt="credible" class="logo">
+                    <img src="@/assets/img/credible-review/credible-logo.webp" alt="credible" class="logo">
                     <span class="score">9.9</span>
                     <div class="trustpilot-box">
                         <div class="text-box">

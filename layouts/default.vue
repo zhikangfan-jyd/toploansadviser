@@ -3,7 +3,7 @@
     <header class="header-container">
       <div class="header-wrapper">
         <a href="/" target="_self" rel="noopener noreferrer">
-          <img src="@/assets/img/website-logo.png" alt="Toploansadviser" class="website-logo">
+          <img src="@/assets/img/website-logo.webp" alt="Toploansadviser" class="website-logo">
         </a>
         <ul class="header-nav-list">
           <li>
@@ -59,7 +59,7 @@
 
         <div class="footer-info-box">
           <a href="/" target="_blank" rel="noopener noreferrer">
-            <img src="@/assets/img/website-footer-logo.png" alt="Toploansadviser" class="footer-logo">
+            <img src="@/assets/img/website-footer-logo.webp" alt="Toploansadviser" class="footer-logo">
           </a>
           <!-- <p class="desc">277-279 Chiswick High Road, Chiswick, London, United Kingdom, W4 4PU</p> -->
         </div>

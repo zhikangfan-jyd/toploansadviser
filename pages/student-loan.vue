@@ -10,7 +10,7 @@
           </div>
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
-        <img src="@/assets/img/student-banner.png" alt="Toploansadviser" class="banner-img">
+        <img src="@/assets/img/student-banner.webp" alt="student loan banner" class="banner-img">
 
       </div>
     </section>
@@ -169,7 +169,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" alt="">
+                      <img v-lazy="item.logo" :alt="item.name">
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -226,7 +226,7 @@
       </section>
       <section class="faq-area">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="answear or questions about student loans" class="pic">
           <div class="faq-content">
             <h2 class="faq-title">
               <span>FAQ's</span>

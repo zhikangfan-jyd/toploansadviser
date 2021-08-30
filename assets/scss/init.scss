@@ -85,6 +85,24 @@ html,body {
         }
     }
 }
+.phone-swiper-pagination {
+    position: relative;
+    z-index: 2;
+    transform: translateY(-14px);
+    text-align: center;
+    .my-phone-bullet {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #000;
+        border-radius: 50%;
+        margin: 0 3px;
+        cursor: pointer;
+        &.my-phone-bullet-active {
+            background: $theme-color;
+        }
+    }
+}
 @font-face {
     font-family: 'Poppins-Regular';
     src: url('../fonts/Poppins-Regular.eot');

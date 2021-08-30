@@ -61,7 +61,7 @@
           <li v-for="(item,index) in keepReading" :key="index">
             <nuxt-link :to="'/guides/' + item.key">
               <div class="img-box">
-                <img v-lazy="item.picture" alt="" class="pic">
+                <img v-lazy="item.picture" :alt="item.title" class="pic">
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{item.title}}</h6>

@@ -4,9 +4,9 @@
             <div class="banner-container">
                 <div class="banner-content">
                     <div class="logo-box">
-                        <img src="@/assets/img/website-logo.png" alt="toploansadviser.com" class="website-logo">
+                        <img src="@/assets/img/website-logo.webp" alt="toploansadviser.com" class="website-logo">
                         <span class="cha-icon"></span>
-                        <img src="@/assets/img/eaglecashloan.png" alt="eaglecashloan" class="credible-logo" style="height: 30px">
+                        <img src="@/assets/img/eaglecashloan.webp" alt="eaglecashloan" class="credible-logo" style="height: 30px">
                     </div>
                     <h1 class="website-title">The Fastest Way to Get Personal Loan</h1>
                     <p class="sub-title">To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="img-box">
-                    <img src="@/assets/img/best-personal-loan-banner.png" alt="" class="pic">
+                    <img src="@/assets/img/best-personal-loan-banner.webp" alt="" class="pic">
                     <div class="trustpilot-box">
                         <span class="iconfont big-star">&#xe64c;</span>
                         <span class="text">Trustpilot</span>
@@ -40,17 +40,17 @@
                 </div>
                 <div class="works-box">
                     <div class="work-item">
-                        <img src="@/assets/img/work-1.png" alt="" class="pic">
+                        <img src="@/assets/img/work-1.webp" alt="" class="pic">
                         <span class="title">Compare Rates</span>
                         <p class="text">Fill out a quick simple form (2 mins)</p>
                     </div>
                     <div class="work-item">
-                        <img src="@/assets/img/work-2.png" alt="" class="pic">
+                        <img src="@/assets/img/work-2.webp" alt="" class="pic">
                         <span class="title">Select A Lender</span>
                         <p class="text">Choose an option you like (2 mins)</p>
                     </div>
                     <div class="work-item">
-                        <img src="@/assets/img/work-3.png" alt="" class="pic">
+                        <img src="@/assets/img/work-3.webp" alt="" class="pic">
                         <span class="title">Apply Online</span>
                         <p class="text">Provide your loan details (3 mins)</p>
                     </div>
@@ -289,7 +289,7 @@
                         <p class="text">Credible helps national people get their <span class="green">personal loans safe and fast</span></p>
                     </div>
                 </div>
-                <img src="@/assets/img/info.jpg" alt="" class="pic">
+                <img src="@/assets/img/info.webp" alt="" class="pic">
                 <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
 
                     <span class="text">Get My Rates</span>
@@ -300,7 +300,7 @@
         </section>
         <section class="faq-area">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic">
           <div class="faq-content">
             <h4 class="faq-title">
               <span>FAQ's</span>
@@ -321,9 +321,9 @@
             <div class="footer-card-content">
               <p>Finding the best products and services means setting a high standard. Our diverse team is serious about research. Once our editors select a topic, the team tests (if possible) and evaluates products and services related to those topics. While our comparison lists are the nucleus of toploansadviser.com, we also feature product reviews, feature comparisons, guides, articles, and tutorials. We also have a scoring system for products and services based on data compiled from various factors.</p>
               <div class="img-box">
-                <img src="@/assets/img/q1.png" alt="toploansadviser"
-                ><img src="@/assets/img/q2.png" alt="toploansadviser">
-                <img src="@/assets/img/q3.png" alt="toploansadviser">
+                <img src="@/assets/img/q1.webp" alt="toploansadviser"
+                ><img src="@/assets/img/q2.webp" alt="toploansadviser">
+                <img src="@/assets/img/q3.webp" alt="toploansadviser">
               </div>
             </div>
           </div>

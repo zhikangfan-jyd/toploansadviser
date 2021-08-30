@@ -62,7 +62,7 @@
                           <a href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=" target="_blank" rel="noopener noreferrer nofollow" class="start-btn" v-else @click="handleTracking({name: 'credible',click_time: new Date().getTime(),link: 'https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content='})">Get Started</a>
                           <div class="power">
                               <span class="text">Powered by</span>
-                              <img src="/data/images/credible.png" alt="" class="logo">
+                              <img src="/data/images/credible.webp" alt="" class="logo">
                           </div>
                       </div>
                   </div>

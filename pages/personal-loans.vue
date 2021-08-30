@@ -253,25 +253,25 @@
                   <div class="aside-item article-box">
                       <div class="title">Read More...</div>
                       <div class="article-item">
-                          <a href="/guides/s1" target="_blank" rel="noopener noreferrer" class="article-title">
+                          <a href="/guides/do-you-qualify-for-the-student-loan-payment" target="_blank" rel="noopener noreferrer" class="article-title">
                             <h6>Do You Qualify For The Student Loan Payment and Interest Pause?</h6>
                           </a>
                           <div class="article-text">Under then-president Donald Trump, the federal government took decisive action to temporarily pause interest charges and suspend payments...</div>
-                          <a href="/guides/s1" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
+                          <a href="/guides/do-you-qualify-for-the-student-loan-payment" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
                       </div>
                       <div class="article-item">
-                          <a href="/guides/b1" target="_blank" rel="noopener noreferrer" class="article-title">
+                          <a href="/guides/credit-score-increased-during-the-pandemic1" target="_blank" rel="noopener noreferrer" class="article-title">
                             <h6>Why Have Credit Scores Increased During the Pandemic?</h6>
                           </a>
                           <div class="article-text">FICO credit scores continued to soar during July reaching an average of 711 (a record high), despite a pandemic which is 5 points higher than in 2019...</div>
-                          <a href="/guides/b1" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
+                          <a href="/guides/credit-score-increased-during-the-pandemic1" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
                       </div>
                       <div class="article-item">
-                          <a href="/guides/p7" target="_blank" rel="noopener noreferrer" class="article-title">
+                          <a href="/guides/joe-biden-and-emergency-rescue-plan" target="_blank" rel="noopener noreferrer" class="article-title">
                             <h6>6 Proposals Then President-Elect Joe Biden Put Forth In His Emergency Rescue Plan</h6>
                           </a>
                           <div class="article-text">U.S. President Joe Biden put together the Emergency Rescue Plan (now known as the American Rescue Plan of 2021) that would...</div>
-                          <a href="/guides/p7" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
+                          <a href="/guides/joe-biden-and-emergency-rescue-plan" target="_blank" rel="noopener noreferrer" class="read-review">Read more »</a>
                       </div>
                   </div>
               </aside>

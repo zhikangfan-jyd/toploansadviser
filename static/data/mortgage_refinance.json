@@ -4,7 +4,7 @@
             "name": "Credible",
             "review_key": "",
             "link": "https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content=",
-            "logo": "/data/images/credible.png",
+            "logo": "/data/images/credible.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -52,7 +52,7 @@
             "name": "LoanDepot",
             "review_key": "",
             "link": "https://www.loandepot.com/",
-            "logo": "/data/images/loandepot.png",
+            "logo": "/data/images/loandepot.webp",
             "rate": {
                 "max": 10,
                 "score": "9.6"
@@ -103,7 +103,7 @@
             "name": "Rocket Mortgage",
             "review_key": "",
             "link": "https://www.rocketmortgage.com/",
-            "logo": "/data/images/rocket_mortgage.png",
+            "logo": "/data/images/rocket_mortgage.webp",
             "rate": {
                 "max": 10,
                 "score": "9.5"
@@ -152,7 +152,7 @@
             "name": "Caliber",
             "review_key": "",
             "link": "https://www.caliberhomeloans.com/",
-            "logo": "/data/images/caliber.png",
+            "logo": "/data/images/caliber.webp",
             "rate": {
                 "max": 10,
                 "score": "9.3"
@@ -202,7 +202,7 @@
             "name": "Sterns loan",
             "review_key": "",
             "link": "https://stearns.com/",
-            "logo": "/data/images/stearns_home_loans.png",
+            "logo": "/data/images/stearns_home_loans.webp",
             "rate": {
                 "max": 10,
                 "score": "9.0"

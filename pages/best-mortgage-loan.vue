@@ -4,9 +4,9 @@
             <div class="banner-container">
                 <div class="banner-content">
                     <div class="logo-box">
-                        <img src="@/assets/img/website-logo.png" alt="toploansadviser.com" class="website-logo">
+                        <img src="@/assets/img/website-logo.webp" alt="toploansadviser.com" class="website-logo">
                         <span class="cha-icon"></span>
-                        <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
+                        <img src="@/assets/img/credible.webp" alt="Credible" class="credible-logo">
                     </div>
                     <h1 class="website-title">Compare the Best Mortgage Loans Online</h1>
                     <p class="sub-title">Planning to buy in the next 45 days?</p>
@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="img-box">
-                    <img src="@/assets/img/best-mortgage-loan-banner.png" alt="" class="pic">
+                    <img src="@/assets/img/best-mortgage-loan-banner.webp" alt="" class="pic">
                     <div class="trustpilot-box">
                         <span class="iconfont big-star">&#xe64c;</span>
                         <span class="text">Trustpilot</span>
@@ -41,26 +41,26 @@
                 </ul>
                 <div class="title-box">
                     <div class="img-box">
-                        <img src="@/assets/img/website-logo.png" alt="toploansadviser" class="website-logo">
+                        <img src="@/assets/img/website-logo.webp" alt="toploansadviser" class="website-logo">
                         <span class="cha-icon"></span>
-                        <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
+                        <img src="@/assets/img/credible.webp" alt="Credible" class="credible-logo">
                     </div>
                     <span class="text">CREDIBLE LENDERS</span>
                 </div>
                 <div class="logo-container">
                     <ul class="logo-list">
-                        <li><img src="@/assets/img/AEL.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/brazos.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/RISLA.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/College_Ave.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/SoFi.png" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/AEL.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/brazos.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/RISLA.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/College_Ave.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/SoFi.webp" alt="" class="pic"></li>
                     </ul>
                     <ul class="logo-list">
-                        <li><img src="@/assets/img/PenFed.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/INvestEd.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/ELFI.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/MEFA.png" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/Citizens_Bank.png" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/PenFed.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/INvestEd.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/ELFI.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/MEFA.webp" alt="" class="pic"></li>
+                        <li><img src="@/assets/img/Citizens_Bank.webp" alt="" class="pic"></li>
                     </ul>
                 </div>
             </div>
@@ -74,17 +74,17 @@
                 </div>
                 <div class="works-box">
                     <div class="work-item">
-                        <img src="@/assets/img/work-1.png" alt="" class="pic">
+                        <img src="@/assets/img/work-1.webp" alt="" class="pic">
                         <span class="title">Compare Rates</span>
                         <p class="text">Fill out a quick simple form (2 mins)</p>
                     </div>
                     <div class="work-item">
-                        <img src="@/assets/img/work-2.png" alt="" class="pic">
+                        <img src="@/assets/img/work-2.webp" alt="" class="pic">
                         <span class="title">Select A Lender</span>
                         <p class="text">Choose an option you like (2 mins)</p>
                     </div>
                     <div class="work-item">
-                        <img src="@/assets/img/work-3.png" alt="" class="pic">
+                        <img src="@/assets/img/work-3.webp" alt="" class="pic">
                         <span class="title">Apply Online</span>
                         <p class="text">Provide your loan details (3 mins)</p>
                     </div>
@@ -245,7 +245,7 @@
                         <p class="text">We help national people get their <span class="green">refinance mortgage loans</span></p>
                     </div>
                 </div>
-                <img src="@/assets/img/info.jpg" alt="" class="pic">
+                <img src="@/assets/img/info.webp" alt="" class="pic">
                 <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">
 
                     <span class="text">Get My Rates</span>
@@ -256,7 +256,7 @@
         </section>
         <section class="faq-area" id="quick-faq">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic">
           <div class="faq-content">
             <h2 class="faq-title">
               <span>FAQ's</span>

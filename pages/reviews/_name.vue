@@ -64,7 +64,7 @@
         </div>
         <div class="content-item" v-if="review.overview != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-1.png" alt="" class="box">
+            <img src="@/assets/img/r-1.webp" alt="" class="box">
             <h5 class="title">Overview</h5>
           </div>
           <div class="content" v-html="review.overview"></div>
@@ -109,42 +109,42 @@
         </div>
         <div class="content-item" v-if="review.loan_account != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-2.png" alt="" class="box">
+            <img src="@/assets/img/r-2.webp" alt="" class="box">
             <h5 class="title">Loan Amount</h5>
           </div>
           <div class="content" v-html="review.loan_account"></div>
         </div>
         <div class="content-item" v-if="review.apr != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-3.png" alt="" class="box">
+            <img src="@/assets/img/r-3.webp" alt="" class="box">
             <h5 class="title">APR</h5>
           </div>
           <div class="content" v-html="review.apr"></div>
         </div>
         <div class="content-item" v-if="review.minimum_credit_score != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-4.png" alt="" class="box">
+            <img src="@/assets/img/r-4.webp" alt="" class="box">
             <h5 class="title">Minimum credit score</h5>
           </div>
           <div class="content" v-html="review.minimum_credit_score"></div>
         </div>
         <div class="content-item" v-if="review.requirements != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-5.png" alt="" class="box">
+            <img src="@/assets/img/r-5.webp" alt="" class="box">
             <h5 class="title">Qualifying Requirements</h5>
           </div>
           <div class="content" v-html="review.requirements"></div>
         </div>
         <div class="content-item" v-if="review.loan_terms != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-6.png" alt="" class="box">
+            <img src="@/assets/img/r-6.webp" alt="" class="box">
             <h5 class="title">Loan Terms</h5>
           </div>
           <div class="content" v-html="review.loan_terms"></div>
         </div>
         <div class="content-item" v-if="review.pros_cons != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-7.png" alt="" class="box">
+            <img src="@/assets/img/r-7.webp" alt="" class="box">
             <h5 class="title">Pros & Cons</h5>
           </div>
 
@@ -177,42 +177,42 @@
         </div>
         <div class="content-item" v-if="review.applying != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-8.png" alt="" class="box">
+            <img src="@/assets/img/r-8.webp" alt="" class="box">
             <h5 class="title">Application</h5>
           </div>
           <div class="content" v-html="review.applying"></div>
         </div>
         <div class="content-item" v-if="review.have_bad_credit != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-9.png" alt="" class="box">
+            <img src="@/assets/img/r-9.webp" alt="" class="box">
             <h5 class="title">Can you Apply if you have Bad Credit?</h5>
           </div>
           <div class="content" v-html="review.have_bad_credit"></div>
         </div>
         <div class="content-item" v-if="review.main_loan_features != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-10.png" alt="" class="box">
+            <img src="@/assets/img/r-10.webp" alt="" class="box">
             <h5 class="title">Main Loan Features</h5>
           </div>
           <div class="content" v-html="review.main_loan_features"></div>
         </div>
         <div class="content-item" v-if="review.rates_fees != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-11.png" alt="" class="box">
+            <img src="@/assets/img/r-11.webp" alt="" class="box">
             <h5 class="title">Rates & Fees</h5>
           </div>
           <div class="content" v-html="review.rates_fees"></div>
         </div>
         <div class="content-item" v-if="review.loan_process != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-12.png" alt="" class="box">
+            <img src="@/assets/img/r-12.webp" alt="" class="box">
             <h5 class="title">Loan Process</h5>
           </div>
           <div class="content" v-html="review.loan_process"></div>
         </div>
         <div class="content-item" v-if="review.customer_support != ''">
           <div class="title-box">
-            <img src="@/assets/img/r-13.png" alt="" class="box">
+            <img src="@/assets/img/r-13.webp" alt="" class="box">
             <h5 class="title">Customer Support</h5>
           </div>
           <div class="content" v-html="review.customer_support"></div>

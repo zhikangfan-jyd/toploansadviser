@@ -4,7 +4,7 @@
             "name": "LoanDepot",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/loandepot.png",
+            "logo": "/data/images/loandepot.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -55,7 +55,7 @@
             "name": "AmeriSave",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/amerisave.png",
+            "logo": "/data/images/amerisave.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -109,7 +109,7 @@
             "name": "Better",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/better.png",
+            "logo": "/data/images/better.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -160,7 +160,7 @@
             "name": "Figure",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/figure.png",
+            "logo": "/data/images/figure.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -209,7 +209,7 @@
             "name": "Quicken Loans",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/Quicken_Loans.png",
+            "logo": "/data/images/Quicken_Loans.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -263,7 +263,7 @@
             "name": "Zillow",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/zillow_home_loans.png",
+            "logo": "/data/images/zillow_home_loans.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -314,7 +314,7 @@
             "name": "Credible",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/credible.png",
+            "logo": "/data/images/credible.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -362,7 +362,7 @@
             "name": "lendingtree",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/lendingtree.png",
+            "logo": "/data/images/lendingtree.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -411,7 +411,7 @@
             "name": "New American Funding",
             "review_key": "",
             "link": "",
-            "logo": "/data/images/new_american_funding.png",
+            "logo": "/data/images/new_american_funding.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"

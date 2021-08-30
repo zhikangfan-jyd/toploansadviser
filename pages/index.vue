@@ -14,7 +14,7 @@
                         <swiper-slide class="my-swiper-slide">
                             <div class="swiper-content">
                             
-                                <img src="@/assets/img/banner.png" alt="" class="pic">
+                                <img src="@/assets/img/banner.webp" alt="personal loan on the cover" class="pic">
                                 <h1 class="website-title">Best Personal Loan 2021</h1>
                                 
                                 <a href="/personal-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
@@ -24,7 +24,7 @@
                         <swiper-slide class="my-swiper-slide">
                             <div class="swiper-content">
                             
-                                <img src="@/assets/img/student-banner.png" alt="" class="pic">
+                                <img src="@/assets/img/student-banner.webp" alt="student loan on the cover" class="pic">
                                     <h1 class="website-title">Best Student Loan Refinance Companies 2021</h1>
                                     
                                     <a href="/student-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
@@ -34,7 +34,7 @@
                         <swiper-slide class="my-swiper-slide">
                             <div class="swiper-content">
                             
-                                <img src="@/assets/img/mortgage-banner.png" alt="" class="pic">
+                                <img src="@/assets/img/mortgage-banner.webp" alt="mortgage loan on the cover" class="pic">
                                     <h1 class="website-title">Best Mortgage Lenders 2021</h1>
                                 
                                 <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer nofollow" class="btn">Find more</a>
@@ -51,23 +51,68 @@
           
            
       </section>
+      
       <section class="home-page-main-area">
-          <!-- <canvas id="my-canvas" width="1080" height="1500"></canvas> -->
           <div class="home-page-main-container">
-            
+            <div class="phone-swiper-container">
+                <client-only>
+                    <swiper ref="phone-swiper" :options="phoneSwiperOptions" class="phone-swiper">
+                        <swiper-slide class="phone-swiper-slide slide-1">
+                            <a href="/" target="_blank" rel="noopener noreferrer">
+                                <h1 class="title">
+                                    <span class="g">We compare <span class="w">,</span></span><span>you choose</span>
+                                </h1>
+                                <div class="desc-content">
+                                    <p>Our goal is to save your time and effort by simplifying the decision process, while choosing a service or product that suits your needs.</p>
+                                </div>
+                                
+                            </a>
+                        </swiper-slide>
+                        <swiper-slide class="phone-swiper-slide">
+                            <a href="/personal-loan" target="_blank" rel="noopener noreferrer">
+                                <h1 class="title">Best Personal Loan 2021</h1>
+                                <div class="desc-content">
+                                    <p>To find the best personal loan for your financial situation compare personal loan rates from multiple lenders</p>
+                                </div>
+                                <a href="/personal-loan" target="_blank" rel="noopener noreferrer" class="btn">Find more</a>
+                            </a>
+                        </swiper-slide>
+                        <swiper-slide class="phone-swiper-slide">
+                            <a href="/student-loan" target="_blank" rel="noopener noreferrer">
+                                <h1 class="title">Best Student Loan Refinance Companies 2021</h1>
+                                <div class="desc-content">
+                                    <p>Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for your specific situation.</p>
+                                </div>
+                                <a href="/student-loan" target="_blank" rel="noopener noreferrer" class="btn">Find more</a>
+                            </a>
+                        </swiper-slide>
+                        <swiper-slide class="phone-swiper-slide">
+                            <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">
+                                <h1 class="title">Best Mortgage Lenders 2021</h1>
+                                <div class="desc-content">
+                                    <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers and find the best purchase and refinance rates for you.</p>
+                                </div>
+                                <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer" class="btn">Find more</a>
+                            </a>
+                        </swiper-slide>
+                       
+                    </swiper>
+                     <div class="phone-swiper-pagination"></div>
+                </client-only>
+            </div>
             <h2 class="area-title">Comparison helps you get more wisdom</h2>
             <div class="desc-title-card">
                 <h6 class="title">Who we are?</h6>
                 <div class="card-bottom">
                     <p class="sub-title"><a href="/about-us" target="_blank" rel="noopener noreferrer nofollow">about Toploansadviser</a> <span class="icon"></span><span class="icon"></span></p>
-                    <a href="/personal-loan" target="_blank" rel="noopener noreferrer nofollow">more information here</a>
+                    <a href="/personal-loan" target="_blank" rel="noopener noreferrer nofollow" class="more-link">more information here</a>
                 </div>
                 
             </div>
             <div class="content-box">
                 <p class="text">Toploansadviser was founded to help consumers make educated financial decisions while learning more about various financial products.</p>
                 <div class="desc-item">
-                    <img src="@/assets/img/index-pic-1.png" alt="" class="pic">
+                    <img src="@/assets/img/index-pic-1.webp" alt="perfessional and easy" class="pic">
                     <div class="desc-content">
                         <h6 class="desc-item-title">Our experts make it easy to plan your financial future. </h6>
                         <p class="content">At Toploanadviser, we give our clients in-depth information about diverse financial products and the necessary information to succeed in a complicated financial world. </p>
@@ -79,10 +124,10 @@
                         <h6 class="desc-item-title">Most of us are unfortunately lacking in financial literacy.</h6>
                         <p class="content">Our goal is to provide our clients with all the essential information to choose the bank best fitting their financial needs.</p>
                     </div>
-                    <img src="@/assets/img/about-pic-3.png" alt="" class="pic">
+                    <img src="@/assets/img/about-pic-3.webp" alt="best plan to fit" class="pic">
                 </div>
             </div>
-            <h2 class="area-title">Calculate your estimated monthly loan payment </h2>
+            <h2 class="area-title counter-title">Calculate your estimated monthly loan payment </h2>
             <div class="counter-container">
                 <div class="input-left">
                     <div class="amount-box">
@@ -128,6 +173,49 @@
                     </div>
                 </div>
             </div>
+
+            <div class="phone-counter-container">
+                <h3 class="title"><span class="g">Loan</span> Calculator</h3>
+
+                <div class="form-box">
+                    <div class="form-item">
+                        <span class="item-title">Amount $</span>
+                        <input type="text" v-model="form.amount"  @input="changeAmount">
+                    </div>
+                    <div class="form-item">
+                        <span class="item-title">Rate annually</span>
+                        <div class="rate-input-box">
+                            <input type="text" v-model="form.rate" @input="changeRate">
+                        </div>
+                        
+                    </div>
+                    <div class="form-item">
+                        <span class="item-title year-title">Year</span>
+                        <input type="text" v-model="form.year" @input="changeYear">
+                    </div>
+                    <div class="form-item">
+                        <span class="item-title">Months</span>
+                        <input type="text" v-model="form.month" @input="changeMonth">
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button class="btn" @click="submit">
+                        <span class="iconfont">&#xe605;</span>
+                    </button>
+                </div>
+                
+
+                <div class="results-box">
+                    <div class="results-item">
+                        <span class="key">Payment Per Month</span>
+                        <span class="value">${{form.per_month}}</span>
+                    </div>
+                    <div class="results-item">
+                        <span class="key">Total interest</span>
+                        <span class="value">${{form.total}}</span>
+                    </div>
+                </div>
+            </div>
             <div class="compare-container">
                 <div class="compare-title">
                     <span class="icon"></span><span class="icon"></span>
@@ -159,12 +247,12 @@
 
             </div>
             <div class="blog-container">
-                <h2 class="area-title">The lastest news and stocks</h2>
+                <h2 class="area-title blog-area-title">The lastest <span class="b">news and stocks</span></h2>
                 <ul class="blog-list">
                     <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
                         <div class="img-box">
                         
-                        <img v-lazy="item.picture" alt="">
+                        <img v-lazy="item.picture" :alt="item.title">
                         </div>
                         <h6 class="blog-title">{{item.title}}</h6>
                         <nuxt-link :to="'/guides/' + item.key" class="link">Read full Article</nuxt-link>
@@ -178,6 +266,7 @@
                 </div>
                 
             </div>
+            
           </div>
       </section>
 
@@ -271,6 +360,24 @@ export default {
                     bulletActiveClass: 'my-bullet-active',
                     clickable: true
                 },
+            },
+            phoneSwiperOptions: {
+                // autoplay: {
+                //     delay: 3000,
+                //     stopOnLastSlide: false,
+                //     disableOnInteraction: false,
+                //     pauseOnMouseEnter: true
+                // },
+                loop: true,
+                observer: true,
+                slidesPerView : 1,
+                spaceBetween : '50%',
+                pagination: {
+                    el: '.phone-swiper-pagination',
+                    bulletClass : 'my-phone-bullet',
+                    bulletActiveClass: 'my-phone-bullet-active',
+                    clickable: true
+                },
             }
         }
     },
@@ -335,57 +442,10 @@ export default {
             let pmt = (Number(this.form.amount)*(Number(rate) / 12)) / (1- 1 / Math.pow(1 + (Number(rate)/ 12), Number(this.form.month)));
             this.form.per_month = pmt.toFixed(2);
             this.form.total = (this.form.per_month * this.form.month - this.form.amount).toFixed(2);
-        },
-        factorial(num) { //递归阶乘
-            if (num <= 1) {
-                return 1;
-            } else {
-                return num * this.factorial(num - 1);
-            }
-        },
-        bezier(t) {
-             var x = 0,
-                y = 0,
-                n = this.points.length - 1,
-                self = this;
-                this.points.forEach(function(item, index) {
-                if(!index) {
-                    x += item.x * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
-                    y += item.y * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
-                } else {
-                    x += self.factorial(n) / self.factorial(index) / self.factorial(n - index) * item.x * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
-                    y += self.factorial(n) / self.factorial(index) / self.factorial(n - index) * item.y * Math.pow(( 1 - t ), n - index) * Math.pow(t, index) 
-                }
-            })
-            return {
-                x: x,
-                y: y
-            }
         }
     },
     created() {
         this.getBlog();
-    },
-    mounted() {
-        // let canvas = document.getElementById('my-canvas');
-        // let ctx = canvas.getContext('2d');
-        // let arr = [];
-        // for(var i = 0; i < 1; i+=0.01) {
-        //     arr.push(this.bezier(i))
-        // }
-        // arr.forEach(function(obj, index) {
-        //     if (index) {
-        //         var startX = arr[index - 1].x,
-        //             startY = arr[index - 1].y,
-        //             x = obj.x,
-        //             y = obj.y
-        //         ctx.beginPath()
-        //         ctx.moveTo(startX, startY)
-        //         ctx.lineTo(x, y)
-        //         ctx.strokeStyle = 'green'
-        //         ctx.stroke()
-        //     }
-        // })
     }
 }
 </script>

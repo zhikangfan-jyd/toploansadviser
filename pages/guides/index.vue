@@ -10,7 +10,7 @@
             <p>Want to learn more about loan information? Check out the informative articles below written by Toploansadviser's team of expert financial writers.</p>
           </div>
 
-          <img src="@/assets/img/guides-banner.png" alt="Toploansadviser" class="banner-img">
+          <img src="@/assets/img/guides-banner.webp" alt="guides and tips banner" class="banner-img">
         </div>
         
       </div>
@@ -20,14 +20,14 @@
       <!-- <h2 class="learn-title">Categories</h2> -->
       <div class="category-item">
         <!-- <div class="category-title-box">
-          <img src="@/assets/img/money-icon.png" alt="" class="pic">
+          <img src="@/assets/img/money-icon.webp" alt="" class="pic">
           <h6 class="title">Personal loans</h6>
         </div> -->
         <ul class="blog-list">
           <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
             <div class="img-box">
               
-              <img v-lazy="item.picture" alt="">
+              <img v-lazy="item.picture" :alt="item.title">
             </div>
             <h6 class="blog-title">{{item.title}}</h6>
             <nuxt-link :to="'/guides/' + item.key" class="link">Read full Article</nuxt-link>

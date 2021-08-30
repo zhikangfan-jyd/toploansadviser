@@ -4,9 +4,9 @@
        <div class="banner-container">
             <div class="banner-content">
                 <div class="logo-box">
-                        <img src="@/assets/img/website-logo.png" alt="toploansadviser.com" class="website-logo">
+                        <img src="@/assets/img/website-logo.webp" alt="toploansadviser.com" class="website-logo">
                         <span class="cha-icon"></span>
-                        <img src="@/assets/img/credible.png" alt="Credible" class="credible-logo">
+                        <img src="@/assets/img/credible.webp" alt="Credible" class="credible-logo">
                     </div>
                 <h1 class="website-title">Best Refinancing Mortgage Loans Online</h1>
                 <p class="sub-title">Planning to buy in the next 45 days?</p>
@@ -17,7 +17,7 @@
                 </a>
             </div>
             <div class="img-box">
-                    <img src="@/assets/img/best-refinance-mortgage-banner.png" alt="" class="pic">
+                    <img src="@/assets/img/best-refinance-mortgage-banner.webp" alt="" class="pic">
                     <div class="trustpilot-box">
                         <span class="iconfont big-star">&#xe64c;</span>
                         <span class="text">Trustpilot</span>
@@ -40,24 +40,24 @@
             <h2 class="area-title">Best Mortgage Refinancing Lender 2021</h2>
             <p class="sub-desc">Credible made it easy and straightforward to see which lender was best for you</p>
             <div class="container-box">
-                <img src="@/assets/img/family.png" alt="" class="pic">
+                <img src="@/assets/img/family.webp" alt="" class="pic">
                 <div class="content-list">
                     <div class="list-item">
-                        <img src="@/assets/img/choose-pic-1.png" alt="" class="img">
+                        <img src="@/assets/img/choose-pic-1.webp" alt="" class="img">
                         <div class="list-content">
                             <p class="title">Actual rates from multiple lenders </p>
                             <p class="desc">In 3 minutes, get actual prequalified rates without impacting you credit score.</p>
                         </div>
                     </div>
                     <div class="list-item">
-                        <img src="@/assets/img/choose-pic-2.png" alt="" class="img">
+                        <img src="@/assets/img/choose-pic-2.webp" alt="" class="img">
                         <div class="list-content">
                             <p class="title">Smart technology </p>
                             <p class="desc">Streamline the questions you need to answer and automate the document upload process.</p>
                         </div>
                     </div>
                     <div class="list-item">
-                        <img src="@/assets/img/choose-pic-3.png" alt="" class="img">
+                        <img src="@/assets/img/choose-pic-3.webp" alt="" class="img">
                         <div class="list-content">
                             <p class="title">End-to-end experience</p>
                             <p class="desc">Complete the entire origination process from rate comparison up to closing, all on Credible.</p>
@@ -75,17 +75,17 @@
             </div>
             <div class="works-box">
                 <div class="work-item">
-                    <img src="@/assets/img/work-1.png" alt="" class="pic">
+                    <img src="@/assets/img/work-1.webp" alt="" class="pic">
                     <span class="title">Compare Rates</span>
                     <p class="text">Fill out a quick simple form (2 mins)</p>
                 </div>
                 <div class="work-item">
-                    <img src="@/assets/img/work-2.png" alt="" class="pic">
+                    <img src="@/assets/img/work-2.webp" alt="" class="pic">
                     <span class="title">Select A Lender</span>
                     <p class="text">Choose an option you like (2 mins)</p>
                 </div>
                 <div class="work-item">
-                    <img src="@/assets/img/work-3.png" alt="" class="pic">
+                    <img src="@/assets/img/work-3.webp" alt="" class="pic">
                     <span class="title">Apply Online</span>
                     <p class="text">Provide your loan details (3 mins)</p>
                 </div>
@@ -99,7 +99,7 @@
             <p class="desc">Since 2012, Credible have strived to be the most trustworthy personal finance marketplace.</p>
             <div class="content-box">
                 <div class="content-top">
-                    <img src="@/assets/img/credible.png" alt="" class="credible-logo">
+                    <img src="@/assets/img/credible.webp" alt="" class="credible-logo">
                     <p class="text">1.4 million users compare  prequalified rates</p>
                 </div>
                 <div class="content-bottom">
@@ -127,8 +127,8 @@
     </section>
     <section class="comments-area">
         <div class="comments-container">
-            <img src="@/assets/img/comments-pic-1.jpg" alt="" class="pic-1">
-            <img src="@/assets/img/comments-pic-2.jpg" alt="" class="pic-2">
+            <img src="@/assets/img/comments-pic-1.webp" alt="" class="pic-1">
+            <img src="@/assets/img/comments-pic-2.webp" alt="" class="pic-2">
             <div class="comments-item first">
                 <div class="comments-info-box">
                     <div class="info-box">
@@ -136,7 +136,7 @@
                         <span class="author-name">James</span>
                     </div>
                     
-                    <img src="@/assets/img/star.png" alt="" class="star">
+                    <img src="@/assets/img/star.webp" alt="" class="star">
                 </div>
                 <div class="comments-content">
                    <p><strong> wonderfull to work with even for</strong></p>
@@ -150,7 +150,7 @@
                         <span class="author-name">Scott buffum</span>
                     </div>
                     
-                    <img src="@/assets/img/star.png" alt="" class="star">
+                    <img src="@/assets/img/star.webp" alt="" class="star">
                 </div>
                 <div class="comments-content">
                     <p><strong>Fast and easy</strong></p>
@@ -164,7 +164,7 @@
                         <span class="author-name">GUY</span>
                     </div>
                     
-                    <img src="@/assets/img/star.png" alt="" class="star">
+                    <img src="@/assets/img/star.webp" alt="" class="star">
                 </div>
                 <div class="comments-content">
                     <p><strong>Simple process and good Customer Service when contacted</strong></p>
@@ -178,7 +178,7 @@
                         <span class="author-name">Emmanuel K</span>
                     </div>
                     
-                    <img src="@/assets/img/star.png" alt="" class="star">
+                    <img src="@/assets/img/star.webp" alt="" class="star">
                 </div>
                 <div class="comments-content">
                     <p><strong>Easy well presented options Saved info...</strong></p>
@@ -192,7 +192,7 @@
                         <span class="author-name">Megan L</span>
                     </div>
                     
-                    <img src="@/assets/img/star.png" alt="" class="star">
+                    <img src="@/assets/img/star.webp" alt="" class="star">
                 </div>
                 <div class="comments-content">
                     <p><strong>Easy & straightforward, highly recommend!</strong></p>
@@ -203,7 +203,7 @@
     </section>
     <section class="faq-area" id="quick-faq">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic">
           <div class="faq-content">
             <h2 class="faq-title">
               <span>FAQ's</span>

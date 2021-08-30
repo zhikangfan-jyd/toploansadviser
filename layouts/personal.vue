@@ -3,7 +3,7 @@
       <header class="header-area">
           <div class="header-container">
               <a href="/personal-loans" target="_blank" rel="noopener noreferrer">
-                <img src="@/assets/img/website-footer-logo.png" alt="" class="logo">
+                <img src="@/assets/img/website-footer-logo.webp" alt="" class="logo">
               </a>
               <div class="menu-box">
                   <ul class="menu-list">
@@ -61,7 +61,7 @@
           <section class="footer-disc-area">
               <div class="footer-disc-container">
                   <div class="img-box">
-                      <img src="@/assets/img/website-footer-logo.png" alt="" class="logo">
+                      <img src="@/assets/img/website-footer-logo.webp" alt="" class="logo">
                   </div>
                   
                   <div class="disc-content">

@@ -5,7 +5,7 @@
             "name": "credible_stu",
             "review_key": "credible",
             "link": "https://www.credible.com/refinance-student-loans/?utm_source=westwin&utm_medium=referral&utm_campaign=student_loan_refi&utm_content=",
-            "logo": "/data/images/credible.png",
+            "logo": "/data/images/credible.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -30,7 +30,7 @@
             "name": "SoFi_stu",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
-            "logo": "/data/images/sofi.png",
+            "logo": "/data/images/sofi.webp",
             "rate": {
                 "max": 10,
                 "score": "9.5"
@@ -55,7 +55,7 @@
             "name": "Citizens_Bank",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-citizens/?utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
-            "logo": "/data/images/citizens_bank.png",
+            "logo": "/data/images/citizens_bank.webp",
             "rate": {
                 "max": 10,
                 "score": "9.2"
@@ -80,7 +80,7 @@
             "name": "MEFA",
             "review_key": "",
             "link": "https://www.credible.com/a/fh-mefa/?utm_source=westwin&utm_medium=referral&utm_campaign=mefa_slr&utm_content=",
-            "logo": "/data/images/mefa.png",
+            "logo": "/data/images/mefa.webp",
             "rate": {
                 "max": 10,
                 "score": "8.8"
@@ -107,7 +107,7 @@
             "name": "PenFed",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-penfed/?utm_source=westwin&utm_medium=referral&utm_campaign=penfed_slr&utm_content=",
-            "logo": "/data/images/penfed.png",
+            "logo": "/data/images/penfed.webp",
             "rate": {
                 "max": 10,
                 "score": "8.5"
@@ -132,7 +132,7 @@
             "name": "RISLA",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-risla-slr/?utm_source=westwin&utm_medium=referral&utm_campaign=risla_slr&utm_content=",
-            "logo": "/data/images/risla.png",
+            "logo": "/data/images/risla.webp",
             "rate": {
                 "max": 10,
                 "score": "8.1"
@@ -157,7 +157,7 @@
             "name": "Salliemae",
             "review_key": "",
             "link": "https://www.salliemae.com",
-            "logo": "/data/images/salliemae.png",
+            "logo": "/data/images/salliemae.webp",
             "rate": {
                 "max": 10,
                 "score": "7.8"
@@ -182,7 +182,7 @@
             "name": "College Ave",
             "review_key": "",
             "link": "https://www.collegeave.com",
-            "logo": "/data/images/collegeave.png",
+            "logo": "/data/images/collegeave.webp",
             "rate": {
                 "max": 10,
                 "score": "7.5"
@@ -207,7 +207,7 @@
             "name": "earnest",
             "review_key": "",
             "link": "https://www.earnest.com",
-            "logo": "/data/images/earnest.png",
+            "logo": "/data/images/earnest.webp",
             "rate": {
                 "max": 10,
                 "score": "7.3"

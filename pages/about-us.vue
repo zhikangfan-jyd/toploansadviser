@@ -10,14 +10,14 @@
           </div>
           
         </div>
-        <img src="@/assets/img/about-banner.png" alt="Toploansadviser" class="banner-img">
+        <img src="@/assets/img/about-banner.webp" alt="Toploansadviser" class="banner-img">
       </div>
       
     </section>
     <div class="desc-area">
       <div class="content-item first">
         <div class="pic-box">
-        <img src="@/assets/img/about-pic-1.png" alt="Toploansadviser" class="pic">
+        <img src="@/assets/img/about-pic-1.webp" alt="Toploansadviser" class="pic">
 
         </div>
         <div class="text-box">
@@ -31,13 +31,13 @@
           <p class="text">Most of us are unfortunately lacking in financial literacy. That’s where we come in. Our goal is to provide our clients with all the essential information to choose the bank best fitting their financial needs. To accomplish this goal, we leverage our financial knowledge with the latest technology, giving you all the tools to succeed in your commercial relationships. </p>
         </div>
         <div class="pic-box">
-                  <img src="@/assets/img/about-pic-2.png" alt="Toploansadviser" class="pic">
+                  <img src="@/assets/img/about-pic-2.webp" alt="Toploansadviser" class="pic">
 
         </div>
       </div>
       <div class="content-item">
         <div class="pic-box">
-                  <img src="@/assets/img/about-pic-3.png" alt="Toploansadviser" class="pic">
+                  <img src="@/assets/img/about-pic-3.webp" alt="Toploansadviser" class="pic">
 
         </div>
         <div class="text-box">

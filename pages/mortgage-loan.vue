@@ -10,7 +10,7 @@
           </div>
           <p class="sub-title update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
-        <img src="@/assets/img/mortgage-banner.png" alt="Toploansadviser" class="banner-img">
+        <img src="@/assets/img/mortgage-banner.webp" alt="mortgage loan banner" class="banner-img">
 
       </div>
     </section>
@@ -259,7 +259,7 @@
               </div>
             </div>
              <div class="loading-box" v-else style="display: flex; justify-content: center; align-items: center;">
-                <img src="~/assets/img/img-loading.gif" alt="toploansadviser" style="height: 200px;">
+                <img src="~/assets/img/img-loading.gif" alt="loading..." style="height: 200px;">
               </div>
           </div>
           
@@ -623,7 +623,7 @@
       </section>
       <section class="faq-area">
         <div class="faq-area-title-box">
-          <img src="@/assets/img/faq.png" alt="Toploansadviser" class="pic">
+          <img src="@/assets/img/faq.webp" alt="answear or questions about personal loans" class="pic">
           <div class="faq-content">
             <h2 class="faq-title">
               <span>FAQ's</span>
@@ -915,7 +915,7 @@ export default {
             "name": "Credible",
             "review_key": "",
             "link": "https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
-            "logo": "/data/images/credible.png",
+            "logo": "/data/images/credible.webp",
             "rate": {
                 "max": 10,
                 "score": "9.8"
@@ -963,7 +963,7 @@ export default {
             "name": "LoanDepot",
             "review_key": "",
             "link": "https://www.loandepot.com/",
-            "logo": "/data/images/loandepot.png",
+            "logo": "/data/images/loandepot.webp",
             "rate": {
                 "max": 10,
                 "score": "9.6"
