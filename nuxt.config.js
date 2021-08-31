@@ -28,7 +28,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vuelazyload',
-    '~plugins/element-ui'
+    '~plugins/element-ui',
+    { src: '~/plugins/aos', ssr: false, mode: 'client' }
   ],
   // loading: '~/components/loading.vue',
   loading: false,

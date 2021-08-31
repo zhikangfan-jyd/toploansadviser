@@ -3,14 +3,14 @@
       <section class="swiper-area">
 
           <div class="banner-container">
-              <div class="banner-left">
+              <div class="banner-left" data-aos="fade-right">
                   <h2 class="website-title">We Compare, you choose</h2>
                   <p class="desc">To find the best personal loan for your financial situation, it's best to shop around and compare personal loan rates from multiple lenders.</p>
               </div>
               <div class="banner-right">
 
-              <client-only>
-                    <swiper ref="swiper" :options="swiperOptions" class="my-swiper-container">
+                <client-only>
+                    <swiper ref="swiper" :options="swiperOptions" class="my-swiper-container" data-aos="fade-left">
                         <swiper-slide class="my-swiper-slide">
                             <div class="swiper-content">
                             
@@ -45,7 +45,7 @@
                     </swiper>
                      <div class="swiper-pagination"></div>
                 </client-only>
-          </div>
+              </div>
           </div>
 
           
@@ -54,6 +54,7 @@
       
       <section class="home-page-main-area">
           <div class="home-page-main-container">
+              
             <div class="phone-swiper-container">
                 <client-only>
                     <swiper ref="phone-swiper" :options="phoneSwiperOptions" class="phone-swiper">
@@ -100,8 +101,9 @@
                      <div class="phone-swiper-pagination"></div>
                 </client-only>
             </div>
-            <h2 class="area-title">Comparison helps you get more wisdom</h2>
-            <div class="desc-title-card">
+            <div data-aos="fade-up"><h2 class="area-title">Comparison helps you get more wisdom</h2></div>
+            
+            <div class="desc-title-card" data-aos="fade-up">
                 <h6 class="title">Who we are?</h6>
                 <div class="card-bottom">
                     <p class="sub-title"><a href="/about-us" target="_blank" rel="noopener noreferrer nofollow">about Toploansadviser</a> <span class="icon"></span><span class="icon"></span></p>
@@ -109,31 +111,31 @@
                 </div>
                 
             </div>
-            <div class="content-box">
-                <p class="text">Toploansadviser was founded to help consumers make educated financial decisions while learning more about various financial products.</p>
+            <div class="content-box" data-aos="fade-up">
+                <p class="text" data-aos="fade-up">Toploansadviser was founded to help consumers make educated financial decisions while learning more about various financial products.</p>
                 <div class="desc-item">
-                    <img src="@/assets/img/index-pic-1.webp" alt="perfessional and easy" class="pic">
-                    <div class="desc-content">
+                    <img src="@/assets/img/index-pic-1.webp" alt="perfessional and easy" class="pic" data-aos="fade-right" data-aos-offset="300" data-aos-duration="800">
+                    <div class="desc-content" data-aos="fade-up">
                         <h6 class="desc-item-title">Our experts make it easy to plan your financial future. </h6>
                         <p class="content">At Toploanadviser, we give our clients in-depth information about diverse financial products and the necessary information to succeed in a complicated financial world. </p>
                     </div>
                 </div>
                 <div class="desc-item">
                     
-                    <div class="desc-content">
+                    <div class="desc-content" data-aos="fade-up">
                         <h6 class="desc-item-title">Most of us are unfortunately lacking in financial literacy.</h6>
                         <p class="content">Our goal is to provide our clients with all the essential information to choose the bank best fitting their financial needs.</p>
                     </div>
-                    <img src="@/assets/img/about-pic-3.webp" alt="best plan to fit" class="pic">
+                    <img src="@/assets/img/about-pic-3.webp" alt="best plan to fit" class="pic" data-aos="fade-left" data-aos-offset="300" data-aos-duration="800">
                 </div>
             </div>
-            <h2 class="area-title counter-title">Calculate your estimated monthly loan payment </h2>
-            <div class="counter-container">
+            <h2 class="area-title counter-title" data-aos="fade-up">Calculate your estimated monthly loan payment </h2>
+            <div class="counter-container" data-aos="zoom-in">
                 <div class="input-left">
                     <div class="amount-box">
                         <span class="title">Amount</span>
                         <div class="amount-input-box">
-                            <span class="money-icon">$</span>
+                            
                             <input type="text" class="amount-input" v-model="form.amount" @input="changeAmount">
                         </div>
                         
@@ -174,13 +176,16 @@
                 </div>
             </div>
 
-            <div class="phone-counter-container">
+            <div class="phone-counter-container" data-aos="zoom-in">
                 <h3 class="title"><span class="g">Loan</span> Calculator</h3>
 
                 <div class="form-box">
                     <div class="form-item">
-                        <span class="item-title">Amount $</span>
-                        <input type="text" v-model="form.amount"  @input="changeAmount">
+                        <span class="item-title">Amount</span>
+                        <div class="amount-input-box">
+                            <input type="text" v-model="form.amount"  @input="changeAmount">
+                        </div>
+                        
                     </div>
                     <div class="form-item">
                         <span class="item-title">Rate annually</span>
@@ -216,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="compare-container">
+            <div class="compare-container" data-aos="fade-up">
                 <div class="compare-title">
                     <span class="icon"></span><span class="icon"></span>
                     <span class="text"><a href="/personal-loan" target="_blank" rel="noopener noreferrer">Compare rates</a></span>
@@ -247,9 +252,9 @@
 
             </div>
             <div class="blog-container">
-                <h2 class="area-title blog-area-title">The lastest <span class="b">news and stocks</span></h2>
+                <h2 class="area-title blog-area-title" data-aos="fade-up">The lastest <span class="b">news and stocks</span></h2>
                 <ul class="blog-list">
-                    <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
+                    <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index" data-aos="fade-up">
                         <div class="img-box">
                         
                         <img v-lazy="item.picture" :alt="item.title">
