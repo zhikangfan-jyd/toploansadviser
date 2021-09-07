@@ -1,42 +1,121 @@
 <template>
   <main class="error-container">
     <div class="content">
-      <img src="@/assets/img/error.webp" alt="error">
+      <div class="content-text">
+        <p class="g big">Sorry...</p>
+        <p>The page you were looking for <span class="g">doesn't</span> exist.</p>
+      </div>
+      <img src="@/assets/img/404.webp" alt="404 Not Found" class="pic">
+      <a href="/" rel="noopener noreferrer" class="btn">Back To Home</a>
     </div>
   </main>
 </template>
 
 <script>
 export default {
-  layout: 'default'
+  layout: 'default',
+  methods: {
+    setHeight() {
+      let screenHeight = $(window).height();
+      let footerHeight = $('.footer-container').height();
+      if ($(window).height() <= 1000) {
+        $('.error-container').css({
+          height: 700
+        })
+      } else {
+        $('.error-container').css({
+          height: screenHeight - footerHeight
+        })
+      }
+      
+    }
+  },
+  mounted () {
+    let that = this;
+    that.setHeight();
+    $(window).on('resize',  that.setHeight)
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .error-container {
   position: relative;
-  height: 1000px;
+  width: 100%;
+  padding-top: 80px;
+  font-size: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, rgb(213,239,216), rgb(251,244,237));
   .content {
     position: absolute;
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    text-align: center;
-    width: 600px;
-
-    
-    img {
-      width: 100%;
-
-    }
-
-  }
-
-  @media screen and (max-width: 750px) {
-      height: 600px;
-      .content {
-        width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $rootWidth;
+    .content-text {
+      font-size: 35px;
+      line-height: 50px;
+      font-family: 'Poppins-Bold';
+      .big {
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      .g {
+        color: $theme-color;
       }
     }
+
+    .pic {
+      width: 500px;
+    }
+
+    .btn {
+      display: none;
+    }
+
+
+    
+  }
+  @media  screen and (max-width: 750px) {
+    .content {
+      width: 85%;
+      box-sizing: border-box;
+      flex-direction: column;
+      .content-text {
+        order: 2;
+
+        font-size: 24px;
+        line-height: 37px;
+
+        .big {
+          text-align: center;
+          margin-bottom: 16px;
+        }
+      }
+      .pic {
+        order: 1;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        margin-top: 30px;
+        order: 3;
+        display: block;
+        width: 75%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: #f48d25;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 22px;
+        font-family: 'Poppins-Medium';
+      }
+    }
+  }
 }
 </style>

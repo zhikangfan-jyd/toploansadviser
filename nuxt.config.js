@@ -1,6 +1,9 @@
 const webpack = require('webpack');
 
 export default {
+
+  
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Best personal loans and mortgage loans of 2021- Toploansadviser',
@@ -35,7 +38,9 @@ export default {
   loading: false,
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
-
+  render: {
+    resourceHints: false
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
