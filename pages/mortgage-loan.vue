@@ -870,6 +870,13 @@
 import { computeScore } from '../utils/index'
 import { updateTime } from '../utils/date'
 export default {
+
+  head: {
+    meta: [
+      { hid: 'description', name: 'description', content: 'Our goal is to provide you with all the information about mortgage loan. Compare our recommended mortgage loan services below to get started.' },
+      { hid: 'keyword', name: 'keyword', content: 'mortgage loan, fixed-rate mortgage,adjustable-rate mortgage' }
+    ]
+  },
   // async asyncData({ $axios, redirect, route }) {
 
   //   // 拼接 msclkid 参数

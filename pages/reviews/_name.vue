@@ -65,24 +65,24 @@
         <div class="content-item" v-if="review.overview != ''">
           <div class="title-box">
             <img src="@/assets/img/r-1.webp" alt="" class="box">
-            <h5 class="title">Overview</h5>
+            <h2 class="title">Overview</h2>
           </div>
           <div class="content" v-html="review.overview"></div>
         </div>
         <ul class="table-list">
           <li>
-            <span class="key">Loan amount</span>
+            <h3 class="key">Loan amount</h3>
             <span class="value" v-if="product.amount.min == 'Infinity'">&lt;${{formatNum(String(product.amount.max))}}</span>
             <span class="value" v-else-if="product.amount.max == 'Infinity'">&gt;${{formatNum(String(product.amount.min))}}</span>
             <span class="value" v-else>${{formatNum(String(product.amount.min))}} - ${{formatNum(String(product.amount.max))}}</span>
             
           </li>
           <li>
-            <span class="key">APR</span>
+            <h3 class="key">APR</h3>
             <span class="value">{{product.compare.apr.min}}% - {{product.compare.apr.max}}%</span>
           </li>
           <li>
-            <span class="key">Minimum credit score</span>
+            <h3 class="key">Minimum credit score</h3>
             <span class="value">{{product.compare.credit_score}} 
 
               <el-popover
@@ -100,7 +100,7 @@
             </span>
           </li>
           <li>
-            <span class="key">Loan term</span>
+            <h3 class="key">Loan term</h3>
             <span class="value">{{product.compare.term}}</span>
           </li>
         </ul>
@@ -110,42 +110,42 @@
         <div class="content-item" v-if="review.loan_account != ''">
           <div class="title-box">
             <img src="@/assets/img/r-2.webp" alt="" class="box">
-            <h5 class="title">Loan Amount</h5>
+            <h2 class="title">Loan Amount</h2>
           </div>
           <div class="content" v-html="review.loan_account"></div>
         </div>
         <div class="content-item" v-if="review.apr != ''">
           <div class="title-box">
             <img src="@/assets/img/r-3.webp" alt="" class="box">
-            <h5 class="title">APR</h5>
+            <h2 class="title">APR</h2>
           </div>
           <div class="content" v-html="review.apr"></div>
         </div>
         <div class="content-item" v-if="review.minimum_credit_score != ''">
           <div class="title-box">
             <img src="@/assets/img/r-4.webp" alt="" class="box">
-            <h5 class="title">Minimum credit score</h5>
+            <h2 class="title">Minimum credit score</h2>
           </div>
           <div class="content" v-html="review.minimum_credit_score"></div>
         </div>
         <div class="content-item" v-if="review.requirements != ''">
           <div class="title-box">
             <img src="@/assets/img/r-5.webp" alt="" class="box">
-            <h5 class="title">Qualifying Requirements</h5>
+            <h2 class="title">Qualifying Requirements</h2>
           </div>
           <div class="content" v-html="review.requirements"></div>
         </div>
         <div class="content-item" v-if="review.loan_terms != ''">
           <div class="title-box">
             <img src="@/assets/img/r-6.webp" alt="" class="box">
-            <h5 class="title">Loan Terms</h5>
+            <h2 class="title">Loan Terms</h2>
           </div>
           <div class="content" v-html="review.loan_terms"></div>
         </div>
         <div class="content-item" v-if="review.pros_cons != ''">
           <div class="title-box">
             <img src="@/assets/img/r-7.webp" alt="" class="box">
-            <h5 class="title">Pros & Cons</h5>
+            <h2 class="title">Pros & Cons</h2>
           </div>
 
           <div class="content" v-html="review.pros_cons.top"></div>
@@ -178,42 +178,42 @@
         <div class="content-item" v-if="review.applying != ''">
           <div class="title-box">
             <img src="@/assets/img/r-8.webp" alt="" class="box">
-            <h5 class="title">Application</h5>
+            <h2 class="title">Application</h2>
           </div>
           <div class="content" v-html="review.applying"></div>
         </div>
         <div class="content-item" v-if="review.have_bad_credit != ''">
           <div class="title-box">
             <img src="@/assets/img/r-9.webp" alt="" class="box">
-            <h5 class="title">Can you Apply if you have Bad Credit?</h5>
+            <h2 class="title">Can you Apply if you have Bad Credit?</h2>
           </div>
           <div class="content" v-html="review.have_bad_credit"></div>
         </div>
         <div class="content-item" v-if="review.main_loan_features != ''">
           <div class="title-box">
             <img src="@/assets/img/r-10.webp" alt="" class="box">
-            <h5 class="title">Main Loan Features</h5>
+            <h2 class="title">Main Loan Features</h2>
           </div>
           <div class="content" v-html="review.main_loan_features"></div>
         </div>
         <div class="content-item" v-if="review.rates_fees != ''">
           <div class="title-box">
             <img src="@/assets/img/r-11.webp" alt="" class="box">
-            <h5 class="title">Rates & Fees</h5>
+            <h2 class="title">Rates & Fees</h2>
           </div>
           <div class="content" v-html="review.rates_fees"></div>
         </div>
         <div class="content-item" v-if="review.loan_process != ''">
           <div class="title-box">
             <img src="@/assets/img/r-12.webp" alt="" class="box">
-            <h5 class="title">Loan Process</h5>
+            <h2 class="title">Loan Process</h2>
           </div>
           <div class="content" v-html="review.loan_process"></div>
         </div>
         <div class="content-item" v-if="review.customer_support != ''">
           <div class="title-box">
             <img src="@/assets/img/r-13.webp" alt="" class="box">
-            <h5 class="title">Customer Support</h5>
+            <h2 class="title">Customer Support</h2>
           </div>
           <div class="content" v-html="review.customer_support"></div>
 
@@ -222,7 +222,7 @@
         <div class="content-item" v-if="review.bottom_line != ''">
           <div class="title-box">
             <img src="@/assets/img/r-14.svg" alt="" class="box">
-            <h5 class="title">Bottom Line</h5>
+            <h2 class="title">Bottom Line</h2>
           </div>
           <div class="content" v-html="review.bottom_line"></div>
 
@@ -234,7 +234,7 @@
         <div class="content-item" v-if="product.review_key == 'marcus'">
           <div class="title-box">
             <!-- <img src="@/assets/img/r-14.svg" alt="" class="box"> -->
-            <h5 class="title" style="font-size: 20px;margin-left: 0;">Terms And Conditions</h5>
+            <h2 class="title" style="font-size: 20px;margin-left: 0;">Terms And Conditions</h2>
           </div>
           <div class="content" style="font-size: 16px; line-height: 25px;">
             <p>Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans  Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions.</p>

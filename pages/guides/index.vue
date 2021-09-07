@@ -26,10 +26,11 @@
         <ul class="blog-list">
           <li class="blog-item" v-for="(item,index) in personal_blogs" :key="index">
             <div class="img-box">
-              
-              <img v-lazy="item.picture" :alt="item.title">
+              <nuxt-link :to="'/guides/' + item.key">
+                <img v-lazy="item.picture" :alt="item.title">
+              </nuxt-link>
             </div>
-            <h6 class="blog-title">{{item.title}}</h6>
+            <nuxt-link :to="'/guides/' + item.key" class="title-link"><h2 class="blog-title">{{item.title}}</h2></nuxt-link>
             <nuxt-link :to="'/guides/' + item.key" class="link">Read full Article</nuxt-link>
           </li>
         </ul>
