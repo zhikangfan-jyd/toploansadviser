@@ -3,7 +3,7 @@
     .banner-area {
 
         width: 100%;
-        height: 340px;
+        height: 360px;
         background-color: #f5faf6;
 
         .banner-container {
@@ -15,17 +15,79 @@
             margin: 0 auto; 
 
             .banner-content-box {
-                margin-top: 60px;
                 align-self: flex-start;
+                
+                .title {
+                    margin-top: 42px;
+                    margin-bottom: 15px;
+                    font-size: 48px;
+                    color: #001139;
+                }
+
+                .info {
+                    font-size: 18px;
+                    color: #00174b;
+                    .line {
+                        display: inline-block;
+                        margin: 0 15px;
+                    }
+                }
+                .detail-list {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0;
+                    margin-top: 45px;
+                    margin-bottom: 25px;
+                    li {
+                        margin-right: 60px;
+                        .key-box {
+                            margin-bottom: 12px;
+                            .icon {
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                margin-right: 6px;
+                                background-color: gray;
+                                vertical-align: middle;
+
+                                &.amount-icon {
+                                    background: url('../../assets/img/review-icon-1.png') no-repeat center center/96%;
+                                }
+                                &.apr-icon {
+                                    background: url('../../assets/img/review-icon-2.png') no-repeat center center/96%;
+                                }
+                                &.credit-score-icon {
+                                    background: url('../../assets/img/review-icon-3.png') no-repeat center center/96%;
+                                }
+                                &.loan-term-icon {
+                                    background: url('../../assets/img/review-icon-4.png') no-repeat center center/68%;
+                                }
+                            }
+                            .text {
+                                font-size: 14px;
+                                color: #001139;
+                                vertical-align: middle;
+                                font-family: 'Poppins-Bold';
+                            }
+                            
+                        }
+
+                        .value {
+                            font-size: 15px;
+                            color: #5f6468;
+                            font-family: 'Poppins-Bold';
+                        }
+                    }
+                }
                 .text {
                     font-size: 0;
-                    margin-top: 100px;
+                    margin-top: 40px;
                     a {
                         margin-right: 40px
                         
                     }
                     a,.iconfont {
-                        font-size: 18px;
+                        font-size: 15px;
                         color: #8f8f8f;
                         text-decoration: none;
                         font-family: 'Poppins-Regular';
@@ -38,19 +100,6 @@
 
                     
                 }
-                .title {
-                    margin: 15px 0;
-                    font-size: 48px;
-                    color: #001139;
-                }
-                .info {
-                    font-size: 18px;
-                    color: #00174b;
-                    .line {
-                        display: inline-block;
-                        margin: 0 15px;
-                    }
-                }
             }
 
             .rate-score-box {
@@ -58,23 +107,59 @@
                 flex-direction: column;
                 align-items: center;
                 font-size: 0;
-                margin-top: 74px;
                 .logo {
-                    height: 60px;
+                    height: 108px;
+                    margin-top: 25px;
+                    margin-bottom: 27px;
+                }
+                .rate-box {
+                    display: flex;
+                    align-items: center;
                 }
                 .score {
                     display: inline-block;
-                    margin: 10px 0;
-                    font-size: 49px;
+                    font-size: 40px;
                     color: #001139;
+                    margin-right: 8px;
+                    line-height: 0;
+                }
+
+                .btn-box {
+                    margin: 30px 0;
+                    .btn {
+                        display: block;
+                        width: 200px;
+                        height: 45px;
+                        margin-bottom: 5px;
+                        border-radius: 22px;
+                        text-align: center;
+                        line-height: 45px;
+                        color: #fff;
+                        font-size: 17px;
+                        font-family: 'Poppins-Medium';
+                        text-decoration: none;
+                        background-color: #ed963e;
+
+                        &:hover {
+                            background-color: #e97502;
+                        }
+
+                    }
+                    .small-text {
+                        font-size: 10px;
+                        font-family: 'Poppins-Medium';
+                        color: #8f8f8f;
+                        text-align: center;
+                    }
                 }
                 .popover-box {
-                    margin-top: 47px;
-                    font-size: 14px;
+                    font-size: 15px;
                     font-family: 'Poppins-Regular';
-
+                    margin-top: 14px;
                     .iconfont {
                         color: #8f8f8f;
+                        font-weight: 400;
+                        font-family: 'Poppins-Regular';
                     }
                 }
             }
@@ -108,7 +193,7 @@
                 }
                 .content {
                     font-size: 18px;
-                    color: #787e8b;
+                    color: #000;
                     line-height: 30px;
                     p {
                         margin: 20px 0;
@@ -408,13 +493,13 @@
     @media screen and (max-width: 750px){
         padding-top: 70px;
         .banner-area {
-            height: 480px;
+            height: auto;
             .banner-container {
                 width: 100%;
                 flex-direction: column;
                 justify-content: flex-start;
                 box-sizing: border-box;
-                padding: 50px 20px;
+                padding:20px;
 
                 .banner-content-box {
                     margin-top: 0;
@@ -424,6 +509,19 @@
                     }
                     .title {
                         font-size: 32px;
+                        margin-top: 20px;
+                    }
+                    .detail-list {
+                        width: 90%;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-left: auto;
+                        margin-right: auto;
+                        li {
+                            
+                            margin-right: 0;
+                            padding-bottom: 10px;
+                        }
                     }
                     .info {
                         font-size: 14px;
@@ -431,7 +529,17 @@
                 }
 
                 .rate-score-box {
-                    margin-top: 40px;
+                    margin-top: 0px;
+
+                    .logo {
+                        height: 75px;
+                        margin-top: 0;
+                        margin-bottom: 5px;
+                    }
+
+                    .btn-box {
+                        margin-bottom: 15px;
+                    }
                 }
             }
         }

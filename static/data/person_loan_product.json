@@ -54,32 +54,6 @@
             "disclaimer": ""
         },
         {
-            "name": "sofi",
-            "review_key": "sofi",
-            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
-            "logo": "/data/images/sofi.webp",
-            "upto": "1000000",
-            "introduce": "Prequalify for your rate in 3 minutes",
-            "amount": {
-                "min": 5000,
-                "max": 100000
-            },
-            "rate": {
-                "max": 10,
-                "score": "9.6"
-            },
-            "compare": {
-                "credit_score": "680",
-                "credit_text": "",
-                "apr": {
-                    "min": "5.99",
-                    "max": "18.85"
-                },
-                "term": "24-84 months"
-            },
-            "disclaimer": ""
-        },
-        {
             "name": "avant",
             "review_key": "avant",
             "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl&utm_content=",
@@ -92,7 +66,7 @@
             },
             "rate": {
                 "max": 10,
-                "score": "9.5"
+                "score": "9.6"
             },
             "compare": {
                 "credit_score": "580",
@@ -105,6 +79,33 @@
             },
             "disclaimer": ""
         },
+        {
+            "name": "sofi",
+            "review_key": "sofi",
+            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
+            "logo": "/data/images/sofi.webp",
+            "upto": "1000000",
+            "introduce": "Prequalify for your rate in 3 minutes",
+            "amount": {
+                "min": 5000,
+                "max": 100000
+            },
+            "rate": {
+                "max": 10,
+                "score": "9.5"
+            },
+            "compare": {
+                "credit_score": "680",
+                "credit_text": "",
+                "apr": {
+                    "min": "5.99",
+                    "max": "18.85"
+                },
+                "term": "24-84 months"
+            },
+            "disclaimer": ""
+        },
+        
         {
             "name": "lendingclub",
             "review_key": "",
@@ -187,34 +188,6 @@
                 "term": "36-60 months"
             },
             "disclaimer": ""
-        },
-        
-        
-        {
-            "name": "Marcus",
-            "review_key": "marcus",
-            "link": "https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0",
-            "logo": "/data/images/marcus.webp",
-            "upto": "1000000",
-            "introduce": "No sign-up & repayment fees",
-            "amount": {
-                "min": 3500,
-                "max": 40000
-            },
-            "rate": {
-                "max": 10,
-                "score": "7.8"
-            },
-            "compare": {
-                "credit_score": "720",
-                "credit_text": "600 minimum VantageScore® 3.0 and 660 minimum FICO® 9.0.",
-                "apr": {
-                    "min": "6.99",
-                    "max": "19.99"
-                },
-                "term": "36-72 months"
-            },
-            "disclaimer": "Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans  Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions."
         }
     ]
 }

@@ -270,7 +270,7 @@
 </template>
 
 <script>
-import FoldTheCard from '../components/FoldTheCard'
+import FoldTheCard from '../components/FoldTheCard/index'
 import { computeScore } from '../utils/index'
 export default {
     components: {

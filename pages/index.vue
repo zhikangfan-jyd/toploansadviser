@@ -142,7 +142,7 @@
                         
                     </div>
                     <div class="rate-box">
-                        <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annualy" @input="changeRate">
+                        <input type="text" class="rate-annualy-input" v-model="form.rate" placeholder="Rate annually" @input="changeRate">
                     </div>
                     
                     <input type="text" class="year-input" v-model="form.year" placeholder="Year" @input="changeYear">
@@ -323,29 +323,6 @@ export default {
                 total: 0
             },
             personal_blogs: [],
-            points: [
-                
-                    {
-                        x: 1019.5,
-                        y: 23
-                    },
-                    {
-                        x: 893.5,
-                        y: 141
-                    },
-                    {
-                        x: 159.5,
-                        y: 33
-                    },
-                    {
-                        x: 75.5, 
-                        y: 187
-                    },
-                    {
-                        x: 180, 
-                        y: 200
-                    }
-            ],
             swiperOptions: {
                 autoplay: {
                     delay: 3000,
@@ -403,6 +380,7 @@ export default {
                 })
                 return ;
             }
+            
             this.form.month = value * 12 == 0 ? '' : value * 12;
         },
 
@@ -416,13 +394,18 @@ export default {
                 })
                 return ;
             }
+            
             this.form.year = (value / 12).toFixed(1) == 0 ? '' : (value / 12).toFixed(1);
         },
         changeAmount(e) {
-            this.form.amount = e.target.value;
+            let value = e.target.value;
+            
+            this.form.amount = value;
         },
         changeRate(e) {
-            this.form.rate = e.target.value;
+            let value = e.target.value;
+            
+            this.form.rate = value;
         },
         validate() {
             // 判断用户输入的是不是合法值
@@ -433,6 +416,36 @@ export default {
                     type: 'error'
                 })
                 return false;
+            } else if (this.form.amount > 100000) {
+                this.$message({
+                    showClose: false,
+                    message: 'The value cannot exceed 100000',
+                    type: 'error'
+                })
+
+                return false;
+            } else if (this.form.rate > 40) {
+                this.$message({
+                    showClose: false,
+                    message: 'The value cannot exceed 40',
+                    type: 'error'
+                })
+
+                return false;
+            } else if (this.form.year > 10) {
+                this.$message({
+                    showClose: false,
+                    message: 'No more than 10 years',
+                    type: 'error'
+                })
+                return false;
+            } else if (this.form.month > 120) {
+                this.$message({
+                    showClose: false,
+                    message: 'No more than 120 months',
+                    type: 'error'
+                })
+                return false;
             }
             
             return true;
@@ -440,7 +453,7 @@ export default {
         submit() {
             
             if (!this.validate()) {
-                retrun ;
+                return ;
             }
 
             let rate = this.form.rate / 100;

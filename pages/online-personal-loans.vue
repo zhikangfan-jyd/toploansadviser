@@ -336,7 +336,7 @@
 <script>
 import { computeScore, formatNum } from '../utils/index'
 import { updateTime } from '../utils/date'
-import FoldTheCard from '../components/FoldTheCard'
+import FoldTheCard from '../components/FoldTheCard/index'
 export default {
   components: {
     FoldTheCard

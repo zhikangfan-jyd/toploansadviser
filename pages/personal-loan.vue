@@ -362,37 +362,30 @@
       </section>
       
     </div>
-    
+    <CalculatorPopup />
   </main>
 </template>
 
 <script>
 import { computeScore, formatNum } from '../utils/index'
 import { updateTime } from '../utils/date'
-import FoldTheCard from '../components/FoldTheCard'
+import FoldTheCard from '../components/FoldTheCard/index'
+import CalculatorPopup from '../components/CalculatorPopup/index'
 export default {
   components: {
-    FoldTheCard
+    FoldTheCard,
+    CalculatorPopup
   },
   async asyncData({ $axios, redirect, route }) {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = route.query['utm_term'];
-      let msclkid = route.query['msclkid'];
-      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}`
-    }
+    
+    
 
     try {
       
       let products_results = await $axios.$get('/data/person_loan_product.json');
       let question_results = await $axios.$get('/data/person_loan_question.json');
 
-      // 给所有 是www.creditble.com 的链接后面都拼接 参数
-      products_results.data.forEach(ele => {
-        if (ele.link.indexOf('www.credible.com') != -1) {
-          ele.link = changeLink(ele.link);
-        }
-      })
+      
       return {
         allProducts: products_results.data,
         // count: products_results.data.length,
@@ -511,6 +504,45 @@ export default {
   created() {
     this.handleFilter();
   },
+  mounted() {
+    // 拼接 msclkid 参数
+    const changeLink = (url) => {
+
+      let aff_sub = '',
+        msclkid = '';
+
+        // 判断hash是否有值
+      if (this.$route.hash === '') {
+        aff_sub = this.$route.query['utm_term'];
+        msclkid = this.$route.query['msclkid'];
+
+      } else {
+        let arr = this.$route.hash.split('&');
+        let hashParams = {};
+        arr.forEach((ele, index) => {
+          if (index != 0) {
+            let hashArr = ele.split('=');
+            hashParams[hashArr[0]] = hashArr[1];
+          }
+        })
+        aff_sub = hashParams['utm_term'];
+        if (!aff_sub) {
+          aff_sub = this.$route.query['utm_term'];
+        }
+        msclkid = this.$route.query['msclkid'] + arr[0]
+      }
+      
+      
+      
+      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}`
+    }
+
+    this.allProducts.forEach(ele => {
+      if (ele.link.indexOf('www.credible.com') != -1) {
+          ele.link = changeLink(ele.link);
+        }
+    })
+  }
 }
 </script>
 

@@ -36,6 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@import './scss/fold-the-card.scss';
+@import './index.scss';
 
 </style>

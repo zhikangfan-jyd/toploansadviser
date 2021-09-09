@@ -22,9 +22,9 @@
               <li>
                 <nuxt-link to="/reviews/credible" class="link">Credible</nuxt-link>
               </li>
-              <li>
+              <!-- <li>
                 <nuxt-link to="/reviews/marcus" class="link">Marcus</nuxt-link>
-              </li>
+              </li> -->
               <li>
                 <nuxt-link to="/reviews/lightstream" class="link">Lightstream</nuxt-link>
               </li>
@@ -133,7 +133,7 @@
 </template>
 
 <script>
-import Message from '../components/Message'
+import Message from '../components/Message/index'
 export default {
   components: {
     Message

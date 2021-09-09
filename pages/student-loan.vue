@@ -245,14 +245,14 @@
 </template>
 
 <script>
-import FoldTheCard from '../components/FoldTheCard'
+import FoldTheCard from '../components/FoldTheCard/index'
 import { computeScore } from '../utils/index'
 import { updateTime } from '../utils/date'
 export default {
   head: {
     meta: [
       { hid: 'description', name: 'description', content: "If you've been considering the option to refinance your student loans, you're in the right place." },
-      { hid: 'keyword', name: 'keyword', content: 'student loan refinance,loan rate，private student loan,federal student loan' }
+      { hid: 'keywords', name: 'keywords', content: 'student loan refinance,loan rate，private student loan,federal student loan' }
     ]
   },
   components: {

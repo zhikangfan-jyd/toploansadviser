@@ -9,6 +9,38 @@
             <span class="line">|</span>
             <span>{{review.date}}</span>
           </p>
+          <ul class="detail-list">
+            <li>
+              <div class="key-box">
+                <span class="icon amount-icon"></span>
+                <span class="text">Loan Amount</span>
+              </div>
+              <span class="value" v-if="product.amount.min == 'Infinity'">&lt;${{formatNum(String(product.amount.max))}}</span>
+              <span class="value" v-else-if="product.amount.max == 'Infinity'">&gt;${{formatNum(String(product.amount.min))}}</span>
+              <span class="value" v-else>${{formatNum(String(product.amount.min))}} - ${{formatNum(String(product.amount.max))}}</span>
+            </li>
+            <li>
+              <div class="key-box">
+                <span class="icon apr-icon"></span>
+                <span class="text">APR</span>
+              </div>
+              <span class="value">{{product.compare.apr.min}}% - {{product.compare.apr.max}}%</span>
+            </li>
+            <li>
+              <div class="key-box">
+                <span class="icon credit-score-icon"></span>
+                <span class="text">Minimum Credit Score</span>
+              </div>
+              <span class="value">{{product.compare.credit_score}} Score</span>
+            </li>
+            <li>
+              <div class="key-box">
+                <span class="icon loan-term-icon"></span>
+                <span class="text">Loan Term</span>
+              </div>
+              <span class="value">{{product.compare.term}}</span>
+            </li>
+          </ul>
           <p class="text"><nuxt-link to="/disclosure">Advertising Disclosure</nuxt-link>
           <el-popover
               placement="bottom"
@@ -27,13 +59,18 @@
         </div>
         <div class="rate-score-box">
           <img :src="product.logo" :alt="product.name" class="logo">
-          <span class="score">{{product.rate.score}}</span>
-          <div class="rate-box">
+          
+          <div class="rate-box review-rate-box">
+            <span class="score">{{product.rate.score}}</span>
             <el-rate
               disabled
               :colors="['#fd9c28','#fd9c28','#fd9c28']"
               :value="computeScore(product.rate.score)"
               ></el-rate>
+          </div>
+          <div class="btn-box">
+            <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn">Check Rate</a>
+            <p class="small-text">Via Credible.com's Secure Website</p>
           </div>
           <div class="popover-box">
 
@@ -69,41 +106,7 @@
           </div>
           <div class="content" v-html="review.overview"></div>
         </div>
-        <ul class="table-list">
-          <li>
-            <h3 class="key">Loan amount</h3>
-            <span class="value" v-if="product.amount.min == 'Infinity'">&lt;${{formatNum(String(product.amount.max))}}</span>
-            <span class="value" v-else-if="product.amount.max == 'Infinity'">&gt;${{formatNum(String(product.amount.min))}}</span>
-            <span class="value" v-else>${{formatNum(String(product.amount.min))}} - ${{formatNum(String(product.amount.max))}}</span>
-            
-          </li>
-          <li>
-            <h3 class="key">APR</h3>
-            <span class="value">{{product.compare.apr.min}}% - {{product.compare.apr.max}}%</span>
-          </li>
-          <li>
-            <h3 class="key">Minimum credit score</h3>
-            <span class="value">{{product.compare.credit_score}} 
-
-              <el-popover
-                placement="bottom"
-                width="280"
-                trigger="hover"
-                v-if="product.compare.credit_text != ''"
-                >
-                <span class="iconfont" slot="reference">&#xe669;</span>
-                <div class="content">
-                  <p>{{product.compare.credit_text}}</p>
-                  
-                </div>
-              </el-popover>
-            </span>
-          </li>
-          <li>
-            <h3 class="key">Loan term</h3>
-            <span class="value">{{product.compare.term}}</span>
-          </li>
-        </ul>
+        
         <div class="btn-box">
           <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" @click="handleTracking({name: product.name,click_time: new Date().getTime(),link: mainLink})" class="btn">Check My Rate</a>
         </div>
