@@ -377,8 +377,6 @@ export default {
     CalculatorPopup
   },
   async asyncData({ $axios, redirect, route }) {
-    
-    
 
     try {
       
@@ -503,6 +501,8 @@ export default {
   },
   created() {
     this.handleFilter();
+
+    
   },
   mounted() {
     // 拼接 msclkid 参数
@@ -517,8 +517,10 @@ export default {
         msclkid = this.$route.query['msclkid'];
 
       } else {
+
         let arr = this.$route.hash.split('&');
         let hashParams = {};
+
         arr.forEach((ele, index) => {
           if (index != 0) {
             let hashArr = ele.split('=');
@@ -526,6 +528,7 @@ export default {
           }
         })
         aff_sub = hashParams['utm_term'];
+
         if (!aff_sub) {
           aff_sub = this.$route.query['utm_term'];
         }
@@ -533,8 +536,7 @@ export default {
       }
       
       
-      
-      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}`
+      return `${url}&msclkid=${msclkid}&utm_term=test_keyword`
     }
 
     this.allProducts.forEach(ele => {
