@@ -293,7 +293,7 @@
       </div>
 
     </div>
-   
+    <CalculatorPopup />
   </main> 
 </template>
 
@@ -301,7 +301,11 @@
 
 import { computeScore, formatNum } from '../../utils/index'
 import { shareToFB, shareToTwitter } from '../../utils/share'
+import CalculatorPopup from '~/components/CalculatorPopup/index.vue'
 export default {
+  components:{
+    CalculatorPopup
+  },
   async asyncData({ $axios, params, redirect, route }) {
 
     // 拼接 msclkid 参数

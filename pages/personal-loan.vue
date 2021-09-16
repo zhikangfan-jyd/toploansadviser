@@ -536,7 +536,7 @@ export default {
       }
       
       
-      return `${url}&msclkid=${msclkid}&utm_term=test_keyword`
+      return `${url}&msclkid=${msclkid}&utm_content=${aff_sub}`
     }
 
     this.allProducts.forEach(ele => {
