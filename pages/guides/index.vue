@@ -10,7 +10,7 @@
             <p>Want to learn more about loan information? Check out the informative articles below written by Toploansadviser's team of expert financial writers.</p>
           </div>
 
-          <img src="@/assets/img/guides-banner.webp" alt="guides and tips banner" class="banner-img">
+          <!-- <img src="@/assets/img/guides-banner.webp" alt="guides and tips banner" class="banner-img"> -->
         </div>
         
       </div>

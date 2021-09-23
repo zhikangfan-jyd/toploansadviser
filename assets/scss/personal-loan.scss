@@ -4,6 +4,10 @@
         position: relative;
         width: 100%;
         background-color: #f5faf6;
+        background: url('../assets/img/personal-loan-banner-bg.webp') no-repeat center center/cover;
+        @media (min-width: 750px) and (max-width: 1300px) {
+            background: url('../assets/img/personal-loan-banner-bg-1200.webp') no-repeat center center/cover;
+        }
         .banner-container {
             position: relative;
             display: flex;
@@ -19,7 +23,8 @@
                     font-weight: normal;
                     font-family: 'Poppins-Bold';
                     line-height: 56px;
-                    color: #001139;
+                    // color: #001139;
+                    color: #fff;
                 }
                 .sub-title {
                     margin-top: 10px;
@@ -32,13 +37,15 @@
                     font-size: 18px;
                     line-height: 24px;
                     // color: #787e8b;
-                    color: #000;
+                    // color: #000;
+                    color: #fff;
                 }
                 .update {
                     justify-self: flex-end;
                     margin-top: 40px;
                     margin-bottom: 20px;
-                    color: #000;
+                    // color: #000;
+                    color: #fff;
                     font-size: 14px;
                     font-style: italic;
                 }

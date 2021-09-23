@@ -10,7 +10,7 @@
           </div>
           <p class="sub-title update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
-        <img src="@/assets/img/mortgage-banner.webp" alt="mortgage loan banner" class="banner-img">
+        <!-- <img src="@/assets/img/mortgage-banner.webp" alt="mortgage loan banner" class="banner-img"> -->
 
       </div>
     </section>

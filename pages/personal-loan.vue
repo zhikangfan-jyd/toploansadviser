@@ -11,7 +11,7 @@
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
           <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
         </div>
-        <img src="@/assets/img/banner.webp" alt="personal loan on the cover" class="banner-img">
+        <!-- <img src="@/assets/img/banner.webp" alt="personal loan on the cover" class="banner-img"> -->
 
       </div>
     </section>
