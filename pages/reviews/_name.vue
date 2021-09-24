@@ -130,6 +130,9 @@
             <h2 class="title">Minimum credit score</h2>
           </div>
           <div class="content" v-html="review.minimum_credit_score"></div>
+          <div class="btn-box" v-if="review.key === 'sofi'">
+            <a :href="mainLink" target="_blank" rel="noopener noreferrer nofollow" class="btn" @click="handleTracking({name: product.name,click_time: new Date().getTime(),link: mainLink})">Check My Rate</a>
+          </div>
         </div>
         <div class="content-item" v-if="review.requirements != ''">
           <div class="title-box">

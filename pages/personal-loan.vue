@@ -360,7 +360,6 @@
           </div>
         </div>
       </section>
-      
     </div>
     <CalculatorPopup />
   </main>
@@ -536,7 +535,7 @@ export default {
       }
       
       
-      return `${url}&msclkid=${msclkid}&utm_content=${aff_sub}`
+      return `${url}&msclkid=${msclkid}`
     }
 
     this.allProducts.forEach(ele => {
