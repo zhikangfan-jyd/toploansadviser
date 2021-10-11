@@ -5,10 +5,8 @@
         position: relative;
         width: 100%;
         // background-color: #f5faf6;
-        background: url('../assets/img/about-us-banner-bg.webp') no-repeat center center/cover;
-        @media (min-width: 750px) and (max-width: 1300px) {
-            background: url('../assets/img/about-us-banner-bg-1200.webp') no-repeat center center/cover;
-        }
+        background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+        
         .banner-container {
             position: relative;
             display: flex;
@@ -17,6 +15,8 @@
             height: 360px;
             margin: 0 auto;
             .banner-content {
+                position: relative;
+                z-index: 1;
                 max-width: 730px;
                 .website-title {
                     font-size: 42px;
@@ -44,8 +44,8 @@
             .banner-img {
                 position: absolute;
                 right: 0;
-                bottom: 0;
-                height: 230px;
+                bottom: -6px;
+                height: 300px;
             }
         }
         

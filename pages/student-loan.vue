@@ -10,7 +10,7 @@
           </div>
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
         </div>
-        <!-- <img src="@/assets/img/student-banner.webp" alt="student loan banner" class="banner-img"> -->
+        <img src="@/assets/img/student-loan-banner-bg.webp" alt="student loan banner" class="banner-img">
 
       </div>
     </section>

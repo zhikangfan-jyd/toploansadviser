@@ -10,7 +10,7 @@
           </div>
           
         </div>
-        <!-- <img src="@/assets/img/about-banner.webp" alt="Toploansadviser" class="banner-img"> -->
+        <img src="@/assets/img/about-us-banner-bg.webp" alt="Toploansadviser" class="banner-img">
       </div>
       
     </section>

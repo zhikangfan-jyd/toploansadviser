@@ -7,7 +7,7 @@
           <p class="update">Last updated March 2021</p>
           
         </div>
-        <!-- <img src="@/assets/img/contact-banner.webp" alt="Toploansadviser" class="banner-img"> -->
+        <img src="@/assets/img/contact-us-banner-bg.webp" alt="Toploansadviser" class="banner-img">
       </div>
       
     </section> 

@@ -7,7 +7,7 @@
             <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
             
             </div>
-            <!-- <img src="@/assets/img/term-banner.webp" alt="Toploansadviser" class="banner-img"> -->
+            <img src="@/assets/img/privacy-banner-bg.webp" alt="Toploansadviser" class="banner-img">
         </div>
         
         </section> 

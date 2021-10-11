@@ -11,9 +11,11 @@
           <p class="update">Last updated: {{updateTime().month.short}} {{updateTime().year}}</p>
           <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
         </div>
-        <!-- <img src="@/assets/img/banner.webp" alt="personal loan on the cover" class="banner-img"> -->
+        <!-- <img src="@/assets/img/personal-loan-banner-bg.webp" alt="personal loan on the cover" class="banner-img"> -->
+        <img src="@/assets/img/about-us-banner-bg.webp" alt="" class="banner-img">
 
       </div>
+      
     </section>
     <div class="container">
       <section class="product-area">

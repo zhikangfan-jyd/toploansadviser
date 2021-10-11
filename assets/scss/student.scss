@@ -4,10 +4,7 @@
         position: relative;
         width: 100%;
         background-color: #f5faf6;
-        background: url('../assets/img/student-loan-banner-bg.webp') no-repeat center center/cover;
-        @media (min-width: 750px) and (max-width: 1300px) {
-            background: url('../assets/img/student-loan-banner-bg-1200.webp') no-repeat center center/cover;
-        }
+        background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
         .banner-container {
             position: relative;
             display: flex;
@@ -15,6 +12,8 @@
             height: 360px;
             margin: 0 auto;
             .banner-content {
+                position: relative;
+                z-index: 1;
                 max-width: 730px;
                 .website-title {
                     margin-top: 50px;
@@ -52,9 +51,9 @@
         }
         .banner-img {
             position: absolute;
-            right: 0;
-            bottom: 30px;
-            height: 250px;
+            right: -130px;
+            bottom: -6px;
+            height: 80%;
         }
     }
     .container {
@@ -646,12 +645,9 @@
                 align-items: flex-start;
                 width: 100%;
                 height: auto;
-                min-height: 450px;
+                min-height: 300px;
                 padding: 50px 20px;
                 box-sizing: border-box;
-                .banner-img {
-                    z-index: -1;
-                }
                 .banner-content {
                     .website-title {
                         margin-top: 0;
@@ -668,6 +664,7 @@
                 }
             }
             .banner-img {
+                display: none;
                 height: 130px;
             }
         }
