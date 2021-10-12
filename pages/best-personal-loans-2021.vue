@@ -12,8 +12,7 @@
           <!-- <a href="http://" target="_blank" rel="noopener noreferrer nofollow" class="btn">Get Started</a> -->
         </div>
         <!-- <img src="@/assets/img/personal-loan-banner-bg.webp" alt="personal loan on the cover" class="banner-img"> -->
-        <img src="@/assets/img/about-us-banner-bg.webp" alt="" class="banner-img">
-
+        <img src="@/assets/img/best-personal-loans-2021-bg.webp" alt="best presonal loans 2021" class="banner-img">
       </div>
       
     </section>
@@ -550,5 +549,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/scss/personal-loan.scss'
+@import '~assets/scss/best-personal-loans-2021.scss'
 </style>
