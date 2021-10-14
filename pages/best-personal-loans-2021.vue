@@ -380,7 +380,7 @@ export default {
 
     try {
       
-      let products_results = await $axios.$get('/data/person_loan_product.json');
+      let products_results = await $axios.$get('/data/best-personal-loans-2021.json');
       let question_results = await $axios.$get('/data/person_loan_question.json');
 
       
