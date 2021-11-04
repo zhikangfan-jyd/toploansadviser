@@ -5,7 +5,6 @@
 
         <div class="history-nav">
             <span><nuxt-link to="/guides" class="link">Guides</nuxt-link> <span class="iconfont">></span></span>
-            <!-- <span>knowledge <span class="iconfont">></span></span> -->
             <span class="title-box">{{blog.title}}</span>
         </div>
         <h1 class="title">{{blog.title}}</h1>
@@ -14,7 +13,7 @@
     <div class="guides-container">
       <div class="guides-left">
         
-        <div class="author-info">
+        <!-- <div class="author-info">
           <img :src="blog.author.headImg" :alt="blog.author.name" class="author-img">
           <div class="info-box">
             <span class="name">{{blog.author.name}}</span>
@@ -24,10 +23,10 @@
               <span>{{blog.date}}</span>
             </p>
           </div>
-        </div>
-        <div class="blog-content">
+        </div> -->
+        <!-- <div class="blog-content">
           
-        </div>
+        </div> -->
         <div class="share-box">
           <span class="title">SHARE THIS PAGE</span>
           <div class="share">
@@ -36,10 +35,10 @@
           </div>
         </div>
         <div class="guides-content" v-html="blog.content"></div>
-        <div class="guides-bottom">
+        <div class="guides-bottom" v-if="relatedBlogs.length != 0">
           <h6 class="bottom-title">Keep Reading</h6>
           <ul class="title-list">
-            <li v-for="(item,index) in keepReading" :key="index"><nuxt-link :to="'/guides/' + item.key">{{item.title}}</nuxt-link></li>
+            <li v-for="(item,index) in relatedBlogs" :key="index"><nuxt-link :to="'/guides/' + item.article_id">{{item.title}}</nuxt-link></li>
           </ul>
         </div>
       </div>
@@ -54,14 +53,14 @@
       </div>
 
     </div>
-    <section class="keep-reading-area">
+    <section class="keep-reading-area" v-if="relatedBlogs.length != 0">
       <div class="keep-reading-container">
         <h5 class="title">Keep Reading</h5>
         <ul class="read-list">
-          <li v-for="(item,index) in keepReading" :key="index">
-            <nuxt-link :to="'/guides/' + item.key">
+          <li v-for="(item,index) in relatedBlogs" :key="index">
+            <nuxt-link :to="'/guides/' + item.article_id">
               <div class="img-box">
-                <img v-lazy="item.picture" :alt="item.title" class="pic">
+                <img v-lazy="item.main_picture" :alt="item.title" class="pic">
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{item.title}}</h6>
@@ -81,36 +80,21 @@ export default {
   async asyncData({ $axios, params, redirect }) {
 
     try {
-      
-      let filename = params.key;
-      let results = await $axios.$get('/data/blogs/' + filename + '.json');
+      let article_id = params.key;
+      let results = await $axios.$get(`https://api.toploansadviser.com/articles/find?article_id=${article_id}`);
+      let blog = results.data;
       let topLoans_results = await $axios.$get('/data/person_loan_product.json');
-      let category = results.category;
-      let keepReading_results;
-      let keepArray = [];
-      // 判断该篇文章在哪个分类下
-      // if (category == 'personal_loans') {
-        keepReading_results = await $axios.$get('/data/blogs/personal.json');
-      // }
-      //  else if (category == 'student_loans') {
-      //   keepReading_results = await $axios.$get('/data/blogs/student.json');
-      // }
-      //  else {
-      //   keepReading_results = await $axios.$get('/data/blogs/banking.json')
-      // }
-      keepReading_results.data.forEach(ele => {
-        if (ele.key != filename && keepArray.length < 3) {
-          keepArray.push(ele);
-        }
-      })
+      let blogList = await $axios.$get(`https://api.toploansadviser.com/articles/findbycolumns?columns_id=c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d&page=1&limit=3`)
+      
       return {
-        blog: results,
+        blog: blog,
+        relatedBlogs: blogList ? blogList.data.rows : [],
         toploans: topLoans_results.data.slice(0,5),
-        keepReading: keepArray
       }
 
     } catch (error) {
-      redirect('/error');
+      console.log(error);
+      // redirect('/error');
     }
   },
   data() {
