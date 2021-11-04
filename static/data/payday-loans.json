@@ -99,7 +99,6 @@
             ],
             "desc": "Representative Example: $1000 loan over a 12-month term. Total cost, including interest, of $1,134.72. APR 29.82%. Rates between 5.9% APR and 35.99% APR. Loan term lengths from 3 to 36 months."
         },
-        
         {
             "name": "Check Into Cash",
             "logo": "/data/images/check-into-cash.webp",
@@ -124,7 +123,6 @@
             ],
             "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
         },
-        
         {
             "name": "Up Lenders",
             "logo": "/data/images/up-lenders.webp",
@@ -132,9 +130,8 @@
             "interest": "5.99%-35.99%",
             "term": "7-day-72 months",
             "loan_amount": "$100-$2,500",
-            "score":3.5,
+            "score": 3.5,
             "features": [
-                
                 {
                     "text": "Get a fast loan"
                 },
@@ -147,6 +144,5 @@
             ],
             "desc": "Representative Example: If you borrowed $2,000 over a 12 month period and the loan had a 3% origination fee ($60), your monthly repayments would be $189.12, with a total payback amount of $2269.44 which including the 3% fee paid from the loan amount, would have a total cost of $329.44. Representative 29.82% APR."
         }
-        
     ]
 }

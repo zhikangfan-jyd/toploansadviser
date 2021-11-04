@@ -1,915 +1,897 @@
 .main-container {
-    padding-top: 80px;
-    .banner-area {
+  padding-top: 80px;
+  .banner-area {
+    position: relative;
+    width: 100%;
+    background-color: #f5faf6;
+    background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+    .banner-container {
+      position: relative;
+      display: flex;
+      width: $rootWidth;
+      height: 360px;
+      margin: 0 auto;
+      .banner-content {
         position: relative;
-        width: 100%;
-        background-color: #f5faf6;
-        background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
-        .banner-container {
-            position: relative;
-            display: flex;
-            width: $rootWidth;
-            height: 360px;
-            margin: 0 auto;
-            .banner-content {
-                position: relative;
-                z-index: 1;
-                max-width: 730px;
-                .website-title {
-                    margin-top: 50px;
-                    margin-bottom: 20px;
-                    font-size: 42px;
-                    font-weight: normal;
-                    font-family: 'Poppins-Bold';
-                    line-height: 56px;
-                    color: #001139;
-                }
-                .update {
-                    justify-self: flex-end;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    color: #000;
-                    font-size: 14px;
-                    font-style: italic;
-                }
-                .sub-title {
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    color: $theme-color;
-                    font-size: 20px;
-                }
-                .content {
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #000;
-                    p {
-                        margin: 5px 0;
-                    }
-                }
-            }
-            
+        z-index: 1;
+        max-width: 730px;
+        .website-title {
+          margin-top: 50px;
+          margin-bottom: 20px;
+          font-size: 42px;
+          font-weight: normal;
+          font-family: "Poppins-Bold";
+          line-height: 56px;
+          color: #001139;
         }
-        .banner-img {
-            position: absolute;
-            right: -130px;
-            bottom: -6px;
-            height: 80%;
+        .update {
+          justify-self: flex-end;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: #000;
+          font-size: 14px;
+          font-style: italic;
         }
+        .sub-title {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: $theme-color;
+          font-size: 20px;
+        }
+        .content {
+          font-size: 18px;
+          line-height: 24px;
+          color: #000;
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
     }
-    .container {
-        padding-bottom: 120px;
-        .product-area {
-            .product-container {
-                width: $rootWidth;
-                margin: 0 auto;
-                .product-container-top-box {
-                    display: flex;
-                    justify-content: flex-end;
-                    margin: 30px 0;
-                    font-size: 0;
-                    .disclosure {
-                        .title {
-                            font-size: 16px;
-                            color: #8f8f8f;
-                        }
-                    }
-                }
+    .banner-img {
+      position: absolute;
+      right: -130px;
+      bottom: -6px;
+      height: 80%;
+    }
+  }
+  .container {
+    padding-bottom: 120px;
+    .product-area {
+      .product-container {
+        width: $rootWidth;
+        margin: 0 auto;
+        .product-container-top-box {
+          display: flex;
+          justify-content: flex-end;
+          margin: 30px 0;
+          font-size: 0;
+          .disclosure {
+            .title {
+              font-size: 16px;
+              color: #8f8f8f;
+            }
+          }
+        }
 
-                .product-list-box {
-                    width: 100%;
-                    border-radius: 16px;
-                    box-sizing: border-box;
-                    // overflow: hidden;
-                    border: 1px solid rgba(0, 23, 75, .1);
-                    .product-title-box {
+        .product-list-box {
+          width: 100%;
+          border-radius: 16px;
+          box-sizing: border-box;
+          // overflow: hidden;
+          border: 1px solid rgba(0, 23, 75, 0.1);
+          .product-title-box {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            font-size: 16px;
+            color: #001139;
+            font-weight: 600;
+            // background-color: rgba(0, 23, 75, .1);
+
+            .lenders {
+              flex: 28;
+              padding-left: 50px;
+            }
+            .score {
+              flex: 23;
+              padding-left: 50px;
+              .popper {
+                background-color: $theme-color;
+                border-radius: 15px;
+              }
+              .iconfont {
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 19px;
+                background-color: #00174b0d;
+                cursor: pointer;
+              }
+            }
+            .features {
+              flex: 51;
+            }
+            .terms {
+              flex: 69;
+            }
+          }
+          .product-list {
+            .product-item {
+              position: relative;
+              // height: 186px;
+              padding: 45px 50px;
+              box-sizing: border-box;
+              border-bottom: 1px solid rgba(0, 22, 75, 0.1);
+
+              &:nth-last-of-type(1) {
+                border: none;
+              }
+              &:nth-of-type(1) {
+                padding: 55px 50px;
+                border-left: 1px solid #c1efdb;
+                border-right: 1px solid #c1efdb;
+                border-top: 2px solid #c1efdb;
+                border-bottom: 2px solid #c1efdb;
+                box-shadow: 0px 6px 12px #e4f4ee;
+              }
+              .corner-box {
+                position: absolute;
+                top: 0px;
+                left: -8px;
+                height: 34px;
+                padding: 0 25px;
+                line-height: 34px;
+                background-color: #fd9c28;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 700;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: 0px;
+                  top: 0;
+                  width: 0;
+                  height: 0;
+                  border-top: 17px solid transparent;
+                  border-bottom: 17px solid transparent;
+                  border-left: 13px solid transparent;
+                  border-right: 13px solid #fff;
+                }
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0px;
+                  top: -8px;
+                  width: 0;
+                  height: 0;
+                  border-top: 4px solid transparent;
+                  border-left: 4px solid transparent;
+                  border-right: 4px solid #faa137;
+                  border-bottom: 4px solid #faa137;
+                }
+              }
+              .visited-box {
+                position: absolute;
+                top: 12px;
+                right: 55px;
+                padding: 7px 10px;
+                border-radius: 7px;
+                border: 1px solid #e5e6e6;
+                box-shadow: 0px 9px 12px rgba(134, 135, 136, 0.16);
+                font-size: 14px;
+                color: #484644;
+                background-color: #fff;
+
+                .iconfont {
+                  display: inline-block;
+                  width: 23px;
+                  height: 23px;
+                  background-image: url("../assets/img/person-icon.webp");
+                  background-repeat: no-repeat;
+                  background-position: center center;
+                  background-size: cover;
+                  vertical-align: middle;
+                }
+                strong {
+                  font-family: "Poppins-Bold";
+                }
+                .text {
+                  vertical-align: middle;
+                }
+              }
+              .product-item-container {
+                display: flex;
+                .img-score-box {
+                  flex: 34;
+                  display: flex;
+                  align-items: center;
+                  .img-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1;
+                    margin-right: 7px;
+                    img {
+                      height: 80px;
+                    }
+                  }
+                  .rate-box {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    font-size: 0;
+                    border-left: 1px solid rgba(0, 23, 75, 0.05);
+                    border-right: 1px solid rgba(0, 23, 75, 0.05);
+                    .rate {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      .trustpilot-box {
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
-                        width: 100%;
-                        height: 70px;
-                        font-size: 16px;
+                        font-size: 14px;
+                        .text-box {
+                          .iconfont {
+                            color: $theme-color;
+                            font-size: 20px;
+                          }
+                          .text {
+                            font-size: 16px;
+                            font-weight: 600;
+                          }
+                        }
+                        .star-list {
+                          display: flex;
+                          align-items: center;
+                          margin-top: 2px;
+                          li {
+                            width: 18px;
+                            height: 18px;
+                            text-align: center;
+                            line-height: 18px;
+                            color: #fff;
+                            background-color: $theme-color;
+                            margin: 0 1px;
+                          }
+                        }
+                      }
+                      .score {
+                        font-size: 34px;
                         color: #001139;
                         font-weight: 600;
-                        // background-color: rgba(0, 23, 75, .1);
-                       
-                        .lenders {
-                            flex: 28;
-                            padding-left: 50px;
+                      }
+                      .reviews-link {
+                        margin-top: 8px;
+                        color: #484644;
+                        font-size: 12px;
+                        text-decoration-line: underline;
+                        text-decoration-color: #484644;
+                        &:hover {
+                          color: $theme-change-color;
+                          text-decoration-color: $theme-change-color;
                         }
-                        .score {
-                            flex: 23;
-                            padding-left: 50px;
-                            .popper {
-                                background-color: $theme-color;
-                                border-radius: 15px;
-                            }
-                            .iconfont {
-                                display: inline-block;
-                                width: 19px;
-                                height: 19px;
-                                border-radius: 50%;
-                                text-align: center;
-                                line-height: 19px;
-                                background-color: #00174b0d;
-                                cursor: pointer;
-                            }
-                        }
-                        .features {
-                            flex: 51;
-                        }
-                        .terms {
-                            flex: 69;
-                        }
+                      }
                     }
-                    .product-list {
-                        .product-item {
-                            position: relative;
-                            // height: 186px;
-                            padding: 45px 50px;
-                            box-sizing: border-box;
-                            border-bottom: 1px solid rgba(0, 22, 75, 0.1);
-
-                            &:nth-last-of-type(1) {
-                                border: none;
-                            }
-                            &:nth-of-type(1) {
-                                padding: 55px 50px;
-                                border-left: 1px solid #c1efdb;
-                                border-right: 1px solid #c1efdb;
-                                border-top: 2px solid #c1efdb;
-                                border-bottom: 2px solid #c1efdb;
-                                box-shadow: 0px 6px 12px #e4f4ee;
-                            }
-                            .corner-box {
-                                position: absolute;
-                                top: 0px;
-                                left: -8px;
-                                height: 34px;
-                                padding: 0 25px;
-                                line-height: 34px;
-                                background-color: #FD9C28;
-                                color: #fff;
-                                font-size: 18px;
-                                text-align: center;
-                                font-weight: 700;
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    right: 0px;
-                                    top: 0;
-                                    width: 0;
-                                    height: 0;
-                                    border-top: 17px solid transparent;
-                                    border-bottom: 17px solid transparent;
-                                    border-left: 13px solid transparent;
-                                    border-right: 13px solid #fff;
-                                }
-                                &::before {
-                                    content: '';
-                                    position: absolute;
-                                    left: 0px;
-                                    top: -8px;
-                                    width: 0;
-                                    height: 0;
-                                    border-top: 4px solid transparent;
-                                    border-left: 4px solid transparent;
-                                    border-right: 4px solid #faa137;
-                                    border-bottom: 4px solid #faa137;
-                                }
-                            }
-                            .visited-box {
-                                position: absolute;
-                                top: 12px;
-                                right: 55px;
-                                padding: 7px 10px;
-                                border-radius: 7px;
-                                border: 1px solid #e5e6e6;
-                                box-shadow: 0px 9px 12px rgba(134,135,136,.16);
-                                font-size: 14px;
-                                color: #484644;
-                                background-color: #fff;
-
-                                .iconfont {
-                                    display: inline-block;
-                                    width: 23px;
-                                    height: 23px;
-                                    background-image: url('../assets/img/person-icon.webp');
-                                    background-repeat: no-repeat;
-                                    background-position: center center;
-                                    background-size: cover;
-                                    vertical-align: middle;
-                                }
-                                strong {
-                                    font-family: 'Poppins-Bold';
-
-                                }
-                                .text {
-                                    vertical-align: middle;
-                                }
-                            }
-                            .product-item-container {
-                                display: flex;
-                                .img-score-box {
-                                    flex: 34;
-                                    display: flex;
-                                    align-items: center;
-                                    .img-box {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        flex: 1;
-                                        margin-right: 7px;
-                                        img {
-                                            height: 80px;
-                                        }
-                                    }
-                                    .rate-box {
-                                        flex: 1;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        height: 100%;
-                                        font-size: 0;
-                                        border-left: 1px solid rgba(0, 23, 75, .05);
-                                        border-right: 1px solid rgba(0, 23, 75, .05);
-                                        .rate {
-                                            display: flex;
-                                            flex-direction: column;
-                                            align-items: center;
-                                            .trustpilot-box {
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: center;
-                                                font-size: 14px;
-                                                .text-box {
-                                                    .iconfont {
-                                                        color: $theme-color;
-                                                        font-size: 20px;
-                                                    }
-                                                    .text {
-                                                        font-size: 16px;
-                                                        font-weight: 600;
-                                                    }
-                                                }
-                                                .star-list {
-                                                    display: flex;
-                                                    align-items: center;
-                                                    margin-top: 2px;
-                                                    li {
-                                                        width: 18px;
-                                                        height: 18px;
-                                                        text-align: center;
-                                                        line-height: 18px;
-                                                        color: #fff;
-                                                        background-color: $theme-color;
-                                                        margin: 0 1px;
-                                                    }
-                                                }
-                                            }
-                                            .score {
-                                                font-size: 34px;
-                                                color: #001139;
-                                                font-weight: 600;
-                                            }
-                                            .reviews-link {
-                                                margin-top: 8px;
-                                                color: #484644;
-                                                font-size: 12px;
-                                                text-decoration-line: underline;
-                                                text-decoration-color: #484644;
-                                                &:hover {
-                                                    color: $theme-change-color;
-                                                    text-decoration-color: $theme-change-color;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                .features-terms-box {
-                                    flex: 50;
-                                    
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    .list-box {
-                                        flex: 8;
-                                        padding-left: 20px;
-                                        padding-right: 20px;
-                                        .features-list {
-                                            font-size: 16px;
-                                            dt {
-                                                color: #001139;
-                                                .phone-text {
-                                                    display: none;
-                                                }
-                                            }
-                                            dd {
-                                                display: flex;
-                                                align-items: center;
-                                                .iconfont {
-                                                    color: $theme-color;
-                                                }
-                                                .text {
-                                                    margin-left: 12px;
-                                                    color: #484644;
-                                                }
-                                            }
-                                        }
-                                    }
-                                    .terms-box {
-                                        flex: 6;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        height: 100%;
-                                        
-                                        border-left: 1px solid rgba(0, 23, 75, .1);
-                                        font-size: 24px;
-                                        color: #001139;
-
-                                        .title {
-                                            display: none;
-                                        }
-                                    }
-                                }
-                                .btn-box {
-                                    flex: 17;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-end;
-                                    justify-content: center;
-                                    .btn {
-                                        display: block;
-                                        width: 160px;
-                                        height: 48px;
-                                        margin-bottom: 10px;
-                                        line-height: 48px;
-                                        text-align: center;
-                                        color: #fff;
-                                        background-color: $theme-color;
-                                        font-size: 16px;
-                                        border-radius: 8px;
-                                        text-decoration: none;
-                                        transition: all linear 0.1s;
-                                        &:hover {
-                                            background-color: $theme-change-color;
-
-                                        }
-                                    }
-                                    
-                                }
-                            }
-
-                        }
-                    }
-                    
+                  }
                 }
-                .more-box {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 40px;
-                    font-size: 16px;
-                    
-                    .btn {
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                        color: #8f8f8f;
+                .features-terms-box {
+                  flex: 50;
 
-                        &.close {
-                            .iconfont {
-                                display: inline-block;
-                                transform: rotateZ(-180deg);
-                            }
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .list-box {
+                    flex: 8;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .features-list {
+                      font-size: 16px;
+                      dt {
+                        color: #001139;
+                        .phone-text {
+                          display: none;
                         }
+                      }
+                      dd {
+                        display: flex;
+                        align-items: center;
+                        .iconfont {
+                          color: $theme-color;
+                        }
+                        .text {
+                          margin-left: 12px;
+                          color: #484644;
+                        }
+                      }
+                    }
+                  }
+                  .terms-box {
+                    flex: 6;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
 
+                    border-left: 1px solid rgba(0, 23, 75, 0.1);
+                    font-size: 24px;
+                    color: #001139;
+
+                    .title {
+                      display: none;
+                    }
+                  }
+                }
+                .btn-box {
+                  flex: 17;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  justify-content: center;
+                  .btn {
+                    display: block;
+                    width: 160px;
+                    height: 48px;
+                    margin-bottom: 10px;
+                    line-height: 48px;
+                    text-align: center;
+                    color: #fff;
+                    background-color: $theme-color;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    transition: all linear 0.1s;
+                    &:hover {
+                      background-color: $theme-change-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .more-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          font-size: 16px;
+
+          .btn {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #8f8f8f;
+
+            &.close {
+              .iconfont {
+                display: inline-block;
+                transform: rotateZ(-180deg);
+              }
+            }
+          }
+          .text {
+            display: inline-block;
+            margin-right: 21px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    .best-overall-area {
+      width: $rootWidth;
+      margin: 85px auto 0 auto;
+      .best-overall-title-box {
+        margin-bottom: 40px;
+        text-align: center;
+        .best-overall-title {
+          font-size: 42px;
+          font-weight: normal;
+          color: #001139;
+          line-height: 56px;
+        }
+        .content {
+          margin-top: 18px;
+          font-size: 18px;
+          line-height: 24px;
+          color: #787e8b;
+        }
+      }
+
+      .card-list {
+        .product-item {
+          position: relative;
+          // height: 186px;
+          padding: 45px 50px;
+          box-sizing: border-box;
+          border: 1px solid rgba(0, 22, 75, 0.1);
+          border-radius: 16px;
+          margin-bottom: 18px;
+          background-color: rgba(41, 182, 116, 0.05);
+          .corner-box {
+            position: absolute;
+            top: 0px;
+            left: -8px;
+            padding: 0 25px;
+            height: 34px;
+            line-height: 34px;
+            background-color: #fd9c28;
+            color: #001139;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 700;
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0px;
+              top: 0;
+              width: 0;
+              height: 0;
+              border-top: 17px solid transparent;
+              border-bottom: 17px solid transparent;
+              border-left: 13px solid transparent;
+              border-right: 13px solid #f8f8f8;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0px;
+              bottom: -8px;
+              width: 0;
+              height: 0;
+              border-top: 4px solid #faa137;
+              border-left: 4px solid transparent;
+              border-right: 4px solid #faa137;
+              border-bottom: 4px solid transparent;
+            }
+
+            &.green {
+              background-color: $theme-color;
+              color: #fff;
+              &::before {
+                border-right-color: $theme-color;
+                border-top-color: $theme-color;
+              }
+            }
+          }
+
+          .product-item-container {
+            display: flex;
+            .img-score-box {
+              flex: 34;
+              display: flex;
+              align-items: center;
+              .img-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                margin-right: 7px;
+                img {
+                  height: 80px;
+                }
+              }
+              .rate-box {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 0;
+                border-left: 1px solid rgba(0, 23, 75, 0.05);
+                border-right: 1px solid rgba(0, 23, 75, 0.05);
+                .rate {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  .score {
+                    font-size: 34px;
+                    color: #001139;
+                    font-weight: 600;
+                  }
+                  .reviews-link {
+                    margin-top: 8px;
+                    color: #484644;
+                    font-size: 12px;
+                    text-decoration-line: underline;
+                    text-decoration-color: #484644;
+                    &:hover {
+                      color: $theme-change-color;
+                      text-decoration-color: $theme-change-color;
+                    }
+                  }
+                }
+              }
+            }
+            .features-terms-box {
+              flex: 50;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .list-box {
+                flex: 8;
+                padding-left: 20px;
+                padding-right: 20px;
+                .features-list {
+                  font-size: 16px;
+                  dt {
+                    color: #001139;
+                    .phone-text {
+                      display: none;
+                    }
+                  }
+                  dd {
+                    display: flex;
+                    align-items: center;
+                    .iconfont {
+                      color: $theme-color;
                     }
                     .text {
-                        display: inline-block;
-                        margin-right: 21px;
-                        vertical-align: middle;
+                      margin-left: 12px;
+                      color: #484644;
                     }
+                  }
                 }
-            }
-        }
-        .best-overall-area {
-            width: $rootWidth;
-            margin: 85px auto 0 auto ;
-            .best-overall-title-box {
-                margin-bottom: 40px;
-                text-align: center;
-                .best-overall-title {
-                    font-size: 42px;
-                    font-weight: normal;
-                    color: #001139;
-                    line-height: 56px;
-                }
-                .content {
-                    margin-top: 18px;
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #787e8b;
-                }
-            }
-
-            .card-list {
-                
-                .product-item {
-                    position: relative;
-                    // height: 186px;
-                    padding: 45px 50px;
-                    box-sizing: border-box;
-                    border: 1px solid rgba(0, 22, 75, 0.1);
-                    border-radius: 16px;
-                    margin-bottom: 18px;
-                    background-color: rgba(41,182,116,0.05);
-                    .corner-box {
-                        position: absolute;
-                        top: 0px;
-                        left: -8px;
-                        padding: 0 25px;
-                        height: 34px;
-                        line-height: 34px;
-                        background-color: #FD9C28;
-                        color: #001139;
-                        font-size: 18px;
-                        text-align: center;
-                        font-weight: 700;
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            right: 0px;
-                            top: 0;
-                            width: 0;
-                            height: 0;
-                            border-top: 17px solid transparent;
-                            border-bottom: 17px solid transparent;
-                            border-left: 13px solid transparent;
-                            border-right: 13px solid #f8f8f8;
-                        }
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            left: 0px;
-                            bottom: -8px;
-                            width: 0;
-                            height: 0;
-                            border-top: 4px solid #faa137;
-                            border-left: 4px solid transparent;
-                            border-right: 4px solid #faa137;
-                            border-bottom: 4px solid transparent;
-                        }
-
-                        &.green {
-                            
-                            background-color: $theme-color;
-                            color: #fff;
-                            &::before {
-                                border-right-color: $theme-color;
-                                border-top-color: $theme-color;
-                            }
-                        }
-                    }
-
-                    .product-item-container {
-                        display: flex;
-                        .img-score-box {
-                            flex: 34;
-                            display: flex;
-                            align-items: center;
-                            .img-box {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                flex: 1;
-                                margin-right: 7px;
-                                img {
-                                    height: 80px;
-                                }
-                            }
-                            .rate-box {
-                                flex: 1;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                height: 100%;
-                                font-size: 0;
-                                border-left: 1px solid rgba(0, 23, 75, .05);
-                                border-right: 1px solid rgba(0, 23, 75, .05);
-                                .rate {
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: center;
-                                    .score {
-                                        font-size: 34px;
-                                        color: #001139;
-                                        font-weight: 600;
-                                    }
-                                    .reviews-link {
-                                        margin-top: 8px;
-                                        color: #484644;
-                                        font-size: 12px;
-                                        text-decoration-line: underline;
-                                        text-decoration-color: #484644;
-                                        &:hover {
-                                            color: $theme-change-color;
-                                            text-decoration-color: $theme-change-color;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        .features-terms-box {
-                            flex: 50;
-                            
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            .list-box {
-                                flex: 8;
-                                padding-left: 20px;
-                                padding-right: 20px;
-                                .features-list {
-                                    font-size: 16px;
-                                    dt {
-                                        color: #001139;
-                                        .phone-text {
-                                            display: none;
-                                        }
-                                    }
-                                    dd {
-                                        display: flex;
-                                        align-items: center;
-                                        .iconfont {
-                                            color: $theme-color;
-                                        }
-                                        .text {
-                                            margin-left: 12px;
-                                            color: #484644;
-                                        }
-                                    }
-                                }
-                            }
-                            .terms-box {
-                                flex: 6;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                height: 100%;
-                                
-                                border-left: 1px solid rgba(0, 23, 75, .1);
-                                font-size: 24px;
-                                color: #001139;
-
-                                .title {
-                                    display: none;
-                                }
-                            }
-                        }
-                        .btn-box {
-                            flex: 17;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-end;
-                            justify-content: center;
-                            .btn {
-                                display: block;
-                                width: 160px;
-                                height: 48px;
-                                margin-bottom: 10px;
-                                line-height: 48px;
-                                text-align: center;
-                                color: #fff;
-                                background-color: $theme-color;
-                                font-size: 16px;
-                                border-radius: 8px;
-                                text-decoration: none;
-                                transition: all linear 0.1s;
-                                &:hover {
-                                    background-color: $theme-change-color;
-                                }
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
-        .faq-area {
-            width: $rootWidth;
-            margin: 0 auto;
-
-            .faq-area-title-box {
+              }
+              .terms-box {
+                flex: 6;
                 display: flex;
-                width: 100%;
-                height: 275px;
-                margin-top: 90px;
-                margin-bottom: 110px;
-                .pic {
-                    flex-shrink: 0;
-                    display: inline-block;
-                    width: 320px;
-                    height: 275px;
-                    margin-right: 62px;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                border-left: 1px solid rgba(0, 23, 75, 0.1);
+                font-size: 24px;
+                color: #001139;
+
+                .title {
+                  display: none;
                 }
-                .faq-content {
-                    .faq-title {
-                        
-                        font-size: 42px;
-                        font-weight: normal;
-                        color: #001139;
-                        line-height: 56px;
-                        span {
-                            display: block;
-                        }
-                    }
-                    .content {
-                        margin-top: 18px;
-                        font-size: 18px;
-                        line-height: 24px;
-                        color: #787e8b;
-                    }
-                }
+              }
             }
+            .btn-box {
+              flex: 17;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              justify-content: center;
+              .btn {
+                display: block;
+                width: 160px;
+                height: 48px;
+                margin-bottom: 10px;
+                line-height: 48px;
+                text-align: center;
+                color: #fff;
+                background-color: $theme-color;
+                font-size: 16px;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: all linear 0.1s;
+                &:hover {
+                  background-color: $theme-change-color;
+                }
+              }
+            }
+          }
         }
+      }
     }
+    .faq-area {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .faq-area-title-box {
+        display: flex;
+        width: 100%;
+        height: 275px;
+        margin-top: 90px;
+        margin-bottom: 110px;
+        .pic {
+          flex-shrink: 0;
+          display: inline-block;
+          width: 320px;
+          height: 275px;
+          margin-right: 62px;
+        }
+        .faq-content {
+          .faq-title {
+            font-size: 42px;
+            font-weight: normal;
+            color: #001139;
+            line-height: 56px;
+            span {
+              display: block;
+            }
+          }
+          .content {
+            margin-top: 18px;
+            font-size: 18px;
+            line-height: 24px;
+            color: #787e8b;
+          }
+        }
+      }
+    }
+  }
 }
 
 .main-container {
-    @media screen and (max-width: 750px) {
-        padding-top: 70px;
-        .banner-area {
-
-            .banner-container {
-                align-items: flex-start;
-                width: 100%;
-                height: auto;
-                min-height: 300px;
-                padding: 50px 20px;
-                box-sizing: border-box;
-                .banner-content {
-                    .website-title {
-                        margin-top: 0;
-                        font-size: 28px;
-                        line-height: 40px;
-                    }
-                    .update {
-                        font-size: 18px;
-                    }
-                    .content {
-                        font-size: 16px;
-                    }
-                    
-                }
-            }
-            .banner-img {
-                display: none;
-                height: 130px;
-            }
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+    .banner-area {
+      .banner-container {
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        .banner-content {
+          .website-title {
+            margin-top: 0;
+            font-size: 28px;
+            line-height: 40px;
+          }
+          .update {
+            font-size: 18px;
+          }
+          .content {
+            font-size: 16px;
+          }
         }
-        .container {
-            .product-area {
-                .product-container {
-                    width: 100%;
-                    box-sizing: border-box;
-                    padding: 0 20px;
-
-                    .product-container-top-box {
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        margin: 30px 0;
-                        .disclosure {
-                            margin-top: 17px;
-                            text-align: right;
-                        }
-                    }
-
-                    .product-list-box {
-                        border: none;
-                        .product-title-box {
-                            display: none;
-                        }
-                        .product-list {
-                            .product-item {
-                                height: auto;
-                                margin-bottom: 15px;
-                                padding: 20px;
-                                border: 1px solid #00164b1a;
-                                box-sizing: border-box;
-                                border-radius: 18px;
-                                box-shadow: 0px 3px 6px rgba(0,0,0,.16);
-                                &:nth-last-of-type(1) {
-                                    border: 1px solid #00164b1a;
-                                }
-                                &:nth-of-type(1) {
-                                    padding: 30px 20px;
-                                }
-                                .visited-box {
-                                    display: none;
-                                }
-                                .product-item-container {
-                                    flex-direction: column;
-
-                                    .img-score-box {
-                                        padding-bottom: 20px;
-                                        border-bottom: 1px solid #00164b1a;
-                                        .img-box {
-                                            img{
-                                                height: 70px;
-                                            }
-                                        }
-                                        .rate-box {
-                                            border: none;
-                                        }
-                                    }
-
-                                    .features-terms-box {
-                                        margin-top: 22px;
-                                        align-items: flex-start;
-                                        flex-direction: column;
-                                        .list-box {
-                                            order: 2;
-                                            flex: 2;
-                                            padding-left: 0;
-                                            padding-right: 0;
-                                            .features-list {
-                                                font-size: 14px;
-                                                
-                                                dt {
-                                                    margin-bottom: 5px;
-                                                    .phone-text {
-                                                        display: inline-block;
-                                                        color: #001139ab;
-                                                    }
-                                                    .pc-text {
-                                                        display: none;
-                                                    }
-                                                }
-                                                dd {
-                                                    .text {
-                                                        font-size: 16px;
-                                                    }
-                                                }
-                                             }
-                                        }
-                                        .terms-box {
-                                            order: 1;
-                                            flex: 1;
-                                            border: none;
-                                            font-size: 18px;
-                                            display: flex;
-                                            flex-direction: column;
-                                            align-items: flex-start;
-                                            margin-bottom: 10px;
-                                            .title {
-                                                display: block;
-                                                font-size: 14px;
-                                                margin-bottom: 5px;
-                                                color: #001139ab;;
-                                            }
-                                            // .text-box {
-                                            //     text-align: right;
-                                            // }
-                                        }
-                                        
-                                    }
-
-                                    .btn-box {
-                                        margin-top: 35px;
-                                        margin-bottom: 20px;
-                                        .btn {
-                                            width: 100%;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-            }
-
-            .best-overall-area {
-                width: 100%;
-                box-sizing: border-box;
-                padding: 0 20px;
-
-                .card-list {
-                    .product-item {
-                        height: auto;
-                        margin-bottom: 15px;
-                        padding: 30px;
-                        border: 1px solid #00164b1a;
-                        box-sizing: border-box;
-                        border-radius: 18px;
-                        box-shadow: 0px 3px 6px rgba(0,0,0,.16);
-                        &:nth-last-of-type(1) {
-                            border: 1px solid #00164b1a;
-                        }
-                        .product-item-container {
-                            flex-direction: column;
-
-                            .img-score-box {
-                                padding-bottom: 20px;
-                                border-bottom: 1px solid #00164b1a;
-                                .img-box {
-                                    img{
-                                        height: 70px;
-                                    }
-                                }
-                                .rate-box {
-                                    border: none;
-                                }
-                            }
-
-                            .features-terms-box {
-                                margin-top: 22px;
-                                align-items: flex-start;
-                                flex-direction: column;
-                                .list-box {
-                                    order: 2;
-                                    flex: 2;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    .features-list {
-                                        font-size: 14px;
-                                        
-                                        dt {
-                                            margin-bottom: 5px;
-                                            .phone-text {
-                                                display: inline-block;
-                                                color: #001139ab;
-                                            }
-                                            .pc-text {
-                                                display: none;
-                                            }
-                                        }
-                                        dd {
-                                            .text {
-                                                font-size: 16px;
-                                            }
-                                        }
-                                     }
-                                }
-                                .terms-box {
-                                    order: 1;
-                                    flex: 1;
-                                    border: none;
-                                    font-size: 18px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    align-items: flex-start;
-                                    margin-bottom: 10px;
-                                    .title {
-                                        display: block;
-                                        font-size: 14px;
-                                        margin-bottom: 5px;
-                                        color: #001139ab;;
-                                    }
-                                }
-                                
-                            }
-
-                            .btn-box {
-                                margin-top: 35px;
-                                margin-bottom: 20px;
-                                .btn {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .faq-area {
-
-                width: 100%;
-                box-sizing: border-box;
-                padding: 0 20px;
-                .faq-area-title-box {
-                    flex-direction: column;
-                    height: auto;
-                    margin-bottom: 35px;
-                    .pic {
-                        order: 2;
-                        margin-top: 20px;
-
-                    }
-                    .faq-content {
-                        order: 1;
-
-                        .faq-title {
-                            font-size: 28px;
-                            text-align: center;
-                        }
-                        .content {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-        }
+      }
+      .banner-img {
+        display: none;
+        height: 130px;
+      }
     }
+    .container {
+      .product-area {
+        .product-container {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 20px;
+
+          .product-container-top-box {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 30px 0;
+            .disclosure {
+              margin-top: 17px;
+              text-align: right;
+            }
+          }
+
+          .product-list-box {
+            border: none;
+            .product-title-box {
+              display: none;
+            }
+            .product-list {
+              .product-item {
+                height: auto;
+                margin-bottom: 15px;
+                padding: 20px;
+                border: 1px solid #00164b1a;
+                box-sizing: border-box;
+                border-radius: 18px;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                &:nth-last-of-type(1) {
+                  border: 1px solid #00164b1a;
+                }
+                &:nth-of-type(1) {
+                  padding: 30px 20px;
+                }
+                .visited-box {
+                  display: none;
+                }
+                .product-item-container {
+                  flex-direction: column;
+
+                  .img-score-box {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #00164b1a;
+                    .img-box {
+                      img {
+                        height: 70px;
+                      }
+                    }
+                    .rate-box {
+                      border: none;
+                    }
+                  }
+
+                  .features-terms-box {
+                    margin-top: 22px;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    .list-box {
+                      order: 2;
+                      flex: 2;
+                      padding-left: 0;
+                      padding-right: 0;
+                      .features-list {
+                        font-size: 14px;
+
+                        dt {
+                          margin-bottom: 5px;
+                          .phone-text {
+                            display: inline-block;
+                            color: #001139ab;
+                          }
+                          .pc-text {
+                            display: none;
+                          }
+                        }
+                        dd {
+                          .text {
+                            font-size: 16px;
+                          }
+                        }
+                      }
+                    }
+                    .terms-box {
+                      order: 1;
+                      flex: 1;
+                      border: none;
+                      font-size: 18px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      margin-bottom: 10px;
+                      .title {
+                        display: block;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: #001139ab;
+                      }
+                      // .text-box {
+                      //     text-align: right;
+                      // }
+                    }
+                  }
+
+                  .btn-box {
+                    margin-top: 35px;
+                    margin-bottom: 20px;
+                    .btn {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .best-overall-area {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .card-list {
+          .product-item {
+            height: auto;
+            margin-bottom: 15px;
+            padding: 30px;
+            border: 1px solid #00164b1a;
+            box-sizing: border-box;
+            border-radius: 18px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            &:nth-last-of-type(1) {
+              border: 1px solid #00164b1a;
+            }
+            .product-item-container {
+              flex-direction: column;
+
+              .img-score-box {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #00164b1a;
+                .img-box {
+                  img {
+                    height: 70px;
+                  }
+                }
+                .rate-box {
+                  border: none;
+                }
+              }
+
+              .features-terms-box {
+                margin-top: 22px;
+                align-items: flex-start;
+                flex-direction: column;
+                .list-box {
+                  order: 2;
+                  flex: 2;
+                  padding-left: 0;
+                  padding-right: 0;
+                  .features-list {
+                    font-size: 14px;
+
+                    dt {
+                      margin-bottom: 5px;
+                      .phone-text {
+                        display: inline-block;
+                        color: #001139ab;
+                      }
+                      .pc-text {
+                        display: none;
+                      }
+                    }
+                    dd {
+                      .text {
+                        font-size: 16px;
+                      }
+                    }
+                  }
+                }
+                .terms-box {
+                  order: 1;
+                  flex: 1;
+                  border: none;
+                  font-size: 18px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-bottom: 10px;
+                  .title {
+                    display: block;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    color: #001139ab;
+                  }
+                }
+              }
+
+              .btn-box {
+                margin-top: 35px;
+                margin-bottom: 20px;
+                .btn {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .faq-area {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        .faq-area-title-box {
+          flex-direction: column;
+          height: auto;
+          margin-bottom: 35px;
+          .pic {
+            order: 2;
+            margin-top: 20px;
+          }
+          .faq-content {
+            order: 1;
+
+            .faq-title {
+              font-size: 28px;
+              text-align: center;
+            }
+            .content {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

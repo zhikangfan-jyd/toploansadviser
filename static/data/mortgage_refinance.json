@@ -46,7 +46,6 @@
                     "text": "No face-to-face customer support"
                 }
             ]
-            
         },
         {
             "name": "LoanDepot",
@@ -97,7 +96,6 @@
                     "text": "USDA Rural Development loans not available"
                 }
             ]
-            
         },
         {
             "name": "Rocket Mortgage",
@@ -145,9 +143,7 @@
                     "text": "Getting a customized interest rate requires a credit check, which can lower your credit score by a few points"
                 }
             ]
-            
         },
-        
         {
             "name": "Caliber",
             "review_key": "",
@@ -194,10 +190,7 @@
                     "text": "Doesn’t offer home equity loans or lines of credit"
                 }
             ]
-            
         },
-        
-        
         {
             "name": "Sterns loan",
             "review_key": "",
@@ -244,7 +237,6 @@
                     "text": "Doesn’t offer home equity loans or lines of credit"
                 }
             ]
-            
         }
     ]
 }

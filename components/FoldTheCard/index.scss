@@ -1,67 +1,65 @@
 .fold-the-card-container {
-    width: $rootWidth;
-    border-radius: 16px;
-    border: 1px solid rgba(0,23,75,.1);
-    box-sizing: border-box;
-    .fold-the-card-item {
-        width: 100%;
-        border-bottom: 1px solid rgba(0,23,75,.1);
-        &:nth-last-of-type(1) {
-            border: none;
-        }
-        .fold-the-card-title-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100px;
-            width: 100%;
-            padding: 0 40px;
-            box-sizing: border-box;
-            .title {
-                font-size: 22px;
-                color: #001139;
-            }
-            .iconfont {
-                flex-shrink: 0;
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                background-image: url('../../assets/img/subtract.webp');
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                cursor: pointer;
-
-                &.current {
-                    background-image: url('../../assets/img/add.webp');
-                   
-                }
-            }
-        }
-        .fold-the-card-content {
-            // display: none;
-            width: 100%;
-            padding: 0 40px 40px 40px;
-            font-size: 18px;
-            line-height: 30px;
-            box-sizing: border-box;
-        }
+  width: $rootWidth;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 23, 75, 0.1);
+  box-sizing: border-box;
+  .fold-the-card-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 23, 75, 0.1);
+    &:nth-last-of-type(1) {
+      border: none;
     }
+    .fold-the-card-title-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      width: 100%;
+      padding: 0 40px;
+      box-sizing: border-box;
+      .title {
+        font-size: 22px;
+        color: #001139;
+      }
+      .iconfont {
+        flex-shrink: 0;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../assets/img/subtract.webp");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &.current {
+          background-image: url("../../assets/img/add.webp");
+        }
+      }
+    }
+    .fold-the-card-content {
+      // display: none;
+      width: 100%;
+      padding: 0 40px 40px 40px;
+      font-size: 18px;
+      line-height: 30px;
+      box-sizing: border-box;
+    }
+  }
 }
 
 .fold-the-card-container {
-    @media screen and (max-width: 750px){
-        width: 100%;
-        .fold-the-card-item {
-            .fold-the-card-title-box {
-                .title {
-                    font-size: 18px;
-                }
-            }
-            .fold-the-card-content {
-                font-size: 14px;
-            }
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    .fold-the-card-item {
+      .fold-the-card-title-box {
+        .title {
+          font-size: 18px;
         }
+      }
+      .fold-the-card-content {
+        font-size: 14px;
+      }
     }
-    
+  }
 }

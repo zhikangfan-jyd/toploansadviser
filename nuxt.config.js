@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 export default {
 
-  
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -85,7 +85,7 @@ export default {
       }
     },
     postcss: {
-      
+
       plugins: {
         'autoprefixer': true,
         'postcss-px2rem': {
@@ -101,17 +101,17 @@ export default {
     ],
     babel: {
       plugins: [
-        [ "component", 
+        ["component",
           {
             "libraryName": "element-ui",
             "styleLibraryName": "theme-chalk"
           }
-        ] 
-      ] 
+        ]
+      ]
     }
   },
   axios: {
-    baseURL: 'http://192.168.50.107:3100'
+    baseURL: ''
   },
   server: {
     port: '3100',

@@ -51,7 +51,6 @@
                 "text": "No physical branches available"
             }
         ]
-        
     },
     {
         "name": "AmeriSave",
@@ -64,7 +63,6 @@
         },
         "slogan": "Wide Variety of Loan Programs",
         "meritList": [
-            
             {
                 "text": "Can pay as little as 3% down on loan"
             },
@@ -106,7 +104,6 @@
                 "text": "No home equity loans or HELOC products"
             }
         ]
-        
     },
     {
         "name": "Better",
@@ -157,9 +154,7 @@
                 "text": "No government-backed loans such as USDA or VA mortgages"
             }
         ]
-        
     },
-    
     {
         "name": "Zillow",
         "review_key": "",
@@ -209,7 +204,6 @@
                 "text": "Origination fee of $1,500 to be paid"
             }
         ]
-        
     },
     {
         "name": "New American Funding",
@@ -260,9 +254,7 @@
                 "text": "Doesn’t work with down payment assistance programs in all states"
             }
         ]
-        
     },
-    
     {
         "name": "AmeriSave",
         "review_key": "",
@@ -315,7 +307,6 @@
                 "text": "No home equity loans or HELOC products"
             }
         ]
-        
     },
     {
         "name": "Better",
@@ -366,7 +357,6 @@
                 "text": "No government-backed loans such as USDA or VA mortgages"
             }
         ]
-        
     },
     {
         "name": "Quicken Loans",
@@ -420,7 +410,6 @@
                 "text": "No physical branches available"
             }
         ]
-        
     },
     {
         "name": "New American Funding",
@@ -471,7 +460,6 @@
                 "text": "Doesn’t work with down payment assistance programs in all states"
             }
         ]
-        
     },
     {
         "name": "Zillow",
@@ -522,6 +510,5 @@
                 "text": "Origination fee of $1,500 to be paid"
             }
         ]
-        
     }
 ]

@@ -49,7 +49,6 @@
                     "text": "USDA Rural Development loans not available"
                 }
             ]
-            
         },
         {
             "name": "AmeriSave",
@@ -103,7 +102,6 @@
                     "text": "No home equity loans or HELOC products"
                 }
             ]
-            
         },
         {
             "name": "Better",
@@ -154,7 +152,6 @@
                     "text": "No government-backed loans such as USDA or VA mortgages"
                 }
             ]
-            
         },
         {
             "name": "Figure",
@@ -184,7 +181,6 @@
                 "NMLS": "1717824"
             },
             "pros": [
-                
                 {
                     "text": "Fast funding times"
                 },
@@ -203,7 +199,6 @@
                     "text": "Fees on mortgage refinancing loans"
                 }
             ]
-            
         },
         {
             "name": "Quicken Loans",
@@ -257,7 +252,6 @@
                     "text": "No physical branches available"
                 }
             ]
-            
         },
         {
             "name": "Zillow",
@@ -308,7 +302,6 @@
                     "text": "Origination fee of $1,500 to be paid"
                 }
             ]
-            
         },
         {
             "name": "Credible",
@@ -356,7 +349,6 @@
                     "text": "No face-to-face customer support"
                 }
             ]
-            
         },
         {
             "name": "lendingtree",
@@ -386,7 +378,6 @@
                 "NMLS": "1136"
             },
             "pros": [
-                
                 {
                     "text": "Lenders in the LendingTree network uniquely offer manufactured or mobile home loans and multi-family home loans"
                 },
@@ -405,7 +396,6 @@
                     "text": "Each lender runs a hard credit check, which could reduce credit scores by a few points"
                 }
             ]
-            
         },
         {
             "name": "New American Funding",
@@ -456,8 +446,6 @@
                     "text": "Doesn’t work with down payment assistance programs in all states"
                 }
             ]
-            
         }
-        
     ]
 }

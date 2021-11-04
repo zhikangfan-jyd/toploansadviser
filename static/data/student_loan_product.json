@@ -1,6 +1,5 @@
 {
     "data": [
-        
         {
             "name": "credible_stu",
             "review_key": "credible",
@@ -101,8 +100,6 @@
                 "max_term": "15"
             }
         },
-        
-        
         {
             "name": "PenFed",
             "review_key": "",

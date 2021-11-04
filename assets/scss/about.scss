@@ -1,182 +1,177 @@
 .main-container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    .banner-area {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .banner-area {
+    position: relative;
+    width: 100%;
+    // background-color: #f5faf6;
+    background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+
+    .banner-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: $rootWidth;
+      height: 360px;
+      margin: 0 auto;
+      .banner-content {
         position: relative;
-        width: 100%;
-        // background-color: #f5faf6;
-        background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
-        
-        .banner-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: $rootWidth;
-            height: 360px;
-            margin: 0 auto;
-            .banner-content {
-                position: relative;
-                z-index: 1;
-                max-width: 730px;
-                .website-title {
-                    font-size: 42px;
-                    font-weight: normal;
-                    font-family: 'Poppins-Bold';
-                    line-height: 56px;
-                    color: #001139;
-                    span {
-                        display: block;
-                    }
-                }
-                .update {
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    color: $theme-color;
-                    font-size: 20px;
-                }
-                .content {
-                    font-size: 18px;
-                    line-height: 24px;
-                    // color: #787e8b;
-                    color: #000;
-                }
-            }
-            .banner-img {
-                position: absolute;
-                right: 0;
-                bottom: -6px;
-                height: 300px;
-            }
+        z-index: 1;
+        max-width: 730px;
+        .website-title {
+          font-size: 42px;
+          font-weight: normal;
+          font-family: "Poppins-Bold";
+          line-height: 56px;
+          color: #001139;
+          span {
+            display: block;
+          }
         }
-        
-    }
-    .desc-area {
-        width: $rootWidth;
-        margin: auto;
+        .update {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: $theme-color;
+          font-size: 20px;
+        }
         .content {
-            padding: 100px 0;
-            color: #787e8b;
-            font-size: 20px;
-            line-height: 26px;
+          font-size: 18px;
+          line-height: 24px;
+          // color: #787e8b;
+          color: #000;
         }
-        .content-item {
-            display: flex;
-            align-items: center;
-            font-size: 0;
-            padding: 60px 0;
-            border-bottom: 3px solid #efecec;
-            box-sizing: border-box;
-            // &.first {
-            //     border-top: 3px solid #efecec;
-            // }
-           
-            .pic-box {
-                flex: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .text-box {
-                flex: 1;
-                .title {
-                    display: inline-block;
-                    font-size: 26px;
-                    color: $theme-color;
-                    margin-bottom: 30px;
-                }
-                .text {
-                    font-size: 20px;
-                    color: #787e8b;
-                    line-height: 26px;
-                }
-            }
-        }
+      }
+      .banner-img {
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        height: 300px;
+      }
     }
+  }
+  .desc-area {
+    width: $rootWidth;
+    margin: auto;
+    .content {
+      padding: 100px 0;
+      color: #787e8b;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .content-item {
+      display: flex;
+      align-items: center;
+      font-size: 0;
+      padding: 60px 0;
+      border-bottom: 3px solid #efecec;
+      box-sizing: border-box;
+      // &.first {
+      //     border-top: 3px solid #efecec;
+      // }
 
-    .partners-area {
-        width: $rootWidth;
-        margin: 0 auto;
-        padding: 65px 0;
+      .pic-box {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-        border-bottom: 3px solid #efecec;
+      .text-box {
+        flex: 1;
         .title {
-            text-align: center;
-            font-size: 48px;
-            color: $theme-color;
+          display: inline-block;
+          font-size: 26px;
+          color: $theme-color;
+          margin-bottom: 30px;
         }
-        .img-list {
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                margin: 35px 19px;
-                img {
-                    display: inline-block;
-                    height: 60px;
-                    width: 190px;
-                    background-color: $theme-color;
-    
-                }
-            }
-            
+        .text {
+          font-size: 20px;
+          color: #787e8b;
+          line-height: 26px;
         }
+      }
     }
+  }
+
+  .partners-area {
+    width: $rootWidth;
+    margin: 0 auto;
+    padding: 65px 0;
+
+    border-bottom: 3px solid #efecec;
+    .title {
+      text-align: center;
+      font-size: 48px;
+      color: $theme-color;
+    }
+    .img-list {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin: 35px 19px;
+        img {
+          display: inline-block;
+          height: 60px;
+          width: 190px;
+          background-color: $theme-color;
+        }
+      }
+    }
+  }
 }
 
 .main-container {
-    
-    @media screen and (max-width: 750px) {
-        padding-top: 70px;
-        .banner-area {
-            .banner-container {
-                width: 100%;
-                height: 430px;
-                box-sizing: border-box;
-                padding: 0 20px;
-                .banner-content {
-                    .website-title {
-                        font-size: 28px;
-                    }
-
-                }
-                .banner-img {
-                    right: 20px;
-                    height: 130px;
-                }
-            }
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+    .banner-area {
+      .banner-container {
+        width: 100%;
+        height: 430px;
+        box-sizing: border-box;
+        padding: 0 20px;
+        .banner-content {
+          .website-title {
+            font-size: 28px;
+          }
         }
-        .desc-area {
-            width: 100%;
-            .content {
-                width: 100%;
-                font-size: 16px;
-                padding: 30px 20px;
-                box-sizing: border-box;
-            }
-            
-            .content-item {
-                width: 100%;
-                flex-direction: column;
-                height: auto;
-                padding: 30px 20px;
-                box-sizing: border-box;
-                .pic-box {
-                    order: 2;
-                    margin-top: 25px;
-                    .pic {
-                        width: 65%;
-                    }
-                }
-                .text-box {
-                    order: 1;
-                    .text {
-                        font-size: 16px;
-                    }
-                }
-            }
+        .banner-img {
+          right: 20px;
+          height: 130px;
         }
-        .partners-area {
-            width: 100%;
-        }
+      }
     }
+    .desc-area {
+      width: 100%;
+      .content {
+        width: 100%;
+        font-size: 16px;
+        padding: 30px 20px;
+        box-sizing: border-box;
+      }
+
+      .content-item {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        .pic-box {
+          order: 2;
+          margin-top: 25px;
+          .pic {
+            width: 65%;
+          }
+        }
+        .text-box {
+          order: 1;
+          .text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .partners-area {
+      width: 100%;
+    }
+  }
 }

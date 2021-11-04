@@ -9,8 +9,6 @@ export const computeScore = (score) => {
     }
     return (Number(score) / 10) * 5
 }
-
-
 /**
  * 每隔三位打点
  * @param {*} str 
@@ -28,7 +26,7 @@ export const formatNum = (str) => {
             }
             count++;
         }
-        str = newStr ; //自动补小数点后两位
+        str = newStr; //自动补小数点后两位
         return str;
     }
     // 当数字带有小数

@@ -1,241 +1,235 @@
+.main-container {
+  padding-top: 80px;
+
+  .banner-area {
+    position: relative;
+    width: 100%;
+    // background-color: #f5faf6;
+    background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+    .banner-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: $rootWidth;
+      height: 360px;
+      margin: 0 auto;
+      .banner-content {
+        position: relative;
+        z-index: 1;
+        max-width: 730px;
+        .website-title {
+          font-size: 42px;
+          font-weight: normal;
+          font-family: "Poppins-Bold";
+          line-height: 56px;
+          color: #001139;
+          span {
+            display: block;
+          }
+        }
+        .update {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: $theme-color;
+          font-size: 20px;
+        }
+        .content {
+          font-size: 18px;
+          line-height: 24px;
+          color: #787e8b;
+        }
+      }
+      .banner-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 76%;
+      }
+    }
+  }
+
+  .contact-container {
+    width: $rootWidth;
+    margin: 0 auto;
+
+    .content-container {
+      padding: 50px 0;
+      border-bottom: 3px solid #efecec;
+      .content-title {
+        font-size: 26px;
+        color: $theme-color;
+      }
+      p {
+        margin: 15px 0;
+        font-size: 20px;
+        line-height: 28px;
+        color: #707070;
+      }
+    }
+    .form-box {
+      padding: 50px 0;
+      .form-title {
+        margin-bottom: 35px;
+        font-size: 26px;
+        color: $theme-color;
+      }
+      .form {
+        width: $rootWidth;
+        input,
+        textarea {
+          padding: 10px;
+          font-size: 16px;
+          font-family: "Poppins-Regular";
+          outline: none;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        textarea {
+          resize: none;
+        }
+        .form-item {
+          display: flex;
+          margin-bottom: 35px;
+          .title {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #707070;
+          }
+          label {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+          }
+          &.name-item {
+            display: flex;
+            justify-content: space-between;
+            label {
+              flex: none;
+            }
+            input {
+              width: 380px;
+              height: 45px;
+            }
+          }
+          &.email-item {
+            input {
+              width: 100%;
+              height: 45px;
+            }
+          }
+          &.btn-item {
+            display: flex;
+            justify-content: flex-end;
+            .btn {
+              width: 270px;
+              height: 60px;
+              border-radius: 11px;
+              font-size: 24px;
+              color: #fff;
+              background-color: $theme-color;
+              outline: none;
+              border: none;
+              cursor: pointer;
+              transition: all linear 0.1s;
+
+              &:hover {
+                background-color: $theme-change-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .main-container {
-    padding-top: 80px;
-
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
     .banner-area {
-        position: relative;
+      .banner-container {
         width: 100%;
-        // background-color: #f5faf6;
-        background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
-        .banner-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            width: $rootWidth;
-            height: 360px;
-            margin: 0 auto;
-            .banner-content {
-                position: relative;
-                z-index: 1;
-                max-width: 730px;
-                .website-title {
-                    font-size: 42px;
-                    font-weight: normal;
-                    font-family: 'Poppins-Bold';
-                    line-height: 56px;
-                    color: #001139;
-                    span {
-                        display: block;
-                    }
-                }
-                .update {
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    color: $theme-color;
-                    font-size: 20px;
-                }
-                .content {
-                    font-size: 18px;
-                    line-height: 24px;
-                    color: #787e8b;
-                }
-            }
-            .banner-img {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                height: 76%;
-            }
-            
+        height: 430px;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .banner-img {
+          right: 20px;
+          bottom: 20px;
+          height: 140px;
         }
+      }
     }
 
     .contact-container {
-        width: $rootWidth;
-        margin: 0 auto;
+      width: 100%;
 
-        .content-container {
-            padding: 50px 0;
-            border-bottom: 3px solid #efecec;
-            .content-title {
-                font-size: 26px;
-                color: $theme-color;
-            }
-            p {
-                margin: 15px 0;
+      .content-container {
+        padding: 30px 20px;
+        .content-title {
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .form-box {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .form-title {
+          margin-top: 30px;
+          font-size: 22px;
+        }
+        .form {
+          width: 100%;
+          .form-item {
+            margin-bottom: 15px;
+            label {
+              .title {
                 font-size: 20px;
-                line-height: 28px;
-                color: #707070;
-            }
-        }
-        .form-box {
-            padding: 50px 0;
-            .form-title {
-                margin-bottom: 35px;
-                font-size: 26px;
-                color: $theme-color;
-            }
-            .form {
-                width: $rootWidth;
-                input,textarea {
-                    padding: 10px;
-                    font-size: 16px;
-                    font-family: 'Poppins-Regular';
-                    outline: none;
-                    border: 1px solid #ced4da;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                }
-                textarea {
-                    resize: none;
-                    
-                }
-                .form-item {
-                    display: flex;
-                    margin-bottom: 35px;
-                    .title {
-                        display: inline-block;
-                        margin-bottom: 15px;
-                        font-size: 20px;
-                        color: #707070;
-                    }
-                    label {
-                        flex: 1;
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    &.name-item {
-                        display: flex;
-                        justify-content: space-between;
-                        label {
-                            flex: none;
-                        }
-                        input {
-                            width: 380px;
-                            height: 45px;
-                        }
-                    }
-                    &.email-item {
-                        input {
-                            width: 100%;
-                            height: 45px;
-                        }
-                    }
-                    &.btn-item {
-                        display: flex;
-                        justify-content: flex-end;
-                        .btn {
-                            width: 270px;
-                            height: 60px;
-                            border-radius: 11px;
-                            font-size: 24px;
-                            color: #fff;
-                            background-color: $theme-color;
-                            outline: none;
-                            border: none;
-                            cursor: pointer;
-                            transition: all linear 0.1s;
-
-                            &:hover {
-                                background-color: $theme-change-color;
-                            }
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-
-.main-container {
-    
-    @media screen and (max-width: 750px) {
-        padding-top: 70px;
-        .banner-area {
-            .banner-container {
-                width: 100%;
-                height: 430px;
-                padding: 0 20px;
-                box-sizing: border-box;
-
-                .banner-img {
-                    right: 20px;
-                    bottom: 20px;
-                    height: 140px;
-                }
-            }
-        }
-
-        .contact-container {
-            width: 100%;
-
-            .content-container {
-                padding: 30px 20px;
-                .content-title {
-                    font-size: 22px;
-                }
-                p {
-                    font-size: 16px;
-                }
-            }
-            .form-box {
+              }
+              textarea,
+              input {
+                border-width: 1px;
+              }
+              textarea {
                 width: 100%;
                 box-sizing: border-box;
-                padding: 0 20px;
-
-                .form-title {
-                    margin-top: 30px;
-                    font-size: 22px;
-                }
-                .form {
-                    width: 100%;
-                    .form-item {
-                        margin-bottom: 15px;
-                        label {
-                            .title {
-                                font-size: 20px;
-                            }
-                            textarea, input {
-                                border-width: 1px;
-                            }
-                            textarea {
-                                width: 100%;
-                                box-sizing: border-box;
-                            }
-                        }
-                        &.name-item {
-                            flex-direction: column;
-                            justify-content: flex-start;
-                            label {
-                                margin-bottom: 15px;
-                            }
-                            input {
-                                width: 100%;
-                                height: 40px;
-                                box-sizing: border-box;
-                            }
-                        }
-                        &.email-item {
-                            input {
-                                height: 40px;
-                            }
-                        }
-
-                        &.btn-item {
-                            justify-content: center;
-                            .btn {
-                                width: 330px;
-                                height: 60px;
-                                font-size: 25px;
-                            }
-                        }
-                    }
-
-                    
-                }
+              }
             }
+            &.name-item {
+              flex-direction: column;
+              justify-content: flex-start;
+              label {
+                margin-bottom: 15px;
+              }
+              input {
+                width: 100%;
+                height: 40px;
+                box-sizing: border-box;
+              }
+            }
+            &.email-item {
+              input {
+                height: 40px;
+              }
+            }
+
+            &.btn-item {
+              justify-content: center;
+              .btn {
+                width: 330px;
+                height: 60px;
+                font-size: 25px;
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
