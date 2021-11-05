@@ -374,10 +374,7 @@
                       "
                       class="btn"
                     >
-                      <h3
-                        class="text"
-                        style="display: inline; font-weight: normal"
-                      >
+                      <h3 class="text" style="display: inline">
                         Check My Rate
                       </h3>
                       <span class="iconfont">&#xe63c;</span>
@@ -538,9 +535,7 @@
                   "
                   class="btn"
                 >
-                  <h3 class="text" style="display: inline; font-weight: normal">
-                    Check My Rate
-                  </h3>
+                  <h3 class="text" style="display: inline">Check My Rate</h3>
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a

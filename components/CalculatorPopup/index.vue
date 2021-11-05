@@ -8,6 +8,10 @@
             </div> -->
 
       <span class="icon calculator-icon" @click="handlePopup"></span>
+      <span
+        style="font-size: 14px; margin-top: 3px; font-weight: bold; color: #29b674;"
+        >Calculator</span
+      >
     </div>
     <div :class="{ 'calculator-popup-container': true, hidden: flag }">
       <h6 class="calculator-popup-title">Wanna <span class="g">Know?</span></h6>
@@ -93,9 +97,9 @@ export default {
         year: "",
         month: "",
         per_month: 0,
-        total: 0,
+        total: 0
       },
-      flag: true,
+      flag: true
     };
   },
   methods: {
@@ -111,7 +115,7 @@ export default {
         this.$message({
           showClose: false,
           message: "Please enter a valid value!",
-          type: "error",
+          type: "error"
         });
         return;
       }
@@ -125,7 +129,7 @@ export default {
         this.$message({
           showClose: false,
           message: "Please enter a valid value!",
-          type: "error",
+          type: "error"
         });
         return;
       }
@@ -157,14 +161,14 @@ export default {
         this.$message({
           showClose: false,
           message: "Please enter a valid value!",
-          type: "error",
+          type: "error"
         });
         return false;
       } else if (this.form.amount > 100000) {
         this.$message({
           showClose: false,
           message: "The value cannot exceed 100000",
-          type: "error",
+          type: "error"
         });
 
         return false;
@@ -172,7 +176,7 @@ export default {
         this.$message({
           showClose: false,
           message: "The value cannot exceed 40",
-          type: "error",
+          type: "error"
         });
 
         return false;
@@ -180,14 +184,14 @@ export default {
         this.$message({
           showClose: false,
           message: "No more than 10 years",
-          type: "error",
+          type: "error"
         });
         return false;
       } else if (this.form.month > 120) {
         this.$message({
           showClose: false,
           message: "No more than 120 months",
-          type: "error",
+          type: "error"
         });
         return false;
       }
@@ -208,8 +212,8 @@ export default {
         this.form.per_month * this.form.month -
         this.form.amount
       ).toFixed(2);
-    },
-  },
+    }
+  }
 };
 </script>
 
