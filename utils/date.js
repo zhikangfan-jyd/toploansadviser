@@ -1,63 +1,77 @@
 /**
  * 自动更新日期
  */
-export const updateTime = () => {
-    const date = new Date();
+export const updateTime = (d) => {
+    let date = d ? new Date(d) : new Date();
     const months = [
         {
             short: 'Jan',
-            long: 'January'
+            long: 'January',
+            number: 1
         },
         {
             short: 'Feb',
-            long: 'February'
+            long: 'February',
+            number: 2
         },
         {
             short: 'Mar',
-            long: 'March'
+            long: 'March',
+            number: 3
         },
         {
             short: 'Apr',
-            long: 'April'
+            long: 'April',
+            number: 4
         },
         {
             short: 'May',
-            long: 'May'
+            long: 'May',
+            number: 5
         },
         {
             short: 'Jun',
-            long: 'June'
+            long: 'June',
+            number: 6
         },
         {
             short: 'Jul',
-            long: 'July'
+            long: 'July',
+            number: 7
         },
         {
             short: 'Aug',
-            long: 'August'
+            long: 'August',
+            number: 8
         },
         {
             short: 'Sept',
-            long: 'September'
+            long: 'September',
+            number: 9
         },
         {
             short: 'Oct',
-            long: 'October'
+            long: 'October',
+            number: 10
         },
         {
             short: 'Nov',
-            long: 'November'
+            long: 'November',
+            number: 11
         },
         {
             short: 'Dec',
-            long: 'December'
+            long: 'December',
+            number: 12
         }
     ];
     let index = date.getMonth();
     let month = months[index];
     let year = date.getFullYear();
+    let day = date.getDate();
     return {
         year: year,
-        month: month
+        month: month,
+        day: day < 10 ? '0'+ day : day
     }
 }

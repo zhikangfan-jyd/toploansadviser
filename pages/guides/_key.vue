@@ -14,17 +14,17 @@
     </section>
     <div class="guides-container">
       <div class="guides-left">
-        <!-- <div class="author-info">
-          <img :src="blog.author.headImg" :alt="blog.author.name" class="author-img">
+        <div class="author-info">
+          <img :src="author.avatar" :alt="author.name" class="author-img" />
           <div class="info-box">
-            <span class="name">{{blog.author.name}}</span>
+            <span class="name">{{ author.name }}</span>
             <p class="info">
-              <span>{{blog.author.jobTitle}}</span>
+              <span>{{ author.introduce }}</span>
               <span>|</span>
-              <span>{{blog.date}}</span>
+              <span>{{ blog.date }}</span>
             </p>
           </div>
-        </div> -->
+        </div>
         <!-- <div class="blog-content">
           
         </div> -->
@@ -103,6 +103,7 @@
 
 <script>
 import { shareToFB, shareToTwitter } from "../../utils/share";
+import { updateTime } from "../../utils/date";
 export default {
   async asyncData({ $axios, params, redirect }) {
     try {
@@ -111,6 +112,21 @@ export default {
         `https://api.toploansadviser.com/articles/find?article_id=${article_id}`
       );
       let blog = results.data;
+      let d = updateTime(blog.date);
+      blog.date = `${d.month.short}.${d.day},${d.year}`;
+      let authorId = blog.author_id;
+      let author = {
+        name: "",
+        introduce: "",
+        avatar: "",
+      };
+      let authorInfo = await $axios.$get(
+        `https://api.toploansadviser.com/author/find?author_id=${authorId}`
+      );
+      if (authorInfo.status == "success") {
+        author = authorInfo.data;
+      }
+
       let topLoans_results = await $axios.$get(
         "/data/person_loan_product.json"
       );
@@ -120,12 +136,12 @@ export default {
 
       return {
         blog: blog,
+        author: author,
         relatedBlogs: blogList ? blogList.data.rows : [],
         toploans: topLoans_results.data.slice(0, 5),
       };
     } catch (error) {
-      console.log(error);
-      // redirect('/error');
+      redirect("/error");
     }
   },
   data() {
@@ -178,6 +194,29 @@ export default {
         }
       });
     },
+    createFBMeta(options) {
+      for (const key in options) {
+        if (Object.hasOwnProperty.call(options, key)) {
+          const value = options[key];
+          let meta = document.createElement("meta");
+          if (key == "title") {
+            meta.setAttribute("property", "og:title");
+            meta.setAttribute("content", value);
+          } else if (key == "image") {
+            meta.setAttribute("property", "og:image");
+            meta.setAttribute("content", value);
+          } else if (key == "description") {
+            meta.setAttribute("property", "og:description");
+            meta.setAttribute("content", value);
+          } else if (key == "url") {
+            meta.setAttribute("property", "og:url");
+            meta.setAttribute("content", value);
+          }
+
+          document.head.appendChild(meta);
+        }
+      }
+    },
   },
   mounted() {
     this.$nextTick(() => {
@@ -185,6 +224,13 @@ export default {
         this.handleScroll();
         clearTimeout(this.timer);
       }, 100);
+      let options = {
+        title: this.blog.title,
+        image: this.blog.main_picture,
+        description: "",
+        url: "https://www.toploansadviser.com" + this.$route.path,
+      };
+      this.createFBMeta(options);
     });
   },
   destroyed() {
