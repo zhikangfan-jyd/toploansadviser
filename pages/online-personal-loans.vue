@@ -575,7 +575,7 @@ export default {
       let aff_sub = route.query["utm_term"];
 
       let msclkid = route.query["msclkid"];
-      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}`;
+      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}&term_content=google`;
     };
 
     try {

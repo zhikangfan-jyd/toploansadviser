@@ -813,7 +813,7 @@ export default {
         msclkid = this.$route.query["msclkid"] + arr[0];
       }
 
-      return `${url}&msclkid=${msclkid}`;
+      return `${url}&msclkid=${msclkid}&term_content=google`;
     };
 
     this.allProducts.forEach((ele) => {
