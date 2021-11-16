@@ -1,8 +1,10 @@
 .main-container {
   padding-top: 80px;
+
   .banner-area {
     width: 100%;
     background-color: #f5faf6;
+
     .banner-container {
       display: flex;
       justify-content: space-between;
@@ -13,10 +15,10 @@
 
       .banner-content {
         max-width: 480px;
+
         .website-title {
           font-size: 42px;
-          font-weight: normal;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
           line-height: 56px;
           color: #001139;
         }
@@ -27,6 +29,7 @@
           font-size: 20px;
           line-height: 29px;
         }
+
         .update {
           margin-top: 40px;
           margin-bottom: 20px;
@@ -44,30 +47,37 @@
 
   .main-area {
     font-size: 0;
+
     .container {
       width: $rootWidth;
       margin: 0 auto;
+
       .desc-box {
         .stronger {
           margin-top: 20px;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
           font-size: 20px;
         }
+
         .text {
           margin-top: 40px;
           font-size: 18px;
         }
       }
+
       .disclosure-box {
         text-align: right;
         margin-top: 40px;
+
         .disclosure-link {
           font-size: 16px;
           color: #8f8f8f;
         }
       }
+
       .company-card-container {
         margin-top: 10px;
+
         .company-title-box {
           display: flex;
           height: 75px;
@@ -77,6 +87,7 @@
           box-sizing: border-box;
           border-top-left-radius: 25px;
           border-top-right-radius: 25px;
+
           .title-item {
             display: flex;
             align-items: center;
@@ -88,16 +99,20 @@
           .company {
             flex: 24;
           }
+
           .interest {
             flex: 14;
+
             span {
               display: inline-block;
               margin-left: 34px;
             }
           }
+
           .term {
             flex: 22;
           }
+
           .loan-amount {
             justify-content: flex-start;
             flex: 45;
@@ -107,6 +122,7 @@
             }
           }
         }
+
         .company-card-item {
           position: relative;
           width: 100%;
@@ -118,6 +134,7 @@
           transform: translateY(0);
           transition: border 0.5s ease 0s, box-shadow 0.2s ease 0s,
             transform 0.2s ease 0s;
+
           // transition: all linear 0.1s;
           &.company-first {
             padding-top: 15px;
@@ -140,6 +157,7 @@
             @media screen and (max-width: 750px) {
               display: none;
             }
+
             &::before {
               content: "";
               position: absolute;
@@ -164,10 +182,12 @@
               border-width: 17px 13px;
             }
           }
+
           .card-top {
             display: flex;
             height: 120px;
             border-bottom: 1px solid #c1efdb;
+
             .company-logo-box,
             .interest-box,
             .term-box {
@@ -175,18 +195,22 @@
               justify-content: center;
               align-items: center;
               font-size: 18px;
-              font-family: "Poppins-Bold";
+              font-weight: 700;
             }
+
             .company-logo-box {
               flex: 24;
               margin-left: 38px;
+
               .logo {
                 width: 84%;
               }
             }
+
             .interest-box {
               flex: 14;
             }
+
             .term-box {
               flex: 22;
             }
@@ -194,21 +218,24 @@
             .phone-title {
               display: none;
             }
+
             .loan-amount-box {
               flex: 45;
               display: flex;
               justify-content: flex-start;
               align-items: center;
               font-size: 18px;
-              // font-family: 'Poppins-Bold';
+
               .loan-amount {
                 display: inline-block;
                 min-width: 135px;
                 margin-left: 35px;
-                font-family: "Poppins-Bold";
+                font-weight: 700;
               }
+
               .btn-star-box {
                 margin-left: 60px;
+
                 .btn {
                   display: flex;
                   align-items: center;
@@ -221,9 +248,11 @@
                   text-decoration: none;
                   border-radius: 8px;
                   transition: all linear 0.1s;
+
                   &:hover {
                     background-color: $theme-change-color;
                   }
+
                   .iconfont {
                     display: inline-block;
                     margin-left: 5px;
@@ -236,20 +265,24 @@
           .phone-card-center {
             display: none;
           }
+
           .card-bottom {
             display: flex;
             min-height: 100px;
             background-color: #f7f7f7;
             box-sizing: border-box;
             padding: 0 45px 35px 45px;
+
             .features-box {
               margin-top: 15px;
               flex: 55;
+
               .features-title {
                 display: inline-block;
                 font-size: 18px;
                 margin-bottom: 10px;
               }
+
               .features-list {
                 li {
                   display: flex;
@@ -262,6 +295,7 @@
                     line-height: 0;
                     margin-right: 5px;
                   }
+
                   .text {
                     font-size: 16px;
                   }
@@ -272,13 +306,16 @@
             .card-bottom-right {
               flex: 45;
               margin-top: 53px;
+
               .desc {
                 font-size: 16px;
                 color: #707070;
                 margin-bottom: 10px;
               }
+
               .detail-box {
                 text-align: left;
+
                 .detail-btn {
                   font-size: 16px;
                   color: $theme-color;
@@ -306,22 +343,26 @@
       height: 275px;
       margin-top: 90px;
       margin-bottom: 110px;
+
       .pic {
         display: inline-block;
         width: 320px;
         height: 275px;
         margin-right: 62px;
       }
+
       .faq-content {
         .faq-title {
           font-size: 42px;
           font-weight: normal;
           color: #001139;
           line-height: 56px;
+
           span {
             display: block;
           }
         }
+
         .content {
           margin-top: 18px;
           font-size: 18px;
@@ -333,10 +374,11 @@
 
     .faq-item {
       margin: 35px 0;
+
       .faq-title {
         font-size: 24px;
         font-weight: normal;
-        font-family: "Poppins-Bold";
+        font-weight: 700;
         color: $theme-color;
         margin-bottom: 18px;
       }
@@ -344,27 +386,33 @@
       .faq-content {
         font-size: 18px;
         line-height: 32px;
+
         .strong {
           margin-bottom: 20px;
           font-weight: bold;
           color: #333;
         }
+
         p {
           margin: 10px 0;
         }
+
         ul {
           li {
             display: flex;
+
             .circle {
               display: inline-block;
               margin-top: 10px;
               font-size: 22px;
               color: $theme-color;
             }
+
             .num {
               display: inline-block;
               margin-top: 10px;
             }
+
             .text {
               margin-left: 10px;
             }
@@ -391,12 +439,15 @@
         box-sizing: border-box;
         height: auto;
         padding: 40px 20px;
+
         .banner-content {
           max-width: 100%;
+
           .website-title {
             font-size: 28px;
             line-height: 40px;
             text-align: center;
+
             span {
               display: block;
             }
@@ -410,6 +461,7 @@
             text-align: center;
           }
         }
+
         .pic {
           display: none;
         }
@@ -424,6 +476,7 @@
 
         .desc-box {
           display: none;
+
           .stronger {
             line-height: 25px;
           }
@@ -437,19 +490,22 @@
           .company-card-item {
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
+
             .card-top {
+
               .company-logo-box,
               .interest-box,
               .term-box {
                 font-size: 14px;
-                font-family: "Poppins-Regular";
                 font-weight: 700;
               }
+
               .company-logo-box {
                 flex: 18;
 
                 margin-left: 0;
               }
+
               .loan-amount-box {
                 display: none;
               }
@@ -459,10 +515,12 @@
                 display: flex;
                 flex-direction: column;
               }
-              .interest-box > .interest,
-              .term-box > .term {
+
+              .interest-box>.interest,
+              .term-box>.term {
                 transform: translateY(-10px);
               }
+
               .phone-title {
                 display: block;
                 transform: translateY(-13px);
@@ -470,17 +528,19 @@
                 color: #707070;
               }
             }
+
             .phone-card-center {
               display: flex;
               align-items: center;
               box-sizing: border-box;
               padding: 15px 20px;
+
               .loan-amount-box {
                 flex: 1;
 
                 .loan-amount {
                   font-size: 18px;
-                  font-family: "Poppins-Bold";
+                  font-weight: 700;
                   color: #000;
                 }
               }
@@ -498,9 +558,11 @@
                   text-decoration: none;
                   border-radius: 8px;
                   transition: all linear 0.1s;
+
                   &:hover {
                     background-color: $theme-change-color;
                   }
+
                   .iconfont {
                     display: inline-block;
                     margin-left: 5px;
@@ -508,6 +570,7 @@
                 }
               }
             }
+
             .card-bottom {
               .card-bottom-right {
                 display: none;
@@ -526,17 +589,20 @@
       .faq-area-title-box {
         height: auto;
         margin-bottom: 35px;
+
         .pic {
           width: auto;
           height: 100px;
           margin: 0;
         }
+
         .faq-content {
           .faq-title {
             margin-top: 27px;
             font-size: 28px;
             line-height: 40px;
           }
+
           .content {
             display: none;
           }

@@ -1,5 +1,6 @@
 .main-container {
   padding-top: 80px;
+
   .banner-area {
     width: 100%;
     height: 360px;
@@ -26,21 +27,26 @@
         .info {
           font-size: 18px;
           color: #00174b;
+
           .line {
             display: inline-block;
             margin: 0 15px;
           }
         }
+
         .detail-list {
           display: flex;
           align-items: center;
           font-size: 0;
           margin-top: 45px;
           margin-bottom: 25px;
+
           li {
             margin-right: 60px;
+
             .key-box {
               margin-bottom: 12px;
+
               .icon {
                 display: inline-block;
                 width: 35px;
@@ -50,49 +56,52 @@
                 vertical-align: middle;
 
                 &.amount-icon {
-                  background: url("../../assets/img/review-icon-1.png")
-                    no-repeat center center/96%;
+                  background: url("../../assets/img/review-icon-1.png") no-repeat center center/96%;
                 }
+
                 &.apr-icon {
-                  background: url("../../assets/img/review-icon-2.png")
-                    no-repeat center center/96%;
+                  background: url("../../assets/img/review-icon-2.png") no-repeat center center/96%;
                 }
+
                 &.credit-score-icon {
-                  background: url("../../assets/img/review-icon-3.png")
-                    no-repeat center center/96%;
+                  background: url("../../assets/img/review-icon-3.png") no-repeat center center/96%;
                 }
+
                 &.loan-term-icon {
-                  background: url("../../assets/img/review-icon-4.png")
-                    no-repeat center center/68%;
+                  background: url("../../assets/img/review-icon-4.png") no-repeat center center/68%;
                 }
               }
+
               .text {
                 font-size: 14px;
                 color: #001139;
                 vertical-align: middle;
-                font-family: "Poppins-Bold";
+                font-weight: 700;
               }
             }
 
             .value {
               font-size: 15px;
               color: #5f6468;
-              font-family: "Poppins-Bold";
+              font-weight: 700;
             }
           }
         }
+
         .text {
           font-size: 0;
           margin-top: 40px;
+
           a {
             margin-right: 40px;
           }
+
           a,
           .iconfont {
             font-size: 15px;
             color: #8f8f8f;
             text-decoration: none;
-            font-family: "Poppins-Regular";
+
             &:hover {
               text-decoration-line: underline;
               text-decoration-color: $theme-color;
@@ -107,15 +116,18 @@
         flex-direction: column;
         align-items: center;
         font-size: 0;
+
         .logo {
           height: 108px;
           margin-top: 25px;
           margin-bottom: 27px;
         }
+
         .rate-box {
           display: flex;
           align-items: center;
         }
+
         .score {
           display: inline-block;
           font-size: 40px;
@@ -126,6 +138,7 @@
 
         .btn-box {
           margin: 30px 0;
+
           .btn {
             display: block;
             width: 200px;
@@ -136,7 +149,7 @@
             line-height: 45px;
             color: #fff;
             font-size: 17px;
-            font-family: "Poppins-Medium";
+            font-weight: 500;
             text-decoration: none;
             background-color: #ed963e;
 
@@ -144,21 +157,22 @@
               background-color: #e97502;
             }
           }
+
           .small-text {
             font-size: 10px;
-            font-family: "Poppins-Medium";
+            font-weight: 500;
             color: #8f8f8f;
             text-align: center;
           }
         }
+
         .popover-box {
           font-size: 15px;
-          font-family: "Poppins-Regular";
           margin-top: 14px;
+
           .iconfont {
             color: #8f8f8f;
             font-weight: 400;
-            font-family: "Poppins-Regular";
           }
         }
       }
@@ -173,37 +187,45 @@
 
     .reviews-container-left {
       width: 750px;
+
       .content-item {
         margin-bottom: 50px;
+
         .title-box {
           display: flex;
           align-items: center;
           margin-bottom: 27px;
+
           .box {
             width: 55px;
             height: 55px;
             border-radius: 50%;
           }
+
           .title {
             margin-left: 22px;
             font-size: 34px;
             color: #001139;
           }
         }
+
         .content {
           font-size: 18px;
           color: #000;
           line-height: 30px;
+
           p {
             margin: 20px 0;
           }
         }
       }
+
       .table-list {
         width: 100%;
         border-radius: 18px;
         background-color: #f5faf6;
         margin-bottom: 60px;
+
         li {
           display: flex;
           align-items: center;
@@ -214,12 +236,14 @@
           font-size: 18px;
           text-align: center;
           border-bottom: 1px solid $theme-color;
+
           .key {
             flex: 1;
             flex-shrink: 0;
 
             color: #001139;
           }
+
           .value {
             flex: 1;
             color: $theme-color;
@@ -235,11 +259,13 @@
               cursor: pointer;
             }
           }
+
           &:nth-last-of-type(1) {
             border: none;
           }
         }
       }
+
       .pros-cons-box {
         display: flex;
         width: 100%;
@@ -248,6 +274,7 @@
         margin-top: 35px;
         background-color: rgb(244, 251, 248);
         overflow: hidden;
+
         .pros,
         .cons {
           flex: 1;
@@ -261,12 +288,14 @@
             font-size: 18px;
             color: #fff;
             background-color: $theme-color;
+
             .iconfont {
               font-size: 22px;
               display: inline-block;
               margin-right: 5px;
             }
           }
+
           .list {
             list-style: disc;
             display: flex;
@@ -275,6 +304,7 @@
             border-right: 1px solid rgba(0, 22, 75, 0.1);
             padding: 32px;
             box-sizing: border-box;
+
             li {
               font-size: 18px;
               color: #001139;
@@ -282,6 +312,7 @@
             }
           }
         }
+
         .cons {
           .title-box {
             background-color: #ff8b8b;
@@ -294,6 +325,7 @@
         margin-top: 45px;
         margin-bottom: 45px;
         font-size: 0;
+
         .btn {
           display: inline-block;
           width: 300px;
@@ -306,12 +338,14 @@
           border-radius: 8px;
           text-decoration: none;
           transition: all linear 0.1s;
+
           &:hover {
             background-color: $theme-change-color;
           }
         }
       }
     }
+
     .top-area {
       position: absolute;
       top: 40px;
@@ -322,6 +356,7 @@
       box-sizing: border-box;
       border-radius: 9px;
       overflow: hidden;
+
       .title {
         display: inline-block;
         height: 60px;
@@ -332,8 +367,10 @@
         background-color: $theme-color;
         text-align: center;
       }
+
       .top-list {
         background-color: #fff;
+
         .top-item {
           display: flex;
           justify-content: space-between;
@@ -342,6 +379,7 @@
           padding: 0 18px;
           height: 70px;
           border-bottom: 1px solid rgba(0, 23, 75, 0.1);
+
           &:nth-last-of-type(1) {
             border: none;
           }
@@ -350,6 +388,7 @@
             height: 55px;
             min-width: 20px;
           }
+
           a {
             display: inline-block;
             width: 100px;
@@ -362,6 +401,7 @@
             border-radius: 8px;
             text-decoration: none;
             box-sizing: border-box;
+
             &:hover {
               border: 1px solid $theme-color;
             }
@@ -370,10 +410,12 @@
       }
     }
   }
+
   .reviews-bottom-area {
     width: $rootWidth;
     margin: 0 auto;
     padding-bottom: 80px;
+
     .author-info {
       width: 100%;
       display: flex;
@@ -382,6 +424,7 @@
       padding: 42px 34px;
       margin: 65px 0;
       background-color: rgb(244, 251, 248);
+
       .pic {
         flex-shrink: 0;
         width: 107px;
@@ -389,18 +432,21 @@
         margin-right: 33px;
         border-radius: 50%;
       }
+
       .info-box {
         .name {
           font-size: 21px;
           color: #001139;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
         }
+
         .text {
           margin: 15px 0;
           font-size: 18px;
           line-height: 24px;
           color: #787e8b;
         }
+
         a {
           color: $theme-color;
           font-size: 18px;
@@ -414,17 +460,21 @@
       .title-box {
         display: flex;
         justify-content: space-between;
+
         .title {
           font-size: 24px;
           color: #001139;
         }
+
         .share-box {
           display: flex;
           align-items: center;
+
           .text {
             font-size: 18px;
             color: #001139;
           }
+
           button {
             margin-left: 52px;
             font-size: 40px;
@@ -452,15 +502,18 @@
           height: 320px;
           border-radius: 16px;
           background-color: rgb(244, 251, 248);
+
           .logo {
             min-width: 50px;
             height: 100px;
           }
+
           .rate-box {
             margin-top: 5px;
             margin-bottom: 45px;
             font-size: 0;
           }
+
           .btn {
             display: inline-block;
             width: 210px;
@@ -473,6 +526,7 @@
             border-radius: 8px;
             text-decoration: none;
             transition: all linear 0.1s;
+
             &:hover {
               background-color: $theme-change-color;
             }
@@ -486,8 +540,10 @@
 .main-container {
   @media screen and (max-width: 750px) {
     padding-top: 70px;
+
     .banner-area {
       height: auto;
+
       .banner-container {
         width: 100%;
         flex-direction: column;
@@ -497,25 +553,30 @@
 
         .banner-content-box {
           margin-top: 0;
+
           .text {
             margin-top: 20px;
             font-size: 16px;
           }
+
           .title {
             font-size: 32px;
             margin-top: 20px;
           }
+
           .detail-list {
             width: 90%;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-left: auto;
             margin-right: auto;
+
             li {
               margin-right: 0;
               padding-bottom: 10px;
             }
           }
+
           .info {
             font-size: 14px;
           }
@@ -541,6 +602,7 @@
       width: 100%;
       box-sizing: border-box;
       padding: 0 20px;
+
       .top-area {
         display: none;
       }
@@ -551,54 +613,66 @@
         .pros-cons-box {
           flex-direction: column;
         }
+
         .content-item {
           .title-box {
             .box {
               width: 34px;
               height: 34px;
             }
+
             .title {
               font-size: 24px;
             }
           }
+
           .content {
             font-size: 14px;
           }
         }
       }
     }
+
     .reviews-bottom-area {
       width: 100%;
       box-sizing: border-box;
       padding: 0 20px;
+
       .author-info {
         flex-direction: column;
         align-items: center;
+
         .pic {
           margin-right: 0;
           margin-bottom: 14px;
         }
+
         .info-box {
           display: flex;
           flex-direction: column;
           align-items: center;
         }
       }
+
       .also-like-box {
         .title-box {
           flex-direction: column;
           justify-content: flex-start;
+
           .title {
             order: 2;
           }
+
           .share-box {
             order: 1;
             margin-bottom: 54px;
+
             button {
               margin-left: 22px;
             }
           }
         }
+
         .list-box {
           flex-direction: column;
           justify-content: flex-start;

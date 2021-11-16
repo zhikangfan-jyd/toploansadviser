@@ -22,12 +22,7 @@
       </div>
     </section>
     <div class="learn-container">
-      <!-- <h2 class="learn-title">Categories</h2> -->
-      <div class="category-item">
-        <!-- <div class="category-title-box">
-          <img src="@/assets/img/money-icon.webp" alt="" class="pic">
-          <h6 class="title">Personal loans</h6>
-        </div> -->
+      <div class="category-item" v-if="blogs.length != 0">
         <ul class="blog-list">
           <li class="blog-item" v-for="(blog, index) in blogs" :key="index">
             <div class="img-box">
@@ -47,6 +42,350 @@
           <button class="btn" @click="handleLoad">VIEW MORE</button>
         </div>
       </div>
+      <ul class="loading-box" v-else>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+        <li>
+          <svg
+            role="img"
+            width="345"
+            height="336"
+            aria-labelledby="loading-aria"
+            viewBox="0 0 345 336"
+            preserveAspectRatio="none"
+          >
+            <title id="loading-aria">Loading...</title>
+            <rect
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+              clip-path="url(#clip-path)"
+              style="fill: url('#fill')"
+            ></rect>
+            <defs>
+              <clipPath id="clip-path">
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+              </clipPath>
+              <linearGradient id="fill">
+                <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-2; -2; 1"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="-1; -1; 2"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+                <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
+                  <animate
+                    attributeName="offset"
+                    values="0; 0; 3"
+                    keyTimes="0; 0.25; 1"
+                    dur="2s"
+                    repeatCount="indefinite"
+                  ></animate>
+                </stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </li>
+      </ul>
     </div>
   </main>
 </template>

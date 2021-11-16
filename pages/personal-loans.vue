@@ -18,7 +18,6 @@
           <a
             href="/disclosure"
             target="_blank"
-            rel="noopener noreferrer nofollow"
             class="small"
             >Full Advertiser Disclosure</a
           >.
@@ -236,7 +235,7 @@
                     <a
                       :href="product.link"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                     >
                       <img
                         :src="product.logo"
@@ -264,14 +263,14 @@
                     <a
                       :href="product.link"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       class="name"
                       >{{ product.name }}</a
                     >
                     <a
                       :href="product.link"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       class="min-debt"
                       >{{ product.introduce }}</a
                     >
@@ -295,14 +294,14 @@
                     <a
                       :href="product.link"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       class="btn"
                       >Get my rate</a
                     >
                     <a
                       :href="product.link"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       class="visit-site"
                       >Visit site »</a
                     >
@@ -337,81 +336,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="cross-banner-area">
-          <div class="cross-container">
-              <div class="white-block"></div>
-              <div class="cross-box"> 
-                  <h3 class="title">Alternative solutions to a debt consolidation loan</h3>
-                    <p class="date">June 2021</p>
-                    <div class="card">
-                        <div class="card-container">
-                            <div class="card-content">
-                                <div class="logo-box">
-                                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                                        <img src="@/assets/img/personal/test.svg" alt="" class="logo">
-                                    </a>
-                                    <div class="details rotate">
-                                        <svg data-v-46719c3e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.2 7"><polygon data-v-46719c3e="" points="9.7 0 5.6 4.2 1.4 0 0 1.4 4.2 5.6 4.2 5.6 5.6 7 5.6 7 5.6 7 7 5.6 7 5.6 11.2 1.4 9.7 0" fill="#555"></polygon></svg>
-                                    </div>
-                                </div>
-                                <div class="details-box">
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="name">Freedom DR</a>
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="min-debt">Minimum debt: $20,000</a>
-
-                                    <div class="meritList-box">
-                                        <ul>
-                                            <li>Over $10 billion in debt resolved</li>
-                                            <li>Free, no-risk debt consultation</li>
-                                            <li>Winning FDR program for debt owners</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div class="btn-box">
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn">Get my rate</a>
-                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="visit-site">Visit site  »</a>
-                                </div>
-                            </div>
-                            <div class="full show-full">
-
-                                <div class="full-container">
-                                    <div class="left-part">
-                                        <p class="title">Qualifications</p>
-                                        <div class="debt-list">
-                                            <p>Must have at least $20,000 worth of debt</p>
-                                            <p>Fees between 18-25% of enrolled debt and monthly fee of $9.95</p>
-                                            <p>Cannot be used for collateral-based debts</p>
-                                            <p>Only available in 30 states</p>
-
-                                            
-                                        </div>
-                                        <a href="http://" target="_blank" rel="noopener noreferrer" class="read-review">Read Freedom DR Review »</a>
-                                    </div>
-                                    <div class="right-part">
-                                        <div class="props pros-cons">
-                                            <p class="title"><strong>Pros</strong></p>
-                                            <ul>
-                                                <li>Can help lower monthly payments and lower total debt owed</li>
-                                                <li>Willing to work with people who have been turned away or rejected by most other lenders or debt consolidation companies</li>
-                                                <li>Offers consumers more control over their current debt</li>
-                                            </ul>
-                                        </div>
-                                        <div class="cons pros-cons">
-                                            <p class="title"><strong>Cons</strong></p>
-                                            <ul>
-                                                <li>Though debt can be lowered, the service itself can be rather expensive</li>
-                                                <li>Debt consolidation might lower your credit score</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-              </div>
-          </div>
-      </section> -->
     <section class="text-block">
       <div class="text-block-container">
         <aside class="aside-container">
@@ -600,6 +524,7 @@
             <li class="toplist">
               <a
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content="
                 >Credible</a
               >
@@ -607,6 +532,7 @@
             <li class="toplist">
               <a
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 href="https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content="
                 >Best Egg</a
               >
@@ -614,6 +540,7 @@
             <li class="toplist">
               <a
                 target="_blank"
+                rel="noopener noreferrer nofollow"
                 href="https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content="
                 >Lendingclub</a
               >
@@ -956,7 +883,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="product.link">
+              <a target="_blank" :href="product.link" rel="noopener noreferrer nofollow">
                 <img :src="product.logo" :alt="product.name" />
               </a>
             </div>
@@ -967,7 +894,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="product.link">
+              <a target="_blank" :href="product.link" rel="noopener noreferrer nofollow">
                 <img :src="product.logo" :alt="product.name" />
               </a>
             </div>

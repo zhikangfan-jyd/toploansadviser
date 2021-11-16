@@ -67,7 +67,7 @@
             <a
               :href="item.link"
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer"
               @click="
                 handleTracking({
                   name: item.name,

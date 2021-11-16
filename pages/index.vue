@@ -30,7 +30,7 @@
                   <a
                     href="/personal-loan"
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel="noopener noreferrer"
                     class="btn"
                     >Find more</a
                   >
@@ -50,7 +50,7 @@
                   <a
                     href="/student-loan"
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel="noopener noreferrer"
                     class="btn"
                     >Find more</a
                   >
@@ -68,7 +68,7 @@
                   <a
                     href="/mortgage-loan"
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel="noopener noreferrer"
                     class="btn"
                     >Find more</a
                   >
@@ -191,7 +191,7 @@
               <a
                 href="/about-us"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
                 >about Toploansadviser</a
               >
               <span class="icon"></span><span class="icon"></span>
@@ -199,7 +199,7 @@
             <a
               href="/personal-loan"
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer"
               class="more-link"
               >more information here</a
             >

@@ -272,8 +272,6 @@
                             :colors="['#29b674', '#29b674', '#29b674']"
                           ></el-rate>
                         </div>
-                        <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                        <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                       </div>
                     </div>
                   </div>
@@ -352,11 +350,6 @@
                       <span class="text">View Rates</span>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
-                    <!-- <a :href="item.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                        <span class="text">Visit {{item.name}}</span>
-                        <span class="iconfont">&#xe63c;</span>
-
-                    </a> -->
                   </div>
                 </div>
                 <div class="product-content-container">
@@ -509,8 +502,6 @@
                           :colors="['#29b674', '#29b674', '#29b674']"
                         ></el-rate>
                       </div>
-                      <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                      <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                     </div>
                   </div>
                 </div>
@@ -518,7 +509,6 @@
                   <div class="list-box">
                     <dl class="features-list">
                       <dt>
-                        <!-- <span class="pc-text">Easily Compare & Save</span> -->
                         <span class="phone-text">Loan Features</span>
                       </dt>
                       <dd>
@@ -599,11 +589,6 @@
                     <span class="text">View Rates</span>
                     <span class="iconfont">&#xe63c;</span>
                   </a>
-                  <!-- <a :href="purchase_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                          <span class="text">Visit {{purchase_product.name}}</span>
-                          <span class="iconfont">&#xe63c;</span>
-
-                      </a> -->
                 </div>
               </div>
               <div class="product-content-container purchase-container">
@@ -733,8 +718,6 @@
                           :colors="['#29b674', '#29b674', '#29b674']"
                         ></el-rate>
                       </div>
-                      <!-- <nuxt-link v-if="item.review_key != ''" :to="'/reviews/' + item.review_key" class="reviews-link">Read Review</nuxt-link> -->
-                      <!-- <span class="score-text"><strong>LoanAdviser</strong> score</span> -->
                     </div>
                   </div>
                 </div>
@@ -825,11 +808,6 @@
                     <span class="text">View Rates</span>
                     <span class="iconfont">&#xe63c;</span>
                   </a>
-                  <!-- <a :href="refinance_product.link" target="_blank" rel="noopener noreferrer nofollow" class="quicken-loasn-btn">
-                          <span class="text">Visit {{refinance_product.name}}</span>
-                          <span class="iconfont">&#xe63c;</span>
-
-                      </a> -->
                 </div>
               </div>
               <div class="product-content-container refinance-container">

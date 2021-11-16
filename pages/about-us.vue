@@ -17,7 +17,7 @@
         </div>
         <img
           src="@/assets/img/about-us-banner-bg.webp"
-          alt="Toploansadviser"
+          alt="Toploansadviser About"
           class="banner-img"
         />
       </div>
@@ -27,7 +27,7 @@
         <div class="pic-box">
           <img
             src="@/assets/img/about-pic-1.webp"
-            alt="Toploansadviser"
+            alt="Toploansadviser About"
             class="pic"
           />
         </div>
@@ -61,7 +61,7 @@
         <div class="pic-box">
           <img
             src="@/assets/img/about-pic-2.webp"
-            alt="Toploansadviser"
+            alt="Toploansadviser About"
             class="pic"
           />
         </div>
@@ -70,7 +70,7 @@
         <div class="pic-box">
           <img
             src="@/assets/img/about-pic-3.webp"
-            alt="Toploansadviser"
+            alt="Toploansadviser About"
             class="pic"
           />
         </div>
@@ -87,16 +87,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="partners-area">
-      <h6 class="title">OUR PARTNERS</h6>
-      <ul class="img-list">
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-    </div> -->
   </main>
 </template>
 

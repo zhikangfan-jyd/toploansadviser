@@ -517,7 +517,7 @@
         <a
           :href="mainLink"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           class="btn"
         >
           <span class="text"

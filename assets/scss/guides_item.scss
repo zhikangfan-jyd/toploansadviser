@@ -1,28 +1,34 @@
 .main-container {
   padding-top: 80px;
+
   .banner-area {
     height: 360px;
     width: 100%;
     background-color: #f5faf6;
+
     .banner-container {
       width: $rootWidth;
       margin: auto;
       padding-top: 30px;
+
       .history-nav {
         margin-bottom: 30px;
         font-size: 14px;
         color: #605e5e;
         display: flex;
         align-items: center;
+
         a {
           text-decoration-line: underline;
           text-decoration-color: #605e5e;
           color: #605e5e;
+
           &:hover {
             color: $theme-color;
             text-decoration-color: #605e5e;
           }
         }
+
         .title-box {
           display: inline-block;
           width: 200px;
@@ -31,6 +37,7 @@
           overflow: hidden;
         }
       }
+
       .title {
         width: 870px;
         font-size: 40px;
@@ -38,6 +45,7 @@
       }
     }
   }
+
   .guides-container {
     position: relative;
     // transform: translateY(-85px);
@@ -48,9 +56,11 @@
 
     .guides-left {
       width: 750px;
+
       .author-info {
         display: flex;
         align-items: center;
+
         .author-img {
           display: inline-block;
           width: 110px;
@@ -58,6 +68,7 @@
           margin-right: 30px;
           border-radius: 50%;
         }
+
         .info-box {
           display: flex;
           flex-direction: column;
@@ -71,11 +82,13 @@
         align-items: center;
         margin: 50px 0;
         font-size: 0;
+
         .title {
           margin-right: 45px;
           font-size: 14px;
           color: #433d3d;
         }
+
         .share {
           button {
             width: 35px;
@@ -91,26 +104,32 @@
           }
         }
       }
+
       .guides-content {
         font-size: 16px;
       }
+
       .guides-bottom {
         .bottom-title {
           margin-bottom: 15px;
           font-size: 38px;
           color: #2f3233;
         }
+
         .title-list {
           color: #538da2;
           list-style: disc;
+
           a {
             text-decoration: none;
             color: #538da2;
+
             &:hover {
               text-decoration-line: underline;
               text-decoration-color: #538da2;
             }
           }
+
           li {
             margin-bottom: 15px;
             font-size: 16px;
@@ -118,6 +137,7 @@
         }
       }
     }
+
     .top-area {
       position: absolute;
       top: 0px;
@@ -128,6 +148,7 @@
       box-sizing: border-box;
       border-radius: 9px;
       overflow: hidden;
+
       .title {
         display: inline-block;
         height: 60px;
@@ -138,8 +159,10 @@
         background-color: $theme-color;
         text-align: center;
       }
+
       .top-list {
         background-color: #fff;
+
         .top-item {
           display: flex;
           justify-content: space-between;
@@ -148,6 +171,7 @@
           padding: 0 18px;
           height: 70px;
           border-bottom: 1px solid rgba(0, 23, 75, 0.1);
+
           &:nth-last-of-type(1) {
             border: none;
           }
@@ -156,6 +180,7 @@
             height: 55px;
             min-width: 20px;
           }
+
           a {
             display: inline-block;
             width: 100px;
@@ -168,6 +193,7 @@
             border-radius: 8px;
             text-decoration: none;
             box-sizing: border-box;
+
             &:hover {
               border: 1px solid $theme-color;
             }
@@ -183,6 +209,7 @@
     padding: 50px 0;
     background-color: #f5faf6;
     box-sizing: border-box;
+
     .keep-reading-container {
       width: $rootWidth;
       margin: 0 auto;
@@ -192,18 +219,22 @@
         font-size: 38px;
         color: #538da2;
       }
+
       .read-list {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         li {
           a {
             text-decoration: none;
           }
+
           width: 345px;
           height: 430px;
           box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.16);
           cursor: pointer;
+
           .img-box {
             display: flex;
             align-items: center;
@@ -216,6 +247,7 @@
               height: 100%;
             }
           }
+
           .title-box {
             width: 100%;
             box-sizing: border-box;
@@ -232,9 +264,11 @@
 .main-container {
   @media screen and (max-width: 750px) {
     padding-top: 70px;
+
     .banner-area {
       height: auto;
       background-color: #fff;
+
       .banner-container {
         width: 100%;
         box-sizing: border-box;
@@ -244,6 +278,7 @@
           font-size: 14px;
           margin-bottom: 10px;
         }
+
         .title {
           width: 100%;
           font-size: 24px;
@@ -255,25 +290,31 @@
       width: 100%;
       transform: translateY(0);
       top: 0;
+
       .guides-left {
         width: 100%;
         padding: 0 20px;
         box-sizing: border-box;
+
         .author-info {
           .author-img {
             display: none;
           }
+
           .info-box {
             margin-top: 15px;
           }
         }
+
         .share-box {
           display: none;
         }
+
         .guides-content {
           font-size: 16px;
           margin-top: 30px;
         }
+
         .guides-bottom {
           .bottom-title {
             font-size: 24px;
@@ -284,18 +325,23 @@
           }
         }
       }
+
       .top-area {
         display: none;
       }
     }
+
     .keep-reading-area {
       height: auto;
+
       .keep-reading-container {
         width: 100%;
         box-sizing: border-box;
         padding: 0 20px;
+
         .read-list {
           flex-direction: column;
+
           li {
             margin-bottom: 15px;
           }

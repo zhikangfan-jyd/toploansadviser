@@ -4,11 +4,10 @@
   padding-top: 80px;
   font-size: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(
-    45deg,
-    rgb(213, 239, 216),
-    rgb(251, 244, 237)
-  );
+  background-image: linear-gradient(45deg,
+      rgb(213, 239, 216),
+      rgb(251, 244, 237));
+
   .content {
     position: absolute;
     top: 50%;
@@ -18,14 +17,17 @@
     justify-content: center;
     align-items: center;
     width: $rootWidth;
+
     .content-text {
       font-size: 35px;
       line-height: 50px;
-      font-family: "Poppins-Bold";
+      font-weight: 700;
+
       .big {
         font-size: 40px;
         margin-bottom: 15px;
       }
+
       .g {
         color: $theme-color;
       }
@@ -39,11 +41,13 @@
       display: none;
     }
   }
+
   @media screen and (max-width: 750px) {
     .content {
       width: 85%;
       box-sizing: border-box;
       flex-direction: column;
+
       .content-text {
         order: 2;
 
@@ -55,6 +59,7 @@
           margin-bottom: 16px;
         }
       }
+
       .pic {
         order: 1;
         width: 100%;
@@ -73,7 +78,7 @@
         border-radius: 30px;
         color: #fff;
         font-size: 22px;
-        font-family: "Poppins-Medium";
+        font-weight: 500;
       }
     }
   }

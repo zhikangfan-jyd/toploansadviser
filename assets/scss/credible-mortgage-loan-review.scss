@@ -9,9 +9,11 @@
   .main-container {
     float: left;
     width: 800px;
+
     .link-list {
       list-style: none;
       margin-bottom: 10px;
+
       li {
         display: inline-block;
         margin-right: 5px;
@@ -19,9 +21,11 @@
         &:nth-last-child(1) .icon {
           display: none;
         }
+
         .text {
           font-size: 16px;
         }
+
         .icon {
           display: inline-block;
           width: 7px;
@@ -37,6 +41,7 @@
 
     .content-area {
       margin-bottom: 25px;
+
       .area-title {
         font-size: 27px;
         line-height: 37px;
@@ -44,12 +49,14 @@
         &.website-title {
           font-size: 36px;
           line-height: 44px;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
+
           .orange {
             color: #ed963e;
           }
         }
       }
+
       .pic {
         display: block;
         width: 100%;
@@ -66,14 +73,15 @@
             font-style: italic;
           }
         }
+
         .author-img {
           vertical-align: middle;
           width: 50px;
           margin-right: 20px;
         }
       }
+
       .text {
-        /* font-family: 'Poppins-Light'; */
         font-size: 16px;
         color: #000;
         line-height: 25px;
@@ -84,6 +92,7 @@
           font-weight: 500;
         }
       }
+
       .highlight {
         color: #3fa9f5;
       }
@@ -92,8 +101,10 @@
         font-size: 20px;
         font-weight: 500;
       }
+
       .ul-list {
         list-style: none;
+
         .ul-list-item .icon {
           display: inline-block;
           width: 16px;
@@ -105,9 +116,11 @@
           background-repeat: no-repeat;
         }
       }
+
       .refinance-list {
         padding-left: 15px;
       }
+
       .refinance-list .refinance-list-item {
         margin: 15px 0;
       }
@@ -116,8 +129,10 @@
         padding-left: 15px;
       }
     }
+
     .bottom-area {
       margin-bottom: 100px;
+
       .small-text {
         color: #999999;
       }
@@ -145,18 +160,21 @@
         text-decoration: none;
         border-radius: 10px;
         margin-top: 15px;
+
         &:hover {
           background-color: #ff8000;
         }
       }
     }
   }
+
   .fixed-area {
     float: right;
     width: 260px;
     margin-top: 160px;
 
     position: relative;
+
     .card-container {
       display: flex;
       flex-direction: column;
@@ -172,10 +190,12 @@
         height: 35px;
         margin-bottom: 20px;
       }
+
       .score {
         font-size: 40px;
         font-weight: 500;
       }
+
       .trustpilot-box {
         display: flex;
         flex-direction: column;
@@ -191,6 +211,7 @@
             font-weight: 600;
             color: #000;
           }
+
           .iconfont {
             font-size: 32px;
           }
@@ -214,6 +235,7 @@
           }
         }
       }
+
       .btn {
         width: 200px;
         height: 45px;
@@ -236,6 +258,7 @@
         }
       }
     }
+
     .quick-link-box {
       /* width: 100%;
          */
@@ -263,6 +286,7 @@
         &:hover {
           color: #ed963e;
         }
+
         &.current {
           color: #ed963e;
         }
@@ -280,26 +304,31 @@ ul {
     width: 100%;
     padding: 75px 20px 0 20px;
     box-sizing: border-box;
+
     .main-container {
       width: 100%;
 
       .content-area {
         margin-bottom: 25px;
+
         .area-title {
           &.website-title {
             font-size: 25px;
             line-height: 35px;
+
             .orange {
               color: #ed963e;
             }
           }
         }
+
         .pic {
           width: 100%;
           min-height: 0;
         }
       }
     }
+
     .fixed-area {
       display: none;
     }

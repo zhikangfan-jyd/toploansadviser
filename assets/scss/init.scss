@@ -1,3 +1,4 @@
+
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
 body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
 h1, h2, h3, h4, h5, h6{ font-size:100%; }
@@ -18,7 +19,8 @@ table { border-collapse:collapse; border-spacing:0; }
 }
 html,body {
     width: 100%;
-    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 .el-slider__runway {
     position: relative;
@@ -111,71 +113,8 @@ html,body {
         }
     }
 }
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../fonts/Poppins-Regular.eot');
-    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
-    url('../fonts/Poppins-Regular.woff') format('woff'),
-    url('../fonts/Poppins-Regular.ttf') format('truetype'),
-    url('../fonts/Poppins-Regular.otf') format('opentype'),
-    url('../fonts/Poppins-Regular.svg') format('svg');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../fonts/Poppins-Bold.eot');
-    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
-    url('../fonts/Poppins-Bold.woff') format('woff'),
-    url('../fonts/Poppins-Bold.ttf') format('truetype'),
-    url('../fonts/Poppins-Bold.otf') format('opentype'),
-    url('../fonts/Poppins-Bold.svg') format('svg');
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Poppins-Light';
-    src: url('../fonts/Poppins-Light.eot');
-    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
-    url('../fonts/Poppins-Light.woff') format('woff'),
-    url('../fonts/Poppins-Light.ttf') format('truetype'),
-    url('../fonts/Poppins-Light.otf') format('opentype'),
-    url('../fonts/Poppins-Light.svg') format('svg');
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../fonts/Poppins-Medium.eot');
-    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
-    url('../fonts/Poppins-Medium.woff') format('woff'),
-    url('../fonts/Poppins-Medium.ttf') format('truetype'),
-    url('../fonts/Poppins-Medium.otf') format('opentype'),
-    url('../fonts/Poppins-Medium.svg') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../fonts/Poppins-SemiBold.eot');
-    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
-    url('../fonts/Poppins-SemiBold.woff') format('woff'),
-    url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
-    url('../fonts/Poppins-SemiBold.otf') format('opentype'),
-    url('../fonts/Poppins-SemiBold.svg') format('svg');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
-    font-display: swap;
-  
-}
-@font-face {
-    font-family: 'Nunito-Light';
-    src: url('../fonts/Nunito-Light.ttf') format('truetype');
-    font-display: swap;
-}
 @font-face {
     font-family: 'Nunito-Bold';
     src: url('../fonts/Nunito-Bold.ttf') format('truetype');
@@ -184,6 +123,7 @@ html,body {
 
 @font-face {
     font-family: 'iconfont';  /* Project id 2472982 */
+    font-display: swap;
     src: url('//at.alicdn.com/t/font_2472982_gvarx7gtto.woff2?t=1631070188938') format('woff2'),
          url('//at.alicdn.com/t/font_2472982_gvarx7gtto.woff?t=1631070188938') format('woff'),
          url('//at.alicdn.com/t/font_2472982_gvarx7gtto.ttf?t=1631070188938') format('truetype');

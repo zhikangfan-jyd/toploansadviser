@@ -1,12 +1,6 @@
 <template>
   <div class="calculator-components">
     <div class="calculator-trigger">
-      <!-- <span class="title">Calculator your rate</span>
-            <div class="jiantou-box">
-            <span class="icon jiantou"></span>
-            <span class="icon jiantou"></span>
-            </div> -->
-
       <span class="icon calculator-icon" @click="handlePopup"></span>
       <span
         style="font-size: 14px; margin-top: 3px; font-weight: bold; color: #29b674;"

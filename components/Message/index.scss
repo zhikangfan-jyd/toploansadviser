@@ -8,6 +8,7 @@
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
   opacity: 0;
+
   .alert-content {
     position: absolute;
     left: 50%;
@@ -45,24 +46,30 @@
         height: 30px;
         background-color: rgb(202, 202, 203);
       }
+
       &::after {
         transform: translate(-50%, -50%) rotateZ(45deg);
       }
+
       &::before {
         transform: translate(-50%, -50%) rotateZ(-45deg);
       }
     }
+
     .steps-box-1 {
       margin-bottom: 30px;
+
       .title {
-        font-family: "Poppins-Bold";
+        font-weight: 700;
         font-size: 25px;
         color: $theme-color;
       }
+
       .steps-content {
         display: flex;
         align-items: center;
         margin-top: 36px;
+
         .desc {
           font-size: 18px;
 
@@ -74,6 +81,7 @@
 
         .btn-box {
           margin-left: 38px;
+
           .btn {
             width: 170px;
             height: 40px;
@@ -85,6 +93,7 @@
             cursor: pointer;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
             transition: all linear 0.1s;
+
             &:hover {
               background-color: #c3dfc7;
             }
@@ -92,20 +101,25 @@
         }
       }
     }
+
     .steps-box-2 {
       margin-bottom: 20px;
+
       .steps-content {
         display: flex;
+
         .desc {
           display: flex;
 
           font-size: 18px;
           margin-top: 20px;
+
           .text {
             display: inline-block;
             margin-top: 5px;
             line-height: 22px;
           }
+
           .iconfont {
             flex-shrink: 0;
             display: inline-block;
@@ -118,6 +132,7 @@
         .btn-box {
           flex-shrink: 0;
           margin-left: 38px;
+
           .btn {
             width: 170px;
             height: 40px;
@@ -129,9 +144,11 @@
             cursor: pointer;
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
             transition: all linear 0.1s;
+
             &:hover {
               background-color: #c3dfc7;
             }
+
             &.current {
               background-color: #c3dfc7;
             }
@@ -143,6 +160,7 @@
           flex-direction: column;
           align-items: center;
           margin-top: 20px;
+
           .start-btn {
             display: inline-block;
             width: 170px;
@@ -155,6 +173,7 @@
             font-weight: 700;
             text-decoration: none;
             transition: all linear 0.1s;
+
             &.disabled {
               background-color: #9e9c9c;
               cursor: not-allowed;
@@ -163,17 +182,21 @@
                 background-color: #9e9c9c;
               }
             }
+
             &:hover {
               background-color: $theme-change-color;
             }
           }
+
           .power {
             display: flex;
             align-items: center;
             margin-top: 5px;
+
             .text {
               font-size: 14px;
             }
+
             .logo {
               height: 30px;
             }
@@ -181,19 +204,23 @@
         }
       }
     }
+
     .steps-container {
       .steps-text-box {
         font-size: 14px;
       }
+
       .steps-box {
         width: 340px;
         height: 5px;
         background-color: #d8d8d8;
+
         .bar {
           width: 50%;
           height: 100%;
           background-color: $theme-color;
           transition: all linear 0.3s;
+
           &.full {
             width: 100%;
           }

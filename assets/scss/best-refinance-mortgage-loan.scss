@@ -1,18 +1,19 @@
 .main-container {
   padding-top: 80px;
   font-size: 0;
+
   .banner-area {
-    background-image: linear-gradient(
-      to right,
-      rgb(237, 245, 228),
-      rgb(255, 255, 255)
-    );
+    background-image: linear-gradient(to right,
+        rgb(237, 245, 228),
+        rgb(255, 255, 255));
+
     .banner-container {
       display: flex;
       justify-content: space-between;
       width: $rootWidth;
       margin: 0 auto;
       padding: 35px 0;
+
       .banner-content {
         .logo-box {
           display: flex;
@@ -22,12 +23,14 @@
             height: 56px;
             transform: translateY(-5px);
           }
+
           .cha-icon {
             position: relative;
             display: inline-block;
             width: 20px;
             height: 20px;
             margin: 0 13px;
+
             &::after,
             &::before {
               position: absolute;
@@ -41,20 +44,23 @@
             &::before {
               transform: rotateZ(-45deg);
             }
+
             &::after {
               transform: rotateZ(45deg);
             }
           }
+
           .credible-logo {
             height: 56px;
           }
         }
+
         .website-title {
           margin-top: 15px;
           font-size: 42px;
           line-height: 55px;
           color: #001139;
-          font-family: "Poppins-Medium";
+          font-weight: 500;
         }
 
         .sub-title {
@@ -68,7 +74,7 @@
           font-size: 15px;
           line-height: 25px;
           color: #000;
-          font-family: "Poppins-Medium";
+          font-weight: 500;
         }
 
         .btn {
@@ -81,17 +87,20 @@
           border-radius: 30px;
           background-color: #ed963e;
           color: #fff;
-          font-family: "Poppins-Medium";
+          font-weight: 500;
           text-decoration: none;
           transition: all linear 0.1s;
+
           .text {
             font-size: 21px;
             vertical-align: middle;
           }
+
           .iconfont {
             font-size: 24px;
             vertical-align: middle;
           }
+
           &:hover {
             background-color: #ff8000;
           }
@@ -102,6 +111,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .pic {
           width: 465px;
         }
@@ -110,13 +120,14 @@
           display: flex;
           align-items: center;
           margin-top: 24px;
+
           .text {
-            font-family: "Poppins-Medium";
+            font-weight: 500;
             font-size: 22px;
             color: #00174b;
             margin-right: 5px;
-            font-weight: bold;
           }
+
           .iconfont {
             font-size: 16px;
             padding: 2px;
@@ -135,6 +146,7 @@
       }
     }
   }
+
   .why-choose-credible-area {
     .why-choose-credible-container {
       display: flex;
@@ -148,26 +160,29 @@
         font-size: 36px;
         color: #00174b;
         text-align: center;
-        font-weight: normal;
-        font-family: "Poppins-Bold";
+        font-weight: 500;
       }
+
       .sub-desc {
         width: 100%;
         font-size: 20px;
-        font-family: "Poppins-Light";
+        font-weight: 300;
         color: #00174b;
         text-align: center;
         margin-bottom: 45px;
       }
+
       .container-box {
         display: flex;
         justify-content: space-between;
+
         .pic {
           width: 426px;
           height: 275px;
           flex-shrink: 0;
           margin-right: 66px;
         }
+
         .content-list {
           .list-item {
             display: flex;
@@ -176,17 +191,20 @@
             &:nth-last-of-type(1) {
               margin-bottom: 0;
             }
+
             .img {
               width: 40px;
               height: 40px;
               margin-top: 22px;
               margin-right: 10px;
             }
+
             .list-content {
               .title {
                 font-size: 20px;
                 color: #ed963e;
               }
+
               .desc {
                 font-size: 16px;
                 color: #00174b;
@@ -198,23 +216,27 @@
       }
     }
   }
+
   .how-it-work-area {
     margin-top: 75px;
+
     .how-it-work-container {
       width: $rootWidth;
       margin: 0 auto;
+
       .title-box {
         text-align: center;
         margin-bottom: 20px;
+
         .text {
           font-size: 18px;
           color: $theme-color;
         }
+
         .area-title {
           font-size: 36px;
           color: #00174b;
-          font-weight: normal;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
         }
       }
 
@@ -222,18 +244,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .work-item {
           display: flex;
           flex-direction: column;
           align-items: center;
+
           .pic {
             height: 145px;
           }
+
           .title {
             font-size: 21px;
             color: #000;
-            font-family: "Poppins-Medium";
+            font-weight: 500;
           }
+
           .text {
             font-size: 15px;
             color: #000;
@@ -242,14 +268,16 @@
       }
     }
   }
+
   .content-area {
     .content-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .area-title {
         margin-top: 75px;
-        font-family: "Poppins-Bold";
+        font-weight: 700;
         font-size: 36px;
         color: #00174b;
         text-align: center;
@@ -258,7 +286,7 @@
       .desc {
         width: 30%;
         font-size: 20px;
-        font-family: "Poppins-Light";
+        font-weight: 300;
         color: #00174b;
         text-align: center;
       }
@@ -270,55 +298,54 @@
         box-sizing: border-box;
         background-color: $theme-color;
         border-radius: 12px;
-        background-image: linear-gradient(
-          to right,
-          rgb(250, 244, 237) 30%,
-          rgb(213, 239, 216)
-        );
+        background-image: linear-gradient(to right,
+            rgb(250, 244, 237) 30%,
+            rgb(213, 239, 216));
+
         .content-top {
           display: flex;
           align-items: center;
           margin-bottom: 5px;
+
           .credible-logo {
             height: 100px;
             margin-right: 60px;
           }
+
           .text {
             font-size: 28px;
             color: #00174b;
           }
         }
+
         .content-bottom {
           display: flex;
           align-content: center;
           margin-left: 12px;
+
           .bottom-box {
             display: flex;
             align-content: center;
           }
+
           .trustpilot-box {
             display: flex;
             align-items: center;
+
             .text {
-              font-family: "Poppins-Medium";
+              font-weight: 500;
               font-size: 22px;
               color: #00174b;
               margin-right: 10px;
               font-weight: bold;
             }
+
             .iconfont {
               font-size: 16px;
               padding: 2px;
               color: #fff;
               margin: 0 1px;
               background-color: $theme-color;
-
-              // &.big-star {
-              //     font-size: 24px;
-              //     background-color: transparent;
-              //     color: $theme-color;
-              //     transform: translateY(-4px);
-              // }
             }
           }
 
@@ -340,17 +367,20 @@
             border-radius: 30px;
             background-color: #ed963e;
             color: #fff;
-            font-family: "Poppins-Medium";
+            font-weight: 500;
             text-decoration: none;
             transition: all linear 0.1s;
+
             .text {
               font-size: 21px;
               vertical-align: middle;
             }
+
             .iconfont {
               font-size: 24px;
               vertical-align: middle;
             }
+
             &:hover {
               background-color: #ff8000;
             }
@@ -363,23 +393,27 @@
   .comments-area {
     margin-top: 25px;
     margin-bottom: 75px;
+
     .comments-container {
       position: relative;
       width: $rootWidth;
       height: 965px;
       margin: 0 auto;
+
       .pic-1 {
         position: absolute;
         right: 0;
         top: 0;
         height: 425px;
       }
+
       .pic-2 {
         position: absolute;
         left: 0;
         top: 355px;
         height: 610px;
       }
+
       .comments-item {
         position: absolute;
         min-height: 190px;
@@ -399,6 +433,7 @@
           .info-box {
             display: flex;
             align-items: center;
+
             .author-image {
               display: flex;
               justify-content: center;
@@ -409,6 +444,7 @@
               font-size: 25px;
               background-color: #f2b85a;
             }
+
             .author-name {
               font-size: 18px;
             }
@@ -433,6 +469,7 @@
           z-index: 3;
 
           width: 380px;
+
           .comments-info-box {
             .info-box {
               .author-image {
@@ -448,6 +485,7 @@
           left: 0;
           top: 175px;
           width: 475px;
+
           .comments-info-box {
             .info-box {
               .author-image {
@@ -458,12 +496,14 @@
             }
           }
         }
+
         &.third {
           right: 0;
           top: 342px;
           width: 685px;
           z-index: 2;
           padding: 10px 30px 30px 30px;
+
           .comments-info-box {
             .info-box {
               .author-image {
@@ -474,10 +514,12 @@
             }
           }
         }
+
         &.fourth {
           left: 0;
           bottom: 0;
           width: 510px;
+
           .comments-info-box {
             .info-box {
               .author-image {
@@ -494,6 +536,7 @@
           bottom: 0;
           width: 586px;
           z-index: 3;
+
           .comments-info-box {
             .info-box {
               .author-image {
@@ -507,6 +550,7 @@
       }
     }
   }
+
   .faq-area {
     width: $rootWidth;
     margin: 0 auto;
@@ -517,6 +561,7 @@
       height: 275px;
       margin-top: 90px;
       margin-bottom: 75px;
+
       .pic {
         flex-shrink: 0;
         display: inline-block;
@@ -524,16 +569,19 @@
         height: 275px;
         margin-right: 62px;
       }
+
       .faq-content {
         .faq-title {
           font-size: 42px;
           font-weight: normal;
           color: #001139;
           line-height: 56px;
+
           span {
             display: block;
           }
         }
+
         .content {
           margin-top: 18px;
           font-size: 18px;
@@ -546,14 +594,17 @@
     .faq-container {
       .faq-item {
         margin-bottom: 30px;
+
         .small-title {
           font-size: 18px;
         }
+
         .title {
           font-size: 25px;
           color: $theme-color;
-          font-family: "Poppins-SemiBold";
+          font-weight: 600;
         }
+
         .content {
           font-size: 16px;
           line-height: 28px;
@@ -561,9 +612,11 @@
           p {
             margin: 10px 0;
           }
+
           .small-title {
             font-size: 18px;
           }
+
           ul {
             li {
               display: flex;
@@ -589,20 +642,24 @@
         width: 100%;
         box-sizing: border-box;
         padding: 20px;
+
         .banner-content {
           .website-title {
             font-size: 28px;
             line-height: 40px;
           }
+
           .sub-title {
             font-size: 18px;
             line-height: 24px;
           }
+
           .btn {
             margin-left: auto;
             margin-right: auto;
           }
         }
+
         .img-box {
           display: none;
         }
@@ -618,6 +675,7 @@
         .area-title {
           font-size: 25px;
         }
+
         .container-box {
           .pic {
             display: none;
@@ -629,6 +687,7 @@
                 .title {
                   font-size: 18px;
                 }
+
                 .desc {
                   font-size: 14px;
                 }
@@ -651,6 +710,7 @@
 
           .work-item {
             margin: 20px 0;
+
             .pic {
               height: 250px;
             }
@@ -669,11 +729,13 @@
           font-size: 25px;
           line-height: 35px;
         }
+
         .desc {
           font-size: 18px;
           margin-top: 15px;
           width: 100%;
         }
+
         .content-box {
           width: 100%;
           padding: 10px;
@@ -684,13 +746,16 @@
               margin-right: 30px;
               height: 65px;
             }
+
             .text {
               font-size: 16px;
             }
           }
+
           .content-bottom {
             flex-direction: column;
             align-items: center;
+
             .btn {
               margin-left: 0;
               margin-top: 15px;
@@ -714,8 +779,10 @@
         .pic-2 {
           display: none;
         }
+
         .comments-item {
           margin-bottom: 15px;
+
           &.first,
           &.second,
           &.third,
@@ -739,9 +806,11 @@
         flex-direction: column;
         height: auto;
         margin-bottom: 35px;
+
         .pic {
           display: none;
         }
+
         .faq-content {
           order: 1;
 
@@ -749,11 +818,13 @@
             font-size: 28px;
             text-align: center;
           }
+
           .content {
             font-size: 16px;
           }
         }
       }
+
       .faq-container {
         .faq-item {
           .title {

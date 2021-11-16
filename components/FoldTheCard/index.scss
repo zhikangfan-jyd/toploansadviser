@@ -3,12 +3,15 @@
   border-radius: 16px;
   border: 1px solid rgba(0, 23, 75, 0.1);
   box-sizing: border-box;
+
   .fold-the-card-item {
     width: 100%;
     border-bottom: 1px solid rgba(0, 23, 75, 0.1);
+
     &:nth-last-of-type(1) {
       border: none;
     }
+
     .fold-the-card-title-box {
       display: flex;
       justify-content: space-between;
@@ -17,10 +20,12 @@
       width: 100%;
       padding: 0 40px;
       box-sizing: border-box;
+
       .title {
         font-size: 22px;
         color: #001139;
       }
+
       .iconfont {
         flex-shrink: 0;
         display: inline-block;
@@ -37,6 +42,7 @@
         }
       }
     }
+
     .fold-the-card-content {
       // display: none;
       width: 100%;
@@ -51,12 +57,14 @@
 .fold-the-card-container {
   @media screen and (max-width: 750px) {
     width: 100%;
+
     .fold-the-card-item {
       .fold-the-card-title-box {
         .title {
           font-size: 18px;
         }
       }
+
       .fold-the-card-content {
         font-size: 14px;
       }

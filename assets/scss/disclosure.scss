@@ -1,27 +1,32 @@
 .main-container {
   padding-top: 80px;
+
   .banner-area {
     position: relative;
     width: 100%;
     background-color: #f5faf6;
+
     .banner-container {
       display: flex;
       align-items: center;
       width: $rootWidth;
       height: 360px;
       margin: 0 auto;
+
       .banner-content {
         max-width: 730px;
+
         .website-title {
           font-size: 42px;
-          font-weight: normal;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
           line-height: 56px;
           color: #001139;
+
           span {
             display: block;
           }
         }
+
         .update {
           margin-top: 10px;
           margin-bottom: 20px;
@@ -30,6 +35,7 @@
         }
       }
     }
+
     .banner-img {
       position: absolute;
       right: 0;
@@ -49,6 +55,7 @@
 .main-container {
   @media screen and (max-width: 750px) {
     padding-top: 70px;
+
     .banner-area {
       .banner-container {
         width: 100%;
@@ -61,6 +68,7 @@
             font-size: 28px;
             line-height: 45px;
           }
+
           .update {
             font-size: 18px;
           }

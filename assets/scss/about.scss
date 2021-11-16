@@ -1,6 +1,7 @@
 .main-container {
   padding-top: 80px;
   padding-bottom: 80px;
+
   .banner-area {
     position: relative;
     width: 100%;
@@ -14,26 +15,30 @@
       width: $rootWidth;
       height: 360px;
       margin: 0 auto;
+
       .banner-content {
         position: relative;
         z-index: 1;
         max-width: 730px;
+
         .website-title {
           font-size: 42px;
-          font-weight: normal;
-          font-family: "Poppins-Bold";
+          font-weight: 700;
           line-height: 56px;
           color: #001139;
+
           span {
             display: block;
           }
         }
+
         .update {
           margin-top: 10px;
           margin-bottom: 20px;
           color: $theme-color;
           font-size: 20px;
         }
+
         .content {
           font-size: 18px;
           line-height: 24px;
@@ -41,6 +46,7 @@
           color: #000;
         }
       }
+
       .banner-img {
         position: absolute;
         right: 0;
@@ -49,15 +55,18 @@
       }
     }
   }
+
   .desc-area {
     width: $rootWidth;
     margin: auto;
+
     .content {
       padding: 100px 0;
       color: #787e8b;
       font-size: 20px;
       line-height: 26px;
     }
+
     .content-item {
       display: flex;
       align-items: center;
@@ -78,12 +87,14 @@
 
       .text-box {
         flex: 1;
+
         .title {
           display: inline-block;
           font-size: 26px;
           color: $theme-color;
           margin-bottom: 30px;
         }
+
         .text {
           font-size: 20px;
           color: #787e8b;
@@ -99,16 +110,20 @@
     padding: 65px 0;
 
     border-bottom: 3px solid #efecec;
+
     .title {
       text-align: center;
       font-size: 48px;
       color: $theme-color;
     }
+
     .img-list {
       display: flex;
       flex-wrap: wrap;
+
       li {
         margin: 35px 19px;
+
         img {
           display: inline-block;
           height: 60px;
@@ -123,25 +138,30 @@
 .main-container {
   @media screen and (max-width: 750px) {
     padding-top: 70px;
+
     .banner-area {
       .banner-container {
         width: 100%;
         height: 430px;
         box-sizing: border-box;
         padding: 0 20px;
+
         .banner-content {
           .website-title {
             font-size: 28px;
           }
         }
+
         .banner-img {
           right: 20px;
           height: 130px;
         }
       }
     }
+
     .desc-area {
       width: 100%;
+
       .content {
         width: 100%;
         font-size: 16px;
@@ -155,21 +175,26 @@
         height: auto;
         padding: 30px 20px;
         box-sizing: border-box;
+
         .pic-box {
           order: 2;
           margin-top: 25px;
+
           .pic {
             width: 65%;
           }
         }
+
         .text-box {
           order: 1;
+
           .text {
             font-size: 16px;
           }
         }
       }
     }
+
     .partners-area {
       width: 100%;
     }

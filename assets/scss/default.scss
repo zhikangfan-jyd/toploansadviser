@@ -13,8 +13,10 @@
       width: $rootWidth;
       height: 80px;
       margin: 0 auto;
+      font-size: 0;
       .website-logo {
         display: inline-block;
+        width: 220px;
         height: 55px;
       }
       .header-nav-list {
@@ -31,7 +33,7 @@
             padding: 15px 15px;
             font-size: 18px;
             color: #001139;
-            font-family: "Poppins-SemiBold";
+            font-weight: 600;
             text-decoration: none;
             border-radius: 8px;
 
@@ -129,7 +131,7 @@
         margin-bottom: 25px;
         color: #fff;
         font-size: 20px;
-        font-family: "Poppins-Medium";
+        font-weight: 500;
       }
       .footer-info-box {
         .footer-logo {
@@ -196,22 +198,26 @@
               }
               input::-webkit-input-placeholder {
                 color: #fff;
-                font-family: "Poppins-Medium";
+                font-family: "Poppins";
+                font-weight: 500;
               }
               input::-moz-placeholder {
                 /* Mozilla Firefox 19+ */
                 color: #fff;
-                font-family: "Poppins-Medium";
+                font-family: "Poppins";
+                font-weight: 500;
               }
               input:-moz-placeholder {
                 /* Mozilla Firefox 4 to 18 */
                 color: #fff;
-                font-family: "Poppins-Medium";
+                font-family: "Poppins";
+                font-weight: 500;
               }
               input:-ms-input-placeholder {
                 /* Internet Explorer 10-11 */
                 color: #fff;
-                font-family: "Poppins-Medium";
+                font-family: "Poppins";
+                font-weight: 500;
               }
               button {
                 width: 62px;
@@ -259,6 +265,7 @@
         box-sizing: border-box;
         padding: 0 20px;
         .website-logo {
+          width: 180px;
           height: 45px;
         }
         .header-nav-list {
