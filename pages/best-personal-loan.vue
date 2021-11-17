@@ -425,7 +425,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="item.link"
+                    :href="'/redirect/personal-loan/'+item.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -446,7 +446,7 @@
                     <span class="iconfont">&#xe63c;</span>
                   </a>
                   <a
-                    :href="item.link"
+                    :href="'/redirect/personal-loan/'+item.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="visit-btn"
@@ -601,7 +601,7 @@ export default {
   data() {
     return {
       mainLink:
-        " https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=",
+        "/redirect/personal-loan/credible",
       isNull: true,
       page: 1,
       pageSize: 5,

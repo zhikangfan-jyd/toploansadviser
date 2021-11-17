@@ -335,7 +335,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="item.link"
+                      :href="'/redirect/mortgage-loan/'+item.name+'?category='+category"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -408,7 +408,7 @@
                       </div>
                       <div class="review-link-box">
                         <a
-                          :href="item.link"
+                          :href="'/redirect/mortgage-loan/'+item.name+'?category='+category"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="review-btn"
@@ -574,7 +574,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="purchase_product.link"
+                    :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -655,7 +655,7 @@
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="purchase_product.link"
+                        :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="review-btn"
@@ -793,7 +793,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="refinance_product.link"
+                    :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -882,7 +882,7 @@
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="refinance_product.link"
+                        :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="review-btn"
@@ -1418,6 +1418,7 @@ export default {
   // },
   data() {
     return {
+      category: 'purchase',
       cornerText: "Low Rates",
       choseNum: 285,
       loading: false,
@@ -1537,6 +1538,7 @@ export default {
     computeScore,
     updateTime,
     async getData(name) {
+      this.category = name;
       this.loading = true;
       this.filterName = name;
       // 拼接 msclkid 参数

@@ -360,7 +360,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="item.link"
+                      :href="'/redirect/personal-loan/'+ item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -381,7 +381,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="item.link"
+                      :href="'/redirect/personal-loan/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -524,7 +524,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="item.link"
+                  :href="'/redirect/personal-loan/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -542,7 +542,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="item.link"
+                  :href="'/redirect/personal-loan/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"

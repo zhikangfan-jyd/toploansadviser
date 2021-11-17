@@ -91,7 +91,7 @@
           </div>
           <div class="btn-box">
             <a
-              :href="mainLink"
+              :href="'/redirect/personal-loan/'+mainName"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="btn"
@@ -131,7 +131,7 @@
 
         <div class="btn-box">
           <a
-            :href="mainLink"
+            :href="'/redirect/personal-loan/'+mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             @click="
@@ -167,7 +167,7 @@
           <div class="content" v-html="review.minimum_credit_score"></div>
           <div class="btn-box" v-if="review.key === 'sofi'">
             <a
-              :href="mainLink"
+              :href="'/redirect/personal-loan/'+mainName"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="btn"
@@ -280,7 +280,7 @@
         </div>
         <div class="btn-box">
           <a
-            :href="mainLink"
+            :href="'/redirect/personal-loan/'+mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="btn"
@@ -329,7 +329,7 @@
           <li class="top-item" v-for="(item, index) in topLoans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo" />
             <a
-              :href="item.link"
+              :href="'/redirect/personal-loan/'+item.name"
               target="_blank"
               rel="noopener noreferrer nofollow"
               @click="
@@ -424,6 +424,7 @@ export default {
       let productsResults = await $axios.$get("/data/person_loan_product.json");
       let product = {};
       let mainLink = "";
+      let mainName = '';
       let alsoLike = [];
       productsResults.data.forEach((ele) => {
         if (ele.link.indexOf("www.credible.com") != -1) {
@@ -432,6 +433,7 @@ export default {
 
         if (ele.review_key == name) {
           product = ele;
+          mainName = ele.name;
           mainLink = ele.link;
         } else if (ele.review_key != "" && alsoLike.length < 3) {
           alsoLike.push(ele);
@@ -442,6 +444,7 @@ export default {
       return {
         product: product,
         mainLink: mainLink,
+        mainName: mainName,
         topLoans: productsResults.data.slice(0, 5),
         review: results.data,
         alsoLike,

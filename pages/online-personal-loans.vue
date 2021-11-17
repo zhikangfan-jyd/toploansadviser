@@ -427,7 +427,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="item.link"
+                    :href="'/redirect/personal-loan/'+item.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -448,7 +448,7 @@
                     <span class="iconfont">&#xe63c;</span>
                   </a>
                   <a
-                    :href="item.link"
+                    :href="'/redirect/personal-loan/'+item.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="visit-btn"
@@ -602,7 +602,7 @@ export default {
   },
   data() {
     return {
-      mainLink: "https://secureconv-wh.com/?a=126374&c=279173&mt=4",
+      mainLink: "/redirect/online-personal-loans/main",
       isNull: true,
       page: 1,
       pageSize: 5,

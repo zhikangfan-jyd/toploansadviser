@@ -611,7 +611,7 @@ export default {
   data() {
     return {
       mainLink:
-        "https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content=",
+        "/redirect/best-mortgage-loan/main",
     };
   },
 };

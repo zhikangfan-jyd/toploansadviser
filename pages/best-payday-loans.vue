@@ -72,7 +72,7 @@
             <div class="card-top">
               <div class="company-logo-box">
                 <a
-                  :href="company.link"
+                  :href="'/redirect/payday-loans/'+company.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
@@ -98,7 +98,7 @@
                     <Star :score="Number(company.score)" />
                   </div>
                   <a
-                    :href="company.link"
+                    :href="'/redirect/payday-loans/'+ company.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="btn"
@@ -118,7 +118,7 @@
                   <Star :score="Number(company.score)" />
                 </div>
                 <a
-                  :href="company.link"
+                  :href="'/redirect/payday-loans/'+company.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="btn"
@@ -142,7 +142,7 @@
                 <p class="desc" v-html="company.desc"></p>
                 <div class="detail-box">
                   <a
-                    :href="company.link"
+                    :href="'/redirect/payday-loans/'+company.name"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="detail-btn"

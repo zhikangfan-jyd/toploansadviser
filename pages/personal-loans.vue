@@ -233,7 +233,7 @@
                   </div>
                   <div class="logo-box">
                     <a
-                      :href="product.link"
+                      :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -261,14 +261,14 @@
                   </div>
                   <div class="details-box">
                     <a
-                      :href="product.link"
+                      :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="name"
                       >{{ product.name }}</a
                     >
                     <a
-                      :href="product.link"
+                      :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="min-debt"
@@ -292,14 +292,14 @@
 
                   <div class="btn-box">
                     <a
-                      :href="product.link"
+                      :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="btn"
                       >Get my rate</a
                     >
                     <a
-                      :href="product.link"
+                      :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-site"
@@ -525,7 +525,7 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                href="https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content="
+                href="/redirect/personal-loans/Credible"
                 >Credible</a
               >
             </li>
@@ -533,7 +533,7 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                href="https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content="
+                href="/redirect/personal-loans/Best Egg"
                 >Best Egg</a
               >
             </li>
@@ -541,7 +541,7 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                href="https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content="
+                href="/redirect/personal-loans/Lending Club"
                 >Lendingclub</a
               >
             </li>
@@ -883,7 +883,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="product.link" rel="noopener noreferrer nofollow">
+              <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
                 <img :src="product.logo" :alt="product.name" />
               </a>
             </div>
@@ -894,7 +894,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="product.link" rel="noopener noreferrer nofollow">
+              <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
                 <img :src="product.logo" :alt="product.name" />
               </a>
             </div>

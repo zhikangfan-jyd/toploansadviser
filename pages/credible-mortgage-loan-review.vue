@@ -590,7 +590,7 @@ export default {
   data() {
     return {
       mainLink:
-        "https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
+        "/redirect/credible-mortgage-loan-review/main",
     };
   },
   mounted() {

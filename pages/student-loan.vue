@@ -170,7 +170,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="item.link"
+                      :href="'/redirect/student-loan/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -282,7 +282,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="item.link"
+                  :href="'/redirect/student-loan/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="

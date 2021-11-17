@@ -65,7 +65,7 @@
           <li class="top-item" v-for="(item, index) in toploans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo" />
             <a
-              :href="item.link"
+              :href="'/redirect/personal-loan/'+item.name"
               target="_blank"
               rel="noopener noreferrer"
               @click="

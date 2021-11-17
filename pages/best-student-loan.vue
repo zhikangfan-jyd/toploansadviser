@@ -32,7 +32,7 @@
             today!
           </p>
           <a
-            :href="mainLink"
+            :href="'/redirect/student-loan/'+mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="btn"
@@ -141,7 +141,7 @@
             Best Student Loan Refinance Companies in 2021
           </h2>
           <a
-            :href="mainLink"
+            :href="'/redirect/student-loan/' + mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="btn"
@@ -201,7 +201,7 @@
                 <div class="img-score-box">
                   <div class="img-box">
                     <a
-                      :href="item.link"
+                      :href="'/redirect/student-loan/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -289,7 +289,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="item.link"
+                    :href="'/redirect/student-loan/'+item.name"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -337,7 +337,7 @@
         </div>
         <img src="@/assets/img/info.webp" alt="" class="pic" />
         <a
-          :href="mainLink"
+          :href="'/redirect/student-loan/'+mainName"
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="btn"
@@ -409,6 +409,7 @@ export default {
         allProducts: product_results.data,
         questionData: question_results.data,
         mainLink: product_results.data[0].link,
+        mainName: product_results.data[0].name
       };
     } catch (error) {
       redirect("/error");
