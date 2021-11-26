@@ -564,6 +564,14 @@ import { computeScore, formatNum } from "../utils/index";
 import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 export default {
+  head: {
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/personal-loan",
+      },
+    ],
+  },
   components: {
     FoldTheCard,
   },

@@ -836,7 +836,9 @@
 
                           .phone-text {
                             display: inline-block;
-                            color: #001139ab;
+                            color: #001139;
+                            font-size: 18px;
+                            font-weight: 400;
                           }
 
                           .pc-text {
@@ -847,6 +849,7 @@
                         dd {
                           .text {
                             font-size: 16px;
+                            color: #001139;
                           }
                         }
                       }
@@ -864,9 +867,10 @@
 
                       .title {
                         display: block;
-                        font-size: 14px;
+                        font-size: 18px;
                         margin-bottom: 5px;
-                        color: #001139ab;
+                        color: #001139;
+                        font-weight: 400;
                       }
 
                       // .text-box {
@@ -878,10 +882,12 @@
                   .btn-box {
                     margin-top: 35px;
                     margin-bottom: 20px;
-
+                    align-items: center;
                     .btn {
-                      width: 100%;
-                      font-size: 18px;
+                      width: 70%;
+                      height: 60px;
+                      line-height: 60px;
+                      font-size: 20px;
                       font-weight: bold;
                     }
                   }
@@ -949,7 +955,9 @@
 
                       .phone-text {
                         display: inline-block;
-                        color: #001139ab;
+                        color: #001139;
+                        font-size: 18px;
+                        font-weight: 400;
                       }
 
                       .pc-text {
@@ -960,6 +968,7 @@
                     dd {
                       .text {
                         font-size: 16px;
+                        color: #001139;
                       }
                     }
                   }
@@ -977,9 +986,10 @@
 
                   .title {
                     display: block;
-                    font-size: 14px;
+                    font-size: 18px;
                     margin-bottom: 5px;
-                    color: #001139ab;
+                    color: #001139;
+                    font-weight: 400;
                   }
                 }
               }
@@ -987,10 +997,12 @@
               .btn-box {
                 margin-top: 35px;
                 margin-bottom: 20px;
-
+                align-items: center;
                 .btn {
-                  width: 100%;
-                  font-size: 18px;
+                  width: 70%;
+                  height: 60px;
+                  line-height: 60px;
+                  font-size: 20px;
                   font-weight: bold;
                 }
               }

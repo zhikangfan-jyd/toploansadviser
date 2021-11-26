@@ -617,6 +617,14 @@ import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
+  head: {
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/personal-loan",
+      },
+    ],
+  },
   components: {
     FoldTheCard,
     CalculatorPopup,
@@ -782,7 +790,8 @@ export default {
     // 拼接 msclkid 参数
     const changeLink = (url) => {
       let aff_sub = "",
-        msclkid = "";
+        msclkid = "",
+        gclid = this.$route.query["gclid"];
 
       // 判断hash是否有值
       if (this.$route.hash === "") {
@@ -805,8 +814,11 @@ export default {
         }
         msclkid = this.$route.query["msclkid"] + arr[0];
       }
-
-      return `${url}&msclkid=${msclkid}&term_content=google`;
+      if (gclid) {
+        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
+      } else {
+        return `${url}&msclkid=${msclkid}&term_content=google`;
+      }
     };
 
     this.allProducts.forEach((ele) => {

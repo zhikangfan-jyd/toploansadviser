@@ -48,7 +48,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     extractCSS: true,
-    
+
     optimization: {
       minimize: true,
       // 控制分包，但总体积不变，效果不大
@@ -108,10 +108,10 @@ export default {
     }
   },
   axios: {
-    baseURL: 'http://127.0.0.1:3100'
+    baseURL: 'http://192.168.50.107:3100'
   },
   server: {
     port: '3100',
-    host: '127.0.0.1'
+    host: '192.168.50.107'
   }
 }

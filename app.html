@@ -4,8 +4,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <head {{ HEAD_ATTRS }}>
-  <meta property="fb:app_id" content="1234567890" />
-  <meta property="og:type" content="article" />
+  <meta property="fb:app_id" content="1234567890"/>
+  <meta property="og:type" content="article"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,79 +20,86 @@
           ', target-densitydpi=320">');
         i > 2.3 ? document.write('<meta name="viewport" content="width=414, minimum-scale = ' + e +
           ", maximum-scale = " + e + ', target-densitydpi=device-dpi">') : document.write(
-            '<meta name="viewport" content="width=414, target-densitydpi=device-dpi">')
+          '<meta name="viewport" content="width=414, target-densitydpi=device-dpi">')
       } else document.write(
         '<meta name="viewport" content="width=414, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">'
       )
     }
+
     viewport()
 
   </script>
   <script type="text/javascript">
-      (function (win) {
-        var tid;
+    (function (win) {
+      var tid;
 
-        function refreshRem() {
-          let designSize = 1920;
-          let html = document.documentElement;
-          let wW = html.clientWidth;
-          let rem = 100;
-          if (wW >= 320 && wW < 375) {
-            rem = 60;
-          } else if (wW >= 375 && wW < 414) {
-            rem = 70
-          } else if (wW >= 414 && wW <= 750) {
-            rem = 90;
-          } else if (wW > 750 && wW < 1024) {
-            rem = 65;
-          } else if (wW >= 1024 && wW < 1100) {
-            rem = 80;
-          } else if (wW >= 1100 && wW < 1280) {
-            rem = 80;
-          } else if (wW >= 1280 && wW < 1366) {
-            rem = 85;
-          } else if (wW >= 1366 && wW < 1400) {
-            rem = 90;
-          } else if (wW >= 1400 && wW < 1680) {
-            rem = 90;
-          } else if (wW >= 1680 && wW < 1920) {
-            rem = 100;
-          } else if (wW >= 1920) {
-            rem = 100;
-          };
-          document.documentElement.style.fontSize = rem + 'px';
+      function refreshRem() {
+        let designSize = 1920;
+        let html = document.documentElement;
+        let wW = html.clientWidth;
+        let rem = 100;
+        if (wW >= 320 && wW < 375) {
+          rem = 60;
+        } else if (wW >= 375 && wW < 414) {
+          rem = 80
+        } else if (wW >= 414 && wW <= 750) {
+          rem = 90;
+        } else if (wW > 750 && wW < 1024) {
+          rem = 65;
+        } else if (wW >= 1024 && wW < 1100) {
+          rem = 80;
+        } else if (wW >= 1100 && wW < 1280) {
+          rem = 80;
+        } else if (wW >= 1280 && wW < 1366) {
+          rem = 85;
+        } else if (wW >= 1366 && wW < 1400) {
+          rem = 90;
+        } else if (wW >= 1400 && wW < 1680) {
+          rem = 90;
+        } else if (wW >= 1680 && wW < 1920) {
+          rem = 100;
+        } else if (wW >= 1920) {
+          rem = 100;
         }
-        win.addEventListener('resize', function () {
+        ;
+        document.documentElement.style.fontSize = rem + 'px';
+      }
+
+      win.addEventListener('resize', function () {
+        clearTimeout(tid);
+        tid = setTimeout(refreshRem, 300);
+      }, false);
+      win.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
           clearTimeout(tid);
           tid = setTimeout(refreshRem, 300);
-        }, false);
-        win.addEventListener('pageshow', function (e) {
-          if (e.persisted) {
-            clearTimeout(tid);
-            tid = setTimeout(refreshRem, 300);
-          }
-        }, false);
-        refreshRem();
-      })(window)
+        }
+      }, false);
+      refreshRem();
+    })(window)
 
   </script>
   <!-- Global site tag (gtag.js) - Google Ads: 10786941463 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10786941463"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'AW-10786941463');
   </script>
   <!-- Event snippet for 提交表单 conversion page -->
   <script>
-    gtag('event', 'conversion', { 'send_to': 'AW-10786941463/Z-g4CO_vq_oCEJfUzpco' });
+    gtag('event', 'conversion', {'send_to': 'AW-10786941463/Z-g4CO_vq_oCEJfUzpco'});
   </script>
-  <meta name="facebook-domain-verification" content="a8fz1rmdadbrw294b07sric1qhe1yt" />
+  <meta name="facebook-domain-verification" content="a8fz1rmdadbrw294b07sric1qhe1yt"/>
   <!-- Facebook Pixel Code -->
   <script>
-    ! function (f, b, e, v, n, t, s) {
+    !function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
       n = f.fbq = function () {
         n.callMethod ?
@@ -115,7 +122,7 @@
 
   </script>
   <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1315554345526262&ev=PageView&noscript=1" /></noscript>
+                 src="https://www.facebook.com/tr?id=1315554345526262&ev=PageView&noscript=1"/></noscript>
   <!-- End Facebook Pixel Code -->
   <!-- Google Tag Manager -->
   <script>
@@ -138,8 +145,10 @@
   <!-- End Google Tag Manager -->
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZBT7ZB" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZBT7ZB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
   <script>
@@ -177,7 +186,7 @@
 </head>
 
 <body {{ BODY_ATTRS }}>
-  {{ APP }}
+{{ APP }}
 </body>
 
 </html>

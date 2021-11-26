@@ -1267,6 +1267,9 @@
 
                           .phone-text {
                             display: inline-block;
+                            font-size: 18px;
+                            color: #001139;
+                            font-weight: 400;
                           }
 
                           .pc-text {
@@ -1279,6 +1282,7 @@
                             color: #001139;
                             margin-left: 0;
                           }
+                          font-size: 16px;
                         }
                       }
 
@@ -1298,7 +1302,9 @@
                     margin-bottom: 20px;
 
                     .btn {
-                      width: 100%;
+                      width: 70%;
+                      height: 60px;
+                      line-height: 60px;
                       font-size: 18px;
                       font-weight: bold;
                     }
@@ -1384,11 +1390,17 @@
 
                         .phone-text {
                           display: inline-block;
+                          font-size: 18px;
+                          color: #001139;
+                          font-weight: 400;
                         }
 
                         .pc-text {
                           display: none;
                         }
+                      }
+                      dd {
+                        font-size: 16px;
                       }
                     }
 
@@ -1408,7 +1420,9 @@
                   margin-bottom: 20px;
 
                   .btn {
-                    width: 100%;
+                    width: 70%;
+                    height: 60px;
+                    line-height: 60px;
                     font-size: 18px;
                     font-weight: bold;
                   }

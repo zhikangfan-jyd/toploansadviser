@@ -1186,7 +1186,9 @@
 
                         .phone-text {
                           display: inline-block;
-                          color: #001139ab;
+                          color: #001139;
+                          font-size: 18px;
+                          font-weight: 400;
                           // margin-bottom: 10px;
                         }
 
@@ -1198,6 +1200,7 @@
                       dd {
                         .text {
                           font-size: 16px;
+                          color: #001139;
                         }
                       }
                     }
@@ -1214,9 +1217,9 @@
 
                     .title {
                       display: block;
-                      font-size: 14px;
-                      color: #001139ab;
-                      font-weight: 600;
+                      font-size: 18px;
+                      color: #001139;
+                      font-weight: 400;
                       margin-bottom: 10px;
                     }
 
@@ -1238,7 +1241,11 @@
                   margin-bottom: 20px;
 
                   .btn {
-                    width: 100%;
+                    width: 70%;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 18px;
+                    font-weight: 600;
                   }
                 }
               }

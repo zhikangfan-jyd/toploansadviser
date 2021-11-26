@@ -439,6 +439,7 @@
                     "
                     class="btn"
                   >
+
                     <h3
                       class="text"
                       style="display: inline; font-weight: normal"
@@ -566,6 +567,14 @@ import { computeScore, formatNum } from "../utils/index";
 import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 export default {
+  head: {
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/personal-loan",
+      },
+    ],
+  },
   components: {
     FoldTheCard,
   },
@@ -692,14 +701,10 @@ export default {
     },
     filterByAmount(options) {
       // 如果当前的最小值，大于要比较的值的最大值，或者当前的最大值小于要比较的最小值
-      if (
-        options.min > this.loan_amount.max ||
-        options.max < this.loan_amount.min
-      ) {
-        return false;
-      }
+      return !(options.min > this.loan_amount.max ||
+        options.max < this.loan_amount.min);
 
-      return true;
+
     },
     filterByCreditScore(score) {
       return score >= this.credit_score.min && score <= this.credit_score.max;

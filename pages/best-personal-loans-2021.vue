@@ -26,7 +26,7 @@
         </div>
         <img
           src="@/assets/img/best-personal-loans-2021-bg.webp"
-          alt="best presonal loans 2021"
+          alt="best personal loans 2021"
           class="banner-img"
         />
       </div>
@@ -360,7 +360,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/personal-loan/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -381,7 +381,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/personal-loan/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -524,7 +524,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -542,7 +542,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"

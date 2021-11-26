@@ -377,6 +377,14 @@
 import FoldTheCard from "../components/FoldTheCard/index";
 import { computeScore } from "../utils/index";
 export default {
+  head: {
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/student-loan",
+      },
+    ],
+  },
   components: {
     FoldTheCard,
   },

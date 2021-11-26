@@ -787,13 +787,16 @@ export default {
     // 拼接 msclkid 参数
     const changeLink = (url) => {
       let aff_sub = "",
-        msclkid = "";
+        msclkid = "",
+        gclid = this.$route.query['gclid'];
 
       // 判断hash是否有值
       if (this.$route.hash === "") {
         aff_sub = this.$route.query["utm_term"];
         msclkid = this.$route.query["msclkid"];
-      } else {
+
+      }
+      else {
         let arr = this.$route.hash.split("&");
         let hashParams = {};
 
@@ -811,7 +814,13 @@ export default {
         msclkid = this.$route.query["msclkid"] + arr[0];
       }
 
-      return `${url}&msclkid=${msclkid}&term_content=google`;
+      if (gclid) {
+        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
+      } else {
+        return `${url}&msclkid=${msclkid}&term_content=google`;
+      }
+
+
     };
 
     this.allProducts.forEach((ele) => {
