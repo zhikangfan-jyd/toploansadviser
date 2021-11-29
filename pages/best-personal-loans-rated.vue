@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loan 2021</span>
+            <span>Best Personal</span> <span>Loans 2021</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -25,8 +25,8 @@
           </p>
         </div>
         <img
-          src="@/assets/img/best-personal-loans-2021-bg.webp"
-          alt="best personal loans 2021"
+          src="@/assets/img/about-us-banner-bg.webp"
+          alt=""
           class="banner-img"
         />
       </div>
@@ -186,7 +186,7 @@
             </div>
             <div class="disclosure">
               <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
+              >Advertising Disclosure</nuxt-link
               >
             </div>
           </div>
@@ -231,7 +231,7 @@
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"
-                    ><strong>503 users</strong> chose this site today</span
+                  ><strong>503 users</strong> chose this site today</span
                   >
                 </div>
                 <div class="product-item-container">
@@ -246,7 +246,7 @@
                           trigger="hover"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.disclaimer }}</p>
@@ -292,7 +292,7 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                          >Read Review</nuxt-link
+                        >Read Review</nuxt-link
                         >
                       </div>
                     </div>
@@ -311,7 +311,7 @@
                             class="text"
                             style="display: inline; font-weight: normal"
                           >
-                            Min. Credit Score: {{ item.compare.credit_score }}
+                            Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
                             <el-popover
                               placement="bottom"
                               width="280"
@@ -319,7 +319,7 @@
                               v-if="item.compare.credit_text != ''"
                             >
                               <span class="iconfont" slot="reference"
-                                >&#xe669;</span
+                              >&#xe669;</span
                               >
                               <div class="content">
                                 <p>{{ item.compare.credit_text }}</p>
@@ -330,37 +330,37 @@
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            APR：{{ item.compare.apr.min }}% -
-                            {{ item.compare.apr.max }}%
+                            APR：<strong>{{ item.compare.apr.min }}% -
+                            {{ item.compare.apr.max }}%</strong>
                           </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Term：{{ item.compare.term }}</p>
+                          <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                         </dd>
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <h5 class="title">Loan Amount</h5>
+                      <h5 class="title">Loan Amount:</h5>
                       <span
                         class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
-                        ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                        ><span
-                          >${{ formatNum(String(item.amount.max)) }}</span
-                        ></span
+                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                      ><span
+                      >${{ formatNum(String(item.amount.max)) }}</span
+                      ></span
                       >
                       <span class="text-box" v-else
-                        ><span>up to</span>
+                      ><span>up to</span>
                         <span
-                          >${{ formatNum(String(item.amount.min)) }}</span
+                        >${{ formatNum(String(item.amount.min)) }}</span
                         ></span
                       >
                     </div>
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/personal-loan/'+ item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -376,16 +376,16 @@
                         class="text"
                         style="display: inline;"
                       >
-                        Check My Rate
+                        Check My Rates
                       </h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/personal-loan/'+item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
-                      >Visit site »</a
+                    >Visit site »</a
                     >
                   </div>
                 </div>
@@ -459,7 +459,7 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                      >Read Review</nuxt-link
+                    >Read Review</nuxt-link
                     >
                   </div>
                 </div>
@@ -478,7 +478,7 @@
                         class="text"
                         style="display: inline; font-weight: normal"
                       >
-                        Min. Credit Score: {{ item.compare.credit_score }}
+                        Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
 
                         <el-popover
                           placement="bottom"
@@ -487,7 +487,7 @@
                           v-if="item.compare.credit_text != ''"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.compare.credit_text }}</p>
@@ -498,33 +498,33 @@
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        APR：{{ item.compare.apr.min }}% -
-                        {{ item.compare.apr.max }}%
+                        APR：<strong>{{ item.compare.apr.min }}% -
+                        {{ item.compare.apr.max }}%</strong>
                       </p>
                     </dd>
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
-                      <p class="text">Term：{{ item.compare.term }}</p>
+                      <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                     </dd>
                   </dl>
                 </div>
                 <div class="terms-box">
                   <h5 class="title">Loan Amount</h5>
                   <span v-if="item.amount.max !== 'Infinity'" class="text-box"
-                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                    ><span
-                      >${{ formatNum(String(item.amount.max)) }}</span
-                    ></span
+                  ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                  ><span
+                  >${{ formatNum(String(item.amount.max)) }}</span
+                  ></span
                   >
                   <span class="text-box" v-else
-                    ><span>up to</span>
+                  ><span>up to</span>
                     <span>${{ formatNum(String(item.amount.min)) }}</span></span
                   >
                 </div>
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/personal-loan/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -537,16 +537,16 @@
                   class="btn"
                 >
                   <h3 class="text" style="display: inline;">
-                    Check My Rate
+                    Check My Rates
                   </h3>
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/personal-loan/'+item.name"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
-                  >Visit site »</a
+                >Visit site »</a
                 >
               </div>
             </div>
@@ -599,9 +599,9 @@
                   src="@/assets/img/q1.webp"
                   alt="article about reliability"
                 /><img
-                  src="@/assets/img/q2.webp"
-                  alt="article about reliability"
-                />
+                src="@/assets/img/q2.webp"
+                alt="article about reliability"
+              />
                 <img
                   src="@/assets/img/q3.webp"
                   alt="article about reliability"
@@ -622,6 +622,14 @@ import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
+  head: {
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/personal-loan",
+      }
+    ]
+  },
   components: {
     FoldTheCard,
     CalculatorPopup,
@@ -629,7 +637,7 @@ export default {
   async asyncData({ $axios, redirect, route }) {
     try {
       let products_results = await $axios.$get(
-        "/data/best-personal-loans-2021.json"
+        "/data/person_loan_product.json"
       );
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
@@ -787,13 +795,16 @@ export default {
     // 拼接 msclkid 参数
     const changeLink = (url) => {
       let aff_sub = "",
-        msclkid = "";
+        msclkid = "",
+        gclid = this.$route.query['gclid'];
 
       // 判断hash是否有值
       if (this.$route.hash === "") {
         aff_sub = this.$route.query["utm_term"];
         msclkid = this.$route.query["msclkid"];
-      } else {
+
+      }
+      else {
         let arr = this.$route.hash.split("&");
         let hashParams = {};
 
@@ -811,7 +822,13 @@ export default {
         msclkid = this.$route.query["msclkid"] + arr[0];
       }
 
-      return `${url}&msclkid=${msclkid}&term_content=google`;
+      if (gclid) {
+        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
+      } else {
+        return `${url}&msclkid=${msclkid}&term_content=google`;
+      }
+
+
     };
 
     this.allProducts.forEach((ele) => {
@@ -819,6 +836,7 @@ export default {
         ele.link = changeLink(ele.link);
       }
     });
+
 
     let clientWidth = $(window).width();
     if (clientWidth <= 750) {
@@ -857,5 +875,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/best-personal-loans-2021.scss";
+@import "~assets/scss/personal-loan.scss";
 </style>

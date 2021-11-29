@@ -1,5 +1,6 @@
 <template>
   <main class="main-container">
+    <div v-if="review.ld" v-html="review.ld"></div>
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
