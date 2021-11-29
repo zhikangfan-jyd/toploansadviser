@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loan 2021</span>
+            <span>Best Personal</span> <span>Loans 2021</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -311,7 +311,7 @@
                             class="text"
                             style="display: inline; font-weight: normal"
                           >
-                            Min. Credit Score: {{ item.compare.credit_score }}
+                            Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
                             <el-popover
                               placement="bottom"
                               width="280"
@@ -330,18 +330,18 @@
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            APR：{{ item.compare.apr.min }}% -
-                            {{ item.compare.apr.max }}%
+                            APR：<strong>{{ item.compare.apr.min }}% -
+                            {{ item.compare.apr.max }}%</strong>
                           </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Term：{{ item.compare.term }}</p>
+                          <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                         </dd>
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <h5 class="title">Loan Amount</h5>
+                      <h5 class="title">Loan Amount:</h5>
                       <span
                         class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
@@ -376,7 +376,7 @@
                         class="text"
                         style="display: inline;"
                       >
-                        Check My Rate
+                        Check My Rates
                       </h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -478,7 +478,7 @@
                         class="text"
                         style="display: inline; font-weight: normal"
                       >
-                        Min. Credit Score: {{ item.compare.credit_score }}
+                        Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
 
                         <el-popover
                           placement="bottom"
@@ -498,13 +498,13 @@
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        APR：{{ item.compare.apr.min }}% -
-                        {{ item.compare.apr.max }}%
+                        APR：<strong>{{ item.compare.apr.min }}% -
+                        {{ item.compare.apr.max }}%</strong>
                       </p>
                     </dd>
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
-                      <p class="text">Term：{{ item.compare.term }}</p>
+                      <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                     </dd>
                   </dl>
                 </div>
@@ -537,7 +537,7 @@
                   class="btn"
                 >
                   <h3 class="text" style="display: inline;">
-                    Check My Rate
+                    Check My Rates
                   </h3>
                   <span class="iconfont">&#xe63c;</span>
                 </a>
@@ -828,6 +828,40 @@ export default {
         ele.link = changeLink(ele.link);
       }
     });
+
+
+    let clientWidth = $(window).width();
+    if (clientWidth <= 750) {
+      let top = $('.banner-container .website-title').offset().top;
+      let headerHeight = $('.header-container').height();
+      $(window).on('scroll', function () {
+        if ($(this).scrollTop() > top) {
+          $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
+          $('.banner-container .website-title').css({
+            position: 'fixed',
+            top: headerHeight + 'px',
+            fontSize: '.2rem',
+            textAlign: 'center',
+            width: '100%',
+            left: 0,
+            color: '#fff',
+            backgroundColor: 'rgb(26,119,129)'
+          })
+        } else {
+          $('.banner-container .website-title').text('Best Personal Loans 2021');
+          $('.banner-container .website-title').css({
+            position: 'static',
+            top: headerHeight + 'px',
+            textAlign: 'left',
+            width: 'auto',
+            fontSize: '0.36rem',
+            color: '#001139',
+            left: 0,
+            backgroundColor: 'transparent'
+          })
+        }
+      })
+    }
   },
 };
 </script>

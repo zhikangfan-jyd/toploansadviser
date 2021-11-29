@@ -192,16 +192,28 @@ export default {
       //判断屏幕宽度
       if (width <= 750) {
         // 点击任意链接都需收回
-        $("a").on("click", () => {
-          $(".header-container .header-nav-list").slideUp("fast");
-          $(".header-container .header-nav-list .reviews-list").slideUp("fast");
-        });
+        // $("a").on("click", () => {
+        //   $(".header-container .header-nav-list").slideUp("fast");
+        //   $(".header-container .header-nav-list .reviews-list").slideUp("fast");
+        // });
+        //
+        // $(".header-container .header-nav-list .reviews").on("click", () => {
+        //
+        // });
 
-        $(".header-container .header-nav-list .reviews").on("click", () => {
-          $(".header-container .header-nav-list .reviews-list").slideToggle(
-            "fast"
-          );
-        });
+
+          $(document).on('click', (e) => {
+            console.log(e.target);
+            if ($(e.target).hasClass('phone-menu')) {
+              $(".header-container .header-nav-list").slideToggle("fast");
+            } else if ($(e.target).hasClass('reviews') || $(e.target).hasClass('reviews-title')) {
+              $(".header-container .header-nav-list .reviews-list").slideToggle("fast");
+            } else {
+              $(".header-container .header-nav-list").slideUp("fast");
+              $(".header-container .header-nav-list .reviews-list").slideUp("fast");
+            }
+
+          })
       } else {
         $(".header-container .header-nav-list .reviews").hover(
           () => {
@@ -217,9 +229,9 @@ export default {
         );
       }
 
-      $(".header-container .phone-menu").on("click", () => {
-        $(".header-container .header-nav-list").slideToggle("fast");
-      });
+      // $(".header-container .phone-menu").on("click", () => {
+      //   $(".header-container .header-nav-list").slideToggle("fast");
+      // });
     },
   },
   mounted() {
