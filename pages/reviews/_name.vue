@@ -1,6 +1,5 @@
 <template>
   <main class="main-container">
-    <div v-if="review.ld" v-html="review.ld"></div>
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
@@ -410,6 +409,14 @@ import { computeScore, formatNum } from "../../utils/index";
 import { shareToFB, shareToTwitter } from "../../utils/share";
 import CalculatorPopup from "~/components/CalculatorPopup/index.vue";
 export default {
+  head() {
+    return {
+      script: [{
+        type: 'application/ld+json',
+        json: this.ld || ''
+      }]
+    }
+  },
   components: {
     CalculatorPopup,
   },
@@ -443,6 +450,7 @@ export default {
       let source = "/data/reviews/" + name + ".json";
       let results = await $axios.$get(source);
       return {
+        ld: results.data.ld,
         product: product,
         mainLink: mainLink,
         mainName: mainName,

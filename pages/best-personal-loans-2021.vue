@@ -311,7 +311,7 @@
                             class="text"
                             style="display: inline; font-weight: normal"
                           >
-                            Min. Credit Score: {{ item.compare.credit_score }}
+                            Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
                             <el-popover
                               placement="bottom"
                               width="280"
@@ -330,13 +330,13 @@
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            APR：{{ item.compare.apr.min }}% -
-                            {{ item.compare.apr.max }}%
+                            APR：<strong>{{ item.compare.apr.min }}% -
+                            {{ item.compare.apr.max }}%</strong>
                           </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Term：{{ item.compare.term }}</p>
+                          <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                         </dd>
                       </dl>
                     </div>
@@ -478,7 +478,7 @@
                         class="text"
                         style="display: inline; font-weight: normal"
                       >
-                        Min. Credit Score: {{ item.compare.credit_score }}
+                        Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
 
                         <el-popover
                           placement="bottom"
@@ -498,13 +498,13 @@
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        APR：{{ item.compare.apr.min }}% -
-                        {{ item.compare.apr.max }}%
+                        APR：<strong>{{ item.compare.apr.min }}% -
+                        {{ item.compare.apr.max }}%</strong>
                       </p>
                     </dd>
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
-                      <p class="text">Term：{{ item.compare.term }}</p>
+                      <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                     </dd>
                   </dl>
                 </div>
