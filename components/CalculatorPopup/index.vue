@@ -7,7 +7,8 @@
         >Calculator</span
       >
     </div>
-    <div :class="{ 'calculator-popup-container': true, hidden: flag }">
+    <div :class="{'hidden': flag, 'mask': true}">
+      <div class="calculator-popup-container">
       <h6 class="calculator-popup-title">Wanna <span class="g">Know?</span></h6>
       <span class="iconfont cha-iconfont" @click="hiddenPopup">&#xe614;</span>
       <div class="counter-container">
@@ -77,6 +78,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>

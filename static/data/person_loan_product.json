@@ -29,6 +29,9 @@
         {
             "name": "lightstream",
             "review_key": "lightstream",
+          "seo": {
+            "title": ""
+          },
             "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
             "logo": "/data/images/lightstream.webp",
             "upto": "1000000",

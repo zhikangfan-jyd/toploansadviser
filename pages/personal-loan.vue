@@ -1,23 +1,22 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
+      <div class="slogan">We explore smarter online personal loan lenders for the coming Christmas day!</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loans 2021</span>
+            <span>Best Personal</span> <span>Loans {{ updateTime().month.short }} {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
             <div>
               To
               <h2 style="display: inline; font-weight: normal">
-                find the best personal loan for your financial situation
-              </h2>
-              , it's best to shop around and
+                find the best personal loan for your financial situation,
+              </h2>it's best to shop around and
               <h2 style="display: inline; font-weight: normal">
-                compare personal loan rates from multiple lenders
+                compare personal loan rates from multiple lenders.
               </h2>
-              .
             </div>
           </div>
           <p class="update">
@@ -26,7 +25,7 @@
         </div>
         <img
           src="@/assets/img/about-us-banner-bg.webp"
-          alt=""
+          alt="Best Personal Loans"
           class="banner-img"
         />
       </div>
@@ -36,7 +35,7 @@
         <div class="product-container">
           <div class="product-container-top-box">
             <div class="filter-box">
-              <span class="title">Filter By</span>
+              <span class="title">Choose the right lender for you:</span>
               <div class="filter-list">
                 <div class="filter-item">
                   <div class="title-box">Loan Amount</div>
@@ -185,9 +184,13 @@
               </div>
             </div>
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
+              <span class="title"
+                    @click="handleShowDisclosure"
+                >Advertising Disclosure</span
               >
+              <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
+                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+              </div>
             </div>
           </div>
           <div class="product-list-box">
@@ -237,7 +240,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -434,7 +437,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" />
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
                   <div class="disclaimer" v-if="item.disclaimer != ''">
                     Disclaimer
                     <el-popover placement="bottom" width="320" trigger="hover">
@@ -689,6 +692,7 @@ export default {
   },
   data() {
     return {
+      isShowDisclosure: false,
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -711,6 +715,9 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    handleShowDisclosure() {
+      this.isShowDisclosure = !this.isShowDisclosure;
+    },
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
@@ -871,39 +878,46 @@ export default {
       }
     });
 
-
-    let clientWidth = $(window).width();
-    if (clientWidth <= 750) {
-      let top = $('.banner-container .website-title').offset().top;
-      let headerHeight = $('.header-container').height();
-      $(window).on('scroll', function () {
-        if ($(this).scrollTop() > top) {
-          $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
-          $('.banner-container .website-title').css({
-            position: 'fixed',
-            top: headerHeight + 'px',
-            fontSize: '.2rem',
-            textAlign: 'center',
-            width: '100%',
-            left: 0,
-            color: '#fff',
-            backgroundColor: 'rgb(26,119,129)'
-          })
-        } else {
-          $('.banner-container .website-title').text('Best Personal Loans 2021');
-          $('.banner-container .website-title').css({
-            position: 'static',
-            top: headerHeight + 'px',
-            textAlign: 'left',
-            width: 'auto',
-            fontSize: '0.36rem',
-            color: '#001139',
-            left: 0,
-            backgroundColor: 'transparent'
-          })
-        }
-      })
+    function showSlogan() {
+      let clientWidth = $(window).width();
+      if (clientWidth <= 750) {
+        let top = $('.banner-container .website-title').offset().top;
+        let headerHeight = $('.header-container').height();
+        $(window).on('scroll', function () {
+          if ($(this).scrollTop() > top) {
+            $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
+            $('.banner-container .website-title').css({
+              position: 'fixed',
+              top: headerHeight + 'px',
+              fontSize: '.2rem',
+              textAlign: 'center',
+              width: '100%',
+              left: 0,
+              color: '#fff',
+              backgroundColor: 'rgb(26,119,129)'
+            })
+          } else {
+            $('.banner-container .website-title').text('Best Personal Loans 2021');
+            $('.banner-container .website-title').css({
+              position: 'static',
+              top: headerHeight + 'px',
+              textAlign: 'left',
+              width: 'auto',
+              fontSize: '0.36rem',
+              color: '#001139',
+              left: 0,
+              backgroundColor: 'transparent'
+            })
+          }
+        })
+      }
     }
+
+    showSlogan();
+
+    $(window).on('resize',showSlogan)
+
+
   },
 };
 </script>

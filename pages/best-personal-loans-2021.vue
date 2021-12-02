@@ -237,7 +237,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -434,7 +434,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" />
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                   <div class="disclaimer" v-if="item.disclaimer != ''">
                     Disclaimer
                     <el-popover placement="bottom" width="320" trigger="hover">
