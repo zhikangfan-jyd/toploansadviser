@@ -1,6 +1,7 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
+      <div class="slogan">We explore smarter online personal loan lenders for the coming Christmas day!</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
@@ -11,13 +12,11 @@
             <div>
               To
               <h2 style="display: inline; font-weight: normal">
-                find the best personal loan for your financial situation
-              </h2>
-              , it's best to shop around and
+                find the best personal loan for your financial situation,
+              </h2>it's best to shop around and
               <h2 style="display: inline; font-weight: normal">
-                compare personal loan rates from multiple lenders
+                compare personal loan rates from multiple lenders.
               </h2>
-              .
             </div>
           </div>
           <p class="update">
@@ -185,9 +184,13 @@
               </div>
             </div>
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
+              <span class="title"
+                    @click="handleShowDisclosure"
+              >Advertising Disclosure</span
               >
+              <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
+                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+              </div>
             </div>
           </div>
           <div class="product-list-box">
@@ -647,6 +650,7 @@ export default {
   },
   data() {
     return {
+      isShowDisclosure: false,
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -668,7 +672,10 @@ export default {
   methods: {
     computeScore,
     formatNum,
-    updateTime,
+    updateTime,handleShowDisclosure() {
+      this.isShowDisclosure = !this.isShowDisclosure;
+    },
+
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
