@@ -1,23 +1,22 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
+      <div class="slogan">We explore smarter online personal loan lenders for the coming Christmas day!</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loan 2021</span>
+            <span>Best Personal</span> <span>Loans {{ updateTime().month.short }} {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
             <div>
               To
               <h2 style="display: inline; font-weight: normal">
-                find the best personal loan for your financial situation
-              </h2>
-              , it's best to shop around and
+                find the best personal loan for your financial situation,
+              </h2>it's best to shop around and
               <h2 style="display: inline; font-weight: normal">
-                compare personal loan rates from multiple lenders
+                compare personal loan rates from multiple lenders.
               </h2>
-              .
             </div>
           </div>
           <p class="update">
@@ -26,7 +25,7 @@
         </div>
         <img
           src="@/assets/img/about-us-banner-bg.webp"
-          alt=""
+          alt="Best Personal Loans"
           class="banner-img"
         />
       </div>
@@ -36,7 +35,7 @@
         <div class="product-container">
           <div class="product-container-top-box">
             <div class="filter-box">
-              <span class="title">Filter By</span>
+              <span class="title">Choose the right lender for you:</span>
               <div class="filter-list">
                 <div class="filter-item">
                   <div class="title-box">Loan Amount</div>
@@ -185,9 +184,13 @@
               </div>
             </div>
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
+              <span class="title"
+                    @click="handleShowDisclosure"
+              >Advertising Disclosure</span
               >
+              <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
+                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+              </div>
             </div>
           </div>
           <div class="product-list-box">
@@ -231,13 +234,13 @@
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"
-                    ><strong>503 users</strong> chose this site today</span
+                  ><strong>503 users</strong> chose this site today</span
                   >
                 </div>
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -246,7 +249,7 @@
                           trigger="hover"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.disclaimer }}</p>
@@ -292,7 +295,7 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                          >Read Review</nuxt-link
+                        >Read Review</nuxt-link
                         >
                       </div>
                     </div>
@@ -311,7 +314,7 @@
                             class="text"
                             style="display: inline; font-weight: normal"
                           >
-                            Min. Credit Score: {{ item.compare.credit_score }}
+                            Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
                             <el-popover
                               placement="bottom"
                               width="280"
@@ -319,7 +322,7 @@
                               v-if="item.compare.credit_text != ''"
                             >
                               <span class="iconfont" slot="reference"
-                                >&#xe669;</span
+                              >&#xe669;</span
                               >
                               <div class="content">
                                 <p>{{ item.compare.credit_text }}</p>
@@ -330,50 +333,53 @@
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            APR：{{ item.compare.apr.min }}% -
-                            {{ item.compare.apr.max }}%
+                            APR：<strong>{{ item.compare.apr.min }}% -
+                            {{ item.compare.apr.max }}%</strong>
                           </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
-                          <p class="text">Term：{{ item.compare.term }}</p>
+                          <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                         </dd>
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <h5 class="title">Loan Amount</h5>
+                      <h5 class="title">Loan Amount:</h5>
                       <span
                         class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
-                        ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                        ><span
-                          >${{ formatNum(String(item.amount.max)) }}</span
-                        ></span
+                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                      ><span
+                      >${{ formatNum(String(item.amount.max)) }}</span
+                      ></span
                       >
                       <span class="text-box" v-else
-                        ><span>up to</span>
+                      ><span>up to</span>
                         <span
-                          >${{ formatNum(String(item.amount.min)) }}</span
+                        >${{ formatNum(String(item.amount.min)) }}</span
                         ></span
                       >
                     </div>
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/personal-loan/'+item.name"
+                      :href="'/redirect/personal-loan/'+ item.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
                         handleTracking({
                           name: item.name,
                           click_time: new Date().getTime(),
-                          link: item.link
+                          link: item.link,
                         })
                       "
                       class="btn"
                     >
-                      <h3 class="text" style="display: inline">
-                        Check My Rate
+                      <h3
+                        class="text"
+                        style="display: inline;"
+                      >
+                        Check My Rates
                       </h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
@@ -382,7 +388,7 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
-                      >Visit site »</a
+                    >Visit site »</a
                     >
                   </div>
                 </div>
@@ -456,7 +462,7 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                      >Read Review</nuxt-link
+                    >Read Review</nuxt-link
                     >
                   </div>
                 </div>
@@ -475,7 +481,7 @@
                         class="text"
                         style="display: inline; font-weight: normal"
                       >
-                        Min. Credit Score: {{ item.compare.credit_score }}
+                        Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
 
                         <el-popover
                           placement="bottom"
@@ -484,7 +490,7 @@
                           v-if="item.compare.credit_text != ''"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.compare.credit_text }}</p>
@@ -495,26 +501,26 @@
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        APR：{{ item.compare.apr.min }}% -
-                        {{ item.compare.apr.max }}%
+                        APR：<strong>{{ item.compare.apr.min }}% -
+                        {{ item.compare.apr.max }}%</strong>
                       </p>
                     </dd>
                     <dd>
                       <span class="iconfont">&#xe65a;</span>
-                      <p class="text">Term：{{ item.compare.term }}</p>
+                      <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
                     </dd>
                   </dl>
                 </div>
                 <div class="terms-box">
                   <h5 class="title">Loan Amount</h5>
                   <span v-if="item.amount.max !== 'Infinity'" class="text-box"
-                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                    ><span
-                      >${{ formatNum(String(item.amount.max)) }}</span
-                    ></span
+                  ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                  ><span
+                  >${{ formatNum(String(item.amount.max)) }}</span
+                  ></span
                   >
                   <span class="text-box" v-else
-                    ><span>up to</span>
+                  ><span>up to</span>
                     <span>${{ formatNum(String(item.amount.min)) }}</span></span
                   >
                 </div>
@@ -533,7 +539,9 @@
                   "
                   class="btn"
                 >
-                  <h3 class="text" style="display: inline">Check My Rate</h3>
+                  <h3 class="text" style="display: inline;">
+                    Check My Rates
+                  </h3>
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
@@ -541,7 +549,7 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
-                  >Visit site »</a
+                >Visit site »</a
                 >
               </div>
             </div>
@@ -594,9 +602,9 @@
                   src="@/assets/img/q1.webp"
                   alt="article about reliability"
                 /><img
-                  src="@/assets/img/q2.webp"
-                  alt="article about reliability"
-                />
+                src="@/assets/img/q2.webp"
+                alt="article about reliability"
+              />
                 <img
                   src="@/assets/img/q3.webp"
                   alt="article about reliability"
@@ -617,13 +625,55 @@ import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
-  head: {
-    link: [
-      {
-        rel: "canonical",
-        href: "https://www.toploansadviser.com/personal-loan",
-      },
-    ],
+  head() {
+    return {
+      title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
+      description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+      meta: [
+        {
+          property: 'og:title',
+          content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+        },
+        {
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.toploansadviser.com/personal-loan'
+        },
+        {
+          property: 'og:description',
+          content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp'
+        },
+        {
+          property: 'og:image:width',
+          content: '396'
+        },
+        {
+          property: 'og:image:height',
+          content: '280'
+        },
+        {
+          property: 'og:image:type',
+          content: 'image/webp'
+        },
+        {
+          property: 'og:image:alt',
+          content: 'Credible'
+        }
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://www.toploansadviser.com/personal-loan",
+        }
+      ]
+    }
   },
   components: {
     FoldTheCard,
@@ -650,6 +700,7 @@ export default {
   },
   data() {
     return {
+      isShowDisclosure: false,
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -672,6 +723,9 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    handleShowDisclosure() {
+      this.isShowDisclosure = !this.isShowDisclosure;
+    },
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
@@ -791,13 +845,15 @@ export default {
     const changeLink = (url) => {
       let aff_sub = "",
         msclkid = "",
-        gclid = this.$route.query["gclid"];
+        gclid = this.$route.query['gclid'];
 
       // 判断hash是否有值
       if (this.$route.hash === "") {
         aff_sub = this.$route.query["utm_term"];
         msclkid = this.$route.query["msclkid"];
-      } else {
+
+      }
+      else {
         let arr = this.$route.hash.split("&");
         let hashParams = {};
 
@@ -814,11 +870,14 @@ export default {
         }
         msclkid = this.$route.query["msclkid"] + arr[0];
       }
+
       if (gclid) {
         return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
       } else {
         return `${url}&msclkid=${msclkid}&term_content=google`;
       }
+
+
     };
 
     this.allProducts.forEach((ele) => {
@@ -826,10 +885,54 @@ export default {
         ele.link = changeLink(ele.link);
       }
     });
+
+    function showSlogan() {
+      let clientWidth = $(window).width();
+      if (clientWidth <= 750) {
+        let top = $('.banner-container .website-title').offset().top;
+
+        $(window).on('scroll', function () {
+          let headerHeight = document.querySelector('.header-container').clientHeight;
+          console.log(top, $(this).scrollTop());
+
+          if ($(this).scrollTop() > top) {
+            $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
+            $('.banner-container .website-title').css({
+              position: 'fixed',
+              top: headerHeight + 'px',
+              fontSize: '.2rem',
+              textAlign: 'center',
+              width: '100%',
+              left: 0,
+              color: '#fff',
+              backgroundColor: 'rgb(26,119,129)'
+            })
+          } else {
+            $('.banner-container .website-title').text('Best Personal Loans 2021');
+            $('.banner-container .website-title').css({
+              position: 'static',
+              top: headerHeight + 'px',
+              textAlign: 'left',
+              width: 'auto',
+              fontSize: '0.36rem',
+              color: '#001139',
+              left: 0,
+              backgroundColor: 'transparent'
+            })
+          }
+        })
+      }
+    }
+
+    showSlogan();
+
+    $(window).on('resize',showSlogan)
+
+
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/personal-loan.scss";
+@import "~assets/scss/best-online-personal-loans-2021.scss";
 </style>

@@ -2,7 +2,7 @@
   <ul class="fold-the-card-container">
     <li class="fold-the-card-item" v-for="(item, index) in data" :key="index">
       <div class="fold-the-card-title-box" @click="handleOpen(index)">
-        <h6 class="title">{{ item.title }}</h6>
+        <h2 class="title">{{ item.title }}</h2>
         <span class="iconfont"></span>
       </div>
       <div class="fold-the-card-content" v-html="item.content"></div>

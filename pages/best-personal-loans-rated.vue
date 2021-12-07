@@ -237,7 +237,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name":title="item.name" />
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -434,7 +434,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" />
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name" />
                   <div class="disclaimer" v-if="item.disclaimer != ''">
                     Disclaimer
                     <el-popover placement="bottom" width="320" trigger="hover">
@@ -623,6 +623,46 @@ import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
   head: {
+    title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
+    description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+    meta: [
+      {
+        property: 'og:title',
+        content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+      },
+      {
+        property: 'og:type',
+        content: 'article'
+      },
+      {
+        property: 'og:url',
+        content: 'https://www.toploansadviser.com/personal-loan'
+      },
+      {
+        property: 'og:description',
+        content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+      },
+      {
+        property: 'og:image',
+        content: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp'
+      },
+      {
+        property: 'og:image:width',
+        content: '396'
+      },
+      {
+        property: 'og:image:height',
+        content: '280'
+      },
+      {
+        property: 'og:image:type',
+        content: 'image/webp'
+      },
+      {
+        property: 'og:image:alt',
+        content: 'Credible'
+      }
+    ],
     link: [
       {
         rel: "canonical",
@@ -875,5 +915,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/personal-loan.scss";
+@import "~assets/scss/best-personal-loans-rated.scss";
 </style>

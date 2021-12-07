@@ -52,8 +52,9 @@
         .content {
           font-size: 18px;
           line-height: 24px;
-          width: 80%;
+          // color: #787e8b;
           color: #000;
+          // color: #fff;
         }
 
         .update {
@@ -75,10 +76,10 @@
 
     .banner-img {
       position: absolute;
-      right: -56px;
+      width: 396px;
+      height: 280px;
+      right: 0px;
       bottom: -6px;
-      height: 310px;
-      width: 592px;
     }
   }
 

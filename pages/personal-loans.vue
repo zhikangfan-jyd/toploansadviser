@@ -240,6 +240,7 @@
                       <img
                         :src="product.logo"
                         :alt="product.name"
+                        :title="product.name"
                         class="logo"
                       />
                     </a>
@@ -884,7 +885,7 @@
               :key="index"
             >
               <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
-                <img :src="product.logo" :alt="product.name" />
+                <img :src="product.logo" :alt="product.name" :title="product.name" />
               </a>
             </div>
           </div>
@@ -895,7 +896,7 @@
               :key="index"
             >
               <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
-                <img :src="product.logo" :alt="product.name" />
+                <img :src="product.logo" :alt="product.name" :title="product.name" />
               </a>
             </div>
           </div>
@@ -909,6 +910,50 @@
 import { formatNum } from "../utils/index";
 export default {
   layout: "personal",
+  head() {
+    return {
+      title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
+      description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+      meta: [
+        {
+          property: 'og:title',
+          content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+        },
+        {
+          property: 'og:type',
+          content: 'article'
+        },
+        {
+          property: 'og:url',
+          content: 'https://www.toploansadviser.com/personal-loan'
+        },
+        {
+          property: 'og:description',
+          content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp'
+        },
+        {
+          property: 'og:image:width',
+          content: '396'
+        },
+        {
+          property: 'og:image:height',
+          content: '280'
+        },
+        {
+          property: 'og:image:type',
+          content: 'image/webp'
+        },
+        {
+          property: 'og:image:alt',
+          content: 'Credible'
+        }
+      ]
+    }
+  },
   data() {
     return {
       credit_score: 5,
