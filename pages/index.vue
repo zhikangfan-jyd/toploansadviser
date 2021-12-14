@@ -206,11 +206,11 @@
           </div>
         </div>
         <div class="content-box" data-aos="fade-up">
-          <p class="text" data-aos="fade-up">
+          <h1 class="text" data-aos="fade-up" style="font-weight: normal;">
             Toploansadviser was founded to help consumers make educated
             financial decisions while learning more about various financial
             products.
-          </p>
+          </h1>
           <div class="desc-item">
             <img
               src="@/assets/img/index-pic-1.webp"
