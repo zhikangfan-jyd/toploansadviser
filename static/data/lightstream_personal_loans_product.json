@@ -55,7 +55,6 @@
       },
       "disclaimer": ""
     },
-
     {
       "name": "avant",
       "review_key": "avant",
@@ -83,32 +82,6 @@
       "disclaimer": ""
     },
     {
-      "name": "sofi",
-      "review_key": "sofi",
-      "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
-      "logo": "/data/images/sofi.webp",
-      "upto": "1000000",
-      "introduce": "Prequalify for your rate in 3 minutes",
-      "amount": {
-        "min": 5000,
-        "max": 100000
-      },
-      "rate": {
-        "max": 10,
-        "score": "9.5"
-      },
-      "compare": {
-        "credit_score": "680",
-        "credit_text": "",
-        "apr": {
-          "min": "5.99",
-          "max": "18.85"
-        },
-        "term": "24-84 months"
-      },
-      "disclaimer": ""
-    },
-    {
       "name": "lendingclub",
       "review_key": "",
       "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
@@ -121,7 +94,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "8.8"
+        "score": "9.5"
       },
       "compare": {
         "credit_score": "600",
@@ -131,6 +104,32 @@
           "max": "25.89"
         },
         "term": "36-60 months"
+      },
+      "disclaimer": ""
+    },
+    {
+      "name": "sofi",
+      "review_key": "sofi",
+      "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
+      "logo": "/data/images/sofi.webp",
+      "upto": "1000000",
+      "introduce": "Prequalify for your rate in 3 minutes",
+      "amount": {
+        "min": 5000,
+        "max": 100000
+      },
+      "rate": {
+        "max": 10,
+        "score": "8.8"
+      },
+      "compare": {
+        "credit_score": "680",
+        "credit_text": "",
+        "apr": {
+          "min": "5.99",
+          "max": "18.85"
+        },
+        "term": "24-84 months"
       },
       "disclaimer": ""
     },

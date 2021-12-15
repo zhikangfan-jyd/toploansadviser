@@ -1,6 +1,32 @@
 {
   "data": [
     {
+      "name": "avant",
+      "review_key": "avant",
+      "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+      "logo": "/data/images/avant.webp",
+      "upto": "1000000",
+      "introduce": "Clear and transparent process",
+      "amount": {
+        "min": 2000,
+        "max": 35000
+      },
+      "rate": {
+        "max": 10,
+        "score": "9.9"
+      },
+      "compare": {
+        "credit_score": "580",
+        "credit_text": "",
+        "apr": {
+          "min": "9.95",
+          "max": "35.99"
+        },
+        "term": "24-60 months"
+      },
+      "disclaimer": ""
+    },
+    {
       "name": "credible",
       "review_key": "credible",
       "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
@@ -13,7 +39,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.9"
+        "score": "9.8"
       },
       "compare": {
         "credit_score": "600",
@@ -29,6 +55,9 @@
     {
       "name": "lightstream",
       "review_key": "lightstream",
+      "seo": {
+        "title": ""
+      },
       "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
       "logo": "/data/images/lightstream.webp",
       "upto": "1000000",
@@ -39,7 +68,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.8"
+        "score": "9.6"
       },
       "compare": {
         "credit_score": "660",
@@ -49,32 +78,6 @@
           "max": "19.99"
         },
         "term": "24-84 months"
-      },
-      "disclaimer": ""
-    },
-    {
-      "name": "avant",
-      "review_key": "avant",
-      "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
-      "logo": "/data/images/avant.webp",
-      "upto": "1000000",
-      "introduce": "Clear and transparent process",
-      "amount": {
-        "min": 2000,
-        "max": 35000
-      },
-      "rate": {
-        "max": 10,
-        "score": "9.6"
-      },
-      "compare": {
-        "credit_score": "580",
-        "credit_text": "",
-        "apr": {
-          "min": "9.95",
-          "max": "35.99"
-        },
-        "term": "24-60 months"
       },
       "disclaimer": ""
     },
@@ -130,6 +133,7 @@
       },
       "disclaimer": ""
     },
+
     {
       "name": "upgrade",
       "review_key": "",
@@ -181,32 +185,6 @@
         "term": "36-60 months"
       },
       "disclaimer": ""
-    },
-    {
-      "name": "Marcus",
-      "review_key": "marcus",
-      "link": "https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0",
-      "logo": "/data/images/marcus.webp",
-      "upto": "1000000",
-      "introduce": "No sign-up & repayment fees",
-      "amount": {
-        "min": 3500,
-        "max": 40000
-      },
-      "rate": {
-        "max": 10,
-        "score": "7.8"
-      },
-      "compare": {
-        "credit_score": "720",
-        "credit_text": "600 minimum VantageScore® 3.0 and 660 minimum FICO® 9.0.",
-        "apr": {
-          "min": "6.99",
-          "max": "19.99"
-        },
-        "term": "36-72 months"
-      },
-      "disclaimer": "Marcus by Goldman Sachs Terms & Conditions: Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans). Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions. Receive an APR reduction when you enroll in AutoPay. This reduction will not be applied if AutoPay is not in effect. When enrolled, a larger portion of your monthly payment will be applied to your principal loan amount and less interest will accrue on your loan, which may result in a smaller final payment. See loan agreement for details."
     }
   ]
 }
