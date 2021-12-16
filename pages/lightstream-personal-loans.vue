@@ -5,7 +5,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loans {{ updateTime().month.short }} {{ updateTime().year }}</span>
+            <span>Best Personal</span> <span>Loan 2021</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -24,8 +24,8 @@
           </p>
         </div>
         <img
-          src="@/assets/img/about-us-banner-bg.webp"
-          alt="Best Personal Loans"
+          src="@/assets/img/best-personal-loans-2021-bg.webp"
+          alt="best personal loans 2021"
           class="banner-img"
         />
       </div>
@@ -35,7 +35,7 @@
         <div class="product-container">
           <div class="product-container-top-box">
             <div class="filter-box">
-              <span class="title">Choose the right lender for you:</span>
+              <span class="title">Filter By</span>
               <div class="filter-list">
                 <div class="filter-item">
                   <div class="title-box">Loan Amount</div>
@@ -240,7 +240,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -344,7 +344,7 @@
                       </dl>
                     </div>
                     <div class="terms-box">
-                      <h5 class="title">Loan Amount:</h5>
+                      <h5 class="title">Loan Amount</h5>
                       <span
                         class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
@@ -363,7 +363,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/personal-loan/'+ item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -379,12 +379,12 @@
                         class="text"
                         style="display: inline;"
                       >
-                        Check My Rates
+                        Check My Rate
                       </h3>
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/personal-loan/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -437,7 +437,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                   <div class="disclaimer" v-if="item.disclaimer != ''">
                     Disclaimer
                     <el-popover placement="bottom" width="320" trigger="hover">
@@ -527,7 +527,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -540,12 +540,12 @@
                   class="btn"
                 >
                   <h3 class="text" style="display: inline;">
-                    Check My Rates
+                    Check My Rate
                   </h3>
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
@@ -682,15 +682,17 @@ export default {
   async asyncData({ $axios, redirect, route }) {
     try {
       let products_results = await $axios.$get(
-        "/data/lightstream_personal_loans_product.json"
+        "/data/avant_personal_loans_product.json"
       );
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
       );
 
+      products_results.data.forEach(ele => {
+        ele.gclid = route.query['gclid'];
+      })
       return {
         allProducts: products_results.data,
-        // count: products_results.data.length,
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
@@ -722,10 +724,10 @@ export default {
   methods: {
     computeScore,
     formatNum,
-    updateTime,
-    handleShowDisclosure() {
+    updateTime,handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },
+
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
@@ -841,98 +843,44 @@ export default {
     this.handleFilter();
   },
   mounted() {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = "",
-        msclkid = "",
-        gclid = this.$route.query['gclid'];
 
-      // 判断hash是否有值
-      if (this.$route.hash === "") {
-        aff_sub = this.$route.query["utm_term"];
-        msclkid = this.$route.query["msclkid"];
+    let clientWidth = $(window).width();
+    if (clientWidth <= 750) {
+      let top = $('.banner-container .website-title').offset().top;
 
-      }
-      else {
-        let arr = this.$route.hash.split("&");
-        let hashParams = {};
-
-        arr.forEach((ele, index) => {
-          if (index != 0) {
-            let hashArr = ele.split("=");
-            hashParams[hashArr[0]] = hashArr[1];
-          }
-        });
-        aff_sub = hashParams["utm_term"];
-
-        if (!aff_sub) {
-          aff_sub = this.$route.query["utm_term"];
+      $(window).on('scroll', function () {
+        let headerHeight = $('.header-container').height();
+        if ($(this).scrollTop() > top) {
+          $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
+          $('.banner-container .website-title').css({
+            position: 'fixed',
+            top: headerHeight + 'px',
+            fontSize: '.2rem',
+            textAlign: 'center',
+            width: '100%',
+            left: 0,
+            color: '#fff',
+            backgroundColor: 'rgb(26,119,129)'
+          })
+        } else {
+          $('.banner-container .website-title').text('Best Personal Loans 2021');
+          $('.banner-container .website-title').css({
+            position: 'static',
+            top: headerHeight + 'px',
+            textAlign: 'left',
+            width: 'auto',
+            fontSize: '0.36rem',
+            color: '#001139',
+            left: 0,
+            backgroundColor: 'transparent'
+          })
         }
-        msclkid = this.$route.query["msclkid"] + arr[0];
-      }
-
-      if (gclid) {
-        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
-      } else {
-        return `${url}&msclkid=${msclkid}&term_content=google`;
-      }
-
-
-    };
-
-    this.allProducts.forEach((ele) => {
-      if (ele.link.indexOf("www.credible.com") != -1) {
-        ele.link = changeLink(ele.link);
-      }
-    });
-
-    function showSlogan() {
-      let clientWidth = $(window).width();
-      if (clientWidth <= 750) {
-        let top = $('.banner-container .website-title').offset().top;
-
-        $(window).on('scroll', function () {
-          let headerHeight = document.querySelector('.header-container').clientHeight;
-          console.log(top, $(this).scrollTop());
-
-          if ($(this).scrollTop() > top) {
-            $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
-            $('.banner-container .website-title').css({
-              position: 'fixed',
-              top: headerHeight + 'px',
-              fontSize: '.2rem',
-              textAlign: 'center',
-              width: '100%',
-              left: 0,
-              color: '#fff',
-              backgroundColor: 'rgb(26,119,129)'
-            })
-          } else {
-            $('.banner-container .website-title').text('Best Personal Loans 2021');
-            $('.banner-container .website-title').css({
-              position: 'static',
-              top: headerHeight + 'px',
-              textAlign: 'left',
-              width: 'auto',
-              fontSize: '0.36rem',
-              color: '#001139',
-              left: 0,
-              backgroundColor: 'transparent'
-            })
-          }
-        })
-      }
+      })
     }
-
-    showSlogan();
-
-    $(window).on('resize',showSlogan)
-
-
   },
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/personal-loan.scss";
+@import "~assets/scss/best-10-personal-loans-2021.scss";
 </style>

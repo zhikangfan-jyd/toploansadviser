@@ -30,7 +30,8 @@
           <div class="product-container-top-box">
             <div class="disclosure">
               <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
+              >Advertising Disclosure
+              </nuxt-link
               >
             </div>
           </div>
@@ -79,14 +80,14 @@
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"
-                    ><strong>354 users</strong> chose this site today</span
+                  ><strong>354 users</strong> chose this site today</span
                   >
                 </div>
 
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name"/>
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -125,7 +126,8 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                          >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -163,14 +165,14 @@
                     <div class="terms-box">
                       <span class="title">Loan Terms</span>
                       <span class="text-box"
-                        >{{ item.loan_term.min_term }} -
+                      >{{ item.loan_term.min_term }} -
                         {{ item.loan_term.max_term }} years</span
                       >
                     </div>
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/student-loan/'+item.name"
+                      :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -221,7 +223,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" />
+                  <img v-lazy="item.logo" :alt="item.name"/>
                 </div>
                 <div class="rate-box">
                   <div class="rate">
@@ -237,7 +239,8 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                      >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -275,21 +278,21 @@
                 <div class="terms-box">
                   <span class="title">Loan Terms</span>
                   <span
-                    >{{ item.loan_term.min_term }} -
+                  >{{ item.loan_term.min_term }} -
                     {{ item.loan_term.max_term }} years</span
                   >
                 </div>
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/student-loan/'+item.name"
+                  :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
                     handleTracking({
                       name: item.name,
                       click_time: new Date().getTime(),
-                      link: item.link,
+                      link: item.link
                     })
                   "
                   class="btn"
@@ -332,8 +335,9 @@
 
 <script>
 import FoldTheCard from "../components/FoldTheCard/index";
-import { computeScore } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore} from "../utils/index";
+import {updateTime} from "../utils/date";
+
 export default {
   head: {
     meta: [
@@ -354,12 +358,8 @@ export default {
   components: {
     FoldTheCard,
   },
-  async asyncData({ $axios, redirect, route }) {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let msclkid = route.query["msclkid"];
-      return `${url}&msclkid=${msclkid}`;
-    };
+  async asyncData({$axios, redirect, route}) {
+
 
     try {
       // 获取所有产品
@@ -373,9 +373,8 @@ export default {
 
       // 给所有 是www.creditble.com 的链接后面都拼接 参数
       product_results.data.forEach((ele) => {
-        if (ele.link.indexOf("www.credible.com") != -1) {
-          ele.link = changeLink(ele.link);
-        }
+
+        ele.gclid = route.query['gclid']
       });
 
       return {

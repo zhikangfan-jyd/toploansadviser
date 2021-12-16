@@ -594,6 +594,7 @@ export default {
     };
   },
   mounted() {
+    this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];
     this.$nextTick(() => {
       function init() {
         function screenScroll() {

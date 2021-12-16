@@ -1592,42 +1592,13 @@ let best_refinance_mortgage_loan = [{
 export default {
   layout: 'white',
   methods: {
-    // 拼接 msclkid 参数
     changeLink(url) {
-      let aff_sub = "",
-        msclkid = "",
-        gclid = this.$route.query['gclid'];
-
-      // 判断hash是否有值
-      if (this.$route.hash === "") {
-        aff_sub = this.$route.query["utm_term"];
-        msclkid = this.$route.query["msclkid"];
-
-      } else {
-        let arr = this.$route.hash.split("&");
-        let hashParams = {};
-
-        arr.forEach((ele, index) => {
-          if (index != 0) {
-            let hashArr = ele.split("=");
-            hashParams[hashArr[0]] = hashArr[1];
-          }
-        });
-        aff_sub = hashParams["utm_term"];
-
-        if (!aff_sub) {
-          aff_sub = this.$route.query["utm_term"];
+        let gclid = this.$route.query['gclid'];
+        if (gclid) {
+          return `${url}&gclid=${gclid}&term_content=google&utm_content=google`
+        } else {
+          return `${url}`;
         }
-        msclkid = this.$route.query["msclkid"] + arr[0];
-      }
-
-      if (gclid) {
-        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
-      } else {
-        return `${url}&msclkid=${msclkid}&term_content=google`;
-      }
-
-
     },
     handleJump(data, name) {
       let filterData = data.filter(ele => {

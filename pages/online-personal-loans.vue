@@ -427,7 +427,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/personal-loan/'+item.name"
+                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -449,7 +449,7 @@
                     <span class="iconfont">&#xe63c;</span>
                   </a>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name"
+                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="visit-btn"
@@ -579,13 +579,6 @@ export default {
     FoldTheCard,
   },
   async asyncData({ $axios, redirect, route }) {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = route.query["utm_term"];
-
-      let msclkid = route.query["msclkid"];
-      return `${url}&msclkid=${msclkid}&utm_term=${aff_sub}&term_content=google`;
-    };
 
     try {
       let products_results = await $axios.$get("/data/best-personal-loan.json");
@@ -595,9 +588,8 @@ export default {
 
       // 给所有 是www.creditble.com 的链接后面都拼接 参数
       products_results.data.forEach((ele) => {
-        if (ele.link.indexOf("www.credible.com") != -1) {
-          ele.link = changeLink(ele.link);
-        }
+
+          ele.gclid = route.query['gclid']
       });
       return {
         allProducts: products_results.data,

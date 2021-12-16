@@ -186,10 +186,16 @@
             <div class="disclosure">
               <span class="title"
                     @click="handleShowDisclosure"
-                >Advertising Disclosure</span
+              >Advertising Disclosure</span
               >
               <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+                The information shared through this website is based on our team’s personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
               </div>
             </div>
           </div>
@@ -234,7 +240,7 @@
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"
-                    ><strong>503 users</strong> chose this site today</span
+                  ><strong>503 users</strong> chose this site today</span
                   >
                 </div>
                 <div class="product-item-container">
@@ -249,7 +255,7 @@
                           trigger="hover"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.disclaimer }}</p>
@@ -295,7 +301,8 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                          >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -322,7 +329,7 @@
                               v-if="item.compare.credit_text != ''"
                             >
                               <span class="iconfont" slot="reference"
-                                >&#xe669;</span
+                              >&#xe669;</span
                               >
                               <div class="content">
                                 <p>{{ item.compare.credit_text }}</p>
@@ -348,22 +355,22 @@
                       <span
                         class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
-                        ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                        ><span
-                          >${{ formatNum(String(item.amount.max)) }}</span
-                        ></span
+                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                      ><span
+                      >${{ formatNum(String(item.amount.max)) }}</span
+                      ></span
                       >
                       <span class="text-box" v-else
-                        ><span>up to</span>
+                      ><span>up to</span>
                         <span
-                          >${{ formatNum(String(item.amount.min)) }}</span
+                        >${{ formatNum(String(item.amount.min)) }}</span
                         ></span
                       >
                     </div>
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/personal-loan/'+ item.name"
+                      :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -384,11 +391,11 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/personal-loan/'+item.name"
+                      :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
-                      >Visit site »</a
+                    >Visit site »</a
                     >
                   </div>
                 </div>
@@ -437,7 +444,7 @@
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                   <div class="disclaimer" v-if="item.disclaimer != ''">
                     Disclaimer
                     <el-popover placement="bottom" width="320" trigger="hover">
@@ -462,7 +469,8 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                      >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -490,7 +498,7 @@
                           v-if="item.compare.credit_text != ''"
                         >
                           <span class="iconfont" slot="reference"
-                            >&#xe669;</span
+                          >&#xe669;</span
                           >
                           <div class="content">
                             <p>{{ item.compare.credit_text }}</p>
@@ -514,20 +522,20 @@
                 <div class="terms-box">
                   <h5 class="title">Loan Amount</h5>
                   <span v-if="item.amount.max !== 'Infinity'" class="text-box"
-                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                    ><span
-                      >${{ formatNum(String(item.amount.max)) }}</span
-                    ></span
+                  ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                  ><span
+                  >${{ formatNum(String(item.amount.max)) }}</span
+                  ></span
                   >
                   <span class="text-box" v-else
-                    ><span>up to</span>
+                  ><span>up to</span>
                     <span>${{ formatNum(String(item.amount.min)) }}</span></span
                   >
                 </div>
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -545,11 +553,11 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/personal-loan/'+item.name"
+                  :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
-                  >Visit site »</a
+                >Visit site »</a
                 >
               </div>
             </div>
@@ -602,9 +610,9 @@
                   src="@/assets/img/q1.webp"
                   alt="article about reliability"
                 /><img
-                  src="@/assets/img/q2.webp"
-                  alt="article about reliability"
-                />
+                src="@/assets/img/q2.webp"
+                alt="article about reliability"
+              />
                 <img
                   src="@/assets/img/q3.webp"
                   alt="article about reliability"
@@ -615,15 +623,16 @@
         </div>
       </section>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+
 export default {
   head() {
     return {
@@ -671,7 +680,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/person_loan_product.json"
@@ -679,10 +688,12 @@ export default {
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
       );
+      products_results.data.forEach(ele => {
+        ele.gclid = route.query['gclid'];
 
+      })
       return {
         allProducts: products_results.data,
-        // count: products_results.data.length,
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
@@ -833,50 +844,6 @@ export default {
     this.handleFilter();
   },
   mounted() {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = "",
-        msclkid = "",
-        gclid = this.$route.query['gclid'];
-
-      // 判断hash是否有值
-      if (this.$route.hash === "") {
-        aff_sub = this.$route.query["utm_term"];
-        msclkid = this.$route.query["msclkid"];
-
-      }
-      else {
-        let arr = this.$route.hash.split("&");
-        let hashParams = {};
-
-        arr.forEach((ele, index) => {
-          if (index != 0) {
-            let hashArr = ele.split("=");
-            hashParams[hashArr[0]] = hashArr[1];
-          }
-        });
-        aff_sub = hashParams["utm_term"];
-
-        if (!aff_sub) {
-          aff_sub = this.$route.query["utm_term"];
-        }
-        msclkid = this.$route.query["msclkid"] + arr[0];
-      }
-
-      if (gclid) {
-        return `${url}&msclkid=${msclkid}&term_content=google&utm_content=google`
-      } else {
-        return `${url}&msclkid=${msclkid}&term_content=google`;
-      }
-
-
-    };
-
-    this.allProducts.forEach((ele) => {
-      if (ele.link.indexOf("www.credible.com") != -1) {
-        ele.link = changeLink(ele.link);
-      }
-    });
 
     function showSlogan() {
       let clientWidth = $(window).width();
@@ -918,7 +885,7 @@ export default {
 
     showSlogan();
 
-    $(window).on('resize',showSlogan)
+    $(window).on('resize', showSlogan)
 
 
   },

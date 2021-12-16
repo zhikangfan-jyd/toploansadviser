@@ -745,6 +745,7 @@ export default {
   },
   created() {
     this.handleFilter();
+    this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];
   },
 };
 </script>

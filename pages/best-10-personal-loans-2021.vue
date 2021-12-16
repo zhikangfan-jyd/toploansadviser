@@ -189,7 +189,13 @@
               >Advertising Disclosure</span
               >
               <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+                The information shared through this website is based on our team’s personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
               </div>
             </div>
           </div>
@@ -240,7 +246,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -295,7 +301,8 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                        >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -363,7 +370,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -384,7 +391,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -462,7 +469,8 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                    >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -527,7 +535,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -545,7 +553,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
@@ -615,15 +623,16 @@
         </div>
       </section>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+
 export default {
   head() {
     return {
@@ -679,7 +688,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/best-10-personal-loans-2021.json"
@@ -687,10 +696,11 @@ export default {
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
       );
-
+      products_results.data.forEach(ele => {
+        ele.gclid = route.query['gclid'];
+      })
       return {
         allProducts: products_results.data,
-        // count: products_results.data.length,
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
@@ -722,7 +732,7 @@ export default {
   methods: {
     computeScore,
     formatNum,
-    updateTime,handleShowDisclosure() {
+    updateTime, handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },
 
@@ -841,41 +851,6 @@ export default {
     this.handleFilter();
   },
   mounted() {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = "",
-        msclkid = "";
-
-      // 判断hash是否有值
-      if (this.$route.hash === "") {
-        aff_sub = this.$route.query["utm_term"];
-        msclkid = this.$route.query["msclkid"];
-      } else {
-        let arr = this.$route.hash.split("&");
-        let hashParams = {};
-
-        arr.forEach((ele, index) => {
-          if (index != 0) {
-            let hashArr = ele.split("=");
-            hashParams[hashArr[0]] = hashArr[1];
-          }
-        });
-        aff_sub = hashParams["utm_term"];
-
-        if (!aff_sub) {
-          aff_sub = this.$route.query["utm_term"];
-        }
-        msclkid = this.$route.query["msclkid"] + arr[0];
-      }
-
-      return `${url}&msclkid=${msclkid}&term_content=google`;
-    };
-
-    this.allProducts.forEach((ele) => {
-      if (ele.link.indexOf("www.credible.com") != -1) {
-        ele.link = changeLink(ele.link);
-      }
-    });
 
     let clientWidth = $(window).width();
     if (clientWidth <= 750) {

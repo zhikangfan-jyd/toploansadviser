@@ -90,7 +90,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </section> -->
     <section class="how-it-work-area">
       <div class="how-it-work-container">
@@ -613,7 +613,11 @@ export default {
       mainLink:
         "/redirect/best-mortgage-loan/main",
     };
+
   },
+  created() {
+    this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];
+  }
 };
 </script>
 

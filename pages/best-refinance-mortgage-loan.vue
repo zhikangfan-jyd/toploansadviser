@@ -741,6 +741,9 @@ export default {
         "/redirect/best-refinance-mortgage-loan/main",
     };
   },
+  created() {
+    this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid']
+  }
 };
 </script>
 

@@ -335,7 +335,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/mortgage-loan/'+item.name+'?category='+category"
+                      :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -408,7 +408,7 @@
                       </div>
                       <div class="review-link-box">
                         <a
-                          :href="'/redirect/mortgage-loan/'+item.name+'?category='+category"
+                          :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
                           target="_blank"
                           rel="noopener noreferrer"
                           class="review-btn"
@@ -574,7 +574,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category"
+                    :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -655,7 +655,7 @@
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category"
+                        :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="review-btn"
@@ -793,7 +793,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category"
+                    :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -882,7 +882,7 @@
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category"
+                        :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="review-btn"
@@ -1541,22 +1541,14 @@ export default {
       this.category = name;
       this.loading = true;
       this.filterName = name;
-      // 拼接 msclkid 参数
-      const changeLink = (url) => {
-        // let msclkid = this.$route.query['msclkid'];
-
-        // return `${url}&msclkid=${msclkid}`
-        return url;
-      };
 
       let path = "/data/mortgage_" + name + ".json";
       let product_results = await this.$axios.$get(path);
-      // 给所有 是www.creditble.com 的链接后面都拼接 参数
+
       this.loading = false;
       product_results.data.forEach((ele) => {
-        if (ele.link.indexOf("www.credible.com") != -1) {
-          ele.link = changeLink(ele.link);
-        }
+        ele.gclid = this.$route.query['gclid'];
+
       });
 
       (this.count = product_results.data.length),

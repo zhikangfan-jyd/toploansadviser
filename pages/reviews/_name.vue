@@ -329,7 +329,7 @@
           <li class="top-item" v-for="(item, index) in topLoans" :key="index">
             <img :src="item.logo" :alt="item.name" class="logo" />
             <a
-              :href="'/redirect/personal-loan/'+item.name"
+              :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
               target="_blank"
               rel="noopener noreferrer nofollow"
               @click="
@@ -421,11 +421,7 @@ export default {
     CalculatorPopup,
   },
   async asyncData({ $axios, params, redirect, route }) {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let msclkid = route.query["msclkid"];
-      return `${url}&msclkid=${msclkid}`;
-    };
+
 
     try {
       const name = params.name;
@@ -435,13 +431,12 @@ export default {
       let mainName = '';
       let alsoLike = [];
       productsResults.data.forEach((ele) => {
-        if (ele.link.indexOf("www.credible.com") != -1) {
-          ele.link = changeLink(ele.link);
-        }
+
+         ele.gclid = route.query['gclid'];
 
         if (ele.review_key == name) {
           product = ele;
-          mainName = ele.name;
+          mainName = ele.name + '?gclid=' + ele.gclid;
           mainLink = ele.link;
         } else if (ele.review_key != "" && alsoLike.length < 3) {
           alsoLike.push(ele);

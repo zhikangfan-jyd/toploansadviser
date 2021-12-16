@@ -201,7 +201,7 @@
                 <div class="img-score-box">
                   <div class="img-box">
                     <a
-                      :href="'/redirect/student-loan/'+item.name"
+                      :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
@@ -289,7 +289,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/student-loan/'+item.name"
+                    :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     @click="
@@ -337,7 +337,7 @@
         </div>
         <img src="@/assets/img/info.webp" alt="" class="pic" />
         <a
-          :href="'/redirect/student-loan/'+mainName"
+          :href="'/redirect/student-loan/'+mainName "
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="btn"
@@ -389,11 +389,6 @@ export default {
     FoldTheCard,
   },
   async asyncData({ $axios, redirect, route }) {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let msclkid = route.query["msclkid"];
-      return `${url}&msclkid=${msclkid}`;
-    };
 
     try {
       // 获取所有产品
@@ -405,11 +400,8 @@ export default {
         "/data/student_loan_question.json"
       );
 
-      // 给所有 是www.creditble.com 的链接后面都拼接 参数
       product_results.data.forEach((ele) => {
-        if (ele.link.indexOf("www.credible.com") != -1) {
-          ele.link = changeLink(ele.link);
-        }
+        ele.gclid = route.query['gclid']
       });
 
       return {
@@ -417,7 +409,7 @@ export default {
         allProducts: product_results.data,
         questionData: question_results.data,
         mainLink: product_results.data[0].link,
-        mainName: product_results.data[0].name
+        mainName: product_results.data[0].name + '?gclid=' + route.query['gclid']
       };
     } catch (error) {
       redirect("/error");

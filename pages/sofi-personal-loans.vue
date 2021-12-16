@@ -363,7 +363,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -384,7 +384,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -527,7 +527,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -545,7 +545,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
@@ -682,15 +682,17 @@ export default {
   async asyncData({ $axios, redirect, route }) {
     try {
       let products_results = await $axios.$get(
-        "/data/sofi_personal_loans_product.json"
+        "/data/avant_personal_loans_product.json"
       );
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
       );
 
+      products_results.data.forEach(ele => {
+        ele.gclid = route.query['gclid'];
+      })
       return {
         allProducts: products_results.data,
-        // count: products_results.data.length,
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
@@ -841,41 +843,6 @@ export default {
     this.handleFilter();
   },
   mounted() {
-    // 拼接 msclkid 参数
-    const changeLink = (url) => {
-      let aff_sub = "",
-        msclkid = "";
-
-      // 判断hash是否有值
-      if (this.$route.hash === "") {
-        aff_sub = this.$route.query["utm_term"];
-        msclkid = this.$route.query["msclkid"];
-      } else {
-        let arr = this.$route.hash.split("&");
-        let hashParams = {};
-
-        arr.forEach((ele, index) => {
-          if (index != 0) {
-            let hashArr = ele.split("=");
-            hashParams[hashArr[0]] = hashArr[1];
-          }
-        });
-        aff_sub = hashParams["utm_term"];
-
-        if (!aff_sub) {
-          aff_sub = this.$route.query["utm_term"];
-        }
-        msclkid = this.$route.query["msclkid"] + arr[0];
-      }
-
-      return `${url}&msclkid=${msclkid}&term_content=google`;
-    };
-
-    this.allProducts.forEach((ele) => {
-      if (ele.link.indexOf("www.credible.com") != -1) {
-        ele.link = changeLink(ele.link);
-      }
-    });
 
     let clientWidth = $(window).width();
     if (clientWidth <= 750) {
