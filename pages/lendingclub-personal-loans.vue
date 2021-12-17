@@ -682,7 +682,7 @@ export default {
   async asyncData({ $axios, redirect, route }) {
     try {
       let products_results = await $axios.$get(
-        "/data/avant_personal_loans_product.json"
+        "/data/lendingclub_personal_loans_product.json"
       );
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
