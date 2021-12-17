@@ -1594,7 +1594,7 @@ export default {
   methods: {
     changeLink(url) {
         let gclid = this.$route.query['gclid'];
-        if (gclid) {
+        if (!gclid || typeof gclid === 'undefined') {
           return `${url}&gclid=${gclid}&term_content=google&utm_content=google`
         } else {
           return `${url}`;
