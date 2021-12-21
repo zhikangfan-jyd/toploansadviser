@@ -191,6 +191,7 @@ export default {
     },
   },
   mounted() {
+    this.showAlert();
     this.timer2 = setTimeout(() => {
       if ($(window).width() < 750) {
         return;

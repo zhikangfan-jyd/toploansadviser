@@ -439,7 +439,7 @@
             </div>
           </div>
 
-          <div class="more-box" v-if="products.length > pageSize">
+          <div class="more-box" v-if="count > pageSize">
             <button v-if="isNull" class="btn" @click="loadMore">
               <span class="text">SEE MORE</span>
               <span class="iconfont">&#xe600;</span>
@@ -472,29 +472,7 @@
                       <span class="score">{{
                         purchase_product.rate.score
                       }}</span>
-                      <!-- <div class="trustpilot-box" v-if="index == 0">
-                            <div class="text-box">
-                              <span class="iconfont">&#xe64c;</span>
-                              <span class="text">Trustpilot</span>
-                            </div>
-                            <ul class="star-list">
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                            </ul>
-                          </div> -->
+
                       <div class="star-box">
                         <el-rate
                           disabled
@@ -688,29 +666,7 @@
                       <span class="score">{{
                         refinance_product.rate.score
                       }}</span>
-                      <!-- <div class="trustpilot-box" v-if="index == 0">
-                            <div class="text-box">
-                              <span class="iconfont">&#xe64c;</span>
-                              <span class="text">Trustpilot</span>
-                            </div>
-                            <ul class="star-list">
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                              <li>
-                                <span class="iconfont">&#xe64c;</span>
-                              </li>
-                            </ul>
-                          </div> -->
+
                       <div class="star-box">
                         <el-rate
                           disabled
@@ -1388,34 +1344,6 @@ export default {
       },
     ],
   },
-  // async asyncData({ $axios, redirect, route }) {
-
-  //   // 拼接 msclkid 参数
-  //   const changeLink = (url) => {
-  //     let msclkid = route.query['msclkid'];
-  //     return `${url}&msclkid=${msclkid}`
-  //   }
-
-  //   try {
-  //     // 获取所有产品
-  //     let product_results = await $axios.$get('/data/mortgage_product.json');
-
-  //     // 给所有 是www.creditble.com 的链接后面都拼接 参数
-  //     product_results.data.forEach(ele => {
-  //       if (ele.link.indexOf('www.credible.com') != -1) {
-  //         ele.link = changeLink(ele.link);
-  //       }
-  //     })
-
-  //     return {
-  //       count: product_results.data.length,
-  //       allProducts: product_results.data,
-  //       overallData: product_results.data.slice(0,2)
-  //     }
-  //   } catch (error) {
-  //     redirect('/error')
-  //   }
-  // },
   data() {
     return {
       category: 'purchase',
@@ -1548,18 +1476,16 @@ export default {
       this.loading = false;
       product_results.data.forEach((ele) => {
         ele.gclid = this.$route.query['gclid'];
-
       });
-
-      (this.count = product_results.data.length),
-        (this.allProducts = product_results.data),
-        (this.page = 1);
+      this.count = product_results.data.length
+      this.allProducts = product_results.data
+      this.page = 1;
       this.products = [];
       this.isNull = true;
-      if (name == "purchase") {
+      if (name === "purchase") {
         this.cornerText = "Low Rates";
         this.choseNum = 285;
-      } else if (name == "refinance") {
+      } else if (name === "refinance") {
         this.cornerText = "Multiple Lenders";
         this.choseNum = 368;
       }
@@ -1580,7 +1506,7 @@ export default {
       );
       this.products = this.products.concat(data);
       this.page++;
-      if (this.products.length == this.count) {
+      if (this.products.length === this.count) {
         this.isNull = false;
       }
     },
@@ -1623,7 +1549,6 @@ export default {
   },
   created() {
     this.getData("purchase");
-    // this.loadMore();
   },
 };
 </script>

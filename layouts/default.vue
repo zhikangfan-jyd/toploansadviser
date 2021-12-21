@@ -46,15 +46,6 @@
               <li>
                 <nuxt-link to="/reviews/avant" class="link">Avant</nuxt-link>
               </li>
-              <!-- <li>
-                <nuxt-link to="/reviews/drcredit" class="link">DrCredit</nuxt-link>
-              </li> -->
-              <!-- <li>
-                <nuxt-link to="/reviews/upstart" class="link">Upstart</nuxt-link>
-              </li> -->
-              <!-- <li>
-                <nuxt-link to="/reviews/personalloans" class="link">PersonalLoans</nuxt-link>
-              </li> -->
             </ul>
           </li>
           <li>
@@ -65,7 +56,6 @@
       </div>
     </header>
     <Nuxt />
-    <!-- <Message /> -->
     <footer class="footer-container">
       <div class="footer-wrapper">
         <div class="footer-info-box">
@@ -76,7 +66,6 @@
               class="footer-logo"
             />
           </a>
-          <!-- <p class="desc">277-279 Chiswick High Road, Chiswick, London, United Kingdom, W4 4PU</p> -->
         </div>
         <div class="footer-nav-box">
           <span class="title">Basic Links</span>
@@ -129,15 +118,7 @@
               </button>
             </div>
           </div>
-          <!-- <div class="footer-sms-item">
-            <div class="title">Social Media</div>
-            <div class="footer-sms-content share-box">
-              <button class="btn"><span class="iconfont">&#xe63a;</span></button>
-              <button class="btn"><span class="iconfont">&#xe726;</span></button>
-              <button class="btn"><span class="iconfont">&#xe642;</span></button>
-              <button class="btn"><span class="iconfont">&#xe726;</span></button>
-            </div>
-          </div> -->
+
         </div>
       </div>
       <div class="footer-container-bottom">
@@ -147,14 +128,18 @@
       </div>
     </footer>
     <el-backtop style="color: #29b674"></el-backtop>
+<!--    <ContactComponent></ContactComponent>-->
+<!--    <Message></Message>-->
   </div>
 </template>
 
 <script>
 import Message from "../components/Message/index";
+import ContactComponent from '../components/Contact/index'
 export default {
   components: {
     Message,
+    ContactComponent
   },
   data() {
     return {

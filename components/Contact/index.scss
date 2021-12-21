@@ -1,0 +1,88 @@
+.contact-component-container {
+  display: none;
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  padding: 40px 28px 25px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, .25);
+  z-index: 9;
+
+  .email-icon {
+    position: absolute;
+    top: -37px;
+    width: 74px;
+    height: 74px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .contact-title {
+    font-size: 30px;
+    color: rgb(0, 17, 57);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .text {
+    color: #000;
+    text-align: center;
+  }
+
+  .contact-component-form {
+    margin: 14px 0;
+
+    .form-item-block {
+      .email-input {
+        width: 300px;
+        height: 35px;
+        outline: none;
+        font-size: 14px;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      .submit-btn {
+        width: 120px;
+        height: 35px;
+        font-weight: bolder;
+        border-radius: 8px;
+        background-color: rgb(31, 154, 97);
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all linear 0.1s;
+
+        &:hover {
+          background-color: rgb(26, 119, 129);
+        }
+
+        .iconfont {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .tips {
+    font-size: 14px;
+    color: #a6a6a7;
+    text-align: center;
+  }
+
+  .cancel-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #adadad;
+  }
+}

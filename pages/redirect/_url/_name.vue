@@ -463,13 +463,63 @@ let mortgage_purchase = [
     ]
   },
   {
+    "name": "Quicken Loans",
+    "review_key": "",
+    "link": "https://quicken.sjv.io/15ZBQa",
+    "logo": "/data/images/quicken-loans.webp",
+    "rate": {
+      "max": 10,
+      "score": "9.7"
+    },
+    "slogan": "A+ Customer Satisfaction",
+    "meritList": [
+      {
+        "text": "35 years of experience"
+      },
+      {
+        "text": "Fully automated, online process"
+      },
+      {
+        "text": "Pre-approval available"
+      }
+    ],
+    "key_facts": {
+      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA",
+      "credit_score": "620",
+      "apr": "set by lender",
+      "NMLS": "3030"
+    },
+    "pros": [
+      {
+        "text": "Couples a fully online application through Rocket Mortgage with mortgage advisers available over the phone."
+      },
+      {
+        "text": "Via Rocket, offers a prequalification estimate within minutes."
+      },
+      {
+        "text": "Rocket's online approval process offers convenience, with online document upload, loan tracking and the ability to generate a custom approval letter."
+      }
+    ],
+    "cons": [
+      {
+        "text": "Getting a personalized rate requires a hard credit inquiry."
+      },
+      {
+        "text": "Doesn't offer home equity loans or HELOCs."
+      },
+      {
+        "text": "Lender fees can be stout, and the fees aren't offset by particularly low mortgage rates, according to the latest data."
+      }
+    ]
+  },
+  {
     "name": "LoanDepot",
     "review_key": "",
     "link": "https://www.loandepot.com/",
     "logo": "/data/images/loandepot.webp",
     "rate": {
       "max": 10,
-      "score": "9.7"
+      "score": "9.5"
     },
     "slogan": "No Login/Registration Required",
     "meritList": [
@@ -511,148 +561,8 @@ let mortgage_purchase = [
         "text": "USDA Rural Development loans not available"
       }
     ]
-  },
-  {
-    "name": "Sterns loan",
-    "review_key": "",
-    "link": "https://stearns.com/",
-    "logo": "/data/images/stearns_home_loans.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.5"
-    },
-    "slogan": "Unlock Your Financial Potential",
-    "meritList": [
-      {
-        "text": "Provides great refinancing calculators"
-      },
-      {
-        "text": "An all-digital app, no hassle"
-      },
-      {
-        "text": "Dedicated support team"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "dependent on loan type",
-      "NMLS": "1854"
-    },
-    "pros": [
-      {
-        "text": "Offers extensive educational resources for military borrowers"
-      },
-      {
-        "text": "Provides digital tools for a streamlined application process"
-      },
-      {
-        "text": "Participates in some state down payment assistance and first-time home buyer programs"
-      }
-    ],
-    "cons": [
-      {
-        "text": "No mortgage rates displayed online"
-      },
-      {
-        "text": "Doesn’t offer home equity loans or lines of credit"
-      }
-    ]
-  },
-  {
-    "name": "Rocket Mortgage",
-    "review_key": "",
-    "link": "https://www.rocketmortgage.com/",
-    "logo": "/data/images/rocket_mortgage.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.2"
-    },
-    "slogan": "Discover custom home loan option",
-    "meritList": [
-      {
-        "text": "Get a Verified Approval Letter 2 (VAL)"
-      },
-      {
-        "text": "Access online tools 24/7"
-      },
-      {
-        "text": "See closing costs and tax estimates"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "set by lender",
-      "NMLS": "3030"
-    },
-    "pros": [
-      {
-        "text": "Caters to self-service users who want to apply for a home loan online and talk to a human only as necessary"
-      },
-      {
-        "text": "Estimates the loan amount you’ll qualify for within minutes"
-      },
-      {
-        "text": "Offers document and asset retrieval capabilities"
-      }
-    ],
-    "cons": [
-      {
-        "text": "If you’re a “look me in the eye” type of customer, you’re out of luck"
-      },
-      {
-        "text": "Getting a customized interest rate requires a credit check, which can lower your credit score by a few points"
-      }
-    ]
-  },
-  {
-    "name": "Caliber",
-    "review_key": "",
-    "link": "https://www.caliberhomeloans.com/",
-    "logo": "/data/images/caliber.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.0"
-    },
-    "slogan": "Simple Solution for Every Step",
-    "meritList": [
-      {
-        "text": "Competitive refinancing rates"
-      },
-      {
-        "text": "Provides great refinancing calculators"
-      },
-      {
-        "text": "Honest rate quotes & access to experts"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "set by lender",
-      "NMLS": "3030"
-    },
-    "pros": [
-      {
-        "text": "Offers extensive educational resources for military borrowers"
-      },
-      {
-        "text": "Provides digital tools for a streamlined application process"
-      },
-      {
-        "text": "Participates in some state down payment assistance and first-time home buyer programs"
-      }
-    ],
-    "cons": [
-      {
-        "text": "No mortgage rates displayed online"
-      },
-      {
-        "text": "Doesn’t offer home equity loans or lines of credit"
-      }
-    ]
   }
+
 ];
 let mortgage_refinance = [
   {
@@ -703,13 +613,63 @@ let mortgage_refinance = [
     ]
   },
   {
+    "name": "Quicken Loans",
+    "review_key": "",
+    "link": "https://quicken.sjv.io/15ZBQa",
+    "logo": "/data/images/quicken-loans.webp",
+    "rate": {
+      "max": 10,
+      "score": "9.7"
+    },
+    "slogan": "A+ Customer Satisfaction",
+    "meritList": [
+      {
+        "text": "35 years of experience"
+      },
+      {
+        "text": "Fully automated, online process"
+      },
+      {
+        "text": "Pre-approval available"
+      }
+    ],
+    "key_facts": {
+      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA",
+      "credit_score": "620",
+      "apr": "set by lender",
+      "NMLS": "3030"
+    },
+    "pros": [
+      {
+        "text": "Couples a fully online application through Rocket Mortgage with mortgage advisers available over the phone."
+      },
+      {
+        "text": "Via Rocket, offers a prequalification estimate within minutes."
+      },
+      {
+        "text": "Rocket's online approval process offers convenience, with online document upload, loan tracking and the ability to generate a custom approval letter."
+      }
+    ],
+    "cons": [
+      {
+        "text": "Getting a personalized rate requires a hard credit inquiry."
+      },
+      {
+        "text": "Doesn't offer home equity loans or HELOCs."
+      },
+      {
+        "text": "Lender fees can be stout, and the fees aren't offset by particularly low mortgage rates, according to the latest data."
+      }
+    ]
+  },
+  {
     "name": "LoanDepot",
     "review_key": "",
     "link": "https://www.loandepot.com/",
     "logo": "/data/images/loandepot.webp",
     "rate": {
       "max": 10,
-      "score": "9.6"
+      "score": "9.5"
     },
     "slogan": "No Login/Registration Required",
     "meritList": [
@@ -749,147 +709,6 @@ let mortgage_refinance = [
       },
       {
         "text": "USDA Rural Development loans not available"
-      }
-    ]
-  },
-  {
-    "name": "Rocket Mortgage",
-    "review_key": "",
-    "link": "https://www.rocketmortgage.com/",
-    "logo": "/data/images/rocket_mortgage.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.5"
-    },
-    "slogan": "Discover custom home loan option",
-    "meritList": [
-      {
-        "text": "Get a Verified Approval Letter 2 (VAL)"
-      },
-      {
-        "text": "Access online tools 24/7"
-      },
-      {
-        "text": "See closing costs and tax estimates"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "set by lender",
-      "NMLS": "3030"
-    },
-    "pros": [
-      {
-        "text": "Caters to self-service users who want to apply for a home loan online and talk to a human only as necessary"
-      },
-      {
-        "text": "Estimates the loan amount you’ll qualify for within minutes"
-      },
-      {
-        "text": "Offers document and asset retrieval capabilities"
-      }
-    ],
-    "cons": [
-      {
-        "text": "If you’re a “look me in the eye” type of customer, you’re out of luck"
-      },
-      {
-        "text": "Getting a customized interest rate requires a credit check, which can lower your credit score by a few points"
-      }
-    ]
-  },
-  {
-    "name": "Caliber",
-    "review_key": "",
-    "link": "https://www.caliberhomeloans.com/",
-    "logo": "/data/images/caliber.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.3"
-    },
-    "slogan": "Simple Solution for Every Step",
-    "meritList": [
-      {
-        "text": "Competitive refinancing rates"
-      },
-      {
-        "text": "Provides great refinancing calculators"
-      },
-      {
-        "text": "Honest rate quotes & access to experts"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "set by lender",
-      "NMLS": "3030"
-    },
-    "pros": [
-      {
-        "text": "Offers extensive educational resources for military borrowers"
-      },
-      {
-        "text": "Provides digital tools for a streamlined application process"
-      },
-      {
-        "text": "Participates in some state down payment assistance and first-time home buyer programs"
-      }
-    ],
-    "cons": [
-      {
-        "text": "No mortgage rates displayed online"
-      },
-      {
-        "text": "Doesn’t offer home equity loans or lines of credit"
-      }
-    ]
-  },
-  {
-    "name": "Sterns loan",
-    "review_key": "",
-    "link": "https://stearns.com/",
-    "logo": "/data/images/stearns_home_loans.webp",
-    "rate": {
-      "max": 10,
-      "score": "9.0"
-    },
-    "slogan": "Unlock Your Financial Potential",
-    "meritList": [
-      {
-        "text": "Provides great refinancing calculators"
-      },
-      {
-        "text": "An all-digital app, no hassle"
-      },
-      {
-        "text": "Dedicated support team"
-      }
-    ],
-    "key_facts": {
-      "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",
-      "credit_score": "620",
-      "apr": "dependent on loan type",
-      "NMLS": "1854"
-    },
-    "pros": [
-      {
-        "text": "Offers extensive educational resources for military borrowers"
-      },
-      {
-        "text": "Provides digital tools for a streamlined application process"
-      },
-      {
-        "text": "Participates in some state down payment assistance and first-time home buyer programs"
-      }
-    ],
-    "cons": [
-      {
-        "text": "No mortgage rates displayed online"
-      },
-      {
-        "text": "Doesn’t offer home equity loans or lines of credit"
       }
     ]
   }
@@ -1593,12 +1412,12 @@ export default {
   layout: 'white',
   methods: {
     changeLink(url) {
-        let gclid = this.$route.query['gclid'];
-        if (!gclid || typeof gclid === 'undefined') {
-          return `${url}&gclid=${gclid}&term_content=google&utm_content=google`
-        } else {
-          return `${url}`;
-        }
+      let gclid = this.$route.query['gclid'];
+      if (!gclid || typeof gclid === 'undefined') {
+        return `${url}&gclid=${gclid}&term_content=google&utm_content=google`
+      } else {
+        return `${url}`;
+      }
     },
     handleJump(data, name) {
       let filterData = data.filter(ele => {
