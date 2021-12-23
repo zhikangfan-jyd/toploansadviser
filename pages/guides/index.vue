@@ -26,15 +26,16 @@
         <ul class="blog-list">
           <li class="blog-item" v-for="(blog, index) in blogs" :key="index">
             <div class="img-box">
-              <nuxt-link :to="'/guides/' + blog.article_id">
-                <img v-lazy="blog.main_picture" :alt="blog.title" />
+              <nuxt-link :to="'/guides/' + blog.change_title">
+                <img v-lazy="blog.main_picture" :alt="blog.title"/>
               </nuxt-link>
             </div>
-            <nuxt-link :to="'/guides/' + blog.article_id" class="title-link"
-              ><h2 class="blog-title">{{ blog.title }}</h2></nuxt-link
+            <nuxt-link :to="'/guides/' + blog.change_title" class="title-link"
+            ><h2 class="blog-title">{{ blog.title }}</h2></nuxt-link
             >
-            <nuxt-link :to="'/guides/' + blog.article_id" class="link"
-              >Read full Article</nuxt-link
+            <nuxt-link :to="'/guides/' + blog.change_title" class="link"
+            >Read full Article
+            </nuxt-link
             >
           </li>
         </ul>
@@ -63,10 +64,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -120,10 +121,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -177,10 +178,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -234,10 +235,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -291,10 +292,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -348,10 +349,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19" />
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19" />
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207" />
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18" />
+                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
+                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
+                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
+                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -407,10 +408,16 @@ export default {
         let results = await this.$axios.get(
           `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=${page}&limit=${this.pageSize}`
         );
+        results.data.data.rows.forEach(ele => {
 
+          ele.change_title = ele.title.toLowerCase().split(' ').join('+');
+
+
+        })
         this.blogs = this.blogs.concat(results.data.data.rows);
+
         this.counts = results.data.data.count;
-        this.isLoad = page >= this.count ? false : true;
+        this.isLoad = page < this.count;
       } catch (error) {
         console.log(error);
       }

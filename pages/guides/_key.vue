@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="history-nav">
           <span
-            ><nuxt-link to="/guides" class="link">Guides</nuxt-link>
+          ><nuxt-link to="/guides" class="link">Guides</nuxt-link>
             <span class="iconfont">></span></span
           >
           <span class="title-box">{{ blog.title }}</span>
@@ -15,7 +15,7 @@
     <div class="guides-container">
       <div class="guides-left">
         <div class="author-info">
-          <img :src="author.avatar" :alt="author.name" class="author-img" />
+          <img :src="author.avatar" :alt="author.name" class="author-img"/>
           <div class="info-box">
             <span class="name">{{ author.name }}</span>
             <p class="info">
@@ -26,7 +26,7 @@
           </div>
         </div>
         <!-- <div class="blog-content">
-          
+
         </div> -->
         <div class="share-box">
           <span class="title">SHARE THIS PAGE</span>
@@ -52,9 +52,10 @@
           <h6 class="bottom-title">Keep Reading</h6>
           <ul class="title-list">
             <li v-for="(item, index) in relatedBlogs" :key="index">
-              <nuxt-link :to="'/guides/' + item.article_id">{{
-                item.title
-              }}</nuxt-link>
+              <nuxt-link :to="'/guides/' + item.change_title">{{
+                  item.title
+                }}
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -63,7 +64,7 @@
         <span class="title">TOP 5 LOANS</span>
         <ul class="top-list">
           <li class="top-item" v-for="(item, index) in toploans" :key="index">
-            <img :src="item.logo" :alt="item.name" class="logo" />
+            <img :src="item.logo" :alt="item.name" class="logo"/>
             <a
               :href="'/redirect/personal-loan/'+item.name"
               target="_blank"
@@ -75,7 +76,7 @@
                   link: item.link,
                 })
               "
-              >Visit Site</a
+            >Visit Site</a
             >
           </li>
         </ul>
@@ -86,9 +87,9 @@
         <h5 class="title">Keep Reading</h5>
         <ul class="read-list">
           <li v-for="(item, index) in relatedBlogs" :key="index">
-            <nuxt-link :to="'/guides/' + item.article_id">
+            <nuxt-link :to="'/guides/' + item.change_title">
               <div class="img-box">
-                <img v-lazy="item.main_picture" :alt="item.title" class="pic" />
+                <img v-lazy="item.main_picture" :alt="item.title" class="pic"/>
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{ item.title }}</h6>
@@ -102,14 +103,16 @@
 </template>
 
 <script>
-import { shareToFB, shareToTwitter } from "../../utils/share";
-import { updateTime } from "../../utils/date";
+import {shareToFB, shareToTwitter} from "../../utils/share";
+import {updateTime} from "../../utils/date";
+
 export default {
-  async asyncData({ $axios, params, redirect }) {
+  async asyncData({$axios, params, redirect}) {
     try {
-      let article_id = params.key;
+      let title = params.key.split('+').join(' ');
+
       let results = await $axios.$get(
-        `https://api.toploansadviser.com/articles/find?article_id=${article_id}`
+        `https://api.toploansadviser.com/articles/findbytitle?title=${title}`
       );
       let blog = results.data;
       let d = updateTime(blog.date);
@@ -120,6 +123,7 @@ export default {
         introduce: "",
         avatar: "",
       };
+
       let authorInfo = await $axios.$get(
         `https://api.toploansadviser.com/author/find?author_id=${authorId}`
       );
@@ -133,6 +137,10 @@ export default {
       let blogList = await $axios.$get(
         `https://api.toploansadviser.com/articles/findbycolumns?columns_id=c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d&page=1&limit=3`
       );
+
+      blogList.data.rows.forEach(ele => {
+        ele.change_title = ele.title.toLowerCase().split(' ').join('+');
+      })
 
       return {
         blog: blog,
