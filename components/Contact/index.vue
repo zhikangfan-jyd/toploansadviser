@@ -41,13 +41,25 @@ export default {
         return;
       }
 
-      let res = await this.$axios.$post('https://store.thetopvpns.com/send', {email: this.form.email});
+      let res = await this.$axios.$post('https://store.toploansadviser.com/send', {email: this.form.email});
 
       if (res.code === 'success') {
         this.form.email = '';
+
         this.$message({
           message: 'Submitted successfully',
           type: 'success'
+        })
+        this.$nextTick(() => {
+          $('.contact-component-container').animate({
+            opacity: 0,
+            right: 0,
+            bottom: -20
+          }, 1000, 'linear', () => {
+            $('.contact-component-container').css({
+              display: 'none'
+            })
+          })
         })
       } else {
         this.$message({
@@ -84,9 +96,14 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => {
+    let timer = setTimeout(() => {
+      if ($(window).width() <= 750) {
+        clearTimeout(timer)
+        return;
+      }
       this.showForm();
-    }, 1000)
+      clearTimeout(timer)
+    }, 5000)
   }
 }
 </script>

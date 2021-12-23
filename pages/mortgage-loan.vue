@@ -1,10 +1,11 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
+      <div class="slogan">Make it easy to find affordable and responsible mortgages in the US.</div>
       <div class="banner-container">
         <div class="banner-content">
-          <h1 class="website-title">Best Mortgage Lenders 2021</h1>
-
+          <h1 class="website-title">Compare Best Mortgage Lenders 2021</h1>
+          <p class="subtitle">Save Money on Your Mortgage</p>
           <div class="content">
             <p>
               Lower interest rates mean that you can save real money on your
@@ -17,7 +18,7 @@
           </p>
         </div>
         <img
-          src="@/assets/img/mortgage-loan-banner-bg.webp"
+          src="@/assets/img/test-mortgage-loan-banner-bg.png"
           alt="mortgage loan banner"
           class="banner-img"
         />
@@ -30,22 +31,29 @@
             <ul class="category-box">
               <li
                 @click="getData('purchase')"
-                :class="{ current: filterName == 'purchase' }"
+                :class="{ current: filterName === 'purchase' }"
               >
                 Purchase
               </li>
               <li
                 @click="getData('refinance')"
-                :class="{ current: filterName == 'refinance' }"
+                :class="{ current: filterName === 'refinance' }"
               >
                 Refinance
               </li>
-              <!-- <li @click="getData('home-equity')" :class="{ 'current': filterName == 'home-equity' }">Home Equity</li> -->
             </ul>
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-                >Advertising Disclosure</nuxt-link
-              >
+              <span class="title" @click="showDisclosure">Advertising Disclosure</span>
+              <div :class="{'disclosure_content': true, 'show': isShow}">The information shared through this website is
+                based on our team’s
+                personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
+              </div>
             </div>
           </div>
           <div class="product-list-box">
@@ -229,7 +237,7 @@
                 <div class="visited-box" v-if="index == 0">
                   <span class="iconfont"></span>
                   <span class="text"
-                    ><strong>{{ choseNum }} users</strong> chose this site
+                  ><strong>{{ choseNum }} users</strong> chose this site
                     today</span
                   >
                 </div>
@@ -237,7 +245,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name"/>
                     </div>
                     <div class="rate-box">
                       <div class="rate">
@@ -470,8 +478,8 @@
                   <div class="rate-box">
                     <div class="rate">
                       <span class="score">{{
-                        purchase_product.rate.score
-                      }}</span>
+                          purchase_product.rate.score
+                        }}</span>
 
                       <div class="star-box">
                         <el-rate
@@ -531,8 +539,8 @@
                       <p class="text">
                         Min. Credit Score:
                         <span>{{
-                          purchase_product.key_facts.credit_score
-                        }}</span>
+                            purchase_product.key_facts.credit_score
+                          }}</span>
                       </p>
                     </li>
                     <li v-if="purchase_product.key_facts.apr != ''">
@@ -611,8 +619,8 @@
                           <p class="text">
                             Min. Credit Score:
                             <span>{{
-                              purchase_product.key_facts.credit_score
-                            }}</span>
+                                purchase_product.key_facts.credit_score
+                              }}</span>
                           </p>
                         </li>
                         <li v-if="purchase_product.key_facts.apr != ''">
@@ -664,8 +672,8 @@
                   <div class="rate-box">
                     <div class="rate">
                       <span class="score">{{
-                        refinance_product.rate.score
-                      }}</span>
+                          refinance_product.rate.score
+                        }}</span>
 
                       <div class="star-box">
                         <el-rate
@@ -728,8 +736,8 @@
                       <p class="text">
                         Min. Credit Score:
                         <span>{{
-                          refinance_product.key_facts.credit_score
-                        }}</span>
+                            refinance_product.key_facts.credit_score
+                          }}</span>
                       </p>
                     </li>
                     <li v-if="refinance_product.key_facts.apr != ''">
@@ -816,8 +824,8 @@
                           <p class="text">
                             Min. Credit Score:
                             <span>{{
-                              refinance_product.key_facts.credit_score
-                            }}</span>
+                                refinance_product.key_facts.credit_score
+                              }}</span>
                           </p>
                         </li>
                         <li v-if="refinance_product.key_facts.apr != ''">
@@ -1326,8 +1334,9 @@
 </template>
 
 <script>
-import { computeScore } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore} from "../utils/index";
+import {updateTime} from "../utils/date";
+
 export default {
   head: {
     meta: [
@@ -1349,13 +1358,14 @@ export default {
       category: 'purchase',
       cornerText: "Low Rates",
       choseNum: 285,
+      isShow: false,
       loading: false,
       filterName: "",
       count: 0,
       allProducts: [],
       isNull: true,
       page: 1,
-      pageSize: 5,
+      pageSize: 3,
       products: [],
 
       purchase_product: {
@@ -1363,7 +1373,7 @@ export default {
         review_key: "",
         link:
           "https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
-        logo: "/data/images/credible.webp",
+        logo: "/data/images/credible.jpg",
         rate: {
           max: 10,
           score: "9.8",
@@ -1409,11 +1419,11 @@ export default {
       refinance_product: {
         name: "LoanDepot",
         review_key: "",
-        link: "https://www.loandepot.com/",
-        logo: "/data/images/loandepot.webp",
+        link: "https://fxo.co/DGxu",
+        logo: "/data/images/loan-depot.png",
         rate: {
           max: 10,
-          score: "9.6",
+          score: "9.5",
         },
         slogan: "No Login/Registration Required",
         meritList: [
@@ -1465,6 +1475,9 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    showDisclosure() {
+      this.isShow = !this.isShow;
+    },
     async getData(name) {
       this.category = name;
       this.loading = true;

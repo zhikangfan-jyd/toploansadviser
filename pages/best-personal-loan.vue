@@ -66,17 +66,17 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
@@ -249,7 +249,8 @@
           </div>
           <div class="disclosure">
             <nuxt-link to="/disclosure" class="title"
-              >Advertising Disclosure</nuxt-link
+            >Advertising Disclosure
+            </nuxt-link
             >
           </div>
         </div>
@@ -300,13 +301,13 @@
               <div class="visited-box" v-if="index == 0">
                 <span class="iconfont"></span>
                 <span class="text"
-                  ><strong>503 users</strong> chose this site today</span
+                ><strong>503 users</strong> chose this site today</span
                 >
               </div>
               <div class="product-item-container">
                 <div class="img-score-box">
                   <div class="img-box">
-                    <img v-lazy="item.logo" :alt="item.name" />
+                    <img v-lazy="item.logo" :alt="item.name"/>
                     <div class="disclaimer" v-if="item.disclaimer != ''">
                       Disclaimer
                       <el-popover
@@ -359,7 +360,8 @@
                         v-if="item.review_key != ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
-                        >Read Review</nuxt-link
+                      >Read Review
+                      </nuxt-link
                       >
                     </div>
                   </div>
@@ -386,7 +388,7 @@
                             v-if="item.compare.credit_text != ''"
                           >
                             <span class="iconfont" slot="reference"
-                              >&#xe669;</span
+                            >&#xe669;</span
                             >
                             <div class="content">
                               <p>{{ item.compare.credit_text }}</p>
@@ -410,15 +412,15 @@
                   <div class="terms-box">
                     <h5 class="title">Loan Amount</h5>
                     <span class="text-box" v-if="item.amount.max !== 'Infinity'"
-                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                      ><span
-                        >${{ formatNum(String(item.amount.max)) }}</span
-                      ></span
+                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                    ><span
+                    >${{ formatNum(String(item.amount.max)) }}</span
+                    ></span
                     >
                     <span class="text-box" v-else
-                      ><span>up to</span>
+                    ><span>up to</span>
                       <span
-                        >${{ formatNum(String(item.amount.min)) }}</span
+                      >${{ formatNum(String(item.amount.min)) }}</span
                       ></span
                     >
                   </div>
@@ -450,7 +452,7 @@
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     class="visit-btn"
-                    >Visit site »</a
+                  >Visit site »</a
                   >
                 </div>
               </div>
@@ -494,7 +496,7 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic" />
+        <img src="@/assets/img/info.webp" alt="" class="pic"/>
         <a
           :href="mainLink"
           target="_blank"
@@ -511,7 +513,7 @@
     </section>
     <section class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
         <div class="faq-content">
           <h4 class="faq-title">
             <span>FAQ's</span>
@@ -546,24 +548,28 @@
               services based on data compiled from various factors.
             </p>
             <div class="img-box">
-              <img src="@/assets/img/q1.webp" alt="toploansadviser" /><img
-                src="@/assets/img/q2.webp"
-                alt="toploansadviser"
-              />
-              <img src="@/assets/img/q3.webp" alt="toploansadviser" />
+              <img src="@/assets/img/q1.webp" alt="toploansadviser"/><img
+              src="@/assets/img/q2.webp"
+              alt="toploansadviser"
+            />
+              <img src="@/assets/img/q3.webp" alt="toploansadviser"/>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <Message2 :url="mainLink"></Message2>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import Message2 from "../components/Message2/index";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
+
 export default {
+  layout: 'clear',
   head: {
     link: [
       {
@@ -574,8 +580,9 @@ export default {
   },
   components: {
     FoldTheCard,
+    Message2
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
     // 拼接 msclkid 参数
     const changeLink = (url) => {
       let aff_sub = route.query["utm_term"];
