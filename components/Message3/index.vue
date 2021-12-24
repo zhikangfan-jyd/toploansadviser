@@ -32,38 +32,23 @@
       <div class="steps-box-2" v-else>
         <div class="steps-content">
           <p class="desc">
-            <span class="text">How much money would you like to borrow?</span>
+            <span class="text">What type of mortgage loan are you looking for?</span>
           </p>
           <div class="btn-box">
             <div class="box">
               <button
                 :class="{ btn: true, current: btnIndex === 0 }"
-                @click="nextSecondStep(0)"
-              >
-                <span class="tag-value">Less than $5,000</span>
-              </button>
-              <button
-                :class="{ btn: true, current: btnIndex === 2 }"
                 @click="nextSecondStep(2)"
               >
-                <span class="tag-value">$5,000 - $20,000</span>
+                <span class="tag-value">Refinance</span>
               </button>
-
-            </div>
-            <div class="box">
               <button
                 :class="{ btn: true, current: btnIndex === 1 }"
                 @click="nextSecondStep(1)"
               >
-                <span class="tag-value">$20,000 - $50,000</span>
+                <span class="tag-value">Purchase</span>
               </button>
 
-              <button
-                :class="{ btn: true, current: btnIndex === 3 }"
-                @click="nextSecondStep(3)"
-              >
-                <span class="tag-value">More than $50,000</span>
-              </button>
             </div>
             <div class="start-box">
               <div
@@ -100,7 +85,7 @@
           <div :class="{ bar: true, full: isHidden }"></div>
         </div>
       </div>
-<!--      <span class="close icon" @click="closeAlert"></span>-->
+      <!--      <span class="close icon" @click="closeAlert"></span>-->
     </div>
   </div>
 </template>
@@ -190,7 +175,7 @@ export default {
 
       this.showAlert();
 
-    }, 10000);
+    }, 5000);
   },
   destroyed() {
     clearInterval(this.timer);

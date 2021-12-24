@@ -100,17 +100,17 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
@@ -131,7 +131,7 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic" />
+        <img src="@/assets/img/info.webp" alt="" class="pic"/>
         <a
           :href="mainLink"
           target="_blank"
@@ -148,7 +148,7 @@
     </section>
     <section class="faq-area" id="quick-faq">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
         <div class="faq-content">
           <h2 class="faq-title">
             <span>FAQ's</span>
@@ -603,11 +603,17 @@
         </div>
       </div>
     </section>
+    <Message3 :url="mainLink"></Message3>
   </main>
 </template>
 
 <script>
+import Message3 from '../components/Message3/index'
+
 export default {
+  components: {
+    Message3
+  },
   data() {
     return {
       mainLink:
