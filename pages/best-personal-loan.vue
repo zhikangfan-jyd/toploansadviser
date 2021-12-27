@@ -558,12 +558,12 @@
         </div>
       </div>
     </section>
-    <Message2 :url="mainLink"></Message2>
+    <Message4 :url="mainLink"></Message4>
   </main>
 </template>
 
 <script>
-import Message2 from "../components/Message2/index";
+import Message4 from '../components/Message4/index'
 import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
@@ -580,7 +580,7 @@ export default {
   },
   components: {
     FoldTheCard,
-    Message2
+    Message4
   },
   async asyncData({$axios, redirect, route}) {
     // 拼接 msclkid 参数
