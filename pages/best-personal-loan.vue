@@ -558,12 +558,12 @@
         </div>
       </div>
     </section>
-    <Message4 :url="mainLink"></Message4>
+    <Message5 :url="messageLink"></Message5>
   </main>
 </template>
 
 <script>
-import Message4 from '../components/Message4/index'
+import Message5 from '../components/Message5/index'
 import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
@@ -580,7 +580,7 @@ export default {
   },
   components: {
     FoldTheCard,
-    Message4
+    Message5
   },
   async asyncData({$axios, redirect, route}) {
     // 拼接 msclkid 参数
@@ -605,7 +605,6 @@ export default {
       });
       return {
         allProducts: products_results.data,
-        // count: products_results.data.length,
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
@@ -617,6 +616,7 @@ export default {
     return {
       mainLink:
         "/redirect/personal-loan/credible",
+      messageLink: '/redirect/best-personal-loan/credible',
       isNull: true,
       page: 1,
       pageSize: 5,

@@ -1673,7 +1673,12 @@ let personal_loans_2021 = [
     "disclaimer": "Marcus by Goldman Sachs Terms & Conditions: Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose and our evaluation of your creditworthiness. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans). Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions. Receive an APR reduction when you enroll in AutoPay. This reduction will not be applied if AutoPay is not in effect. When enrolled, a larger portion of your monthly payment will be applied to your principal loan amount and less interest will accrue on your loan, which may result in a smaller final payment. See loan agreement for details."
   }
 ];
-
+let best_personal_loan = [
+  {
+    name: 'credible',
+    link: 'https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content='
+  }
+]
 let online_personal_loans_data = [{name: 'main', link: 'https://secureconv-wh.com/?a=126374&c=279173&mt=4'}]
 
 let credible_mortgage_loan_review = [{
@@ -1749,6 +1754,8 @@ export default {
       this.handleJump(best_refinance_mortgage_loan, name);
     } else if (url === 'best-personal-loans-2021') {
       this.handleJump(personal_loans_2021, name)
+    } else if (url === 'best-personal-loan') {
+      this.handleJump(best_personal_loan, name)
     } else {
 
       this.$router.push('/error')

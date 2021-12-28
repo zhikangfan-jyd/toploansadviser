@@ -7,13 +7,17 @@ export default {
       lang: 'en'
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'We reviewed the Best Rated Personal Loans and Mortgage Loans, you can compare them and choose the best one for you. Get started with Toploansadviser.' },
-      { hid: 'keywords', name: 'keywords', content: 'personal loans, mortgage loans, loan reviews' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'We reviewed the Best Rated Personal Loans and Mortgage Loans, you can compare them and choose the best one for you. Get started with Toploansadviser.'
+      },
+      {hid: 'keywords', name: 'keywords', content: 'personal loans, mortgage loans, loan reviews'}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
 
@@ -28,7 +32,7 @@ export default {
   plugins: [
     '~plugins/vuelazyload',
     '~plugins/element-ui',
-    { src: '~/plugins/aos', ssr: false, mode: 'client' }
+    {src: '~/plugins/aos', ssr: false, mode: 'client'}
   ],
   // loading: '~/components/loading.vue',
   loading: false,
