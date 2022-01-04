@@ -12,7 +12,8 @@
         <ul class="header-nav-list">
           <li>
             <nuxt-link to="/personal-loan" exact class="link"
-            >Personal Loan</nuxt-link
+            >Personal Loan
+            </nuxt-link
             >
           </li>
 
@@ -21,7 +22,8 @@
           </li>
           <li>
             <nuxt-link to="/mortgage-loan" class="link"
-            >Mortgage Loan</nuxt-link
+            >Mortgage Loan
+            </nuxt-link
             >
           </li>
           <li class="reviews">
@@ -29,7 +31,8 @@
             <ul class="reviews-list">
               <li>
                 <nuxt-link to="/reviews/credible" class="link"
-                >Credible</nuxt-link
+                >Credible
+                </nuxt-link
                 >
               </li>
               <!-- <li>
@@ -37,7 +40,8 @@
               </li> -->
               <li>
                 <nuxt-link to="/reviews/lightstream" class="link"
-                >Lightstream</nuxt-link
+                >Lightstream
+                </nuxt-link
                 >
               </li>
               <li>
@@ -55,7 +59,7 @@
         <span class="iconfont phone-menu">&#xe61d;</span>
       </div>
     </header>
-    <Nuxt />
+    <Nuxt/>
     <footer class="footer-container">
       <div class="footer-wrapper">
         <div class="footer-info-box">
@@ -123,7 +127,7 @@
       </div>
       <div class="footer-container-bottom">
         <p>
-          <span>Copyright 2020-2021 Toploansadviser All Rights Reserved.</span>
+          <span>Copyright 2020-{{ updateTime().year }} Toploansadviser All Rights Reserved.</span>
         </p>
       </div>
     </footer>
@@ -133,6 +137,7 @@
 </template>
 
 <script>
+import {updateTime} from "../utils/date";
 
 export default {
   data() {
@@ -143,6 +148,7 @@ export default {
   },
 
   methods: {
+    updateTime,
     sendMail() {
       const reg = new RegExp(
         "^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"

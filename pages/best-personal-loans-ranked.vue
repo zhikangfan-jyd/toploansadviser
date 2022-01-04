@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loans 2021</span>
+            <span>Best Personal</span> <span>Loans {{updateTime().year}}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">

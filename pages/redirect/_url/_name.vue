@@ -1675,8 +1675,12 @@ let personal_loans_2021 = [
 ];
 let best_personal_loan = [
   {
-    name: 'credible',
+    name: 'goodloans',
     link: 'https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content='
+  },
+  {
+    name: 'poorloans',
+    link: 'https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}'
   }
 ]
 let online_personal_loans_data = [{name: 'main', link: 'https://secureconv-wh.com/?a=126374&c=279173&mt=4'}]
@@ -1719,6 +1723,7 @@ export default {
         if (process.client) {
           window.location.href = filterData[0].link;
         }
+
       } else {
         this.$router.push('/error')
       }

@@ -16,29 +16,29 @@
                 href="/personal-loans"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Personal Loan</a
+              >Personal Loan</a
               >
             </li>
             <li>
               <a href="/student-loan" target="_blank" rel="noopener noreferrer"
-                >Student Loan</a
+              >Student Loan</a
               >
             </li>
             <li>
               <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer"
-                >Mortgage Loan</a
+              >Mortgage Loan</a
               >
             </li>
             <li>
               <a href="/guides" target="_blank" rel="noopener noreferrer"
-                >Guides</a
+              >Guides</a
               >
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <Nuxt />
+    <Nuxt/>
     <footer class="footer-area">
       <section class="footer-info-area">
         <div class="footer-info-container">
@@ -51,7 +51,7 @@
                     href="/personal-loans"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Personal Loan</a
+                  >Personal Loan</a
                   >
                 </li>
 
@@ -60,7 +60,7 @@
                     href="/student-loan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Student Loan</a
+                  >Student Loan</a
                   >
                 </li>
                 <li>
@@ -68,17 +68,17 @@
                     href="/mortgage-loan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Mortgage Loan</a
+                  >Mortgage Loan</a
                   >
                 </li>
                 <li>
                   <a href="/about-us" target="_blank" rel="noopener noreferrer"
-                    >About Us</a
+                  >About Us</a
                   >
                 </li>
                 <li>
                   <a href="/guides" target="_blank" rel="noopener noreferrer"
-                    >Guides</a
+                  >Guides</a
                   >
                 </li>
                 <li>
@@ -86,7 +86,7 @@
                     href="/contact-us"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Contact Us</a
+                  >Contact Us</a
                   >
                 </li>
                 <li>
@@ -94,7 +94,7 @@
                     href="/term-of-use"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Terms of Use</a
+                  >Terms of Use</a
                   >
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     href="/privacy-policy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Privacy Policy</a
+                  >Privacy Policy</a
                   >
                 </li>
               </ul>
@@ -134,7 +134,7 @@
                   href="/privacy-policy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Privacy Policy</a
+                >Privacy Policy</a
                 >
               </p>
               <button class="btn">Send</button>
@@ -181,7 +181,7 @@
             </p>
             <div class="footer-additional">
               <p class="copyright">
-                All rights reserved © 2021
+                All rights reserved © {{ updateTime().year }}
                 <span class="green">Toploansadviser</span>
               </p>
               <span class="circle"><strong>18</strong> +</span>
@@ -194,7 +194,13 @@
 </template>
 
 <script>
-export default {};
+import {updateTime} from "../utils/date";
+
+export default {
+  methods: {
+    updateTime
+  }
+};
 </script>
 
 <style lang="scss" scoped>

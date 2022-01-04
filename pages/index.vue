@@ -25,14 +25,14 @@
                     alt="personal loan on the cover"
                     class="pic"
                   />
-                  <h1 class="website-title">Best Personal Loan 2021</h1>
+                  <h1 class="website-title">Best Personal Loan {{ updateTime().year }}</h1>
 
                   <a
                     href="/personal-loan"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -44,7 +44,7 @@
                     class="pic"
                   />
                   <h1 class="website-title">
-                    Best Student Loan Refinance Companies 2021
+                    Best Student Loan Refinance Companies {{ updateTime().year }}
                   </h1>
 
                   <a
@@ -52,7 +52,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -63,14 +63,14 @@
                     alt="mortgage loan on the cover"
                     class="pic"
                   />
-                  <h1 class="website-title">Best Mortgage Lenders 2021</h1>
+                  <h1 class="website-title">Best Mortgage Lenders {{ updateTime().year }}</h1>
 
                   <a
                     href="/mortgage-loan"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -111,7 +111,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h1 class="title">Best Personal Loan 2021</h1>
+                  <h1 class="title">Best Personal Loan {{ updateTime().year }}</h1>
                   <div class="desc-content">
                     <p>
                       To find the best personal loan for your financial
@@ -124,7 +124,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -135,7 +135,7 @@
                   rel="noopener noreferrer"
                 >
                   <h1 class="title">
-                    Best Student Loan Refinance Companies 2021
+                    Best Student Loan Refinance Companies {{ updateTime().year }}
                   </h1>
                   <div class="desc-content">
                     <p>
@@ -149,7 +149,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -159,7 +159,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h1 class="title">Best Mortgage Lenders 2021</h1>
+                  <h1 class="title">Best Mortgage Lenders {{ updateTime().year }}</h1>
                   <div class="desc-content">
                     <p>
                       Lower interest rates mean that you can save real money on
@@ -172,7 +172,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn"
-                    >Find more</a
+                  >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -192,7 +192,7 @@
                 href="/about-us"
                 target="_blank"
                 rel="noopener noreferrer"
-                >about Toploansadviser</a
+              >about Toploansadviser</a
               >
               <span class="icon"></span><span class="icon"></span>
             </p>
@@ -201,7 +201,7 @@
               target="_blank"
               rel="noopener noreferrer"
               class="more-link"
-              >more information here</a
+            >more information here</a
             >
           </div>
         </div>
@@ -340,16 +340,16 @@
             <div class="form-item">
               <span class="item-title">Rate annually</span>
               <div class="rate-input-box">
-                <input type="text" v-model="form.rate" @input="changeRate" />
+                <input type="text" v-model="form.rate" @input="changeRate"/>
               </div>
             </div>
             <div class="form-item">
               <span class="item-title year-title">Year</span>
-              <input type="text" v-model="form.year" @input="changeYear" />
+              <input type="text" v-model="form.year" @input="changeYear"/>
             </div>
             <div class="form-item">
               <span class="item-title">Months</span>
-              <input type="text" v-model="form.month" @input="changeMonth" />
+              <input type="text" v-model="form.month" @input="changeMonth"/>
             </div>
           </div>
           <div class="btn-box">
@@ -373,12 +373,12 @@
           <div class="compare-title">
             <span class="icon"></span><span class="icon"></span>
             <span class="text"
-              ><a
-                href="/personal-loan"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Compare rates</a
-              ></span
+            ><a
+              href="/personal-loan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Compare rates</a
+            ></span
             >
           </div>
 
@@ -391,7 +391,7 @@
                   :key="index"
                 >
                   <a target="_blank" :href="product.link">
-                    <img :src="product.logo" :alt="product.name" />
+                    <img :src="product.logo" :alt="product.name"/>
                   </a>
                 </div>
               </div>
@@ -402,7 +402,7 @@
                   :key="index"
                 >
                   <a target="_blank" :href="product.link">
-                    <img :src="product.logo" :alt="product.name" />
+                    <img :src="product.logo" :alt="product.name"/>
                   </a>
                 </div>
               </div>
@@ -421,11 +421,12 @@
               data-aos="fade-up"
             >
               <div class="img-box">
-                <img v-lazy="item.picture" :alt="item.title" />
+                <img v-lazy="item.picture" :alt="item.title"/>
               </div>
               <h6 class="blog-title">{{ item.title }}</h6>
               <nuxt-link :to="'/guides/' + item.key" class="link"
-                >Read full Article</nuxt-link
+              >Read full Article
+              </nuxt-link
               >
             </li>
           </ul>
@@ -447,7 +448,8 @@
 </template>
 
 <script>
-import { Swiper, SwiperSlide, directive } from "vue-awesome-swiper";
+import {updateTime} from "../utils/date";
+import {Swiper, SwiperSlide, directive} from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
 export default {
@@ -468,7 +470,7 @@ export default {
     swiper: directive,
   },
 
-  async asyncData({ app, redirect }) {
+  async asyncData({app, redirect}) {
     try {
       let results = await app.$axios.$get("/data/person_loan_product.json");
       return {
@@ -530,6 +532,7 @@ export default {
     };
   },
   methods: {
+    updateTime,
     // 获取博客
     async getBlog() {
       let personal_results = await this.$axios.get("/data/blogs/personal.json");

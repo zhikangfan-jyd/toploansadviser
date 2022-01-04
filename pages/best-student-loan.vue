@@ -42,7 +42,7 @@
           </a>
         </div>
         <div class="img-box">
-          <img src="@/assets/img/school-loans-banner.webp" alt="" class="pic" />
+          <img src="@/assets/img/school-loans-banner.webp" alt="" class="pic"/>
           <div class="trustpilot-box">
             <span class="iconfont big-star">&#xe64c;</span>
             <span class="text">Trustpilot</span>
@@ -91,19 +91,19 @@
         </div>
         <div class="logo-container">
           <ul class="logo-list">
-            <li><img src="@/assets/img/AEL.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/brazos.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/RISLA.webp" alt="" class="pic" /></li>
+            <li><img src="@/assets/img/AEL.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/brazos.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/RISLA.webp" alt="" class="pic"/></li>
             <li>
-              <img src="@/assets/img/College_Ave.webp" alt="" class="pic" />
+              <img src="@/assets/img/College_Ave.webp" alt="" class="pic"/>
             </li>
-            <li><img src="@/assets/img/SoFi.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/PenFed.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/INvestEd.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/ELFI.webp" alt="" class="pic" /></li>
-            <li><img src="@/assets/img/MEFA.webp" alt="" class="pic" /></li>
+            <li><img src="@/assets/img/SoFi.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/PenFed.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/INvestEd.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/ELFI.webp" alt="" class="pic"/></li>
+            <li><img src="@/assets/img/MEFA.webp" alt="" class="pic"/></li>
             <li>
-              <img src="@/assets/img/Citizens_Bank.webp" alt="" class="pic" />
+              <img src="@/assets/img/Citizens_Bank.webp" alt="" class="pic"/>
             </li>
           </ul>
         </div>
@@ -117,17 +117,17 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
@@ -138,7 +138,7 @@
       <div class="product-container">
         <div class="title-box">
           <h2 class="area-title">
-            Best Student Loan Refinance Companies in 2021
+            Best Student Loan Refinance Companies in {{ updateTime().year }}
           </h2>
           <a
             :href="'/redirect/student-loan/' + mainName"
@@ -193,7 +193,7 @@
               <div class="visited-box" v-if="index == 0">
                 <span class="iconfont"></span>
                 <span class="text"
-                  ><strong>354 users</strong> chose this site today</span
+                ><strong>354 users</strong> chose this site today</span
                 >
               </div>
 
@@ -205,7 +205,7 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                     >
-                      <img v-lazy="item.logo" :alt="item.name" />
+                      <img v-lazy="item.logo" :alt="item.name"/>
                     </a>
                   </div>
                   <div class="rate-box">
@@ -245,7 +245,8 @@
                         v-if="item.review_key != ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
-                        >Read Review</nuxt-link
+                      >Read Review
+                      </nuxt-link
                       >
                     </div>
                   </div>
@@ -282,7 +283,7 @@
                   <div class="terms-box">
                     <span class="title">Loan Terms</span>
                     <span class="text-box"
-                      >{{ item.loan_term.min_term }} -
+                    >{{ item.loan_term.min_term }} -
                       {{ item.loan_term.max_term }} years</span
                     >
                   </div>
@@ -335,7 +336,7 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic" />
+        <img src="@/assets/img/info.webp" alt="" class="pic"/>
         <a
           :href="'/redirect/student-loan/'+mainName "
           target="_blank"
@@ -352,7 +353,7 @@
     </section>
     <section class="faq-area" id="quick-faq">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
         <div class="faq-content">
           <h2 class="faq-title">
             <span>FAQ's</span>
@@ -375,7 +376,9 @@
 
 <script>
 import FoldTheCard from "../components/FoldTheCard/index";
-import { computeScore } from "../utils/index";
+import {computeScore} from "../utils/index";
+import {updateTime} from "../utils/date";
+
 export default {
   head: {
     link: [
@@ -388,7 +391,7 @@ export default {
   components: {
     FoldTheCard,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
 
     try {
       // 获取所有产品
@@ -425,6 +428,7 @@ export default {
   },
   methods: {
     computeScore,
+    updateTime,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

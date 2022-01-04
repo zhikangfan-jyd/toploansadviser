@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Payday Loans</span> <span>For Bad Credit of 2021</span>
+            <span>Best Payday Loans</span> <span>For Bad Credit of {{updateTime().year}}</span>
           </h1>
           <p class="desc">
             A payday lender can spot you some cash until your next payday,

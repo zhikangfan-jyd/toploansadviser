@@ -88,7 +88,7 @@
     <section class="product-area" id="quick-companies">
       <div class="product-container">
         <div class="title-box">
-          <h2 class="area-title">Best Personal Loan Companies in 2021</h2>
+          <h2 class="area-title">Best Personal Loan Companies in {{updateTime().year}}</h2>
           <a
             :href="mainLink"
             target="_blank"

@@ -1,11 +1,11 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
-      <div class="slogan">We explore smarter online personal loan lenders for the coming Christmas day!</div>
+      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loan 2021</span>
+            <span>Best Personal</span> <span>Loan {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -189,7 +189,13 @@
               >Advertising Disclosure</span
               >
               <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+                The information shared through this website is based on our team’s personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
               </div>
             </div>
           </div>
@@ -240,7 +246,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -295,7 +301,8 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                        >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -462,7 +469,8 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                    >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -615,15 +623,16 @@
         </div>
       </section>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+
 export default {
   head() {
     return {
@@ -679,7 +688,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/bestegg_personal_loans_product.json"
@@ -724,7 +733,7 @@ export default {
   methods: {
     computeScore,
     formatNum,
-    updateTime,handleShowDisclosure() {
+    updateTime, handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },
 

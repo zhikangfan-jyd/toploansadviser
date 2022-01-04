@@ -9,19 +9,19 @@
           </p>
           <div class="btn-box">
             <div class="box">
-              <button class="btn poor" @click="nextStep">
+              <button class="btn poor" @click="nextStep(0)">
                 <span class="tag-name">Poor</span>
                 <span class="tag-value">(&lt;500)</span>
               </button>
-              <button class="btn average" @click="nextStep">
+              <button class="btn average" @click="nextStep(1)">
                 <span class="tag-name">Average</span>
                 <span class="tag-value">(500 - 699)</span>
               </button>
-              <button class="btn good" @click="nextStep">
+              <button class="btn good" @click="nextStep(2)">
                 <span class="tag-name">Good</span>
                 <span class="tag-value">(700 - 749)</span>
               </button>
-              <button class="btn excellent" @click="nextStep">
+              <button class="btn excellent" @click="nextStep(3)">
                 <span class="tag-name">Excellent</span>
                 <span class="tag-value">(&gt;749)</span>
               </button>
@@ -134,7 +134,10 @@ export default {
         })
       });
     },
-    nextStep() {
+    nextStep(num) {
+      if (num === 0) {
+        this.url = '/redirect/best-personal-loan/poorloans'
+      }
       this.isHidden = true;
       this.step = 2;
     },

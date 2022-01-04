@@ -3,7 +3,7 @@
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
-          <h1 class="title">{{ review.name }} Review 2021</h1>
+          <h1 class="title">{{ review.name }} Review {{updateTime().year}}</h1>
           <p class="info">
             <span>By {{ review.author.name }}</span>
             <span class="line">|</span>
@@ -406,6 +406,7 @@
 
 <script>
 import { computeScore, formatNum } from "../../utils/index";
+import  {updateTime} from '../../utils/date'
 import { shareToFB, shareToTwitter } from "../../utils/share";
 import CalculatorPopup from "~/components/CalculatorPopup/index.vue";
 export default {
@@ -467,6 +468,7 @@ export default {
     shareToFB,
     shareToTwitter,
     formatNum,
+    updateTime,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

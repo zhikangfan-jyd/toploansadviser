@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">Contact US</h1>
-          <p class="update">Last updated March 2021</p>
+          <p class="update">Last updated March {{ updateTime().year }}</p>
         </div>
         <img
           src="@/assets/img/contact-us-banner-bg.webp"
@@ -66,6 +66,8 @@
 </template>
 
 <script>
+import {updateTime} from "../utils/date";
+
 export default {
   data() {
     return {
@@ -78,6 +80,7 @@ export default {
     };
   },
   methods: {
+    updateTime,
     validate() {
       const reg = new RegExp(
         "^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"

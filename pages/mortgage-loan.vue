@@ -4,7 +4,7 @@
       <div class="slogan">Make it easy to find affordable and responsible mortgages in the US.</div>
       <div class="banner-container">
         <div class="banner-content">
-          <h1 class="website-title">Compare Best Mortgage Lenders 2021</h1>
+          <h1 class="website-title">Compare Best Mortgage Lenders {{updateTime().year}}</h1>
           <p class="subtitle">Save Money on Your Mortgage</p>
           <div class="content">
             <p>

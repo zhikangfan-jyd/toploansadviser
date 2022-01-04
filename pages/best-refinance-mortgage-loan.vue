@@ -60,16 +60,16 @@
     </section>
     <section class="why-choose-credible-area">
       <div class="why-choose-credible-container">
-        <h2 class="area-title">Best Mortgage Refinancing Lender 2021</h2>
+        <h2 class="area-title">Best Mortgage Refinancing Lender {{ updateTime().year }}</h2>
         <p class="sub-desc">
           Credible made it easy and straightforward to see which lender was best
           for you
         </p>
         <div class="container-box">
-          <img src="@/assets/img/family.webp" alt="" class="pic" />
+          <img src="@/assets/img/family.webp" alt="" class="pic"/>
           <div class="content-list">
             <div class="list-item">
-              <img src="@/assets/img/choose-pic-1.webp" alt="" class="img" />
+              <img src="@/assets/img/choose-pic-1.webp" alt="" class="img"/>
               <div class="list-content">
                 <p class="title">Actual rates from multiple lenders</p>
                 <p class="desc">
@@ -79,7 +79,7 @@
               </div>
             </div>
             <div class="list-item">
-              <img src="@/assets/img/choose-pic-2.webp" alt="" class="img" />
+              <img src="@/assets/img/choose-pic-2.webp" alt="" class="img"/>
               <div class="list-content">
                 <p class="title">Smart technology</p>
                 <p class="desc">
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="list-item">
-              <img src="@/assets/img/choose-pic-3.webp" alt="" class="img" />
+              <img src="@/assets/img/choose-pic-3.webp" alt="" class="img"/>
               <div class="list-content">
                 <p class="title">End-to-end experience</p>
                 <p class="desc">
@@ -110,17 +110,17 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic" />
+            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
@@ -172,8 +172,8 @@
     </section>
     <section class="comments-area">
       <div class="comments-container">
-        <img src="@/assets/img/comments-pic-1.webp" alt="" class="pic-1" />
-        <img src="@/assets/img/comments-pic-2.webp" alt="" class="pic-2" />
+        <img src="@/assets/img/comments-pic-1.webp" alt="" class="pic-1"/>
+        <img src="@/assets/img/comments-pic-2.webp" alt="" class="pic-2"/>
         <div class="comments-item first">
           <div class="comments-info-box">
             <div class="info-box">
@@ -181,7 +181,7 @@
               <span class="author-name">James</span>
             </div>
 
-            <img src="@/assets/img/star.webp" alt="" class="star" />
+            <img src="@/assets/img/star.webp" alt="" class="star"/>
           </div>
           <div class="comments-content">
             <p><strong> wonderfull to work with even for</strong></p>
@@ -195,7 +195,7 @@
               <span class="author-name">Scott buffum</span>
             </div>
 
-            <img src="@/assets/img/star.webp" alt="" class="star" />
+            <img src="@/assets/img/star.webp" alt="" class="star"/>
           </div>
           <div class="comments-content">
             <p><strong>Fast and easy</strong></p>
@@ -211,12 +211,12 @@
               <span class="author-name">GUY</span>
             </div>
 
-            <img src="@/assets/img/star.webp" alt="" class="star" />
+            <img src="@/assets/img/star.webp" alt="" class="star"/>
           </div>
           <div class="comments-content">
             <p>
               <strong
-                >Simple process and good Customer Service when contacted</strong
+              >Simple process and good Customer Service when contacted</strong
               >
             </p>
             <p>
@@ -242,7 +242,7 @@
               <span class="author-name">Emmanuel K</span>
             </div>
 
-            <img src="@/assets/img/star.webp" alt="" class="star" />
+            <img src="@/assets/img/star.webp" alt="" class="star"/>
           </div>
           <div class="comments-content">
             <p><strong>Easy well presented options Saved info...</strong></p>
@@ -258,7 +258,7 @@
               <span class="author-name">Megan L</span>
             </div>
 
-            <img src="@/assets/img/star.webp" alt="" class="star" />
+            <img src="@/assets/img/star.webp" alt="" class="star"/>
           </div>
           <div class="comments-content">
             <p><strong>Easy & straightforward, highly recommend!</strong></p>
@@ -275,7 +275,7 @@
     </section>
     <section class="faq-area" id="quick-faq">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
         <div class="faq-content">
           <h2 class="faq-title">
             <span>FAQ's</span>
@@ -734,6 +734,8 @@
 </template>
 
 <script>
+import {updateTime} from '../utils/date'
+
 export default {
   data() {
     return {
@@ -743,6 +745,9 @@ export default {
   },
   created() {
     this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid']
+  },
+  methods: {
+    updateTime
   }
 };
 </script>

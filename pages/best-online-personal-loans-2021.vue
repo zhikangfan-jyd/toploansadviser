@@ -1,7 +1,7 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
-      <div class="slogan">We explore smarter online personal loan lenders for the coming Christmas day!</div>
+      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">

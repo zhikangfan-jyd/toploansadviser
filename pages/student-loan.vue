@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Student Loan</span> <span>Refinance Companies 2021</span>
+            <span>Best Student Loan</span> <span>Refinance Companies {{updateTime().year}}</span>
           </h1>
           <p class="sub-title">Compare Top Student Refinance Rates</p>
           <div class="content">
