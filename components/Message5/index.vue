@@ -1,7 +1,7 @@
 <template>
   <div class="alert-wrapper">
     <div class="alert-content">
-      <div class="steps-box-1" v-if="!isHidden">
+      <div v-if="!isHidden" class="steps-box-1">
         <h3 class="title">Compare Personal Loan Rates From Top Lenders</h3>
         <div class="steps-content">
           <p class="desc">
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="steps-box-2" v-else>
+      <div v-else class="steps-box-2">
         <div class="steps-content">
           <p class="desc">
             <span class="text">How much money would you like to borrow?</span>
@@ -67,25 +67,25 @@
             </div>
             <div class="start-box">
               <div
-                href="javascript:void(0);"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="start-btn disabled"
                 v-if="isDisabled"
+                class="start-btn disabled"
+                href="javascript:void(0);"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
               >Get Started <span class="iconfont">&#xe63c;</span></div
               >
               <a
-                :href="url"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                class="start-btn"
                 v-else
+                :href="url"
+                class="start-btn"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
                 @click="closeAlert"
               >Get Started <span class="iconfont">&#xe63c;</span></a
               >
               <div class="power">
                 <span class="text">Powered by</span>
-                <img src="/data/images/credible.webp" alt="" class="logo"/>
+                <img alt="" class="logo" src="/data/images/credible.webp"/>
               </div>
             </div>
           </div>
