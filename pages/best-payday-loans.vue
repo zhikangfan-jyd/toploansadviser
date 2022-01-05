@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Payday Loans</span> <span>For Bad Credit of {{updateTime().year}}</span>
+            <span>Best Payday Loans</span> <span>For Bad Credit of {{ updateTime().year }}</span>
           </h1>
           <p class="desc">
             A payday lender can spot you some cash until your next payday,
@@ -43,7 +43,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="disclosure-link"
-            >Advertising Disclosure</a
+          >Advertising Disclosure</a
           >
         </div>
         <div class="company-card-container">
@@ -76,7 +76,7 @@
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
-                  <img :src="company.logo" :alt="company.name" class="logo" />
+                  <img :src="company.logo" :alt="company.name" class="logo"/>
                 </a>
               </div>
               <div class="interest-box">
@@ -95,7 +95,7 @@
                 <span class="loan-amount">{{ company.loan_amount }}</span>
                 <div class="btn-star-box">
                   <div class="start-box">
-                    <Star :score="Number(company.score)" />
+                    <Star :score="Number(company.score)"/>
                   </div>
                   <a
                     :href="'/redirect/payday-loans/'+ company.name"
@@ -115,7 +115,7 @@
               </div>
               <div class="btn-star-box">
                 <div class="start-box">
-                  <Star :score="Number(company.score)" />
+                  <Star :score="Number(company.score)"/>
                 </div>
                 <a
                   :href="'/redirect/payday-loans/'+company.name"
@@ -148,7 +148,7 @@
                     class="detail-btn"
                   >
                     <span class="text"
-                      >Click here for official site, terms, and details.</span
+                    >Click here for official site, terms, and details.</span
                     >
                   </a>
                 </div>
@@ -160,7 +160,7 @@
     </section>
     <section class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
         <div class="faq-content">
           <h4 class="faq-title">
             <span>FAQ's</span>
@@ -587,7 +587,7 @@
             </p>
             <p>
               <i
-                >“This culture of coercion drained millions of dollars from
+              >“This culture of coercion drained millions of dollars from
                 cash-strapped consumers who had few options to fight back. The
                 CFPB was created to stand up for consumers and today we are
                 taking action to put an end to this illegal, predatory
@@ -643,17 +643,21 @@
         </div>
       </div>
     </section>
+    <Message url="https://www.drcredit.com/591.html"></Message>
   </main>
 </template>
 
 <script>
 import Star from "../components/star/index.vue";
-import { updateTime } from "../utils/date";
+import Message from '../components/Message6/index.vue'
+import {updateTime} from "../utils/date";
+
 export default {
   components: {
     Star,
+    Message
   },
-  async asyncData({ $axios, redirect }) {
+  async asyncData({$axios, redirect}) {
     try {
       let results = await $axios.$get("/data/payday-loans.json");
       return {

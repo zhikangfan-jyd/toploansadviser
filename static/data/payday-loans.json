@@ -2,7 +2,7 @@
     "data": [
         {
             "name": "Personalloans.com",
-            "logo": "/data/images/personal-loans.jpeg",
+            "logo": "/data/images/personal-loans.webp",
             "link": "https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
             "interest": "5.99%-35.99%",
             "term": "3-72 months",
@@ -49,7 +49,7 @@
                     "text": "Get your money as soon as next the business day, if approved"
                 }
             ],
-            "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
+            "desc": "Representative Example: Borrow $2,000 for 12 months with a 19.9% representative APR and a monthly repayment of $183.63. Total repayment will be $2,203.56."
         },
         {
             "name": "CashUSA.com",
@@ -97,7 +97,7 @@
                     "text": "Loans for any purpose"
                 }
             ],
-            "desc": "Representative Example: $1000 loan over a 12-month term. Total cost, including interest, of $1,134.72. APR 29.82%. Rates between 5.9% APR and 35.99% APR. Loan term lengths from 3 to 36 months."
+            "desc": "Representative Example: $1000 loan over a 12-month term. Total cost, including interest, of $1,134.72. APR 29.82%. Rates between 5.9% APR and 35.99% APR. Loan term lengths from 3 to 36 months."
         },
         {
             "name": "Check Into Cash",

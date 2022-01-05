@@ -29,7 +29,7 @@
           />
           <p class="author-info">
             <span class="name">Angela Boston</span>
-            <span class="time">Updating on 2nd August 2021</span>
+            <span class="time">Updating on 1nd {{updateTime().month}} {{updateTime().year}}</span>
           </p>
         </div>
         <p class="text medium">
@@ -586,12 +586,17 @@
 </template>
 
 <script>
+import {updateTime} from "../utils/date";
+
 export default {
   data() {
     return {
       mainLink:
         "/redirect/credible-mortgage-loan-review/main",
     };
+  },
+  methods:{
+    updateTime
   },
   mounted() {
     this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];

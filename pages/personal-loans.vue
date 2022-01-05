@@ -3,7 +3,7 @@
     <section class="banner-area">
       <div class="banner-container">
         <h1 class="title">Compare Personal Loan Rates</h1>
-        <p class="update">June 2021</p>
+        <p class="update">{{ updateTime().month }} {{ updateTime().year }}</p>
         <p class="desc">
           Compare and choose the right personal loan provider for your needs,
           whether it's debt consolidation, credit card refinancing, or a major
@@ -19,7 +19,7 @@
             href="/disclosure"
             target="_blank"
             class="small"
-            >Full Advertiser Disclosure</a
+          >Full Advertiser Disclosure</a
           >.
         </p>
         <div class="feature-box">
@@ -71,7 +71,7 @@
               ></path>
             </svg>
             <span class="text"
-              >Credit score not affected for prequalification</span
+            >Credit score not affected for prequalification</span
             >
           </div>
           <div class="feature-item">
@@ -145,7 +145,7 @@
                     ></path>
                   </svg>
                   <span class="popup"
-                    >Choose the purpose of the loan from the list below.</span
+                  >Choose the purpose of the loan from the list below.</span
                   >
                 </label>
                 <select
@@ -186,7 +186,7 @@
                     ></path>
                   </svg>
                   <span class="popup loanAmount"
-                    >Enter the amount of money you’d like to borrow. Larger
+                  >Enter the amount of money you’d like to borrow. Larger
                     amounts are typically harder to qualify for, though there
                     are lenders that specialize in high amounts.</span
                   >
@@ -194,8 +194,8 @@
                 <div class="money-box">
                   <span class="popupCurrency">$</span>
                   <span class="loanAmountValue">{{
-                    formatNum(String(loan_amount))
-                  }}</span>
+                      formatNum(String(loan_amount))
+                    }}</span>
                 </div>
                 <div class="slider_track">
                   <el-slider
@@ -266,14 +266,14 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="name"
-                      >{{ product.name }}</a
+                    >{{ product.name }}</a
                     >
                     <a
                       :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="min-debt"
-                      >{{ product.introduce }}</a
+                    >{{ product.introduce }}</a
                     >
 
                     <div class="meritList-box">
@@ -297,14 +297,14 @@
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="btn"
-                      >Get my rate</a
+                    >Get my rate</a
                     >
                     <a
                       :href="'/redirect/personal-loans/'+product.name"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-site"
-                      >Visit site »</a
+                    >Visit site »</a
                     >
                   </div>
                 </div>
@@ -323,7 +323,7 @@
                         rel="noopener noreferrer"
                         v-if="product.review_key != ''"
                         class="read-review"
-                        >Read {{ product.name }} Review »</a
+                      >Read {{ product.name }} Review »</a
                       >
                     </div>
                     <div class="right-part">
@@ -379,7 +379,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="read-review"
-                >Read more »</a
+              >Read more »</a
               >
             </div>
             <div class="article-item">
@@ -401,7 +401,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="read-review"
-                >Read more »</a
+              >Read more »</a
               >
             </div>
             <div class="article-item">
@@ -418,14 +418,14 @@
               </a>
               <div class="article-text">
                 U.S. President Joe Biden put together the Emergency Rescue Plan
-                (now known as the American Rescue Plan of 2021) that would...
+                (now known as the American Rescue Plan of 2022) that would...
               </div>
               <a
                 href="/guides/joe-biden-and-emergency-rescue-plan"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="read-review"
-                >Read more »</a
+              >Read more »</a
               >
             </div>
           </div>
@@ -436,7 +436,7 @@
             If you’re on the hunt for a personal loan, you may be wondering,
             what <i>is</i> a personal loan, exactly?
             <b
-              >A personal loan is money you borrow from a lending institution —
+            >A personal loan is money you borrow from a lending institution —
               be it a bank, credit union, or other third-party lender—which you
               will pay back over a fixed period of time.</b
             >
@@ -527,7 +527,7 @@
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 href="/redirect/personal-loans/Credible"
-                >Credible</a
+              >Credible</a
               >
             </li>
             <li class="toplist">
@@ -535,7 +535,7 @@
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 href="/redirect/personal-loans/Best Egg"
-                >Best Egg</a
+              >Best Egg</a
               >
             </li>
             <li class="toplist">
@@ -543,7 +543,7 @@
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 href="/redirect/personal-loans/Lending Club"
-                >Lendingclub</a
+              >Lendingclub</a
               >
             </li>
           </ul>
@@ -551,6 +551,7 @@
             pre {
               white-space: normal;
             }
+
             .toplist {
               text-decoration: underline;
             }
@@ -600,26 +601,26 @@
           <div class="special-table">
             <table>
               <tbody>
-                <tr>
-                  <td><strong>Credit Score</strong></td>
-                  <td><strong>Rating</strong></td>
-                </tr>
-                <tr>
-                  <td>720 and up</td>
-                  <td>Excellent credit score</td>
-                </tr>
-                <tr>
-                  <td>690 – 719</td>
-                  <td>Good credit score</td>
-                </tr>
-                <tr>
-                  <td>630 – 689</td>
-                  <td>Average credit score</td>
-                </tr>
-                <tr>
-                  <td>300 – 629</td>
-                  <td>Poor credit score</td>
-                </tr>
+              <tr>
+                <td><strong>Credit Score</strong></td>
+                <td><strong>Rating</strong></td>
+              </tr>
+              <tr>
+                <td>720 and up</td>
+                <td>Excellent credit score</td>
+              </tr>
+              <tr>
+                <td>690 – 719</td>
+                <td>Good credit score</td>
+              </tr>
+              <tr>
+                <td>630 – 689</td>
+                <td>Average credit score</td>
+              </tr>
+              <tr>
+                <td>300 – 629</td>
+                <td>Poor credit score</td>
+              </tr>
               </tbody>
             </table>
           </div>
@@ -830,13 +831,13 @@
           </p>
           <h2>FAQs:</h2>
           <p>
-            <strong>1. What can I use a personal loan for?</strong><br />
+            <strong>1. What can I use a personal loan for?</strong><br/>
             The beauty of a personal loan is that it can be used for virtually
             anything—medical expenses, a vacation, a major purchase, and so on.
             There typically aren’t any limits to what you can use it for.
           </p>
           <p>
-            <strong>2. Who qualifies for a personal loan?</strong><br />
+            <strong>2. Who qualifies for a personal loan?</strong><br/>
             It can be easier to qualify for a personal loan if it’s secured, but
             if you’re choosing an unsecured personal loan, lenders will
             determine your eligibility based on things like credit score, credit
@@ -844,22 +845,22 @@
           </p>
           <p>
             <strong
-              >3. Will applying for a personal loan hurt my credit
+            >3. Will applying for a personal loan hurt my credit
               score?</strong
-            ><br />
+            ><br/>
             When pre-qualifying for a personal loan, lenders conduct a soft
             credit check, which does not harm your score. Once you move forward
             with a specific lending partner, they will conduct a hard credit
             inquiry, which can affect your credit score.
           </p>
           <p>
-            <strong>4. What information will I need when I apply?</strong><br />
+            <strong>4. What information will I need when I apply?</strong><br/>
             Lenders will ask for your bank information, contact information,
             bank statements, pay stubs, and a driver’s license when you apply.
           </p>
           <p>
             <strong>5. How much am I able to borrow and for how long?</strong
-            ><br />
+            ><br/>
             How much you can borrow and for how long depends on your financial
             profile as well as the lender. Some lenders will have a loan minimum
             and maximum when it comes to loan amount, and a repayment term
@@ -885,7 +886,7 @@
               :key="index"
             >
               <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
-                <img :src="product.logo" :alt="product.name" :title="product.name" />
+                <img :src="product.logo" :alt="product.name" :title="product.name"/>
               </a>
             </div>
           </div>
@@ -896,7 +897,7 @@
               :key="index"
             >
               <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
-                <img :src="product.logo" :alt="product.name" :title="product.name" />
+                <img :src="product.logo" :alt="product.name" :title="product.name"/>
               </a>
             </div>
           </div>
@@ -907,17 +908,19 @@
 </template>
 
 <script>
-import { formatNum } from "../utils/index";
+import {updateTime} from "../utils/date";
+import {formatNum} from "../utils/index";
+
 export default {
   layout: "personal",
   head() {
     return {
-      title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
-      description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+      title: 'Best 10 Online Personal Loans 2022- Toploansadviser',
+      description: 'Compare best online personal loans 2022 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
       meta: [
         {
           property: 'og:title',
-          content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+          content: 'Best Personal Loans November 2022 | Toploansadviser.com'
         },
         {
           property: 'og:type',
@@ -929,7 +932,7 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+          content: 'Compare best personal loans 2022 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
         },
         {
           property: 'og:image',
@@ -984,6 +987,7 @@ export default {
   },
   methods: {
     formatNum,
+    updateTime,
     async getData() {
       let results = await this.$axios.$get("/data/copy.json");
 
@@ -994,15 +998,15 @@ export default {
       });
 
       if (this.credit_score == 1) {
-        credit_score_obj = { min: 300, max: 480 };
+        credit_score_obj = {min: 300, max: 480};
       } else if (this.credit_score == 2) {
-        credit_score_obj = { min: 481, max: 600 };
+        credit_score_obj = {min: 481, max: 600};
       } else if (this.credit_score == 3) {
-        credit_score_obj = { min: 601, max: 720 };
+        credit_score_obj = {min: 601, max: 720};
       } else if (this.credit_score == 4) {
-        credit_score_obj = { min: 721, max: 850 };
+        credit_score_obj = {min: 721, max: 850};
       } else if (this.credit_score == 5) {
-        credit_score_obj = { min: -Infinity, max: Infinity };
+        credit_score_obj = {min: -Infinity, max: Infinity};
       }
       let filterData = this.allData.filter((item) => {
         return (

@@ -1,117 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://www.toploansadviser.com/</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/personal-loan</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/student-loan</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/mortgage</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/reviews/credible</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/reviews/marcus</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/reviews/lightstream</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/reviews/sofi</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/reviews/avant</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/about</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/contact</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/term</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/privacy</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/disclosure</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/do-you-qualify-for-the-student-loan-payment</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/6-advantages-to-filling-an-early-fafsa</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/what-kind-of-loan-do-you-need</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/credit-score-increased-during-the-pandemic</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/your-pandemic-budget</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.toploansadviser.com/guides/questions-about-credit-card-application</loc>
-  <lastmod>2021-08-26T02:10:15+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <url>
+    <loc>https://www.toploansadviser.com/</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/personal-loan</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/student-loan</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/mortgage</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/reviews/credible</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/reviews/marcus</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/reviews/lightstream</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/reviews/sofi</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/reviews/avant</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/about</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/contact</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/term</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/privacy</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/disclosure</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/should+you+consider+getting+a+coronavirus+hardship+loan</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/how+to+get+a+loan+with+bad+credit</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/don't+allow+the+covid+pandemic+alter+your+retirement+plans+entirely
+    </loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>
+      https://www.toploansadviser.com/guides/6+proposals+then+president-elect+joe+biden+put+forth+in+his+emergency+rescue+plan
+    </loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/6+primary+advantages+to+filing+an+early+fafsa</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/why+have+credit+scores+increased+during+the+pandemic</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/is+an+unsecured+loan+the+right+way+to+go+for+financial+assistance</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/how+your+credit+score+affects+your+loan+chances</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/4+questions+to+consider+before+submitting+a+credit+card+application
+    </loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/do+you+qualify+for+the+student+loan+payment+and+interest+pause</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/your+pandemic+budget_+how+to+save+for+another+12+months</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://www.toploansadviser.com/guides/what+kind+of+loan+do+you+need</loc>
+    <lastmod>2021-08-26T02:10:15+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
 
 
 </urlset>

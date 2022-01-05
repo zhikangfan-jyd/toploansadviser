@@ -1463,7 +1463,7 @@ let personal_loans_data = [
     "disclaimer": "Sofi Disclaimer: “Fixed rates from 5.99% APR to 16.99% APR (with AutoPay). Variable rates from 5.74% APR to 14.70% APR (with AutoPay). SoFi rate ranges are current as of March 18, 2019 and are subject to change without notice. Not all rates and amounts available in all states. See Personal Loan eligibility details. Not all applicants qualify for the lowest rate. If approved for a loan, to qualify for the lowest rate, you must have a responsible financial history and meet other conditions. Your actual rate will be within the range of rates listed above and will depend on a variety of factors, including evaluation of your credit worthiness, years of professional experience, income and other factors. See APR examples and terms. Interest rates on variable rate loans are capped at 14.95%. Lowest variable rate of 5.74% APR assumes current 1-month LIBOR rate of 2.49% plus 4.28% margin minus 0.25% AutoPay discount. For the SoFi variable rate loan, the 1-month LIBOR index will adjust monthly and the loan payment will be re-amortized and may change monthly. APRs for variable rate loans may increase after origination if the LIBOR index increases. The SoFi 0.25% AutoPay interest rate reduction requires you to agree to make monthly principal and interest payments by an automatic monthly deduction from a savings or checking account. The benefit will discontinue and be lost for periods in which you do not pay by automatic deduction from a savings or checking account. Loan example: A $6,000 loan with a 24.99% APR that is repayable in 60 monthly installments would have monthly payments of $176.07 to a total of $10,565.2”"
   }
 ];
-let personal_loans_2021 = [
+let personal_loans_2022 = [
   {
     "name": "credible",
     "review_key": "credible",
@@ -1757,8 +1757,8 @@ export default {
       this.handleJump(best_mortgage_loan, name)
     } else if (url === 'best-refinance-mortgage-loan') {
       this.handleJump(best_refinance_mortgage_loan, name);
-    } else if (url === 'best-personal-loans-2021') {
-      this.handleJump(personal_loans_2021, name)
+    } else if (url === 'best-personal-loans-2022') {
+      this.handleJump(personal_loans_2022, name)
     } else if (url === 'best-personal-loan') {
       this.handleJump(best_personal_loan, name)
     } else {

@@ -623,12 +623,12 @@ import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
   head: {
-    title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
-    description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+    title: 'Best 10 Online Personal Loans 2022- Toploansadviser',
+    description: 'Compare best online personal loans 2022 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
     meta: [
       {
         property: 'og:title',
-        content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+        content: 'Best Personal Loans November 2022 | Toploansadviser.com'
       },
       {
         property: 'og:type',
@@ -640,7 +640,7 @@ export default {
       },
       {
         property: 'og:description',
-        content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+        content: 'Compare best personal loans 2022 from different personel loan lenders\' rates, features and reviews in marketplace, get your best personal rates now!'
       },
       {
         property: 'og:image',
@@ -853,7 +853,7 @@ export default {
             backgroundColor: 'rgb(26,119,129)'
           })
         } else {
-          $('.banner-container .website-title').text('Best Personal Loans 2021');
+          $('.banner-container .website-title').text('Best Personal Loans 2022');
           $('.banner-container .website-title').css({
             position: 'static',
             top: headerHeight + 'px',

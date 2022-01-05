@@ -24,8 +24,8 @@
           </p>
         </div>
         <img
-          src="@/assets/img/best-personal-loans-2021-bg.webp"
-          alt="best personal loans 2021"
+          src="@/assets/img/best-personal-loans-2022-bg.webp"
+          alt="best personal loans 2022"
           class="banner-img"
         />
       </div>
@@ -370,7 +370,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -391,7 +391,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -535,7 +535,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -553,7 +553,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
@@ -636,12 +636,12 @@ import CalculatorPopup from "../components/CalculatorPopup/index";
 export default {
   head() {
     return {
-      title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
-      description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+      title: 'Best 10 Online Personal Loans 2022- Toploansadviser',
+      description: 'Compare best online personal loans 2022 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
       meta: [
         {
           property: 'og:title',
-          content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+          content: 'Best Personal Loans November 2022 | Toploansadviser.com'
         },
         {
           property: 'og:type',
@@ -653,7 +653,7 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+          content: 'Compare best personal loans 2022 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
         },
         {
           property: 'og:image',
@@ -691,7 +691,7 @@ export default {
   async asyncData({$axios, redirect, route}) {
     try {
       let products_results = await $axios.$get(
-        "/data/best-10-personal-loans-2021.json"
+        "/data/best-10-personal-loans-2022.json"
       );
       let question_results = await $axios.$get(
         "/data/person_loan_question.json"
@@ -871,7 +871,7 @@ export default {
             backgroundColor: 'rgb(26,119,129)'
           })
         } else {
-          $('.banner-container .website-title').text('Best Personal Loans 2021');
+          $('.banner-container .website-title').text('Best Personal Loans 2022');
           $('.banner-container .website-title').css({
             position: 'static',
             top: headerHeight + 'px',
@@ -890,5 +890,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/best-10-personal-loans-2021.scss";
+@import "~assets/scss/best-10-personal-loans-2022.scss";
 </style>

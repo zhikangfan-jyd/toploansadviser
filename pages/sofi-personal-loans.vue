@@ -5,7 +5,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loan {{updateTime().year}}</span>
+            <span>Best Personal</span> <span>Loan {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -24,8 +24,8 @@
           </p>
         </div>
         <img
-          src="@/assets/img/best-personal-loans-2021-bg.webp"
-          alt="best personal loans 2021"
+          src="@/assets/img/best-personal-loans-2022-bg.webp"
+          alt="best personal loans 2022"
           class="banner-img"
         />
       </div>
@@ -189,7 +189,13 @@
               >Advertising Disclosure</span
               >
               <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-                The information shared through this website is based on our team’s personal judgements and views. We use our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision. To keep our website free for use, we accept referral fees from various service providers, which have the potential to influence their respective appointed scores. A third party’s participation on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this site is subject to change at any time.The site does not include all companies offering loan products or all available loan offers.
+                The information shared through this website is based on our team’s personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
               </div>
             </div>
           </div>
@@ -240,7 +246,7 @@
                 <div class="product-item-container">
                   <div class="img-score-box">
                     <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'" />
+                      <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
                       <div class="disclaimer" v-if="item.disclaimer != ''">
                         Disclaimer
                         <el-popover
@@ -295,7 +301,8 @@
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                        >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -363,7 +370,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -384,7 +391,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -462,7 +469,8 @@
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                    >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -527,7 +535,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -545,7 +553,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"
@@ -615,24 +623,25 @@
         </div>
       </section>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+
 export default {
   head() {
     return {
-      title: 'Best 10 Online Personal Loans 2021- Toploansadviser',
-      description: 'Compare best online personal loans 2021 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
+      title: 'Best 10 Online Personal Loans 2022- Toploansadviser',
+      description: 'Compare best online personal loans 2022 from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
       meta: [
         {
           property: 'og:title',
-          content: 'Best Personal Loans November 2021 | Toploansadviser.com'
+          content: 'Best Personal Loans November 2022 | Toploansadviser.com'
         },
         {
           property: 'og:type',
@@ -644,7 +653,7 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'Compare best personal loans 2021 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
+          content: 'Compare best personal loans 2022 from different personel loan lenders\' rates, features and reviews in marketplace, get your best personal rates now!'
         },
         {
           property: 'og:image',
@@ -679,7 +688,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, redirect, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/sofi_personal_loans_product.json"
@@ -724,7 +733,7 @@ export default {
   methods: {
     computeScore,
     formatNum,
-    updateTime,handleShowDisclosure() {
+    updateTime, handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },
 
@@ -863,7 +872,7 @@ export default {
             backgroundColor: 'rgb(26,119,129)'
           })
         } else {
-          $('.banner-container .website-title').text('Best Personal Loans 2021');
+          $('.banner-container .website-title').text('Best Personal Loans 2022');
           $('.banner-container .website-title').css({
             position: 'static',
             top: headerHeight + 'px',
@@ -882,5 +891,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/scss/best-10-personal-loans-2021.scss";
+@import "~assets/scss/best-10-personal-loans-2022.scss";
 </style>
