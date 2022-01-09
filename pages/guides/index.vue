@@ -412,7 +412,6 @@ export default {
 
           ele.change_title = ele.title.toLowerCase().split(' ').join('+');
 
-
         })
         this.blogs = this.blogs.concat(results.data.data.rows);
 

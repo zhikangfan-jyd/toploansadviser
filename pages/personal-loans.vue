@@ -3,7 +3,7 @@
     <section class="banner-area">
       <div class="banner-container">
         <h1 class="title">Compare Personal Loan Rates</h1>
-        <p class="update">{{ updateTime().month }} {{ updateTime().year }}</p>
+        <p class="update">{{ updateTime().month.short }} {{ updateTime().year }}</p>
         <p class="desc">
           Compare and choose the right personal loan provider for your needs,
           whether it's debt consolidation, credit card refinancing, or a major
