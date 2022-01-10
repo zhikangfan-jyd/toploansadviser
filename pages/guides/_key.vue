@@ -109,7 +109,7 @@ import {updateTime} from "../../utils/date";
 export default {
   async asyncData({$axios, params, redirect}) {
     try {
-      let title = params.key.split('+').join(' ');
+      let title = params.key.split('-').join(' ');
 
       let results = await $axios.$get(
         `https://api.toploansadviser.com/articles/findbytitle?title=${title}`

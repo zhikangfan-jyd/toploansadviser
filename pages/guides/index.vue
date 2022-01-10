@@ -410,7 +410,7 @@ export default {
         );
         results.data.data.rows.forEach(ele => {
 
-          ele.change_title = ele.title.toLowerCase().split(' ').join('+');
+          ele.change_title = ele.title.toLowerCase().split(' ').join('-');
 
         })
         this.blogs = this.blogs.concat(results.data.data.rows);
