@@ -5,15 +5,15 @@
         <div class="banner-content">
           <div class="logo-box">
             <img
-              src="@/assets/img/website-logo.webp"
               alt="toploansadviser.com"
               class="website-logo"
+              src="@/assets/img/website-logo.webp"
             />
             <span class="cha-icon"></span>
             <img
-              src="@/assets/img/credible.webp"
               alt="Credible"
               class="credible-logo"
+              src="@/assets/img/credible.webp"
             />
           </div>
           <h1 class="website-title">Compare the Best Mortgage Loans Online</h1>
@@ -30,9 +30,9 @@
           </p>
           <a
             :href="mainLink"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -40,9 +40,9 @@
         </div>
         <div class="img-box">
           <img
-            src="@/assets/img/best-mortgage-loan-banner.webp"
             alt=""
             class="pic"
+            src="@/assets/img/best-mortgage-loan-banner.webp"
           />
           <div class="trustpilot-box">
             <span class="iconfont big-star">&#xe64c;</span>
@@ -58,40 +58,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="paretner-area">
-            <div class="paretner-container">
-                <ul class="step-box">
-                    <li class="step-item" @click="quickJump('quick-faq')"><span class="icon"></span><span class="text">Mortgage Loan FAQs</span></li>
-                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Refinance Mortgage Loan Companies </span></li>
-                    <li class="step-item" @click="quickJump('quick-companies')"><span class="icon"></span><span class="text">Best Private Student Loan Companies </span></li>
-                </ul>
-                <div class="title-box">
-                    <div class="img-box">
-                        <img src="@/assets/img/website-logo.webp" alt="toploansadviser" class="website-logo">
-                        <span class="cha-icon"></span>
-                        <img src="@/assets/img/credible.webp" alt="Credible" class="credible-logo">
-                    </div>
-                    <span class="text">CREDIBLE LENDERS</span>
-                </div>
-                <div class="logo-container">
-                    <ul class="logo-list">
-                        <li><img src="@/assets/img/AEL.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/brazos.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/RISLA.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/College_Ave.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/SoFi.webp" alt="" class="pic"></li>
-                    </ul>
-                    <ul class="logo-list">
-                        <li><img src="@/assets/img/PenFed.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/INvestEd.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/ELFI.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/MEFA.webp" alt="" class="pic"></li>
-                        <li><img src="@/assets/img/Citizens_Bank.webp" alt="" class="pic"></li>
-                    </ul>
-                </div>
-            </div>
 
-        </section> -->
     <section class="how-it-work-area">
       <div class="how-it-work-container">
         <div class="title-box">
@@ -100,17 +67,17 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-1.webp"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-2.webp"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-3.webp"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
@@ -131,12 +98,12 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic"/>
+        <img alt="" class="pic" src="@/assets/img/info.webp"/>
         <a
           :href="mainLink"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
           class="btn"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -146,9 +113,9 @@
         </p>
       </div>
     </section>
-    <section class="faq-area" id="quick-faq">
+    <section id="quick-faq" class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
+        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp"/>
         <div class="faq-content">
           <h2 class="faq-title">
             <span>FAQ's</span>

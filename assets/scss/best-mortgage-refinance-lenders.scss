@@ -1,0 +1,50 @@
+.main-container {
+  padding-top: 80px;
+
+  .slogan {
+
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(26, 119, 129);
+    font-weight: 600;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .banner-area {
+    .banner-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        font-size: 45px;
+        font-weight: bold;
+      }
+
+      .introduce-container {
+        .author-info {
+          display: flex;
+          align-items: center;
+          .author-desc {
+            color: #666;
+            .author-name {
+              color: #000;
+            }
+          }
+        }
+        .introduce-content {
+          padding: 1px 20px;
+          background-color: #F3F4F8;
+          border-radius: 4px;
+          p {
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+}
