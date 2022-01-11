@@ -363,7 +363,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       @click="
@@ -384,7 +384,7 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-btn"
@@ -527,7 +527,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   @click="
@@ -545,7 +545,7 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2022/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   class="visit-btn"

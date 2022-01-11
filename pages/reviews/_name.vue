@@ -91,7 +91,7 @@
           </div>
           <div class="btn-box">
             <a
-              :href="'/redirect/personal-loan/'+mainName"
+              :href="'/redirect/review/'+mainName"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="btn"
@@ -131,7 +131,7 @@
 
         <div class="btn-box">
           <a
-            :href="'/redirect/personal-loan/'+mainName"
+            :href="'/redirect/review/'+mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             @click="
@@ -167,7 +167,7 @@
           <div class="content" v-html="review.minimum_credit_score"></div>
           <div class="btn-box" v-if="review.key === 'sofi'">
             <a
-              :href="'/redirect/personal-loan/'+mainName"
+              :href="'/redirect/review/'+mainName"
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="btn"
@@ -280,7 +280,7 @@
         </div>
         <div class="btn-box">
           <a
-            :href="'/redirect/personal-loan/'+mainName"
+            :href="'/redirect/review/'+mainName"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="btn"
@@ -435,27 +435,33 @@ export default {
 
          ele.gclid = route.query['gclid'];
 
-        if (ele.review_key == name) {
-          product = ele;
-          mainName = ele.name + '?gclid=' + ele.gclid;
-          mainLink = ele.link;
-        } else if (ele.review_key != "" && alsoLike.length < 3) {
+        // if (ele.review_key == name) {
+        //   product = ele;
+        //   mainName = ele.name + '?gclid=' + ele.gclid;
+        //   mainLink = ele.link;
+        // } else
+
+        if (ele.review_key != "" && alsoLike.length < 3) {
           alsoLike.push(ele);
         }
       });
+
+
+
       let source = "/data/reviews/" + name + ".json";
       let results = await $axios.$get(source);
       return {
         ld: results.data.ld,
-        product: product,
-        mainLink: mainLink,
-        mainName: mainName,
+        product: results.product,
+        mainLink: results.product.link,
+        mainName: results.product.name,
         topLoans: productsResults.data.slice(0, 5),
         review: results.data,
         alsoLike,
       };
     } catch (error) {
-      redirect("/error");
+      console.log(error);
+      // redirect("/error");
     }
   },
   data() {

@@ -2,26 +2,26 @@
   <div class="page-container">
     <header class="header-container">
       <div class="header-wrapper">
-        <a href="/" target="_self" rel="noopener noreferrer">
+        <a href="/" rel="noopener noreferrer" target="_self">
           <img
-            src="@/assets/img/website-logo.webp"
             alt="Toploansadviser"
             class="website-logo"
+            src="@/assets/img/website-logo.webp"
           />
         </a>
         <ul class="header-nav-list">
           <li>
-            <nuxt-link to="/personal-loan" exact class="link"
+            <nuxt-link class="link" exact to="/personal-loan"
             >Personal Loan
             </nuxt-link
             >
           </li>
 
           <li>
-            <nuxt-link to="/student-loan" class="link">Student Loan</nuxt-link>
+            <nuxt-link class="link" to="/student-loan">Student Loan</nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/mortgage-loan" class="link"
+            <nuxt-link class="link" to="/mortgage-loan"
             >Mortgage Loan
             </nuxt-link
             >
@@ -30,30 +30,31 @@
             <span class="reviews-title link">Reviews</span>
             <ul class="reviews-list">
               <li>
-                <nuxt-link to="/reviews/credible" class="link"
+                <nuxt-link class="link" to="/reviews/credible"
                 >Credible
                 </nuxt-link
                 >
               </li>
-              <!-- <li>
-                <nuxt-link to="/reviews/marcus" class="link">Marcus</nuxt-link>
-              </li> -->
               <li>
-                <nuxt-link to="/reviews/lightstream" class="link"
+                <nuxt-link class="link" to="/reviews/marcus">Marcus</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link class="link" to="/reviews/lightstream"
                 >Lightstream
                 </nuxt-link
                 >
               </li>
               <li>
-                <nuxt-link to="/reviews/sofi" class="link">SoFi</nuxt-link>
+                <nuxt-link class="link" to="/reviews/sofi">SoFi</nuxt-link>
               </li>
               <li>
-                <nuxt-link to="/reviews/avant" class="link">Avant</nuxt-link>
+                <nuxt-link class="link" to="/reviews/avant">Avant</nuxt-link>
               </li>
+
             </ul>
           </li>
           <li>
-            <nuxt-link to="/guides" class="link">Guides</nuxt-link>
+            <nuxt-link class="link" to="/guides">Guides</nuxt-link>
           </li>
         </ul>
         <span class="iconfont phone-menu">&#xe61d;</span>
@@ -63,11 +64,11 @@
     <footer class="footer-container">
       <div class="footer-wrapper">
         <div class="footer-info-box">
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="/" rel="noopener noreferrer" target="_blank">
             <img
-              src="@/assets/img/website-footer-logo.webp"
               alt="Toploansadviser"
               class="footer-logo"
+              src="@/assets/img/website-footer-logo.webp"
             />
           </a>
         </div>
@@ -104,6 +105,23 @@
                 <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
               </li>
             </ul>
+            <ul class="footer-nav-list">
+              <li>
+                <nuxt-link to="/reviews/drcredit">Drcredit</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/reviews/lendingtree">Lending Tree</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/reviews/monevo">Monevo</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/reviews/personalloans">Personalloans</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/reviews/upstart">Upstart</nuxt-link>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="footer-sms-box">
@@ -111,11 +129,11 @@
             <div class="title">Get in Touch</div>
             <div class="footer-sms-content input-box">
               <input
-                type="text"
-                class="input"
-                autocomplete="off"
                 v-model="email"
+                autocomplete="off"
+                class="input"
                 placeholder="Email Address"
+                type="text"
               />
               <button class="btn" @click="sendMail">
                 <span class="iconfont">&#xe640;</span>
@@ -209,9 +227,6 @@ export default {
         );
       }
 
-      // $(".header-container .phone-menu").on("click", () => {
-      //   $(".header-container .header-nav-list").slideToggle("fast");
-      // });
     },
   },
   mounted() {

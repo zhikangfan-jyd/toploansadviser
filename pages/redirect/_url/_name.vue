@@ -1699,6 +1699,45 @@ let best_refinance_mortgage_loan = [{
   name: 'main',
   link: 'https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content='
 }]
+let review = [{
+  name: 'avant',
+  link: 'https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl'
+}, {
+  name: 'credible',
+  link: 'https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans'
+},
+  {
+    name: 'drcredit',
+    link: 'https://www.drcredit.com/591.html'
+  },
+  {
+    name: 'LendingTree',
+    link: 'https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans'
+  },
+  {
+    name: 'lightstream',
+    link: 'https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl'
+  },
+  {
+    name: 'Marcus',
+    link: 'https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0'
+  },
+  {
+    name: 'monevo',
+    link: 'https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w'
+  },
+  {
+    name: 'personalLoans',
+    link: 'https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}'
+  },
+  {
+    name: 'sofi',
+    link: 'https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl'
+  },
+  {
+    name: 'upstart',
+    link: 'https://upstart.9c65.net/Gv3Y9'
+  }]
 export default {
   layout: 'white',
   methods: {
@@ -1757,10 +1796,12 @@ export default {
       this.handleJump(best_mortgage_loan, name)
     } else if (url === 'best-refinance-mortgage-loan') {
       this.handleJump(best_refinance_mortgage_loan, name);
-    } else if (url === 'best-personal-loans-2022') {
+    } else if (url === 'best-personal-loans-2021') {
       this.handleJump(personal_loans_2022, name)
     } else if (url === 'best-personal-loan') {
       this.handleJump(best_personal_loan, name)
+    } else if (url === 'review') {
+      this.handleJump(review, name)
     } else {
 
       this.$router.push('/error')
