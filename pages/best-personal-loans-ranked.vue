@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Personal</span> <span>Loans {{updateTime().year}}</span>
+            <span>Best Personal</span> <span>Loans {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Personal Loan Rates</p>
           <div class="content">
@@ -25,9 +25,9 @@
           </p>
         </div>
         <img
-          src="@/assets/img/about-us-banner-bg.webp"
           alt=""
           class="banner-img"
+          src="@/assets/img/about-us-banner-bg.webp"
         />
       </div>
     </section>
@@ -185,8 +185,9 @@
               </div>
             </div>
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-              >Advertising Disclosure</nuxt-link
+              <nuxt-link class="title" to="/disclosure"
+              >Advertising Disclosure
+              </nuxt-link
               >
             </div>
           </div>
@@ -196,8 +197,8 @@
               <div class="title score">
                 <span class="text">
                   Score
-                  <el-popover placement="bottom" width="320" trigger="hover">
-                    <span class="iconfont" slot="reference">&#xe669;</span>
+                  <el-popover placement="bottom" trigger="hover" width="320">
+                    <span slot="reference" class="iconfont">&#xe669;</span>
                     <div class="content">
                       <p>
                         The ratings and ranking on our website are determined by
@@ -216,19 +217,19 @@
               </h5>
               <h5 class="title terms"><span class="text">Loan Amount</span></h5>
             </div>
-            <div class="product-list" v-if="products.length != 0">
+            <div v-if="products.length != 0" class="product-list">
               <div
-                class="product-item"
                 v-for="(item, index) in products"
                 :key="index"
+                class="product-item"
               >
-                <div class="corner-box" v-if="index == 0">
+                <div v-if="index == 0" class="corner-box">
                   <span class="text">Best Choice</span>
                 </div>
-                <div class="corner-box green" v-else-if="index == 1">
+                <div v-else-if="index == 1" class="corner-box green">
                   <span class="text">Low Rates</span>
                 </div>
-                <div class="visited-box" v-if="index == 0">
+                <div v-if="index == 0" class="visited-box">
                   <span class="iconfont"></span>
                   <span class="text"
                   ><strong>503 users</strong> chose this site today</span
@@ -238,14 +239,14 @@
                   <div class="img-score-box">
                     <div class="img-box">
                       <img v-lazy="item.logo" :alt="item.name" :title="item.name"/>
-                      <div class="disclaimer" v-if="item.disclaimer != ''">
+                      <div v-if="item.disclaimer != ''" class="disclaimer">
                         Disclaimer
                         <el-popover
                           placement="bottom"
-                          width="320"
                           trigger="hover"
+                          width="320"
                         >
-                          <span class="iconfont" slot="reference"
+                          <span slot="reference" class="iconfont"
                           >&#xe669;</span
                           >
                           <div class="content">
@@ -258,7 +259,7 @@
                     <div class="rate-box">
                       <div class="rate">
                         <span class="score">{{ item.rate.score }}</span>
-                        <div class="trustpilot-box" v-if="index == 0">
+                        <div v-if="index == 0" class="trustpilot-box">
                           <div class="text-box">
                             <span class="iconfont">&#xe64c;</span>
                             <span class="text">Trustpilot</span>
@@ -281,18 +282,19 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="star-box" v-else>
+                        <div v-else class="star-box">
                           <el-rate
-                            disabled
-                            :value="computeScore(item.rate.score)"
                             :colors="['#29b674', '#29b674', '#29b674']"
+                            :value="computeScore(item.rate.score)"
+                            disabled
                           ></el-rate>
                         </div>
                         <nuxt-link
                           v-if="item.review_key != ''"
                           :to="'/reviews/' + item.review_key"
                           class="reviews-link"
-                        >Read Review</nuxt-link
+                        >Read Review
+                        </nuxt-link
                         >
                       </div>
                     </div>
@@ -313,12 +315,12 @@
                           >
                             Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
                             <el-popover
-                              placement="bottom"
-                              width="280"
-                              trigger="hover"
                               v-if="item.compare.credit_text != ''"
+                              placement="bottom"
+                              trigger="hover"
+                              width="280"
                             >
-                              <span class="iconfont" slot="reference"
+                              <span slot="reference" class="iconfont"
                               >&#xe669;</span
                               >
                               <div class="content">
@@ -343,14 +345,14 @@
                     <div class="terms-box">
                       <h5 class="title">Loan Amount:</h5>
                       <span
-                        class="text-box"
                         v-if="item.amount.max !== 'Infinity'"
+                        class="text-box"
                       ><span>${{ formatNum(String(item.amount.min)) }}-</span
                       ><span
                       >${{ formatNum(String(item.amount.max)) }}</span
                       ></span
                       >
-                      <span class="text-box" v-else
+                      <span v-else class="text-box"
                       ><span>up to</span>
                         <span
                         >${{ formatNum(String(item.amount.min)) }}</span
@@ -361,8 +363,9 @@
                   <div class="btn-box">
                     <a
                       :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
-                      target="_blank"
+                      class="btn"
                       rel="noopener noreferrer nofollow"
+                      target="_blank"
                       @click="
                         handleTracking({
                           name: item.name,
@@ -370,7 +373,6 @@
                           link: item.link,
                         })
                       "
-                      class="btn"
                     >
                       <h3
                         class="text"
@@ -382,16 +384,16 @@
                     </a>
                     <a
                       :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
                       class="visit-btn"
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
                     >Visit site »</a
                     >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="no-results" v-else>
+            <div v-else class="no-results">
               <span class="iconfont">&#xe60b;</span>
             </div>
           </div>
@@ -421,24 +423,24 @@
         </div>
         <div class="card-list">
           <div
-            class="product-item"
             v-for="(item, index) in overallData"
             :key="index"
+            class="product-item"
           >
-            <div class="corner-box" v-if="index == 0">
+            <div v-if="index == 0" class="corner-box">
               <span class="text">Best Choice</span>
             </div>
-            <div class="corner-box green" v-if="index == 1">
+            <div v-if="index == 1" class="corner-box green">
               <span class="text">Low Rates</span>
             </div>
             <div class="product-item-container">
               <div class="img-score-box">
                 <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name" :title="item.name" />
-                  <div class="disclaimer" v-if="item.disclaimer != ''">
+                  <img v-lazy="item.logo" :alt="item.name" :title="item.name"/>
+                  <div v-if="item.disclaimer != ''" class="disclaimer">
                     Disclaimer
-                    <el-popover placement="bottom" width="320" trigger="hover">
-                      <span class="iconfont" slot="reference">&#xe669;</span>
+                    <el-popover placement="bottom" trigger="hover" width="320">
+                      <span slot="reference" class="iconfont">&#xe669;</span>
                       <div class="content">
                         <p>{{ item.disclaimer }}</p>
                       </div>
@@ -450,16 +452,17 @@
                     <span class="score">{{ item.rate.score }}</span>
                     <div class="star-box">
                       <el-rate
-                        disabled
-                        :value="computeScore(item.rate.score)"
                         :colors="['#29b674', '#29b674', '#29b674']"
+                        :value="computeScore(item.rate.score)"
+                        disabled
                       ></el-rate>
                     </div>
                     <nuxt-link
                       v-if="item.review_key != ''"
                       :to="'/reviews/' + item.review_key"
                       class="reviews-link"
-                    >Read Review</nuxt-link
+                    >Read Review
+                    </nuxt-link
                     >
                   </div>
                 </div>
@@ -481,12 +484,12 @@
                         Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
 
                         <el-popover
-                          placement="bottom"
-                          width="280"
-                          trigger="hover"
                           v-if="item.compare.credit_text != ''"
+                          placement="bottom"
+                          trigger="hover"
+                          width="280"
                         >
-                          <span class="iconfont" slot="reference"
+                          <span slot="reference" class="iconfont"
                           >&#xe669;</span
                           >
                           <div class="content">
@@ -516,7 +519,7 @@
                   >${{ formatNum(String(item.amount.max)) }}</span
                   ></span
                   >
-                  <span class="text-box" v-else
+                  <span v-else class="text-box"
                   ><span>up to</span>
                     <span>${{ formatNum(String(item.amount.min)) }}</span></span
                   >
@@ -525,8 +528,9 @@
               <div class="btn-box">
                 <a
                   :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                  target="_blank"
+                  class="btn"
                   rel="noopener noreferrer nofollow"
+                  target="_blank"
                   @click="
                     handleTracking({
                       name: item.name,
@@ -534,7 +538,6 @@
                       link: item.link,
                     })
                   "
-                  class="btn"
                 >
                   <h3 class="text" style="display: inline;">
                     Check My Rates
@@ -543,9 +546,9 @@
                 </a>
                 <a
                   :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
                   class="visit-btn"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
                 >Visit site »</a
                 >
               </div>
@@ -556,9 +559,9 @@
       <section class="faq-area">
         <div class="faq-area-title-box">
           <img
-            src="@/assets/img/faq.webp"
             alt="answear or questions about personal loans"
             class="pic"
+            src="@/assets/img/faq.webp"
           />
           <div class="faq-content">
             <h4 class="faq-title">
@@ -596,15 +599,15 @@
               </p>
               <div class="img-box">
                 <img
-                  src="@/assets/img/q1.webp"
                   alt="article about reliability"
+                  src="@/assets/img/q1.webp"
                 /><img
-                src="@/assets/img/q2.webp"
                 alt="article about reliability"
+                src="@/assets/img/q2.webp"
               />
                 <img
-                  src="@/assets/img/q3.webp"
                   alt="article about reliability"
+                  src="@/assets/img/q3.webp"
                 />
               </div>
             </div>
@@ -612,15 +615,16 @@
         </div>
       </section>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+
 export default {
   head: {
     title: 'Best 10 Online Personal Loans 2022- Toploansadviser',
@@ -674,7 +678,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, error, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/person_loan_product.json"
@@ -691,8 +695,8 @@ export default {
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

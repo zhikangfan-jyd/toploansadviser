@@ -1,0 +1,1096 @@
+.main-container {
+  padding-top: 80px;
+
+  .slogan {
+
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(26, 119, 129);
+    font-weight: 600;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .website-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $rootWidth;
+    height: 90px;
+    margin: 36px auto 53px auto;
+    background-color: rgba(0, 195, 218, .1);
+    border-radius: 4px;
+
+    .text {
+      font-size: 26px;
+      font-weight: 600;
+      color: #2E9A61;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 119px;
+      height: 36px;
+      margin-left: 28px;
+      background: #CB9600;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 36px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .banner-area {
+    .banner-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        margin-top: 35px;
+        margin-bottom: 8px;
+        font-size: 45px;
+        font-weight: bold;
+      }
+
+      .introduce-container {
+        .author-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .author-image {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 50%;
+          }
+
+          .author-desc {
+            color: #666;
+
+            .author-name {
+              color: #000;
+              font-weight: 600;
+            }
+          }
+
+          .updated {
+            margin-left: 15px;
+            font-size: 14px;
+            font-style: italic;
+          }
+        }
+
+        .introduce-content {
+          position: relative;
+          padding: 1px 20px;
+          background-color: #F3F4F8;
+          border-radius: 4px;
+          line-height: 24px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: -24px;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid #f3f4f8;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+          }
+
+          p {
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .preface-area {
+    .preface-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        font-size: 24px;
+        color: #247781;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+
+      .preface-content {
+        color: #000;
+        line-height: 24px;
+
+        p {
+          margin: 15px 0;
+        }
+      }
+
+      .division {
+        width: 100%;
+        height: 30px;
+        margin: 34px 0 20px 0;
+      }
+    }
+  }
+
+  .student-calculator-area {
+
+    //background: url("../assets/img/mortgage-calculator-bg.webp") no-repeat center center/cover;
+
+    .student-calculator-container {
+      width: $rootWidth;
+
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 38px 0 15px 0;
+
+
+      .title-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 1px solid #247781;
+
+        .title {
+          padding-left: 10px;
+          font-size: 32px;
+          font-weight: 700;
+          border-left: 8px solid #247781;
+        }
+
+        .help-container {
+          display: flex;
+          align-items: center;
+
+          .icon {
+            margin-right: 3px;
+            width: 29px;
+            height: 34px;
+          }
+
+          .text {
+            margin-right: 8px;
+            font-size: 12px;
+            line-height: 14px;
+          }
+
+          .input-box {
+            display: flex;
+            align-items: center;
+            height: 28px;
+            border: 1px solid #C8C8C8;
+            border-radius: 2px;
+            box-sizing: border-box;
+
+            .input {
+              outline: none;
+              border: none;
+              background: transparent;
+              width: 180px;
+              height: 28px;
+              box-sizing: border-box;
+              padding: 3px 2px;
+              font-size: 12px;
+              font-family: Poppins, Arial, Helvetica, sans-serif;
+            }
+
+
+            .send {
+              width: 65px;
+              height: 28px;
+              padding: 0 4px;
+              font-size: 12px;
+              outline: none;
+              color: #fff;
+              border: none;
+              background: #CB9600;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .calculator-container {
+        width: 865px;
+        margin: 30px auto 0 auto;
+        border: 1px solid #cfcfd4;
+      }
+
+      .calculator-form-box {
+
+        display: flex;
+
+
+        .calculator-form {
+          flex: 1;
+          background-color: #f0f0f2;
+          box-sizing: border-box;
+          padding: 20px;
+
+          .input-block-item {
+            display: flex;
+            flex-direction: column;
+            margin: 14px 0;
+
+            label {
+              font-weight: 600;
+              margin-bottom: 7px;
+            }
+
+            .input-box {
+
+
+              &.loan-amount-input {
+                position: relative;
+
+                input {
+                  padding-left: 28px;
+                }
+
+                &::before {
+                  position: absolute;
+                  top: 48%;
+                  transform: translateY(-50%);
+                  left: 15px;
+                  content: '$';
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+
+              &.submit-input-box {
+                position: relative;
+
+                input {
+                  padding-right: 28px;
+                }
+
+                &::before {
+                  position: absolute;
+                  top: 48%;
+                  transform: translateY(-50%);
+                  right: 15px;
+                  content: '%';
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+
+            }
+
+            input {
+              border: 1px solid #a7a8af;
+              box-sizing: border-box;
+              padding: 9px 15px;
+              outline: none;
+              width: 100%;
+              font-size: 16px;
+              font-weight: 600;
+              font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            }
+
+            .submit-btn {
+              flex-shrink: 0;
+              margin-left: 20px;
+              width: 145px;
+              height: 47px;
+              outline: none;
+              border: none;
+              font-size: 14px;
+              font-weight: 600;
+              cursor: pointer;
+              color: #fff;
+              background-color: #1a7781;
+
+              &:hover {
+                background-color: #202020;
+              }
+            }
+
+            .form-bottom-box {
+              display: flex;
+            }
+          }
+        }
+
+        .calculator-results-container {
+          flex: 1;
+          padding: 20px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .results-top {
+            text-align: center;
+
+            .results {
+              margin-bottom: 27px;
+
+              .money-box {
+                margin-top: 6px;
+
+                .coin {
+                  font-size: 25px;
+                }
+
+                .money {
+                  font-size: 45px;
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .total-paid-box {
+              display: flex;
+              justify-content: space-between;
+              padding: 7px 0;
+              border-bottom: 1px solid #000;
+
+              &:nth-last-of-type(1) {
+                border: none;
+              }
+            }
+          }
+
+          .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .btn {
+              display: block;
+              width: 100%;
+              text-align: center;
+              padding: 4px 11px;
+              border: 4px solid #ffce48;
+              color: #202020;
+              background-color: #fff;
+              text-decoration: none;
+              margin-bottom: 14px;
+              font-weight: 600;
+              box-sizing: border-box;
+
+              &:hover {
+                background-color: #ffce48;
+              }
+            }
+
+            .switch-btn {
+              font-size: 14px;
+              color: #2e9a61;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .add-extra-payments-container {
+        border-top: 1px solid #cfcfd4;
+        padding: 0 20px;
+
+        .switch-btn {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 55px;
+          cursor: pointer;
+
+          &.show {
+            .iconfont {
+              display: inline-block;
+              transform: rotateZ(-180deg);
+            }
+          }
+        }
+
+        .extra-payments-container {
+
+          max-height: 0;
+          overflow: hidden;
+          transition: all linear .5s;
+
+          &.show {
+            max-height: 1000px;
+          }
+
+          .text {
+            font-size: 14px;
+          }
+
+          .info-item {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .item-left {
+              display: flex;
+              align-items: center;
+
+              .input-box {
+                position: relative;
+                margin-right: 34px;
+
+                &::before {
+                  content: '$';
+                  position: absolute;
+                  left: 13px;
+                  top: 10px;
+                  font-weight: 600;
+                }
+
+                input {
+                  border: 1px solid #a7a8af;
+                  display: block;
+                  padding: 9px 13px 9px 25px;
+                  width: 100%;
+                  outline: none;
+                  font-size: 16px;
+                  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                  font-weight: 600;
+                  box-sizing: border-box;
+                }
+              }
+
+              .tips {
+                font-size: 14px;
+              }
+            }
+
+            .item-right {
+              select {
+                border: 1px solid #ccc;
+                padding: 10px;
+                font-weight: 600;
+                outline: none;
+                margin-left: 10px;
+                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+              }
+            }
+
+            &.button-info {
+              justify-content: flex-end;
+            }
+
+            .btn {
+              width: 400px;
+              height: 33px;
+              border: none;
+              outline: none;
+              background-color: #1a7781;
+              color: #fff;
+              font-weight: 600;
+              justify-self: flex-end;
+
+              &:hover {
+                background-color: #202020;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .products-list-area {
+    .products-list-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .product-area-title {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        margin-top: 24px;
+      }
+
+      .product-item {
+        position: relative;
+        display: flex;
+        width: $rootWidth;
+        min-height: 100px;
+        padding: 18px 0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px 0 rgba(21, 60, 60, 0.13);
+
+        &:nth-of-type(1) {
+          box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.16);
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 3px;
+            left: 3px;
+            border-radius: 4px;
+            background-color: #247781;
+          }
+        }
+
+        .corner-box {
+          position: absolute;
+          left: 0;
+          top: 0;
+
+          .corner {
+
+          }
+        }
+
+        .col {
+          padding: 10px 25px;
+          border-right: 1px dashed rgba(36, 119, 129, 0.2);
+
+          &:nth-last-of-type(1) {
+            border: none;
+          }
+        }
+
+        .logo-info-col {
+          width: 22%;
+
+
+        }
+
+        .logo-info-box {
+          text-align: center;
+
+          .logo {
+            width: 180px;
+            height: 76px;
+          }
+
+          .view-details-btn {
+            font-size: 14px;
+            color: #2E9A61;
+
+          }
+
+          .trustpilot-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-20px);
+
+            .trustpilot-top {
+              display: flex;
+              align-items: center;
+              margin-bottom: 8px;
+              font-size: 14px;
+
+              .iconfont {
+                display: inline-block;
+                font-size: 26px;
+                color: #29b674;
+                margin-right: 8px;
+              }
+            }
+
+            .trustpilot-bottom {
+              display: flex;
+              align-items: center;
+
+              .start-list {
+                display: flex;
+
+                li {
+                  width: 22px;
+                  height: 22px;
+                  text-align: center;
+                  line-height: 22px;
+                  color: #fff;
+                  font-size: 16px;
+                  margin-right: 1px;
+                  background-color: #29b674;
+                }
+              }
+
+              .score {
+                margin-left: 6px;
+                font-size: 20px;
+              }
+            }
+          }
+
+          .rate-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .star-box {
+              margin-right: 5px;
+            }
+
+            .score {
+              font-size: 20px;
+            }
+          }
+        }
+
+
+        .credit-score-col, .loan-types-col, .down-payment-col, .btn-box-col {
+          width: 19.5%;
+        }
+
+        .loan-types-box, .credit-score-box, .down-payment-box {
+          .key {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 12px;
+          }
+
+          .value {
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+
+        .loan-types-box {
+          .value {
+            font-size: 20px;
+            line-height: 30px;
+
+            .type {
+              .iconfont {
+                display: inline-block;
+                margin-right: 8px;
+                color: #2E9A61;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .btn-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+          .btn {
+            display: block;
+            width: 158px;
+            height: 36px;
+
+            background: #2E9A61;
+            border-radius: 30px;
+            color: #fff;
+            text-align: center;
+            line-height: 36px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-decoration: none;
+            transition: all linear 0.1s;
+
+            &:hover {
+              background-color: #03b959;
+            }
+          }
+
+          .visit-btn {
+            font-size: 13px;
+            color: #999;
+          }
+
+        }
+      }
+
+
+    }
+
+    .mail-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 25px 40px;
+      margin: 36px 0;
+      background: rgba(0, 195, 218, 0.1);
+      border-radius: 4px;
+
+      .mail-info {
+        .title {
+          margin-bottom: 8px;
+          font-size: 26px;
+          color: #2E9A61;
+          line-height: 39px;
+          font-weight: 600;
+        }
+
+        .txt {
+          font-size: 14px;
+          color: #3F3F3F;
+        }
+      }
+
+      .user-email-form {
+        display: flex;
+        align-items: center;
+
+        .user-email-input {
+          width: 265px;
+          height: 36px;
+          border: 1px solid #C2C2C2;
+          padding: 0 10px;
+          border-radius: 4px 0 0 4px;
+          font-size: 14px;
+          outline: none;
+          box-sizing: border-box;
+          font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+          &::-webkit-input-placeholder, &::-ms-input-placeholder, &::-moz-placeholder {
+            color: #C2C2C2;
+            font-size: 14px;
+          }
+
+
+        }
+
+        .send-btn {
+          width: 119px;
+          height: 36px;
+          background: #CB9600;
+          border-radius: 0 4px 4px 0;
+          outline: none;
+          border: none;
+          font-size: 14px;
+          color: #FFFFFF;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+      }
+    }
+
+
+  }
+
+  .student-content-area {
+    .student-content-container {
+      width: $rootWidth;
+      margin: 35px auto;
+
+      .student-container-title {
+        color: #247781;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 18px 0;
+      }
+
+      .student-container-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+
+      .student-content {
+        line-height: 24px;
+
+        .green {
+          color: #2E9A61;
+          font-weight: 500;
+        }
+
+        .formula {
+          font-size: 18px;
+        }
+
+        .rule {
+          .rule-title {
+            font-weight: 600;
+            margin-bottom: 15px;
+          }
+
+          dd {
+            display: flex;
+
+            .text {
+              margin: 0;
+            }
+
+            .circle {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              margin-top: 6px;
+              flex-shrink: 0;
+              margin-right: 12px;
+              border-radius: 50%;
+              background-color: #247781;
+            }
+          }
+        }
+
+        p {
+          margin: 15px 0;
+        }
+
+        a {
+          color: #1176EA;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+
+  .must-read-area {
+    margin-bottom: 60px;
+
+    .must-read-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .read-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .read-list {
+        a {
+          line-height: 36px;
+          font-size: 18px;
+          color: #2E9A61;
+          text-decoration-line: underline;
+        }
+      }
+
+    }
+  }
+
+  .best-mortgage-lenders-area {
+    .best-mortgage-lenders-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        margin-top: 36px;
+        margin-bottom: 54px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #247781;
+      }
+
+      .best-mortgage-lenders-main {
+        display: flex;
+        margin-bottom: 95px;
+
+        .description-container {
+          width: 190px;
+          margin-right: 20px;
+          flex-shrink: 0;
+          margin-top: 38px;
+
+          .text-content {
+
+            .text-title {
+              font-size: 28px;
+              font-weight: 400;
+            }
+
+            .text {
+              margin-top: 13px;
+              font-size: 14px;
+              color: #7A7A7A;
+              line-height: 24px;
+            }
+          }
+
+          .attribute-list {
+            margin-top: 90px;
+
+            li {
+              height: 78px;
+              border-top: 2px solid #F3F4F8;
+              line-height: 78px;
+              text-align: center;
+              color: #247781;
+              font-weight: 600;
+
+              &:nth-last-of-type(1) {
+                border-bottom: 2px solid #F3F4F8;
+              }
+
+
+            }
+          }
+        }
+
+        .card-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .card-item {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 270px;
+            margin-top: 38px;
+            background: #FFFFFF;
+
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.25);
+
+
+            .best-icon {
+              display: none;
+            }
+
+            .card-top {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 124px;
+              text-align: center;
+              border-radius: 4px 4px 0 0;
+
+              &.first {
+                background-image: linear-gradient(0deg, #E1A600 0%, #FFCA4C 100%);
+              }
+
+              &.second {
+                background-image: linear-gradient(0deg, #C57EDA 0%, #8F83DF 100%);
+              }
+
+              &.third {
+                background-image: linear-gradient(0deg, #10CACC 0%, #2BDA9E 100%);
+              }
+
+              .desc {
+                color: #fff;
+                font-size: 14px;
+                line-height: 21px;
+
+                .strong {
+
+                  font-weight: 900;
+                }
+              }
+            }
+
+            .card-middle {
+              height: 200px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+
+              .middle-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transform: translateY(-38px);
+
+                .logo-box {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 116px;
+                  height: 116px;
+                  border-radius: 50%;
+                  background: #FFFFFF;
+                  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+                }
+
+                .button-group {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin-top: 27px;
+
+                  .btn {
+                    display: block;
+                    width: 158px;
+                    height: 36px;
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 36px;
+                    background: #2E9A61;
+                    border-radius: 4px;
+                    text-decoration: none;
+                  }
+
+                  .visit-site {
+                    font-size: 13px;
+                    color: #999;
+                  }
+                }
+              }
+
+            }
+
+            .attr-list {
+              border-radius: 0 0 4px 4px;
+              overflow: hidden;
+
+              li {
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                font-size: 26px;
+                background-color: #fff;
+
+                &:nth-child(odd) {
+                  background-color: #F3F4F8;
+                }
+              }
+            }
+
+            &.best-choice {
+              margin-top: 0;
+              position: relative;
+
+              .best-icon {
+                display: block;
+                position: absolute;
+                width: 128px;
+                height: 90px;
+                right: -12px;
+                top: -9px;
+              }
+
+              .card-top {
+                height: 162px;
+                padding: 0 10px;
+
+                .desc {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

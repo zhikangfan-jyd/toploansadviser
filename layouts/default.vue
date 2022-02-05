@@ -11,50 +11,200 @@
         </a>
         <ul class="header-nav-list">
           <li>
-            <nuxt-link class="link" exact to="/personal-loan"
+            <span class="link column" exact to="/personal-loan"
             >Personal Loan
-            </nuxt-link
+            </span
             >
-          </li>
+            <div class="menu-column">
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Best Options</dt>
+                  <dd class="menu-item">
+                    <a href="/personal-loan" target="_blank">Best Personal Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-consolidation-loans" target="_blank">Best Debt Consolidation Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-home-improvement-loan" target="_blank">Best Home Improvement Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-emergency-loan" target="_blank">Best Emergency Loan</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Reviews</dt>
+                  <dd class="menu-item">
+                    <a href="/reviews/credible" target="_blank">Credible</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/marcus" target="_blank">Marcus</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/lightstream" target="_blank">LightStream</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/sofi" target="_blank">SoFi</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/avant" target="_blank">Avant</a>
+                  </dd>
 
-          <li>
-            <nuxt-link class="link" to="/student-loan">Student Loan</nuxt-link>
+                </dl>
+              </div>
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Guides & Tools</dt>
+
+                  <dd class="menu-item">
+                    <a href="/personal-loan-calculator" target="_blank">Personal Loan Calculator</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">What Is Annual Rate Of Personal Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How To Apply A Personal Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How Credit Score Effects Loan</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
           </li>
           <li>
-            <nuxt-link class="link" to="/mortgage-loan"
+            <span class="link column" to="/mortgage-loan"
             >Mortgage Loan
-            </nuxt-link
+            </span
             >
-          </li>
-          <li class="reviews">
-            <span class="reviews-title link">Reviews</span>
-            <ul class="reviews-list">
-              <li>
-                <nuxt-link class="link" to="/reviews/credible"
-                >Credible
-                </nuxt-link
-                >
-              </li>
-              <li>
-                <nuxt-link class="link" to="/reviews/marcus">Marcus</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link class="link" to="/reviews/lightstream"
-                >Lightstream
-                </nuxt-link
-                >
-              </li>
-              <li>
-                <nuxt-link class="link" to="/reviews/sofi">SoFi</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link class="link" to="/reviews/avant">Avant</nuxt-link>
-              </li>
+            <div class="menu-column">
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Best Options</dt>
+                  <dd class="menu-item">
+                    <a href="/mortgage-loan" target="_blank">Best Mortgage Lenders</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-mortgage-refinance-lenders" target="_blank">Best Refinance Lenders</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-fha-lenders" target="_blank">Best FHA Lenders</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-va-lenders" target="_blank">Best VA Lenders</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Reviews</dt>
 
-            </ul>
+                </dl>
+              </div>
+              <div class="menu-column-item">
+
+                <dl class="menu-list">
+                  <dt class="column-title">Guides & Tools</dt>
+                  <dd class="menu-item">
+                    <a href="/mortgage-loan-calculator" target="_blank">Mortgage Loan Calculator</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">First Time Homebuyer' s Guide</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How To Apply A Mortgage?</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How To Refinance Your Mortgage?</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
           </li>
           <li>
-            <nuxt-link class="link" to="/guides">Guides</nuxt-link>
+            <span class="link column" to="/student-loan">Student Loan</span>
+            <div class="menu-column">
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Best Options</dt>
+                  <dd class="menu-item">
+                    <a href="/student-loan" target="_blank">Best Private Student Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-parent-loan" target="_blank">Best Parent Student Loan</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Reviews</dt>
+
+                </dl>
+              </div>
+              <div class="menu-column-item">
+
+                <dl class="menu-list">
+                  <dt class="column-title">Guides & Tools</dt>
+                  <dd class="menu-item">
+                    <a href="/student-loans-calculator" target="_blank">Student Loan Calculator</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How Long To Pay Off Students Loans?</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How To Apply A Private Student Loan?</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">Why Should You Refinance Your Student Loan?</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <span class="link column" to="/mortgage-loan"
+            >Home Equity
+            </span
+            >
+            <div class="menu-column">
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Best Options</dt>
+                  <dd class="menu-item">
+                    <a href="/best-home-equity-loan" target="_blank">Best Home Equity Loan</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/best-helco-loan" target="_blank">Best HELCO Loan</a>
+                  </dd>
+
+
+                </dl>
+              </div>
+              <div class="menu-column-item">
+                <dl class="menu-list">
+                  <dt class="column-title">Reviews</dt>
+
+                </dl>
+              </div>
+              <div class="menu-column-item">
+
+                <dl class="menu-list">
+                  <dt class="column-title">Guides & Tools</dt>
+                  <dd class="menu-item">
+                    <a href="/home-equity-calculator" target="_blank">Home Equity Calculator</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How Home Equity Loan Works</a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/" target="_blank">How To Refinance A HELCO</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
           </li>
         </ul>
         <span class="iconfont phone-menu">&#xe61d;</span>

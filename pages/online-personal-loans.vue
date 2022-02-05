@@ -5,15 +5,15 @@
         <div class="banner-content">
           <div class="logo-box">
             <img
-              src="@/assets/img/website-logo.webp"
               alt="toploansadviser.com"
               class="website-logo"
+              src="@/assets/img/website-logo.webp"
             />
             <span class="cha-icon"></span>
             <img
-              src="@/assets/img/eaglecashloan.webp"
               alt="eaglecashloan"
               class="credible-logo"
+              src="@/assets/img/eaglecashloan.webp"
               style="height: 30px"
             />
           </div>
@@ -32,9 +32,9 @@
           </p>
           <a
             :href="mainLink"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -42,9 +42,9 @@
         </div>
         <div class="img-box">
           <img
-            src="@/assets/img/best-personal-loan-banner.webp"
             alt=""
             class="pic"
+            src="@/assets/img/best-personal-loan-banner.webp"
           />
           <div class="trustpilot-box">
             <span class="iconfont big-star">&#xe64c;</span>
@@ -68,32 +68,32 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic" />
+            <img alt="" class="pic" src="@/assets/img/work-1.webp"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic" />
+            <img alt="" class="pic" src="@/assets/img/work-2.webp"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic" />
+            <img alt="" class="pic" src="@/assets/img/work-3.webp"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="product-area" id="quick-companies">
+    <section id="quick-companies" class="product-area">
       <div class="product-container">
         <div class="title-box">
-          <h2 class="area-title">Best Personal Loan Companies in {{updateTime().year}}</h2>
+          <h2 class="area-title">Best Personal Loan Companies in {{ updateTime().year }}</h2>
           <a
             :href="mainLink"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -250,8 +250,9 @@
             </div>
           </div>
           <div class="disclosure">
-            <nuxt-link to="/disclosure" class="title"
-              >Advertising Disclosure</nuxt-link
+            <nuxt-link class="title" to="/disclosure"
+            >Advertising Disclosure
+            </nuxt-link
             >
           </div>
         </div>
@@ -261,8 +262,8 @@
             <div class="title score">
               <span class="text">
                 Score
-                <el-popover placement="bottom" width="320" trigger="hover">
-                  <span class="iconfont" slot="reference">&#xe669;</span>
+                <el-popover placement="bottom" trigger="hover" width="320">
+                  <span slot="reference" class="iconfont">&#xe669;</span>
                   <div class="content">
                     <p>
                       The ratings and ranking on our website are determined by
@@ -281,42 +282,42 @@
             </h5>
             <h5 class="title terms"><span class="text">Loan Amount</span></h5>
           </div>
-          <div class="product-list" v-if="products.length != 0">
+          <div v-if="products.length != 0" class="product-list">
             <div
-              class="product-item"
               v-for="(item, index) in products"
               :key="index"
+              class="product-item"
             >
               <div
-                class="corner-box"
                 v-if="index == 0 && item.name !== 'lightstream'"
+                class="corner-box"
               >
                 <span class="text">Best Choice</span>
               </div>
               <div
-                class="corner-box green"
                 v-else-if="item.name == 'lightstream'"
+                class="corner-box green"
               >
                 <span class="text">Low Rates</span>
               </div>
-              <div class="visited-box" v-if="index == 0">
+              <div v-if="index == 0" class="visited-box">
                 <span class="iconfont"></span>
                 <span class="text"
-                  ><strong>503 users</strong> chose this site today</span
+                ><strong>503 users</strong> chose this site today</span
                 >
               </div>
               <div class="product-item-container">
                 <div class="img-score-box">
                   <div class="img-box">
-                    <img v-lazy="item.logo" :alt="item.name" />
-                    <div class="disclaimer" v-if="item.disclaimer != ''">
+                    <img v-lazy="item.logo" :alt="item.name"/>
+                    <div v-if="item.disclaimer != ''" class="disclaimer">
                       Disclaimer
                       <el-popover
                         placement="bottom"
-                        width="320"
                         trigger="hover"
+                        width="320"
                       >
-                        <span class="iconfont" slot="reference">&#xe669;</span>
+                        <span slot="reference" class="iconfont">&#xe669;</span>
                         <div class="content">
                           <p>{{ item.disclaimer }}</p>
                         </div>
@@ -327,7 +328,7 @@
                   <div class="rate-box">
                     <div class="rate">
                       <span class="score">{{ item.rate.score }}</span>
-                      <div class="trustpilot-box" v-if="index == 0">
+                      <div v-if="index == 0" class="trustpilot-box">
                         <div class="text-box">
                           <span class="iconfont">&#xe64c;</span>
                           <span class="text">Trustpilot</span>
@@ -350,18 +351,19 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="star-box" v-else>
+                      <div v-else class="star-box">
                         <el-rate
-                          disabled
-                          :value="computeScore(item.rate.score)"
                           :colors="['#29b674', '#29b674', '#29b674']"
+                          :value="computeScore(item.rate.score)"
+                          disabled
                         ></el-rate>
                       </div>
                       <nuxt-link
                         v-if="item.review_key != ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
-                        >Read Review</nuxt-link
+                      >Read Review
+                      </nuxt-link
                       >
                     </div>
                   </div>
@@ -382,13 +384,13 @@
                         >
                           Min. Credit Score: {{ item.compare.credit_score }}
                           <el-popover
-                            placement="bottom"
-                            width="280"
-                            trigger="hover"
                             v-if="item.compare.credit_text != ''"
+                            placement="bottom"
+                            trigger="hover"
+                            width="280"
                           >
-                            <span class="iconfont" slot="reference"
-                              >&#xe669;</span
+                            <span slot="reference" class="iconfont"
+                            >&#xe669;</span
                             >
                             <div class="content">
                               <p>{{ item.compare.credit_text }}</p>
@@ -411,16 +413,16 @@
                   </div>
                   <div class="terms-box">
                     <h5 class="title">Loan Amount</h5>
-                    <span class="text-box" v-if="item.amount.max !== 'Infinity'"
-                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                      ><span
-                        >${{ formatNum(String(item.amount.max)) }}</span
-                      ></span
+                    <span v-if="item.amount.max !== 'Infinity'" class="text-box"
+                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                    ><span
+                    >${{ formatNum(String(item.amount.max)) }}</span
+                    ></span
                     >
-                    <span class="text-box" v-else
-                      ><span>up to</span>
+                    <span v-else class="text-box"
+                    ><span>up to</span>
                       <span
-                        >${{ formatNum(String(item.amount.min)) }}</span
+                      >${{ formatNum(String(item.amount.min)) }}</span
                       ></span
                     >
                   </div>
@@ -428,8 +430,9 @@
                 <div class="btn-box">
                   <a
                     :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                    target="_blank"
+                    class="btn"
                     rel="noopener noreferrer nofollow"
+                    target="_blank"
                     @click="
                       handleTracking({
                         name: item.name,
@@ -437,7 +440,6 @@
                         link: item.link,
                       })
                     "
-                    class="btn"
                   >
 
                     <h3
@@ -450,16 +452,16 @@
                   </a>
                   <a
                     :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
                     class="visit-btn"
-                    >Visit site »</a
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                  >Visit site »</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <div class="no-results" v-else>
+          <div v-else class="no-results">
             <span class="iconfont">&#xe60b;</span>
           </div>
         </div>
@@ -497,12 +499,12 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic" />
+        <img alt="" class="pic" src="@/assets/img/info.webp"/>
         <a
           :href="mainLink"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
           class="btn"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -514,7 +516,7 @@
     </section>
     <section class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic" />
+        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp"/>
         <div class="faq-content">
           <h4 class="faq-title">
             <span>FAQ's</span>
@@ -549,11 +551,11 @@
               services based on data compiled from various factors.
             </p>
             <div class="img-box">
-              <img src="@/assets/img/q1.webp" alt="toploansadviser" /><img
-                src="@/assets/img/q2.webp"
-                alt="toploansadviser"
-              />
-              <img src="@/assets/img/q3.webp" alt="toploansadviser" />
+              <img alt="toploansadviser" src="@/assets/img/q1.webp"/><img
+              alt="toploansadviser"
+              src="@/assets/img/q2.webp"
+            />
+              <img alt="toploansadviser" src="@/assets/img/q3.webp"/>
             </div>
           </div>
         </div>
@@ -563,9 +565,10 @@
 </template>
 
 <script>
-import { computeScore, formatNum } from "../utils/index";
-import { updateTime } from "../utils/date";
+import {computeScore, formatNum} from "../utils/index";
+import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
+
 export default {
   head: {
     link: [
@@ -578,7 +581,7 @@ export default {
   components: {
     FoldTheCard,
   },
-  async asyncData({ $axios, redirect, route }) {
+  async asyncData({$axios, error, route}) {
 
     try {
       let products_results = await $axios.$get("/data/best-personal-loan.json");
@@ -589,7 +592,7 @@ export default {
       // 给所有 是www.creditble.com 的链接后面都拼接 参数
       products_results.data.forEach((ele) => {
 
-          ele.gclid = route.query['gclid']
+        ele.gclid = route.query['gclid']
       });
       return {
         allProducts: products_results.data,
@@ -597,8 +600,8 @@ export default {
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

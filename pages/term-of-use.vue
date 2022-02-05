@@ -9,9 +9,9 @@
           </p>
         </div>
         <img
-          src="@/assets/img/term-of-use-banner-bg.webp"
           alt="Toploansadviser"
           class="banner-img"
+          src="@/assets/img/term-of-use-banner-bg.webp"
         />
       </div>
     </section>
@@ -149,15 +149,15 @@
                 liability for:
               </li>
             </ul>
-            <p>1.    loss of income or revenue;</p>
-            <p>2.    loss of business;</p>
-            <p>3.    loss of profits or contracts;</p>
-            <p>4.    loss of anticipated savings;</p>
-            <p>5.    loss of data;</p>
-            <p>6.    loss of goodwill;</p>
-            <p>7.    wasted management or office time; and</p>
+            <p>1. loss of income or revenue;</p>
+            <p>2. loss of business;</p>
+            <p>3. loss of profits or contracts;</p>
+            <p>4. loss of anticipated savings;</p>
+            <p>5. loss of data;</p>
+            <p>6. loss of goodwill;</p>
+            <p>7. wasted management or office time; and</p>
             <p>
-              8.    for any other loss or damage of any kind, however arising
+              8. for any other loss or damage of any kind, however arising
               and whether caused by tort (including negligence), breach of
               contract or otherwise, even if foreseeable.
             </p>
@@ -166,7 +166,7 @@
               personal injury arising from our negligence, nor our liability for
               fraudulent misrepresentation or misrepresentation as to a
               fundamental matter, nor any other liability which cannot be
-              excluded or limited under applicable law. 
+              excluded or limited under applicable law.
             </p>
           </div>
         </div>
@@ -363,7 +363,8 @@
   </main>
 </template>
 <script>
-import { updateTime } from "../utils/date";
+import {updateTime} from "../utils/date";
+
 export default {
   methods: {
     updateTime,

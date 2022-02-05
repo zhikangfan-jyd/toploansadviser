@@ -6,6 +6,7 @@
     width: 100%;
     // background-color: #f5faf6;
     background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+
     .slogan {
 
       padding: 10px 0;
@@ -19,6 +20,7 @@
         display: none;
       }
     }
+
     .banner-container {
       position: relative;
       display: flex;
@@ -209,11 +211,13 @@
             display: flex;
             align-items: flex-end;
             position: relative;
+
             .title {
               font-size: 14px;
               color: #8f8f8f;
               cursor: pointer;
             }
+
             .disclosure_content {
               display: none;
               position: absolute;
@@ -224,6 +228,7 @@
               padding: 8px;
               z-index: 9;
               border: 1px solid #e2e2e2;
+
               &::after {
                 content: '';
                 position: absolute;
@@ -251,6 +256,7 @@
           // overflow: hidden;
           //border: 1px solid rgba(0, 23, 75, 0.1);
           border-top: 2px solid #9d9d9d;
+
           .product-title-box {
             display: flex;
             align-items: center;
@@ -306,9 +312,11 @@
               border-bottom: 1px solid rgba(0, 22, 75, 0.3);
               transition: transform .1s linear;
               transform: scale(1);
+
               &:hover {
                 transform: scale(1.01);
               }
+
               &:nth-last-of-type(1) {
                 border: none;
               }
@@ -329,7 +337,7 @@
                 padding: 0 25px;
                 line-height: 34px;
                 //background-color: #fd9c28;
-                background-image: linear-gradient(to right,#c28500 0,#e1a931 42%,#e1a931 61%,#b87d06 100%);
+                background-image: linear-gradient(to right, #c28500 0, #e1a931 42%, #e1a931 61%, #b87d06 100%);
                 color: #fff;
                 font-size: 18px;
                 text-align: center;
@@ -362,7 +370,7 @@
                 }
 
                 &.green {
-                  background-image: none ;
+                  background-image: none;
                   background-color: #1a7781;
 
                   &::before {
@@ -559,6 +567,7 @@
                         .iconfont {
                           color: $theme-color;
                         }
+
                         strong {
                           font-weight: normal;
                           color: #000000;
@@ -705,7 +714,8 @@
           padding: 45px 0px 45px 10px;
           box-sizing: border-box;
           border-bottom: 1px solid rgba(0, 22, 75, 0.1);
-          background-color: rgba(41,182,116,.05);
+          background-color: rgba(41, 182, 116, .05);
+
           &:nth-last-of-type(1) {
             border: none;
           }
@@ -727,7 +737,7 @@
             padding: 0 25px;
             line-height: 34px;
             //background-color: #fd9c28;
-            background-image: linear-gradient(to right,#c28500 0,#e1a931 42%,#e1a931 61%,#b87d06 100%);
+            background-image: linear-gradient(to right, #c28500 0, #e1a931 42%, #e1a931 61%, #b87d06 100%);
             color: #fff;
             font-size: 18px;
             text-align: center;
@@ -760,7 +770,7 @@
             }
 
             &.green {
-              background-image: none ;
+              background-image: none;
               background-color: #1a7781;
 
               &::before {
@@ -957,10 +967,12 @@
                     .iconfont {
                       color: $theme-color;
                     }
+
                     strong {
                       font-weight: normal;
                       color: #000;
                     }
+
                     .text {
                       margin-left: 12px;
                       color: #64666a;
@@ -1178,6 +1190,7 @@
             margin-top: 10px;
             margin-bottom: 20px;
           }
+
           .update {
             font-size: 14px;
             color: #8b8b8b;
@@ -1273,6 +1286,7 @@
             .disclosure {
               margin-top: 17px;
               text-align: right;
+
               .title {
                 font-size: 12px;
               }
@@ -1301,6 +1315,7 @@
                   padding-bottom: 0;
                   padding-top: 25px;
                 }
+
                 &:nth-of-type(2) {
                   padding-bottom: 0;
                   padding-top: 25px;
@@ -1336,9 +1351,11 @@
                         .score {
                           font-size: 36px;
                         }
+
                         .trustpilot-box {
                           margin-bottom: 5px;
                         }
+
                         .reviews-link {
                           margin-top: 0px;
                         }
@@ -1351,12 +1368,13 @@
                   }
 
                   .features-terms-box {
-                     flex-direction: column;
+                    flex-direction: column;
                     align-items: flex-start;
                     margin-top: 15px;
-                    background-color: rgb(251,250,250);
+                    background-color: rgb(251, 250, 250);
                     border-radius: 25px;
                     padding: 20px;
+
                     .list-box {
                       flex: 2;
                       padding-left: 0;
@@ -1385,6 +1403,7 @@
                           strong {
                             font-weight: bold;
                           }
+
                           .text {
                             font-size: 18px;
                             color: #001139;
@@ -1472,6 +1491,7 @@
               padding-bottom: 0;
               padding-top: 25px;
             }
+
             &:nth-of-type(2) {
               padding-bottom: 0;
               padding-top: 25px;
@@ -1507,9 +1527,11 @@
                     .score {
                       font-size: 36px;
                     }
+
                     .trustpilot-box {
                       margin-bottom: 5px;
                     }
+
                     .reviews-link {
                       margin-top: 0px;
                     }
@@ -1528,6 +1550,7 @@
                 //background-color: rgb(251,250,250);
                 border-radius: 25px;
                 padding: 20px;
+
                 .list-box {
                   flex: 2;
                   padding-left: 0;
@@ -1556,6 +1579,7 @@
                       strong {
                         font-weight: bold;
                       }
+
                       .text {
                         font-size: 18px;
                         color: #001139;

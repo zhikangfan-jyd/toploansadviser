@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "name": "SunTrust",
+      "link": "",
+      "logo": "/data/images/sun-trust.png",
+      "score": "9.8",
+      "feature": "Best for Quick Approval",
+      "slogan": "",
+      "advantage": [],
+      "credit_score": "620",
+      "apr": "4.64%-18.0%",
+      "amount": "$10,000-$500,000",
+      "loan_types": [
+      ],
+      "description": "<p>The first lender on our list is SunTrust, a bank that offers home equity lines of credit instead of home equity loans. With the loan APR from 4.64% to 18.0%, SunTrust offers lines of credit ranging from $10,000 to $500,000 over 10 to 20 year repayment periods. It takes them only 24 hours to get back to you with the approval results so, if you’re looking for a quick solution, SunTrust should be at the top of your list. You can also choose between fixed or variable-rate repayment options, as well as access funds via mobile banking, online banking, variable-rate check or at a physical location. When it comes to eligibility, SunTrust requires you to have at least the minimum credit score of 620.</p><dl><dt>Pros:</dt><dd>Quick approval time</dd><dd>The ability to choose between fixed and variable rates</dd><dd>Plenty of ways to access funds</dd><dd>They do not charge closing costs if your account has been open for more than three years.</dd><dd>Apply for eligibility online</dd><dd>They have a low CFPB complaint ratio for its home equity products</dd></dl><dl><dt>Cons:</dt><dd>They do not offer home equity loans</dd><dd>If you repay your balance early, you may have to pay for closing costs</dd></dl>"
+    },
+    {
+      "name": "Spring EQ",
+      "link": "",
+      "logo": "/data/images/Spring-EQ.png",
+      "score": "9.7",
+      "feature": "Best for Fair Credit",
+      "slogan": "",
+      "advantage": [],
+      "credit_score": "680",
+      "apr": "Starting at 5.205%",
+      "amount": "Up to $500,000 ",
+      "loan_types": [
+      ],
+      "description": "<p>Going by the slogan “Mortgages made easy,” Spring EQ offers simplified home equities where you can access 97.5% of your home’s value in pure cash. Spring EQ allows you to borrow up to $500,000 with an APR starting at 5.205%. Given the great services they offer, Spring EQ requires you to have a high credit score of at least 680. A credit score of 740 would be ideal if you’re aiming for 90% of your property’s value. They offer different repayment periods of up to 20 years. </p><p>The good thing about Spring EQ is that they keep the approval time at a minimum and get back to you as soon as possible after you submit an application. They also offer fully online applications so you don’t have to leave the comfort of your home to start your loan application process. Overall, Spring EQ makes home equity loan application quick and simple — as long as you meet their credit score requirements, you’ll be good to go!</p><dl><dt>Pros:</dt><dd>Fast approval and funding access</dd><dd>Plenty of flexible funding options</dd><dd>Competitive interest  rates </dd><dd>Easy to apply</dd></dl><dl><dt>Cons:</dt><dd>They don’t offer any HELOC options</dd><dd>They charge an appraisal fee, along with administration fees</dd></dl>"
+    },
+    {
+      "name": "Citizens Bank",
+      "link": "",
+      "logo": "/data/images/citizens_bank.webp",
+      "score": "9.5",
+      "feature": "Best for Flexible Loan Amounts",
+      "slogan": "",
+      "advantage": [],
+      "credit_score": "580-620",
+      "apr": "3.0%-21%",
+      "amount": "$10,000-$200,000",
+      "loan_types": [
+      ],
+      "description": "<p>Next up is the Citizens Bank, which offers an APR ranging from 3.0% to 21%. Their loan amounts are significantly lower compared to SunTrust, ranging from $10,000 to $200,000+. On that note, they also offer shorter terms than SunTrust with the repayment periods ranging from 10 to 15 years. Although the Citizens Bank has proven to be a good option for many people looking into home equity products, the downside here is that they don’t disclose much information upfront. You’ll have to get in contact with them to discuss your particular situation.</p><p>The good thing about Citizens Bank is that they offer a variety of home equity products including the home equity loans, standard home equity lines of credit, and the Citizens GoalBuilder HELOC. It’s important to note that you can secure a 0.25% rate discount on your loan if you have a Citizens Bank Checking account. When it comes to eligibility, the bank does not disclose the exact credit score you need to have in order to qualify for their home equity products. However, they do mention eligible properties, which include owner-occupied family properties and condos. Investment properties not occupied by the owner, as well as mobile homes, manufactured homes or properties on sale are not eligible.</p><dl><dt>Pros:</dt><dd>Variety of home equity products available</dd><dd>0.25% discount for Citizen Bank account holders</dd></dl><dl><dt>Cons:</dt><dd>Investment homes, mobile homes, and manufactured homes are not eligible for home equity loans. </dd><dd>There’s a $50 annual fee after the first year on standard HELOCs (Home Equity Lines of Credit)</dd><dd>Credit requirements are not disclosed for home equity products</dd></dl>"
+    },
+    {
+      "name": "PNC Bank",
+      "link": "",
+      "logo": "/data/images/PNC-Bank.png",
+      "score": "9.3",
+      "feature": "Best for Home Equity Loans and Lines of Credit",
+      "slogan": "",
+      "advantage": [],
+      "credit_score": "580-620",
+      "apr": "",
+      "amount": "",
+      "loan_types": [
+      ],
+      "description": "<p>The last option on our list is the PNC Bank, which we rank as the best option for home equity loans and lines of credit. The reason behind this are very low rates of as little as 3.09%. Moreover, the PNC Bank allows you to choose from more flexible repayment periods of 5, 10, 15, 20, or even 30 years. However, we must address that there is an origination fee required when taking out a loan and it can range from $12 to $250, depending on your loan.</p><p>The PNC Bank is a very popular choice when it comes to home equity solutions. They operate in 2 400 locations across 21 states and the District of Columbia. With that said, PNC Bank is the go-to option for many people looking for home equity loans. They also offer a home equity rapid refinance product that may come in handy later down the road. Lastly, it’s important to mention that the PNC Bank loan limits go from $1,000 to $150,000. Naturally, you need to have a good credit score to qualify for the loan, or at least meet the 620 minimum bar.</p><dl><dt>Pros:</dt><dd>Low interest rates starting at 3.09%</dd><dd>Multiple options for loan repayment period length</dd><dd>Popular and reliable choice</dd></dl><dl><dt>Cons:</dt><dd>Origination fee required.</dd></dl>"
+    }
+  ]
+}

@@ -688,7 +688,7 @@ export default {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({$axios, redirect, route}) {
+  async asyncData({$axios, error, route}) {
     try {
       let products_results = await $axios.$get(
         "/data/best-personal-loans-2022.json"
@@ -705,8 +705,8 @@ export default {
         overallData: [products_results.data[0], products_results.data[1]],
         questionData: question_results.data,
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

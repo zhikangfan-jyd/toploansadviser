@@ -1,0 +1,967 @@
+.main-container {
+  padding-top: 80px;
+
+  .banner-area {
+    position: relative;
+    width: 100%;
+    background-color: #f5faf6;
+    background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
+
+    .slogan {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      background-color: #1a7781;
+      font-weight: 600;
+
+      @media screen and (max-width: 750px) {
+        display: none;
+      }
+    }
+
+    .banner-container {
+      position: relative;
+      display: flex;
+      width: $rootWidth;
+      height: 300px;
+      margin: 0 auto;
+
+      .banner-content {
+        position: relative;
+        z-index: 1;
+
+        .website-title {
+          margin-top: 26px;
+          margin-bottom: 20px;
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 56px;
+          color: #001139;
+        }
+
+        .update {
+          justify-self: flex-end;
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: #000;
+          font-size: 14px;
+          font-style: italic;
+        }
+
+        .sub-title {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: $theme-color;
+          font-size: 20px;
+        }
+
+        .content {
+          font-size: 18px;
+          line-height: 24px;
+          color: #000;
+
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .product-area {
+    .product-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .product-container-top-box {
+        display: flex;
+        justify-content: flex-end;
+        margin: 25px 0;
+        font-size: 0;
+
+        .disclosure {
+          display: flex;
+          align-items: flex-end;
+          position: relative;
+
+          .title {
+            font-size: 14px;
+            color: #8f8f8f;
+            cursor: pointer;
+          }
+
+          .disclosure_content {
+            display: none;
+            position: absolute;
+            top: 101%;
+            background: #fff;
+            width: 350px;
+            font-size: 12px;
+            padding: 8px;
+            z-index: 9;
+            border: 1px solid #e2e2e2;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: -10px;
+              left: 30px;
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid #e2e2e2;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+            }
+
+            &.show {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .product-list-box {
+        width: 100%;
+        box-sizing: border-box;
+        border-top: 2px solid #9d9d9d;
+
+        .product-title-box {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 50px;
+          font-size: 16px;
+          color: #001139;
+          font-weight: 600;
+          // background-color: rgba(0, 23, 75, .1);
+
+          .lenders {
+            flex: 28;
+            padding-left: 50px;
+          }
+
+          .score {
+            flex: 23;
+            padding-left: 50px;
+
+            .popper {
+              background-color: $theme-color;
+              border-radius: 15px;
+            }
+
+            .iconfont {
+              display: inline-block;
+              width: 19px;
+              height: 19px;
+              border-radius: 50%;
+              text-align: center;
+              line-height: 19px;
+              background-color: #00174b0d;
+              cursor: pointer;
+            }
+          }
+
+          .features {
+            flex: 51;
+          }
+
+          .terms {
+            flex: 69;
+          }
+        }
+
+        .product-list {
+          .product-item {
+            position: relative;
+            // height: 186px;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(0, 22, 75, 0.3);
+            transition: transform linear 0.1s;
+            transform: scale(1);
+
+            &:hover {
+              transform: scale(1.01);
+            }
+
+            //&:nth-last-of-type(1) {
+            //  border: none;
+            //}
+
+            &:nth-of-type(1) {
+              padding: 35px 20px;
+              border-color: #ddd;
+              border-style: solid;
+              border-width: 2px 1px;
+              box-shadow: 0 6px 12px #ddd;
+            }
+
+            .corner-box {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 131px;
+              height: 32px;
+            }
+
+            .visited-box {
+              position: absolute;
+              top: 12px;
+              right: 55px;
+              padding: 7px 10px;
+              border-radius: 7px;
+              border: 1px solid #e5e6e6;
+              box-shadow: 0px 9px 12px rgba(134, 135, 136, 0.16);
+              font-size: 14px;
+              color: #484644;
+              background-color: #fff;
+
+              .iconfont {
+                display: inline-block;
+                width: 23px;
+                height: 23px;
+                background-image: url("../assets/img/person-icon.webp");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                vertical-align: middle;
+              }
+
+              strong {
+                font-weight: 700;
+              }
+
+              .text {
+                vertical-align: middle;
+              }
+            }
+
+            .product-item-container {
+              display: flex;
+
+              .img-score-box {
+                flex: 70;
+                display: flex;
+                align-items: center;
+
+                .img-box {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex: 1;
+                  margin-right: 7px;
+
+                  img {
+                    width: 160px;
+                    height: 80px;
+                  }
+                }
+
+                .rate-box {
+                  flex: 1;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 100%;
+                  font-size: 0;
+                  border-left: 1px solid rgba(0, 23, 75, 0.05);
+                  border-right: 1px solid rgba(0, 23, 75, 0.05);
+
+                  .rate {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .trustpilot-box {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      font-size: 14px;
+
+                      .text-box {
+                        .iconfont {
+                          color: $theme-color;
+                          font-size: 20px;
+                        }
+
+                        .text {
+                          font-size: 16px;
+                          font-weight: 600;
+                        }
+                      }
+
+                      .star-list {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 2px;
+
+                        li {
+                          width: 18px;
+                          height: 18px;
+                          text-align: center;
+                          line-height: 18px;
+                          color: #fff;
+                          background-color: $theme-color;
+                          margin: 0 1px;
+                        }
+                      }
+                    }
+
+                    .score {
+                      font-size: 34px;
+                      color: #001139;
+                      font-weight: 600;
+                    }
+
+                    .reviews-link {
+                      margin-top: 8px;
+                      color: #484644;
+                      font-size: 12px;
+                      text-decoration-line: underline;
+                      text-decoration-color: #484644;
+
+                      &:hover {
+                        color: $theme-change-color;
+                        text-decoration-color: $theme-change-color;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .features-terms-box {
+                flex: 50;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .list-box {
+                  flex: 8;
+                  padding-left: 20px;
+                  padding-right: 20px;
+
+                  .features-list {
+                    font-size: 16px;
+
+                    dt {
+                      color: #001139;
+
+                      .phone-text {
+                        display: none;
+                      }
+                    }
+
+                    dd {
+                      display: flex;
+                      align-items: center;
+                      margin: 7px 0;
+
+                      .iconfont {
+                        color: $theme-color;
+                      }
+
+                      .text {
+                        margin-left: 12px;
+                        color: #484644;
+                      }
+                    }
+                  }
+                }
+
+
+              }
+
+              .btn-box {
+                flex: 17;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+
+                .btn {
+                  display: block;
+                  width: 190px;
+                  height: 48px;
+                  margin-bottom: 10px;
+                  line-height: 48px;
+                  text-align: center;
+                  color: #fff;
+                  font-weight: bold;
+                  background-color: #1f9a61;
+                  font-size: 16px;
+                  border-radius: 30px;
+                  text-decoration: none;
+                  transition: all linear 0.1s;
+
+                  &:hover {
+                    background-color: #29b674;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .website-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $rootWidth;
+    height: 90px;
+    margin: 36px auto 53px auto;
+    background-color: rgba(0, 195, 218, .1);
+    border-radius: 4px;
+
+    .text {
+      font-size: 26px;
+      font-weight: 600;
+      color: #2E9A61;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 119px;
+      height: 36px;
+      margin-left: 28px;
+      background: #CB9600;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 36px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  .product-include-area {
+    .content-container {
+      width: $rootWidth;
+      margin: 30px auto;
+
+      .title {
+        font-size: 30px;
+        color: #1a7781;
+        margin: 30px 0 10px 0;
+      }
+
+      p {
+        line-height: 28px;
+        margin: 10px 0;
+      }
+    }
+
+    .product-include-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .product-include-container-title {
+        font-size: 18px;
+        color: #2E9A61;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .product-include-item {
+        margin-bottom: 20px;
+
+        .product-include-title {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+
+          .medal {
+            width: 25px;
+            height: 32px;
+            margin-right: 14px;
+          }
+
+          .circle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+            background: #2E9A61;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+
+          }
+
+        }
+
+        .product-include-card {
+          position: relative;
+          width: 100%;
+          background: #FFFFFF;
+          border: 1px solid #EEEEEE;
+          box-shadow: 0 0 12px 0 rgba(138, 143, 140, 0.16);
+          //border-radius: 4px;
+          padding: 0 19px;
+          border-top: 2px solid #9d9d9d;
+          box-sizing: border-box;
+
+          .corner-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          .tips {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0 12px;
+            background: rgba(46, 154, 97, 0.2);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            line-height: 25px;
+            color: #3e3e3e;
+
+            .g {
+              font-weight: 500;
+              color: #2E9A61;
+            }
+          }
+
+          .product-include-card-info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 150px;
+            padding: 12px 0;
+            box-sizing: border-box;
+
+
+            .logo-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              .logo {
+                width: 190px;
+                height: 80px;
+                justify-self: center;
+              }
+
+              .read-review-btn {
+                justify-self: flex-end;
+
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                color: #2E9A61;
+                cursor: pointer;
+              }
+            }
+
+            .trustpilot-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: 14px;
+
+              .text-box {
+                .iconfont {
+                  color: $theme-color;
+                  font-size: 20px;
+                }
+
+                .text {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+
+              .star-list {
+                display: flex;
+                align-items: center;
+                margin-top: 2px;
+
+                li {
+                  width: 18px;
+                  height: 18px;
+                  text-align: center;
+                  line-height: 18px;
+                  color: #fff;
+                  background-color: $theme-color;
+                  margin: 0 1px;
+                }
+              }
+            }
+
+            .rate-box, .content-box, .btn-box {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+
+            .rate-box {
+              text-align: center;
+
+              .score {
+                font-size: 32px;
+              }
+            }
+
+            .content-box {
+              .product-slogan {
+                color: #000;
+                font-weight: 500;
+              }
+
+              .product-advantage-list {
+                li {
+                  margin: 5px 0;
+
+                  .iconfont {
+                    font-size: 14px;
+                    color: #2E9A61;
+                    vertical-align: middle;
+                  }
+
+                  .text {
+                    display: inline-block;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+
+            .btn-box {
+              .btn {
+                display: block;
+                width: 158px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background: #2E9A61;
+                border-radius: 30px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+
+                &:hover {
+                  background-color: #29b674;
+                }
+              }
+            }
+          }
+
+          .product-include-card-content {
+            border-top: 2px dashed #9d9d9d;
+            max-height: 1200px;
+            line-height: 28px;
+            overflow: hidden;
+            transition: max-height linear .5s;
+
+            ::v-deep p {
+              margin: 15px 0;
+            }
+
+            ::v-deep dl {
+              margin: 13px 0;
+
+              dt {
+                font-weight: 700;
+
+                margin-bottom: 8px;
+              }
+
+              dd {
+                position: relative;
+                line-height: 28px;
+                padding-left: 18px;
+                list-style: none;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 8px;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: #247781;
+                }
+              }
+            }
+
+            &.current {
+              border-color: transparent;
+              max-height: 0;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+  .question-area {
+    margin-bottom: 80px;
+
+    .question-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        font-size: 30px;
+        color: #247781;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .question-content {
+        line-height: 28px;
+        color: #000;
+
+        .question-title {
+          font-size: 20px;
+          border-left: 5px solid #247781;
+          padding-left: 10px;
+          margin: 25px 0 10px;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+
+        dl {
+          margin: 10px 0;
+
+          dt {
+            font-weight: 600;
+          }
+
+          dd {
+            padding-left: 15px;
+            position: relative;
+            margin: 10px 0;
+
+            &::before {
+              position: absolute;
+              top: 9px;
+              left: 0;
+              content: "";
+              width: 10px;
+              border-radius: 50%;
+              height: 10px;
+              background-color: #1a7781;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .banner-container {
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        padding: 50px 20px;
+        box-sizing: border-box;
+
+        .banner-content {
+          .website-title {
+            margin-top: 0;
+            font-size: 28px;
+            line-height: 40px;
+          }
+
+          .update {
+            font-size: 18px;
+          }
+
+          .content {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .banner-img {
+        display: none;
+        height: 130px;
+      }
+    }
+
+    .container {
+      .product-area {
+        .product-container {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 20px;
+
+          .product-container-top-box {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 30px 0;
+
+            .disclosure {
+              margin-top: 17px;
+              text-align: right;
+            }
+          }
+
+          .product-list-box {
+            border: none;
+
+            .product-title-box {
+              display: none;
+            }
+
+            .product-list {
+              .product-item {
+                height: auto;
+                margin-bottom: 15px;
+                padding: 20px;
+                border: 1px solid #00164b1a;
+                box-sizing: border-box;
+                border-radius: 18px;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+                &:nth-last-of-type(1) {
+                  border: 1px solid #00164b1a;
+                }
+
+                &:nth-of-type(1) {
+                  padding: 30px 20px;
+                }
+
+                .visited-box {
+                  display: none;
+                }
+
+                .product-item-container {
+                  flex-direction: column;
+
+                  .img-score-box {
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #00164b1a;
+
+                    // .img-box {
+                    //   img {
+                    //     width: 130px;
+                    //     height: 64px;
+                    //   }
+                    // }
+
+                    .rate-box {
+                      border: none;
+                    }
+                  }
+
+                  .features-terms-box {
+                    margin-top: 22px;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    .list-box {
+                      order: 2;
+                      flex: 2;
+                      padding-left: 0;
+                      padding-right: 0;
+
+                      .features-list {
+                        font-size: 14px;
+
+                        dt {
+                          margin-bottom: 5px;
+
+                          .phone-text {
+                            display: inline-block;
+                            color: #001139;
+                            font-size: 18px;
+                            font-weight: 400;
+                          }
+
+                          .pc-text {
+                            display: none;
+                          }
+                        }
+
+                        dd {
+                          .text {
+                            font-size: 16px;
+                            color: #001139;
+                          }
+                        }
+                      }
+                    }
+
+                    .terms-box {
+                      order: 1;
+                      flex: 1;
+                      border: none;
+                      font-size: 18px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: flex-start;
+                      margin-bottom: 10px;
+
+                      .title {
+                        display: block;
+                        font-size: 18px;
+                        margin-bottom: 5px;
+                        color: #001139;
+                        font-weight: 400;
+                      }
+
+                      // .text-box {
+                      //     text-align: right;
+                      // }
+                    }
+                  }
+
+                  .btn-box {
+                    margin-top: 35px;
+                    margin-bottom: 20px;
+                    align-items: center;
+
+                    .btn {
+                      width: 70%;
+                      height: 60px;
+                      line-height: 60px;
+                      font-size: 20px;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,17 +1,17 @@
 <template>
   <ul class="zk-rate-list">
     <li
-      class="zk-rate-item"
       v-for="(status, index) in statusArray"
       :key="index"
+      class="zk-rate-item"
     >
       <span class="iconfont">{{
-        status == "full"
-          ? "&#xe60d;"
-          : status == "half"
-          ? "&#xe6f0;"
-          : "&#xeb1c;"
-      }}</span>
+          status === "full"
+            ? "&#xe60d;"
+            : status === "half"
+              ? "&#xe6f0;"
+              : "&#xeb1c;"
+        }}</span>
     </li>
   </ul>
 </template>

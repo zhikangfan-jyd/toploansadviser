@@ -3,7 +3,7 @@
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
-          <h1 class="title">{{ review.name }} Review {{updateTime().year}}</h1>
+          <h1 class="title">{{ review.name }} Review {{ updateTime().year }}</h1>
           <p class="info">
             <span>By {{ review.author.name }}</span>
             <span class="line">|</span>
@@ -15,14 +15,14 @@
                 <span class="icon amount-icon"></span>
                 <span class="text">Loan Amount</span>
               </div>
-              <span class="value" v-if="product.amount.min == 'Infinity'"
-                >&lt;${{ formatNum(String(product.amount.max)) }}</span
+              <span v-if="product.amount.min == 'Infinity'" class="value"
+              >&lt;${{ formatNum(String(product.amount.max)) }}</span
               >
-              <span class="value" v-else-if="product.amount.max == 'Infinity'"
-                >&gt;${{ formatNum(String(product.amount.min)) }}</span
+              <span v-else-if="product.amount.max == 'Infinity'" class="value"
+              >&gt;${{ formatNum(String(product.amount.min)) }}</span
               >
-              <span class="value" v-else
-                >${{ formatNum(String(product.amount.min)) }} - ${{
+              <span v-else class="value"
+              >${{ formatNum(String(product.amount.min)) }} - ${{
                   formatNum(String(product.amount.max))
                 }}</span
               >
@@ -33,7 +33,7 @@
                 <span class="text">APR</span>
               </div>
               <span class="value"
-                >{{ product.compare.apr.min }}% -
+              >{{ product.compare.apr.min }}% -
                 {{ product.compare.apr.max }}%</span
               >
             </li>
@@ -43,7 +43,7 @@
                 <span class="text">Minimum Credit Score</span>
               </div>
               <span class="value"
-                >{{ product.compare.credit_score }} Score</span
+              >{{ product.compare.credit_score }} Score</span
               >
             </li>
             <li>
@@ -57,51 +57,51 @@
           <p class="text">
             <nuxt-link to="/disclosure">Advertising Disclosure</nuxt-link>
             <el-popover
-              placement="bottom"
-              width="280"
-              trigger="hover"
               v-if="product.review_key == 'marcus'"
+              placement="bottom"
+              trigger="hover"
+              width="280"
             >
-              <span class="iconfont" style="font-size: 16px" slot="reference"
-                >Editorial Disclosure</span
+              <span slot="reference" class="iconfont" style="font-size: 16px"
+              >Editorial Disclosure</span
               >
-              <div class="content">
-                <p>
-                  All reviews are prepared by Toploansadviser staff. Reviews
-                  expressed therein are solely those of the reviewer and have
-                  not been reviewed or approved by any advertiser. The
-                  information, including rates and fees, appeared in the review
-                  is accurate as of the date of the review. Check the lender's
-                  website for the newest information.
-                </p>
-              </div>
-            </el-popover>
+          <div class="content">
+            <p>
+              All reviews are prepared by Toploansadviser staff. Reviews
+              expressed therein are solely those of the reviewer and have
+              not been reviewed or approved by any advertiser. The
+              information, including rates and fees, appeared in the review
+              is accurate as of the date of the review. Check the lender's
+              website for the newest information.
+            </p>
+          </div>
+          </el-popover>
           </p>
         </div>
         <div class="rate-score-box">
-          <img :src="product.logo" :alt="product.name" class="logo" />
+          <img :alt="product.name" :src="product.logo" class="logo"/>
 
           <div class="rate-box review-rate-box">
             <span class="score">{{ product.rate.score }}</span>
             <el-rate
-              disabled
               :colors="['#fd9c28', '#fd9c28', '#fd9c28']"
               :value="computeScore(product.rate.score)"
+              disabled
             ></el-rate>
           </div>
           <div class="btn-box">
             <a
               :href="'/redirect/review/'+mainName"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
               class="btn"
-              >Check Rate</a
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >Check Rate</a
             >
             <p class="small-text">Via Credible.com's Secure Website</p>
           </div>
           <div class="popover-box">
-            <el-popover placement="bottom" width="280" trigger="hover">
-              <span class="iconfont" slot="reference">How we rank?</span>
+            <el-popover placement="bottom" trigger="hover" width="280">
+              <span slot="reference" class="iconfont">How we rank?</span>
               <div class="content">
                 <p>
                   The ratings and ranking on our website are determined by our
@@ -118,12 +118,12 @@
     </section>
     <div class="reviews-container">
       <div class="reviews-container-left">
-        <div class="content-item" v-if="review.preface != ''">
+        <div v-if="review.preface != ''" class="content-item">
           <div class="content" v-html="review.preface"></div>
         </div>
-        <div class="content-item" v-if="review.overview != ''">
+        <div v-if="review.overview != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-1.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-1.webp"/>
             <h2 class="title">Overview</h2>
           </div>
           <div class="content" v-html="review.overview"></div>
@@ -132,8 +132,9 @@
         <div class="btn-box">
           <a
             :href="'/redirect/review/'+mainName"
-            target="_blank"
+            class="btn"
             rel="noopener noreferrer nofollow"
+            target="_blank"
             @click="
               handleTracking({
                 name: product.name,
@@ -141,36 +142,35 @@
                 link: mainLink,
               })
             "
-            class="btn"
-            >Check My Rate</a
+          >Check My Rate</a
           >
         </div>
-        <div class="content-item" v-if="review.loan_account != ''">
+        <div v-if="review.loan_account != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-2.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-2.webp"/>
             <h2 class="title">Loan Amount</h2>
           </div>
           <div class="content" v-html="review.loan_account"></div>
         </div>
-        <div class="content-item" v-if="review.apr != ''">
+        <div v-if="review.apr != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-3.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-3.webp"/>
             <h2 class="title">APR</h2>
           </div>
           <div class="content" v-html="review.apr"></div>
         </div>
-        <div class="content-item" v-if="review.minimum_credit_score != ''">
+        <div v-if="review.minimum_credit_score != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-4.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-4.webp"/>
             <h2 class="title">Minimum credit score</h2>
           </div>
           <div class="content" v-html="review.minimum_credit_score"></div>
-          <div class="btn-box" v-if="review.key === 'sofi'">
+          <div v-if="review.key === 'sofi'" class="btn-box">
             <a
               :href="'/redirect/review/'+mainName"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
               class="btn"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
               @click="
                 handleTracking({
                   name: product.name,
@@ -178,27 +178,27 @@
                   link: mainLink,
                 })
               "
-              >Check My Rate</a
+            >Check My Rate</a
             >
           </div>
         </div>
-        <div class="content-item" v-if="review.requirements != ''">
+        <div v-if="review.requirements != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-5.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-5.webp"/>
             <h2 class="title">Qualifying Requirements</h2>
           </div>
           <div class="content" v-html="review.requirements"></div>
         </div>
-        <div class="content-item" v-if="review.loan_terms != ''">
+        <div v-if="review.loan_terms != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-6.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-6.webp"/>
             <h2 class="title">Loan Terms</h2>
           </div>
           <div class="content" v-html="review.loan_terms"></div>
         </div>
-        <div class="content-item" v-if="review.pros_cons != ''">
+        <div v-if="review.pros_cons != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-7.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-7.webp"/>
             <h2 class="title">Pros & Cons</h2>
           </div>
 
@@ -229,51 +229,51 @@
           </div>
           <div class="content" v-html="review.pros_cons.bottom"></div>
         </div>
-        <div class="content-item" v-if="review.applying != ''">
+        <div v-if="review.applying != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-8.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-8.webp"/>
             <h2 class="title">Application</h2>
           </div>
           <div class="content" v-html="review.applying"></div>
         </div>
-        <div class="content-item" v-if="review.have_bad_credit != ''">
+        <div v-if="review.have_bad_credit != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-9.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-9.webp"/>
             <h2 class="title">Can you Apply if you have Bad Credit?</h2>
           </div>
           <div class="content" v-html="review.have_bad_credit"></div>
         </div>
-        <div class="content-item" v-if="review.main_loan_features != ''">
+        <div v-if="review.main_loan_features != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-10.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-10.webp"/>
             <h2 class="title">Main Loan Features</h2>
           </div>
           <div class="content" v-html="review.main_loan_features"></div>
         </div>
-        <div class="content-item" v-if="review.rates_fees != ''">
+        <div v-if="review.rates_fees != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-11.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-11.webp"/>
             <h2 class="title">Rates & Fees</h2>
           </div>
           <div class="content" v-html="review.rates_fees"></div>
         </div>
-        <div class="content-item" v-if="review.loan_process != ''">
+        <div v-if="review.loan_process != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-12.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-12.webp"/>
             <h2 class="title">Loan Process</h2>
           </div>
           <div class="content" v-html="review.loan_process"></div>
         </div>
-        <div class="content-item" v-if="review.customer_support != ''">
+        <div v-if="review.customer_support != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-13.webp" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-13.webp"/>
             <h2 class="title">Customer Support</h2>
           </div>
           <div class="content" v-html="review.customer_support"></div>
         </div>
-        <div class="content-item" v-if="review.bottom_line != ''">
+        <div v-if="review.bottom_line != ''" class="content-item">
           <div class="title-box">
-            <img src="@/assets/img/r-14.svg" alt="" class="box" />
+            <img alt="" class="box" src="@/assets/img/r-14.svg"/>
             <h2 class="title">Bottom Line</h2>
           </div>
           <div class="content" v-html="review.bottom_line"></div>
@@ -281,9 +281,9 @@
         <div class="btn-box">
           <a
             :href="'/redirect/review/'+mainName"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
             @click="
               handleTracking({
                 name: product.name,
@@ -291,10 +291,10 @@
                 link: mainLink,
               })
             "
-            >Check My Rate</a
+          >Check My Rate</a
           >
         </div>
-        <div class="content-item" v-if="product.review_key == 'marcus'">
+        <div v-if="product.review_key == 'marcus'" class="content-item">
           <div class="title-box">
             <!-- <img src="@/assets/img/r-14.svg" alt="" class="box"> -->
             <h2 class="title" style="font-size: 20px; margin-left: 0">
@@ -326,12 +326,12 @@
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
         <ul class="top-list">
-          <li class="top-item" v-for="(item, index) in topLoans" :key="index">
-            <img :src="item.logo" :alt="item.name" class="logo" />
+          <li v-for="(item, index) in topLoans" :key="index" class="top-item">
+            <img :alt="item.name" :src="item.logo" class="logo"/>
             <a
               :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-              target="_blank"
               rel="noopener noreferrer nofollow"
+              target="_blank"
               @click="
                 handleTracking({
                   name: item.name,
@@ -339,7 +339,7 @@
                   link: item.link,
                 })
               "
-              >Visit Site</a
+            >Visit Site</a
             >
           </li>
         </ul>
@@ -348,8 +348,8 @@
     <div class="reviews-bottom-area">
       <div class="author-info">
         <img
-          :src="review.author.headImg"
           :alt="review.author.name"
+          :src="review.author.headImg"
           class="pic"
         />
         <div class="info-box">
@@ -380,35 +380,37 @@
           </div>
         </div>
         <div class="list-box">
-          <div class="item" v-for="(item, index) in alsoLike" :key="index">
-            <img :src="item.logo" :alt="item.name" class="logo" />
+          <div v-for="(item, index) in alsoLike" :key="index" class="item">
+            <img :alt="item.name" :src="item.logo" class="logo"/>
             <div class="rate-box">
               <el-rate
-                disabled
-                :value="computeScore(item.rate.score)"
                 :colors="['#fd9c28', '#fd9c28', '#fd9c28']"
+                :value="computeScore(item.rate.score)"
+                disabled
               ></el-rate>
             </div>
             <nuxt-link
               :to="'/reviews/' + item.review_key"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
               class="btn"
-              >Read Review</nuxt-link
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >Read Review
+            </nuxt-link
             >
           </div>
         </div>
       </div>
     </div>
-    <CalculatorPopup />
+    <CalculatorPopup/>
   </main>
 </template>
 
 <script>
-import { computeScore, formatNum } from "../../utils/index";
-import  {updateTime} from '../../utils/date'
-import { shareToFB, shareToTwitter } from "../../utils/share";
+import {computeScore, formatNum} from "../../utils/index";
+import {updateTime} from '../../utils/date'
+import {shareToFB, shareToTwitter} from "../../utils/share";
 import CalculatorPopup from "~/components/CalculatorPopup/index.vue";
+
 export default {
   head() {
     return {
@@ -421,7 +423,7 @@ export default {
   components: {
     CalculatorPopup,
   },
-  async asyncData({ $axios, params, redirect, route }) {
+  async asyncData({$axios, params, redirect, route}) {
 
 
     try {
@@ -433,7 +435,7 @@ export default {
       let alsoLike = [];
       productsResults.data.forEach((ele) => {
 
-         ele.gclid = route.query['gclid'];
+        ele.gclid = route.query['gclid'];
 
         // if (ele.review_key == name) {
         //   product = ele;
@@ -445,7 +447,6 @@ export default {
           alsoLike.push(ele);
         }
       });
-
 
 
       let source = "/data/reviews/" + name + ".json";

@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "name": "Rocket Mortgage",
+      "link": "",
+      "logo": "/data/images/best-mortgage-refinance-lenders/rocket-mortgage-logo.png",
+      "score": "9.8",
+      "feature": "Best Overall",
+      "slogan": "1 Application, Several Offers",
+      "advantage": [
+        {
+          "text": "Compare rates in minutes"
+        },
+        {
+          "text": "Easy process, 100% online"
+        },
+        {
+          "text": "Secured website with data encryption"
+        }
+      ],
+      "credit_score": "620",
+      "down_payment": "3%",
+      "loan_types": [
+        {
+          "text": "Conventional"
+        },
+        {
+          "text": "FHA"
+        },
+        {
+          "text": "Jumbo"
+        }
+      ]
+    },
+    {
+      "name": "Better Mortgage",
+      "link": "",
+      "logo": "/data/images/best-mortgage-refinance-lenders/better-logo.png",
+      "score": "9.7",
+      "feature": "Best For Fast Funding",
+      "slogan": "A+ Customer Satisfaction",
+      "advantage": [
+        {
+          "text": "35 years of experience"
+        },
+        {
+          "text": "Fully automated, online process"
+        },
+        {
+          "text": "Pre-approval available"
+        }
+      ],
+      "credit_score": "620",
+      "down_payment": "3%",
+      "loan_types": [
+        {
+          "text": "Conventional"
+        },
+        {
+          "text": "FHA"
+        },
+        {
+          "text": "Jumbo"
+        }
+      ]
+    },
+    {
+      "name": "Loan Depot",
+      "link": "",
+      "logo": "/data/images/best-mortgage-refinance-lenders/loan-depot-logo.png",
+      "score": "9.5",
+      "feature": "Best For Online Mortgage Refinancing",
+      "slogan": "No Login/Registration Required",
+      "advantage": [
+        {
+          "text": "Has funded over $65 billion in home loans"
+        },
+        {
+          "text": "Clearance in as little as 8 days"
+        },
+        {
+          "text": "Mello smartloan™ digital asset verification"
+        }
+      ],
+      "credit_score": "580-620",
+      "down_payment": "3.5%",
+      "loan_types": [
+        {
+          "text": "Conventional"
+        },
+        {
+          "text": "FHA"
+        },
+        {
+          "text": "VA"
+        },
+        {
+          "text": "Jumbo"
+        }
+      ]
+    },
+    {
+      "name": "Zillow",
+      "link": "",
+      "logo": "/data/images/best-mortgage-refinance-lenders/zillow-logo.png",
+      "score": "8.8",
+      "feature": "Best Marketplace",
+      "slogan": "Unlock Your Financial Potential",
+      "advantage": [
+        {
+          "text": "Provides great refinancing calculators"
+        },
+        {
+          "text": "An all-digital app, no hassle"
+        },
+        {
+          "text": "Dedicated support team"
+        }
+      ],
+      "credit_score": "620",
+      "down_payment": "3.5%",
+      "loan_types": [
+        {
+          "text": "Conventional"
+        },
+        {
+          "text": "FHA"
+        },
+        {
+          "text": "VA"
+        },
+        {
+          "text": "Jumbo"
+        }
+      ]
+    }
+  ]
+}

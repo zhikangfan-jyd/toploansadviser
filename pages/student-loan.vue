@@ -1,10 +1,11 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
+      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Student Loan</span> <span>Refinance Companies {{updateTime().year}}</span>
+            <span>Best Student Loan</span> <span>Refinance Companies {{ updateTime().year }}</span>
           </h1>
           <p class="sub-title">Compare Top Student Refinance Rates</p>
           <div class="content">
@@ -18,9 +19,9 @@
           </p>
         </div>
         <img
-          src="@/assets/img/student-loan-banner-bg.webp"
           alt="student loan banner"
           class="banner-img"
+          src="@/assets/img/student-loan-banner-bg.webp"
         />
       </div>
     </section>
@@ -29,10 +30,19 @@
         <div class="product-container">
           <div class="product-container-top-box">
             <div class="disclosure">
-              <nuxt-link to="/disclosure" class="title"
-              >Advertising Disclosure
-              </nuxt-link
+              <span class="title"
+                    @click="handleShowDisclosure"
+              >Advertising Disclosure</span
               >
+              <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
+                The information shared through this website is based on our team’s personal judgements and views. We use
+                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+                precision. To keep our website free for use, we accept referral fees from various service providers,
+                which have the potential to influence their respective appointed scores. A third party’s participation
+                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+                this site is subject to change at any time.The site does not include all companies offering loan
+                products or all available loan offers.
+              </div>
             </div>
           </div>
           <div class="product-list-box">
@@ -43,11 +53,11 @@
                   Score
                   <el-popover
                     placement="bottom"
-                    width="320"
-                    trigger="hover"
                     popper-class="popper"
+                    trigger="hover"
+                    width="320"
                   >
-                    <span class="iconfont" slot="reference">&#xe669;</span>
+                    <span slot="reference" class="iconfont">&#xe669;</span>
                     <div class="content">
                       <p>
                         The ratings and ranking on our website are determined by
@@ -70,14 +80,14 @@
             </div>
             <div class="product-list">
               <div
-                class="product-item"
                 v-for="(item, index) in products"
                 :key="item.name"
+                class="product-item"
               >
-                <div class="corner-box" v-if="index == 0">
+                <div v-if="index == 0" class="corner-box">
                   <span class="text">Best Overall</span>
                 </div>
-                <div class="visited-box" v-if="index == 0">
+                <div v-if="index == 0" class="visited-box">
                   <span class="iconfont"></span>
                   <span class="text"
                   ><strong>354 users</strong> chose this site today</span
@@ -92,7 +102,7 @@
                     <div class="rate-box">
                       <div class="rate">
                         <span class="score">{{ item.rate.score }}</span>
-                        <div class="trustpilot-box" v-if="index == 0">
+                        <div v-if="index == 0" class="trustpilot-box">
                           <div class="text-box">
                             <span class="iconfont">&#xe64c;</span>
                             <span class="text">Trustpilot</span>
@@ -115,11 +125,11 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="star-box" v-else>
+                        <div v-else class="star-box">
                           <el-rate
-                            disabled
-                            :value="computeScore(item.rate.score)"
                             :colors="['#29b674', '#29b674', '#29b674']"
+                            :value="computeScore(item.rate.score)"
+                            disabled
                           ></el-rate>
                         </div>
                         <nuxt-link
@@ -173,8 +183,9 @@
                   <div class="btn-box">
                     <a
                       :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                      target="_blank"
+                      class="btn"
                       rel="noopener noreferrer nofollow"
+                      target="_blank"
                       @click="
                         handleTracking({
                           name: item.name,
@@ -182,7 +193,6 @@
                           link: item.link,
                         })
                       "
-                      class="btn"
                     >
                       <span class="text">Check My Rate</span>
                       <span class="iconfont">&#xe63c;</span>
@@ -210,14 +220,14 @@
         </div>
         <div class="card-list">
           <div
-            class="product-item"
             v-for="(item, index) in overallData"
             :key="item.name"
+            class="product-item"
           >
-            <div class="corner-box" v-if="index == 0">
+            <div v-if="index == 0" class="corner-box">
               <span class="text">Best Overall</span>
             </div>
-            <div class="corner-box green" v-if="index == 1">
+            <div v-if="index == 1" class="corner-box green">
               <span class="text">Best for Refinancing</span>
             </div>
             <div class="product-item-container">
@@ -230,9 +240,9 @@
                     <span class="score">{{ item.rate.score }}</span>
                     <div class="star-box">
                       <el-rate
-                        disabled
-                        :value="computeScore(item.rate.score)"
                         :colors="['#29b674', '#29b674', '#29b674']"
+                        :value="computeScore(item.rate.score)"
+                        disabled
                       ></el-rate>
                     </div>
                     <nuxt-link
@@ -286,8 +296,9 @@
               <div class="btn-box">
                 <a
                   :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                  target="_blank"
+                  class="btn"
                   rel="noopener noreferrer nofollow"
+                  target="_blank"
                   @click="
                     handleTracking({
                       name: item.name,
@@ -295,7 +306,6 @@
                       link: item.link
                     })
                   "
-                  class="btn"
                 >
                   <span class="text">Check My Rate</span>
                   <span class="iconfont">&#xe63c;</span>
@@ -308,9 +318,9 @@
       <section class="faq-area">
         <div class="faq-area-title-box">
           <img
-            src="@/assets/img/faq.webp"
             alt="answear or questions about student loans"
             class="pic"
+            src="@/assets/img/faq.webp"
           />
           <div class="faq-content">
             <h2 class="faq-title">
@@ -358,7 +368,7 @@ export default {
   components: {
     FoldTheCard,
   },
-  async asyncData({$axios, redirect, route}) {
+  async asyncData({$axios, error, route}) {
 
 
     try {
@@ -383,12 +393,13 @@ export default {
         questionData: question_results.data,
         overallData: product_results.data.slice(0, 2),
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {
     return {
+      isShowDisclosure: false,
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -398,6 +409,9 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    handleShowDisclosure() {
+      this.isShowDisclosure = !this.isShowDisclosure;
+    },
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
@@ -428,6 +442,49 @@ export default {
   created() {
     this.loadMore();
   },
+  mounted() {
+    function showSlogan() {
+      let clientWidth = $(window).width();
+      if (clientWidth <= 750) {
+        let top = $('.banner-container .website-title').offset().top;
+
+        $(window).on('scroll', function () {
+          let headerHeight = document.querySelector('.header-container').clientHeight;
+
+
+          if ($(this).scrollTop() > top) {
+            $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
+            $('.banner-container .website-title').css({
+              position: 'fixed',
+              top: headerHeight + 'px',
+              fontSize: '.2rem',
+              textAlign: 'center',
+              width: '100%',
+              left: 0,
+              color: '#fff',
+              backgroundColor: 'rgb(26,119,129)'
+            })
+          } else {
+            $('.banner-container .website-title').text('Best Personal Loans 2022');
+            $('.banner-container .website-title').css({
+              position: 'static',
+              top: headerHeight + 'px',
+              textAlign: 'left',
+              width: 'auto',
+              fontSize: '0.36rem',
+              color: '#001139',
+              left: 0,
+              backgroundColor: 'transparent'
+            })
+          }
+        })
+      }
+    }
+
+    showSlogan();
+
+    $(window).on('resize', showSlogan)
+  }
 };
 </script>
 

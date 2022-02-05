@@ -15,9 +15,9 @@
           </p>
         </div>
         <img
-          src="@/assets/img/index-banner.webp"
           alt="Best Payday Loans"
           class="pic"
+          src="@/assets/img/index-banner.webp"
         />
       </div>
     </section>
@@ -39,10 +39,10 @@
         </div>
         <div class="disclosure-box">
           <a
-            href="/disclosure"
-            target="_blank"
-            rel="noopener noreferrer"
             class="disclosure-link"
+            href="/disclosure"
+            rel="noopener noreferrer"
+            target="_blank"
           >Advertising Disclosure</a
           >
         </div>
@@ -62,21 +62,21 @@
             </div>
           </div>
           <div
-            :class="{ 'company-card-item': true, 'company-first': id === 0 }"
             v-for="(company, id) in companys"
             :key="id"
+            :class="{ 'company-card-item': true, 'company-first': id === 0 }"
           >
-            <div class="corner-box" v-if="id === 0">
+            <div v-if="id === 0" class="corner-box">
               <span class="text">Best Choice</span>
             </div>
             <div class="card-top">
               <div class="company-logo-box">
                 <a
                   :href="'/redirect/payday-loans/'+company.name"
-                  target="_blank"
                   rel="noopener noreferrer nofollow"
+                  target="_blank"
                 >
-                  <img :src="company.logo" :alt="company.name" class="logo"/>
+                  <img :alt="company.name" :src="company.logo" class="logo"/>
                 </a>
               </div>
               <div class="interest-box">
@@ -99,9 +99,9 @@
                   </div>
                   <a
                     :href="'/redirect/payday-loans/'+ company.name"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
                     class="btn"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
                   >
                     <span class="text"> Check My Rate </span>
                     <span class="iconfont">&#xe63c;</span>
@@ -119,9 +119,9 @@
                 </div>
                 <a
                   :href="'/redirect/payday-loans/'+company.name"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
                   class="btn"
+                  rel="noopener noreferrer nofollow"
+                  target="_blank"
                 >
                   <span class="text"> Check My Rate </span>
                   <span class="iconfont">&#xe63c;</span>
@@ -143,9 +143,9 @@
                 <div class="detail-box">
                   <a
                     :href="'/redirect/payday-loans/'+company.name"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="detail-btn"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <span class="text"
                     >Click here for official site, terms, and details.</span
@@ -160,7 +160,7 @@
     </section>
     <section class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
+        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp"/>
         <div class="faq-content">
           <h4 class="faq-title">
             <span>FAQ's</span>
@@ -315,8 +315,8 @@
               a monthly payment term lasting three to 72 months.
             </p>
             <img
-              src="@/assets/img/person_loans-vs-cash_advance_loans.webp"
               alt="Personal loans vs"
+              src="@/assets/img/person_loans-vs-cash_advance_loans.webp"
             />
             <p>
               Typically, a personal loan charges a lower interest rate than that
@@ -344,8 +344,8 @@
               neighboring state.
             </p>
             <img
-              src="@/assets/img/Loan-distribution-map.webp"
               alt="Where Can I Get a Payday Loan?"
+              src="@/assets/img/Loan-distribution-map.webp"
             />
             <p>
               The online lender-connection services reviewed in this article
@@ -432,8 +432,8 @@
               admitting that the history is unfavorable.
             </p>
             <img
-              src="@/assets/img/example-cost-of-a-no-credit-check-loan.webp"
               alt="example-cost-of-a-no-credit-check-loan"
+              src="@/assets/img/example-cost-of-a-no-credit-check-loan.webp"
             />
             <p>
               The higher interest rate compensates lenders for the greater risk
@@ -657,14 +657,14 @@ export default {
     Star,
     Message
   },
-  async asyncData({$axios, redirect}) {
+  async asyncData({$axios, error}) {
     try {
       let results = await $axios.$get("/data/payday-loans.json");
       return {
         companys: results.data,
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   methods: {

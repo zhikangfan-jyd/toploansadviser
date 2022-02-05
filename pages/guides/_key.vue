@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="history-nav">
           <span
-          ><nuxt-link to="/guides" class="link">Guides</nuxt-link>
+          ><nuxt-link class="link" to="/guides">Guides</nuxt-link>
             <span class="iconfont">></span></span
           >
           <span class="title-box">{{ blog.title }}</span>
@@ -15,7 +15,7 @@
     <div class="guides-container">
       <div class="guides-left">
         <div class="author-info">
-          <img :src="author.avatar" :alt="author.name" class="author-img"/>
+          <img :alt="author.name" :src="author.avatar" class="author-img"/>
           <div class="info-box">
             <span class="name">{{ author.name }}</span>
             <p class="info">
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="guides-content" v-html="blog.content"></div>
-        <div class="guides-bottom" v-if="relatedBlogs.length != 0">
+        <div v-if="relatedBlogs.length != 0" class="guides-bottom">
           <h6 class="bottom-title">Keep Reading</h6>
           <ul class="title-list">
             <li v-for="(item, index) in relatedBlogs" :key="index">
@@ -63,12 +63,12 @@
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
         <ul class="top-list">
-          <li class="top-item" v-for="(item, index) in toploans" :key="index">
-            <img :src="item.logo" :alt="item.name" class="logo"/>
+          <li v-for="(item, index) in toploans" :key="index" class="top-item">
+            <img :alt="item.name" :src="item.logo" class="logo"/>
             <a
               :href="'/redirect/personal-loan/'+item.name"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
               @click="
                 handleTracking({
                   name: item.name,
@@ -82,7 +82,7 @@
         </ul>
       </div>
     </div>
-    <section class="keep-reading-area" v-if="relatedBlogs.length != 0">
+    <section v-if="relatedBlogs.length != 0" class="keep-reading-area">
       <div class="keep-reading-container">
         <h5 class="title">Keep Reading</h5>
         <ul class="read-list">
@@ -107,7 +107,7 @@ import {shareToFB, shareToTwitter} from "../../utils/share";
 import {updateTime} from "../../utils/date";
 
 export default {
-  async asyncData({$axios, params, redirect}) {
+  async asyncData({$axios, params, error}) {
     try {
       let title = params.key.split('-').join(' ');
 
@@ -148,8 +148,8 @@ export default {
         relatedBlogs: blogList ? blogList.data.rows : [],
         toploans: topLoans_results.data.slice(0, 5),
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

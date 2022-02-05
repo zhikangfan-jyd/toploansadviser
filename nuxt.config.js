@@ -44,10 +44,46 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxt/content',
+    '@nuxtjs/robots',
+    '@nuxtjs/amp',
+    '@nuxtjs/redirect-module',
+    // '@nuxtjs/feed',
+    '@nuxtjs/sitemap',
+    // ["nuxt-social-meta",
+    //   {
+    //     url: "https://www.toploansadviser.com",
+    //     title: "Title",
+    //     site_name: "Site name",
+    //     description: "Site description",
+    //     img: "Link to image in static folder",
+    //     img_size: {width: "Image width in px", height: "Image height in px"},
+    //     locale: "en_US",
+    //     twitter: "@user",
+    //     twitter_card: "summary_large_image",
+    //     theme_color: "#theme-color",
+    //   }],
   ],
   styleResources: {
     scss: './assets/scss/variables.scss'
+  },
+  robots: {
+    // 配置robots.txt
+    UserAgent: '*',
+    Disallow: '/redirect'
+  },
+  redirect: [
+    // 重定向选项在这里
+  ],
+  sitemap: {
+    // 配置站点地图
+  },
+  amp: {
+    // options
+  },
+  content: {
+    // options
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

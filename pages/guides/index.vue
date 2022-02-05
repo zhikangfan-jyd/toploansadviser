@@ -15,16 +15,16 @@
           </div>
         </div>
         <img
-          src="@/assets/img/guides-banner-bg.webp"
           alt="guides and tips banner"
           class="banner-img"
+          src="@/assets/img/guides-banner-bg.webp"
         />
       </div>
     </section>
     <div class="learn-container">
-      <div class="category-item" v-if="blogs.length != 0">
+      <div v-if="blogs.length != 0" class="category-item">
         <ul class="blog-list">
-          <li class="blog-item" v-for="(blog, index) in blogs" :key="index">
+          <li v-for="(blog, index) in blogs" :key="index" class="blog-item">
             <div class="img-box">
               <nuxt-link :to="'/guides/' + blog.change_title">
                 <img v-lazy="blog.main_picture" :alt="blog.title"/>
@@ -39,62 +39,62 @@
             >
           </li>
         </ul>
-        <div class="view-more-box" v-if="isLoad">
+        <div v-if="isLoad" class="view-more-box">
           <button class="btn" @click="handleLoad">VIEW MORE</button>
         </div>
       </div>
-      <ul class="loading-box" v-else>
+      <ul v-else class="loading-box">
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -103,55 +103,55 @@
         </li>
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -160,55 +160,55 @@
         </li>
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -217,55 +217,55 @@
         </li>
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -274,55 +274,55 @@
         </li>
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -331,55 +331,55 @@
         </li>
         <li>
           <svg
-            role="img"
-            width="345"
-            height="336"
             aria-labelledby="loading-aria"
-            viewBox="0 0 345 336"
+            height="336"
             preserveAspectRatio="none"
+            role="img"
+            viewBox="0 0 345 336"
+            width="345"
           >
             <title id="loading-aria">Loading...</title>
             <rect
+              clip-path="url(#clip-path)"
+              height="100%"
+              style="fill: url('#fill')"
+              width="100%"
               x="0"
               y="0"
-              width="100%"
-              height="100%"
-              clip-path="url(#clip-path)"
-              style="fill: url('#fill')"
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect x="27" y="229" rx="3" ry="3" width="303" height="19"/>
-                <rect x="26" y="269" rx="3" ry="3" width="281" height="19"/>
-                <rect x="26" y="0" rx="0" ry="0" width="345" height="207"/>
-                <rect x="25" y="310" rx="0" ry="0" width="177" height="18"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-2; -2; 1"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-2; -2; 1"
                   ></animate>
                 </stop>
                 <stop offset="1.59996" stop-color="#ecebeb" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="-1; -1; 2"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="-1; -1; 2"
                   ></animate>
                 </stop>
                 <stop offset="2.59996" stop-color="#f3f3f3" stop-opacity="1">
                   <animate
                     attributeName="offset"
-                    values="0; 0; 3"
-                    keyTimes="0; 0.25; 1"
                     dur="2s"
+                    keyTimes="0; 0.25; 1"
                     repeatCount="indefinite"
+                    values="0; 0; 3"
                   ></animate>
                 </stop>
               </linearGradient>
@@ -417,8 +417,8 @@ export default {
 
         this.counts = results.data.data.count;
         this.isLoad = page < this.count;
-      } catch (error) {
-        console.log(error);
+      } catch (e) {
+        this.$router.push('/error');
       }
     },
     handleLoad() {

@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "name": "Credible",
+      "logo": "/data/images/credible.webp",
+      "link": "",
+      "score": "9.9",
+      "apr": "2.49% - 35.99%",
+      "loan_amount": "$600 - $100,000",
+      "loan_term": "24-96 Months",
+      "credit_score": "640",
+      "description": "<p>Credible is online lender which gives different loans such as personal loan, student loan, credit card, mortgages and student loan refinancing. If someone is applying for the loan, credible will provide the comparison between different lenders and allows the customer to choose the best. Credible offers loan with APRs as 3.99%. Loan amount is between $1,000 to $100,000 for the term of 2 to 8 years. Low scoring borrowers can also apply for the loan.</p>"
+    },
+    {
+      "name": "Light stream",
+      "link": "",
+      "score": "9.7",
+      "logo": "/data/images/lightstream.webp",
+      "apr": "3.99% - 16.99% ",
+      "loan_amount": "$5,000 - $100,000",
+      "loan_term": "24 – 144 Months",
+      "credit_score": "660",
+      "description": "<p><strong>Prepayment penalty: None</strong></p><p><strong>Check processing Fee: None</strong></p><p><strong>Late fee: None</strong></p><p><strong>Origination Fee: None</strong></p><p>Light stream gives excellent credit. Light stream has no fee or prepayment penalties. Light stream lender can be approached for large scale home improvements. It provides loan up to $ 100,000. It provides fixed rate and low interest loan. It has the most competitive rates and it provides same day funding facilities in some cities.  </p>"
+    },
+    {
+      "name": "Avant",
+      "link": "",
+      "score": "9.5",
+      "logo": "/data/images/avant.webp",
+      "apr": "9.95% - 35.99%",
+      "loan_amount": "Up to $ 35,000",
+      "loan_term": "24 - 60 Months",
+      "credit_score": "580",
+      "description": "<p><strong>Prepayment penalty: None</strong></p><p><strong>Check processing Fee: None</strong></p><p><strong>Late fee: $25</strong></p><p><strong>Origination Fee: 0.95% to 4.75%</strong></p><p>People with low credit scores can get loan through Avant. There is no need of high credit score for the home improvement loan. Avant review the applications on the same day. They provide customer service within seven days. Avant provide easy access to the cash. There is no compulsion to use the money for home improvement. They provide maximum loan of $ 35,000. It is a new company and has not much history. This company is not operating in some of the states. They are higher in ranking than other companies and lenders.  </p>"
+    }
+  ]
+}

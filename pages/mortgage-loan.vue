@@ -4,7 +4,7 @@
       <div class="slogan">Make it easy to find affordable and responsible mortgages in the US.</div>
       <div class="banner-container">
         <div class="banner-content">
-          <h1 class="website-title">Compare Best Mortgage Lenders {{updateTime().year}}</h1>
+          <h1 class="website-title">Compare Best Mortgage Lenders {{ updateTime().year }}</h1>
           <p class="subtitle">Save Money on Your Mortgage</p>
           <div class="content">
             <p>
@@ -18,9 +18,9 @@
           </p>
         </div>
         <img
-          src="@/assets/img/test-mortgage-loan-banner-bg.png"
           alt="mortgage loan banner"
           class="banner-img"
+          src="@/assets/img/test-mortgage-loan-banner-bg.png"
         />
       </div>
     </section>
@@ -30,14 +30,14 @@
           <div class="product-container-top-box">
             <ul class="category-box">
               <li
-                @click="getData('purchase')"
                 :class="{ current: filterName === 'purchase' }"
+                @click="getData('purchase')"
               >
                 Purchase
               </li>
               <li
-                @click="getData('refinance')"
                 :class="{ current: filterName === 'refinance' }"
+                @click="getData('refinance')"
               >
                 Refinance
               </li>
@@ -66,11 +66,11 @@
                   Score
                   <el-popover
                     placement="bottom"
-                    width="290"
-                    trigger="hover"
                     popper-class="popper"
+                    trigger="hover"
+                    width="290"
                   >
-                    <span class="iconfont" slot="reference">&#xe669;</span>
+                    <span slot="reference" class="iconfont">&#xe669;</span>
                     <div class="content" style="padding: 10px">
                       <div class="content-item" style="margin-bottom: 20px">
                         <h6
@@ -225,16 +225,16 @@
               </div>
               <div class="title terms"><span class="text"></span></div>
             </div>
-            <div class="product-list" v-if="!loading">
+            <div v-if="!loading" class="product-list">
               <div
-                class="product-item"
                 v-for="(item, index) in products"
                 :key="item.name"
+                class="product-item"
               >
-                <div class="corner-box" v-if="index == 0">
+                <div v-if="index == 0" class="corner-box">
                   <span class="text">{{ cornerText }}</span>
                 </div>
-                <div class="visited-box" v-if="index == 0">
+                <div v-if="index == 0" class="visited-box">
                   <span class="iconfont"></span>
                   <span class="text"
                   ><strong>{{ choseNum }} users</strong> chose this site
@@ -250,7 +250,7 @@
                     <div class="rate-box">
                       <div class="rate">
                         <span class="score">{{ item.rate.score }}</span>
-                        <div class="trustpilot-box" v-if="index == 0">
+                        <div v-if="index == 0" class="trustpilot-box">
                           <div class="text-box">
                             <span class="iconfont">&#xe64c;</span>
                             <span class="text">Trustpilot</span>
@@ -273,11 +273,11 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="star-box" v-else>
+                        <div v-else class="star-box">
                           <el-rate
-                            disabled
-                            :value="computeScore(item.rate.score)"
                             :colors="['#29b674', '#29b674', '#29b674']"
+                            :value="computeScore(item.rate.score)"
+                            disabled
                           ></el-rate>
                         </div>
                       </div>
@@ -344,8 +344,9 @@
                   <div class="btn-box">
                     <a
                       :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                      target="_blank"
+                      class="btn"
                       rel="noopener noreferrer nofollow"
+                      target="_blank"
                       @click="
                         handleTracking({
                           name: item.name,
@@ -353,7 +354,6 @@
                           link: item.link,
                         })
                       "
-                      class="btn"
                     >
                       <span class="text">View Rates</span>
                       <span class="iconfont">&#xe63c;</span>
@@ -417,9 +417,9 @@
                       <div class="review-link-box">
                         <a
                           :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                          target="_blank"
-                          rel="noopener noreferrer"
                           class="review-btn"
+                          rel="noopener noreferrer"
+                          target="_blank"
                         >
                           <span class="text">Check My Rate</span>
                           <span class="iconfont">&#xe63c;</span>
@@ -431,8 +431,8 @@
               </div>
             </div>
             <div
-              class="loading-box"
               v-else
+              class="loading-box"
               style="
                 display: flex;
                 justify-content: center;
@@ -440,14 +440,14 @@
               "
             >
               <img
-                src="~/assets/img/img-loading.gif"
                 alt="loading..."
+                src="~/assets/img/img-loading.gif"
                 style="height: 200px"
               />
             </div>
           </div>
 
-          <div class="more-box" v-if="count > pageSize">
+          <div v-if="count > pageSize" class="more-box">
             <button v-if="isNull" class="btn" @click="loadMore">
               <span class="text">SEE MORE</span>
               <span class="iconfont">&#xe600;</span>
@@ -483,9 +483,9 @@
 
                       <div class="star-box">
                         <el-rate
-                          disabled
-                          :value="computeScore(purchase_product.rate.score)"
                           :colors="['#29b674', '#29b674', '#29b674']"
+                          :value="computeScore(purchase_product.rate.score)"
+                          disabled
                         ></el-rate>
                       </div>
                     </div>
@@ -561,8 +561,9 @@
                 <div class="btn-box">
                   <a
                     :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
-                    target="_blank"
+                    class="btn"
                     rel="noopener noreferrer nofollow"
+                    target="_blank"
                     @click="
                       handleTracking({
                         name: purchase_product.name,
@@ -570,7 +571,6 @@
                         link: purchase_product.link,
                       })
                     "
-                    class="btn"
                   >
                     <span class="text">View Rates</span>
                     <span class="iconfont">&#xe63c;</span>
@@ -642,9 +642,9 @@
                     <div class="review-link-box">
                       <a
                         :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         class="review-btn"
+                        rel="noopener noreferrer"
+                        target="_blank"
                       >
                         <span class="text">Check My Rate</span>
                         <span class="iconfont">&#xe63c;</span>
@@ -677,9 +677,9 @@
 
                       <div class="star-box">
                         <el-rate
-                          disabled
-                          :value="computeScore(refinance_product.rate.score)"
                           :colors="['#29b674', '#29b674', '#29b674']"
+                          :value="computeScore(refinance_product.rate.score)"
+                          disabled
                         ></el-rate>
                       </div>
                     </div>
@@ -758,8 +758,9 @@
                 <div class="btn-box">
                   <a
                     :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
-                    target="_blank"
+                    class="btn"
                     rel="noopener noreferrer nofollow"
+                    target="_blank"
                     @click="
                       handleTracking({
                         name: refinance_product.name,
@@ -767,7 +768,6 @@
                         link: refinance_product.link,
                       })
                     "
-                    class="btn"
                   >
                     <span class="text">View Rates</span>
                     <span class="iconfont">&#xe63c;</span>
@@ -847,9 +847,9 @@
                     <div class="review-link-box">
                       <a
                         :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         class="review-btn"
+                        rel="noopener noreferrer"
+                        target="_blank"
                       >
                         <span class="text">Check My Rate</span>
                         <span class="iconfont">&#xe63c;</span>
@@ -865,9 +865,9 @@
       <section class="faq-area">
         <div class="faq-area-title-box">
           <img
-            src="@/assets/img/faq.webp"
             alt="answear or questions about personal loans"
             class="pic"
+            src="@/assets/img/faq.webp"
           />
           <div class="faq-content">
             <h2 class="faq-title">
@@ -1338,20 +1338,24 @@ import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
 
 export default {
-  head: {
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Our goal is to provide you with all the information about mortgage loan. Compare our recommended mortgage loan services below to get started.",
-      },
-      {
-        hid: "keywords",
-        name: "keywords",
-        content: "mortgage loan, fixed-rate mortgage,adjustable-rate mortgage",
-      },
-    ],
+  head() {
+    return {
+      title: 'Mortgage Loans Online For Bad Credit | Toploanadviser.com',
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Our goal is to provide you with all the information about mortgage loan. Compare our recommended mortgage loan services below to get started.",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content: "mortgage loan, your mortgage online, mortgage, mortgage loans near me, mortgage loans for bad credit, mortgage rates",
+        },
+      ]
+    }
+
   },
   data() {
     return {

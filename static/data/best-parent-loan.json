@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "name": "Federal Parent Plus Loan",
+      "link": "",
+      "logo": "/data/images/fsa-logo.svg",
+      "score": "9.8",
+      "feature": "Best Federal Loan Option for Parents",
+      "slogan": "",
+      "credit_score": "None",
+      "fixed_apr": "6.28%",
+      "variable_apr": "N/A",
+      "description": "<p>We’ll start off with the Federal Parent Plus Loan, which is the best option if you’re aiming for federal aid. Now, here’s the thing about federal loans: they usually have a higher interest rate compared to most private loan options because of the fact that federal repayment plans are much easier to follow through. On top of that, federal loans are eligible for forgiveness programs that take some of the weight off your shoulder in case you’re unable to repay the loan in the future.</p><p>If you want to have those forgiveness programs available, then a federal parent plus loan is a good option to consider. The loan’s interest rate equals around 5.3%. On top of that, there is an origination fee of around 4.2% as well. Keep in mind that these numbers may change as time goes on so make sure to check the exact rates before considering this loan. Finally, this type of loan allows you to borrow the amount of the cost of school’s attendance minus other financial aid you’re receiving. </p><dl><dt>Pros:</dt><dd>Easier repayment plans</dd><dd>Eligible for forgiveness programs</dd></dl><dl><dt>Cons:</dt><dd>High interest rates</dd><dd>You may need an endorser to be able to qualify if your credit score is not good enough.</dd><dd>There’s an origination fee.</dd></dl>"
+    },
+    {
+      "name": "College AVE",
+      "link": "",
+      "logo": "/data/images/collegeave.webp",
+      "score": "9.8",
+      "feature": "Best for Private Parent Loans for College",
+      "slogan": "",
+      "credit_score": "650",
+      "fixed_apr": "3.50-12.6%",
+      "variable_apr": "1.13-11.23",
+      "description": "<p>If you’re confident that you’ll be able to work during the entire loan repayment term and that you won’t have any issues making the payments, then a private loan may be a better option than the federal one. The one we chose is the College Ave loan that allows both fixed and variable rates on student loans for parents. The fixed rates range from 2.94% to 12.99% whereas the variable rates range from 0.94% to 11.98%.</p><p>College Ave also offers a 0.25% rate discount after autopay enrollment and it doesn’t come with any prepayment penalties or origination fees, which is a great plus. Moreover, they offer plenty of options when it comes to loan repayment terms, including terms of 8. 10, and 15 years. When it comes to how much money you can borrow with this loan, the amount ranges from minimum $1000 all the way up to the certified cost of attendance for your kid’s school.</p><dl><dt>Pros: </dt><dd>Fixed and variable rates</dd><dd>Flexible repayment terms</dd><dd>Option to disburse up to $2 500 for additional expenses</dd><dd>Many repayment options, including lower in-school payments</dd><dd>No origination fee or prepayment penalty</dd></dl><dl><dt>Cons:</dt><dd>No forgiveness plans that are available with federal loans.</dd></dl>"
+    },
+    {
+      "name": "Sallie Mae",
+      "link": "",
+      "logo": "/data/images/salliemae.webp",
+      "score": "9.8",
+      "feature": "Best for Private Parent Loans for College",
+      "slogan": "",
+      "credit_score": "650",
+      "fixed_apr": "3.24-12.99%",
+      "variable_apr": "1.04-11.98%",
+      "description": "<p>Last but not least, we decided to include the Sallie Mae private loans to give you an additional option to look at. Similar to the College Ave loans, the Sallie Mae loans don’t have any origination fees or prepayment penalties, meaning that if you were to repay the loan earlier than the agreed term, you won’t have to pay an additional fee (as it is the case with many other lenders).</p><p>Sallie Mae also offers a 0.25% rate discount for autopay enrollment and their repayment terms range from 5 to 15 years. What makes them different from College Ave is that their loans are not only available to parents but also to other student benefactors. They also offer quarterly FICO credit score updates for free along with an option to make interest only payments while the student is enrolled.</p><dl><dt>Pros:</dt><dd>No origination or prepayment fees. </dd><dd>Both fixed and variable rates available.</dd><dd>There’s an option to pay interest-only payments</dd><dd>5 to 15 years of repayment terms</dd></dl><dl><dt>Cons: </dt><dd>No forgiveness plans that are available with federal loans.</dd></dl>"
+    }
+  ]
+}

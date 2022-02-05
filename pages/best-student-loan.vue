@@ -5,15 +5,15 @@
         <div class="banner-content">
           <div class="logo-box">
             <img
-              src="@/assets/img/website-logo.webp"
               alt="toploansadviser.com"
               class="website-logo"
+              src="@/assets/img/website-logo.webp"
             />
             <span class="cha-icon"></span>
             <img
-              src="@/assets/img/credible.webp"
               alt="Credible"
               class="credible-logo"
+              src="@/assets/img/credible.webp"
             />
           </div>
           <h1 class="website-title">
@@ -33,16 +33,16 @@
           </p>
           <a
             :href="'/redirect/student-loan/'+mainName"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
           </a>
         </div>
         <div class="img-box">
-          <img src="@/assets/img/school-loans-banner.webp" alt="" class="pic"/>
+          <img alt="" class="pic" src="@/assets/img/school-loans-banner.webp"/>
           <div class="trustpilot-box">
             <span class="iconfont big-star">&#xe64c;</span>
             <span class="text">Trustpilot</span>
@@ -76,34 +76,34 @@
         <div class="title-box">
           <div class="img-box">
             <img
-              src="@/assets/img/website-logo.webp"
               alt="toploansadviser"
               class="website-logo"
+              src="@/assets/img/website-logo.webp"
             />
             <span class="cha-icon"></span>
             <img
-              src="@/assets/img/credible.webp"
               alt="Credible"
               class="credible-logo"
+              src="@/assets/img/credible.webp"
             />
           </div>
           <span class="text">CREDIBLE LENDERS</span>
         </div>
         <div class="logo-container">
           <ul class="logo-list">
-            <li><img src="@/assets/img/AEL.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/brazos.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/RISLA.webp" alt="" class="pic"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/AEL.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/brazos.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/RISLA.webp"/></li>
             <li>
-              <img src="@/assets/img/College_Ave.webp" alt="" class="pic"/>
+              <img alt="" class="pic" src="@/assets/img/College_Ave.webp"/>
             </li>
-            <li><img src="@/assets/img/SoFi.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/PenFed.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/INvestEd.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/ELFI.webp" alt="" class="pic"/></li>
-            <li><img src="@/assets/img/MEFA.webp" alt="" class="pic"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/SoFi.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/PenFed.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/INvestEd.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/ELFI.webp"/></li>
+            <li><img alt="" class="pic" src="@/assets/img/MEFA.webp"/></li>
             <li>
-              <img src="@/assets/img/Citizens_Bank.webp" alt="" class="pic"/>
+              <img alt="" class="pic" src="@/assets/img/Citizens_Bank.webp"/>
             </li>
           </ul>
         </div>
@@ -117,24 +117,24 @@
         </div>
         <div class="works-box">
           <div class="work-item">
-            <img src="@/assets/img/work-1.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-1.webp"/>
             <span class="title">Compare Rates</span>
             <p class="text">Fill out a quick simple form (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-2.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-2.webp"/>
             <span class="title">Select A Lender</span>
             <p class="text">Choose an option you like (2 mins)</p>
           </div>
           <div class="work-item">
-            <img src="@/assets/img/work-3.webp" alt="" class="pic"/>
+            <img alt="" class="pic" src="@/assets/img/work-3.webp"/>
             <span class="title">Apply Online</span>
             <p class="text">Provide your loan details (3 mins)</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="product-area" id="quick-companies">
+    <section id="quick-companies" class="product-area">
       <div class="product-container">
         <div class="title-box">
           <h2 class="area-title">
@@ -142,9 +142,9 @@
           </h2>
           <a
             :href="'/redirect/student-loan/' + mainName"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
             class="btn"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -158,11 +158,11 @@
                 Score
                 <el-popover
                   placement="bottom"
-                  width="320"
-                  trigger="hover"
                   popper-class="popper"
+                  trigger="hover"
+                  width="320"
                 >
-                  <span class="iconfont" slot="reference">&#xe669;</span>
+                  <span slot="reference" class="iconfont">&#xe669;</span>
                   <div class="content">
                     <p>
                       The ratings and ranking on our website are determined by
@@ -183,14 +183,14 @@
           </div>
           <div class="product-list">
             <div
-              class="product-item"
               v-for="(item, index) in products"
               :key="item.name"
+              class="product-item"
             >
-              <div class="corner-box" v-if="index == 0">
+              <div v-if="index == 0" class="corner-box">
                 <span class="text">Best Overall</span>
               </div>
-              <div class="visited-box" v-if="index == 0">
+              <div v-if="index == 0" class="visited-box">
                 <span class="iconfont"></span>
                 <span class="text"
                 ><strong>354 users</strong> chose this site today</span
@@ -202,8 +202,8 @@
                   <div class="img-box">
                     <a
                       :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                      target="_blank"
                       rel="noopener noreferrer nofollow"
+                      target="_blank"
                     >
                       <img v-lazy="item.logo" :alt="item.name"/>
                     </a>
@@ -211,7 +211,7 @@
                   <div class="rate-box">
                     <div class="rate">
                       <span class="score">{{ item.rate.score }}</span>
-                      <div class="trustpilot-box" v-if="index == 0">
+                      <div v-if="index == 0" class="trustpilot-box">
                         <div class="text-box">
                           <span class="iconfont">&#xe64c;</span>
                           <span class="text">Trustpilot</span>
@@ -234,11 +234,11 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="star-box" v-else>
+                      <div v-else class="star-box">
                         <el-rate
-                          disabled
-                          :value="computeScore(item.rate.score)"
                           :colors="['#29b674', '#29b674', '#29b674']"
+                          :value="computeScore(item.rate.score)"
+                          disabled
                         ></el-rate>
                       </div>
                       <nuxt-link
@@ -291,8 +291,9 @@
                 <div class="btn-box">
                   <a
                     :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                    target="_blank"
+                    class="btn"
                     rel="noopener noreferrer nofollow"
+                    target="_blank"
                     @click="
                       handleTracking({
                         name: item.name,
@@ -300,7 +301,6 @@
                         link: item.link,
                       })
                     "
-                    class="btn"
                   >
                     <span class="text">Check My Rate</span>
                     <span class="iconfont">&#xe63c;</span>
@@ -336,12 +336,12 @@
             </p>
           </div>
         </div>
-        <img src="@/assets/img/info.webp" alt="" class="pic"/>
+        <img alt="" class="pic" src="@/assets/img/info.webp"/>
         <a
           :href="'/redirect/student-loan/'+mainName "
-          target="_blank"
-          rel="noopener noreferrer nofollow"
           class="btn"
+          rel="noopener noreferrer nofollow"
+          target="_blank"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -351,9 +351,9 @@
         </p>
       </div>
     </section>
-    <section class="faq-area" id="quick-faq">
+    <section id="quick-faq" class="faq-area">
       <div class="faq-area-title-box">
-        <img src="@/assets/img/faq.webp" alt="Toploansadviser" class="pic"/>
+        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp"/>
         <div class="faq-content">
           <h2 class="faq-title">
             <span>FAQ's</span>
@@ -391,7 +391,7 @@ export default {
   components: {
     FoldTheCard,
   },
-  async asyncData({$axios, redirect, route}) {
+  async asyncData({$axios, error, route}) {
 
     try {
       // 获取所有产品
@@ -414,8 +414,8 @@ export default {
         mainLink: product_results.data[0].link,
         mainName: product_results.data[0].name + '?gclid=' + route.query['gclid']
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

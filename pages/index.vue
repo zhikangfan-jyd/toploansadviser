@@ -21,17 +21,17 @@
               <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                   <img
-                    src="@/assets/img/banner.webp"
                     alt="personal loan on the cover"
                     class="pic"
+                    src="@/assets/img/banner.webp"
                   />
                   <h1 class="website-title">Best Personal Loan {{ updateTime().year }}</h1>
 
                   <a
-                    href="/personal-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/personal-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </div>
@@ -39,19 +39,19 @@
               <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                   <img
-                    src="@/assets/img/student-banner.webp"
                     alt="student loan on the cover"
                     class="pic"
+                    src="@/assets/img/student-banner.webp"
                   />
                   <h1 class="website-title">
                     Best Student Loan Refinance Companies {{ updateTime().year }}
                   </h1>
 
                   <a
-                    href="/student-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/student-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </div>
@@ -59,17 +59,17 @@
               <swiper-slide class="my-swiper-slide">
                 <div class="swiper-content">
                   <img
-                    src="@/assets/img/mortgage-banner.webp"
                     alt="mortgage loan on the cover"
                     class="pic"
+                    src="@/assets/img/mortgage-banner.webp"
                   />
                   <h1 class="website-title">Best Mortgage Lenders {{ updateTime().year }}</h1>
 
                   <a
-                    href="/mortgage-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/mortgage-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </div>
@@ -91,7 +91,7 @@
               class="phone-swiper"
             >
               <swiper-slide class="phone-swiper-slide slide-1">
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                <a href="/" rel="noopener noreferrer" target="_blank">
                   <h1 class="title">
                     <span class="g">We compare <span class="w">,</span></span
                     ><span>you choose</span>
@@ -108,8 +108,8 @@
               <swiper-slide class="phone-swiper-slide">
                 <a
                   href="/personal-loan"
-                  target="_blank"
                   rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <h1 class="title">Best Personal Loan {{ updateTime().year }}</h1>
                   <div class="desc-content">
@@ -120,10 +120,10 @@
                     </p>
                   </div>
                   <a
-                    href="/personal-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/personal-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </a>
@@ -131,8 +131,8 @@
               <swiper-slide class="phone-swiper-slide">
                 <a
                   href="/student-loan"
-                  target="_blank"
                   rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <h1 class="title">
                     Best Student Loan Refinance Companies {{ updateTime().year }}
@@ -145,10 +145,10 @@
                     </p>
                   </div>
                   <a
-                    href="/student-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/student-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </a>
@@ -156,8 +156,8 @@
               <swiper-slide class="phone-swiper-slide">
                 <a
                   href="/mortgage-loan"
-                  target="_blank"
                   rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <h1 class="title">Best Mortgage Lenders {{ updateTime().year }}</h1>
                   <div class="desc-content">
@@ -168,10 +168,10 @@
                     </p>
                   </div>
                   <a
-                    href="/mortgage-loan"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     class="btn"
+                    href="/mortgage-loan"
+                    rel="noopener noreferrer"
+                    target="_blank"
                   >Find more</a
                   >
                 </a>
@@ -190,17 +190,17 @@
             <p class="sub-title">
               <a
                 href="/about-us"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
               >about Toploansadviser</a
               >
               <span class="icon"></span><span class="icon"></span>
             </p>
             <a
-              href="/personal-loan"
-              target="_blank"
-              rel="noopener noreferrer"
               class="more-link"
+              href="/personal-loan"
+              rel="noopener noreferrer"
+              target="_blank"
             >more information here</a
             >
           </div>
@@ -213,12 +213,12 @@
           </h1>
           <div class="desc-item">
             <img
-              src="@/assets/img/index-pic-1.webp"
               alt="perfessional and easy"
               class="pic"
               data-aos="fade-right"
-              data-aos-offset="300"
               data-aos-duration="800"
+              data-aos-offset="300"
+              src="@/assets/img/index-pic-1.webp"
             />
             <div class="desc-content" data-aos="fade-up">
               <h6 class="desc-item-title">
@@ -243,12 +243,12 @@
               </p>
             </div>
             <img
-              src="@/assets/img/about-pic-3.webp"
               alt="best plan to fit"
               class="pic"
               data-aos="fade-left"
-              data-aos-offset="300"
               data-aos-duration="800"
+              data-aos-offset="300"
+              src="@/assets/img/about-pic-3.webp"
             />
           </div>
         </div>
@@ -261,36 +261,36 @@
               <span class="title">Amount</span>
               <div class="amount-input-box">
                 <input
-                  type="text"
-                  class="amount-input"
                   v-model="form.amount"
+                  class="amount-input"
+                  type="text"
                   @input="changeAmount"
                 />
               </div>
             </div>
             <div class="rate-box">
               <input
-                type="text"
-                class="rate-annualy-input"
                 v-model="form.rate"
+                class="rate-annualy-input"
                 placeholder="Rate annually"
+                type="text"
                 @input="changeRate"
               />
             </div>
 
             <input
-              type="text"
-              class="year-input"
               v-model="form.year"
+              class="year-input"
               placeholder="Year"
+              type="text"
               @input="changeYear"
             />
             <span class="text">or</span>
             <input
-              type="text"
-              class="months-input"
               v-model="form.month"
+              class="months-input"
               placeholder="Months"
+              type="text"
               @input="changeMonth"
             />
           </div>
@@ -331,8 +331,8 @@
               <span class="item-title">Amount</span>
               <div class="amount-input-box">
                 <input
-                  type="text"
                   v-model="form.amount"
+                  type="text"
                   @input="changeAmount"
                 />
               </div>
@@ -340,16 +340,16 @@
             <div class="form-item">
               <span class="item-title">Rate annually</span>
               <div class="rate-input-box">
-                <input type="text" v-model="form.rate" @input="changeRate"/>
+                <input v-model="form.rate" type="text" @input="changeRate"/>
               </div>
             </div>
             <div class="form-item">
               <span class="item-title year-title">Year</span>
-              <input type="text" v-model="form.year" @input="changeYear"/>
+              <input v-model="form.year" type="text" @input="changeYear"/>
             </div>
             <div class="form-item">
               <span class="item-title">Months</span>
-              <input type="text" v-model="form.month" @input="changeMonth"/>
+              <input v-model="form.month" type="text" @input="changeMonth"/>
             </div>
           </div>
           <div class="btn-box">
@@ -375,8 +375,8 @@
             <span class="text"
             ><a
               href="/personal-loan"
-              target="_blank"
               rel="noopener noreferrer"
+              target="_blank"
             >Compare rates</a
             ></span
             >
@@ -386,23 +386,23 @@
             <div class="ticker-container">
               <div class="ticker">
                 <div
-                  class="single-brand"
                   v-for="(product, index) in products"
                   :key="index"
+                  class="single-brand"
                 >
-                  <a target="_blank" :href="product.link">
-                    <img :src="product.logo" :alt="product.name"/>
+                  <a :href="product.link" target="_blank">
+                    <img :alt="product.name" :src="product.logo"/>
                   </a>
                 </div>
               </div>
               <div class="ticker">
                 <div
-                  class="single-brand"
                   v-for="(product, index) in products"
                   :key="index"
+                  class="single-brand"
                 >
-                  <a target="_blank" :href="product.link">
-                    <img :src="product.logo" :alt="product.name"/>
+                  <a :href="product.link" target="_blank">
+                    <img :alt="product.name" :src="product.logo"/>
                   </a>
                 </div>
               </div>
@@ -415,9 +415,9 @@
           </h2>
           <ul class="blog-list">
             <li
-              class="blog-item"
               v-for="(item, index) in personal_blogs"
               :key="index"
+              class="blog-item"
               data-aos="fade-up"
             >
               <div class="img-box">
@@ -432,10 +432,10 @@
           </ul>
           <div class="more-link-box">
             <a
-              href="/guides"
-              target="_blank"
-              rel="noopener noreferrer"
               class="more-link"
+              href="/guides"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <span class="icon"></span><span class="icon"></span>
               <span class="text">See the lists</span>
@@ -449,7 +449,7 @@
 
 <script>
 import {updateTime} from "../utils/date";
-import {Swiper, SwiperSlide, directive} from "vue-awesome-swiper";
+import {directive, Swiper, SwiperSlide} from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
 export default {
@@ -470,14 +470,14 @@ export default {
     swiper: directive,
   },
 
-  async asyncData({app, redirect}) {
+  async asyncData({app, error}) {
     try {
       let results = await app.$axios.$get("/data/person_loan_product.json");
       return {
         products: results.data,
       };
-    } catch (error) {
-      redirect("/error");
+    } catch (e) {
+      error({statusCode: 404});
     }
   },
   data() {

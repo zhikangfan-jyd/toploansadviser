@@ -1,133 +1,191 @@
 
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
-body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; }
-h1, h2, h3, h4, h5, h6{ font-size:100%; }
-address, cite, dfn, em, var { font-style:normal; }
-code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
-small{ font-size:12px; }
-ul, ol { list-style:none; }
-a { text-decoration:none; }
-a:hover { text-decoration:underline; }
-sup { vertical-align:text-top; }
-sub{ vertical-align:text-bottom; }
-legend { color:#000; }
-fieldset, img { border:0; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea {
+  font: 12px/1.5tahoma, arial, \5b8b\4f53;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+}
+
+small {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
 // button, input, select, textarea { font-size:100%; }
-table { border-collapse:collapse; border-spacing:0; } 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .el-message__icon {
-    font-size: 16px;
+  font-size: 16px;
 }
-html,body {
-    width: 100%;
-    font-size: 16px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+html, body {
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
+
 .el-slider__runway {
-    position: relative;
-    height: 2px;
-    background-color: rgba(0,0,0,.26);
+  position: relative;
+  height: 2px;
+  background-color: rgba(0, 0, 0, .26);
 
-    &::after , &::before{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        content: '';
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-    }
+  &::after, &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
 
-    &::after {
-        left: 0;
-        
-        background-color: #5a4fef;
-    }
+  &::after {
+    left: 0;
 
-    &::before {
-        right: 0px;
-        background-color: rgb(167, 167, 177);
-
-    }
-
-    
-}
-.el-slider__bar {
-    height: 2px;
     background-color: #5a4fef;
+  }
+
+  &::before {
+    right: 0px;
+    background-color: rgb(167, 167, 177);
+
+  }
+
+
 }
+
+.el-slider__bar {
+  height: 2px;
+  background-color: #5a4fef;
+}
+
 .el-slider__button {
+  width: 10px;
+  height: 10px;
+  background-color: #edeef2;
+  border: 2px solid #5a4fef;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: scale(1.6);
+
+  &.hover {
+    transform: scale(1.6);
+  }
+
+  &:hover {
+    transform: scale(1.6);
+  }
+}
+
+.review-rate-box {
+  .el-rate {
+    height: auto;
+  }
+
+  .el-rate__icon {
+    font-size: 28px;
+    margin-right: 0;
+  }
+}
+
+.swiper-pagination {
+  left: 15%;
+  bottom: 35px;
+
+  .my-bullet {
+    display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #edeef2;
-    border: 2px solid #5a4fef;
+    background: #fff;
     border-radius: 50%;
-    box-sizing: border-box;
-    transform: scale(1.6);
-    &.hover {
-        transform: scale(1.6);
-    }
-    &:hover {
-        transform: scale(1.6);
-    }
-}
-.review-rate-box {
-    .el-rate {
-        height: auto;
-    }
-    .el-rate__icon {
-        font-size: 28px;
-        margin-right: 0;
-    }
-}
-.swiper-pagination {
-    left: 15%;
-    bottom: 35px;
-    .my-bullet {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: #fff;
-        border-radius: 50%;
-        margin: 0 8px;
-        cursor: pointer;
-        &.my-bullet-active {
-            background: #E9AF87;
-        }
-    }
-}
-.phone-swiper-pagination {
-    position: relative;
-    z-index: 2;
-    transform: translateY(-14px);
-    text-align: center;
-    .my-phone-bullet {
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        background: #000;
-        border-radius: 50%;
-        margin: 0 3px;
-        cursor: pointer;
-        &.my-phone-bullet-active {
-            background: $theme-color;
-        }
-    }
-}
+    margin: 0 8px;
+    cursor: pointer;
 
-
-@font-face {
-    font-family: 'Nunito-Bold';
-    src: url('../fonts/Nunito-Bold.ttf') format('truetype');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'iconfont';  /* Project id 2472982 */
-    font-display: swap;
-    src: url('//at.alicdn.com/t/font_2472982_gvarx7gtto.woff2?t=1631070188938') format('woff2'),
-         url('//at.alicdn.com/t/font_2472982_gvarx7gtto.woff?t=1631070188938') format('woff'),
-         url('//at.alicdn.com/t/font_2472982_gvarx7gtto.ttf?t=1631070188938') format('truetype');
+    &.my-bullet-active {
+      background: #E9AF87;
+    }
   }
+}
+
+.phone-swiper-pagination {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-14px);
+  text-align: center;
+
+  .my-phone-bullet {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+
+    &.my-phone-bullet-active {
+      background: $theme-color;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: url('../fonts/Nunito-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 2472982 */
+  src: url('//at.alicdn.com/t/font_2472982_vcgixb4yuml.woff2?t=1643102954347') format('woff2'),
+  url('//at.alicdn.com/t/font_2472982_vcgixb4yuml.woff?t=1643102954347') format('woff'),
+  url('//at.alicdn.com/t/font_2472982_vcgixb4yuml.ttf?t=1643102954347') format('truetype');
+}
+
 .iconfont {
-    font-family: 'iconfont';
+  font-family: 'iconfont';
 }

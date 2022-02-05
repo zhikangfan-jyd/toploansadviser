@@ -1,0 +1,95 @@
+{
+  "data": {
+    "key": "",
+    "name": "",
+    "author": {
+      "name": "John Ulzheimer",
+      "headImg": "/data/blogs/img/jonathan_miller.webp",
+      "desc": "As a specialist in credit scoring, credit reporting and identity theft, John Ulzheimer has lent his expertise to the four financial books he authored. He’s been invited as an expert guest on myriad news outlets, like the Wall Street Journal, NBC Nightly News, New York Times and CNBC, among others."
+    },
+    "date": "Apr.15,2021",
+    "preface": "",
+    "overview": "",
+    "loan_account": "",
+    "apr": "",
+    "minimum_credit_score": "",
+    "requirements": "",
+    "loan_terms": "",
+    "pros_cons": {
+      "top": "",
+      "bottom": "",
+      "pros": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "cons": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ]
+    },
+    "applying": "",
+    "have_bad_credit": "",
+    "main_loan_features": "",
+    "loan_process": "",
+    "customer_support": "",
+    "bottom_line": ""
+  },
+  "product": {
+    "name": "avant",
+    "review_key": "avant",
+    "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+    "logo": "/data/images/avant.webp",
+    "upto": "1000000",
+    "introduce": "Clear and transparent process",
+    "amount": {
+      "min": 2000,
+      "max": 35000
+    },
+    "rate": {
+      "max": 10,
+      "score": "9.6"
+    },
+    "compare": {
+      "credit_score": "580",
+      "credit_text": "",
+      "apr": {
+        "min": "9.95",
+        "max": "35.99"
+      },
+      "term": "24-60 months"
+    },
+    "disclaimer": ""
+  }
+}
