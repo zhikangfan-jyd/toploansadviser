@@ -26,31 +26,6 @@
             }
         },
         {
-            "name": "SoFi_stu",
-            "review_key": "",
-            "link": "https://www.credible.com/a/dd-sofi/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_slr&utm_content=",
-            "logo": "/data/images/sofi.webp",
-            "rate": {
-                "max": 10,
-                "score": "9.5"
-            },
-            "compare": {
-                "credit_score": "600",
-                "fixed_rate": {
-                    "min_rate": "2.74",
-                    "max_rate": "6.39"
-                },
-                "variable_rate": {
-                    "min_rate": "2.25",
-                    "max_rate": "6.39"
-                }
-            },
-            "loan_term": {
-                "min_term": "5",
-                "max_term": "20"
-            }
-        },
-        {
             "name": "Citizens_Bank",
             "review_key": "",
             "link": "https://www.credible.com/a/dd-citizens/?utm_source=westwin&utm_medium=referral&utm_campaign=citizens_slr&utm_content=",
