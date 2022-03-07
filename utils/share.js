@@ -1,7 +1,7 @@
 /**
  * 简单分享到Facebook
- * @param {*} url 
- * @param {*} title 
+ * @param {*} url
+ * @param {*} title
  */
 export const shareToFB = (url, title) => {
   let u = url;
@@ -11,8 +11,8 @@ export const shareToFB = (url, title) => {
 
 /**
  * 简单分享到Twitter
- * @param {*} url 
- * @param {*} title 
+ * @param {*} url
+ * @param {*} title
  */
 export const shareToTwitter = (url, title) => {
   let twTitle = title,

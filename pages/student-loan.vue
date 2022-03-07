@@ -1,54 +1,58 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
-      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>
       <div class="banner-container">
-        <div class="banner-content">
-          <h1 class="website-title">
-            <span>Best Student Loan</span> <span>Refinance Companies {{ updateTime().year }}</span>
-          </h1>
-          <p class="sub-title">Compare Top Student Refinance Rates</p>
-          <div class="content">
-            <p>
-              Toploansadviser has outlined the best student loans for multiple
-              needs, so you can choose the loan for your specific situation.
-            </p>
+        <h1 class="title">Best Private Student Loans {{ updateTime().year }}</h1>
+        <div class="introduce-container">
+          <div class="author-info">
+            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
+            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
+                updateTime().month.short
+              }} {{ updateTime().year }}</span></p>
           </div>
-          <p class="update">
-            Last updated: {{ updateTime().month.short }} {{ updateTime().year }}
-          </p>
+          <div class="introduce-content">
+            <p>Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for
+              your specific situation.</p>
+          </div>
         </div>
-        <img
-          alt="student loan banner"
-          class="banner-img"
-          src="@/assets/img/student-loan-banner-bg.webp"
-        />
+
       </div>
     </section>
-    <div class="container">
-      <section class="product-area">
-        <div class="product-container">
-          <div class="product-container-top-box">
-            <div class="disclosure">
+
+    <section class="preface-area">
+      <div class="preface-container">
+        <h2 class="title">Compare Top Student Loan Rates</h2>
+        <div class="preface-content">
+          <p>
+            We compared and reviewed loans from more than 10 student loan lenders to find the best rates and loan
+            features.</p>
+        </div>
+      </div>
+    </section>
+    <section class="product-area">
+      <div class="product-container">
+        <div class="product-container-top-box">
+          <div class="disclosure">
               <span class="title"
                     @click="handleShowDisclosure"
               >Advertising Disclosure</span
               >
-              <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-                The information shared through this website is based on our team’s personal judgements and views. We use
-                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
-                precision. To keep our website free for use, we accept referral fees from various service providers,
-                which have the potential to influence their respective appointed scores. A third party’s participation
-                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
-                this site is subject to change at any time.The site does not include all companies offering loan
-                products or all available loan offers.
-              </div>
+            <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
+              The information shared through this website is based on our team’s personal judgements and views. We use
+              our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+              precision. To keep our website free for use, we accept referral fees from various service providers,
+              which have the potential to influence their respective appointed scores. A third party’s participation
+              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+              this site is subject to change at any time.The site does not include all companies offering loan
+              products or all available loan offers.
             </div>
           </div>
-          <div class="product-list-box">
-            <div class="product-title-box">
-              <div class="title lenders"><span class="text">Lenders</span></div>
-              <div class="title score">
+        </div>
+        <div class="product-list-box">
+          <div class="product-title-box">
+            <div class="title lenders"><span class="text">Lenders</span></div>
+            <div class="title score">
                 <span class="text">
                   Score
                   <el-popover
@@ -70,276 +74,204 @@
                     </div>
                   </el-popover>
                 </span>
-              </div>
-              <div class="title features">
-                <span class="text">Loan Features</span>
-              </div>
-              <div class="title terms">
-                <span class="text">Loan Terms</span>
-              </div>
             </div>
-            <div class="product-list">
-              <div
-                v-for="(item, index) in products"
-                :key="item.name"
-                class="product-item"
-              >
-                <div v-if="index == 0" class="corner-box">
-                  <span class="text">Best Overall</span>
-                </div>
-                <div v-if="index == 0" class="visited-box">
-                  <span class="iconfont"></span>
-                  <span class="text"
-                  ><strong>354 users</strong> chose this site today</span
-                  >
-                </div>
+            <div class="title features">
+              <span class="text">Loan Features</span>
+            </div>
+            <div class="title terms">
+              <span class="text">Loan Terms</span>
+            </div>
+          </div>
+          <div class="product-list">
+            <div
+              v-for="(item, index) in products"
+              :key="item.name"
+              class="product-item"
+            >
+              <div v-if="index == 0" class="corner-box">
+                <span class="text">Best Overall</span>
+              </div>
+              <div v-if="index == 0" class="visited-box">
+                <span class="iconfont"></span>
+                <span class="text"
+                ><strong>354 users</strong> chose this site today</span
+                >
+              </div>
 
-                <div class="product-item-container">
-                  <div class="img-score-box">
-                    <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name"/>
-                    </div>
-                    <div class="rate-box">
-                      <div class="rate">
-                        <span class="score">{{ item.rate.score }}</span>
-                        <div v-if="index == 0" class="trustpilot-box">
-                          <div class="text-box">
-                            <span class="iconfont">&#xe64c;</span>
-                            <span class="text">Trustpilot</span>
-                          </div>
-                          <ul class="star-list">
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div v-else class="star-box">
-                          <el-rate
-                            :colors="['#29b674', '#29b674', '#29b674']"
-                            :value="computeScore(item.rate.score)"
-                            disabled
-                          ></el-rate>
-                        </div>
-                        <nuxt-link
-                          v-if="item.review_key != ''"
-                          :to="'/reviews/' + item.review_key"
-                          class="reviews-link"
-                        >Read Review
-                        </nuxt-link
-                        >
-                      </div>
-                    </div>
+              <div class="product-item-container">
+                <div class="img-score-box">
+                  <div class="img-box">
+                    <img v-lazy="item.logo" :alt="item.name"/>
                   </div>
-                  <div class="features-terms-box">
-                    <div class="list-box">
-                      <dl class="features-list">
-                        <dt>
-                          <!-- <span class="pc-text">Easily Compare & Save</span> -->
-                          <span class="phone-text">Loan Features</span>
-                        </dt>
-                        <dd>
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            Min. Credit Score: {{ item.compare.credit_score }}
-                          </p>
-                        </dd>
-                        <dd>
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            Fixed rate：{{ item.compare.fixed_rate.min_rate }}%
-                            - {{ item.compare.fixed_rate.max_rate }}%
-                          </p>
-                        </dd>
-                        <dd>
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            Variable rate：{{
-                              item.compare.variable_rate.min_rate
-                            }}% - {{ item.compare.variable_rate.max_rate }}%
-                          </p>
-                        </dd>
-                      </dl>
-                    </div>
-                    <div class="terms-box">
-                      <span class="title">Loan Terms</span>
-                      <span class="text-box"
-                      >{{ item.loan_term.min_term }} -
-                        {{ item.loan_term.max_term }} years</span
+                  <div class="rate-box">
+                    <div class="rate">
+                      <span class="score">{{ item.rate.score }}</span>
+                      <div v-if="index == 0" class="trustpilot-box">
+                        <div class="text-box">
+                          <span class="iconfont">&#xe64c;</span>
+                          <span class="text">Trustpilot</span>
+                        </div>
+                        <ul class="star-list">
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div v-else class="star-box">
+                        <el-rate
+                          :colors="['#29b674', '#29b674', '#29b674']"
+                          :value="computeScore(item.rate.score)"
+                          disabled
+                        ></el-rate>
+                      </div>
+                      <nuxt-link
+                        v-if="item.review_key != ''"
+                        :to="'/reviews/' + item.review_key"
+                        class="reviews-link"
+                      >Read Review
+                      </nuxt-link
                       >
                     </div>
                   </div>
-                  <div class="btn-box">
-                    <a
-                      :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                      class="btn"
-                      rel="noopener noreferrer nofollow"
-                      target="_blank"
-                      @click="
+                </div>
+                <div class="features-terms-box">
+                  <div class="list-box">
+                    <dl class="features-list">
+                      <dt>
+                        <!-- <span class="pc-text">Easily Compare & Save</span> -->
+                        <span class="phone-text">Loan Features</span>
+                      </dt>
+                      <dd>
+                        <span class="iconfont">&#xe604;</span>
+                        <p class="text">
+                          Min. Credit Score: {{ item.compare.credit_score }}
+                        </p>
+                      </dd>
+                      <dd>
+                        <span class="iconfont">&#xe65a;</span>
+                        <p class="text">
+                          Fixed rate：{{ item.compare.fixed_rate.min_rate }}%
+                          - {{ item.compare.fixed_rate.max_rate }}%
+                        </p>
+                      </dd>
+                      <dd>
+                        <span class="iconfont">&#xe65a;</span>
+                        <p class="text">
+                          Variable rate：{{
+                            item.compare.variable_rate.min_rate
+                          }}% - {{ item.compare.variable_rate.max_rate }}%
+                        </p>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="terms-box">
+                    <span class="title">Loan Terms</span>
+                    <span class="text-box"
+                    >{{ item.loan_term.min_term }} -
+                        {{ item.loan_term.max_term }} years</span
+                    >
+                  </div>
+                </div>
+                <div class="btn-box">
+                  <a
+                    :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
+                    class="btn"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    @click="
                         handleTracking({
                           name: item.name,
                           click_time: new Date().getTime(),
                           link: item.link,
                         })
                       "
-                    >
-                      <span class="text">Check My Rate</span>
-                      <span class="iconfont">&#xe63c;</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="more-box">
-            <button v-if="isNull" class="btn" @click="loadMore">
-              <span class="text">SEE MORE</span>
-              <span class="iconfont">&#xe600;</span>
-            </button>
-            <button v-else class="btn close" @click="closeMore">
-              <span class="text">COLLAPSE</span>
-              <span class="iconfont">&#xe600;</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="best-overall-area">
-        <div class="best-overall-title-box">
-          <h2 class="best-overall-title">Best Overall</h2>
-        </div>
-        <div class="card-list">
-          <div
-            v-for="(item, index) in overallData"
-            :key="item.name"
-            class="product-item"
-          >
-            <div v-if="index == 0" class="corner-box">
-              <span class="text">Best Overall</span>
-            </div>
-            <div v-if="index == 1" class="corner-box green">
-              <span class="text">Best for Refinancing</span>
-            </div>
-            <div class="product-item-container">
-              <div class="img-score-box">
-                <div class="img-box">
-                  <img v-lazy="item.logo" :alt="item.name"/>
-                </div>
-                <div class="rate-box">
-                  <div class="rate">
-                    <span class="score">{{ item.rate.score }}</span>
-                    <div class="star-box">
-                      <el-rate
-                        :colors="['#29b674', '#29b674', '#29b674']"
-                        :value="computeScore(item.rate.score)"
-                        disabled
-                      ></el-rate>
-                    </div>
-                    <nuxt-link
-                      v-if="item.review_key != ''"
-                      :to="'/reviews/' + item.review_key"
-                      class="reviews-link"
-                    >Read Review
-                    </nuxt-link
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="features-terms-box">
-                <div class="list-box">
-                  <dl class="features-list">
-                    <dt>
-                      <!-- <span class="pc-text">Easily Compare & Save</span> -->
-                      <span class="phone-text">Loan Features</span>
-                    </dt>
-                    <dd>
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        Min. Credit Score: {{ item.compare.credit_score }}
-                      </p>
-                    </dd>
-                    <dd>
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        Fixed rate：{{ item.compare.fixed_rate.min_rate }}% -
-                        {{ item.compare.fixed_rate.max_rate }}%
-                      </p>
-                    </dd>
-                    <dd>
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        Variable rate：{{
-                          item.compare.variable_rate.min_rate
-                        }}% - {{ item.compare.variable_rate.max_rate }}%
-                      </p>
-                    </dd>
-                  </dl>
-                </div>
-                <div class="terms-box">
-                  <span class="title">Loan Terms</span>
-                  <span
-                  >{{ item.loan_term.min_term }} -
-                    {{ item.loan_term.max_term }} years</span
                   >
+                    <span class="text">Check My Rate >></span>
+                    <!--                      <span class="iconfont">&#xe63c;</span>-->
+                  </a>
                 </div>
               </div>
-              <div class="btn-box">
-                <a
-                  :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
-                  class="btn"
-                  rel="noopener noreferrer nofollow"
-                  target="_blank"
-                  @click="
-                    handleTracking({
-                      name: item.name,
-                      click_time: new Date().getTime(),
-                      link: item.link
-                    })
-                  "
-                >
-                  <span class="text">Check My Rate</span>
-                  <span class="iconfont">&#xe63c;</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="faq-area">
-        <div class="faq-area-title-box">
-          <img
-            alt="answear or questions about student loans"
-            class="pic"
-            src="@/assets/img/faq.webp"
-          />
-          <div class="faq-content">
-            <h2 class="faq-title">
-              <span>FAQ's</span>
-              <span>About Student Loans</span>
-            </h2>
-            <div class="content">
-              <p>
-                Before taking a student loan be sure you familiarize yourself
-                with all the terms and conditions associated with the loan. To
-                help you get started, we’ve compiled some of the most frequently
-                asked questions about student loans below.
-              </p>
-            </div>
-          </div>
+        <div class="more-box">
+          <button v-if="isNull" class="btn" @click="loadMore">
+            <span class="text">SEE MORE</span>
+            <span class="iconfont">&#xe600;</span>
+          </button>
+          <button v-else class="btn close" @click="closeMore">
+            <span class="text">COLLAPSE</span>
+            <span class="iconfont">&#xe600;</span>
+          </button>
         </div>
-        <fold-the-card :data="questionData"></fold-the-card>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="question-area">
+      <div class="question-container">
+        <h2 class="title">FAQ's About Student Loans</h2>
+        <div class="question-content">
+          <p>Before taking a student loan be sure you familiarize yourself with all the terms and conditions associated
+            with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about
+            student loans below.</p>
+          <h6 class="question-title">Are private student loans worth applying for to fund your education</h6>
+          <p>When you choose to attend college, you know that the cost will be exorbitantly high. You have to find ways
+            to pay for the costs, such as scholarships, grants and loans. If you’ve got the maximum in grants and don’t
+            qualify for scholarships, you may still not have enough. If this is the case for you, you may want to look
+            at private student loans.</p>
+          <p>Private student loans differ from federal student loans, as financial institutions and private lenders
+            finance these loans. They also use their credit score and creditworthiness to determine if you are eligible
+            for a loan. On top of that, the repayment terms are less than ideal, and a co-signer may be necessary.</p>
+          <p>Think of private student loans like personal loans. They are there to close the gaps of school costs
+            federal loans do not.</p>
+
+          <h6 class="question-title">Private student loan qualifications</h6>
+          <p>Eligibility of a private student loan will depend on your creditworthiness and that of your co-signer (if
+            applicable). Each lender has a set of eligibility requirements, including credit score and minimum income.
+            You may also be asked if you are a citizen of the U.S. or a permanent resident. The lender may also require
+            that you attend an approved school on their list.</p>
+
+          <h6 class="question-title">Is a co-signer necessary?</h6>
+          <p>Most private student loan lenders will require you to have a co-signer. This is especially true if your
+            credit history is negligible or non-existent. A co-signer, such as a parent or relative, may also help you
+            attain a better interest rate.</p>
+          <p>Some lenders will relieve a co-signer of the debt obligation if you have maintained a good loan repayment
+            history. This can be seen in as little as one year to as much as four years. However, it’s only approved if
+            you can meet their credit and income requirements.</p>
+
+          <h6 class="question-title">Private student loan application process</h6>
+          <p>Before you attempt to apply for any private student loan, review your credit and learn your credit score.
+            Private student loan lenders tend to offer loans to those with a high credit score or a demonstrated history
+            of repayment. If your credit is less than ideal, find a person whose credit is good and ask them to be a
+            co-signer for the loan.</p>
+          <p>Your application will also need certain documents attached to it:</p>
+          <ul>
+            <li>Birthdate, aliress and other identifying information</li>
+            <li>Social security number</li>
+            <li>Paystubs</li>
+            <li>Monthly mortgage or rent receipts</li>
+            <li>Proof of assets</li>
+          </ul>
+          <p>You must also fill out the Private Education Loan Applicant Self-Certification form the school provides, so
+            the lender will know how much the cost will be for you to attend the institute.</p>
+          <p>Make sure to get a reasonable estimate of how much money is necessary to attend the university and ask for
+            that amount. If you need a little extra for housing and books, go ahead and include it. Remember, knowing
+            what you need now will affect how small or big a loan you will need.</p>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -347,29 +279,27 @@
 import FoldTheCard from "../components/FoldTheCard/index";
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
+import {seo} from '../utils/seo'
 
 export default {
-  head: {
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "If you've been considering the option to refinance your student loans, you're in the right place.",
-      },
-      {
-        hid: "keywords",
-        name: "keywords",
-        content:
-          "student loan refinance,loan rate，private student loan,federal student loan",
-      },
-    ],
-  },
+
+  head: seo({
+    title: 'Student Loan 2022 For Bad Credit | Toploansadviser.com',
+    description: "The toploanadviser.com website helps student loan borrowers with bad credit know all the information about best student loan, including introduction, today interest rate, and so on.",
+    keywords: "student loan,student loan interest rates,student loan interest,student loans 2022,my student loan,student loans for bad credit,student loan website,no interest student loans",
+
+    url: 'https://www.toploansadviser.com/student-loan',
+    img: 'https://www.toploansadviser.com/data/images/student-loan.webp',
+    img_size: {
+      width: '551',
+      height: '341'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
-    FoldTheCard,
+    FoldTheCard
   },
   async asyncData({$axios, error, route}) {
-
 
     try {
       // 获取所有产品
@@ -481,9 +411,9 @@ export default {
       }
     }
 
-    showSlogan();
+    // showSlogan();
 
-    $(window).on('resize', showSlogan)
+    // $(window).on('resize', showSlogan)
   }
 };
 </script>

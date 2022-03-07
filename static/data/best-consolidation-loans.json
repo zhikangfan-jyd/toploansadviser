@@ -3,7 +3,7 @@
     {
       "name": "Lightsteam",
       "review_key": "lightstream",
-      "link": "",
+      "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
       "logo": "/data/images/lightstream.svg",
       "upto": "",
       "introduce": "",
@@ -29,7 +29,7 @@
     {
       "name": "Upgrade",
       "review_key": "",
-      "link": "",
+      "link": "/",
       "logo": "/data/images/upgrade.webp",
       "upto": "",
       "introduce": "",
@@ -39,7 +39,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.9"
+        "score": "9.6"
       },
       "compare": {
         "credit_score": "580",
@@ -54,8 +54,8 @@
     },
     {
       "name": "Avant",
-      "review_key": "",
-      "link": "",
+      "review_key": "avant",
+      "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
       "logo": "/data/images/avant.webp",
       "upto": "",
       "introduce": "",
@@ -65,7 +65,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.9"
+        "score": "9.5"
       },
       "compare": {
         "credit_score": "580",
@@ -80,8 +80,8 @@
     },
     {
       "name": "Upstart",
-      "review_key": "",
-      "link": "",
+      "review_key": "upstart",
+      "link": "/",
       "logo": "/data/images/upstart.webp",
       "upto": "",
       "introduce": "",
@@ -91,7 +91,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.9"
+        "score": "9.1"
       },
       "compare": {
         "credit_score": "",
@@ -106,8 +106,8 @@
     },
     {
       "name": "Lending club",
-      "review_key": "",
-      "link": "",
+      "review_key": "lending-club",
+      "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
       "logo": "/data/images/lendingclub.svg",
       "upto": "",
       "introduce": "",
@@ -117,7 +117,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "9.9"
+        "score": "8.8"
       },
       "compare": {
         "credit_score": "600",

@@ -3,65 +3,57 @@
     <section class="banner-area">
       <div class="slogan">Make it easy to find affordable and responsible mortgages in the US.</div>
       <div class="banner-container">
-        <div class="banner-content">
-          <h1 class="website-title">Compare Best Mortgage Lenders {{ updateTime().year }}</h1>
-          <p class="subtitle">Save Money on Your Mortgage</p>
-          <div class="content">
-            <p>
-              Lower interest rates mean that you can save real money on your
-              mortgage. Compare our top-tier providers and find the best
-              purchase and refinance rates for you.
-            </p>
+        <h1 class="title">Compare Best Mortgage Lenders {{ updateTime().year }}</h1>
+        <div class="introduce-container">
+          <div class="author-info">
+            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
+            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
+                updateTime().month.short
+              }} {{ updateTime().year }}</span></p>
           </div>
-          <p class="sub-title update">
-            Last updated: {{ updateTime().month.short }} {{ updateTime().year }}
-          </p>
+          <div :class="{'introduce-content': true, 'show': isShowReview}">
+            <p>Lower interest rates mean that you can save real money on your mortgage. Compare our top-tier providers
+              and find the best purchase and refinance rates for you.</p>
+          </div>
         </div>
-        <img
-          alt="mortgage loan banner"
-          class="banner-img"
-          src="@/assets/img/test-mortgage-loan-banner-bg.png"
-        />
+
       </div>
     </section>
-    <div class="container">
-      <section class="product-area">
-        <div class="product-container">
-          <div class="product-container-top-box">
-            <ul class="category-box">
-              <li
-                :class="{ current: filterName === 'purchase' }"
-                @click="getData('purchase')"
-              >
-                Purchase
-              </li>
-              <li
-                :class="{ current: filterName === 'refinance' }"
-                @click="getData('refinance')"
-              >
-                Refinance
-              </li>
-            </ul>
-            <div class="disclosure">
-              <span class="title" @click="showDisclosure">Advertising Disclosure</span>
-              <div :class="{'disclosure_content': true, 'show': isShow}">The information shared through this website is
-                based on our team’s
-                personal judgements and views. We use
-                our own comparisons to assign values, which are not intended to reflect a certain benchmark of
-                precision. To keep our website free for use, we accept referral fees from various service providers,
-                which have the potential to influence their respective appointed scores. A third party’s participation
-                on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
-                this site is subject to change at any time.The site does not include all companies offering loan
-                products or all available loan offers.
-              </div>
+    <section class="preface-area">
+      <div class="preface-container">
+        <h2 class="title">Best Mortgage Loan Interest Rates</h2>
+        <div class="preface-content">
+          <p>While several loan providers in the market offer mortgages at competitive rates, we will look at those
+            lenders that are the best in their category. Let's start!</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="product-area">
+      <div class="product-container">
+        <div class="product-container-top-box">
+          <div class="disclosure">
+            <span class="title" @click="showDisclosure">Advertising Disclosure</span>
+            <div :class="{'disclosure_content': true, 'show': isShow}">The information shared through this website is
+              based on our team’s
+              personal judgements and views. We use
+              our own comparisons to assign values, which are not intended to reflect a certain benchmark of
+              precision. To keep our website free for use, we accept referral fees from various service providers,
+              which have the potential to influence their respective appointed scores. A third party’s participation
+              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
+              this site is subject to change at any time.The site does not include all companies offering loan
+              products or all available loan offers.
             </div>
           </div>
-          <div class="product-list-box">
-            <div class="product-title-box">
-              <div class="title lenders">
-                <span class="text">Mortgage Lenders</span>
-              </div>
-              <div class="title score">
+        </div>
+        <div class="product-list-box">
+          <div class="product-title-box">
+            <div class="title lenders">
+              <span class="text">Mortgage Lenders</span>
+            </div>
+            <div class="title score">
                 <span class="text">
                   Score
                   <el-popover
@@ -219,466 +211,64 @@
                     </div>
                   </el-popover>
                 </span>
-              </div>
-              <div class="title features">
-                <span class="text">Loan Features</span>
-              </div>
-              <div class="title terms"><span class="text"></span></div>
             </div>
-            <div v-if="!loading" class="product-list">
-              <div
-                v-for="(item, index) in products"
-                :key="item.name"
-                class="product-item"
-              >
-                <div v-if="index == 0" class="corner-box">
-                  <span class="text">{{ cornerText }}</span>
-                </div>
-                <div v-if="index == 0" class="visited-box">
-                  <span class="iconfont"></span>
-                  <span class="text"
-                  ><strong>{{ choseNum }} users</strong> chose this site
-                    today</span
-                  >
-                </div>
-
-                <div class="product-item-container">
-                  <div class="img-score-box">
-                    <div class="img-box">
-                      <img v-lazy="item.logo" :alt="item.name"/>
-                    </div>
-                    <div class="rate-box">
-                      <div class="rate">
-                        <span class="score">{{ item.rate.score }}</span>
-                        <div v-if="index == 0" class="trustpilot-box">
-                          <div class="text-box">
-                            <span class="iconfont">&#xe64c;</span>
-                            <span class="text">Trustpilot</span>
-                          </div>
-                          <ul class="star-list">
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                            <li>
-                              <span class="iconfont">&#xe64c;</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div v-else class="star-box">
-                          <el-rate
-                            :colors="['#29b674', '#29b674', '#29b674']"
-                            :value="computeScore(item.rate.score)"
-                            disabled
-                          ></el-rate>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="features-terms-box">
-                    <div class="list-box">
-                      <dl class="features-list">
-                        <dt>
-                          <!-- <span class="pc-text">Easily Compare & Save</span> -->
-                          <span class="phone-text">Loan Features</span>
-                        </dt>
-                        <dd>
-                          <p class="text">{{ item.slogan }}</p>
-                        </dd>
-                        <dd v-for="(it, id) in item.meritList" :key="id">
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">{{ it.text }}</p>
-                        </dd>
-                      </dl>
-                      <div class="details-box" @click="handleShow(index)">
-                        <span class="text">View detail</span>
-                        <span class="iconfont">&#xe600;</span>
-                      </div>
-                      <div
-                        class="phone-details-box"
-                        @click="handlePhoneShow(index)"
-                      >
-                        <span class="text">View detail</span>
-                        <span class="iconfont">&#xe600;</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="phone-key-facts-container">
-                    <span class="title">Key Facts</span>
-                    <ul class="phone-key-facts-list">
-                      <li v-if="item.key_facts.mortgage_types != ''">
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          Mortgage types: {{ item.key_facts.mortgage_types }}.
-                        </p>
-                      </li>
-                      <li v-if="item.key_facts.credit_score != ''">
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          Min. Credit Score:
-                          <span>{{ item.key_facts.credit_score }}</span>
-                        </p>
-                      </li>
-                      <li v-if="item.key_facts.apr != ''">
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          APR <span>{{ item.key_facts.apr }}</span>
-                        </p>
-                      </li>
-                      <li v-if="item.key_facts.NMLS != ''">
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          NMLS#: <span>{{ item.key_facts.NMLS }}</span>
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="btn-box">
-                    <a
-                      :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                      class="btn"
-                      rel="noopener noreferrer nofollow"
-                      target="_blank"
-                      @click="
-                        handleTracking({
-                          name: item.name,
-                          click_time: new Date().getTime(),
-                          link: item.link,
-                        })
-                      "
-                    >
-                      <span class="text">View Rates</span>
-                      <span class="iconfont">&#xe63c;</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="product-content-container">
-                  <div class="product-content-container-box">
-                    <div class="pros-cons-box">
-                      <div class="pros-box">
-                        <span class="title">Pros:</span>
-                        <ul class="pros-list">
-                          <li v-for="(it, id) in item.pros" :key="id">
-                            <span class="circle">●</span>
-                            <p class="text">{{ it.text }}</p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="cons-box">
-                        <span class="title">Cons:</span>
-                        <ul class="cons-list">
-                          <li v-for="(it, id) in item.cons" :key="id">
-                            <span class="circle">●</span>
-                            <p class="text">{{ it.text }}</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="review-key_facts-box">
-                      <div class="key-facts-box">
-                        <span class="title">Key Facts</span>
-                        <ul class="key-facts-list">
-                          <li v-if="item.key_facts.mortgage_types != ''">
-                            <span class="iconfont">&#xe65a;</span>
-                            <p class="text">
-                              Mortgage types:
-                              {{ item.key_facts.mortgage_types }}.
-                            </p>
-                          </li>
-                          <li v-if="item.key_facts.credit_score != ''">
-                            <span class="iconfont">&#xe65a;</span>
-                            <p class="text">
-                              Min. Credit Score:
-                              <span>{{ item.key_facts.credit_score }}</span>
-                            </p>
-                          </li>
-                          <li v-if="item.key_facts.apr != ''">
-                            <span class="iconfont">&#xe65a;</span>
-                            <p class="text">
-                              APR <span>{{ item.key_facts.apr }}</span>
-                            </p>
-                          </li>
-                          <li v-if="item.key_facts.NMLS != ''">
-                            <span class="iconfont">&#xe65a;</span>
-                            <p class="text">
-                              NMLS#: <span>{{ item.key_facts.NMLS }}</span>
-                            </p>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="review-link-box">
-                        <a
-                          :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                          class="review-btn"
-                          rel="noopener noreferrer"
-                          target="_blank"
-                        >
-                          <span class="text">Check My Rate</span>
-                          <span class="iconfont">&#xe63c;</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="title features">
+              <span class="text">Loan Features</span>
             </div>
+            <div class="title terms"><span class="text"></span></div>
+          </div>
+          <div v-if="!loading" class="product-list">
             <div
-              v-else
-              class="loading-box"
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
+              v-for="(item, index) in products"
+              :key="item.name"
+              class="product-item"
             >
-              <img
-                alt="loading..."
-                src="~/assets/img/img-loading.gif"
-                style="height: 200px"
-              />
-            </div>
-          </div>
-
-          <div v-if="count > pageSize" class="more-box">
-            <button v-if="isNull" class="btn" @click="loadMore">
-              <span class="text">SEE MORE</span>
-              <span class="iconfont">&#xe600;</span>
-            </button>
-            <button v-else class="btn close" @click="closeMore">
-              <span class="text">COLLAPSE</span>
-              <span class="iconfont">&#xe600;</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="pick-area">
-        <div class="pick-container">
-          <div class="pick-item-container">
-            <h2 class="area-title">Our Pick For Purchase</h2>
-            <div class="product-item">
-              <div class="corner-box">
-                <span class="text">LOW RATES</span>
+              <div v-if="index == 0" class="corner-box">
+                <span class="text">{{ cornerText }}</span>
               </div>
+              <div v-if="index == 0" class="visited-box">
+                <span class="iconfont"></span>
+                <span class="text"
+                ><strong>{{ choseNum }} users</strong> chose this site
+                    today</span
+                >
+              </div>
+
               <div class="product-item-container">
                 <div class="img-score-box">
                   <div class="img-box">
-                    <img
-                      v-lazy="purchase_product.logo"
-                      :alt="purchase_product.name"
-                    />
+                    <img v-lazy="item.logo" :alt="item.name"/>
                   </div>
                   <div class="rate-box">
                     <div class="rate">
-                      <span class="score">{{
-                          purchase_product.rate.score
-                        }}</span>
-
-                      <div class="star-box">
-                        <el-rate
-                          :colors="['#29b674', '#29b674', '#29b674']"
-                          :value="computeScore(purchase_product.rate.score)"
-                          disabled
-                        ></el-rate>
+                      <span class="score">{{ item.rate.score }}</span>
+                      <div v-if="index == 0" class="trustpilot-box">
+                        <div class="text-box">
+                          <span class="iconfont">&#xe64c;</span>
+                          <span class="text">Trustpilot</span>
+                        </div>
+                        <ul class="star-list">
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                          <li>
+                            <span class="iconfont">&#xe64c;</span>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="features-terms-box">
-                  <div class="list-box">
-                    <dl class="features-list">
-                      <dt>
-                        <span class="phone-text">Loan Features</span>
-                      </dt>
-                      <dd>
-                        <p class="text">{{ purchase_product.slogan }}</p>
-                      </dd>
-                      <dd
-                        v-for="(it, id) in purchase_product.meritList"
-                        :key="id"
-                      >
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">{{ it.text }}</p>
-                      </dd>
-                    </dl>
-                    <div
-                      class="details-box purchase-details"
-                      @click="handlePickShow('purchase')"
-                    >
-                      <span class="text">View detail</span>
-                      <span class="iconfont">&#xe600;</span>
-                    </div>
-                    <div
-                      class="phone-details-box purchase-phone-details"
-                      @click="handlePhonePickShow('purchase')"
-                    >
-                      <span class="text">View detail</span>
-                      <span class="iconfont">&#xe600;</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="phone-key-facts-container purchase-phone-container">
-                  <span class="title">Key Facts</span>
-                  <ul class="phone-key-facts-list">
-                    <li v-if="purchase_product.key_facts.mortgage_types != ''">
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        Mortgage types:
-                        {{ purchase_product.key_facts.mortgage_types }}.
-                      </p>
-                    </li>
-                    <li v-if="purchase_product.key_facts.credit_score != ''">
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        Min. Credit Score:
-                        <span>{{
-                            purchase_product.key_facts.credit_score
-                          }}</span>
-                      </p>
-                    </li>
-                    <li v-if="purchase_product.key_facts.apr != ''">
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        APR <span>{{ purchase_product.key_facts.apr }}</span>
-                      </p>
-                    </li>
-                    <li v-if="purchase_product.key_facts.NMLS != ''">
-                      <span class="iconfont">&#xe65a;</span>
-                      <p class="text">
-                        NMLS#:
-                        <span>{{ purchase_product.key_facts.NMLS }}</span>
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="btn-box">
-                  <a
-                    :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
-                    class="btn"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    @click="
-                      handleTracking({
-                        name: purchase_product.name,
-                        click_time: new Date().getTime(),
-                        link: purchase_product.link,
-                      })
-                    "
-                  >
-                    <span class="text">View Rates</span>
-                    <span class="iconfont">&#xe63c;</span>
-                  </a>
-                </div>
-              </div>
-              <div class="product-content-container purchase-container">
-                <div class="product-content-container-box">
-                  <div class="pros-cons-box">
-                    <div class="pros-box">
-                      <span class="title">Pros:</span>
-                      <ul class="pros-list">
-                        <li v-for="(it, id) in purchase_product.pros" :key="id">
-                          <span class="circle">●</span>
-                          <p class="text">{{ it.text }}</p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="cons-box">
-                      <span class="title">Cons:</span>
-                      <ul class="cons-list">
-                        <li v-for="(it, id) in purchase_product.cons" :key="id">
-                          <span class="circle">●</span>
-                          <p class="text">{{ it.text }}</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="review-key_facts-box">
-                    <div class="key-facts-box">
-                      <span class="title">Key Facts</span>
-                      <ul class="key-facts-list">
-                        <li
-                          v-if="purchase_product.key_facts.mortgage_types != ''"
-                        >
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            Mortgage types:
-                            {{ purchase_product.key_facts.mortgage_types }}.
-                          </p>
-                        </li>
-                        <li
-                          v-if="purchase_product.key_facts.credit_score != ''"
-                        >
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            Min. Credit Score:
-                            <span>{{
-                                purchase_product.key_facts.credit_score
-                              }}</span>
-                          </p>
-                        </li>
-                        <li v-if="purchase_product.key_facts.apr != ''">
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            APR
-                            <span>{{ purchase_product.key_facts.apr }}</span>
-                          </p>
-                        </li>
-                        <li v-if="purchase_product.key_facts.NMLS != ''">
-                          <span class="iconfont">&#xe65a;</span>
-                          <p class="text">
-                            NMLS#:
-                            <span>{{ purchase_product.key_facts.NMLS }}</span>
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="review-link-box">
-                      <a
-                        :href="'/redirect/mortgage-loan/'+purchase_product.name+'?category='+category + '&gclid=' + purchase_product.gclid"
-                        class="review-btn"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <span class="text">Check My Rate</span>
-                        <span class="iconfont">&#xe63c;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pick-item-container">
-            <h2 class="area-title">Our Pick For Refinance</h2>
-            <div class="product-item">
-              <div class="corner-box suitable">
-                <span class="text">Multiple Lenders</span>
-              </div>
-              <div class="product-item-container">
-                <div class="img-score-box">
-                  <div class="img-box">
-                    <img
-                      v-lazy="refinance_product.logo"
-                      :alt="refinance_product.name"
-                    />
-                  </div>
-                  <div class="rate-box">
-                    <div class="rate">
-                      <span class="score">{{
-                          refinance_product.rate.score
-                        }}</span>
-
-                      <div class="star-box">
+                      <div v-else class="star-box">
                         <el-rate
                           :colors="['#29b674', '#29b674', '#29b674']"
-                          :value="computeScore(refinance_product.rate.score)"
+                          :value="computeScore(item.rate.score)"
                           disabled
                         ></el-rate>
                       </div>
@@ -693,97 +283,82 @@
                         <span class="phone-text">Loan Features</span>
                       </dt>
                       <dd>
-                        <p class="text">{{ refinance_product.slogan }}</p>
+                        <p class="text">{{ item.slogan }}</p>
                       </dd>
-                      <dd
-                        v-for="(it, id) in refinance_product.meritList"
-                        :key="id"
-                      >
-                        <span class="iconfont">&#xe65a;</span>
+                      <dd v-for="(it, id) in item.meritList" :key="id">
+                        <span class="iconfont">&#xe604;</span>
                         <p class="text">{{ it.text }}</p>
                       </dd>
                     </dl>
-                    <div
-                      class="details-box refinance-details"
-                      @click="handlePickShow('refinance')"
-                    >
+                    <div class="details-box" @click="handleShow(index)">
                       <span class="text">View detail</span>
                       <span class="iconfont">&#xe600;</span>
                     </div>
                     <div
-                      class="phone-details-box refinance-phone-details"
-                      @click="handlePhonePickShow('refinance')"
+                      class="phone-details-box"
+                      @click="handlePhoneShow(index)"
                     >
                       <span class="text">View detail</span>
                       <span class="iconfont">&#xe600;</span>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="phone-key-facts-container refinance-phone-container"
-                >
+                <div class="phone-key-facts-container">
                   <span class="title">Key Facts</span>
                   <ul class="phone-key-facts-list">
-                    <li v-if="refinance_product.key_facts.mortgage_types != ''">
+                    <li v-if="item.key_facts.mortgage_types != ''">
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        Mortgage types:
-                        {{ refinance_product.key_facts.mortgage_types }}.
+                        Mortgage types: {{ item.key_facts.mortgage_types }}.
                       </p>
                     </li>
-                    <li v-if="refinance_product.key_facts.credit_score != ''">
+                    <li v-if="item.key_facts.credit_score != ''">
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
                         Min. Credit Score:
-                        <span>{{
-                            refinance_product.key_facts.credit_score
-                          }}</span>
+                        <span>{{ item.key_facts.credit_score }}</span>
                       </p>
                     </li>
-                    <li v-if="refinance_product.key_facts.apr != ''">
+                    <li v-if="item.key_facts.apr != ''">
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        APR <span>{{ refinance_product.key_facts.apr }}</span>
+                        APR <span>{{ item.key_facts.apr }}</span>
                       </p>
                     </li>
-                    <li v-if="refinance_product.key_facts.NMLS != ''">
+                    <li v-if="item.key_facts.NMLS != ''">
                       <span class="iconfont">&#xe65a;</span>
                       <p class="text">
-                        NMLS#:
-                        <span>{{ refinance_product.key_facts.NMLS }}</span>
+                        NMLS#: <span>{{ item.key_facts.NMLS }}</span>
                       </p>
                     </li>
                   </ul>
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
+                    :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="
-                      handleTracking({
-                        name: refinance_product.name,
-                        click_time: new Date().getTime(),
-                        link: refinance_product.link,
-                      })
-                    "
+                        handleTracking({
+                          name: item.name,
+                          click_time: new Date().getTime(),
+                          link: item.link,
+                        })
+                      "
                   >
-                    <span class="text">View Rates</span>
-                    <span class="iconfont">&#xe63c;</span>
+                    <span class="text">View Rates >></span>
+                    <!--                      <span class="iconfont">&#xe63c;</span>-->
                   </a>
                 </div>
               </div>
-              <div class="product-content-container refinance-container">
+              <div class="product-content-container">
                 <div class="product-content-container-box">
                   <div class="pros-cons-box">
                     <div class="pros-box">
                       <span class="title">Pros:</span>
                       <ul class="pros-list">
-                        <li
-                          v-for="(it, id) in refinance_product.pros"
-                          :key="id"
-                        >
+                        <li v-for="(it, id) in item.pros" :key="id">
                           <span class="circle">●</span>
                           <p class="text">{{ it.text }}</p>
                         </li>
@@ -792,10 +367,7 @@
                     <div class="cons-box">
                       <span class="title">Cons:</span>
                       <ul class="cons-list">
-                        <li
-                          v-for="(it, id) in refinance_product.cons"
-                          :key="id"
-                        >
+                        <li v-for="(it, id) in item.cons" :key="id">
                           <span class="circle">●</span>
                           <p class="text">{{ it.text }}</p>
                         </li>
@@ -806,47 +378,37 @@
                     <div class="key-facts-box">
                       <span class="title">Key Facts</span>
                       <ul class="key-facts-list">
-                        <li
-                          v-if="
-                            refinance_product.key_facts.mortgage_types != ''
-                          "
-                        >
+                        <li v-if="item.key_facts.mortgage_types != ''">
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
                             Mortgage types:
-                            {{ refinance_product.key_facts.mortgage_types }}.
+                            {{ item.key_facts.mortgage_types }}.
                           </p>
                         </li>
-                        <li
-                          v-if="refinance_product.key_facts.credit_score != ''"
-                        >
+                        <li v-if="item.key_facts.credit_score != ''">
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
                             Min. Credit Score:
-                            <span>{{
-                                refinance_product.key_facts.credit_score
-                              }}</span>
+                            <span>{{ item.key_facts.credit_score }}</span>
                           </p>
                         </li>
-                        <li v-if="refinance_product.key_facts.apr != ''">
+                        <li v-if="item.key_facts.apr != ''">
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            APR
-                            <span>{{ refinance_product.key_facts.apr }}</span>
+                            APR <span>{{ item.key_facts.apr }}</span>
                           </p>
                         </li>
-                        <li v-if="refinance_product.key_facts.NMLS != ''">
+                        <li v-if="item.key_facts.NMLS != ''">
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
-                            NMLS#:
-                            <span>{{ refinance_product.key_facts.NMLS }}</span>
+                            NMLS#: <span>{{ item.key_facts.NMLS }}</span>
                           </p>
                         </li>
                       </ul>
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="'/redirect/mortgage-loan/'+refinance_product.name + '?category=' + category + '&gclid=' + refinance_product.gclid"
+                        :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
                         class="review-btn"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -860,509 +422,259 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="faq-area">
-        <div class="faq-area-title-box">
-          <img
-            alt="answear or questions about personal loans"
-            class="pic"
-            src="@/assets/img/faq.webp"
-          />
-          <div class="faq-content">
-            <h2 class="faq-title">
-              <span>FAQ's</span>
-              <span>About Mortgage Loans</span>
-            </h2>
-            <div class="content">
-              <p>
-                Before taking a mortgage loan be sure you familiarize yourself
-                with all the terms and conditions associated with the loan. To
-                help you get started, we’ve compiled some of the most frequently
-                asked questions about mortgage loans below.
-              </p>
-            </div>
+          <div
+            v-else
+            class="loading-box"
+            style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+          >
+            <img
+              alt="loading..."
+              src="~/assets/img/img-loading.gif"
+              style="height: 200px"
+            />
           </div>
         </div>
-        <div class="faq-container">
-          <div class="faq-item">
-            <h2 class="title">How Does the Mortgage Loan Process Work?</h2>
-            <div class="content">
-              <p>
-                Whether you are buying a home or refinancing one, the mortgage
-                process is basically similar to one another. Here is an
-                introductory look at what happens when you’re
-                mortgaging/refinancing a home:
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Turn In Mortgage Application</strong> – The majority
-                    of home lenders provide an online application process. Fill
-                    it out, submit the form along with pertinent documentation.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Wait To Receive Loan Estimate</strong> – A lender is
-                    required to give you an estimate within three business days
-                    of a submitted application. The document needs to entail
-                    three things – monthly mortgage rate, estimated interest
-                    rate and closing costs.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Set Up A Home Inspection</strong> – Be sure to
-                    communicate with the seller about dates and times for a home
-                    inspection. An inspection will help uncover potential
-                    problems.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Get A Home Appraisal</strong> – Ask your lender to
-                    provide you with an appraiser to determine the home’s value.
-                    You will need to pay for this appraisal.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Buy Homeowners Insurance</strong> – This is a
-                    necessity before a bank approves a loan.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Wait Until Underwriting Is Completed</strong>
-                    – You’ll need to wait for the bank to prepare the loan
-                    documents, and it can take some time.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Begin Underwriting Process</strong> – Underwriters,
-                    using manual or automated systems, can take days or weeks to
-                    approve or decline loans.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Review Closing Disclosure Documents</strong> –
-                    Within three business days, the loan documents will arrive.
-                    Be sure to review the mortgage documents before signing. You
-                    want to compare the disclosure to the lender’s recent loan
-                    estimate to ensure no significant changes.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Close On The Loan</strong> – At this point, all
-                    parties involved in the mortgage transaction will need to
-                    sign the pertinent documents. Afterward, you pay the closing
-                    costs and down payment.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h2 class="title">
-              Understanding The Mortgage Interest and How It’s Calculated
-            </h2>
-            <div class="content">
-              <p>
-                The mortgage interest rate is the yearly cost of financing your
-                home, noted in a percentage of the loan amount. For example, a
-                2.75% interest rate on your mortgage means an additional 2.75%
-                on the remaining balance is added. 
-              </p>
-              <p>
-                There are two types of interest rates: fixed and adjustable.
-              </p>
-            </div>
-            <h2 class="small-title">Fixed-Rate</h2>
-            <div class="content">
-              <p>
-                With a fixed-rate mortgage, the interest rate stays the same
-                throughout the life of the loan. This means the monthly mortgage
-                payment also remains the same. You don’t have to worry about
-                increasing costs, but you don’t benefit unless you choose to
-                refinance if the market drops.
-              </p>
-              <p>
-                Fixed-rate mortgages tend to have a higher initial monthly
-                payment because the lender is unable to raise the interest rate
-                when the market dictates it.
-              </p>
-            </div>
-            <h2 class="small-title">Adjustable-Rate</h2>
-            <div class="content">
-              <p>
-                If you have an adjustable-rate mortgage, the interest rate is
-                tied to the market rates. It’s subjected to the market’s
-                movements, using a benchmark rate (i.e., prime rate). When the
-                benchmark rate increases, your monthly mortgage payment will
-                increase. When it falls, your mortgage payment will also
-                decline.
-              </p>
-              <p>
-                This kind of rate is only ideal when you’re going to sell or
-                refinance your home before an increase in rates or if you
-                believe there were be a decline in the market.
-              </p>
-              <p>
-                How do you know which one is best for you? It will depend on
-                three things:
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Market conditions</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Your individual finances</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    How long you intend to maintain the mortgage 
-                  </p>
-                </li>
-              </ul>
-              <p>
-                When it comes to determining your mortgage interest rate, there
-                are several factors that lenders will consider of you, the home,
-                the loan, and current economic conditions. Such factors are:
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Property type and use</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Your credit history</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Home price</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Down payment</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Loan term</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Market rates</p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">Interest rate type</p>
-                </li>
-              </ul>
-              <p>
-                When looking at the different offers, it’s important to consider
-                the annual percentage rate (APR) and interest rate percentage.
-                The interest rate calculates how much you’re borrowing every
-                year. The APR denotes the interest rate as well as the
-                origination fees, discount points and closing costs
-              </p>
-            </div>
-          </div>
 
-          <div class="faq-item">
-            <h2 class="title">8 Steps To Applying For A Home Mortgage</h2>
-            <div class="content">
-              <p>
-                Be sure to begin the mortgage pre-approval process before you
-                look at homes. This is important for three reasons:
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    You’ll know how much you are approved for and can look for
-                    homes in that price range.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    Many sellers required buyers to be pre-approved.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    Pre-approval means you can submit an offer as soon you find
-                    the home you want to buy.
-                  </p>
-                </li>
-              </ul>
+        <!--        <div v-if="count > pageSize" class="more-box">-->
+        <!--          <button v-if="isNull" class="btn" @click="loadMore">-->
+        <!--            <span class="text">SEE MORE</span>-->
+        <!--            <span class="iconfont">&#xe600;</span>-->
+        <!--          </button>-->
+        <!--          <button v-else class="btn close" @click="closeMore">-->
+        <!--            <span class="text">COLLAPSE</span>-->
+        <!--            <span class="iconfont">&#xe600;</span>-->
+        <!--          </button>-->
+        <!--        </div>-->
+      </div>
+    </section>
 
-              <p>From that point, here is what you’ll need to do:</p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Analyze Your Credit History</strong> – Look at your
-                    credit report and its history before applying for a
-                    mortgage. If there are any mistakes (that affect the score),
-                    address them immediately with all three credit bureaus –
-                    TransUnion, Experian and Equifax. If your score is low, make
-                    sure to improve them first.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Prepare Documents</strong> – The bank will request
-                    pay stubs, bank account statements, and tax returns to be
-                    submitted with the loan application.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Compare Shop With Different Lenders</strong> – If
-                    you comparison shop in a 45-day window, your credit score
-                    will suffer only slightly.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Review Offers</strong> – Any lender you applied with
-                    will give you a loan estimate that includes monthly payment,
-                    interest rate, closing costs and other important
-                    information.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Pick Your Lender</strong> – Once you’ve reviewed
-                    each loan term, pick the lender best for you.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Ensure Quick Responses To Any Requests Made</strong>
-                    – When your loan goes through the processing and
-                    underwriting, the lender may request something. Be sure to
-                    respond as quickly as you can to move this process along
-                    faster. 
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Review Closing Disclosure</strong> – The lender is
-                    required to give you a closing disclosure, showing you the
-                    final mortgage costs, the interest rate, fees, etc., within
-                    three business days of the closing date scheduled. Look at
-                    the closing disclosure and the loan estimate they initially
-                    provided to determine if and why fees changed. 
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Close On The Home</strong> – At the closing, you’ll
-                    sign a plethora of documents to ensure the home reverts to
-                    your possessions. You will also be required to pay the down
-                    payment and up to 5% closing costs.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h2 class="title">How To Find The Best Possible Mortgage Lender</h2>
-            <div class="content">
-              <p>
-                When looking at each mortgage company, there are four factors to
-                consider:
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Interest Rate</strong> – Interest will vary by
-                    product and lender; make sure you’re comparison shopping to
-                    find the best possible deal
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Closing Costs</strong> – Closing costs will include
-                    the application, loan origination and appraisal fees, so
-                    even though a lender offers a low rate compared to others,
-                    the mortgage costs may not make it the best. Use the APR to
-                    compare the lenders’ offers.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Product Offerings</strong> – Look for a
-                    state-licensed lender that offers great options for you – be
-                    it a VA loan, 30-year-fixed rate loan, etc.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>Customer Service Reviews</strong> – Read reviews and
-                    feedback to learn more about the lender. You want lenders
-                    who treat their customers with respect as well as offer a
-                    good loan rate
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="faq-item">
-            <h2 class="title">What Kind Of Mortgage Will Suit You?</h2>
-            <div class="content">
-              <p>
-                Your individual situation – plans, preferences and finances –
-                will dictate what the best mortgage is. The most common kind of
-                mortgages are:
-              </p>
-              <h6 class="small-title">Adjustable-Rate Mortgages</h6>
-              <p>
-                Monthly payments and interest rates are affected by the market,
-                which means you could pay more or less during the life of the
-                loan. Early adjustable-rate mortgages are low, but rates can
-                spike unexpectedly (leaving some borrowers unable to pay).
-              </p>
-              <h6 class="small-title">Balloon Mortgages</h6>
-              <p>
-                These are loans with short-term interest payments of five to 10
-                years, which then require the homeowner to make a lump sum
-                payment. This may be ideal for individuals who are going to sell
-                or refinance the home before the impending balloon payment is
-                due.
-              </p>
-              <h6 class="small-title">Conforming Loans</h6>
-              <p>
-                The loans are subjected to the limits and guidelines as laid out
-                by Fannie Mae and Freddie Mac.
-              </p>
-              <h6 class="small-title">Conventional Mortgages</h6>
-              <p>
-                These mortgages originate from private lenders and are not
-                federally backed by the government. To qualify, private lenders
-                want a minimum 620 credit score, a low debt-to-income ratio and
-                a minimum 3% down payment. Any down payment less than 20% must
-                include private mortgage insurance.
-              </p>
-              <h6 class="small-title">Fixed-Rate Mortgages</h6>
-              <p>
-                Loans with a fixed rate mean payments and interest rate remain
-                the same (great for budgeters). However, if the rate falls, you
-                will need to refinance if you want to benefit financially. 
-              </p>
-              <h6 class="small-title">Government-Backed Loans</h6>
-              <p>
-                These are loans from the Department of Agriculture, Department
-                of Veterans Affairs and Federal Housing Administration. If you
-                are unable to get a convention loan, you could attain a
-                government-backed loan.
-              </p>
-              <ul>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>FHA</strong> – The majority of FHA-backed lenders
-                    want a minimum of 580 in credit score and a 3.5% down
-                    payment. However, you could be approved if you agree to pay
-                    a 10% down payment even if your credit score is 500 to 579.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>VA</strong> – The VA has no requirements about down
-                    payments or credit score minimums, but a lender will do an
-                    in-depth analysis of your financial profile. A lender will
-                    need to see the Certificate of Eligibility (COE) that shows
-                    you are eligible for a VA loan.
-                  </p>
-                </li>
-                <li>
-                  <span class="circle">●</span>
-                  <p class="text">
-                    <strong>USDA</strong> – The majority of lenders who do USDA
-                    loans do not require money down but a minimum of 640 credit
-                    score. A home must be located in a permissible rural area,
-                    and you have to meet specific income requirements.
-                  </p>
-                </li>
-              </ul>
-              <h6 class="small-title">Nonconforming Loans</h6>
-              <p>
-                These are jumbo or government-backed loans that don’t meet the
-                criteria set forth by Fannie Mae or Freddie Mac. Jumbo loans
-                surpass the limits of a conforming loan and have stringent
-                qualifications for eligibility due to lenders’ risk.
-              </p>
-            </div>
-          </div>
+
+    <section class="faq-area">
+
+      <div class="faq-container">
+
+        <h2 class="title">
+          FAQ's About Mortgage Loans
+        </h2>
+        <div class="question-content">
+          <p>
+            Before taking a mortgage loan be sure you familiarize yourself
+            with all the terms and conditions associated with the loan. To
+            help you get started, we’ve compiled some of the most frequently
+            asked questions about mortgage loans below.
+          </p>
+
+          <h6 class="question-title">How Does the Mortgage Loan Process Work?</h6>
+          <p>Whether you are buying a home or refinancing one, the mortgage process is basically similar to one
+            another. Here is an introductory look at what happens when you’re mortgaging/refinancing a home:</p>
+          <ul>
+            <li><strong>Turn In Mortgage Application</strong> – The majority of home lenders provide an online
+              application process. Fill it out, submit the form along with pertinent documentation.
+            </li>
+            <li><strong>Wait To Receive Loan Estimate</strong> – A lender is required to give you an estimate within
+              three business days of a submitted application. The document needs to entail three things – monthly
+              mortgage rate, estimated interest rate and closing costs.
+            </li>
+            <li><strong>Set Up A Home Inspection</strong> – Be sure to communicate with the seller about dates and
+              times for a home inspection. An inspection will help uncover potential problems.
+            </li>
+            <li><strong>Get A Home Appraisal</strong> – Ask your lender to provide you with an appraiser to determine
+              the home’s value. You will need to pay for this appraisal.
+            </li>
+            <li><strong>Buy Homeowners Insurance</strong> – This is a necessity before a bank approves a loan.</li>
+            <li><strong>Wait Until Underwriting Is Completed</strong> – You’ll need to wait for the bank to prepare
+              the loan documents, and it can take some time.
+            </li>
+            <li><strong>Begin Underwriting Process</strong> – Underwriters, using manual or automated systems, can
+              take days or weeks to approve or decline loans.
+            </li>
+            <li><strong>Review Closing Disclosure Documents</strong> – Within three business days, the loan documents
+              will arrive. Be sure to review the mortgage documents before signing. You want to compare the disclosure
+              to the lender’s recent loan estimate to ensure no significant changes.
+            </li>
+            <li>
+              Close On The Loan – At this point, all parties involved in the mortgage transaction will need to sign
+              the pertinent documents. Afterward, you pay the closing costs and down payment.
+            </li>
+
+          </ul>
+          <h6 class="question-title">Understanding The Mortgage Interest and How It’s Calculated</h6>
+          <p>The mortgage interest rate is the yearly cost of financing your home, noted in a percentage of the loan
+            amount. For example, a 2.75% interest rate on your mortgage means an additional 2.75% on the remaining
+            balance is added. </p>
+          <p>There are two types of interest rates: fixed and adjustable.</p>
+          <p><strong>Fixed-Rate</strong></p>
+          <p>With a fixed-rate mortgage, the interest rate stays the same throughout the life of the loan. This means
+            the monthly mortgage payment also remains the same. You don’t have to worry about increasing costs, but
+            you don’t benefit unless you choose to refinance if the market drops.</p>
+          <p>Fixed-rate mortgages tend to have a higher initial monthly payment because the lender is unable to raise
+            the interest rate when the market dictates it.</p>
+          <p><strong>Adjustable-Rate</strong></p>
+          <p>If you have an adjustable-rate mortgage, the interest rate is tied to the market rates. It’s subjected to
+            the market’s movements, using a benchmark rate (i.e., prime rate). When the benchmark rate increases, your
+            monthly mortgage payment will increase. When it falls, your mortgage payment will also decline.</p>
+          <p>This kind of rate is only ideal when you’re going to sell or refinance your home before an increase in
+            rates or if you believe there were be a decline in the market.</p>
+          <p>How do you know which one is best for you? It will depend on three things:</p>
+          <ul>
+            <li>Market conditions</li>
+            <li>Your individual finances</li>
+            <li>How long you intend to maintain the mortgage</li>
+          </ul>
+          <p>When it comes to determining your mortgage interest rate, there are several factors that lenders will
+            consider of you, the home, the loan, and current economic conditions. Such factors are:</p>
+
+          <ul>
+            <li>Property type and use</li>
+            <li>Your credit history</li>
+            <li>Home price</li>
+            <li>Down payment</li>
+            <li>Loan term</li>
+            <li>
+              Market rates
+            </li>
+            <li>
+              Interest rate type
+            </li>
+          </ul>
+          <p>When looking at the different offers, it’s important to consider the annual percentage rate (APR) and
+            interest rate percentage. The interest rate calculates how much you’re borrowing every year. The APR
+            denotes the interest rate as well as the origination fees, discount points and closing costs</p>
+          <h6 class="question-title">8 Steps To Applying For A Home Mortgage</h6>
+          <p>Be sure to begin the mortgage pre-approval process before you look at homes. This is important for three
+            reasons:</p>
+          <ul>
+            <li>You’ll know how much you are approved for and can look for homes in that price range.</li>
+            <li>Many sellers required buyers to be pre-approved.</li>
+            <li>Pre-approval means you can submit an offer as soon you find the home you want to buy.</li>
+          </ul>
+          <p>From that point, here is what you’ll need to do:</p>
+          <ul>
+            <li><strong>Analyze Your Credit History</strong> – Look at your credit report and its history before
+              applying for a mortgage. If there are any mistakes (that affect the score), address them immediately
+              with all three credit bureaus – TransUnion, Experian and Equifax. If your score is low, make sure to
+              improve them first.
+            </li>
+            <li><strong>Prepare Documents</strong> – The bank will request pay stubs, bank account statements, and tax
+              returns to be submitted with the loan application.
+            </li>
+            <li><strong>Compare Shop With Different Lenders</strong> – If you comparison shop in a 45-day window, your
+              credit score will suffer only slightly.
+            </li>
+            <li>
+              <strong>Review Offers</strong> – Any lender you applied with will give you a loan estimate that includes
+              monthly payment, interest rate, closing costs and other important information.
+            </li>
+            <li><strong>Pick Your Lender</strong> – Once you’ve reviewed each loan term, pick the lender best for you.
+            </li>
+            <li><strong>Ensure Quick Responses To Any Requests Made</strong> – When your loan goes through the
+              processing and underwriting, the lender may request something. Be sure to respond as quickly as you can
+              to move this process along faster.
+            </li>
+            <li><strong>Review Closing Disclosure</strong> – The lender is required to give you a closing disclosure,
+              showing you the final mortgage costs, the interest rate, fees, etc., within three business days of the
+              closing date scheduled. Look at the closing disclosure and the loan estimate they initially provided to
+              determine if and why fees changed.
+            </li>
+            <li><strong>Close On The Home</strong> – At the closing, you’ll sign a plethora of documents to ensure the
+              home reverts to your possessions. You will also be required to pay the down payment and up to 5% closing
+              costs.
+            </li>
+          </ul>
+          <h6 class="question-title">How To Find The Best Possible Mortgage Lender</h6>
+          <p>When looking at each mortgage company, there are four factors to consider:</p>
+          <ul>
+            <li><strong>Interest Rate</strong> – Interest will vary by product and lender; make sure you’re comparison
+              shopping to find the best possible deal
+            </li>
+            <li><strong>Closing Costs</strong> – Closing costs will include the application, loan origination and
+              appraisal fees, so even though a lender offers a low rate compared to others, the mortgage costs may not
+              make it the best. Use the APR to compare the lenders’ offers.
+            </li>
+            <li><strong>Product Offerings</strong> – Look for a state-licensed lender that offers great options for
+              you – be it a VA loan, 30-year-fixed rate loan, etc.
+            </li>
+            <li><strong>Customer Service Reviews</strong> – Read reviews and feedback to learn more about the lender.
+              You want lenders who treat their customers with respect as well as offer a good loan rate
+            </li>
+          </ul>
+          <h6 class="question-title">What Kind Of Mortgage Will Suit You?</h6>
+          <p>Your individual situation – plans, preferences and finances – will dictate what the best mortgage is. The
+            most common kind of mortgages are:</p>
+          <p><strong>Adjustable-Rate Mortgages</strong></p>
+          <p>Monthly payments and interest rates are affected by the market, which means you could pay more or less
+            during the life of the loan. Early adjustable-rate mortgages are low, but rates can spike unexpectedly
+            (leaving some borrowers unable to pay).</p>
+          <p><strong>Balloon Mortgages</strong></p>
+          <p>These are loans with short-term interest payments of five to 10 years, which then require the homeowner
+            to make a lump sum payment. This may be ideal for individuals who are going to sell or refinance the home
+            before the impending balloon payment is due.</p>
+          <p><strong>Conforming Loans</strong></p>
+          <p>The loans are subjected to the limits and guidelines as laid out by Fannie Mae and Freddie Mac.</p>
+          <p><strong>Conventional Mortgages</strong></p>
+          <p>These mortgages originate from private lenders and are not federally backed by the government. To
+            qualify, private lenders want a minimum 620 credit score, a low debt-to-income ratio and a minimum 3% down
+            payment. Any down payment less than 20% must include private mortgage insurance.</p>
+          <p><strong>Fixed-Rate Mortgages</strong></p>
+          <p>Loans with a fixed rate mean payments and interest rate remain the same (great for budgeters). However,
+            if the rate falls, you will need to refinance if you want to benefit financially. </p>
+          <p><strong>Government-Backed Loans</strong></p>
+          <p>These are loans from the Department of Agriculture, Department of Veterans Affairs and Federal Housing
+            Administration. If you are unable to get a convention loan, you could attain a government-backed loan.</p>
+          <ul>
+            <li><strong>FHA</strong> – The majority of FHA-backed lenders want a minimum of 580 in credit score and a
+              3.5% down payment. However, you could be approved if you agree to pay a 10% down payment even if your
+              credit score is 500 to 579.
+            </li>
+            <li><strong>VA</strong> – The VA has no requirements about down payments or credit score minimums, but a
+              lender will do an in-depth analysis of your financial profile. A lender will need to see the Certificate
+              of Eligibility (COE) that shows you are eligible for a VA loan.
+            </li>
+            <li><strong>USDA</strong> – The majority of lenders who do USDA loans do not require money down but a
+              minimum of 640 credit score. A home must be located in a permissible rural area, and you have to meet
+              specific income requirements.
+            </li>
+          </ul>
+          <p><strong>Nonconforming Loans</strong></p>
+          <p>These are jumbo or government-backed loans that don’t meet the criteria set forth by Fannie Mae or
+            Freddie Mac. Jumbo loans surpass the limits of a conforming loan and have stringent qualifications for
+            eligibility due to lenders’ risk.</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <script>
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
+import {seo} from '../utils/seo'
 
 export default {
-  head() {
-    return {
-      title: 'Mortgage Loans Online For Bad Credit | Toploanadviser.com',
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Our goal is to provide you with all the information about mortgage loan. Compare our recommended mortgage loan services below to get started.",
-        },
-        {
-          hid: "keywords",
-          name: "keywords",
-          content: "mortgage loan, your mortgage online, mortgage, mortgage loans near me, mortgage loans for bad credit, mortgage rates",
-        },
-      ]
-    }
+  head: seo({
+    title: "Mortgage Loans Online For Bad Credit | Toploanadviser.com",
+    description: "Mortgage Loan is a type of loan that is secured by a home and provided by a mortgage lenderor a bank. There are many options for borrower with bad credit who can apply online instantly.",
+    keywords: "mortgage loan,your mortgage online,mortgage,mortgage loans near me,mortgage loans for bad credit,mortgage rates",
 
-  },
+    url: 'https://www.toploansadviser.com/mortgage-loan',
+    img: 'https://www.toploansadviser.com/data/images/mortgage-loan.webp',
+    img_size: {
+      width: '522',
+      height: '360'
+    },
+    img_type: 'image/webp',
+  }),
   data() {
     return {
       category: 'purchase',
       cornerText: "Low Rates",
       choseNum: 285,
       isShow: false,
+      isShowReview: false,
       loading: false,
       filterName: "",
       count: 0,
@@ -1506,7 +818,8 @@ export default {
         this.cornerText = "Multiple Lenders";
         this.choseNum = 368;
       }
-      this.loadMore();
+      this.products = this.allProducts;
+      // this.loadMore();
     },
     handleTracking(params) {
       // window.tracking();
@@ -1567,6 +880,47 @@ export default {
   created() {
     this.getData("purchase");
   },
+  mounted() {
+    let sloganJQDom = $('.banner-area .slogan');
+
+    let clientWidth = $(window).width();
+    if (clientWidth <= 750) {
+
+      let top = $('.banner-container .title').offset().top;
+
+      $(window).on('scroll', function () {
+        let headerHeight = $('.header-container').height();
+        if ($(this).scrollTop() > top) {
+          sloganJQDom.text('Compare Best Mortgage Loans Rates');
+          sloganJQDom.css({
+            display: 'block',
+            position: 'fixed',
+            top: headerHeight + 'px',
+            fontSize: '.2rem',
+            textAlign: 'center',
+            width: '100%',
+            left: 0,
+            color: '#fff',
+            zIndex: 8,
+            backgroundColor: 'rgb(26,119,129)'
+          })
+        } else {
+          sloganJQDom.text('Make it easy to find affordable and responsible mortgages in the US.');
+          sloganJQDom.css({
+            display: 'none',
+            position: 'static',
+            top: headerHeight + 'px',
+            textAlign: 'left',
+            width: 'auto',
+            fontSize: '0.36rem',
+            color: '#001139',
+            left: 0,
+            backgroundColor: 'transparent'
+          })
+        }
+      })
+    }
+  }
 };
 </script>
 

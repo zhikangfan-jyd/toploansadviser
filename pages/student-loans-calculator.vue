@@ -57,29 +57,29 @@
               <div class="input-block-item">
                 <label for="">Loan amount</label>
                 <div class="input-box loan-amount-input">
-                  <input type="text">
+                  <input v-model="loan_amount" type="text" @input="inputLoanAmount">
                 </div>
               </div>
               <div class="input-block-item">
                 <label for="">Loan term in years</label>
                 <div class="input-box">
-                  <input type="text">
+                  <input v-model="year" type="text" @input="inputYear">
                 </div>
               </div>
               <div>Or</div>
               <div class="input-block-item">
                 <label for="">Loan term in months</label>
                 <div class="input-box">
-                  <input type="text">
+                  <input v-model="month" type="text" @input="inputMonth">
                 </div>
               </div>
               <div class="input-block-item">
                 <label for="">Interest rate per year</label>
                 <div class="form-bottom-box">
                   <div class="input-box submit-input-box">
-                    <input type="text">
+                    <input v-model="interest_rate" type="text" @input="inputInterestRate">
                   </div>
-                  <button class="submit-btn" type="button">CALCULATE</button>
+                  <button class="submit-btn" type="button" @click="handleCompute">CALCULATE</button>
                 </div>
               </div>
             </form>
@@ -89,17 +89,17 @@
                   <span>Monthly Payment</span>
                   <div class="money-box">
                     <span class="coin">$</span>
-                    <span class="money">847.98</span>
+                    <span class="money">{{ monthlyPayment }}</span>
                   </div>
                 </div>
 
                 <div class="total-paid-box">
                   <span>Total Principal Paid</span>
-                  <span>$5,000</span>
+                  <span>${{ monthlyPrincipalPayment }}</span>
                 </div>
                 <div class="total-paid-box">
                   <span>Total Interest Paid</span>
-                  <span>$87.86</span>
+                  <span>${{ monthlyInterestPaid }}</span>
                 </div>
               </div>
 
@@ -447,20 +447,70 @@ export default {
   data() {
     return {
       isShowExtraPaymentContainer: false,
-      calculator: {
-        price: 500000, //总金额
-        down_payment: 500000 * 0.20,// 预付款
-        loan_terms: 10, //贷款年限
-        interest_rate: 4.5, // 利率
-
-      },
-      slider: 50
+      loan_amount: '', // 贷款金额
+      year: '', // 贷款年限
+      month: '', //贷款几个月
+      interest_rate: '', // 利率
+      totalInterest: 0, //总利息
+      monthlyPayment: 0, //每月所还金额
+      monthlyInterestPaid: 0, // 每月所还利息
+      monthlyPrincipalPayment: 0, // 每月所还本金
     }
   },
   methods: {
     updateTime,
     showExtraPaymentContainer() {
       this.isShowExtraPaymentContainer = !this.isShowExtraPaymentContainer;
+    },
+    // 输入贷款金额
+    inputLoanAmount() {
+      this.loan_amount = Number(this.loan_amount);
+      if (this.loan_amount > 1000000) {
+
+      }
+    },
+    // 输入年份
+    inputYear() {
+      this.month = Number(this.year) * 12;
+      if (this.year >= 7) {
+
+      }
+    },
+    // 输入月份
+    inputMonth() {
+      this.year = Number(this.month) / 12;
+      if (this.month > 84) {
+
+      }
+    },
+
+    //输入利率
+    inputInterestRate() {
+
+    },
+
+    //计算
+    handleCompute() {
+      this.totalInterest = this.loan_amount * (this.interest_rate / 100) * this.year; //总共归还的利息
+
+      this.monthlyInterestRate = (this.interest_rate / 100) / 12;
+
+      //每月需要支付的金额
+      this.monthlyPayment = (this.loan_amount * this.monthlyInterestRate * Math.pow((1 + this.monthlyInterestRate), this.month) / (Math.pow((1 + this.monthlyInterestRate), this.month) - 1)).toFixed(2);
+      let totalInterestPaid = 0;
+      let monthlyInterestPaid = 0;
+      for (let i = 1; i <= this.month; i++) {
+        monthlyInterestPaid = (this.loan_amount - Number(this.loan_amount * this.monthlyInterestRate * Math.pow((1 + this.monthlyInterestRate), this.month) / (Math.pow((1 + this.monthlyInterestRate), this.month) - 1)) * (i - 1)) * this.monthlyInterestRate;
+
+        totalInterestPaid = (Number(totalInterestPaid) + Number(monthlyInterestPaid)).toFixed(2);
+      }
+
+      this.monthlyInterestPaid = totalInterestPaid;
+      this.monthlyPrincipalPayment = Number(totalInterestPaid) + this.loan_amount;
+      //
+      // this.monthlyInterestPaid = (this.totalInterest / this.month).toFixed(2);
+      //
+      // this.monthlyPrincipalPayment = (this.monthlyPayment - this.monthlyInterestPaid).toFixed(2);
     }
   }
 }

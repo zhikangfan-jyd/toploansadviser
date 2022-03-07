@@ -1,4 +1,0 @@
-Disallow:/redirect
-User-agent: *
-Disallow:
-

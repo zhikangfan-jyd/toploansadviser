@@ -77,6 +77,11 @@
       color: #fff;
       font-size: 14px;
       font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
     }
   }
 
@@ -86,7 +91,7 @@
       margin: 0 auto;
 
       .title {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 8px;
         font-size: 45px;
         font-weight: bold;
@@ -189,6 +194,7 @@
           position: relative;
 
           .title {
+            font-style: italic;
             font-size: 14px;
             color: #8f8f8f;
             cursor: pointer;
@@ -646,6 +652,7 @@
           position: relative;
 
           .title {
+            font-style: italic;
             font-size: 14px;
             color: #8f8f8f;
             cursor: pointer;
@@ -695,13 +702,25 @@
         justify-content: space-between;
         width: 100%;
         color: #fff;
-        background-color: #1a7781;
+        background-color: rgba(26, 119, 129, 0.8);
 
         font-size: 18px;
         font-weight: 600;
         padding: 10px 19px;
         box-sizing: border-box;
         text-align: center;
+
+        .card-header-left {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .card-header-right {
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+        }
 
         span {
           display: inline-block;
@@ -712,15 +731,15 @@
         }
 
         .score-title {
-          width: 101px;
+          width: 120px;
         }
 
         .apr-title {
-          width: 234px;
+          width: 235px;
         }
 
         .btn-title {
-          width: 158px;
+          width: 160px;
         }
       }
 
@@ -741,6 +760,7 @@
           }
 
           .circle {
+            flex-shrink: 0;
             display: inline-block;
             width: 20px;
             height: 20px;
@@ -794,7 +814,21 @@
             height: 128px;
             padding: 12px 19px;
             box-sizing: border-box;
-            border: 1px solid #1a7781;
+            //border: 1px solid #1a7781;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, .1);
+
+
+            .product-include-card-info-left {
+              display: flex;
+              flex: 1;
+              justify-content: space-around;
+            }
+
+            .product-include-card-info-right {
+              display: flex;
+              flex: 1;
+              justify-content: space-around;
+            }
 
             .logo-box {
               display: flex;
@@ -802,7 +836,6 @@
               align-items: center;
 
               .logo {
-                width: 190px;
                 height: 80px;
                 justify-self: center;
               }
@@ -906,6 +939,11 @@
                 font-size: 14px;
                 font-weight: 600;
                 text-decoration: none;
+                transition: all linear 0.1s;
+
+                &:hover {
+                  background-color: #03b959;
+                }
               }
             }
           }
@@ -1047,5 +1085,140 @@
 
   }
 
+}
 
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .slogan {
+        display: none;
+      }
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preface-area {
+      .preface-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .title {
+          margin-top: 0;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .product-include-area {
+      .product-include-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .card-header {
+          .card-header-right {
+            display: none;
+          }
+        }
+
+        .product-include-item {
+          .card-header {
+            .apr-title, .btn-title {
+              display: none;
+            }
+          }
+
+          .product-include-card {
+            .product-include-card-info {
+              height: auto;
+              flex-wrap: wrap;
+
+              .product-include-card-info-right {
+                margin-top: 10px;
+                flex-direction: column;
+
+                align-items: center;
+
+                .btn-box {
+                  margin-top: 30px;
+                }
+              }
+            }
+
+            .product-include-card-content {
+              max-height: fit-content;
+            }
+          }
+        }
+      }
+    }
+
+    .question-area {
+
+
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+
+      .question-content {
+
+        .question-title {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .conclusion-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    .more-from-toploansadviser-container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

@@ -77,6 +77,11 @@
       color: #fff;
       font-size: 14px;
       font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
     }
   }
 
@@ -86,7 +91,7 @@
       margin: 0 auto;
 
       .title {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 8px;
         font-size: 45px;
         font-weight: bold;
@@ -212,6 +217,7 @@
           position: relative;
 
           .title {
+            font-style: italic;
             font-size: 14px;
             color: #8f8f8f;
             cursor: pointer;
@@ -330,6 +336,17 @@
             padding: 12px 0;
             box-sizing: border-box;
 
+            .product-include-card-info-left {
+              flex: 1;
+              display: flex;
+              justify-content: space-around;
+            }
+
+            .product-include-card-info-right {
+              flex: 1;
+              display: flex;
+              justify-content: space-around;
+            }
 
             .logo-box {
               display: flex;
@@ -443,6 +460,11 @@
                 font-size: 14px;
                 font-weight: 600;
                 text-decoration: none;
+                transition: all linear 0.1s;
+
+                &:hover {
+                  background-color: #03b959;
+                }
               }
             }
           }
@@ -586,4 +608,157 @@
   }
 
 
+}
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .slogan {
+        display: none;
+      }
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preface-area {
+      .preface-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .title {
+          margin-top: 0;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .product-include-area {
+      .product-include-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .product-include-item {
+          .product-include-title {
+            .circle {
+              flex-shrink: 0;
+            }
+          }
+
+          .product-include-card {
+            .product-include-card-info {
+              height: auto;
+              flex-direction: column;
+            }
+
+            .product-include-card-info-left {
+            }
+
+            .product-include-card-info-right {
+              flex-direction: column;
+
+              .content-box {
+                margin-top: 15px;
+
+                .product-advantage-list {
+                  li {
+                    margin: 5px 0;
+                  }
+                }
+
+
+              }
+
+              .btn-box {
+                align-items: center;
+                margin-top: 20px;
+              }
+            }
+
+            .product-include-card-content {
+              max-height: max-content;
+            }
+          }
+        }
+      }
+    }
+
+    .question-area {
+
+
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+
+      .question-content {
+
+        .question-title {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+      text-align: center;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .conclusion-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+
+      .conclusion-container {
+        width: 100%;
+        box-sizing: border-box;
+
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .more-from-toploansadviser-container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
 }

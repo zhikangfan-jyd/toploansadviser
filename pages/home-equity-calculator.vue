@@ -1,6 +1,5 @@
 <template>
   <main class="main-container">
-    <!--    <h2 class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</h2>-->
     <section class="banner-area">
       <div class="banner-container">
         <h1 class="title">Home Equity Loan Calculator</h1>
@@ -23,8 +22,8 @@
 
       </div>
     </section>
-    <section class="student-calculator-area">
-      <div class="student-calculator-container">
+    <section class="home-equity-calculator-area">
+      <div class="home-equity-calculator-container">
         <div class="title-box">
           <h2 class="title">Home Equity Calculator</h2>
           <div class="help-container">
@@ -42,29 +41,29 @@
               <div class="input-block-item">
                 <label for="">Loan amount</label>
                 <div class="input-box loan-amount-input">
-                  <input type="text">
+                  <input v-model="loan_amount" type="text" @input="inputLoanAmount">
                 </div>
               </div>
               <div class="input-block-item">
                 <label for="">Loan term in years</label>
                 <div class="input-box">
-                  <input type="text">
+                  <input v-model="year" type="text" @input="inputYear">
                 </div>
               </div>
               <div>Or</div>
               <div class="input-block-item">
                 <label for="">Loan term in months</label>
                 <div class="input-box">
-                  <input type="text">
+                  <input v-model="month" type="text" @input="inputMonth">
                 </div>
               </div>
               <div class="input-block-item">
                 <label for="">Interest rate per year</label>
                 <div class="form-bottom-box">
                   <div class="input-box submit-input-box">
-                    <input type="text">
+                    <input v-model="interest_rate" type="text" @input="inputInterestRate">
                   </div>
-                  <button class="submit-btn" type="button">CALCULATE</button>
+                  <button class="submit-btn" type="button" @click="handleCompute">CALCULATE</button>
                 </div>
               </div>
             </form>
@@ -74,17 +73,17 @@
                   <span>Monthly Payment</span>
                   <div class="money-box">
                     <span class="coin">$</span>
-                    <span class="money">847.98</span>
+                    <span class="money">{{ monthlyPayment }}</span>
                   </div>
                 </div>
 
                 <div class="total-paid-box">
                   <span>Total Principal Paid</span>
-                  <span>$5,000</span>
+                  <span>${{ monthlyPrincipalPayment }}</span>
                 </div>
                 <div class="total-paid-box">
                   <span>Total Interest Paid</span>
-                  <span>$87.86</span>
+                  <span>${{ monthlyInterestPaid }}</span>
                 </div>
               </div>
 
@@ -173,85 +172,11 @@
         </div>
       </div>
     </section>
-    <!--    <section class="products-list-area">-->
-    <!--      <div class="products-list-container">-->
-    <!--        <h3 class="product-area-title">Based on your inputs, we recommend the following lenders:</h3>-->
-    <!--        <div v-for="(product, index) in products" :key="index" class="product-item">-->
-    <!--          <div v-if="index < 2" class="corner-box">-->
-    <!--            <img v-if="index === 0" alt="Best Choice" src="@/assets/img/best-choice.png">-->
-    <!--            <img v-if="index === 1" alt="Low Rates" src="@/assets/img/low-rates.png">-->
-    <!--          </div>-->
-    <!--          <div class="logo-info-col col">-->
-    <!--            <div class="logo-info-box">-->
-    <!--              <img :src="product.logo" alt="" class="logo">-->
-    <!--              <div v-if="index === 0" class="trustpilot-box">-->
-    <!--                <div class="trustpilot-top"><span class="iconfont">&#xe64c;</span><span>Trustpilot</span></div>-->
-    <!--                <div class="trustpilot-bottom">-->
-    <!--                  <ul class="start-list">-->
-    <!--                    <li class="iconfont">&#xe64c;</li>-->
-    <!--                    <li class="iconfont">&#xe64c;</li>-->
-    <!--                    <li class="iconfont">&#xe64c;</li>-->
-    <!--                    <li class="iconfont">&#xe64c;</li>-->
-    <!--                    <li class="iconfont">&#xe64c;</li>-->
-    <!--                  </ul>-->
-    <!--                  <span class="score">{{ product.score }}</span>-->
-    <!--                </div>-->
-    <!--              </div>-->
-    <!--              <div v-if="index !== 0" class="rate-box">-->
-    <!--                <div class="star-box">-->
-    <!--                  <NewStar :max="10" :score="product.score"></NewStar>-->
-    <!--                </div>-->
-    <!--                <span class="score">{{ product.score }}</span>-->
-    <!--              </div>-->
-    <!--              <a :href="product.link" class="view-details-btn" rel="noopener noreferrer nofollow">View details >> </a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="credit-score-col col">-->
-    <!--            <div class="credit-score-box">-->
-    <!--              <div class="key">MIN.CREDIT SCORE</div>-->
-    <!--              <div class="value">{{ product.credit_score }}</div>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="loan-types-col col">-->
-    <!--            <div class="loan-types-box">-->
-    <!--              <div class="key">LOAN TYPES</div>-->
-    <!--              <div class="value">-->
-    <!--                <p v-for="(type, id) in product.loan_types" :key="id" class="type">-->
-    <!--                  <span class="iconfont">&#xe604;</span>-->
-    <!--                  <span class="text">{{ type.text }}</span>-->
-    <!--                </p>-->
-    <!--              </div>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="down-payment-col col">-->
-    <!--            <div class="down-payment-box">-->
-    <!--              <div class="key">MIN.DOWN PAYMENT</div>-->
-    <!--              <div class="value">{{ product.down_payment }}</div>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="btn-box-col col">-->
-    <!--            <div class="btn-box">-->
-    <!--              <a :href="product.link" class="btn" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
-    <!--              <a :href="product.link" class="visit-btn" rel="noopener noreferrer nofollow">Visit site >></a>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--        <div class="mail-container">-->
-    <!--          <div class="mail-info">-->
-    <!--            <p class="title">Tracking rates? We can help.</p>-->
-    <!--            <p class="txt">We'll bring the lates mortage tates to you, so you never miss a great match.</p>-->
-    <!--          </div>-->
-    <!--          <form class="user-email-form">-->
-    <!--            <input class="user-email-input" name="user-email" placeholder="Email address" type="text">-->
-    <!--            <button class="send-btn" type="button">Sign Up Now</button>-->
-    <!--          </form>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
-    <section class="student-content-area">
-      <div class="student-content-container">
-        <h3 class="student-container-title">How to Use a Home Equity Loan Calculator?</h3>
-        <div class="student-content">
+
+    <section class="home-equity-content-area">
+      <div class="home-equity-content-container">
+        <h3 class="home-equity-container-title">How to Use a Home Equity Loan Calculator?</h3>
+        <div class="home-equity-content">
           <p>Calculating your home equity loan is fairly simple with the help of free online calculators. A loan
             calculator will help you determine how much money you will be able to borrow. Most home equity calculators
             will ask you for your home address to estimate the property value and mortgage balance by using market data
@@ -270,9 +195,9 @@
             you owe to $320,000, which is 80% of the original home value of $400,000.</p>
         </div>
       </div>
-      <div class="student-content-container">
-        <h3 class="student-container-title">Applying for a Home Equity Loan</h3>
-        <div class="student-content">
+      <div class="home-equity-content-container">
+        <h3 class="home-equity-container-title">Applying for a Home Equity Loan</h3>
+        <div class="home-equity-content">
           <p>As you can see, using a home equity loan calculator is quite easy. However, the results will depend on your
             credit score and LTV ratio. It’s best to try out multiple different calculators provided by different
             lenders. That way, you might find that you qualify for better rates at a different lender, which will allow
@@ -302,110 +227,23 @@
         <h3 class="read-title">Read More»</h3>
         <ul class="read-list">
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
+            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
               Lenders</a>
           </li>
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
+            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
               Lenders</a>
           </li>
           <li>
 
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
+            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
               Lenders</a>
           </li>
         </ul>
 
       </div>
     </section>
-    <!--    <section class="best-mortgage-lenders-area">-->
-    <!--      <div class="best-mortgage-lenders-container">-->
-    <!--        <h2 class="title">Best mortgage lenders in December 2021</h2>-->
-    <!--        <div class="best-mortgage-lenders-main">-->
-    <!--          <div class="description-container">-->
-    <!--            <div class="text-content">-->
-    <!--              <h6 class="text-title">CHOOSE BEST MORTGAGE LENDER</h6>-->
-    <!--              <p class="text">If your down payment is less than 20% of the property’s purchase price, you have to-->
-    <!--                pay </p>-->
-    <!--            </div>-->
-    <!--            <ul class="attribute-list">-->
-    <!--              <li><span>Max loan</span></li>-->
-    <!--              <li><span>APR</span></li>-->
-    <!--              <li><span>Repayment terms</span></li>-->
-    <!--            </ul>-->
-    <!--          </div>-->
-    <!--          <div class="card-container">-->
-    <!--            <div class="card-item best-choice">-->
-    <!--              <img alt="" class="best-icon" src="@/assets/img/best-choice-icon.png">-->
-    <!--              <div class="card-top first">-->
-    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
-    <!--              </div>-->
-    <!--              <div class="card-middle">-->
-    <!--                <div class="middle-container">-->
-    <!--                  <div class="logo-box">-->
-    <!--                    <img alt="" class="logo" src="">-->
-    <!--                  </div>-->
-    <!--                  <div class="button-group">-->
-    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
-    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
-    <!--                  </div>-->
-    <!--                </div>-->
 
-    <!--              </div>-->
-    <!--              <ul class="attr-list">-->
-    <!--                <li><span>$10,000</span></li>-->
-    <!--                <li><span>2.49-35.99%</span></li>-->
-    <!--                <li><span>24-84</span></li>-->
-    <!--              </ul>-->
-    <!--            </div>-->
-    <!--            <div class="card-item">-->
-    <!--              <div class="card-top second">-->
-    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
-    <!--              </div>-->
-    <!--              <div class="card-middle">-->
-    <!--                <div class="middle-container">-->
-    <!--                  <div class="logo-box">-->
-    <!--                    <img alt="" class="logo" src="">-->
-    <!--                  </div>-->
-    <!--                  <div class="button-group">-->
-    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
-    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
-    <!--                  </div>-->
-    <!--                </div>-->
-
-    <!--              </div>-->
-    <!--              <ul class="attr-list">-->
-    <!--                <li><span>$10,000</span></li>-->
-    <!--                <li><span>2.49-35.99%</span></li>-->
-    <!--                <li><span>24-84</span></li>-->
-    <!--              </ul>-->
-    <!--            </div>-->
-    <!--            <div class="card-item">-->
-    <!--              <div class="card-top third">-->
-    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
-    <!--              </div>-->
-    <!--              <div class="card-middle">-->
-    <!--                <div class="middle-container">-->
-    <!--                  <div class="logo-box">-->
-    <!--                    <img alt="" class="logo" src="">-->
-    <!--                  </div>-->
-    <!--                  <div class="button-group">-->
-    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
-    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
-    <!--                  </div>-->
-    <!--                </div>-->
-
-    <!--              </div>-->
-    <!--              <ul class="attr-list">-->
-    <!--                <li><span>$10,000</span></li>-->
-    <!--                <li><span>2.49-35.99%</span></li>-->
-    <!--                <li><span>24-84</span></li>-->
-    <!--              </ul>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
   </main>
 </template>
 
@@ -423,158 +261,73 @@ export default {
   data() {
     return {
       isShowExtraPaymentContainer: false,
-      calculator: {
-        price: 500000, //总金额
-        down_payment: 500000 * 0.20,// 预付款
-        loan_terms: 10, //贷款年限
-        interest_rate: 4.5, // 利率
+      loan_amount: '', // 贷款金额
+      year: '', // 贷款年限
+      month: '', //贷款几个月
+      interest_rate: '', // 利率
+      totalInterest: 0, //总利息
+      monthlyPayment: 0, //每月所还金额
+      monthlyInterestPaid: 0, // 每月所还利息
+      monthlyPrincipalPayment: 0, // 每月所还本金
 
-      },
-      slider: 50,
-      products: [
-        {
-          name: "Rocket Mortgage",
-          link: "",
-          logo: "/data/images/best-mortgage-refinance-lenders/rocket-mortgage-logo.png",
-          score: "9.8",
-          feature: "Best Overall",
-          slogan: "1 Application, Several Offers",
-
-          advantage: [
-            {
-              text: "Compare rates in minutes"
-            },
-            {
-              text: "Easy process, 100% online"
-            },
-            {
-              text: "Secured website with data encryption"
-            }
-          ],
-          credit_score: "620",
-          down_payment: "3%",
-          loan_types: [
-            {
-              text: "Conventional"
-            },
-            {
-              text: "FHA"
-            },
-            {
-              text: "Jumbo"
-            }
-          ]
-        },
-        {
-          name: "Better Mortgage",
-          link: "",
-          logo: "/data/images/best-mortgage-refinance-lenders/better-logo.png",
-          score: "9.7",
-          feature: "Best For Fast Funding",
-          slogan: "A+ Customer Satisfaction",
-          advantage: [
-            {
-              text: "35 years of experience"
-            },
-            {
-              text: "Fully automated, online process"
-            },
-            {
-              text: "Pre-approval available"
-            }
-          ],
-          credit_score: "620",
-          down_payment: "3%",
-          loan_types: [
-            {
-              text: "Conventional"
-            },
-            {
-              text: "FHA"
-            },
-            {
-              text: "Jumbo"
-            }
-          ]
-        },
-        {
-          name: "Loan Depot",
-          link: "",
-          logo: "/data/images/best-mortgage-refinance-lenders/loan-depot-logo.png",
-          score: "9.5",
-          feature: "Best For Online Mortgage Refinancing",
-          slogan: "No Login/Registration Required",
-          advantage: [
-            {
-              text: "Has funded over $65 billion in home loans"
-            },
-            {
-              text: "Clearance in as little as 8 days"
-            },
-            {
-              text: "Mello smartloan™ digital asset verification"
-            }
-          ],
-          credit_score: "580-620",
-          down_payment: "3.5%",
-          loan_types: [
-            {
-              text: "Conventional"
-            },
-            {
-              text: "FHA"
-            },
-            {
-              text: "VA"
-            },
-            {
-              text: "Jumbo"
-            }
-          ]
-        },
-        {
-          name: "Zillow",
-          link: "",
-          logo: "/data/images/best-mortgage-refinance-lenders/zillow-logo.png",
-          score: "8.8",
-          feature: "Best Marketplace",
-          slogan: "Unlock Your Financial Potential",
-          advantage: [
-            {
-              text: "Provides great refinancing calculators"
-            },
-            {
-              text: "An all-digital app, no hassle"
-            },
-            {
-              text: "Dedicated support team"
-            }
-          ],
-          credit_score: "620",
-          down_payment: "3.5%",
-          loan_types: [
-            {
-              text: "Conventional"
-            },
-            {
-              text: "FHA"
-            },
-            {
-              text: "VA"
-            },
-            {
-              text: "Jumbo"
-            }
-          ]
-        }
-      ]
     }
   },
   methods: {
     updateTime,
     showExtraPaymentContainer() {
       this.isShowExtraPaymentContainer = !this.isShowExtraPaymentContainer;
+    },
+    // 输入贷款金额
+    inputLoanAmount() {
+      this.loan_amount = Number(this.loan_amount);
+      if (this.loan_amount > 1000000) {
+
+      }
+    },
+    // 输入年份
+    inputYear() {
+      this.month = Number(this.year) * 12;
+      if (this.year >= 7) {
+
+      }
+    },
+    // 输入月份
+    inputMonth() {
+      this.year = Number(this.month) / 12;
+      if (this.month > 84) {
+
+      }
+    },
+
+    //输入利率
+    inputInterestRate() {
+
+    },
+
+    //计算
+    handleCompute() {
+      this.totalInterest = this.loan_amount * (this.interest_rate / 100) * this.year; //总共归还的利息
+
+      this.monthlyInterestRate = (this.interest_rate / 100) / 12;
+
+      //每月需要支付的金额
+      this.monthlyPayment = (this.loan_amount * this.monthlyInterestRate * Math.pow((1 + this.monthlyInterestRate), this.month) / (Math.pow((1 + this.monthlyInterestRate), this.month) - 1)).toFixed(2);
+      let totalInterestPaid = 0;
+      let monthlyInterestPaid = 0;
+      for (let i = 1; i <= this.month; i++) {
+        monthlyInterestPaid = (this.loan_amount - Number(this.loan_amount * this.monthlyInterestRate * Math.pow((1 + this.monthlyInterestRate), this.month) / (Math.pow((1 + this.monthlyInterestRate), this.month) - 1)) * (i - 1)) * this.monthlyInterestRate;
+
+        totalInterestPaid = (Number(totalInterestPaid) + Number(monthlyInterestPaid)).toFixed(2);
+      }
+
+      this.monthlyInterestPaid = totalInterestPaid;
+      this.monthlyPrincipalPayment = Number(totalInterestPaid) + this.loan_amount;
+      //
+      // this.monthlyInterestPaid = (this.totalInterest / this.month).toFixed(2);
+      //
+      // this.monthlyPrincipalPayment = (this.monthlyPayment - this.monthlyInterestPaid).toFixed(2);
     }
+
   }
 }
 </script>

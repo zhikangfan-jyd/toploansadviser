@@ -1,26 +1,35 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
-      <!--      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>-->
       <div class="banner-container">
-        <div class="banner-content">
-          <h1 class="website-title">
-            <span>Best Emergency Loans {{ updateTime().year }}</span>
-          </h1>
-          <p class="sub-title">Loans for your Urgent Need</p>
-          <div class="content">
+        <h1 class="title">Best Emergency Loans {{ updateTime().year }}</h1>
+        <div class="introduce-container">
+          <div class="author-info">
+            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
+            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
+                updateTime().month.short
+              }} {{ updateTime().year }}</span></p>
+          </div>
+          <div class="introduce-content">
             <p>Emergencies come without warning, so you can’t be caught off-guard in case you land in a situation where
               you need money urgently. This is where emergency loans play an integral role. This type of loan is usually
               cheaper and safer than payday or auto title loans.</p>
           </div>
-          <p class="update">
-            Last updated: {{ updateTime().month.short }} {{ updateTime().year }}
-          </p>
         </div>
-
       </div>
     </section>
 
+    <section class="preface-area">
+      <div class="preface-container">
+        <h2 class="title">Compare Top Emergency Loan Rates</h2>
+        <div class="preface-content">
+          <p>
+            We compared and reviewed loans from more than 10 emergency loan lenders to find the best rates and loan
+            features.</p>
+        </div>
+      </div>
+    </section>
     <section class="product-area">
       <div class="product-container">
         <div class="product-container-top-box">
@@ -157,7 +166,7 @@
                         <h5 class="phone-text">Loan Features</h5>
                       </dt>
                       <dd>
-                        <span class="iconfont">&#xe65a;</span>
+                        <span class="iconfont">&#xe604;</span>
                         <h3
                           class="text"
                           style="display: inline; font-weight: normal"
@@ -221,16 +230,16 @@
                       class="text"
                       style="display: inline;"
                     >
-                      Check My Rates
+                      Check My Rates >>
                     </h3>
-                    <span class="iconfont">&#xe63c;</span>
+                    <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
                     :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
-                  >Visit site »</a
+                  >Visit site >></a
                   >
                 </div>
               </div>
@@ -271,47 +280,51 @@
             <div v-if="index === 0" class="tips"><span class="g">503 users</span> chose this site today</div>
 
             <div class="product-include-card-info">
-              <div class="logo-box">
-                <img :alt="product.name" :src="product.logo" class="logo">
-                <div class="read-review-btn">Read Review <span>>></span></div>
-              </div>
-              <div class="rate-box">
+              <div class="product-include-card-info-left">
+                <div class="logo-box">
+                  <img :alt="product.name" :src="product.logo" class="logo">
+                  <div class="read-review-btn">Read Review <span>>></span></div>
+                </div>
+                <div class="rate-box">
 
-                <div class="score-box">
-                  <span class="score">{{ product.rate.score }}</span>
-                  <div v-if="index === 0" class="trustpilot-box">
-                    <div class="text-box">
-                      <span class="iconfont">&#xe64c;</span>
-                      <span class="text">Trustpilot</span>
+                  <div class="score-box">
+                    <span class="score">{{ product.rate.score }}</span>
+                    <div v-if="index === 0" class="trustpilot-box">
+                      <div class="text-box">
+                        <span class="iconfont">&#xe64c;</span>
+                        <span class="text">Trustpilot</span>
+                      </div>
+                      <ul class="star-list">
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="star-list">
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="rate">
-                    <NewStar :max="10" :score="product.rate.score"></NewStar>
+                    <div v-else class="rate">
+                      <NewStar :max="10" :score="product.rate.score"></NewStar>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="content-box">
-                <span>{{ product.compare.apr.min }}% - {{ product.compare.apr.max }}%</span>
-              </div>
-              <div class="btn-box">
-                <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+              <div class="product-include-card-info-right">
+                <div class="content-box">
+                  <span>{{ product.compare.apr.min }}% - {{ product.compare.apr.max }}%</span>
+                </div>
+                <div class="btn-box">
+                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                </div>
               </div>
             </div>
             <div class="product-include-card-content" v-html="product.description"></div>
@@ -334,7 +347,9 @@
           <p>This FAQs section will guide first-time readers regarding emergency loans.</p>
           <h3 class="question-title">What is an emergency loan?</h3>
           <p>Any personal loans that are used in situations where unexpected expenses are required are known as
-            emergency loans. It could be someone requiring urgent medical attention or a vehicle breakdown. This type of
+            emergency loans. It could be someone requiring <a
+              href="/guides/your-pandemic-budget_-how-to-save-for-another-12-months" rel="noreferrer noopener"
+              target="_blank">urgent medical attention</a> or a vehicle breakdown. This type of
             loan has a very high interest rate. The period of disbursement for emergency loans varies depending upon the
             kind of loan. Sometimes these are available within few days, while some emergency loan lenders could release
             funds on the same day as approval, which is great for those who need it without delay.</p>
@@ -358,7 +373,8 @@
               get shut off or
               the electricity won’t get disconnected.
             </li>
-            <li><strong>Repairs</strong> – A home equity loan or home equity line of credit might offer better interest
+            <li><strong>Repairs</strong> – <a href="/best-home-equity-loan" rel="noreferrer noopener" target="_blank">A
+              home equity loan or home equity line of credit</a> might offer better interest
               rates and terms,
               in case of home repairs. However, some repairs might need immediate attention and on-spot payment.
               Similarly, car repairs also pop up unexpectedly. If you need fixes for your home or vehicle, which are
@@ -366,8 +382,10 @@
             </li>
           </ul>
           <h3 class="question-title">How do emergency loans work?</h3>
-          <p>There are several lenders who don’t advertise about specific emergency loans, as these are just personal
-            loans. Those who require this kind of loans should find a lender that provides fast approval and quick
+          <p>There are several lenders who don’t advertise about specific emergency loans, as <a
+            href="/guides/why-you-need-a-personal-loan" rel="noreferrer noopener" target="_blank">these are just
+            personal
+            loans</a>. Those who require this kind of loans should find a lender that provides fast approval and quick
             funding for a loan amount as per your requirements. After you get quotes from a few lenders, send in your
             application to the one with the best interest rate and suitable terms. You have to provide identity proof
             and income verification documents during this stage of the application process. After you receive approval,
@@ -419,7 +437,9 @@
           <p>You generally require a solid credit history to take out an emergency loan. If that isn’t the case with
             you, you might not qualify for this type of loan. There are several alternatives, so take a look:</p>
           <p class="strong">Local credit unions and banks</p>
-          <p>Reach out to a local credit union or bank, and see if you qualify for a personal loan. They are friendlier
+          <p>Reach out to a local credit union or bank, and see if you <a href="/guides/how-to-apply-a-personal-loan"
+                                                                          rel="noreferrer noopener" target="_blank">qualify
+            for a personal loan</a>. They are friendlier
             toward current account holders.</p>
           <p class="strong">Local nonprofits and charities</p>
           <p>Few states and local municipalities have grants or interest-free loans you can take advantage of. </p>
@@ -451,14 +471,27 @@
 import {updateTime} from "../utils/date";
 import {computeScore, formatNum} from "../utils/index";
 import NewStar from '~/components/NewStar/index.vue'
+import {seo} from '../utils/seo'
 
 export default {
   components: {
     NewStar
   },
-  head() {
-    return {}
-  },
+  head: seo({
+    title: 'Emergency Personal Loans Near Me | Toploansadviser.com',
+    description: "Best Emergency Personal Loans for people who with bad credit or no bank account.  Especially, when you need money fast, please don't waste  any time. Apply now online as soon as possible!",
+    keywords: "emergency loan,emergency personal loan,emergency loans near me",
+    url: 'https://www.toploansadviser.com/best-emergency-loan',
+    img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+    img_size: {
+      width: '325',
+      height: '295'
+    },
+    img_type: 'image/webp',
+    link: [
+      {rel: "canonical", href: "https://www.toploansadviser.com/personal-loan"}
+    ]
+  }),
   async asyncData({$axios, error}) {
     try {
       let results = await $axios.$get('/data/best-emergency-loan.json');

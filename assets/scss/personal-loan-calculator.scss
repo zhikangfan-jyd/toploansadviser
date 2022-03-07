@@ -44,6 +44,11 @@
       color: #fff;
       font-size: 14px;
       font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
     }
   }
 
@@ -53,7 +58,7 @@
       margin: 0 auto;
 
       .title {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 8px;
         font-size: 45px;
         font-weight: bold;
@@ -145,11 +150,11 @@
     }
   }
 
-  .student-calculator-area {
+  .personal-calculator-area {
 
     //background: url("../assets/img/mortgage-calculator-bg.webp") no-repeat center center/cover;
 
-    .student-calculator-container {
+    .personal-calculator-container {
       width: $rootWidth;
 
       margin: 0 auto;
@@ -516,7 +521,7 @@
       .product-container-top-box {
         display: flex;
         justify-content: flex-end;
-        margin: 25px 0;
+        margin: 25px 0 5px 0;
 
 
         .disclosure {
@@ -525,6 +530,7 @@
           position: relative;
 
           .title {
+            font-style: italic;
             font-size: 14px;
             color: #8f8f8f;
             cursor: pointer;
@@ -1268,4 +1274,334 @@
     }
   }
 
+}
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+    .banner-area {
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preface-area {
+      .preface-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .title {
+          margin-top: 0;
+          font-size: 25px;
+        }
+
+        .preface-content {
+          p {
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+
+    .personal-calculator-area {
+      .personal-calculator-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title-box {
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 20px 0;
+
+          .title {
+            font-size: 26px;
+          }
+
+          .help-container {
+            margin-top: 8px;
+          }
+        }
+
+        .calculator-container {
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0;
+
+          .calculator-form-box {
+            flex-direction: column;
+          }
+        }
+
+      }
+    }
+
+    .product-area {
+      .product-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .product-container-top-box {
+          margin: 0 0 5px 0;
+
+          .disclosure {
+            text-align: right;
+
+            .title {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .product-list-box {
+          border: none;
+
+          .product-title-box {
+            display: none;
+          }
+
+          .product-list {
+            .product-item {
+              height: auto;
+              margin-bottom: 15px;
+              padding-top: 15px;
+              border: 1px solid #00164b1a;
+              box-sizing: border-box;
+              border-radius: 18px;
+              box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+              padding-bottom: 0;
+
+              &:nth-of-type(1) {
+                padding-bottom: 0;
+                padding-top: 25px;
+              }
+
+              &:nth-of-type(2) {
+                padding-bottom: 0;
+                padding-top: 25px;
+              }
+
+              &:nth-last-of-type(1) {
+                border: 1px solid #00164b1a;
+              }
+
+              .visited-box {
+                display: none;
+              }
+
+              .product-item-container {
+                flex-direction: column;
+                padding: 0 20px;
+
+                .img-score-box {
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid #00164b1a;
+
+                  // .img-box {
+                  //   img {
+                  //     width: 126px;
+                  //     height: 63px;
+                  //   }
+                  // }
+
+                  .rate-box {
+                    border: none;
+
+                    .rate {
+                      .score {
+                        font-size: 36px;
+                      }
+
+                      .trustpilot-box {
+                        margin-bottom: 5px;
+                      }
+
+                      .reviews-link {
+                        margin-top: 0px;
+                      }
+                    }
+                  }
+                }
+
+                .phone-slogan {
+                  display: block;
+                }
+
+                .features-terms-box {
+                  flex-direction: column;
+                  align-items: flex-start;
+                  margin-top: 15px;
+                  background-color: rgb(251, 250, 250);
+                  border-radius: 25px;
+                  padding: 20px;
+
+                  .list-box {
+                    flex: 2;
+                    padding-left: 0;
+                    padding-right: 0;
+                    flex-shrink: 0;
+
+                    .features-list {
+                      font-size: 14px;
+
+                      dt {
+                        margin-bottom: 10px;
+
+                        .phone-text {
+                          display: inline-block;
+                          color: #001139;
+                          font-weight: 600;
+                          font-size: 20px;
+                        }
+
+                        .pc-text {
+                          display: none;
+                        }
+                      }
+
+                      dd {
+                        strong {
+                          font-weight: bold;
+                        }
+
+                        .text {
+                          font-size: 18px;
+                          color: #001139;
+                          font-weight: 400;
+                        }
+                      }
+                    }
+                  }
+
+                  .terms-box {
+                    flex: 1;
+                    border: none;
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+
+                    .title {
+                      font-weight: 600;
+                      display: block;
+                      font-size: 20px;
+                      color: #001139;
+                      margin-right: 10px;
+                    }
+
+                    span {
+                      word-break: break-all;
+
+                      &.text-box {
+                        display: flex;
+                        text-align: right;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #001139;
+                      }
+                    }
+                  }
+                }
+
+                .btn-box {
+                  margin-top: 15px;
+                  margin-bottom: 20px;
+
+                  .btn {
+                    width: 78%;
+                    height: 60px;
+                    border-radius: 30px;
+                    font-size: 22px;
+                    line-height: 60px;
+                    font-weight: bold;
+                    background-color: #1f9a61;
+                  }
+
+                  .visit-btn {
+                    color: gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .personal-content-area {
+
+
+      .personal-content-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .personal-container-title {
+          font-size: 26px;
+        }
+      }
+
+      .question-content {
+
+        .question-title {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .conclusion-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+
+      .conclusion-container {
+        width: 100%;
+        box-sizing: border-box;
+
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .must-read-area {
+      .must-read-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
+    }
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

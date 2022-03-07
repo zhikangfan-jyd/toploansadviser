@@ -83,7 +83,7 @@
     },
     {
       "name": "lendingclub",
-      "review_key": "",
+      "review_key": "lending-club",
       "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
       "logo": "/data/images/lendingclub.webp",
       "upto": "1000000",
@@ -161,7 +161,7 @@
     },
     {
       "name": "best_egg",
-      "review_key": "",
+      "review_key": "best-egg",
       "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl",
       "logo": "/data/images/best_egg.webp",
       "upto": "1000000",

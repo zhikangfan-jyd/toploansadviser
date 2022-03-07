@@ -4,27 +4,24 @@
   .banner-area {
     position: relative;
     width: 100%;
-    // background-color: #f5faf6;
-    background-image: linear-gradient(to right, #f5faf6 60%, #d9f6df);
 
     .banner-container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       width: $rootWidth;
-      height: 360px;
+      padding: 30px 0 50px 0;
       margin: 0 auto;
 
       .banner-content {
         position: relative;
         z-index: 1;
-        max-width: 730px;
 
         .website-title {
           font-size: 42px;
           margin-bottom: 20px;
           font-weight: 700;
           line-height: 56px;
-          color: $theme-color;
 
           span {
             display: block;
@@ -33,17 +30,12 @@
 
         .content {
           font-size: 18px;
-          line-height: 24px;
+          line-height: 28px;
           color: #000;
         }
       }
-    }
 
-    .banner-img {
-      position: absolute;
-      right: -130px;
-      bottom: -8px;
-      height: 94%;
+
     }
   }
 
@@ -51,6 +43,56 @@
     width: $rootWidth;
     margin: 0 auto;
     padding-bottom: 80px;
+
+    .category-list {
+      display: flex;
+      width: fit-content;
+
+      li {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 45px;
+        cursor: pointer;
+        color: #1a7781;
+
+        border-bottom: 2px solid #1a7781;
+        margin-right: 5px;
+
+        &.current {
+          position: relative;
+          color: #fff;
+          background-color: #1a7781;
+          font-weight: 600;
+          border-bottom: none;
+
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 20px solid #fff;
+            border-right: 10px solid #fff;
+          }
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 20px solid #fff;
+            border-left: 10px solid #fff;
+            border-bottom: 20px solid transparent;
+            border-right: 10px solid transparent;
+          }
+        }
+      }
+    }
 
     .learn-title {
       margin-top: 60px;
@@ -75,7 +117,6 @@
 
         .title {
           margin-left: 21px;
-
           font-size: 38px;
           color: #001139;
         }
@@ -129,9 +170,9 @@
 
           .blog-title {
             @include ellipsis(2);
-            min-height: 67px;
+            height: 60px;
             margin: 25px 0 10px 0;
-            font-size: 21px;
+            font-size: 18px;
             color: #001139;
           }
 
@@ -142,13 +183,18 @@
           .link {
             color: $theme-color;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
 
             &:hover {
               text-decoration-line: underline;
               text-decoration-color: $theme-color;
             }
           }
+        }
+
+        &::after {
+          content: '';
+          width: 345px;
         }
       }
 
@@ -170,10 +216,12 @@
         }
       }
     }
+
     .loading-box {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
       li {
         margin: 40px 0;
       }
@@ -193,11 +241,18 @@
         align-items: flex-start;
 
         .banner-content {
-          margin-top: 58px;
 
           .website-title {
             flex-direction: row;
             font-size: 32px;
+            margin-bottom: 5px;
+            margin-top: 15px;
+
+          }
+
+          .content {
+            font-size: 16px;
+            margin-bottom: 14px;
           }
         }
       }
@@ -212,6 +267,23 @@
       width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
+
+      .category-list {
+        flex-wrap: wrap;
+
+        li {
+
+          width: 48%;
+          margin: 5px 2px;
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+
+          &::after, &::before {
+            display: none;
+          }
+        }
+      }
 
       .learn-title {
         font-size: 28px;

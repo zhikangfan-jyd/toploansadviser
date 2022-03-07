@@ -1,29 +1,191 @@
 <template>
   <main class="main-container">
+
     <section class="banner-area">
-      <!--      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>-->
       <div class="banner-container">
-        <div class="banner-content">
-          <h1 class="website-title">
-            Best Parent Loans for College
-          </h1>
-          <p class="sub-title">Finance Your children’s educational journey</p>
-          <div class="content">
+        <h1 class="title">Best Parent Loan For College Of {{ updateTime().month.short }} {{ updateTime().year }}</h1>
+        <div class="introduce-container">
+          <div class="author-info">
+            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
+            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
+                updateTime().month.short
+              }} {{ updateTime().year }}</span></p>
+          </div>
+          <div class="introduce-content">
             <p>Parent loans are designed to help parents finance their children’s educational journey without
               sacrificing their life savings. By taking out a parent loan, you can afford to pay for your kid’s college
               without draining your retirement account or borrowing from friends and family. However, there are plenty
               of options you need to consider when choosing parent loans.</p>
+
           </div>
-          <p class="update">
-            Last updated: {{ updateTime().month.short }} {{ updateTime().year }}
-          </p>
         </div>
 
       </div>
     </section>
-    <section class="product-area">
-      <div class="product-container">
-        <div class="product-container-top-box">
+    <!--    <section class="product-area">-->
+    <!--      <div class="product-container">-->
+    <!--        <div class="product-container-top-box">-->
+    <!--          <div class="disclosure">-->
+    <!--              <span class="title"-->
+    <!--                    @click="handleShowDisclosure"-->
+    <!--              >Advertising Disclosure</span-->
+    <!--              >-->
+    <!--            <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">-->
+    <!--              The information shared through this website is based on our team’s personal judgements and views. We use-->
+    <!--              our own comparisons to assign values, which are not intended to reflect a certain benchmark of-->
+    <!--              precision. To keep our website free for use, we accept referral fees from various service providers,-->
+    <!--              which have the potential to influence their respective appointed scores. A third party’s participation-->
+    <!--              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on-->
+    <!--              this site is subject to change at any time.The site does not include all companies offering loan-->
+    <!--              products or all available loan offers.-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--        <div class="product-list-box">-->
+    <!--          <div class="product-title-box">-->
+    <!--            <div class="title lenders"><span class="text">Lenders</span></div>-->
+    <!--            <div class="title score">-->
+    <!--                <span class="text">-->
+    <!--                  Score-->
+    <!--                  <el-popover-->
+    <!--                    placement="bottom"-->
+    <!--                    popper-class="popper"-->
+    <!--                    trigger="hover"-->
+    <!--                    width="320"-->
+    <!--                  >-->
+    <!--                    <span slot="reference" class="iconfont">&#xe669;</span>-->
+    <!--                    <div class="content">-->
+    <!--                      <p>-->
+    <!--                        The ratings and ranking on our website are determined by-->
+    <!--                        our editorial team. The scoring mechanism for loan-->
+    <!--                        products takes into account more than 10 data points-->
+    <!--                        across multiple categories, such as APR, repayment-->
+    <!--                        options, customer service, lender transparency, loan-->
+    <!--                        eligibility and others.-->
+    <!--                      </p>-->
+    <!--                    </div>-->
+    <!--                  </el-popover>-->
+    <!--                </span>-->
+    <!--            </div>-->
+    <!--            <div class="title features">-->
+    <!--              <span class="text">Loan Features</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--          <div class="product-list">-->
+    <!--            <div-->
+    <!--              v-for="(item, index) in products"-->
+    <!--              :key="item.name"-->
+    <!--              class="product-item"-->
+    <!--            >-->
+    <!--              <img v-if="index === 0" alt="" class="corner-box" src="@/assets/img/best-choice.png">-->
+    <!--              <div v-if="index === 0" class="visited-box">-->
+    <!--                <span class="iconfont"></span>-->
+    <!--                <span class="text"-->
+    <!--                ><strong>354 users</strong> chose this site today</span-->
+    <!--                >-->
+    <!--              </div>-->
+
+    <!--              <div class="product-item-container">-->
+    <!--                <div class="img-score-box">-->
+    <!--                  <div class="img-box">-->
+    <!--                    <img v-lazy="item.logo" :alt="item.name"/>-->
+    <!--                  </div>-->
+    <!--                  <div class="rate-box">-->
+    <!--                    <div class="rate">-->
+    <!--                      <span class="score">{{ item.score }}</span>-->
+    <!--                      <div v-if="index === 0" class="trustpilot-box">-->
+    <!--                        <div class="text-box">-->
+    <!--                          <span class="iconfont">&#xe64c;</span>-->
+    <!--                          <span class="text">Trustpilot</span>-->
+    <!--                        </div>-->
+    <!--                        <ul class="star-list">-->
+    <!--                          <li>-->
+    <!--                            <span class="iconfont">&#xe64c;</span>-->
+    <!--                          </li>-->
+    <!--                          <li>-->
+    <!--                            <span class="iconfont">&#xe64c;</span>-->
+    <!--                          </li>-->
+    <!--                          <li>-->
+    <!--                            <span class="iconfont">&#xe64c;</span>-->
+    <!--                          </li>-->
+    <!--                          <li>-->
+    <!--                            <span class="iconfont">&#xe64c;</span>-->
+    <!--                          </li>-->
+    <!--                          <li>-->
+    <!--                            <span class="iconfont">&#xe64c;</span>-->
+    <!--                          </li>-->
+    <!--                        </ul>-->
+    <!--                      </div>-->
+    <!--                      <div v-else class="star-box">-->
+    <!--                        <el-rate-->
+    <!--                          :colors="['#29b674', '#29b674', '#29b674']"-->
+    <!--                          :value="computeScore(item.score)"-->
+    <!--                          disabled-->
+    <!--                        ></el-rate>-->
+    <!--                      </div>-->
+    <!--                    </div>-->
+    <!--                  </div>-->
+    <!--                </div>-->
+    <!--                <div class="features-terms-box">-->
+    <!--                  <div class="list-box">-->
+    <!--                    <dl class="features-list">-->
+    <!--                      <dt>-->
+    <!--                        &lt;!&ndash; <span class="pc-text">Easily Compare & Save</span> &ndash;&gt;-->
+    <!--                        <span class="phone-text">Loan Features</span>-->
+    <!--                      </dt>-->
+    <!--                      <dd>-->
+    <!--                        <span class="iconfont">&#xe65a;</span>-->
+    <!--                        <p class="text">-->
+    <!--                          Min. Credit Score: {{ item.credit_score }}-->
+    <!--                        </p>-->
+    <!--                      </dd>-->
+    <!--                      <dd>-->
+    <!--                        <span class="iconfont">&#xe65a;</span>-->
+    <!--                        <p class="text">-->
+    <!--                          Fixed APR: {{ item.fixed_apr }}-->
+    <!--                        </p>-->
+    <!--                      </dd>-->
+    <!--                      <dd>-->
+    <!--                        <span class="iconfont">&#xe65a;</span>-->
+    <!--                        <p class="text">-->
+    <!--                          Variable APR: {{ item.variable_apr }}-->
+    <!--                        </p>-->
+    <!--                      </dd>-->
+    <!--                    </dl>-->
+    <!--                  </div>-->
+
+    <!--                </div>-->
+    <!--                <div class="btn-box">-->
+    <!--                  <a-->
+    <!--                    :href="item.link"-->
+    <!--                    class="btn"-->
+    <!--                    rel="noopener noreferrer nofollow"-->
+    <!--                    target="_blank"-->
+    <!--                  >-->
+    <!--                    <span class="text">Check My Rate</span>-->
+    <!--                    <span class="iconfont">&#xe63c;</span>-->
+    <!--                  </a>-->
+    <!--                </div>-->
+    <!--              </div>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+
+    <!--      </div>-->
+    <!--    </section>-->
+
+    <section class="product-include-area">
+      <div class="content-container">
+        <h3 class="title">Finance Your children’s educational journey</h3>
+        <p>As a parent, it's natural to want to do anything you can to help your child. So it's no surprise that some
+          3.6 million parents had outstanding loans through the federal student loan program at the end of 2019,
+          according to a study by Trellis Research. If you're considering helping your child by taking out parent
+          student loans, Below we’ve picked the best student loans for parents based on features including interest
+          rates, origination fees and hardship repayment options.</p>
+      </div>
+      <div class="product-include-container">
+        <div class="product-include-container-top">
           <div class="disclosure">
               <span class="title"
                     @click="handleShowDisclosure"
@@ -40,149 +202,6 @@
             </div>
           </div>
         </div>
-        <div class="product-list-box">
-          <div class="product-title-box">
-            <div class="title lenders"><span class="text">Lenders</span></div>
-            <div class="title score">
-                <span class="text">
-                  Score
-                  <el-popover
-                    placement="bottom"
-                    popper-class="popper"
-                    trigger="hover"
-                    width="320"
-                  >
-                    <span slot="reference" class="iconfont">&#xe669;</span>
-                    <div class="content">
-                      <p>
-                        The ratings and ranking on our website are determined by
-                        our editorial team. The scoring mechanism for loan
-                        products takes into account more than 10 data points
-                        across multiple categories, such as APR, repayment
-                        options, customer service, lender transparency, loan
-                        eligibility and others.
-                      </p>
-                    </div>
-                  </el-popover>
-                </span>
-            </div>
-            <div class="title features">
-              <span class="text">Loan Features</span>
-            </div>
-          </div>
-          <div class="product-list">
-            <div
-              v-for="(item, index) in products"
-              :key="item.name"
-              class="product-item"
-            >
-              <img v-if="index === 0" alt="" class="corner-box" src="@/assets/img/best-choice.png">
-              <div v-if="index === 0" class="visited-box">
-                <span class="iconfont"></span>
-                <span class="text"
-                ><strong>354 users</strong> chose this site today</span
-                >
-              </div>
-
-              <div class="product-item-container">
-                <div class="img-score-box">
-                  <div class="img-box">
-                    <img v-lazy="item.logo" :alt="item.name"/>
-                  </div>
-                  <div class="rate-box">
-                    <div class="rate">
-                      <span class="score">{{ item.score }}</span>
-                      <div v-if="index === 0" class="trustpilot-box">
-                        <div class="text-box">
-                          <span class="iconfont">&#xe64c;</span>
-                          <span class="text">Trustpilot</span>
-                        </div>
-                        <ul class="star-list">
-                          <li>
-                            <span class="iconfont">&#xe64c;</span>
-                          </li>
-                          <li>
-                            <span class="iconfont">&#xe64c;</span>
-                          </li>
-                          <li>
-                            <span class="iconfont">&#xe64c;</span>
-                          </li>
-                          <li>
-                            <span class="iconfont">&#xe64c;</span>
-                          </li>
-                          <li>
-                            <span class="iconfont">&#xe64c;</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div v-else class="star-box">
-                        <el-rate
-                          :colors="['#29b674', '#29b674', '#29b674']"
-                          :value="computeScore(item.score)"
-                          disabled
-                        ></el-rate>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="features-terms-box">
-                  <div class="list-box">
-                    <dl class="features-list">
-                      <dt>
-                        <!-- <span class="pc-text">Easily Compare & Save</span> -->
-                        <span class="phone-text">Loan Features</span>
-                      </dt>
-                      <dd>
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          Min. Credit Score: {{ item.credit_score }}
-                        </p>
-                      </dd>
-                      <dd>
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          Fixed APR: {{ item.fixed_apr }}
-                        </p>
-                      </dd>
-                      <dd>
-                        <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
-                          Variable APR: {{ item.variable_apr }}
-                        </p>
-                      </dd>
-                    </dl>
-                  </div>
-
-                </div>
-                <div class="btn-box">
-                  <a
-                    :href="item.link"
-                    class="btn"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                  >
-                    <span class="text">Check My Rate</span>
-                    <span class="iconfont">&#xe63c;</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="product-include-area">
-      <div class="content-container">
-        <h3 class="title">Best Parent Loan For College Of Feb 2022</h3>
-        <p>As a parent, it's natural to want to do anything you can to help your child. So it's no surprise that some
-          3.6 million parents had outstanding loans through the federal student loan program at the end of 2019,
-          according to a study by Trellis Research. If you're considering helping your child by taking out parent
-          student loans, Below we’ve picked the best student loans for parents based on features including interest
-          rates, origination fees and hardship repayment options.</p>
-      </div>
-      <div class="product-include-container">
         <div v-for="(product, index) in products" :key="index" class="product-include-item">
           <div class="product-include-title">
             <img v-if="index === 0" alt="" class="medal" src="@/assets/img/medal-icon.png">
@@ -190,66 +209,67 @@
             <h3 class="title">{{ product.name }}-<span style="color: #cb9600;">{{ product.feature }}</span></h3>
           </div>
           <div class="product-include-card">
-            <!--            <div v-if="index < 1" class="corner-box">-->
-            <!--              <img v-if="index === 0" alt="" class="corner" src="@/assets/img/best-choice.png">-->
-            <!--            </div>-->
             <div v-if="index === 0" class="tips"><span class="g">503 users</span> chose this site today</div>
             <div class="product-include-card-info">
-              <div class="logo-box">
-                <img :alt="product.name" :src="product.logo" class="logo">
-                <div class="read-review-btn">Read Review <span>>></span></div>
-              </div>
-              <div class="rate-box">
+              <div class="product-include-card-info-left">
+                <div class="logo-box">
+                  <img :alt="product.name" :src="product.logo" class="logo">
+                  <div class="read-review-btn">Read Review <span>>></span></div>
+                </div>
+                <div class="rate-box">
 
-                <div class="score-box">
-                  <span class="score">{{ product.score }}</span>
-                  <div v-if="index === 0" class="trustpilot-box">
-                    <div class="text-box">
-                      <span class="iconfont">&#xe64c;</span>
-                      <span class="text">Trustpilot</span>
+                  <div class="score-box">
+                    <span class="score">{{ product.score }}</span>
+                    <div v-if="index === 0" class="trustpilot-box">
+                      <div class="text-box">
+                        <span class="iconfont">&#xe64c;</span>
+                        <span class="text">Trustpilot</span>
+                      </div>
+                      <ul class="star-list">
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="star-list">
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="rate">
-                    <NewStar :max="10" :score="product.score"></NewStar>
+                    <div v-else class="rate">
+                      <NewStar :max="10" :score="product.score"></NewStar>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="content-box">
-                <ul class="product-advantage-list">
+              <div class="product-include-card-info-right">
+                <div class="content-box">
+                  <ul class="product-advantage-list">
 
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">Min. Credit Score: {{ product.credit_score }}</p>
-                  </li>
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">Fixed rate: {{ product.fixed_apr }}</p>
-                  </li>
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">Variable rate: {{ product.variable_apr }}</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-box">
-                <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">Min. Credit Score: {{ product.credit_score }}</p>
+                    </li>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">Fixed rate: {{ product.fixed_apr }}</p>
+                    </li>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">Variable rate: {{ product.variable_apr }}</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-box">
+                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                </div>
               </div>
             </div>
             <div class="product-include-card-content" v-html="product.description"></div>
@@ -336,6 +356,13 @@ import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
 
 export default {
+  head() {
+    return {
+      link: [
+        {rel: "canonical", href: "https://www.toploansadviser.com/student-loan"}
+      ]
+    }
+  },
   components: {
     NewStar
   },
@@ -411,9 +438,9 @@ export default {
       }
     }
 
-    showSlogan();
+    // showSlogan();
 
-    $(window).on('resize', showSlogan)
+    // $(window).on('resize', showSlogan)
   }
 };
 </script>

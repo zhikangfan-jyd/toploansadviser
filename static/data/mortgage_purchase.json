@@ -1,13 +1,63 @@
 {
   "data": [
     {
+      "name": "LoanDepot",
+      "review_key": "",
+      "link": "https://track.flexlinkspro.com/g.ashx?foid=156074.14266.1137410&trid=1278191.226067&foc=16&fot=9999&fos=5",
+      "logo": "/data/images/loan-depot.png",
+      "rate": {
+        "max": 10,
+        "score": "9.8"
+      },
+      "slogan": "No Login/Registration Required",
+      "meritList": [
+        {
+          "text": "Has funded over $65 billion in home loans"
+        },
+        {
+          "text": "Clearance in as little as 8 days"
+        },
+        {
+          "text": "Mello smartloan™ digital asset verification"
+        }
+      ],
+      "key_facts": {
+        "mortgage_types": "purchase, refinance, adjustable & fixed rates, jumbo & more",
+        "credit_score": "620",
+        "apr": "depends on type of loan & lender",
+        "NMLS": "174457"
+      },
+      "pros": [
+        {
+          "text": "Can choose face-to-face interaction by accessing over 150 affiliated loan stores in the United States"
+        },
+        {
+          "text": "Experienced FHA and VA lender"
+        },
+        {
+          "text": "Fannie Mae HomeStyle home improvement and FHA 302K fixer-upper loans available"
+        },
+        {
+          "text": "100% digital asset, employment, and income verification available"
+        }
+      ],
+      "cons": [
+        {
+          "text": "No home equity line of credit or loan products available"
+        },
+        {
+          "text": "USDA Rural Development loans not available"
+        }
+      ]
+    },
+    {
       "name": "Credible",
       "review_key": "",
       "link": "https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
       "logo": "/data/images/credible.jpg",
       "rate": {
         "max": 10,
-        "score": "9.8"
+        "score": "9.7"
       },
       "slogan": "1 Application, Several Offers",
       "meritList": [
@@ -54,7 +104,7 @@
       "logo": "/data/images/quicken-loans.webp",
       "rate": {
         "max": 10,
-        "score": "9.7"
+        "score": "9.5"
       },
       "slogan": "A+ Customer Satisfaction",
       "meritList": [
@@ -94,56 +144,6 @@
         },
         {
           "text": "Lender fees can be stout, and the fees aren't offset by particularly low mortgage rates, according to the latest data."
-        }
-      ]
-    },
-    {
-      "name": "LoanDepot",
-      "review_key": "",
-      "link": "https://fxo.co/DGxu",
-      "logo": "/data/images/loan-depot.png",
-      "rate": {
-        "max": 10,
-        "score": "9.5"
-      },
-      "slogan": "No Login/Registration Required",
-      "meritList": [
-        {
-          "text": "Has funded over $65 billion in home loans"
-        },
-        {
-          "text": "Clearance in as little as 8 days"
-        },
-        {
-          "text": "Mello smartloan™ digital asset verification"
-        }
-      ],
-      "key_facts": {
-        "mortgage_types": "purchase, refinance, adjustable & fixed rates, jumbo & more",
-        "credit_score": "620",
-        "apr": "depends on type of loan & lender",
-        "NMLS": "174457"
-      },
-      "pros": [
-        {
-          "text": "Can choose face-to-face interaction by accessing over 150 affiliated loan stores in the United States"
-        },
-        {
-          "text": "Experienced FHA and VA lender"
-        },
-        {
-          "text": "Fannie Mae HomeStyle home improvement and FHA 302K fixer-upper loans available"
-        },
-        {
-          "text": "100% digital asset, employment, and income verification available"
-        }
-      ],
-      "cons": [
-        {
-          "text": "No home equity line of credit or loan products available"
-        },
-        {
-          "text": "USDA Rural Development loans not available"
         }
       ]
     },

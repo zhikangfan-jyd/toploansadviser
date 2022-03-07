@@ -44,6 +44,11 @@
       color: #fff;
       font-size: 14px;
       font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
     }
   }
 
@@ -53,7 +58,7 @@
       margin: 0 auto;
 
       .title {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 8px;
         font-size: 45px;
         font-weight: bold;
@@ -145,11 +150,11 @@
     }
   }
 
-  .student-calculator-area {
+  .home-equity-calculator-area {
 
     //background: url("../assets/img/mortgage-calculator-bg.webp") no-repeat center center/cover;
 
-    .student-calculator-container {
+    .home-equity-calculator-container {
       width: $rootWidth;
 
       margin: 0 auto;
@@ -217,6 +222,11 @@
               border: none;
               background: #CB9600;
               cursor: pointer;
+              transition: all linear 0.1s;
+
+              &:hover {
+                background-color: #e9b31a;
+              }
             }
           }
         }
@@ -315,7 +325,7 @@
               background-color: #1a7781;
 
               &:hover {
-                background-color: #202020;
+                background-color: #0b9dad;
               }
             }
 
@@ -789,25 +799,25 @@
 
   }
 
-  .student-content-area {
-    .student-content-container {
+  .home-equity-content-area {
+    .home-equity-content-container {
       width: $rootWidth;
       margin: 0 auto 35px auto;
 
-      .student-container-title {
+      .home-equity-container-title {
         color: #247781;
         font-size: 24px;
         font-weight: 700;
         margin: 18px 0;
       }
 
-      .student-container-subtitle {
+      .home-equity-container-subtitle {
         font-size: 20px;
         font-weight: 700;
         margin: 10px 0;
       }
 
-      .student-content {
+      .home-equity-content {
         line-height: 28px;
 
         .green {
@@ -1093,4 +1103,95 @@
     }
   }
 
+}
+
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+    .banner-area {
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .home-equity-calculator-area {
+      .home-equity-calculator-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title-box {
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 20px 0;
+
+          .help-container {
+            margin-top: 8px;
+          }
+
+          .title {
+            font-size: 26px;
+          }
+        }
+
+        .calculator-container {
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0;
+
+          .calculator-form-box {
+            flex-direction: column;
+          }
+        }
+
+      }
+    }
+
+    .home-equity-content-area {
+      .home-equity-content-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
+    }
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .must-read-area {
+      .must-read-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
+    }
+  }
 }

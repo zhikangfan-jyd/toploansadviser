@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html {{ HTML_ATTRS }}>
 
-
-
 <head {{ HEAD_ATTRS }}>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="fo-verify" content="b5278c66-77a9-469f-b0aa-4f7bd2778df3">
@@ -16,15 +14,9 @@
         t = navigator.userAgent;
       if (/Android (\d+\.\d+)/.test(t)) {
         var i = parseFloat(RegExp.$1);
-        if (t.toLowerCase().indexOf("qq") > -1) return void document.write(
-          '<meta name="viewport" content="width=414, minimum-scale = ' + e + ", maximum-scale = " + e +
-          ', target-densitydpi=320">');
-        i > 2.3 ? document.write('<meta name="viewport" content="width=414, minimum-scale = ' + e +
-          ", maximum-scale = " + e + ', target-densitydpi=device-dpi">') : document.write(
-          '<meta name="viewport" content="width=414, target-densitydpi=device-dpi">')
-      } else document.write(
-        '<meta name="viewport" content="width=414, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">'
-      )
+        if (t.toLowerCase().indexOf("qq") > -1) return void document.write('<meta name="viewport" content="width=414, minimum-scale = ' + e + ", maximum-scale = " + e + ', target-densitydpi=320">');
+        i > 2.3 ? document.write('<meta name="viewport" content="width=414, minimum-scale = ' + e + ", maximum-scale = " + e + ', target-densitydpi=device-dpi">') : document.write('<meta name="viewport" content="width=414, target-densitydpi=device-dpi">')
+      } else document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">')
     }
 
     viewport()
@@ -62,7 +54,7 @@
         } else if (wW >= 1920) {
           rem = 100;
         }
-        ;
+
         document.documentElement.style.fontSize = rem + 'px';
       }
 

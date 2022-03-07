@@ -4,7 +4,7 @@
       <div class="banner-container">
         <div class="history-nav">
           <span
-          ><nuxt-link class="link" to="/guides">Guides</nuxt-link>
+          ><nuxt-link class="link" target="_blank" to="/guides">Guides</nuxt-link>
             <span class="iconfont">></span></span
           >
           <span class="title-box">{{ blog.title }}</span>
@@ -17,17 +17,13 @@
         <div class="author-info">
           <img :alt="author.name" :src="author.avatar" class="author-img"/>
           <div class="info-box">
-            <span class="name">{{ author.name }}</span>
-            <p class="info">
-              <span>{{ author.introduce }}</span>
-              <span>|</span>
-              <span>{{ blog.date }}</span>
-            </p>
+            <span class="name">Written by <span class="author-name">{{ author.name }}</span></span>
+            <div class="updated">
+              <span><span
+                class="iconfont">&#xe645;</span> <span>Last updated: {{ blog.date }}</span></span>
+            </div>
           </div>
         </div>
-        <!-- <div class="blog-content">
-
-        </div> -->
         <div class="share-box">
           <span class="title">SHARE THIS PAGE</span>
           <div class="share">
@@ -48,17 +44,7 @@
           </div>
         </div>
         <div class="guides-content" v-html="blog.content"></div>
-        <div v-if="relatedBlogs.length != 0" class="guides-bottom">
-          <h6 class="bottom-title">Keep Reading</h6>
-          <ul class="title-list">
-            <li v-for="(item, index) in relatedBlogs" :key="index">
-              <nuxt-link :to="'/guides/' + item.change_title">{{
-                  item.title
-                }}
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
+
       </div>
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
@@ -76,7 +62,7 @@
                   link: item.link,
                 })
               "
-            >Visit Site</a
+            >Visit Site >></a
             >
           </li>
         </ul>
@@ -105,8 +91,25 @@
 <script>
 import {shareToFB, shareToTwitter} from "../../utils/share";
 import {updateTime} from "../../utils/date";
+import {seo} from '../../utils/seo'
+import {jsonLd} from '../../utils/json-ld'
 
 export default {
+  head() {
+    return seo({
+      title: this.blog.title + ' | Toploansadviser',
+      description: this.blog.introduce,
+      keywords: this.blog.keywords,
+      url: this.pageUrl,
+      type: 'article',
+      img: this.blog.main_picture,
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: ''
+    })
+  },
   async asyncData({$axios, params, error}) {
     try {
       let title = params.key.split('-').join(' ');
@@ -135,15 +138,17 @@ export default {
         "/data/person_loan_product.json"
       );
       let blogList = await $axios.$get(
-        `https://api.toploansadviser.com/articles/findbycolumns?columns_id=c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d&page=1&limit=3`
+        `https://api.toploansadviser.com/articles/findbycolumns?columns_id=c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d&page=1&limit=4`
       );
 
       blogList.data.rows.forEach(ele => {
-        ele.change_title = ele.title.toLowerCase().split(' ').join('+');
+        ele.change_title = ele.title.toLowerCase().split(' ').join('-');
       })
+
 
       return {
         blog: blog,
+        pageUrl: 'https://www.toploansadviser.com/guides/' + params.key,
         author: author,
         relatedBlogs: blogList ? blogList.data.rows : [],
         toploans: topLoans_results.data.slice(0, 5),
@@ -207,16 +212,16 @@ export default {
         if (Object.hasOwnProperty.call(options, key)) {
           const value = options[key];
           let meta = document.createElement("meta");
-          if (key == "title") {
+          if (key === "title") {
             meta.setAttribute("property", "og:title");
             meta.setAttribute("content", value);
-          } else if (key == "image") {
+          } else if (key === "image") {
             meta.setAttribute("property", "og:image");
             meta.setAttribute("content", value);
-          } else if (key == "description") {
+          } else if (key === "description") {
             meta.setAttribute("property", "og:description");
             meta.setAttribute("content", value);
-          } else if (key == "url") {
+          } else if (key === "url") {
             meta.setAttribute("property", "og:url");
             meta.setAttribute("content", value);
           }
@@ -225,6 +230,25 @@ export default {
         }
       }
     },
+    jsonLd: jsonLd
+  },
+  created() {
+    this.$nextTick(() => {
+      if (process.client) {
+        this.jsonLd({
+          type: 'Article',
+          title: this.blog.title + ' | Toploansadviser',
+          url: this.pageUrl,
+          author: {
+            name: this.author.name
+          },
+          date: this.blog.date,
+          body: this.blog.description,
+          image: this.blog.main_picture
+        });
+      }
+
+    })
   },
   mounted() {
     this.$nextTick(() => {

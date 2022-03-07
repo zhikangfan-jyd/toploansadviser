@@ -14,36 +14,44 @@
             </p>
           </div>
         </div>
-        <img
-          alt="guides and tips banner"
-          class="banner-img"
-          src="@/assets/img/guides-banner-bg.webp"
-        />
+
       </div>
     </section>
     <div class="learn-container">
-      <div v-if="blogs.length != 0" class="category-item">
+      <ul class="category-list">
+        <li :class="{'current': currentCategory === 'personal-loan'}" @click="handleCategory('personal-loan')">
+          <span>Personal Loan</span>
+        </li>
+        <li :class="{'current': currentCategory === 'mortgage-loan'}" @click="handleCategory('mortgage-loan')">
+          <span>Mortgage Loan</span>
+        </li>
+        <li :class="{'current': currentCategory === 'student-loan'}" @click="handleCategory('student-loan')">
+          <span>Student Loan</span>
+        </li>
+        <li :class="{'current': currentCategory === 'home-equity'}" @click="handleCategory('home-equity')">
+          <span>Home Equity</span>
+        </li>
+      </ul>
+      <div v-if="blogs.length !== 0 && !isLoad" class="category-item">
         <ul class="blog-list">
           <li v-for="(blog, index) in blogs" :key="index" class="blog-item">
             <div class="img-box">
-              <nuxt-link :to="'/guides/' + blog.change_title">
+              <nuxt-link :to="'/guides/' + blog.change_title" target="_blank">
                 <img v-lazy="blog.main_picture" :alt="blog.title"/>
               </nuxt-link>
             </div>
-            <nuxt-link :to="'/guides/' + blog.change_title" class="title-link"
+            <nuxt-link :to="'/guides/' + blog.change_title" class="title-link" target="_blank"
             ><h2 class="blog-title">{{ blog.title }}</h2></nuxt-link
             >
-            <nuxt-link :to="'/guides/' + blog.change_title" class="link"
+            <nuxt-link :to="'/guides/' + blog.change_title" class="link" target="_blank"
             >Read full Article
             </nuxt-link
             >
           </li>
         </ul>
-        <div v-if="isLoad" class="view-more-box">
-          <button class="btn" @click="handleLoad">VIEW MORE</button>
-        </div>
+
       </div>
-      <ul v-else class="loading-box">
+      <ul v-else-if="isLoad" class="loading-box">
         <li>
           <svg
             aria-labelledby="loading-aria"
@@ -400,6 +408,7 @@ export default {
       pageSize: 20,
       count: 0,
       isLoad: true,
+      currentCategory: 'personal-loan'
     };
   },
   methods: {
@@ -421,13 +430,44 @@ export default {
         this.$router.push('/error');
       }
     },
+    async getBlogByCategory(uuid) {
+      this.isLoad = true;
+      try {
+        let {
+          status,
+          data
+        } = await this.$axios.$get('https://api.toploansadviser.com/articles/findbycolumns?columns_id=' + uuid);
+        this.isLoad = false;
+        if (status === 'success') {
+
+          data.rows.forEach(blog => {
+            blog.change_title = blog.title.toLowerCase().split(' ').join('-');
+          })
+          this.blogs = data.rows;
+        } else {
+          this.blogs = [];
+        }
+      } catch (e) {
+        this.isLoad = false;
+        await this.$router.push('/error');
+      }
+    },
+    handleCategory(category) {
+      let setting = {};
+      setting['personal-loan'] = 'c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d';
+      setting['mortgage-loan'] = 'e2466262-b3ff-4a86-850c-3846054f49a8';
+      setting['student-loan'] = 'a52fa2da-0e6f-484d-afc5-179a75aa1aee';
+      setting['home-equity'] = 'bf433dff-da58-42ea-9c93-f36cceb03357';
+      this.getBlogByCategory(setting[category]);
+      this.currentCategory = category;
+    },
     handleLoad() {
       this.page++;
       this.getBlogs();
     },
   },
   created() {
-    this.getBlogs(this.page);
+    this.handleCategory(this.currentCategory);
   },
 };
 </script>

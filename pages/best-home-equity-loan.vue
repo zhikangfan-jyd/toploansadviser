@@ -74,67 +74,68 @@
             <h3 class="title">{{ product.name }}-<span style="color: #cb9600;">{{ product.feature }}</span></h3>
           </div>
           <div class="product-include-card">
-            <!--            <div v-if="index < 1" class="corner-box">-->
-            <!--              <img v-if="index === 0" alt="" class="corner" src="@/assets/img/best-choice.png">-->
-            <!--            </div>-->
             <div v-if="index === 0" class="tips"><span class="g">503 users</span> chose this site today</div>
             <div class="product-include-card-info">
-              <div class="logo-box">
-                <img :alt="product.name" :src="product.logo" class="logo">
-                <div class="read-review-btn">Read Review <span>>></span></div>
-              </div>
-              <div class="rate-box">
+              <div class="product-include-card-info-left">
+                <div class="logo-box">
+                  <img :alt="product.name" :src="product.logo" class="logo">
+                  <div class="read-review-btn">Read Review <span>>></span></div>
+                </div>
+                <div class="rate-box">
 
-                <div class="score-box">
-                  <span class="score">{{ product.score }}</span>
-                  <div v-if="index === 0" class="trustpilot-box">
-                    <div class="text-box">
-                      <span class="iconfont">&#xe64c;</span>
-                      <span class="text">Trustpilot</span>
+                  <div class="score-box">
+                    <span class="score">{{ product.score }}</span>
+                    <div v-if="index === 0" class="trustpilot-box">
+                      <div class="text-box">
+                        <span class="iconfont">&#xe64c;</span>
+                        <span class="text">Trustpilot</span>
+                      </div>
+                      <ul class="star-list">
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                        <li>
+                          <span class="iconfont">&#xe64c;</span>
+                        </li>
+                      </ul>
                     </div>
-                    <ul class="star-list">
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                      <li>
-                        <span class="iconfont">&#xe64c;</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="rate">
-                    <NewStar :max="10" :score="product.score"></NewStar>
+                    <div v-else class="rate">
+                      <NewStar :max="10" :score="product.score"></NewStar>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="content-box">
-                <p class="product-slogan">{{ product.slogan }}</p>
-                <ul class="product-advantage-list">
+              <div class="product-include-card-info-right">
+                <div class="content-box">
+                  <p class="product-slogan">{{ product.slogan }}</p>
+                  <ul class="product-advantage-list">
 
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">Min. Credit Score: {{ product.credit_score }}</p>
-                  </li>
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">APR: {{ product.apr }}</p>
-                  </li>
-                  <li>
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">Loan Amount: ${{ product.amount }}</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-box">
-                <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">Min. Credit Score: {{ product.credit_score }}</p>
+                    </li>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">APR: {{ product.apr }}</p>
+                    </li>
+                    <li>
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">Loan Amount: ${{ product.amount }}</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btn-box">
+                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                </div>
               </div>
             </div>
             <div class="product-include-card-content" v-html="product.description"></div>

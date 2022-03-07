@@ -1,6 +1,56 @@
+import {$content} from "@nuxt/content";
+
 const webpack = require('webpack');
+const axios = require('axios');
+//动态生成网站地图，添加reviews 和 articles
+const createSitemapRoutes = async () => {
+  let routes = [];
+  let articleRoutes = [];
+  try {
+    const {$content} = require('@nuxt/content');
+    let posts = await $content('/reviews').fetch();
+    for (const post of posts) {
+      routes.push({
+        url: `reviews/${post.slug}`,
+        lastmod: new Date(),
+        changefreq: 'always',
+        priority: 0.8
+      });
+    }
+  } catch (e) {
+    routes = [];
+  }
+
+  try {
+    let results = await axios.get('https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0');
+    if (results.data.status === 'success') {
+      results.data.data.rows.forEach(article => {
+        let title = article.title.toLowerCase().split(' ').join('-');
+        articleRoutes.push({
+          url: `/guides/${title}`,
+          lastmod: new Date(),
+          changefreq: 'always',
+          priority: 0.8
+        })
+      })
+    }
+  } catch (e) {
+    articleRoutes = [];
+  }
+  return routes.concat(articleRoutes);
+}
+
+const sitemapFilter = ({routes, options}) => {
+
+  routes.forEach(route => {
+    if (route.url === '/' || route.url === '/personal-loan' || route.url === '/student-loan' || route.url === '/mortgage-loan') {
+      route.priority = 1;
+    }
+  });
+  return routes;
+}
+
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Best personal loans and mortgage loans of 2022- Toploansadviser',
     htmlAttrs: {
@@ -8,7 +58,6 @@ export default {
     },
     meta: [
       {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {
         hid: 'description',
         name: 'description',
@@ -20,75 +69,50 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~assets/scss/init.scss'
   ],
   router: {
     linkActiveClass: 'current'
   },
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vuelazyload',
     '~plugins/element-ui',
     {src: '~/plugins/aos', ssr: false, mode: 'client'}
   ],
-  // loading: '~/components/loading.vue',
   loading: false,
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: false,
   render: {
     resourceHints: false
   },
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     '@nuxt/content',
     '@nuxtjs/robots',
-    '@nuxtjs/amp',
+    // '@nuxtjs/amp',
     '@nuxtjs/redirect-module',
     // '@nuxtjs/feed',
-    '@nuxtjs/sitemap',
-    // ["nuxt-social-meta",
-    //   {
-    //     url: "https://www.toploansadviser.com",
-    //     title: "Title",
-    //     site_name: "Site name",
-    //     description: "Site description",
-    //     img: "Link to image in static folder",
-    //     img_size: {width: "Image width in px", height: "Image height in px"},
-    //     locale: "en_US",
-    //     twitter: "@user",
-    //     twitter_card: "summary_large_image",
-    //     theme_color: "#theme-color",
-    //   }],
+    '@nuxtjs/sitemap'
   ],
   styleResources: {
     scss: './assets/scss/variables.scss'
   },
   robots: {
-    // 配置robots.txt
     UserAgent: '*',
     Disallow: '/redirect'
   },
   redirect: [
     // 重定向选项在这里
+    {from: '/new-personal-loan', to: '/personal-loan', statusCode: 301}
   ],
-  sitemap: {
-    // 配置站点地图
-  },
-  amp: {
-    // options
-  },
+
   content: {
-    // options
+    liveEdit: false
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+
   build: {
     extractCSS: true,
-
     optimization: {
       minimize: true,
       // 控制分包，但总体积不变，效果不大
@@ -147,11 +171,27 @@ export default {
       ]
     }
   },
+  sitemap: {
+    // 配置站点地图
+    hostname: 'https://www.toploansadviser.com',
+    cacheTime: 1000 * 60 * 60,
+    gzip: true,
+    generate: false,
+    path: '/sitemap.xml',
+    defaults: {
+      changefreq: 'always',
+      lastmod: new Date(),
+      priority: 0.8
+    },
+    exclude: ['/error'],
+    filter: sitemapFilter,
+    routes: createSitemapRoutes
+  },
   axios: {
-    baseURL: 'http://127.0.0.1:3100'
+    baseURL: 'http://192.168.50.107:3100'
   },
   server: {
     port: '3100',
-    host: '127.0.0.1'
+    host: '192.168.50.107'
   }
 }

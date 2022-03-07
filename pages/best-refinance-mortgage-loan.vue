@@ -305,7 +305,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Turn In Mortgage Application</strong> – The majority
+                  <strong>Turn In Mortgage Application</strong> – The majority
                   of home lenders provide an online application process. Fill it
                   out, submit the form along with pertinent documentation.
                 </p>
@@ -313,7 +313,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Wait To Receive Loan Estimate</strong> – A lender is
+                  <strong>Wait To Receive Loan Estimate</strong> – A lender is
                   required to give you an estimate within three business days of
                   a submitted application. The document needs to entail three
                   things – monthly mortgage rate, estimated interest rate and
@@ -323,7 +323,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Set Up A Home Inspection</strong> – Be sure to
+                  <strong>Set Up A Home Inspection</strong> – Be sure to
                   communicate with the seller about dates and times for a home
                   inspection. An inspection will help uncover potential
                   problems.
@@ -332,7 +332,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Get A Home Appraisal</strong> – Ask your lender to
+                  <strong>Get A Home Appraisal</strong> – Ask your lender to
                   provide you with an appraiser to determine the home’s value.
                   You will need to pay for this appraisal.
                 </p>
@@ -340,14 +340,14 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Buy Homeowners Insurance</strong> – This is a
+                  <strong>Buy Homeowners Insurance</strong> – This is a
                   necessity before a bank approves a loan.
                 </p>
               </li>
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Wait Until Underwriting Is Completed</strong> – You’ll
+                  <strong>Wait Until Underwriting Is Completed</strong> – You’ll
                   need to wait for the bank to prepare the loan documents, and
                   it can take some time.
                 </p>
@@ -355,7 +355,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Begin Underwriting Process</strong> – Underwriters,
+                  <strong>Begin Underwriting Process</strong> – Underwriters,
                   using manual or automated systems, can take days or weeks to
                   approve or decline loans.
                 </p>
@@ -363,7 +363,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Review Closing Disclosure Documents</strong> – Within
+                  <strong>Review Closing Disclosure Documents</strong> – Within
                   three business days, the loan documents will arrive. Be sure
                   to review the mortgage documents before signing. You want to
                   compare the disclosure to the lender’s recent loan estimate to
@@ -373,7 +373,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Close On The Loan</strong> – At this point, all
+                  <strong>Close On The Loan</strong> – At this point, all
                   parties involved in the mortgage transaction will need to sign
                   the pertinent documents. Afterward, you pay the closing costs
                   and down payment.
@@ -391,7 +391,7 @@
               The mortgage interest rate is the yearly cost of financing your
               home, noted in a percentage of the loan amount. For example, a
               2.75% interest rate on your mortgage means an additional 2.75% on
-              the remaining balance is added. 
+              the remaining balance is added.
             </p>
             <p>There are two types of interest rates: fixed and adjustable.</p>
           </div>
@@ -440,7 +440,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  How long you intend to maintain the mortgage 
+                  How long you intend to maintain the mortgage
                 </p>
               </li>
             </ul>
@@ -524,7 +524,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Analyze Your Credit History</strong> – Look at your
+                  <strong>Analyze Your Credit History</strong> – Look at your
                   credit report and its history before applying for a mortgage.
                   If there are any mistakes (that affect the score), address
                   them immediately with all three credit bureaus – TransUnion,
@@ -535,7 +535,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Prepare Documents</strong> – The bank will request pay
+                  <strong>Prepare Documents</strong> – The bank will request pay
                   stubs, bank account statements, and tax returns to be
                   submitted with the loan application.
                 </p>
@@ -543,7 +543,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Compare Shop With Different Lenders</strong> – If you
+                  <strong>Compare Shop With Different Lenders</strong> – If you
                   comparison shop in a 45-day window, your credit score will
                   suffer only slightly.
                 </p>
@@ -569,7 +569,7 @@
                   <strong>Ensure Quick Responses To Any Requests Made</strong> –
                   When your loan goes through the processing and underwriting,
                   the lender may request something. Be sure to respond as
-                  quickly as you can to move this process along faster. 
+                  quickly as you can to move this process along faster.
                 </p>
               </li>
               <li>
@@ -580,7 +580,7 @@
                   final mortgage costs, the interest rate, fees, etc., within
                   three business days of the closing date scheduled. Look at the
                   closing disclosure and the loan estimate they initially
-                  provided to determine if and why fees changed. 
+                  provided to determine if and why fees changed.
                 </p>
               </li>
               <li>
@@ -606,7 +606,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Interest Rate</strong> – Interest will vary by product
+                  <strong>Interest Rate</strong> – Interest will vary by product
                   and lender; make sure you’re comparison shopping to find the
                   best possible deal
                 </p>
@@ -614,7 +614,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Closing Costs</strong> – Closing costs will include
+                  <strong>Closing Costs</strong> – Closing costs will include
                   the application, loan origination and appraisal fees, so even
                   though a lender offers a low rate compared to others, the
                   mortgage costs may not make it the best. Use the APR to
@@ -624,7 +624,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Product Offerings</strong> – Look for a state-licensed
+                  <strong>Product Offerings</strong> – Look for a state-licensed
                   lender that offers great options for you – be it a VA loan,
                   30-year-fixed rate loan, etc.
                 </p>
@@ -632,7 +632,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>Customer Service Reviews</strong> – Read reviews and
+                  <strong>Customer Service Reviews</strong> – Read reviews and
                   feedback to learn more about the lender. You want lenders who
                   treat their customers with respect as well as offer a good
                   loan rate
@@ -680,7 +680,7 @@
             <p>
               Loans with a fixed rate mean payments and interest rate remain the
               same (great for budgeters). However, if the rate falls, you will
-              need to refinance if you want to benefit financially. 
+              need to refinance if you want to benefit financially.
             </p>
             <h6 class="small-title">Government-Backed Loans</h6>
             <p>
@@ -693,7 +693,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>FHA</strong> – The majority of FHA-backed lenders want
+                  <strong>FHA</strong> – The majority of FHA-backed lenders want
                   a minimum of 580 in credit score and a 3.5% down payment.
                   However, you could be approved if you agree to pay a 10% down
                   payment even if your credit score is 500 to 579.
@@ -702,7 +702,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>VA</strong> – The VA has no requirements about down
+                  <strong>VA</strong> – The VA has no requirements about down
                   payments or credit score minimums, but a lender will do an
                   in-depth analysis of your financial profile. A lender will
                   need to see the Certificate of Eligibility (COE) that shows
@@ -712,7 +712,7 @@
               <li>
                 <span class="circle">●</span>
                 <p class="text">
-                  <strong>USDA</strong> – The majority of lenders who do USDA
+                  <strong>USDA</strong> – The majority of lenders who do USDA
                   loans do not require money down but a minimum of 640 credit
                   score. A home must be located in a permissible rural area, and
                   you have to meet specific income requirements.

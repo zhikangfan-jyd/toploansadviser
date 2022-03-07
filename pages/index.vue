@@ -3,7 +3,7 @@
     <section class="swiper-area">
       <div class="banner-container">
         <div class="banner-left" data-aos="fade-right">
-          <h2 class="website-title">We Compare, you choose</h2>
+          <h2 class="website-title">We Compare, You Choose</h2>
           <p class="desc">
             To find the best personal loan for your financial situation, it's
             best to shop around and compare personal loan rates from multiple
@@ -415,16 +415,16 @@
           </h2>
           <ul class="blog-list">
             <li
-              v-for="(item, index) in personal_blogs"
+              v-for="(blog, index) in personal_blogs"
               :key="index"
               class="blog-item"
               data-aos="fade-up"
             >
               <div class="img-box">
-                <img v-lazy="item.picture" :alt="item.title"/>
+                <img v-lazy="blog.main_picture" :alt="blog.title"/>
               </div>
-              <h6 class="blog-title">{{ item.title }}</h6>
-              <nuxt-link :to="'/guides/' + item.key" class="link"
+              <h6 class="blog-title">{{ blog.title }}</h6>
+              <nuxt-link :to="'/guides/' + blog.change_title" class="link"
               >Read full Article
               </nuxt-link
               >
@@ -454,6 +454,9 @@ import "swiper/css/swiper.css";
 
 export default {
   head: {
+    meta: [
+      {name: "google-site-verification", content: "KUEIIjMUtW5R4Xdhy-iXspBpXbYZ3qSOrwcCO7L6C9g"}
+    ],
     link: [
       {
         rel: "canonical",
@@ -535,8 +538,17 @@ export default {
     updateTime,
     // 获取博客
     async getBlog() {
-      let personal_results = await this.$axios.get("/data/blogs/personal.json");
-      this.personal_blogs = personal_results.data.data.slice(0, 3);
+      try {
+        let results = await this.$axios.get(
+          `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=1&limit=3`
+        );
+        results.data.data.rows.forEach(ele => {
+          ele.change_title = ele.title.toLowerCase().split(' ').join('-');
+        })
+        this.personal_blogs = this.personal_blogs.concat(results.data.data.rows);
+      } catch (e) {
+        this.personal_blogs = [];
+      }
     },
     changeYear(e) {
       let value = e.target.value;
@@ -563,8 +575,7 @@ export default {
         return;
       }
 
-      this.form.year =
-        (value / 12).toFixed(1) == 0 ? "" : (value / 12).toFixed(1);
+      this.form.year = (value / 12).toFixed(1) == 0 ? "" : (value / 12).toFixed(1);
     },
     changeAmount(e) {
       let value = e.target.value;

@@ -1,6 +1,5 @@
 <template>
   <main class="main-container">
-<!--    <h2 class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</h2>-->
     <section class="banner-area">
       <div class="banner-container">
         <h1 class="title">Best Mortgage Refinance Lenders</h1>
@@ -43,7 +42,6 @@
     <section class="products-list-area">
       <div class="products-list-container">
         <div class="products-list-container-top">
-          <h3 class="product-area-title">Choose the right lender for you:</h3>
           <div class="disclosure">
               <span class="title"
                     @click="handleShowDisclosure"
@@ -89,30 +87,32 @@
               <a :href="product.link" class="view-details-btn" rel="noopener noreferrer nofollow">View details >> </a>
             </div>
           </div>
-          <div class="credit-score-col col">
-            <div class="credit-score-box">
-              <div class="key">MIN.CREDIT SCORE</div>
-              <div class="value">{{ product.credit_score }}</div>
+          <div class="product-item-center">
+            <div class="credit-score-col col">
+              <div class="credit-score-box">
+                <div class="key">MIN.CREDIT SCORE</div>
+                <div class="value">{{ product.credit_score }}</div>
+              </div>
             </div>
-          </div>
-          <div class="loan-types-col col">
-            <div class="loan-types-box">
-              <div class="key">LOAN TYPES</div>
-              <div class="value">
-                <p v-for="(type, id) in product.loan_types" :key="id" class="type">
-                  <span class="iconfont">&#xe604;</span>
-                  <span class="text">{{ type.text }}</span>
-                </p>
+            <div class="loan-types-col col">
+              <div class="loan-types-box">
+                <div class="key">LOAN TYPES</div>
+                <div class="value">
+                  <p v-for="(type, id) in product.loan_types" :key="id" class="type">
+                    <span class="iconfont">&#xe604;</span>
+                    <span class="text">{{ type.text }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="down-payment-col col">
+              <div class="down-payment-box">
+                <div class="key">MIN.DOWN PAYMENT</div>
+                <div class="value">{{ product.down_payment }}</div>
               </div>
             </div>
           </div>
-          <div class="down-payment-col col">
-            <div class="down-payment-box">
-              <div class="key">MIN.DOWN PAYMENT</div>
-              <div class="value">{{ product.down_payment }}</div>
-            </div>
-          </div>
-          <div class="btn-box-col col">
+          <div class="btn-box-col">
             <div class="btn-box">
               <a :href="product.link" class="btn" rel="noopener noreferrer nofollow">Check My Rates >></a>
               <a :href="product.link" class="visit-btn" rel="noopener noreferrer nofollow">Visit site >></a>
@@ -155,54 +155,56 @@
           <div class="product-include-title">
             <img v-if="index === 0" alt="" class="medal" src="@/assets/img/medal-icon.png">
             <span v-else class="circle">{{ index + 1 }}</span>
-            <h3 class="title">{{ product.name }}-{{ product.feature }}</h3>
+            <h3 class="title">{{ product.name }}-<span style="color: #cb9600;">{{ product.feature }}</span></h3>
           </div>
           <div class="product-include-card">
-            <div v-if="index < 1" class="corner-box">
-              <img v-if="index === 0" alt="" class="corner" src="@/assets/img/best-choice.png">
-            </div>
             <div v-if="index === 0" class="tips"><span class="g">503 users</span> chose this site today</div>
             <div class="product-include-card-info">
-              <div class="logo-box">
-                <img :alt="product.name" :src="product.logo" class="logo">
-                <div class="read-review-btn">Read Review <span>>></span></div>
-              </div>
-              <div class="rate-box">
-                <div v-if="index === 0" class="trustpilot-box">
-                  <div class="trustpilot-top">
+              <div class="product-include-card-info-left">
+                <div class="logo-box">
+                  <img :alt="product.name" :src="product.logo" class="logo">
+                  <div class="read-review-btn">Read Review <span>>></span></div>
+                </div>
+                <div class="rate-box">
+                  <div v-if="index === 0" class="trustpilot-box">
+                    <div class="trustpilot-top">
+                      <span class="score">{{ product.score }}</span>
+                      <div class="trustpilot-txt">
+                        <span class="iconfont">&#xe64c;</span><span>Trustpilot</span>
+                      </div>
+                    </div>
+                    <ul class="start-list">
+                      <li class="iconfont">&#xe64c;</li>
+                      <li class="iconfont">&#xe64c;</li>
+                      <li class="iconfont">&#xe64c;</li>
+                      <li class="iconfont">&#xe64c;</li>
+                      <li class="iconfont">&#xe64c;</li>
+                    </ul>
+                  </div>
+                  <div v-else class="score-box">
                     <span class="score">{{ product.score }}</span>
-                    <div class="trustpilot-txt">
-                      <span class="iconfont">&#xe64c;</span><span>Trustpilot</span>
+                    <div class="rate">
+                      <NewStar :max="10" :score="product.score"></NewStar>
                     </div>
                   </div>
-                  <ul class="start-list">
-                    <li class="iconfont">&#xe64c;</li>
-                    <li class="iconfont">&#xe64c;</li>
-                    <li class="iconfont">&#xe64c;</li>
-                    <li class="iconfont">&#xe64c;</li>
-                    <li class="iconfont">&#xe64c;</li>
+                </div>
+              </div>
+              <div class="product-include-card-info-right">
+                <div class="content-box">
+                  <p class="product-slogan">{{ product.slogan }}</p>
+                  <ul class="product-advantage-list">
+
+                    <li v-for="(advantage, id) in product.advantage" :key="id">
+                      <span class="iconfont">&#xe604;</span>
+                      <p class="text">{{ advantage.text }}</p>
+                    </li>
                   </ul>
                 </div>
-                <div v-else class="score-box">
-                  <span class="score">{{ product.score }}</span>
-                  <div class="rate">
-                    <NewStar :max="10" :score="product.score"></NewStar>
-                  </div>
+                <div class="btn-box">
+                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
                 </div>
               </div>
-              <div class="content-box">
-                <p class="product-slogan">{{ product.slogan }}</p>
-                <ul class="product-advantage-list">
 
-                  <li v-for="(advantage, id) in product.advantage" :key="id">
-                    <span class="iconfont">&#xe604;</span>
-                    <p class="text">{{ advantage.text }}</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-box">
-                <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
-              </div>
             </div>
             <div class="product-include-card-content" v-html="product.description"></div>
           </div>
@@ -300,8 +302,25 @@
 <script>
 import NewStar from '@/components/NewStar/index.vue';
 import {updateTime} from "../utils/date";
+import {seo} from '../utils/seo'
 
 export default {
+  head: seo({
+    title: 'Best Refinance Lenders & Companies & Banks| Toploanadviser.com',
+    description: "Let' s learn how mortgage refinancing works, how to find the best mortgage refinance lenders or companies, and how to decide whether a home refinance is right for you.",
+    keywords: "best refinance lenders,refinance lenders,refinance companies,best mortgage lenders for refinancing,best banks for mortgage refinance",
+
+    url: 'https://www.toploansadviser.com/best-mortgage-refinance-lenders',
+    img: 'https://www.toploansadviser.com/data/images/mortgage-loan.webp',
+    img_size: {
+      width: '522',
+      height: '360'
+    },
+    img_type: 'image/webp',
+    link: [
+      {rel: "canonical", href: "https://www.toploansadviser.com/mortgage-loan"}
+    ]
+  }),
   components: {
     NewStar
   },

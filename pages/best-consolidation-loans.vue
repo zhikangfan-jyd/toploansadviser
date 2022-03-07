@@ -1,25 +1,34 @@
 <template>
   <main class="main-container">
     <section class="banner-area">
-      <!--      <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>-->
       <div class="banner-container">
-        <div class="banner-content">
-          <h1 class="website-title">
-            <span>Best Debt Consolidation Loans</span>
-          </h1>
-          <p class="sub-title">Financing to pay off other debts </p>
-          <div class="content">
-            <div>
-              If you are saddled with different kinds of debt, you can apply for a loan to consolidate those debts into
-              a single liability and pay them off. Payments are then made on the new debt until it is paid off in full.
-            </div>
+        <h1 class="title">Best Debt Consolidation Loans</h1>
+        <div class="introduce-container">
+          <div class="author-info">
+            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
+            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
+                updateTime().month.short
+              }} {{ updateTime().year }}</span></p>
           </div>
-          <div class="update">
-            <span class="iconfont">&#xe645;</span> <span>Last updated: {{
-              updateTime().month.short
-            }} {{ updateTime().year }}</span>
-            <div class="editor"><span class="iconfont">&#xe62d;</span><span>Edited By Rashawn Mitchner</span></div>
+          <div class="introduce-content">
+            <p>If you are saddled with different kinds of debt, you can apply for a loan to consolidate those debts into
+              a single liability and pay them off. Payments are then made on the new debt until it is paid off in
+              full.</p>
           </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="preface-area">
+      <div class="preface-container">
+        <h2 class="title">Compare Top Debt Consolidation Loan Rates</h2>
+        <div class="preface-content">
+          <p>
+            We compared and reviewed loans from more than 10 debt consolidation loan lenders to find the best rates and
+            loan
+            features.</p>
         </div>
       </div>
     </section>
@@ -144,6 +153,7 @@
                         v-if="item.review_key !== ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
+                        target="_blank"
                       >Read Review
                       </nuxt-link
                       >
@@ -159,7 +169,7 @@
                         <h5 class="phone-text">Loan Features</h5>
                       </dt>
                       <dd>
-                        <span class="iconfont">&#xe65a;</span>
+                        <span class="iconfont">&#xe604;</span>
                         <h3
                           class="text"
                           style="display: inline; font-weight: normal"
@@ -213,7 +223,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect/best-consolidation-loans/'+ item.name + '?gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -223,16 +233,16 @@
                       class="text"
                       style="display: inline;"
                     >
-                      Check My Rates
+                      Check My Rates >>
                     </h3>
-                    <span class="iconfont">&#xe63c;</span>
+                    <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect/best-consolidation-loans/'+item.name + '?gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
-                  >Visit site »</a
+                  >Visit site >></a
                   >
                 </div>
               </div>
@@ -250,20 +260,24 @@
         <div class="question-content">
           <h2 class="question-title">What is Debt Consolidation Loans？</h2>
           <p>Even if you are easily making your monthly payments for your debt obligations, it can take months or even
-            years to finally pay it all off. Sometimes keeping track of all your monthly payments can be exhausting if
+            years to finally pay it all off. Sometimes keeping track of all <a href="/personal-loan-calculator"
+                                                                               rel="noopener noreferrer"
+                                                                               target="_blank">your monthly
+              payments</a> can be exhausting if
             you have debt from multiple different avenues. Consolidating your debt into a single payment can allow you
             to get a lower interest rate and allow you to only have to focus on paying one bill each month.</p>
           <h2 class="question-title">How Does Debt Consolidation Work?</h2>
-          <p>Debt consolidation is the act of combining all of your debt obligations into a single payment. Nowadays
-            people can have debt with multiple different lenders for many different reasons. If you have debt from
+          <p>Debt consolidation is the act of combining all of your debt obligations into a single payment. <a
+            href="/guides/what-kind-of-loan-do-you-need" rel="noopener noreferrer" target="_blank">Nowadays people can
+            have debt with multiple different lenders for many different reasons</a>. If you have debt from
             multiple lenders this probably means that you have different interest rates for each loan. One of the main
             benefits of consolidating your debt into one loan is to improve your overall interest rate. Paying a lower
             interest rate can save you hundreds to thousands of dollars in the long run depending on how much debt you
             are in. Debt consolidation can be used to combine many different types of debt such as:</p>
           <ul>
-            <li>Student loans</li>
+            <li><a href="/student-loan" rel="noreferrer noopener" target="_blank">Student loans</a></li>
             <li>Auto loans</li>
-            <li>Personal loans</li>
+            <li><a href="/personal-loan" rel="noreferrer noopener" target="_blank">Personal loans</a></li>
             <li>Credit cards</li>
             <li>Medical debt</li>
             <li>Payday loans</li>
@@ -273,7 +287,8 @@
             methods listed below will concentrate your debt into one single payment ideally with a lower interest
             rate. </p>
           <ul>
-            <li>The first <a href="" target="_blank">method to consolidate your debt</a> is to get a balance-transfer
+            <li>The first <a href="/best-consolidation-loans" rel="noopener noreferrer" target="_blank">method to
+              consolidate your debt</a> is to get a balance-transfer
               credit card with a good intro
               promotional period. For example, many credit cards will give you 0% interest for the first year of
               purchases or balance transfers. You can take advantage of this to literally get your interest rate to 0%
@@ -281,7 +296,8 @@
               need a solid credit score. Otherwise, this can be a great way to save a ton of money on your interest
               payments and reduce the number of bills you have into just one.
             </li>
-            <li>Another option you have to <a href="" target="_blank">consolidate your debt is to get a debt
+            <li>Another option you have to <a href="/best-consolidation-loans" rel="noreferrer noopener"
+                                              target="_blank">consolidate your debt is to get a debt
               consolidation loan</a>. Essentially you
               would take out a personal loan and use this money to pay off all of your outstanding debt. At this point,
               you would be left with just a single personal loan to pay back with a fixed interest rate.
@@ -315,8 +331,10 @@
               simply consolidating them into one may come with a worse deal than you had before. If the interest rate is
               only slightly better or the same but you agree to a longer timeframe you could just end up paying more.
             </dd>
-            <dd><strong>Put assets at risk</strong>. If you decide to take out a secured loan using your house with a
-              home equity loan or a HELOC, then you are risking your assets being seized. If you do not make your
+            <dd><strong>Put assets at risk</strong>. If you decide to take out a secured loan using your house <a
+              href="/best-home-equity-loan" rel="noopener noreferrer" target="_blank">with a home equity loan</a> or <a
+              href="/best-helco-loan" rel="noopener noreferrer" target="_blank">a HELOC</a>, then you are risking your
+              assets being seized. If you do not make your
               payments then this could cause you to lose your house.
             </dd>
           </dl>
@@ -326,7 +344,9 @@
             your monthly debt payments are less than 50% of your income then debt consolidation can be a good move. It
             also helps to have a good credit score that can allow you to get approved for a good interest rate on a
             credit card or debt consolidation loan. </p>
-          <p>Credit cards are one of the most common forms of unpaid debt. Generally, credit cards can have interest
+          <p><a href="/guides/4-questions-to-consider-before-submitting-a-credit-card-application"
+                rel="noopener noreferrer" target="_blank">Credit cards are one of the most common forms of unpaid
+            debt</a>. Generally, credit cards can have interest
             rates around 18% to 25%. If you are already making your payments on time and have enough to pay it off then
             you should <strong>consider getting a debt consolidation loan</strong> which has much lower interest rates
             than a credit
@@ -340,13 +360,15 @@
             spending habits that should be addressed before anything else. Those that are drowning in debt and will
             still not be able to pay it off even with consolidation should consider alternative solutions. As a rule of
             thumb, if your debt payments are more than half of your income then you may want to consider <strong><a
-              href="" rel=" noopener noreferrer nofollow" target="_blank">seeking debt relief</a></strong>. In certain
+              href="/best-consolidation-loans" rel=" noopener noreferrer" target="_blank">seeking debt
+              relief</a></strong>. In certain
             situations, you would be better off filing for bankruptcy than attempting to barely make
             their minimum payments each month.</p>
           <h6 class="title">Bottom line</h6>
           <p>Debt consolidation can help you save money in the long run by reducing your interest rates and condensing
             your loans into a single monthly payment. Those that are responsible with their spending and keep track of
-            all their payments can really <strong><a href="" rel="noreferrer noopener nofollow" target="_blank">benefit
+            all their payments can really <strong><a href="/best-consolidation-loans" rel="noreferrer noopener"
+                                                     target="_blank">benefit
               from consolidating their debt</a></strong>. However, people with excessive spending
             habits who have no desire to pay their debt off on time may not find much use in consolidating their debt.
             This process is not a simple fix for everybody’s debt problems. It is only recommended to consolidate your
@@ -363,61 +385,25 @@ import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+import {seo} from '../utils/seo'
 
 export default {
-  head() {
-    return {
-      title: 'Debt Consolidation Personal Loans  | Toploansadviser.com',
-      meta: [
-        {
-          hid: 'keywords',
-          name: 'keywords',
-          content: 'personal loans for debt consolidation, debt consolidation personal loans, debt consolidation loan'
-        },
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'A Debt consolidation loan is a type of personal loan you can use to pay off high-interest debt, specially credit cards. And it allows one low-interest monthly payment.'
-        },
-        {
-          property: 'og:title',
-          content: 'Debt Consolidation Personal Loans  | Toploansadviser.com'
-        },
-        {
-          property: 'og:type',
-          content: 'article'
-        },
-        {
-          property: 'og:url',
-          content: 'https://www.toploansadviser.com/personal-loan'
-        },
-        {
-          property: 'og:description',
-          content: 'Compare best personal loans 2022 from different personel loan lenders\' rates, features and reviews  in marketplace, get your best personal rates now!'
-        },
-        {
-          property: 'og:image',
-          content: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp'
-        },
-        {
-          property: 'og:image:width',
-          content: '396'
-        },
-        {
-          property: 'og:image:height',
-          content: '280'
-        },
-        {
-          property: 'og:image:type',
-          content: 'image/webp'
-        },
-        {
-          property: 'og:image:alt',
-          content: 'Credible'
-        }
-      ]
-    }
-  },
+
+  head: seo({
+    title: 'Debt Consolidation Personal Loans  | Toploansadviser.com',
+    description: "A Debt consolidation loan is a type of personal loan you can use to pay off high-interest debt, specially credit cards. And it allows one low-interest monthly payment.",
+    keywords: "personal loans for debt consolidation,debt consolidation personal loans,debt consolidation loan",
+    url: 'https://www.toploansadviser.com/best-consolidation-loans',
+    img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+    img_size: {
+      width: '325',
+      height: '295'
+    },
+    img_type: 'image/webp',
+    link: [
+      {rel: "canonical", href: "https://www.toploansadviser.com/personal-loan"}
+    ]
+  }),
   components: {
     FoldTheCard,
     CalculatorPopup,
@@ -488,9 +474,9 @@ export default {
       }
     }
 
-    showSlogan();
+    // showSlogan();
 
-    $(window).on('resize', showSlogan)
+    // $(window).on('resize', showSlogan)
 
 
   },

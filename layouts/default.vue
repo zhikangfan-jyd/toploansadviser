@@ -11,25 +11,25 @@
         </a>
         <ul class="header-nav-list">
           <li>
-            <span class="link column" exact to="/personal-loan"
+            <div class="link column"
             >Personal Loan
-            </span
+            </div
             >
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Best Options</dt>
                   <dd class="menu-item">
-                    <a href="/personal-loan" target="_blank">Best Personal Loan</a>
+                    <a href="/personal-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Personal Loan</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-consolidation-loans" target="_blank">Best Debt Consolidation Loan</a>
+                    <a href="/best-consolidation-loans" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Debt Consolidation Loan</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-home-improvement-loan" target="_blank">Best Home Improvement Loan</a>
+                    <a href="/best-home-improvement-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Home Improvement Loan</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-emergency-loan" target="_blank">Best Emergency Loan</a>
+                    <a href="/best-emergency-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Emergency Loan</span></a>
                   </dd>
                 </dl>
               </div>
@@ -37,21 +37,51 @@
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
                   <dd class="menu-item">
-                    <a href="/reviews/credible" target="_blank">Credible</a>
+                    <a href="/reviews/credible" target="_blank"><span class="iconfont">&#xe602;</span> <span>Credible Review</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/reviews/marcus" target="_blank">Marcus</a>
+                    <a href="/reviews/marcus" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Marcus Review</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/reviews/lightstream" target="_blank">LightStream</a>
+                    <a href="/reviews/lightstream" target="_blank"><span class="iconfont">&#xe602;</span> <span>LightStream Review</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/reviews/sofi" target="_blank">SoFi</a>
+                    <a href="/reviews/sofi" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>SoFi Review</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/reviews/avant" target="_blank">Avant</a>
+                    <a href="/reviews/avant" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Avant Review</span></a>
                   </dd>
-
+                  <dd class="menu-item">
+                    <a href="/reviews/best-egg" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Egg Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/lending-club" target="_blank"><span class="iconfont">&#xe602;</span> <span>Lending Club Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/drcredit" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Drcredit Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/lendingtree" target="_blank"><span class="iconfont">&#xe602;</span> <span>Lending Tree Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/monevo" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Monevo Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/personalloans" target="_blank"><span class="iconfont">&#xe602;</span> <span>Personalloans Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/upstart" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Upstart Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/figure-personal-loans" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Figure Review</span></a>
+                  </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
@@ -59,47 +89,67 @@
                   <dt class="column-title">Guides & Tools</dt>
 
                   <dd class="menu-item">
-                    <a href="/personal-loan-calculator" target="_blank">Personal Loan Calculator</a>
+                    <a href="/personal-loan-calculator" target="_blank"><span class="iconfont">&#xe602;</span> <span>Personal Loan Calculator</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/" target="_blank">What Is Annual Rate Of Personal Loan</a>
+                    <a href="/guides/how-to-get-a-loan-with-bad-credit" target="_blank"><span
+                      class="iconfont">&#xe602;</span> <span>How to Get a Loan with Bad Credit</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/" target="_blank">How To Apply A Personal Loan</a>
+                    <a href="/guides/how-to-apply-a-personal-loan" target="_blank"><span
+                      class="iconfont">&#xe602;</span> <span>How To Apply A Personal Loan</span></a>
                   </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">How Credit Score Effects Loan</a>
-                  </dd>
+
                 </dl>
               </div>
             </div>
           </li>
           <li>
-            <span class="link column" to="/mortgage-loan"
+            <div class="link column"
             >Mortgage Loan
-            </span
+            </div
             >
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Best Options</dt>
                   <dd class="menu-item">
-                    <a href="/mortgage-loan" target="_blank">Best Mortgage Lenders</a>
+                    <a href="/mortgage-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Mortgage Lenders</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-mortgage-refinance-lenders" target="_blank">Best Refinance Lenders</a>
+                    <a href="/best-mortgage-refinance-lenders" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Best Refinance Lenders</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-fha-lenders" target="_blank">Best FHA Lenders</a>
+                    <a href="/best-fha-lenders" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best FHA Lenders</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-va-lenders" target="_blank">Best VA Lenders</a>
+                    <a href="/best-va-lenders" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best VA Lenders</span></a>
                   </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
+                  <dd class="menu-item">
+                    <a href="/reviews/ascent" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Ascent Review</span></a>
+                  </dd>
+
+                  <dd class="menu-item">
+                    <a href="/reviews/better" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Better Review</span></a>
+                  </dd>
+
+                  <dd class="menu-item">
+                    <a href="/reviews/loan-depot" target="_blank"><span class="iconfont">&#xe602;</span> <span>LoanDepot Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/rocket-mortgage" target="_blank"><span class="iconfont">&#xe602;</span> <span>Rocket Mortgage Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/zillow-home-loans" target="_blank"><span class="iconfont">&#xe602;</span> <span>Zillow Home Loan Review</span></a>
+                  </dd>
 
                 </dl>
               </div>
@@ -108,39 +158,39 @@
                 <dl class="menu-list">
                   <dt class="column-title">Guides & Tools</dt>
                   <dd class="menu-item">
-                    <a href="/mortgage-loan-calculator" target="_blank">Mortgage Loan Calculator</a>
+                    <a href="/mortgage-loan-calculator" target="_blank"><span class="iconfont">&#xe602;</span> <span>Mortgage Loan Calculator</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/" target="_blank">First Time Homebuyer' s Guide</a>
-                  </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">How To Apply A Mortgage?</a>
-                  </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">How To Refinance Your Mortgage?</a>
+                    <a href="/guides/how-to-get-a-mortgage" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>How To Get A Mortgage</span></a>
                   </dd>
                 </dl>
               </div>
             </div>
           </li>
           <li>
-            <span class="link column" to="/student-loan">Student Loan</span>
+            <div class="link column">Student Loan</div>
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Best Options</dt>
                   <dd class="menu-item">
-                    <a href="/student-loan" target="_blank">Best Private Student Loan</a>
+                    <a href="/student-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Private Student Loan</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-parent-loan" target="_blank">Best Parent Student Loan</a>
+                    <a href="/best-parent-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Parent Loan</span></a>
                   </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
-
+                  <dd class="menu-item">
+                    <a href="/reviews/college-ave-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>College Ave Loan Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/earnest-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Earnest Review</span></a>
+                  </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
@@ -148,16 +198,11 @@
                 <dl class="menu-list">
                   <dt class="column-title">Guides & Tools</dt>
                   <dd class="menu-item">
-                    <a href="/student-loans-calculator" target="_blank">Student Loan Calculator</a>
+                    <a href="/student-loans-calculator" target="_blank"><span class="iconfont">&#xe602;</span> <span>Student Loan Calculator</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/" target="_blank">How Long To Pay Off Students Loans?</a>
-                  </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">How To Apply A Private Student Loan?</a>
-                  </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">Why Should You Refinance Your Student Loan?</a>
+                    <a href="/guides/how-to-apply-for-a-private-student-loan" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>How To Apply For A Private Student Loan</span></a>
                   </dd>
                 </dl>
               </div>
@@ -165,19 +210,19 @@
           </li>
 
           <li>
-            <span class="link column" to="/mortgage-loan"
+            <div class="link column"
             >Home Equity
-            </span
+            </div
             >
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Best Options</dt>
                   <dd class="menu-item">
-                    <a href="/best-home-equity-loan" target="_blank">Best Home Equity Loan</a>
+                    <a href="/best-home-equity-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Home Equity Loan</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/best-helco-loan" target="_blank">Best HELCO Loan</a>
+                    <a href="/best-helco-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best HELCO Loan</span></a>
                   </dd>
 
 
@@ -186,28 +231,27 @@
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
-
+                  <dd class="menu-item">
+                    <a href="/reviews/figure-helco" target="_blank"><span class="iconfont">&#xe602;</span> <span>Figure Review</span></a>
+                  </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
-
                 <dl class="menu-list">
                   <dt class="column-title">Guides & Tools</dt>
                   <dd class="menu-item">
-                    <a href="/home-equity-calculator" target="_blank">Home Equity Calculator</a>
+                    <a href="/home-equity-calculator" target="_blank"><span class="iconfont">&#xe602;</span> <span>Home Equity Calculator</span></a>
                   </dd>
                   <dd class="menu-item">
-                    <a href="/" target="_blank">How Home Equity Loan Works</a>
-                  </dd>
-                  <dd class="menu-item">
-                    <a href="/" target="_blank">How To Refinance A HELCO</a>
+                    <a href="/guides/how-to-refinance-a-heloc" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>How to Refinance a HELOC</span></a>
                   </dd>
                 </dl>
               </div>
             </div>
           </li>
         </ul>
-        <span class="iconfont phone-menu">&#xe61d;</span>
+        <span class="iconfont phone-menu" @click="handleShowMenu">{{ isShowMenu ? '&#xe614;' : '&#xe61d;' }}</span>
       </div>
     </header>
     <Nuxt/>
@@ -221,77 +265,58 @@
               src="@/assets/img/website-footer-logo.webp"
             />
           </a>
-        </div>
-        <div class="footer-nav-box">
-          <span class="title">Basic Links</span>
-          <div class="list-box">
-            <ul class="footer-nav-list">
-              <li>
-                <nuxt-link to="/personal-loan">Personal Loan</nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="/student-loan">Student Loan</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/mortgage-loan">Mortgage Loan</nuxt-link>
-              </li>
-
-              <li>
-                <nuxt-link to="/guides">Guides</nuxt-link>
-              </li>
-            </ul>
-            <ul class="footer-nav-list">
-              <li>
-                <nuxt-link to="/about-us">About Us</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/contact-us">Contact Us</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/term-of-use">Term of Use</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/privacy-policy">Privacy Policy</nuxt-link>
-              </li>
-            </ul>
-            <ul class="footer-nav-list">
-              <li>
-                <nuxt-link to="/reviews/drcredit">Drcredit</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/reviews/lendingtree">Lending Tree</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/reviews/monevo">Monevo</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/reviews/personalloans">Personalloans</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/reviews/upstart">Upstart</nuxt-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-sms-box">
-          <div class="footer-sms-item">
-            <div class="title">Get in Touch</div>
-            <div class="footer-sms-content input-box">
-              <input
-                v-model="email"
-                autocomplete="off"
-                class="input"
-                placeholder="Email Address"
-                type="text"
-              />
-              <button class="btn" @click="sendMail">
-                <span class="iconfont">&#xe640;</span>
-              </button>
+          <div class="footer-sms-box">
+            <div class="footer-sms-item">
+              <div class="title">Get in Touch</div>
+              <div class="footer-sms-content input-box">
+                <input
+                  v-model="email"
+                  autocomplete="off"
+                  class="input"
+                  placeholder="Email Address"
+                  type="text"
+                />
+                <button class="btn" @click="sendMail">
+                  <span class="iconfont">&#xe640;</span>
+                </button>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
+        <div class="footer-wrapper-right">
+          <ul class="footer-nav-list">
+            <li>
+              <nuxt-link target="_blank" to="/about-us">About Us</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link target="_blank" to="/contact-us">Contact Us</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link target="_blank" to="/term-of-use">Term of Use</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link target="_blank" to="/privacy-policy">Privacy Policy</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link target="_blank" to="/disclosure">Advertising Disclosure</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link target="_blank" to="/guides">Guides</nuxt-link>
+            </li>
+
+          </ul>
+          <div class="footer-disclosure-content">
+            <p>The information shared through this website is based on our team’s personal judgements and views. We use
+              our own comparisons to assign values, which are not intended to reflect a certain benchmark of precision.
+              To keep our website free for use, we accept referral fees from various service providers, which have the
+              potential to influence their respective appointed scores. A third party’s participation on
+              toploansadviser.com is not an indication of endorsement. The information and vendors which appear on this
+              site is subject to change at any time.The site does not include all companies offering loan products or
+              all available loan offers.</p>
+          </div>
+        </div>
+
       </div>
       <div class="footer-container-bottom">
         <p>
@@ -315,6 +340,7 @@ export default {
   },
   data() {
     return {
+      isShowMenu: false,
       email: "",
       timer: null,
     };
@@ -345,44 +371,26 @@ export default {
         }, 800);
       }
     },
-    handleClick() {
+    // 点击展开菜单按钮
+    handleShowMenu() {
       let width = $(window).width();
-      //判断屏幕宽度
-      if (width <= 750) {
-        // 点击任意链接都需收回
 
-        $(document).on('click', (e) => {
-          if ($(e.target).hasClass('phone-menu')) {
-            $(".header-container .header-nav-list").slideToggle("fast");
-          } else if ($(e.target).hasClass('reviews') || $(e.target).hasClass('reviews-title')) {
-            $(".header-container .header-nav-list .reviews-list").slideToggle("fast");
-          } else {
-            $(".header-container .header-nav-list").slideUp("fast");
-            $(".header-container .header-nav-list .reviews-list").slideUp("fast");
-          }
-
-        })
+      this.isShowMenu = !this.isShowMenu;
+      if (this.isShowMenu) {
+        $('.menu-column').css({display: 'none'});
+        $('.header-nav-list').css({display: 'block'});
       } else {
-        $(".header-container .header-nav-list .reviews").hover(
-          () => {
-            $(".header-container .header-nav-list .reviews-list")
-              .stop()
-              .slideDown("fast");
-          },
-          () => {
-            $(".header-container .header-nav-list .reviews-list")
-              .stop()
-              .slideUp("fast");
-          }
-        );
+        $('.header-nav-list').css({display: 'none'});
       }
 
-    },
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.handleClick();
-    });
+      $('.column').on('click', function () {
+        let clickIndex = $('.column').index(this);
+        $('.menu-column').css({display: 'none'});
+        $('.menu-column').eq(clickIndex).css({display: 'flex'});
+      })
+
+
+    }
   },
   destroyed() {
     clearTimeout(this.timer);

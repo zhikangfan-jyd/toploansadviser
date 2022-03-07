@@ -632,57 +632,34 @@ import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
+import {seo} from "../utils/seo"
 
 export default {
   head() {
-    return {
+    return seo({
       title: 'Best 10 Online Personal Loans - Toploansadviser',
-      description: 'Compare best online personal loans  from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!',
-      meta: [
-        {
-          property: 'og:title',
-          content: 'Best Personal Loans November  | Toploansadviser.com'
-        },
-        {
-          property: 'og:type',
-          content: 'article'
-        },
-        {
-          property: 'og:url',
-          content: 'https://www.toploansadviser.com/personal-loan'
-        },
-        {
-          property: 'og:description',
-          content: 'Compare best personal loans  from different personel loan lenders\' rates, features and reviews in marketplace, get your best personal rates now!'
-        },
-        {
-          property: 'og:image',
-          content: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp'
-        },
-        {
-          property: 'og:image:width',
-          content: '396'
-        },
-        {
-          property: 'og:image:height',
-          content: '280'
-        },
-        {
-          property: 'og:image:type',
-          content: 'image/webp'
-        },
-        {
-          property: 'og:image:alt',
-          content: 'Credible'
-        }
-      ],
+      description: "Compare best online personal loans  from different personal loan lenders\' rates, Credible, lightstream, lendingclub, avant, Sofi\'s features and reviews in marketplace, get your best personal rates now!",
+      keywords: ['abc'],
+      url: 'https://www.toploansadviser.com/avant-personal-loans',
+      site_name: 'toploansadviser',
+      img: 'https://www.toploansadviser.com/_nuxt/img/about-us-banner-bg.d3006d4.webp',
+      img_alt: 'Credible',
+      img_type: 'image/webp',
+      img_size: {
+        width: 396,
+        height: 280
+      },
+      theme_color: '#0000',
+      twitter_card: '',
+      twitter: '',
+      locale: '',
       link: [
         {
           rel: "canonical",
           href: "https://www.toploansadviser.com/personal-loan",
         }
       ]
-    }
+    });
   },
   components: {
     FoldTheCard,
@@ -731,6 +708,7 @@ export default {
     };
   },
   methods: {
+    seo,
     computeScore,
     formatNum,
     updateTime, handleShowDisclosure() {

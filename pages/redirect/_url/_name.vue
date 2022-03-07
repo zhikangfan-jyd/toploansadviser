@@ -515,7 +515,7 @@ let mortgage_purchase = [
   {
     "name": "LoanDepot",
     "review_key": "",
-    "link": "https://fxo.co/DGxu",
+    "link": "https://track.flexlinkspro.com/g.ashx?foid=156074.14266.1137410&trid=1278191.226067&foc=16&fot=9999&fos=5",
     "logo": "/data/images/loan-depot.png",
     "rate": {
       "max": 10,
@@ -1751,7 +1751,7 @@ export default {
     },
     handleJump(data, name) {
       let filterData = data.filter(ele => {
-        return ele.name == name;
+        return ele.name === name;
       })
 
       if (filterData.length > 0) {
@@ -1759,6 +1759,7 @@ export default {
         filterData.forEach(ele => {
           ele.link = this.changeLink(ele.link);
         })
+
         if (process.client) {
           window.location.href = filterData[0].link;
         }
@@ -1803,8 +1804,13 @@ export default {
     } else if (url === 'review') {
       this.handleJump(review, name)
     } else {
-
-      this.$router.push('/error')
+      let results = this.$axios.$get('/data/' + url + '.json');
+      results.then(res => {
+        let {data} = res
+        this.handleJump(data, name);
+      }).catch(e => {
+        this.$router.push('/error');
+      })
     }
 
 

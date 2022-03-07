@@ -2,8 +2,9 @@
   "data": [
     {
       "name": "Credible",
+      "review_key": "",
       "logo": "/data/images/credible.webp",
-      "link": "",
+      "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
       "score": "9.9",
       "apr": "2.49% - 35.99%",
       "loan_amount": "$600 - $100,000",
@@ -13,6 +14,7 @@
     },
     {
       "name": "Light stream",
+      "review_key": "",
       "link": "",
       "score": "9.7",
       "logo": "/data/images/lightstream.webp",
@@ -24,6 +26,7 @@
     },
     {
       "name": "Avant",
+      "review_key": "",
       "link": "",
       "score": "9.5",
       "logo": "/data/images/avant.webp",

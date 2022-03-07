@@ -77,6 +77,11 @@
       color: #fff;
       font-size: 14px;
       font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
     }
   }
 
@@ -86,7 +91,7 @@
       margin: 0 auto;
 
       .title {
-        margin-top: 35px;
+        margin-top: 30px;
         margin-bottom: 8px;
         font-size: 45px;
         font-weight: bold;
@@ -127,6 +132,27 @@
           background-color: #F3F4F8;
           border-radius: 4px;
           line-height: 24px;
+          max-height: 150px;
+          overflow: hidden;
+          transition: max-height linear 0.5s;
+
+          &.show {
+            max-height: 800px;
+          }
+
+          .iconfont {
+            position: absolute;
+            bottom: -5px;
+            font-size: 16px;
+            color: #818181;
+            left: 50%;
+            transform: rotateZ(0deg) translateX(-50%);
+            cursor: pointer;
+
+            &.show {
+              transform: rotateZ(180deg) translateX(-50%);
+            }
+          }
 
           &::before {
             position: absolute;
@@ -189,6 +215,7 @@
           position: relative;
 
           .title {
+            font-style: italic;
             font-size: 14px;
             color: #8f8f8f;
             cursor: pointer;
@@ -241,6 +268,12 @@
         border-radius: 4px;
         background-color: #fff;
         box-shadow: 0 2px 8px 0 rgba(21, 60, 60, 0.13);
+        transform: scale(1);
+        transition: transform linear 0.1s;
+
+        &:hover {
+          transform: scale(1.02);
+        }
 
         &:nth-of-type(1) {
           box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.16);
@@ -546,11 +579,23 @@
             padding: 12px 0;
             box-sizing: border-box;
 
+            .product-include-card-info-left {
+              display: flex;
+              flex: 48;
+              justify-content: space-around;
+            }
+
+            .product-include-card-info-right {
+              display: flex;
+              flex: 52;
+              justify-content: space-around;
+            }
 
             .logo-box {
               display: flex;
               flex-direction: column;
               align-items: center;
+              flex: 1;
 
               .logo {
                 width: 190px;
@@ -605,6 +650,7 @@
             }
 
             .rate-box, .content-box, .btn-box {
+              flex: 1;
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -620,11 +666,28 @@
 
             .content-box {
 
-              font-size: 20px;
-              font-weight: 600;
+              .product-advantage-list {
+                li {
+                  .iconfont {
+                    font-size: 14px;
+                    color: #2E9A61;
+                    vertical-align: middle;
+                  }
+
+                  .text {
+                    display: inline-block;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                    font-size: 15px;
+                    font-weight: 500;
+                  }
+                }
+              }
             }
 
             .btn-box {
+              align-items: center;
+
               .btn {
                 display: block;
                 width: 158px;
@@ -637,6 +700,11 @@
                 font-size: 14px;
                 font-weight: 600;
                 text-decoration: none;
+                transition: all linear 0.1s;
+
+                &:hover {
+                  background-color: #03b959;
+                }
               }
             }
           }
@@ -753,4 +821,143 @@
   }
 
 
+}
+
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .slogan {
+        display: none;
+      }
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preface-area {
+      .preface-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .title {
+          margin-top: 0;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .product-include-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+
+      .product-include-container {
+        width: 100%;
+
+        .product-include-item {
+          .product-include-card {
+            .product-include-card-info {
+              flex-direction: column;
+              height: auto;
+
+              .product-include-card-info-right {
+                flex-direction: column;
+                margin-top: 20px;
+
+                .content-box {
+                  .product-advantage-list {
+                    li {
+                      margin-bottom: 5px;
+                    }
+                  }
+                }
+
+                .btn-box {
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .question-area {
+
+
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+
+      .question-content {
+
+        .question-title {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .conclusion-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+
+      .conclusion-container {
+        width: 100%;
+        box-sizing: border-box;
+
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .more-from-toploansadviser-container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

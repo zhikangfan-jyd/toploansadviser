@@ -1,6 +1,6 @@
 <template>
   <main class="main-container">
-<!--    <h2 class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</h2>-->
+    <!--    <h2 class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</h2>-->
     <section class="banner-area">
       <div class="banner-container">
         <h1 class="title">Know all about Mortgage Calculators</h1>
@@ -112,6 +112,23 @@
                        @input="changeInterestRate"><span>%</span>
               </div>
             </div>
+            <div class="input-block">
+              <div class="block-top">
+                <label class="block-title"><span class="text">State</span> <span class="info-icon"></span></label>
+              </div>
+              <div class="block-bottom">
+                <div class="loans-terms-select-box">
+                  <select v-model="stateIndex" class="loans-terms-select" @change="calculate">
+                    <option disabled="disabled">Please select one</option>
+                    <option v-for="(stateItem, id) in stateValue" :key="stateItem.title" :value="id">
+                      {{ stateItem.title }}
+                    </option>
+                  </select>
+                  <span class="iconfont">&#xe600;</span>
+                </div>
+
+              </div>
+            </div>
           </form>
           <div class="calculator-box-right">
             <div class="calculator-results-container">
@@ -156,7 +173,7 @@
                       <div class="line-left">
                         <span class="add">+</span>
                         <div class="line-box">
-                          $1500
+                          <input v-model="homeownerInsurance" type="number" @input="inputHomeownerInsurance">
                         </div>
                       </div>
 
@@ -169,7 +186,7 @@
                       <div class="line-left">
                         <span class="add">+</span>
                         <div class="line-box">
-                          $1500
+                          <input v-model="propertyTax" type="number">
                         </div>
                       </div>
 
@@ -182,7 +199,7 @@
                       <div class="line-left">
                         <span class="add">+</span>
                         <div class="line-box">
-                          $1500
+                          <input v-model="HOAFee" type="number" @input="inputHOAFee">
                         </div>
                       </div>
 
@@ -193,7 +210,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="total-monthly-payment">Total monthly payment = $1,703</div>
+                <div class="total-monthly-payment">Total monthly payment = ${{ calculationResults }}</div>
               </div>
             </div>
           </div>
@@ -232,30 +249,32 @@
               <a :href="product.link" class="view-details-btn" rel="noopener noreferrer nofollow">View details >> </a>
             </div>
           </div>
-          <div class="credit-score-col col">
-            <div class="credit-score-box">
-              <div class="key">MIN.CREDIT SCORE</div>
-              <div class="value">{{ product.credit_score }}</div>
+          <div class="product-item-center">
+            <div class="credit-score-col col">
+              <div class="credit-score-box">
+                <div class="key">MIN.CREDIT SCORE</div>
+                <div class="value">{{ product.credit_score }}</div>
+              </div>
             </div>
-          </div>
-          <div class="loan-types-col col">
-            <div class="loan-types-box">
-              <div class="key">LOAN TYPES</div>
-              <div class="value">
-                <p v-for="(type, id) in product.loan_types" :key="id" class="type">
-                  <span class="iconfont">&#xe604;</span>
-                  <span class="text">{{ type.text }}</span>
-                </p>
+            <div class="loan-types-col col">
+              <div class="loan-types-box">
+                <div class="key">LOAN TYPES</div>
+                <div class="value">
+                  <p v-for="(type, id) in product.loan_types" :key="id" class="type">
+                    <span class="iconfont">&#xe604;</span>
+                    <span class="text">{{ type.text }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="down-payment-col col">
+              <div class="down-payment-box">
+                <div class="key">MIN.DOWN PAYMENT</div>
+                <div class="value">{{ product.down_payment }}</div>
               </div>
             </div>
           </div>
-          <div class="down-payment-col col">
-            <div class="down-payment-box">
-              <div class="key">MIN.DOWN PAYMENT</div>
-              <div class="value">{{ product.down_payment }}</div>
-            </div>
-          </div>
-          <div class="btn-box-col col">
+          <div class="btn-box-col">
             <div class="btn-box">
               <a :href="product.link" class="btn" rel="noopener noreferrer nofollow">Check My Rates >></a>
               <a :href="product.link" class="visit-btn" rel="noopener noreferrer nofollow">Visit site >></a>
@@ -339,7 +358,7 @@
       <div class="website-btn-container">
         <p class="text">Calculate Your Mortgage Loan Amount</p>
         <a class="btn" href="" rel="noopener noreferrer nofollow">
-          Get Started <span class="iconfont">&#xe63c;</span>
+          Get Started >>
         </a>
       </div>
       <div class="mortgage-content-container">
@@ -472,119 +491,119 @@
       <div class="website-btn-container">
         <p class="text">Calculate Your Mortgage Loan Amount</p>
         <a class="btn" href="" rel="noopener noreferrer nofollow">
-          Get Started <span class="iconfont">&#xe63c;</span>
+          Get Started >>
         </a>
       </div>
     </section>
-    <section class="must-read-area">
-      <div class="must-read-container">
-        <h3 class="read-title">Must Read</h3>
-        <ul class="read-list">
-          <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
-          </li>
-          <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
-          </li>
-          <li>
+    <!--    <section class="must-read-area">-->
+    <!--      <div class="must-read-container">-->
+    <!--        <h3 class="read-title">Must Read</h3>-->
+    <!--        <ul class="read-list">-->
+    <!--          <li>-->
+    <!--            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance-->
+    <!--              Lenders</a>-->
+    <!--          </li>-->
+    <!--          <li>-->
+    <!--            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance-->
+    <!--              Lenders</a>-->
+    <!--          </li>-->
+    <!--          <li>-->
 
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
-          </li>
-        </ul>
+    <!--            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance-->
+    <!--              Lenders</a>-->
+    <!--          </li>-->
+    <!--        </ul>-->
 
-      </div>
-    </section>
-    <section class="best-mortgage-lenders-area">
-      <div class="best-mortgage-lenders-container">
-        <h2 class="title">Best mortgage lenders in December 2021</h2>
-        <div class="best-mortgage-lenders-main">
-          <div class="description-container">
-            <div class="text-content">
-              <h6 class="text-title">CHOOSE BEST MORTGAGE LENDER</h6>
-              <p class="text">If your down payment is less than 20% of the property’s purchase price, you have to
-                pay </p>
-            </div>
-            <ul class="attribute-list">
-              <li><span>Max loan</span></li>
-              <li><span>APR</span></li>
-              <li><span>Repayment terms</span></li>
-            </ul>
-          </div>
-          <div class="card-container">
-            <div class="card-item best-choice">
-              <img alt="" class="best-icon" src="@/assets/img/best-choice-icon.png">
-              <div class="card-top first">
-                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>
-              </div>
-              <div class="card-middle">
-                <div class="middle-container">
-                  <div class="logo-box">
-                    <img alt="" class="logo" src="">
-                  </div>
-                  <div class="button-group">
-                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>
-                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>
-                  </div>
-                </div>
+    <!--      </div>-->
+    <!--    </section>-->
+    <!--    <section class="best-mortgage-lenders-area">-->
+    <!--      <div class="best-mortgage-lenders-container">-->
+    <!--        <h2 class="title">Best mortgage lenders in December 2021</h2>-->
+    <!--        <div class="best-mortgage-lenders-main">-->
+    <!--          <div class="description-container">-->
+    <!--            <div class="text-content">-->
+    <!--              <h6 class="text-title">CHOOSE BEST MORTGAGE LENDER</h6>-->
+    <!--              <p class="text">If your down payment is less than 20% of the property’s purchase price, you have to-->
+    <!--                pay </p>-->
+    <!--            </div>-->
+    <!--            <ul class="attribute-list">-->
+    <!--              <li><span>Max loan</span></li>-->
+    <!--              <li><span>APR</span></li>-->
+    <!--              <li><span>Repayment terms</span></li>-->
+    <!--            </ul>-->
+    <!--          </div>-->
+    <!--          <div class="card-container">-->
+    <!--            <div class="card-item best-choice">-->
+    <!--              <img alt="" class="best-icon" src="@/assets/img/best-choice-icon.png">-->
+    <!--              <div class="card-top first">-->
+    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
+    <!--              </div>-->
+    <!--              <div class="card-middle">-->
+    <!--                <div class="middle-container">-->
+    <!--                  <div class="logo-box">-->
+    <!--                    <img alt="" class="logo" src="">-->
+    <!--                  </div>-->
+    <!--                  <div class="button-group">-->
+    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
+    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
+    <!--                  </div>-->
+    <!--                </div>-->
 
-              </div>
-              <ul class="attr-list">
-                <li><span>$10,000</span></li>
-                <li><span>2.49-35.99%</span></li>
-                <li><span>24-84</span></li>
-              </ul>
-            </div>
-            <div class="card-item">
-              <div class="card-top second">
-                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>
-              </div>
-              <div class="card-middle">
-                <div class="middle-container">
-                  <div class="logo-box">
-                    <img alt="" class="logo" src="">
-                  </div>
-                  <div class="button-group">
-                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>
-                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>
-                  </div>
-                </div>
+    <!--              </div>-->
+    <!--              <ul class="attr-list">-->
+    <!--                <li><span>$10,000</span></li>-->
+    <!--                <li><span>2.49-35.99%</span></li>-->
+    <!--                <li><span>24-84</span></li>-->
+    <!--              </ul>-->
+    <!--            </div>-->
+    <!--            <div class="card-item">-->
+    <!--              <div class="card-top second">-->
+    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
+    <!--              </div>-->
+    <!--              <div class="card-middle">-->
+    <!--                <div class="middle-container">-->
+    <!--                  <div class="logo-box">-->
+    <!--                    <img alt="" class="logo" src="">-->
+    <!--                  </div>-->
+    <!--                  <div class="button-group">-->
+    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
+    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
+    <!--                  </div>-->
+    <!--                </div>-->
 
-              </div>
-              <ul class="attr-list">
-                <li><span>$10,000</span></li>
-                <li><span>2.49-35.99%</span></li>
-                <li><span>24-84</span></li>
-              </ul>
-            </div>
-            <div class="card-item">
-              <div class="card-top third">
-                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>
-              </div>
-              <div class="card-middle">
-                <div class="middle-container">
-                  <div class="logo-box">
-                    <img alt="" class="logo" src="">
-                  </div>
-                  <div class="button-group">
-                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>
-                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>
-                  </div>
-                </div>
+    <!--              </div>-->
+    <!--              <ul class="attr-list">-->
+    <!--                <li><span>$10,000</span></li>-->
+    <!--                <li><span>2.49-35.99%</span></li>-->
+    <!--                <li><span>24-84</span></li>-->
+    <!--              </ul>-->
+    <!--            </div>-->
+    <!--            <div class="card-item">-->
+    <!--              <div class="card-top third">-->
+    <!--                <p class="desc"><span class="strong">1000 people</span> chose this brand this month</p>-->
+    <!--              </div>-->
+    <!--              <div class="card-middle">-->
+    <!--                <div class="middle-container">-->
+    <!--                  <div class="logo-box">-->
+    <!--                    <img alt="" class="logo" src="">-->
+    <!--                  </div>-->
+    <!--                  <div class="button-group">-->
+    <!--                    <a class="btn" href="" rel="noopener noreferrer nofollow">Check My Rates >></a>-->
+    <!--                    <a class="visit-site" href="" rel="noopener noreferrer nofollow">Visit site »</a>-->
+    <!--                  </div>-->
+    <!--                </div>-->
 
-              </div>
-              <ul class="attr-list">
-                <li><span>$10,000</span></li>
-                <li><span>2.49-35.99%</span></li>
-                <li><span>24-84</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--              </div>-->
+    <!--              <ul class="attr-list">-->
+    <!--                <li><span>$10,000</span></li>-->
+    <!--                <li><span>2.49-35.99%</span></li>-->
+    <!--                <li><span>24-84</span></li>-->
+    <!--              </ul>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </section>-->
   </main>
 </template>
 
@@ -616,7 +635,217 @@ export default {
       down_payment_percentage: 20,
       loan_terms: 10, //贷款年限
       interest_rate: 4.5, // 利率
-      calculationResults: 0
+      calculationResults: 0,
+      stateValue: [
+        {
+          title: 'Hawaii',
+          value: 0.28
+        },
+        {
+          title: 'Alabama',
+          value: 0.41
+        },
+        {
+          title: 'Colorado',
+          value: 0.51
+        },
+        {
+          title: 'Louisiana',
+          value: 0.55
+        },
+        {
+          title: 'District of Columbia',
+          value: 0.56
+        },
+        {
+          title: 'South Carolina',
+          value: 0.57
+        },
+        {
+          title: 'Delaware',
+          value: 0.57
+        },
+        {
+          title: 'West Virginia',
+          value: 0.58
+        },
+        {
+          title: 'Nevada',
+          value: 0.6
+        },
+        {
+          title: 'Wyoming',
+          value: 0.61
+        },
+        {
+          title: 'Arkansas',
+          value: 0.62
+        },
+        {
+          title: 'Utah',
+          value: 0.63
+        },
+        {
+          title: 'Arizona',
+          value: 0.66
+        },
+        {
+          title: 'Idaho',
+          value: 0.69
+        },
+        {
+          title: 'Tennessee',
+          value: 0.71
+        },
+        {
+          title: 'California',
+          value: 0.76
+        },
+        {
+          title: 'New Mexico',
+          value: 0.8
+        },
+        {
+          title: 'Mississippi',
+          value: 0.81
+        },
+        {
+          title: 'Virginia',
+          value: 0.82
+        },
+        {
+          title: 'Montana',
+          value: 0.84
+        },
+        {
+          title: 'North Carolina',
+          value: 0.84
+        },
+        {
+          title: 'Indiana',
+          value: 0.85
+        },
+        {
+          title: 'Kentucky',
+          value: 0.86
+        },
+        {
+          title: 'Florida',
+          value: 0.89
+        },
+        {
+          title: 'Oklahoma',
+          value: 0.9
+        },
+        {
+          title: 'Georgia',
+          value: 0.92
+        },
+        {
+          title: 'Missouri',
+          value: 0.97
+        },
+        {
+          title: 'Oregon',
+          value: 0.97
+        },
+        {
+          title: 'North Dakota',
+          value: 0.98
+        },
+        {
+          title: 'Washington',
+          value: 0.98
+        },
+        {
+          title: 'Maryland',
+          value: 1.09
+        },
+        {
+          title: 'Minnesota',
+          value: 1.12
+        },
+        {
+          title: 'Alaska',
+          value: 1.19
+        },
+        {
+          title: 'Massachusetts',
+          value: 1.23
+        },
+        {
+          title: 'South Dakota',
+          value: 1.31
+        },
+        {
+          title: 'Maine',
+          value: 1.36
+        },
+        {
+          title: 'Kansas',
+          value: 1.41
+        },
+        {
+          title: 'Michigan',
+          value: 1.54
+        },
+        {
+          title: 'Ohio',
+          value: 1.56
+        },
+        {
+          title: 'Iowa',
+          value: 1.57
+        },
+        {
+          title: 'Pennsylvania',
+          value: 1.58
+        },
+        {
+          title: 'Rhode Island',
+          value: 1.63
+        },
+        {
+          title: 'New York',
+          value: 1.72
+        },
+        {
+          title: 'Nebraska',
+          value: 1.73
+        },
+        {
+          title: 'Texas',
+          value: 1.8
+        },
+        {
+          title: 'Wisconsin',
+          value: 1.85
+        },
+        {
+          title: 'Vermont',
+          value: 1.9
+        },
+        {
+          title: 'Connecticut',
+          value: 2.14
+        },
+        {
+          title: 'New Hampshire',
+          value: 2.18
+        },
+        {
+          title: 'Illinois',
+          value: 2.27
+        },
+        {
+          title: 'New Jersey',
+          value: 2.49
+        }
+      ],
+      stateIndex: 0,
+      homeownerInsurance: 0, //房主保险
+      propertyTax: 0, //财产税
+      HOAFee: 0 //HOA费用
     }
   },
   methods: {
@@ -626,19 +855,30 @@ export default {
     },
     // 计算首付
     changeDownPayment() {
-      // isNaN(Number(this.down_payment)) ? 0 : this.down_payment > this.price * 0.9 ? this.price
-      // this.down_payment_percentage  =
+
+      this.down_payment_percentage = (this.down_payment / this.price) * 100;
 
     },
     // 计算首付百分比
     changeDownPaymentPercentage() {
-      console.log('ok');
-      this.down_payment = this.price * this.down_payment_percentage;
+
+      this.down_payment = this.price * (this.down_payment_percentage / 100);
     },
+    // 用户输入利率
     changeInterestRate() {
       this.calculate();
     },
+    inputHomeownerInsurance() {
+      this.calculate();
+    },
+    inputHOAFee() {
+      this.calculate();
+    },
     calculate() {
+
+      //计算首付
+      this.down_payment = Math.floor(this.price * (this.down_payment_percentage / 100));
+
       // 月利率
       let i = (this.interest_rate / 12) / 100;
 
@@ -648,9 +888,12 @@ export default {
       //本金
       let P = this.price;
 
+
       //每月付款
       let M = P * (i * Math.pow((1 + i), n)) / (Math.pow((1 + i), n) - 1);
-      this.calculationResults = Math.floor(M);
+      this.propertyTax = Number(((this.stateValue[this.stateIndex].value / 100) * M).toFixed(2));
+
+      this.calculationResults = Math.floor(M) + Number(this.HOAFee) + Number(this.homeownerInsurance) + this.propertyTax;
     }
   },
   created() {
