@@ -127,15 +127,18 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/mortgage-loan-calculator" rel="noopener noreferrer">Mortgage calculator</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/find-out-about-mortgage-refinancing" rel="noopener noreferrer">Find out
+              about mortgage refinancing
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer">How to get a mortgage
+            </a>
           </li>
         </ul>
       </div>
@@ -238,7 +241,10 @@
           <p>To qualify for a VA loan, certain requirements need to be fulfilled. These requirements include that the
             person or the family seeking the loan must have a military background. In addition, they need to meet the
             minimum credit score set by each lender offering VA loans. The loans should specifically be used to purchase
-            a house; it serves no other purpose. The person must have enough income to cover the monthly payments needed
+            a house; it serves no other purpose. The person must have enough income <a href="/mortgage-loan-calculator"
+                                                                                       rel="noreferrer noopener"
+                                                                                       target="_blank">to
+              cover the monthly payments</a> needed
             to pay off the mortgage. Lastly, the DTI ratio should not be more than 41%.</p>
           <h6 class="question-title">How to choose VA lenders?</h6>
           <p>To select the best lender, you will need to carry out a process of due diligence and find out the top VA
@@ -268,15 +274,18 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/mortgage-loan-calculator" rel="noopener noreferrer">Mortgage calculator</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/find-out-about-mortgage-refinancing" rel="noopener noreferrer">Find out
+              about mortgage refinancing
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer">How to get a mortgage
+            </a>
           </li>
         </ul>
       </div>

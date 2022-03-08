@@ -236,9 +236,11 @@
           <p>This FAQs section will guide first-time readers regarding FHA loans. Here are the most frequent questions
             we get asked:</p>
           <h6 class="question-title">What are the requirements to qualify for FHA loans?</h6>
-          <p>To <a href=""><strong>get approval for an FHA loan</strong></a>, a person needs to fulfil some minimum
+          <p>To <a href="/best-fha-lenders"><strong>get approval for an FHA loan</strong></a>, a person needs to fulfil
+            some minimum
             credit requirements. FHA loans are
-            for people with a poor credit score or a bad credit history. The minimum criteria set by different FHA
+            <a href="/guides/how-to-get-a-loan-with-bad-credit" rel="noreferrer noopener" target="_blank">for people
+              with a poor credit score or a bad credit history</a>. The minimum criteria set by different FHA
             lenders are a credit score of at least 580 as per the FICO scale. This score will qualify the minimum down
             payment that lenders ask for, which is 3.5% of the loan amount. If the credit score is less than 580, the
             down payment cost will rise up to a whopping 10%.</p>
@@ -252,7 +254,8 @@
             only opt-in to two categories, a 15-year term or a 30-year term. This means that there is no other option;
             hence there is no flexibility.</p>
           <h6 class="question-title">How can a person apply for an FHA loan?</h6>
-          <p>There are several banks and mortgage loan providers that are offering FHA loans. Each party has their own
+          <p><a href="/best-fha-lenders" rel="noreferrer noopener" target="_blank">There are several banks and mortgage
+            loan providers</a> that are offering FHA loans. Each party has their own
             set of requirements. So it is in the interest of the borrower to carry out due diligence and <strong>compare
               potential lenders</strong> in the market and choose the one that best fits them.</p>
           <p>The application process is simple; it can be done either through the online process or going to the
@@ -279,15 +282,18 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/mortgage-loan-calculator" rel="noopener noreferrer">Mortgage calculator</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer">How to get a
+              mortgage?</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/guides/find-out-about-mortgage-refinancing" rel="noopener noreferrer">Find out
+              about mortgage refinancing
+            </a>
           </li>
         </ul>
       </div>

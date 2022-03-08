@@ -125,15 +125,18 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/mortgage-loan-calculator" rel="noopener noreferrer">Mortgage calculator</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/find-out-about-mortgage-refinancing" rel="noopener noreferrer">Find out
+              about mortgage refinancing
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer">How to get a mortgage
+            </a>
           </li>
         </ul>
       </div>
@@ -196,7 +199,7 @@
 
                     <li v-for="(advantage, id) in product.advantage" :key="id">
                       <span class="iconfont">&#xe604;</span>
-                      <p class="text">{{ advantage.text }}</p>
+                      <p class="text" v-html="advantage.text"></p>
                     </li>
                   </ul>
                 </div>
@@ -278,15 +281,18 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/mortgage-loan-calculator" rel="noopener noreferrer">Mortgage calculator</a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/find-out-about-mortgage-refinancing" rel="noopener noreferrer">Find out
+              about mortgage refinancing
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer">How to get a mortgage
+            </a>
           </li>
         </ul>
       </div>

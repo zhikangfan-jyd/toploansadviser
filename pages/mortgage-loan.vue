@@ -462,7 +462,8 @@
         </h2>
         <div class="question-content">
           <p>
-            Before taking a mortgage loan be sure you familiarize yourself
+            Before <a href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer" target="_blank">taking a mortgage
+            loan</a> be sure you familiarize yourself
             with all the terms and conditions associated with the loan. To
             help you get started, we’ve compiled some of the most frequently
             asked questions about mortgage loans below.
@@ -476,8 +477,9 @@
               application process. Fill it out, submit the form along with pertinent documentation.
             </li>
             <li><strong>Wait To Receive Loan Estimate</strong> – A lender is required to give you an estimate within
-              three business days of a submitted application. The document needs to entail three things – monthly
-              mortgage rate, estimated interest rate and closing costs.
+              three business days of a submitted application. The document needs to entail three things – <a
+                href="/mortgage-loan-calculator" rel="noopener noreferrer" target="_blank">monthly mortgage rate</a>,
+              estimated interest rate and closing costs.
             </li>
             <li><strong>Set Up A Home Inspection</strong> – Be sure to communicate with the seller about dates and
               times for a home inspection. An inspection will help uncover potential problems.
@@ -509,7 +511,8 @@
           <p>There are two types of interest rates: fixed and adjustable.</p>
           <p><strong>Fixed-Rate</strong></p>
           <p>With a fixed-rate mortgage, the interest rate stays the same throughout the life of the loan. This means
-            the monthly mortgage payment also remains the same. You don’t have to worry about increasing costs, but
+            <a href="/mortgage-loan-calculator" rel="noopener noreferrer" target="_blank">the monthly mortgage
+              payment</a> also remains the same. You don’t have to worry about increasing costs, but
             you don’t benefit unless you choose to refinance if the market drops.</p>
           <p>Fixed-rate mortgages tend to have a higher initial monthly payment because the lender is unable to raise
             the interest rate when the market dictates it.</p>
@@ -530,7 +533,8 @@
 
           <ul>
             <li>Property type and use</li>
-            <li>Your credit history</li>
+            <li><a href="/guides/how-your-credit-score-affects-your-loan-chances" rel="noopener noreferrer"
+                   target="_blank">Your credit history</a></li>
             <li>Home price</li>
             <li>Down payment</li>
             <li>Loan term</li>
@@ -555,7 +559,8 @@
           <p>From that point, here is what you’ll need to do:</p>
           <ul>
             <li><strong>Analyze Your Credit History</strong> – Look at your credit report and its history before
-              applying for a mortgage. If there are any mistakes (that affect the score), address them immediately
+              <a href="/guides/how-to-get-a-mortgage" rel="noopener noreferrer" target="_blank">applying for a
+                mortgage</a>. If there are any mistakes (that affect the score), address them immediately
               with all three credit bureaus – TransUnion, Experian and Equifax. If your score is low, make sure to
               improve them first.
             </li>
@@ -569,7 +574,10 @@
               <strong>Review Offers</strong> – Any lender you applied with will give you a loan estimate that includes
               monthly payment, interest rate, closing costs and other important information.
             </li>
-            <li><strong>Pick Your Lender</strong> – Once you’ve reviewed each loan term, pick the lender best for you.
+            <li><strong>Pick Your Lender</strong> – Once you’ve reviewed each loan term, <a href="/mortgage-loan"
+                                                                                            rel="noopener noreferrer"
+                                                                                            target="_blank">pick
+              the lender best for you</a>.
             </li>
             <li><strong>Ensure Quick Responses To Any Requests Made</strong> – When your loan goes through the
               processing and underwriting, the lender may request something. Be sure to respond as quickly as you can
@@ -596,7 +604,8 @@
               make it the best. Use the APR to compare the lenders’ offers.
             </li>
             <li><strong>Product Offerings</strong> – Look for a state-licensed lender that offers great options for
-              you – be it a VA loan, 30-year-fixed rate loan, etc.
+              you – be it <a href="/best-va-lenders" rel="noopener noreferrer" target="_blank">a VA loan</a>,
+              30-year-fixed rate loan, etc.
             </li>
             <li><strong>Customer Service Reviews</strong> – Read reviews and feedback to learn more about the lender.
               You want lenders who treat their customers with respect as well as offer a good loan rate
@@ -614,7 +623,9 @@
             to make a lump sum payment. This may be ideal for individuals who are going to sell or refinance the home
             before the impending balloon payment is due.</p>
           <p><strong>Conforming Loans</strong></p>
-          <p>The loans are subjected to the limits and guidelines as laid out by Fannie Mae and Freddie Mac.</p>
+          <p>The loans are subjected to the limits and guidelines as laid out by <strong><a
+            href="https://www.fanniemae.com/" rel="noopener nofollow noreferrer" target="_blank">Fannie Mae</a></strong>
+            and Freddie Mac.</p>
           <p><strong>Conventional Mortgages</strong></p>
           <p>These mortgages originate from private lenders and are not federally backed by the government. To
             qualify, private lenders want a minimum 620 credit score, a low debt-to-income ratio and a minimum 3% down
@@ -626,11 +637,13 @@
           <p>These are loans from the Department of Agriculture, Department of Veterans Affairs and Federal Housing
             Administration. If you are unable to get a convention loan, you could attain a government-backed loan.</p>
           <ul>
-            <li><strong>FHA</strong> – The majority of FHA-backed lenders want a minimum of 580 in credit score and a
+            <li><strong><a href="/best-fha-lenders" rel="noopener noreferrer" target="_blank">FHA</a></strong> – The
+              majority of FHA-backed lenders want a minimum of 580 in credit score and a
               3.5% down payment. However, you could be approved if you agree to pay a 10% down payment even if your
               credit score is 500 to 579.
             </li>
-            <li><strong>VA</strong> – The VA has no requirements about down payments or credit score minimums, but a
+            <li><strong><a href="/best-va-lenders" rel="noopener noreferrer" target="_blank">VA</a></strong> – The VA
+              has no requirements about down payments or credit score minimums, but a
               lender will do an in-depth analysis of your financial profile. A lender will need to see the Certificate
               of Eligibility (COE) that shows you are eligible for a VA loan.
             </li>
