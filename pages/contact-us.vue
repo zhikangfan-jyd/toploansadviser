@@ -67,8 +67,22 @@
 
 <script>
 import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
 
 export default {
+  head () {
+    return seo({
+      title: 'Contact Us | Toploansadviser.com',
+      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Contact Toploansadviser now.',
+      url: 'https://www.toploansadvisr.com/contact-us',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: 'image/webp',
+    });
+  },
   data() {
     return {
       form: {

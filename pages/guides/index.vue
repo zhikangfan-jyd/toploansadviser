@@ -400,7 +400,22 @@
 </template>
 
 <script>
+import {seo} from "../../utils/seo";
+
 export default {
+  head() {
+    return seo({
+      title: 'Guides & Tips | Toploansadviser.com',
+      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Read more Toploansadviser guides & tips here.',
+      url: 'https://www.toploansadvisr.com/guides',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: 'image/webp',
+    });
+  },
   data() {
     return {
       blogs: [],

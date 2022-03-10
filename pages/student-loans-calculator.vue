@@ -436,8 +436,20 @@
 <script>
 import NewStar from '../components/NewStar/index.vue'
 import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
 
 export default {
+  head: seo({
+    title: 'Student Loan Calculator | Toploansadviser.com',
+    description: "It' s easy to calculate your student loan monthly payment. Just enter the details of your student loan into our calculator to see your personal results. It makes you know your loan clearly.",
+    url: 'https://www.toploansadviser.com/student-loan-calculator',
+    img: 'https://www.toploansadviser.com/data/images/student-loan.webp',
+    img_size: {
+      width: '551',
+      height: '341'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
     NewStar
   },

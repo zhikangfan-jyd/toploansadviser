@@ -250,8 +250,20 @@
 <script>
 import NewStar from '../components/NewStar/index.vue'
 import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
 
 export default {
+  head: seo({
+    title: 'Home Equity Loan Calculator | Toploansadviser.com',
+    description: "If you don' t know how much monthly payment on your home equity loan or HELOC, please use home equity loan calculator. It can evaluate your payoff options quickly and easily.",
+    url: 'https://www.toploansadviser.com/home-equity-calculator',
+    img: 'https://www.toploansadviser.com/data/images/student-loan.webp',
+    img_size: {
+      width: '551',
+      height: '341'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
     NewStar
   },

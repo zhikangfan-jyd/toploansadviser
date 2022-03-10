@@ -161,7 +161,7 @@
             financially speaking. To calculate your equity in a property, divide the market value of the home with the
             amount you owe on your mortgage. Now, equity loans operate as a second mortgage, which means that taking out
             this loan would put your home at risk of foreclosure in case you fail to make the agreed payments.</p>
-          <p>It’s important to address that home equity loans are not the same thing as a home equity line of credit. In
+          <p>It’s important to address that home equity loans are not the same thing as a <a href="/best-helco-loan" target="_blank" rel="noopener noreferrer">home equity line of credit</a>. In
             short, home equity loans provide a one-time amount at a fixed interest rate. A HELOC on the other hand is a
             revolving source of funds that can operate like a credit card - you can access the funds whenever you need
             them. Equity loans are offered by banks and other financial institutions, which means you can choose from
@@ -196,7 +196,7 @@
             <dd>By taking out a home equity loan, you will have two mortgages to pay off (make sure you can afford
               it).
             </dd>
-            <dd>If you fall behind on your monthly payments, you’ll risk losing the property.</dd>
+            <dd>If you fall behind on <a href="/home-equity-calculator" target="_blank" rel="noopener noreferrer">your monthly payments</a>, you’ll risk losing the property.</dd>
           </dl>
           <h6 class="question-title">What Are the Home Equity Loan Alternatives </h6>
           <p>Before you opt for a home equity loan or a HELOC as your preferred way of borrowing money, make sure to
@@ -208,10 +208,10 @@
           <p>2. Reverse mortgage: A reverse mortgage is a type of mortgage available to homeowners of 62 or more years
             of age. This mortgage allows them to convert home equity into cash in order to supplement the retirement
             income.</p>
-          <p>3. Personal loan: A personal loan is pretty easy to get if you have a good credit score and it can be used
+          <p>3. <a href="/personal-loan" target="_blank" rel="noopener noreferrer">Personal loan</a>: A personal loan is pretty easy to get if you have a good credit score and it can be used
             for anything. However, keep in mind that personal loans have much higher interest rates compared to home
             equity loans.</p>
-          <p>4. Debt consolidation loans: With a debt consolidation loan you can combine multiple high-interest debts
+          <p>4. <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">Debt consolidation loans</a>: With a debt consolidation loan you can combine multiple high-interest debts
             that you owe and turn them into one new loan to reduce your interest charges and make the repayment process
             a little easier.</p>
           <h6 class="question-title">How to Choose the Best Home Equity Loan</h6>
@@ -250,7 +250,7 @@
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/home-equity-calculator" rel="noopener noreferrer">Home Equity Calculator</a>
           </li>
           <li>
             <span class="circle"></span>

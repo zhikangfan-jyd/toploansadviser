@@ -610,8 +610,20 @@
 <script>
 import NewStar from '../components/NewStar/index.vue'
 import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
 
 export default {
+  head: seo({
+    title: 'Mortgage Loan Calculator | Toploansadviser.com',
+    description: "Check out the site' s best free mortgage loan calculator to save money on your home loan. It is a best way to estimate your monthly payment with loan interest rate, homeowner' s insurance and more.",
+    url: 'https://www.toploansadviser.com/mortgage-loan-calculator',
+    img: 'https://www.toploansadviser.com/data/images/mortgage-loan.webp',
+    img_size: {
+      width: '522',
+      height: '360'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
     NewStar
   },

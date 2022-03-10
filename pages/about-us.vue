@@ -16,9 +16,9 @@
           </div>
         </div>
         <img
-          src="@/assets/img/about-us-banner-bg.webp"
           alt="Toploansadviser About"
           class="banner-img"
+          src="@/assets/img/about-us-banner-bg.webp"
         />
       </div>
     </section>
@@ -26,9 +26,9 @@
       <div class="content-item first">
         <div class="pic-box">
           <img
-            src="@/assets/img/about-pic-1.webp"
             alt="Toploansadviser About"
             class="pic"
+            src="@/assets/img/about-pic-1.webp"
           />
         </div>
         <div class="text-box">
@@ -60,18 +60,18 @@
         </div>
         <div class="pic-box">
           <img
-            src="@/assets/img/about-pic-2.webp"
             alt="Toploansadviser About"
             class="pic"
+            src="@/assets/img/about-pic-2.webp"
           />
         </div>
       </div>
       <div class="content-item">
         <div class="pic-box">
           <img
-            src="@/assets/img/about-pic-3.webp"
             alt="Toploansadviser About"
             class="pic"
+            src="@/assets/img/about-pic-3.webp"
           />
         </div>
         <div class="text-box">
@@ -91,8 +91,23 @@
 </template>
 
 <script>
-import { updateTime } from "../utils/date";
+import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
+
 export default {
+  head() {
+    return seo({
+      title: 'About Us | Toploansadviser.com',
+      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Toploansadviser  is made up of experts who believe in updating you the most useful information to make informed decisions about your financial life.',
+      url: 'https://www.toploansadvisr.com/about-us',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: 'image/webp',
+    });
+  },
   methods: {
     updateTime,
   },

@@ -334,9 +334,7 @@
             <div class="product-include-card-content" v-html="product.description"></div>
           </div>
         </div>
-
       </div>
-
     </section>
     <section class="question-area">
       <div class="question-container">
@@ -349,9 +347,15 @@
             during which you can access the money. Once the draw period ends, you have to start repaying the loan.
             What’s great about HELOC is that it allows you to borrow only as much money as you need. </p>
           <p>For example, if you were doing a home improvement project and you weren’t sure how much that’s going to
-            cost, a HELOC would be a much better option than a home equity loan. That’s because you can get approved for
-            as much as $500 000 on a HELOC but you don’t have to use all of it. You can only use the money you need and
-            you’ll only be paying interest on the amount you spend, whereas a regular home equity loan just gives you a
+            cost, a HELOC would be a much better option than <a href="/best-home-equity-loan" rel="noopener noreferrer"
+                                                                target="_blank">a home equity loan</a>. That’s
+            because you can get approved for
+            as much as $500 000 on a HELOC but you don’t have to use all of it. <a href="/home-equity-calculator"
+                                                                                   rel="noopener noreferrer"
+                                                                                   target="_blank">You can
+              only use the money you need and
+              you’ll only be paying interest on the amount you spend</a>, whereas a regular home equity loan just gives
+            you a
             lump sum of money that you have to repay in interest rates entirely.</p>
           <h6 class="question-title">The Pros and Cons of HELOC</h6>
           <dl>
@@ -407,21 +411,24 @@
       </div>
     </section>
     <section class="conclusion-area">
-
       <div class="more-from-toploansadviser-container">
         <h3 class="title">Read More »</h3>
         <ul class="list">
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Mortgage calculator</a>
+            <a class="link text" href="/home-equity-calculator" rel="noopener noreferrer">Home Equity Calculator
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Learn how much house you can afford</a>
+            <a class="link text" href="/guides/how-to-refinance-a-heloc" rel="noopener noreferrer">How to refinance a
+              helco
+            </a>
           </li>
           <li>
             <span class="circle"></span>
-            <a class="link text" href="" rel="noopener noreferrer nofollow">Compare mortgage rates</a>
+            <a class="link text" href="/best-home-equity-loan" rel="noopener noreferrer">Best Home Equity Loan
+            </a>
           </li>
         </ul>
       </div>

@@ -364,8 +364,21 @@
 </template>
 <script>
 import {updateTime} from "../utils/date";
-
+import {seo} from '../utils/seo'
 export default {
+  head () {
+    return seo({
+      title: 'Term of Use | Toploansadviser.com',
+      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Toploansadviser  is made up of experts who believe in updating you the most useful information to make informed decisions about your financial life.',
+      url: 'https://www.toploansadvisr.com/term-of-use',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: 'image/webp',
+    });
+  },
   methods: {
     updateTime,
   },

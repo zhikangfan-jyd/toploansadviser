@@ -230,11 +230,13 @@
           <p>When you choose to attend college, you know that the cost will be exorbitantly high. You have to find ways
             to pay for the costs, such as scholarships, grants and loans. If you’ve got the maximum in grants and don’t
             qualify for scholarships, you may still not have enough. If this is the case for you, you may want to look
-            at private student loans.</p>
+            at <a href="/guides/what-are-private-student-loans" rel="noopener noreferrer" target="_blank">private
+              student loans</a>.</p>
           <p>Private student loans differ from federal student loans, as financial institutions and private lenders
             finance these loans. They also use their credit score and creditworthiness to determine if you are eligible
             for a loan. On top of that, the repayment terms are less than ideal, and a co-signer may be necessary.</p>
-          <p>Think of private student loans like personal loans. They are there to close the gaps of school costs
+          <p>Think of private student loans like <a href="/personal-loan" rel="noopener noreferrer" target="_blank">personal
+            loans</a>. They are there to close the gaps of school costs
             federal loans do not.</p>
 
           <h6 class="question-title">Private student loan qualifications</h6>
@@ -252,7 +254,9 @@
             you can meet their credit and income requirements.</p>
 
           <h6 class="question-title">Private student loan application process</h6>
-          <p>Before you attempt to apply for any private student loan, review your credit and learn your credit score.
+          <p>Before you attempt <a href="/guides/how-to-apply-for-a-private-student-loan" rel="noopener noreferrer"
+                                   target="_blank">to apply for any private student loan</a>, review your
+            credit and learn your credit score.
             Private student loan lenders tend to offer loans to those with a high credit score or a demonstrated history
             of repayment. If your credit is less than ideal, find a person whose credit is good and ask them to be a
             co-signer for the loan.</p>

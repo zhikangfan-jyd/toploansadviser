@@ -567,29 +567,30 @@ import Message5 from '../components/Message5/index'
 import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
+import {seo} from '../utils/seo'
 
 export default {
   layout: 'clear',
-  head: {
-    title: 'Best Personal Loans Rates Lenders &Companies | Toploansadviser.com',
-    link: [
-      {
-        rel: "canonical",
-        href: "https://www.toploansadviser.com/personal-loan",
+  head() {
+    return seo({
+      title: 'Best Personal Loans Rates Lenders & Companies | Toploansadviser.com',
+      description: 'Best Personal Loans rates from multiple lenders online  with low interest for you, Credible, lightstream and Sofi are top lenders for bad credit score.',
+      keywords: 'best personal loan rates, best personal loan companies, best personal loan interest rates, best personal loan lenders',
+      link: [
+        {
+          rel: "canonical",
+          href: "https://www.toploansadviser.com/personal-loan"
+        }
+      ],
+      url: 'https://www.toploansadviser.com/best-personal-loan',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
       },
-    ],
-    meta: [
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: 'best personal loan rates, best personal loan companies, best personal loan interest rates, best personal loan lenders'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Best Personal Loans rates from multiple lenders online  with low interest for you, Credible, lightstream and Sofi are top lenders for bad credit score.'
-      }
-    ]
+      img_type: 'image/webp',
+
+    });
   },
   components: {
     FoldTheCard,

@@ -626,8 +626,22 @@
 import NewStar from '../components/NewStar/index.vue'
 import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
 
 export default {
+  head: seo({
+    title: 'Personal Loan Calculator | Toploansadviser.com',
+    description: "How does personal loan calculator work? Or do you want to know how to calculator your personl loan? Come to the toploansadviser.com and know it. It can help you calculate your monthly payment.",
+
+
+    url: 'https://www.toploansadviser.com/personal-loan-calculator',
+    img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+    img_size: {
+      width: '325',
+      height: '295'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
     NewStar
   },

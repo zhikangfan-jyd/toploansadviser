@@ -293,14 +293,19 @@
           <h2 class="question-title">What Is a Parent PLUS Loan?</h2>
           <p>As we explained above, a Parent PLUS loan is a special type of college loan that’s issued to parents. If
             you’re looking for ways to finance your child’s education, then a parent PLUS loan may be a good option to
-            consider. However, keep in mind that the Parent PLUS loans come with fees, unlike private loans offered by
+            consider. However, keep in mind that the Parent PLUS loans come with fees, unlike <a
+              href="/guides/what-are-private-student-loans" rel="noopener noreferrer" target="_blank">private loans</a>
+            offered by
             banks and private lenders. That is because these federal loans offer benefits in terms of easier repayment
-            and forgiveness plans. You need to think carefully before deciding between a federal Parent PLUS loan and a
-            private loan.</p>
+            and forgiveness plans. You need to think carefully before deciding between a federal Parent PLUS loan and <a
+              href="/guides/how-to-apply-for-a-private-student-loan" rel="noopener noreferrer" target="_blank">a private
+              loan</a>.</p>
           <dl>
             <dt>Don’t take out a federal Parent PLUS loan if:</dt>
             <dd>Your financial situation is solid and you’re able to work during the entire loan term. If this is the
-              case, then a private loan is a better option because you will get lower interest rates and thus spend less
+              case, then a private loan is a better option because you will <a
+                href="/guides/how-to-repay-your-student-loan-faster-and-with-less-interest" rel="noopener noreferrer"
+                target="_blank">get lower interest rates</a> and thus spend less
               money.
             </dd>
             <dd>Your child hasn’t yet maxed out their federal student loan options. Go for the student loans first and,
@@ -336,7 +341,10 @@
           </dl>
           <h2 class="question-title">How to Apply for a Parent Loan?</h2>
           <p>Applying for a parent loan includes one additional step compared to regular student loan applications.
-            First, you need to submit the Free Application for Federal Student Aid, known as FAFSA. Then, contact the
+            First, you need to submit the <a href="/guides/6-primary-advantages-to-filing-an-early-fafsa"
+                                             rel="noopener noreferrer"
+                                             target="_blank">Free Application for Federal Student Aid, known as
+              FAFSA</a>. Then, contact the
             child’s school to get further instructions, as the process may differ depending on the college procedures.
             In most cases, you will have to apply for a PLUS loan on studentloans.gov.</p>
           <p>Go through the required credit check and make sure all your credit freezes are lifted before you initiate
@@ -354,28 +362,33 @@
 import NewStar from '~/components/NewStar/index.vue';
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
+import {seo} from '../utils/seo'
 
 export default {
-  head() {
-    return {
-      link: [
-        {rel: "canonical", href: "https://www.toploansadviser.com/student-loan"}
-      ]
-    }
-  },
+  head: seo({
+    title: 'Best Parent Student Loan | Toploansadviser.com',
+    description: "Our parent loan process is quick and transparent. You can find the most suitable option from our wedsite. And we provide guidance for what you want to apply step by step. Don' t worry and go for it.\n",
+    keywords: "student loan,student loan interest rates,student loan interest,student loans 2022,my student loan,student loans for bad credit,student loan website,no interest student loans",
+    link: [
+      {rel: "canonical", href: "https://www.toploansadviser.com/student-loan"}
+    ],
+    url: 'https://www.toploansadviser.com/best-parent-loan',
+    img: 'https://www.toploansadviser.com/data/images/student-loan.webp',
+    img_size: {
+      width: '551',
+      height: '341'
+    },
+    img_type: 'image/webp',
+  }),
   components: {
     NewStar
   },
   async asyncData({$axios, error, route}) {
-
-
     try {
       // 获取所有产品
       let product_results = await $axios.$get(
         "/data/best-parent-loan.json"
       );
-
-
       return {
         products: product_results.data
       };

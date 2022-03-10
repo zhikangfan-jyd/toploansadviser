@@ -12,9 +12,9 @@
         </div>
       </div>
       <img
-        src="@/assets/img/disclosure-banner.webp"
         alt="Toploansadviser"
         class="banner-img"
+        src="@/assets/img/disclosure-banner.webp"
       />
     </section>
     <section class="disclosure-container">
@@ -35,8 +35,23 @@
 </template>
 
 <script>
-import { updateTime } from "../utils/date";
+import {updateTime} from "../utils/date";
+import {seo} from "../utils/seo";
+
 export default {
+  head() {
+    return seo({
+      title: 'Advertising Disclosure | Toploansadviser.com',
+      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Toploansadviser  is made up of experts who believe in updating you the most useful information to make informed decisions about your financial life.',
+      url: 'https://www.toploansadvisr.com/disclosure',
+      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      img_size: {
+        width: '325',
+        height: '295'
+      },
+      img_type: 'image/webp',
+    });
+  },
   methods: {
     updateTime,
   },
