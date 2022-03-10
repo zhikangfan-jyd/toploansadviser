@@ -697,16 +697,30 @@
                     font-size: 14px;
                     color: #2E9A61;
                     vertical-align: middle;
+
+                    &.question-mark {
+                      background-color: #e9e9e9;
+                      border-radius: 50%;
+                    }
                   }
 
                   .text {
+                    position: relative;
                     display: inline-block;
                     margin-left: 8px;
                     vertical-align: middle;
                     font-size: 16px;
                     color: #000;
                     font-weight: 600;
+
+                    .popup {
+                      position: absolute;
+                      right: -18px;
+                      top: -3px;
+                    }
                   }
+
+
                 }
               }
             }

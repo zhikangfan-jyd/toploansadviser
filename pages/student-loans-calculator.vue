@@ -271,7 +271,8 @@
           <p>Let’s start with the most important piece of info - the loan amount. This amount of money will be based on
             your college enrollment level. For instance, if you’re a graduate student you won’t be offered the same
             amount as an undergraduate student. The loan amount will also depend on whether you’re looking at federal or
-            <a href="/personal-loan" target="_blank">private lenders</a>. Regardless of how much money you are offered,
+            <a href="/student-loan" rel="noreferrer noopener" target="_blank">private lenders</a>. Regardless of how
+            much money you are offered,
             it’s always best to borrow only the amount
             you actually need in order to cover your education fees. </p>
         </div>
@@ -326,17 +327,11 @@
         <h3 class="read-title">Read More»</h3>
         <ul class="read-list">
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/student-loan" rel="noreferrer noopener" target="_blank">Best private student
+              loan</a>
           </li>
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
-          </li>
-          <li>
-
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/best-parent-loan" rel="noreferrer noopener" target="_blank">Best parent loan</a>
           </li>
         </ul>
 

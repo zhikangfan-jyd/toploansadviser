@@ -183,7 +183,8 @@
             for the specific location. In case some of the automatic estimates are not correct, you can easily edit them
             to insert correct information. Your estimated home value and mortgage balance are needed to calculate your
             LTV ratio.</p>
-          <p>LTV stands for loan-to-value ratio and you get it by dividing the amount you owe on your mortgage by the
+          <p><strong>LTV stands for loan-to-value ratio</strong> and you get it by dividing the amount you owe on your
+            mortgage by the
             market value of your home. Finally, you’ll need to insert your exact credit score to find out what kind of
             rates you can qualify for. Once you’ve got all the info in the calculator, click on the green button to get
             results and see what interest rates apply to your situation.</p>
@@ -206,7 +207,8 @@
             HELOC is much different than a home equity loan – it allows you to borrow money against your home equity
             through a system similar to a credit card. With a HELOC, you can draw different amounts of money as you come
             to need them during a 10 year withdrawal period. </p>
-          <p>Home equity loans, on the other hand, provide a one time lump sum payment which can come in handy if you
+          <p><a href="/best-home-equity-loan" rel="noopener noreferrer" target="_blank">Home equity loans</a>, on the
+            other hand, provide a one time lump sum payment which can come in handy if you
             need to cover big expenses such as emergencies or home renovations. Make sure to look into both options
             before settling for one. There are HELOC calculators you can use as well, which are more suitable for
             determining how much money you can borrow over an extended period of time. The requirements for this
@@ -227,17 +229,11 @@
         <h3 class="read-title">Read More»</h3>
         <ul class="read-list">
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/best-helco-loan" rel="noreferrer noopener" target="_blank">Best HELCO loan</a>
           </li>
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
-              Lenders</a>
-          </li>
-          <li>
-
-            <a class="read-link" href="" rel="noreferrer noopener" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/guides/how-to-refinance-a-heloc" rel="noreferrer noopener" target="_blank">How
+              to refinance a helco</a>
           </li>
         </ul>
 

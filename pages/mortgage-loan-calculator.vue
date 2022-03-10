@@ -308,8 +308,8 @@
         <div class="mortgage-content">
           <p>
             As is evident from the term, it is the period of time that is spent in paying off the loan. The preferred
-            loan term is usually 30 years. Terms available depends on your financial situation and type of loan
-            chosen. </p>
+            loan term is usually 30 years. Terms available depends on your financial situation and <a href="/best-mortgage-refinance-lenders" target="_blank" rel="noopener noreferrer">type of loan
+            chosen</a>. </p>
 
           <p>Moreover, your budget plays a crucial role here. For instance, if you can afford to make higher monthly
             payments, you could clear off the loan quicker over a shorter term. The interest will be less, while you
@@ -366,7 +366,7 @@
         <div class="mortgage-content">
           <p class="green formula">Monthly mortgage payment = Principal + Interest + Escrow Account Payment</p>
           <p class="green formula">Escrow account = Homeowners Insurance + Property Taxes + PMI (if applicable)</p>
-          <p>The lump sum that you have to pay to your mortgage lender each month is broken down into various different
+          <p>The lump sum that you have to <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">pay to your mortgage lender</a> each month is broken down into various different
             items. Most homebuyers have an escrow account – it is the account your lender uses to pay your property tax
             bill and homeowner’s insurance. It means the bill you get each month for your mortgage not only includes the
             principal amount and interest payment, but also property taxes, home insurance and, in some cases, private
@@ -377,7 +377,7 @@
           <p>This is a policy you purchase from an insurance provider that covers you for natural disasters like fire,
             storms, etc. along with thefts and burglaries. For earthquakes and floods, you have to take a separate
             policy. This type of insurance can cost anywhere between few hundred dollars to thousands of dollars
-            depending upon size and location of the property. When you borrow money to buy a home, your lender requires
+            depending upon size and location of the property. When <a href="/guides/best-loan-options-for-first-time-home-buyers" target="_blank" rel="noopener noreferrer">you borrow money to buy a home</a>, your lender requires
             that you to have homeowners insurance. The reason is this type of insurance policy is a protection for the
             lender’s collateral, which in this case is your home, if there are fires or other events that cause
             damage.</p>
@@ -453,8 +453,8 @@
             possible.</p>
           <p class="strong">Exercise caution as monthly payments can go up for the following reason:</p>
           <p>Homeowners’ insurance premiums or property taxes go up, which directly affect mortgage payments.</p>
-          <p>You get late when it comes to paying, and consequently incur a late fee from your mortgage loan
-            servicer.</p>
+          <p>You get late when it comes to paying, and consequently incur a late fee from <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">your mortgage loan
+            servicer</a>.</p>
           <p>You have an adjustable rate mortgage, and the rate goes up at the adjustment period.</p>
         </div>
         <h5 class="mortgage-container-subtitle">To sum up, here is what your mortgage payment consists of</h5>

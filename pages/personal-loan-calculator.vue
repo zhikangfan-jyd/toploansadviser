@@ -480,7 +480,7 @@
             health. This means paying off your debt on time and working to keep your credit score high. You must prove
             to lenders that debts will be paid off on time and that you are not posing a risk to them. </p>
           <p>An easier way to make sure you are getting a good interest rate is to simply shop around. Make sure to
-            <a href="/personal-loan" target="_blank"><strong>compare loan offers and pick the one</strong></a> that is
+            <a href="/personal-loan" target="_blank"><strong><a href="/guides/what-kind-of-loan-do-you-need" target="_blank" rel="noopener noreferrer">compare loan offers and pick the one</a></strong></a> that is
             going to work the best in your situation. </p>
           <p>Another option that you have is to get somebody to co-sign for you. If you know somebody with good credit
             you can have them vouch for you on the loan so that you are more likely to get a better rate. The payments
@@ -492,9 +492,8 @@
         <div class="personal-content">
           <p>Understanding the factors that determine how you <strong>get the best interest rates</strong> is important.
             You do not want
-            to risk ruining your credit score and not being able to <a href="/how-to-apply-a-personal-loan"
-                                                                       target="_blank"><strong>get a good deal on a
-              loan</strong></a>.
+            to risk ruining your credit score and not being able to<strong>get a good deal on a
+              loan</strong>.
             You must prove to lenders
             that you are not a risky client, and they will reward you with better interest rates which will help you
             save money. If you understand how interest works and keep your credit score in check then <a
@@ -515,17 +514,14 @@
         <h3 class="read-title">Read More»</h3>
         <ul class="read-list">
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/personal-loan" rel="noreferrer noopener" target="_blank">Best Personal loan</a>
           </li>
           <li>
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/best-consolidation-loans" rel="noreferrer noopener" target="_blank">Best debt consolidation loan</a>
           </li>
           <li>
 
-            <a class="read-link" href="" rel="noreferrer noopener nofollow" target="_blank">Best Mortgage Refinance
-              Lenders</a>
+            <a class="read-link" href="/best-home-improvement-loan" rel="noreferrer noopener" target="_blank">Best home improvement loan</a>
           </li>
         </ul>
 

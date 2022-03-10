@@ -415,11 +415,24 @@
 
                       .iconfont {
                         color: $theme-color;
+
+                        &.question-mark {
+                          background-color: #e9e9e9;
+                          border-radius: 50%;
+                          font-size: 14px;
+                        }
                       }
 
                       .text {
+                        position: relative;
                         margin-left: 12px;
                         color: #484644;
+
+                        .popup {
+                          position: absolute;
+                          right: -18px;
+                          top: -3px;
+                        }
                       }
                     }
                   }

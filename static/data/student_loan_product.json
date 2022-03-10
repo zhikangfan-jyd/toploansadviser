@@ -166,7 +166,7 @@
                     "max_rate": "12.99"
                 },
                 "variable_rate": {
-                    "min_rate": "1.24",
+                    "min_rate": "0.94",
                     "max_rate": "11.98"
                 }
             },

@@ -155,24 +155,112 @@
                       </dt>
                       <dd>
                         <span class="iconfont">&#xe604;</span>
-                        <p class="text">
+                        <div class="text">
                           Min. Credit Score: {{ item.compare.credit_score }}
-                        </p>
+                        </div>
                       </dd>
                       <dd>
                         <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
+                        <div class="text">
                           Fixed rate：{{ item.compare.fixed_rate.min_rate }}%
                           - {{ item.compare.fixed_rate.max_rate }}%
-                        </p>
+                          <div class="popup">
+                            <el-popover v-if="item.name === 'College Ave'" placement="bottom"
+                                        style="vertical-align: top;" trigger="hover"
+                                        width="325">
+                              <span slot="reference" class="iconfont question-mark">&#xe669;</span>
+                              <div class="content" style="font-size: 12px;">
+                                <p>
+                                  College Ave Student Loans products are made available through Firstrust Bank, member
+                                  FDIC,
+                                  First Citizens Community Bank, member FDIC, or M.Y. Safra Bank, FSB, member FDIC. All
+                                  loans
+                                  are subject to individual approval and adherence to underwriting guidelines. Program
+                                  restrictions, other terms, and conditions apply.
+                                </p>
+                                <ul style="margin: 5px 0">
+                                  <li style="margin: 5px 0">1. The 0.25% auto-pay interest rate reduction applies as
+                                    long
+                                    as a
+                                    valid bank account is
+                                    designated for required monthly payments. Variable rates may increase after
+                                    consummation.
+                                  </li>
+                                  <li style="margin: 5px 0">2. This informational repayment example uses typical loan
+                                    terms
+                                    for a freshman borrower
+                                    who selects the Deferred Repayment Option with a 10-year repayment term, has a
+                                    $10,000
+                                    loan that is disbursed in one disbursement and a 8.35% fixed Annual Percentage Rate
+                                    (“APR”): 120 monthly payments of $179.18 while in the repayment period, for a total
+                                    amount
+                                    of payments of $21,501.54. Loans will never have a full principal and interest
+                                    monthly
+                                    payment of less than $50. Your actual rates and repayment terms may vary.
+                                  </li>
+                                  <li style="margin: 5px 0">3. As certified by your school and less any other financial
+                                    aid
+                                    you might receive.
+                                    Minimum $1,000.
+                                  </li>
+                                </ul>
+                                <p>Information advertised valid as of 2/2/2022. Variable interest rates may increase after consummation. Approved interest rate will depend on creditworthiness of the applicant(s), lowest advised rates only available to the most creditworthy applicants and require selection of full principal and interest payments with the shortest available loan term.</p>
+                              </div>
+                            </el-popover>
+                          </div>
+                        </div>
                       </dd>
                       <dd>
                         <span class="iconfont">&#xe65a;</span>
-                        <p class="text">
+                        <div class="text">
                           Variable rate：{{
                             item.compare.variable_rate.min_rate
                           }}% - {{ item.compare.variable_rate.max_rate }}%
-                        </p>
+                          <div class="popup">
+                            <el-popover v-if="item.name === 'College Ave'" placement="bottom"
+                                        style="vertical-align: top;" trigger="hover"
+                                        width="325">
+                              <span slot="reference" class="iconfont question-mark">&#xe669;</span>
+                              <div class="content" style="font-size: 12px;">
+                                <p>
+                                  College Ave Student Loans products are made available through Firstrust Bank, member
+                                  FDIC,
+                                  First Citizens Community Bank, member FDIC, or M.Y. Safra Bank, FSB, member FDIC. All
+                                  loans
+                                  are subject to individual approval and adherence to underwriting guidelines. Program
+                                  restrictions, other terms, and conditions apply.
+                                </p>
+                                <ul style="margin: 5px 0">
+                                  <li style="margin: 5px 0">1. The 0.25% auto-pay interest rate reduction applies as
+                                    long
+                                    as a
+                                    valid bank account is
+                                    designated for required monthly payments. Variable rates may increase after
+                                    consummation.
+                                  </li>
+                                  <li style="margin: 5px 0">2. This informational repayment example uses typical loan
+                                    terms
+                                    for a freshman borrower
+                                    who selects the Deferred Repayment Option with a 10-year repayment term, has a
+                                    $10,000
+                                    loan that is disbursed in one disbursement and a 8.35% fixed Annual Percentage Rate
+                                    (“APR”): 120 monthly payments of $179.18 while in the repayment period, for a total
+                                    amount
+                                    of payments of $21,501.54. Loans will never have a full principal and interest
+                                    monthly
+                                    payment of less than $50. Your actual rates and repayment terms may vary.
+                                  </li>
+                                  <li style="margin: 5px 0">3. As certified by your school and less any other financial
+                                    aid
+                                    you might receive.
+                                    Minimum $1,000.
+                                  </li>
+                                  <p>Information advertised valid as of 2/2/2022. Variable interest rates may increase after consummation. Approved interest rate will depend on creditworthiness of the applicant(s), lowest advised rates only available to the most creditworthy applicants and require selection of full principal and interest payments with the shortest available loan term.</p>
+                                </ul>
+                              </div>
+                            </el-popover>
+                          </div>
+                        </div>
                       </dd>
                     </dl>
                   </div>
