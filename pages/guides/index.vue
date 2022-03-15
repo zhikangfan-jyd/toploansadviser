@@ -442,7 +442,7 @@ export default {
         this.counts = results.data.data.count;
         this.isLoad = page < this.count;
       } catch (e) {
-        this.$router.push('/error');
+        await this.$router.push('/error');
       }
     },
     async getBlogByCategory(uuid) {
@@ -457,6 +457,9 @@ export default {
 
           data.rows.forEach(blog => {
             blog.change_title = blog.title.toLowerCase().split(' ').join('-');
+          })
+          data.rows.sort(function (a, b) {
+            return new Date(b.ctime) - new Date(a.ctime);
           })
           this.blogs = data.rows;
         } else {

@@ -68,7 +68,7 @@
         </ul>
       </div>
     </div>
-    <section v-if="relatedBlogs.length != 0" class="keep-reading-area">
+    <section v-if="relatedBlogs.length !== 0" class="keep-reading-area">
       <div class="keep-reading-container">
         <h5 class="title">Keep Reading</h5>
         <ul class="read-list">
@@ -76,9 +76,11 @@
             <nuxt-link :to="'/guides/' + item.change_title">
               <div class="img-box">
                 <img v-lazy="item.main_picture" :alt="item.title" class="pic"/>
+                <span class="tags">{{ item.public_api_column.title }}</span>
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{ item.title }}</h6>
+
               </div>
             </nuxt-link>
           </li>
@@ -130,7 +132,7 @@ export default {
       let authorInfo = await $axios.$get(
         `https://api.toploansadviser.com/author/find?author_id=${authorId}`
       );
-      if (authorInfo.status == "success") {
+      if (authorInfo.status === "success") {
         author = authorInfo.data;
       }
 
@@ -138,19 +140,20 @@ export default {
         "/data/person_loan_product.json"
       );
       let blogList = await $axios.$get(
-        `https://api.toploansadviser.com/articles/findbycolumns?columns_id=c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d&page=1&limit=4`
+        `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=${1}&limit=1000&status=done`
       );
-
-      blogList.data.rows.forEach(ele => {
+      let randomIndex = Math.floor(Math.random() * (blogList.data.count - 5));
+      // 随机取4篇blog
+      let randomBlogs = blogList.data.rows.slice(randomIndex, randomIndex + 4);
+      randomBlogs.forEach(ele => {
         ele.change_title = ele.title.toLowerCase().split(' ').join('-');
       })
-
 
       return {
         blog: blog,
         pageUrl: 'https://www.toploansadviser.com/guides/' + params.key,
         author: author,
-        relatedBlogs: blogList ? blogList.data.rows : [],
+        relatedBlogs: randomBlogs,
         toploans: topLoans_results.data.slice(0, 5),
       };
     } catch (e) {

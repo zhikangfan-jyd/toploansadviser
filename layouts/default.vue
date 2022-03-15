@@ -64,6 +64,7 @@
                     <a href="/reviews/drcredit" target="_blank"><span class="iconfont">&#xe602;</span>
                       <span>Drcredit Review</span></a>
                   </dd>
+
                   <dd class="menu-item">
                     <a href="/reviews/lendingtree" target="_blank"><span class="iconfont">&#xe602;</span> <span>Lending Tree Review</span></a>
                   </dd>
@@ -131,10 +132,7 @@
               <div class="menu-column-item">
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
-                  <dd class="menu-item">
-                    <a href="/reviews/ascent" target="_blank"><span class="iconfont">&#xe602;</span>
-                      <span>Ascent Review</span></a>
-                  </dd>
+
 
                   <dd class="menu-item">
                     <a href="/reviews/better" target="_blank"><span class="iconfont">&#xe602;</span>
@@ -190,6 +188,10 @@
                   </dd>
                   <dd class="menu-item">
                     <a href="/reviews/earnest-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Earnest Review</span></a>
+                  </dd>
+                  <dd class="menu-item">
+                    <a href="/reviews/ascent" target="_blank"><span class="iconfont">&#xe602;</span>
+                      <span>Ascent Review</span></a>
                   </dd>
                 </dl>
               </div>
