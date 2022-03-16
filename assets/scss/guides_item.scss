@@ -147,6 +147,28 @@
           a {
             color: #0c78ff;
           }
+
+          .calculator-btn-box {
+            display: flex;
+            justify-content: center;
+
+            .calculator-btn {
+              display: block;
+              text-decoration: none;
+              color: #fff;
+              background-color: #1f9a61;
+              transition: all linear 0.1s;
+              padding: 10px 25px;
+              text-align: center;
+              border-radius: 30px;
+              font-weight: 600;
+              margin: 25px 0;
+
+              &:hover {
+                background-color: #29b674;
+              }
+            }
+          }
         }
       }
 
