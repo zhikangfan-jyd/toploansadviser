@@ -13,7 +13,6 @@ const createSitemapRoutes = async () => {
       routes.push({
         url: `reviews/${post.slug}`,
         lastmod: new Date(),
-        changefreq: 'always',
         priority: 0.8
       });
     }
@@ -29,7 +28,6 @@ const createSitemapRoutes = async () => {
         articleRoutes.push({
           url: `/guides/${title}`,
           lastmod: new Date(),
-          changefreq: 'always',
           priority: 0.8
         })
       })
@@ -52,7 +50,7 @@ const sitemapFilter = ({routes, options}) => {
 
 export default {
   head: {
-    title: 'Best personal loans and mortgage loans of 2022- Toploansadviser',
+    title: 'Best Personal Loans And Mortgage Loans Of 2022 - Toploansadviser',
     htmlAttrs: {
       lang: 'en'
     },
@@ -179,7 +177,6 @@ export default {
     generate: false,
     path: '/sitemap.xml',
     defaults: {
-      changefreq: 'always',
       lastmod: new Date(),
       priority: 0.8
     },
@@ -188,10 +185,10 @@ export default {
     routes: createSitemapRoutes
   },
   axios: {
-    baseURL: 'http://192.168.50.107:3100'
+    baseURL: 'http://127.0.0.1:3100'
   },
   server: {
     port: '3100',
-    host: '192.168.50.107'
+    host: '127.0.0.1'
   }
 }
