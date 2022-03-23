@@ -398,7 +398,7 @@
     </div>
   </main>
 </template>
-
+<a href="" target="_blank" rel="noopener noreferrer"></a>
 <script>
 import {seo} from "../../utils/seo";
 

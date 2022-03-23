@@ -40,7 +40,7 @@ many lenders should you try before taking a loan?
 
 The process can be exhausting, but it’s important to try and get the best personal loan deal available. Fortunately, a
 marketplace like Credible makes it easier. With 17 lenders in one place and only one form to complete, Credible
-simplifies the personal loan application process, making it easy to get the loan you need.
+simplifies <a href="/guides/how-to-apply-a-personal-loan" target="_blank" rel="noopener noreferrer">the personal loan application process</a>, making it easy to get the loan you need.
 
 Is Credible worth it for you? Read our review below.
 
@@ -52,7 +52,7 @@ lenders available. Finding the one that’s right for you can feel like finding 
 exhausting as you complete application after application. Luckily, Credible makes it simple.
 
 Credible isn’t a lender. They allow you to
-be [prequalified with multiple lenders](https://www.toploansadviser.com/redirect/personal-loan/credible) simultaneously
+be [prequalified with multiple lenders](/personal-loan) simultaneously
 based on the criteria you enter. If you prequalify, lenders will provide rates allowing you to choose the loan you want.
 If none of the offers appeal to you, you don’t need to select one and your personal information won’t be shared with any
 lenders. This saves you from annoying phone calls from lenders which can happen with other loan comparison sites.
@@ -67,8 +67,8 @@ Are you ready to see if Credible is right for you? Read on.
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
-Like we said above, you’ll need at least a 600 credit score to qualify with any lenders on Credible. If you aren’t sure
-what your credit score is, ask your bank or credit card companies if they provide free access to your credit score (most
+Like we said above, you’ll need at least a 600 credit score to qualify with any lenders on Credible. <a href="/guides/how-your-credit-score-affects-your-loan-chances" target="_blank" rel="noopener noreferrer">If you aren’t sure
+what your credit score is, ask your bank or credit card companies</a> if they provide free access to your credit score (most
 do). You can also pull your free credit reports to see if you have any negative information on your credit report.
 
 Go through your credit report and if you see any of the following, try to fix it before applying for a personal loan:
@@ -88,10 +88,10 @@ important. If you change jobs often, it could make lenders wary of lending you m
 stable and reliable if you want a lender to loan you money.
 
 Your debts play a role too. If you have too much debt outstanding now, the personal loan will only add to it. The
-exception to the rule is if you’re using the personal loan to consolidate your credit card debt. If you will consolidate
+exception to the rule is if <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">you’re using the personal loan to consolidate your credit card debt</a>. If you will consolidate
 the debt, your debt-to-income ratio will likely decrease, which would make the personal loan a good thing.
 
-Just like when you apply with specific lenders yourself, every lender has different qualifying factors.**Applying with
+Just like when you apply with specific lenders yourself, every lender has different qualifying factors. **Applying with
 Credible allows you to compare rates from multiple lenders with one simple form**.
 
 To improve your chances of qualifying, we recommend pulling your credit before applying and fixing any issues. Also look
@@ -131,7 +131,7 @@ Every lender and loan marketplace has its pros and cons. Understanding the good 
 
 <div class="title-box"><img src="/data/images/r-10.webp"/><h2 class="title">Main Loan Features</h2></div>
 
-A personal loan is usually an unsecured loan you borrow. You’ll pay interest and principal monthly right after receiving
+<a href="/guides/is-an-unsecured-loan-the-right-way-to-go-for-financial-assistance" target="_blank" rel="noopener noreferrer">A personal loan is usually an unsecured loan you borrow</a>. You’ll pay interest and principal monthly right after receiving
 the money in one lump sum.
 
 Most loans have a fixed interest rate (the rate doesn’t change) and give you the principal in one payment (direct

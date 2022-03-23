@@ -33,7 +33,7 @@ Better Mortgage is an online lender that started its operation in 2016, where th
 
 
 
-Better Mortgage is considered a low fee option provided that an individual has a decent credit score and is familiar with the online process. Those people that are seeking a standard Mortgage can consider applying for Better Mortgage.
+Better Mortgage is considered a low fee option provided that an individual has a decent credit score and is familiar with the online process. <a href="/mortgage-loan" target="_blank" rel="noopener noreferrer">Those people that are seeking a standard Mortgage</a> can consider applying for Better Mortgage.
 
 However, the company has set some criteria that it considers before granting the loan to the people. The criteria are divided into three broad categories: minimum credit score, minimum down payment, and loan types. To qualify for any loan or Mortgage at Better.com, the company has specified that the client should maintain a credit score of 620 or above according to the FICO scoring model. Moreover, the client should also be eligible to make a 3% down payment on the loan amount.
 
@@ -60,7 +60,7 @@ The company operates in 46 different states across the US, offering various loan
 
 Better Mortgage offers a variety of loan options, thus capturing all kinds of homebuyers that seeking to take a loan for their property. The company also has different loan products specifically for those people that are looking to refinance their current Mortgage under new rates and loan periods.
 
-Loans and mortgages under the radar of Better Mortgage include conventional loans, which can be divided into conforming and non-conforming loans, Federal Housing Administration (FHA) loans, jumbo loans, refinance mortgages,  fixed-rate loans, adjustable-rate Mortgage, Rate-and-term and cash-out refinancing, and bridge loans.
+Loans and mortgages under the radar of Better Mortgage include <a href="/best-mortgage-refinance-lenders" target="_blank" rel="noopener noreferrer">conventional loans</a>, which can be divided into conforming and non-conforming loans, <a href="/best-fha-lenders" target="_blank" rel="noopener noreferrer">Federal Housing Administration (FHA) loans</a>, jumbo loans, refinance mortgages,  fixed-rate loans, adjustable-rate Mortgage, Rate-and-term and cash-out refinancing, and bridge loans.
 
 With a wide range of loan products, the customers have a monopoly on choosing the type of loan that fits their needs. But it is important to carry out due diligence about the loan, the incentives being offered, and the interest rate.
 
