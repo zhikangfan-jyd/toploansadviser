@@ -280,25 +280,25 @@
             </h5>
             <h5 class="title terms"><span class="text">Loan Amount</span></h5>
           </div>
-          <div v-if="products.length != 0" class="product-list">
+          <div v-if="products.length !== 0" class="product-list">
             <div
               v-for="(item, index) in products"
               :key="index"
               class="product-item"
             >
               <div
-                v-if="index == 0 && item.name !== 'lightstream'"
+                v-if="index === 0 && item.name !== 'lightstream'"
                 class="corner-box"
               >
                 <span class="text">Best Choice</span>
               </div>
               <div
-                v-else-if="item.name == 'lightstream'"
+                v-else-if="item.name === 'lightstream'"
                 class="corner-box green"
               >
                 <span class="text">Low Rates</span>
               </div>
-              <div v-if="index == 0" class="visited-box">
+              <div v-if="index === 0" class="visited-box">
                 <span class="iconfont"></span>
                 <span class="text"
                 ><strong>503 users</strong> chose this site today</span
@@ -308,7 +308,7 @@
                 <div class="img-score-box">
                   <div class="img-box">
                     <img v-lazy="item.logo" :alt="item.name"/>
-                    <div v-if="item.disclaimer != ''" class="disclaimer">
+                    <div v-if="item.disclaimer !== ''" class="disclaimer">
                       Disclaimer
                       <el-popover
                         placement="bottom"
@@ -326,7 +326,7 @@
                   <div class="rate-box">
                     <div class="rate">
                       <span class="score">{{ item.rate.score }}</span>
-                      <div v-if="index == 0" class="trustpilot-box">
+                      <div v-if="index === 0" class="trustpilot-box">
                         <div class="text-box">
                           <span class="iconfont">&#xe64c;</span>
                           <span class="text">Trustpilot</span>
@@ -357,7 +357,7 @@
                         ></el-rate>
                       </div>
                       <nuxt-link
-                        v-if="item.review_key != ''"
+                        v-if="item.review_key !== ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
                       >Read Review
@@ -382,7 +382,7 @@
                         >
                           Min. Credit Score: {{ item.compare.credit_score }}
                           <el-popover
-                            v-if="item.compare.credit_text != ''"
+                            v-if="item.compare.credit_text !== ''"
                             placement="bottom"
                             trigger="hover"
                             width="280"
@@ -426,12 +426,12 @@
                   </div>
                 </div>
                 <div class="btn-box">
-                  <a
-                    :href="'/redirect/personal-loan/'+item.name"
-                    class="btn"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    @click="
+                  <a v-if="item.name === 'credible'"
+                     :href="item.link"
+                     class="btn"
+                     rel="noopener noreferrer nofollow"
+                     target="_blank"
+                     @click="
                       handleTracking({
                         name: item.name,
                         click_time: new Date().getTime(),
@@ -447,7 +447,36 @@
                     </h3>
                     <span class="iconfont">&#xe63c;</span>
                   </a>
+                  <a v-else
+                     :href="'/redirect/personal-loan/'+item.name"
+                     class="btn"
+                     rel="noopener noreferrer nofollow"
+                     target="_blank"
+                     @click="
+                      handleTracking({
+                        name: item.name,
+                        click_time: new Date().getTime(),
+                        link: item.link,
+                      })
+                    "
+                  >
+                    <h3
+                      class="text"
+                      style="display: inline; font-weight: normal"
+                    >
+                      Check My Rate
+                    </h3>
+                    <span class="iconfont">&#xe63c;</span>
+                  </a>
+                  <a v-if="item.name === 'credible'"
+                     :href="item.link"
+                     class="visit-btn"
+                     rel="noopener noreferrer nofollow"
+                     target="_blank"
+                  >Visit site »</a
+                  >
                   <a
+                    v-else
                     :href="'/redirect/personal-loan/'+item.name"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
@@ -558,7 +587,6 @@
         </div>
       </div>
     </section>
-    <Message5 :url="messageLink"></Message5>
   </main>
 </template>
 
@@ -570,7 +598,6 @@ import FoldTheCard from "../components/FoldTheCard/index";
 import {seo} from '../utils/seo'
 
 export default {
-  layout: 'clear',
   head() {
     return seo({
       title: 'Best Personal Loans Rates Lenders & Companies | Toploansadviser.com',
@@ -616,7 +643,12 @@ export default {
         if (ele.link.indexOf("www.credible.com") !== -1) {
           ele.link = changeLink(ele.link);
         }
+        if (ele.name === 'credible') {
+          ele.link = '/redirect/best-personal-loan/goodloans'
+        }
       });
+
+
       return {
         allProducts: products_results.data,
         overallData: [products_results.data[0], products_results.data[1]],
@@ -629,7 +661,7 @@ export default {
   data() {
     return {
       mainLink:
-        "/redirect/personal-loan/credible",
+        "/redirect/best-personal-loan/goodloans",
       messageLink: '/redirect/best-personal-loan/goodloans',
       isNull: true,
       page: 1,
@@ -668,7 +700,7 @@ export default {
 
       this.products = this.products.concat(data);
       this.page++;
-      if (this.products.length == this.count) {
+      if (this.products.length === this.count) {
         this.isNull = false;
       }
     },
