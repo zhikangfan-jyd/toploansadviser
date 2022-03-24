@@ -49,7 +49,7 @@ In these past few years, Best Egg has established a reputation as one of the mos
 
 To qualify for a personal loan through Cross Riverbank and Blue Ridge Bank, one must have a minimum FICO credit score of 640. Loans start at a minimum of $2000 to a maximum of $50,000, depending on the borrowers’ credit rating. If borrowers have a lower-than-average credit score, they may be offered a low loan amount with a high APR.
 
-Best Egg offers a variety of loan terms, like 36, 48, and 60 months. Each loan amount comes with an APR that calculates the interest payment one needs to pay along with the loan principal. Best Egg’s APR ranges from 5.99% to 35.99%.
+<a href="/best-emergency-loan" target="_blank" rel="noopener noreferrer">Best Egg offers a variety of loan terms</a>, like 36, 48, and 60 months. Each loan amount comes with an APR that calculates the interest payment one needs to pay along with the loan principal. Best Egg’s APR ranges from 5.99% to 35.99%.
 
 
 <div class="title-box"><img src="/data/images/r-7.webp" /><h2 class="title">Pros & Cons</h2></div>

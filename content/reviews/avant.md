@@ -35,7 +35,7 @@ product: {
 "disclaimer": ""
 }
 ---
-Avant personal loans are a great option for consumers that need to consolidate debt or make home improvements. With an online application, competitive interest rates, and a simple process, many consumers prefer Avant personal loans over any competitors.
+Avant personal loans are <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">a great option for consumers that need to consolidate debt</a> or make home improvements. With an online application, competitive interest rates, and a simple process, many consumers prefer Avant personal loans over any competitors.
 
 Read our Avant personal loan review below to see if Avant is right for you.
 
@@ -49,7 +49,7 @@ Consumers use Avant personal loans for some of the following reasons:
 - Pay for unforeseen emergencies
 - Make home improvements
 
-Of course, each person has their own reason for needing a personal loan. Avant doesn’t discriminate based on the reason you need the funds – they base your approval on your qualifying factors only.
+Of course, <a href="/guides/what-kind-of-loan-do-you-need" target="_blank" rel="noopener noreferrer">each person has their own reason for needing a personal loan</a>. Avant doesn’t discriminate based on the reason you need the funds – they base your approval on your qualifying factors only.
 
 <div class="btn-box"><a href="/redirect/review/avant" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 

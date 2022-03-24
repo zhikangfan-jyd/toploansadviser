@@ -54,7 +54,7 @@ Dr. Credit doesn’t underwrite, fund, or approve loans. They are strictly the m
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
-Dr. Credit caters to borrowers with bad credit, so the qualifying requirements aren’t nearly as tough as you’d find with other lenders. Because Dr. Credit is a marketplace, you’ll have a variety of lenders to choose from and each lender has different requirements.
+Dr. Credit caters to borrowers with bad credit, so the qualifying requirements aren’t nearly as tough as you’d find with other lenders. Because Dr. Credit is a marketplace, you’ll have a variety of lenders to choose from and <a href="/personal-loan" target="_blank" rel="noopener noreferrer">each lender has different requirements</a>.
 
 Before you apply for a personal loan, whether secured or unsecured, it’s always a good idea to check your credit. Even if you know you have bad credit, there are a few ways you can boost it slightly so you get better rates and terms from the bad credit lenders.
 
@@ -62,7 +62,7 @@ Grab a free copy of your credit report and see what you need to fix. Here are a 
 
 - Bring your late payments current – Any late payments you see reported on your credit report, bring current as quickly as you can. A late payment hurts your credit score the most. If you have 30, 60, or 90 day late payments, work with your lender to get them caught up again and then stay current on your payments.
 
-- Don’t overextend your credit – You shouldn’t have more than 30% of your credit line outstanding at one time. This hurts your credit score too. If you notice you have high credit card balances, try paying them down, or use your Dr. Credit personal loan to consolidate the debt, which will improve your credit.
+- Don’t overextend your credit – You shouldn’t have more than 30% of your credit line outstanding at one time. This hurts your credit score too. If you notice you have high credit card balances, try paying them down, or use your Dr. Credit <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">personal loan to consolidate the debt</a>, which will improve your credit.
 
 - Take care of collections – If you have any collections or public records, take care of them as quickly as possible. Make sure when you work with the creditor that you ask for them to delete the collection from your credit report when you satisfy it so your credit score can recover.
 
@@ -108,7 +108,7 @@ When you’re applying for a personal loan with bad credit, you need to supply l
 
 <div class="title-box"><img src="/data/images/r-10.webp"/><h2 class="title">Main Loan Features</h2></div>
 
-All personal loans have different terms, rates, and fine print. It’s important to talk to the lender you choose and learn all about the personal loan for bad credit they are offering you. The key areas to talk about are the rates and fees, loan process, and term.
+<a href="/personal-loan" target="_blank" rel="noopener noreferrer">All personal loans have different terms, rates</a>, and fine print. It’s important to talk to the lender you choose and learn all about the personal loan for bad credit they are offering you. The key areas to talk about are the rates and fees, loan process, and term.
 
 Dr. Credit lenders have a variety of rates, terms, and fees depending on your qualifying factors and the loan you choose.
 
@@ -128,7 +128,7 @@ Dr. Credit lender’s rates vary by lender too. Lenders determine your APR by lo
 
 <div class="title-box"><img src="/data/images/r-12.webp"/><h2 class="title">Loan Process</h2></div>
 
-Dr. Credit makes it simple to get a personal loan for bad credit. You complete one application, but may receive offers from multiple lenders. The application itself takes only a couple of minutes. After you answer the questions. Dr. Credit matches you with lenders based on the information you provided.
+Dr. Credit makes <a href="/guides/how-to-get-a-loan-with-bad-credit" target="_blank" rel="noopener noreferrer">it simple to get a personal loan for bad credit</a>. You complete one application, but may receive offers from multiple lenders. The application itself takes only a couple of minutes. After you answer the questions. Dr. Credit matches you with lenders based on the information you provided.
 
 Again, Dr. Credit doesn’t underwrite or fund loans. They are simply the middle-man between you and the lender. They provide the platform to bring you both together so you can get the financing that you need.
 

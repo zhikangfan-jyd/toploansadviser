@@ -36,7 +36,7 @@ product: {
 }
 ---
 
-If you are looking for a low APR personal loan with no fees, SoFi may be just what you need. This personal loan lender offers attractive rates, doesn’t charge any fees, and they offer many exclusive member benefits. While you do need high credit scores, you are rewarded greatly for your offers.
+If you are looking for a low APR personal loan with no fees, SoFi may be just what you need. This <a href="/personal-loan" target="_blank" rel="noopener noreferrer">personal loan lender offers attractive rates</a>, doesn’t charge any fees, and they offer many exclusive member benefits. While you do need high credit scores, you are rewarded greatly for your offers.
 
 SoFi offers many benefits for their elite members including educational and community events for both personal and professional development. Interestingly enough, SoFi doesn’t focus on credit scores alone – if you have adequate cash flow, SoFi tends to hold that high in their requirements when qualifying you for a loan.
 

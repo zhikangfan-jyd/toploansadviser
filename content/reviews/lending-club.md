@@ -49,7 +49,7 @@ The company is based in San Francisco in the United States, from where it carrie
 
 Lending Club offers personal loans in the range of $1000 to up to $40,000. So if an individual has a good credit score, they can qualify for a larger loan amount. Individuals with lower than average credit scores will be granted a lower loan amount with a high APR.
 
-The company has two different loan terms, 36 months and 60 months. The minimum credit score requirement is 600 on the FICO scoring model. Moreover, the APR rate given by the company falls in the radius of 7.04% to 35.89%, which is directly related to the credit score.
+The company has two different loan terms, 36 months and 60 months. <a href="/personal-loan" target="_blank" rel="noopener noreferrer">The minimum credit score requirement</a> is 600 on the FICO scoring model. Moreover, the APR rate given by the company falls in the radius of 7.04% to 35.89%, which is directly related to the credit score.
 
 
 <div class="title-box"><img src="/data/images/r-7.webp" /><h2 class="title">Pros & Cons</h2></div>
@@ -67,7 +67,7 @@ Lending Club has some pros and cons to help a person make a financially sound de
                 <li>The company does not charge clients an application fee or even a prepayment penalty.</li>
 <li>APR could be checked with the company, which will not adversely impact the credit score.</li>
 <li>The Better Business Bureau (BBB) has ranked the company in a higher rating due to their customer reviews.</li>
-<li>Efficient loan approval process granting loan within a few days.</li>
+<li><a href="/guides/how-to-apply-a-personal-loan" target="_blank" rel="noopener noreferrer">Efficient loan approval process</a> granting loan within a few days.</li>
 <li>A co-borrower can be added to improve the credit score and reduce the financial burden.</li>
 <li>The company offers a prequalification application to aid the customer in understanding their loan rate.</li>
               </ul>
@@ -95,7 +95,7 @@ Applicants are needed to show proof of funds during the application process wher
 
 <div class="title-box"><img src="/data/images/r-10.webp"/><h2 class="title">Main Loan Features</h2></div>
 
-Lending Club offers personal loans to people who are unsecured and have to pay back with interest after the loan has been received. The loan is returned in intervals depending on the loan amount, period, and APR.
+Lending Club <a href="/personal-loan" target="_blank" rel="noopener noreferrer">offers personal loans to people who are unsecured</a> and have to pay back with interest after the loan has been received. The loan is returned in intervals depending on the loan amount, period, and APR.
 
 The loan can be used for balance transfers, medical bills, and home improvement. The loan cannot be used for post-secondary education, investments like cryptocurrency, and illegal activities.
 
@@ -122,7 +122,7 @@ The company offers a prequalifying application through which prospective custome
 **2. Select the best loan**.
 
 
-The company will offer multiple loan products to choose from, so an individual should choose their loan depending on your preference and requirement. They should keep in check the requirements for each loan like APR, loan period, etc.
+The company will <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">offer multiple loan products to choose from</a>, so an individual should choose their loan depending on your preference and requirement. They should keep in check the requirements for each loan like APR, loan period, etc.
 
 **3. Apply and verify the information**.
 
