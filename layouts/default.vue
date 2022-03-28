@@ -31,6 +31,9 @@
                   <dd class="menu-item">
                     <a href="/best-emergency-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Emergency Loan</span></a>
                   </dd>
+                  <dd class="menu-item">
+                    <a href="/best-small-business-loan" target="_blank"><span class="iconfont">&#xe602;</span> <span>Best Small Business Loan</span></a>
+                  </dd>
                 </dl>
               </div>
               <div class="menu-column-item">
@@ -103,6 +106,7 @@
 
                 </dl>
               </div>
+
             </div>
           </li>
           <li>
@@ -251,6 +255,10 @@
                 </dl>
               </div>
             </div>
+          </li>
+          <li class="href">
+            <a class="link column" href="/best-life-insurance" rel="noopener noreferrer" target="_blank">Life
+              Insurance</a>
           </li>
         </ul>
         <span class="iconfont phone-menu" @click="handleShowMenu">{{ isShowMenu ? '&#xe614;' : '&#xe61d;' }}</span>

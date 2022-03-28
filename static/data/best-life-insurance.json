@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "name": "Haven Life",
+      "link": "",
+      "logo": "/data/images/haven_life.jpg",
+      "score": "9.8",
+      "feature": "",
+      "slogan": "Best for Those Wanting a Term Life Policy ",
+      "advantage": [],
+      "term_coverage": "10, 15, 20, 25, or 30-year",
+      "sample_monthly_cost": "81.16",
+      "am_best_rating": "A++",
+      "description": "<p>Haven Life is a well-known digital insurance agency that allows you to purchase high-quality life insurance from the comfort of your home. It offers two term life insurance options – Haven Term and Haven Simple. Haven Term is the longer-term insurance policy with durations between 10–30 years. This plan covers up to $3 million. On the other hand, Haven Simple is a shorter coverage plan with terms between 5–20 years.</p><p>What’s great about Haven Life is that it allows you to apply for both policies online without needing an agent. You won’t even need a medical exam to qualify in many cases. It’s important to mention that both Haven Life insurance policies are limited to people age 64 and under, meaning you will no longer qualify for coverage after age 64. Overall, Haven Life insurance policies are flexible and generous, although they might be more expensive compared to other life insurance policies on the market. If you’re looking for term life insurance and qualify for Haven Life policies without a medical exam, this could be an excellent option to consider.</p><dl><dt>Pros:</dt><dd>Insurance available online</dd><dd>High coverage limits</dd><dd>Certain individuals can qualify without a medical exam</dd><dd>Digital will and fitness app available</dd></dl><dl><dt>Cons:</dt><dd>Only offer term life insurance</dd><dd>Limited to age 64 and under</dd></dl>"
+    },
+    {
+      "name": "New York Life",
+      "link": "",
+      "logo": "/data/images/new_york_life.jpg",
+      "score": "9.6",
+      "feature": "",
+      "slogan": "Best for Permanent Life Insurance",
+      "advantage": [],
+      "term_coverage": "10, 15, or 20-year",
+      "sample_monthly_cost": "142.67",
+      "am_best_rating": "A++",
+      "description": "<p>New York Life offers a wide range of insurance policies, including both term and permanent. It also allows users to convert term policies to permanent policies when needed. If you’d like to upgrade your insurance policy, you can add different features, including a disability waiver of premium, accidental death benefit, and living benefits. While New York Life seems to offer very flexible, user-oriented insurance policies, its website does not provide much information.</p><p>If you want to learn more about what New York Life offers, you will have to contact a New York Life agent. This insurer does not provide the best customer experience, but its insurance policies are certainly worth considering. However, keep in mind that its policies are more expensive than most of its competitors.</p><dl><dt>Pros:</dt><dd>Term, whole, and universal life policies available</dd><dd>Term policies can be converted to permanent if needed</dd><dd>Potential to earn dividends</dd></dl><dl><dt>Cons:</dt><dd>More expensive than most other insurers on the market</dd><dd>Detailed information not available online</dd><dd>Cannot be purchased without an agent</dd></dl>"
+    },
+    {
+      "name": "Bestow ",
+      "link": "",
+      "logo": "/data/images/bestow.jpg",
+      "score": "9.5",
+      "feature": "",
+      "slogan": "Best for No Medical Exam Insurance Policies",
+      "advantage": [],
+      "term_coverage": "10, 15, 20, 25, or 30-year",
+      "sample_monthly_cost": "56.00",
+      "am_best_rating": "A+",
+      "description": "<p>Bestow is a life insurance provider that only sells one type of policy, a term life policy ranging between 10–30 years. Its terms are also available in five-year increments and cover up to $1.5 million. Although Bestow has its limitations, it allows you to complete the entire life insurance application online without needing an agent. If you need help deciding if Bestow’s services are the right fit for you, you can always contact its exceptional customer support team. </p><p>Moreover, it is important to address that Bestow does not issue the life insurance policies they sell; its policies are issued by the North American Company for Life and Health Insurance. Most importantly, its life insurance does not require a medical exam, which makes it a good option for users who don’t qualify for other insurance policies because of medical exam requirements. Bestow offers a 30-day trial period as well.</p><dl><dt>Pros:</dt><dd>No medical exam needed for any of their policies</dd><dd>Terms available in five-year increments</dd><dd>Coverage of up to $1.5 million</dd><dd>Great customer service</dd></dl><dl><dt>Cons:</dt><dd>Only offer term life policies</dd><dd>New policies not available to applicants above 60 years of age</dd></dl>"
+    }
+  ]
+}

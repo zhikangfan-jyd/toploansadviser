@@ -46,6 +46,20 @@
             }
           }
 
+          &.href {
+            &:hover {
+              .column {
+                &::before {
+                  display: none;
+                }
+              }
+            }
+
+            a {
+              text-decoration: none;
+            }
+          }
+
           .column {
             position: relative;
             display: block;

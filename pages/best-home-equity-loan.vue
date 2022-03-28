@@ -129,7 +129,7 @@
                     </li>
                     <li>
                       <span class="iconfont">&#xe604;</span>
-                      <p class="text">Loan Amount: ${{ product.amount }}</p>
+                      <p class="text">Loan Amount: {{ product.amount }}</p>
                     </li>
                   </ul>
                 </div>

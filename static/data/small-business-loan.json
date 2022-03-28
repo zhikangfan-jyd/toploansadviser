@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "name": "BlueVine",
+      "link": "",
+      "logo": "/data/images/blue_vine.jpg",
+      "score": "9.8",
+      "feature": "",
+      "slogan": "Best for Those Looking for Quick Lines of Credit",
+      "advantage": [],
+      "max_loan_amount": "250,000",
+      "min_credit_score": "600",
+      "apr": "15.00-78.00%",
+      "description": "<p>BlueVine offers a quick solution for business owners who need capital fast. You can have cash available in as little as 24 hours. However, keep in mind that their business line of credit comes with higher interest rates than other online lenders. Still, their credit line is a great option for short-term financing because they require a low minimum credit score.</p><p>Business owners who struggle to qualify for loans with other lenders due to poor credit scores can easily get their working capital with BlueVine if they don’t mind the higher interest rates. BlueVine is an excellent option for startups as well since they allow you to take out a loan, even if you’ve only been in business for six months. Most competitors are hesitant to work with startups, which makes BlueVine a great solution for business owners new to the industry.</p><dl><dt>Pros:</dt><dd>Can get cash within 24 hours</dd><dd>Choose between multiple term lengths</dd><dd>Low credit score acceptable</dd><dd>Startup friendly</dd></dl><dl><dt>Cons:</dt><dd>Higher interest rates compared to other lenders</dd><dd>May require weekly repayments</dd></dl>"
+    },
+    {
+      "name": "OnDeck",
+      "link": "",
+      "logo": "/data/images/on_deck.jpg",
+      "score": "9.6",
+      "feature": "",
+      "slogan": "Best for Those Looking for Same-Day Funding",
+      "advantage": [],
+      "max_loan_amount": "100,000",
+      "min_credit_score": "600",
+      "apr": "11.00–61.90%",
+      "description": "<p>OnDeck offers same-day small business loans to business owners who have been in business for at least one year. Although OnDeck offers up to $250,000 in quick loans, they make it challenging to apply for this kind of financing. Besides not accepting startups, OnDeck requires you to have a minimum personal credit score of 600 and at least $100,000 of annual business revenue. If you meet these criteria, you might be eligible for their fast cash loans, accessible via a simple online application. OnDeck offers different repayment terms of up to 24 months with transparent pricing and no prepayment penalties.</p><dl><dt>Pros:</dt><dd>Funding available on the same business day</dd><dd>Easy to apply</dd><dd>Transparent application process and pricing</dd><dd>No prepayment penalties</dd></dl><dl><dt>Cons:</dt><dd>High credit score required</dd><dd>Need to be in business for at least one year to qualify</dd><dd>Requires a minimum of $100,000 in annual business revenue</dd></dl>"
+    },
+    {
+      "name": "Fundbox",
+      "link": "",
+      "logo": "/data/images/fundbox.jpg",
+      "score": "9.5",
+      "feature": "",
+      "slogan": "Best for Those Looking for Revolving Lines of Credit",
+      "advantage": [],
+      "max_loan_amount": "150,000",
+      "min_credit_score": "600",
+      "apr": "10.10–79.80%",
+      "description": "<p>Fundbox offers small business lines of credit of up to $100,000 with the possibility of getting prequalified online. They specialize in small business funding and provide quick responses, with funding available the next business day. Fundbox is best known for its revolving line of credit that allows you to borrow only as much money as you need. They also give small businesses the option to save money by repaying their loan ahead of schedule. </p><p>There are no prepayment fees. Moreover, Fundbox allows you to check your line of credit fees upfront and set up automated payments, so you don’t have to worry about meeting deadlines. Their repayment periods range between 12–24 weeks. If you’re looking for a quick small business loan, Fundbox is a great option to consider because you don’t have to complete the entire loan application to get prequalified.</p><dl><dt>Pros:</dt><dd>No prepayment fees</dd><dd>Only borrow as much as you need</dd><dd>Get prequalified without a hard credit check</dd><dd>Get funding as soon as the next business day</dd><dd>Transparent pricing and automated payments available</dd></dl><dl><dt>Cons:</dt><dd>Only offering lines of credit up to $100,000</dd><dd>Short repayment periods</dd></dl>"
+    }
+  ]
+}

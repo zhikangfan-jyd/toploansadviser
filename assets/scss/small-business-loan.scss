@@ -1,0 +1,764 @@
+.main-container {
+  padding-top: 80px;
+
+  .slogan {
+
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(26, 119, 129);
+    font-weight: 600;
+
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  .more-from-toploansadviser-container {
+    width: $rootWidth;
+    margin: 0 auto;
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .list {
+      li {
+        .circle {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin-right: 10px;
+          border-radius: 50%;
+          background-color: #247781;
+          vertical-align: middle;
+        }
+
+        .text {
+          font-size: 18px;
+          color: #2E9A61;
+          line-height: 36px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+  }
+
+  .website-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $rootWidth;
+    height: 90px;
+    margin: 36px auto 53px auto;
+    background-color: rgba(0, 195, 218, .1);
+    border-radius: 4px;
+
+    .text {
+      font-size: 26px;
+      font-weight: 600;
+      color: #2E9A61;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 119px;
+      height: 36px;
+      margin-left: 28px;
+      background: #CB9600;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 36px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all linear 0.1s;
+
+      &:hover {
+        background-color: #e9b31a;
+      }
+    }
+  }
+
+  .banner-area {
+    .banner-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        margin-top: 30px;
+        margin-bottom: 8px;
+        font-size: 45px;
+        font-weight: bold;
+      }
+
+      .introduce-container {
+        .author-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .author-image {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 50%;
+          }
+
+          .author-desc {
+            color: #666;
+
+            .author-name {
+              color: #000;
+              font-weight: 600;
+            }
+          }
+
+          .updated {
+            margin-left: 15px;
+            font-size: 14px;
+            font-style: italic;
+          }
+
+        }
+
+        .introduce-content {
+          position: relative;
+          padding: 1px 20px;
+          background-color: #F3F4F8;
+          border-radius: 4px;
+          line-height: 24px;
+          max-height: 120px;
+          overflow: hidden;
+          transition: max-height linear 0.5s;
+
+          &.show {
+            max-height: 800px;
+          }
+
+          .iconfont {
+            position: absolute;
+            bottom: 0;
+            font-size: 16px;
+            color: #818181;
+            left: 50%;
+            transform: rotateZ(0deg) translateX(-50%);
+            cursor: pointer;
+
+            &.show {
+              transform: rotateZ(180deg) translateX(-50%);
+            }
+          }
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: -24px;
+            left: 50px;
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid #f3f4f8;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+          }
+
+          p {
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .preface-area {
+    .preface-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        font-size: 30px;
+        color: #247781;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+
+      .preface-content {
+        color: #000;
+        line-height: 24px;
+
+        p {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+
+  .product-include-area {
+    margin-top: 20px;
+
+    .product-include-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .product-include-container-top {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .disclosure {
+          display: flex;
+          align-items: flex-end;
+          position: relative;
+
+          .title {
+            font-style: italic;
+            font-size: 14px;
+            color: #8f8f8f;
+            cursor: pointer;
+          }
+
+          .disclosure_content {
+            display: none;
+            position: absolute;
+            top: 101%;
+            background: #fff;
+            width: 350px;
+            font-size: 12px;
+            padding: 8px;
+            z-index: 9;
+            border: 1px solid #e2e2e2;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: -10px;
+              left: 30px;
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-bottom: 5px solid #e2e2e2;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+            }
+
+            &.show {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .product-include-container-title {
+        font-size: 18px;
+        color: #2E9A61;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .product-include-item {
+        margin-bottom: 20px;
+
+        .product-include-title {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+
+          .medal {
+            width: 25px;
+            height: 32px;
+            margin-right: 14px;
+          }
+
+          .circle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 14px;
+            background: #2E9A61;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+
+          }
+
+        }
+
+        .product-include-card {
+          position: relative;
+          width: 100%;
+          background: #FFFFFF;
+          border: 1px solid #EEEEEE;
+          box-shadow: 0 0 12px 0 rgba(138, 143, 140, 0.16);
+          border-radius: 4px;
+          padding: 0 19px 15px 19px;
+          box-sizing: border-box;
+
+          .corner-box {
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+
+          .tips {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 0 12px;
+            background: rgba(46, 154, 97, 0.2);
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            line-height: 25px;
+            color: #3e3e3e;
+
+            .g {
+              font-weight: 500;
+              color: #2E9A61;
+            }
+          }
+
+          .product-include-card-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            padding: 12px 0;
+            box-sizing: border-box;
+
+            .product-include-card-info-left {
+              flex: 1;
+              display: flex;
+              justify-content: space-around;
+            }
+
+            .product-include-card-info-right {
+              flex: 1;
+              display: flex;
+              justify-content: space-around;
+            }
+
+            .logo-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              .logo {
+                //width: 190px;
+                height: 80px;
+                justify-self: center;
+              }
+
+              .read-review-btn {
+                justify-self: flex-end;
+
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                color: #2E9A61;
+                cursor: pointer;
+              }
+            }
+
+            .trustpilot-box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: 14px;
+
+              .text-box {
+                .iconfont {
+                  color: $theme-color;
+                  font-size: 20px;
+                }
+
+                .text {
+                  font-size: 16px;
+                  font-weight: 600;
+                }
+              }
+
+              .star-list {
+                display: flex;
+                align-items: center;
+                margin-top: 2px;
+
+                li {
+                  width: 18px;
+                  height: 18px;
+                  text-align: center;
+                  line-height: 18px;
+                  color: #fff;
+                  background-color: $theme-color;
+                  margin: 0 1px;
+                }
+              }
+            }
+
+            .rate-box, .content-box, .btn-box {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            }
+
+            .rate-box {
+              text-align: center;
+
+              .score {
+                font-size: 32px;
+              }
+            }
+
+            .content-box {
+              .product-slogan {
+                color: #000;
+                font-weight: 500;
+              }
+
+              .product-advantage-list {
+                li {
+                  margin: 5px 0;
+
+                  .iconfont {
+                    font-size: 14px;
+                    color: #2E9A61;
+                    vertical-align: middle;
+                  }
+
+                  .text {
+                    display: inline-block;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+
+            .btn-box {
+              .btn {
+                display: block;
+                width: 158px;
+                height: 36px;
+                line-height: 36px;
+                text-align: center;
+                background: #2E9A61;
+                border-radius: 30px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all linear 0.1s;
+
+                &:hover {
+                  background-color: #03b959;
+                }
+              }
+            }
+          }
+
+          .product-include-card-content {
+            border-top: 1px dashed rgba(46, 154, 97, 0.1);
+            max-height: 1200px;
+            line-height: 28px;
+            overflow: hidden;
+            transition: max-height linear .5s;
+            padding: 0 15px;
+            background: #f8f8f8;
+
+            ::v-deep p {
+              margin: 15px 0;
+            }
+
+            ::v-deep dl {
+              margin: 13px 0;
+
+              dt {
+                font-weight: 700;
+
+                margin-bottom: 8px;
+              }
+
+              dd {
+                position: relative;
+                line-height: 28px;
+                padding-left: 18px;
+                list-style: none;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 8px;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  background-color: #247781;
+                }
+              }
+            }
+
+            &.current {
+              border-color: transparent;
+              max-height: 0;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+  .question-area {
+    .question-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        font-size: 30px;
+        color: #247781;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .question-content {
+        line-height: 28px;
+        color: #000;
+
+        .question-title {
+          font-size: 20px;
+          border-left: 5px solid #247781;
+          padding-left: 10px;
+          margin: 25px 0 10px;
+        }
+
+        dl {
+          margin: 13px 0;
+
+          dt {
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+
+          dd {
+            position: relative;
+            line-height: 28px;
+            padding-left: 18px;
+            list-style: none;
+
+            &::before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 8px;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #247781;
+            }
+          }
+        }
+
+        p {
+          margin: 10px 0;
+        }
+
+
+      }
+    }
+  }
+
+  .conclusion-area {
+    .conclusion-container {
+      width: $rootWidth;
+      margin: 0 auto;
+
+      .title {
+        margin-top: 36px;
+        font-size: 30px;
+        color: #247781;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .conclusion-content {
+        line-height: 28px;
+        color: #000;
+
+        p {
+          margin: 15px 0;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .slogan {
+        display: none;
+      }
+
+      .banner-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 20px 20px;
+
+        .title {
+          margin-top: 0;
+          font-size: 36px;
+        }
+
+        .introduce-container {
+          .introduce-content {
+            .phone-text {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preface-area {
+      .preface-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .title {
+          margin-top: 0;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .product-include-area {
+      .product-include-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .product-include-item {
+          .product-include-title {
+            .circle {
+              flex-shrink: 0;
+            }
+          }
+
+          .product-include-card {
+            .product-include-card-info {
+              height: auto;
+              flex-direction: column;
+            }
+
+            .product-include-card-info-left {
+            }
+
+            .product-include-card-info-right {
+              flex-direction: column;
+
+              .content-box {
+                margin-top: 15px;
+
+                .product-advantage-list {
+                  li {
+                    margin: 5px 0;
+                  }
+                }
+
+
+              }
+
+              .btn-box {
+                align-items: center;
+                margin-top: 20px;
+              }
+            }
+
+            .product-include-card-content {
+              max-height: max-content;
+            }
+          }
+        }
+      }
+    }
+
+    .question-area {
+
+
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .title {
+          font-size: 26px;
+        }
+      }
+
+      .question-content {
+
+        .question-title {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .website-btn-container {
+      width: 100%;
+      box-sizing: border-box;
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+      text-align: center;
+
+      .text {
+        font-size: 17px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .conclusion-area {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+
+      .conclusion-container {
+        width: 100%;
+        box-sizing: border-box;
+
+
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .more-from-toploansadviser-container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
