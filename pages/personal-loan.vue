@@ -375,32 +375,37 @@
                   </div>
                 </div>
                 <div class="btn-box">
-                  <a
-                    :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
-                    class="btn"
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    @click="
+                  <h3
+                    class="text"
+                    style="display: inline;"
+                  >
+                    <a
+                      :data-label=item.name
+                      :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
+                      class="btn gtag"
+                      data-event="click"
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
+                      @click="
                             handleTracking({
                               name: item.name,
                               click_time: new Date().getTime(),
                               link: item.link,
-                            })
+                            });tracking(item.name);
                           "
-                  >
-                    <h3
-                      class="text"
-                      style="display: inline;"
                     >
+
                       Check My Rates >>
-                    </h3>
-                    <!--                      <span class="iconfont">&#xe63c;</span>-->
-                  </a>
+
+                      <!--                      <span class="iconfont">&#xe63c;</span>-->
+                    </a>
+                  </h3>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
-                    class="visit-btn"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
+                    class="visit-btn gtag"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(item.name)"
                   >Visit site >></a
                   >
                 </div>
@@ -537,6 +542,7 @@ import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import {seo} from '../utils/seo'
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: seo({
@@ -567,7 +573,6 @@ export default {
       );
       products_results.data.forEach(ele => {
         ele.gclid = route.query['gclid'];
-
       })
       return {
         allProducts: products_results.data,
@@ -603,6 +608,7 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },

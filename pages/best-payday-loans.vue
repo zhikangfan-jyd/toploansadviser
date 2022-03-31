@@ -72,9 +72,10 @@
             <div class="card-top">
               <div class="company-logo-box">
                 <a
-                  :href="'/redirect/payday-loans/'+company.name"
+                  :href="'/redirect?url='+company.link"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
+                  @click="tracking(company.name)"
                 >
                   <img :alt="company.name" :src="company.logo" class="logo"/>
                 </a>
@@ -98,10 +99,11 @@
                     <Star :score="Number(company.score)"/>
                   </div>
                   <a
-                    :href="'/redirect/payday-loans/'+ company.name"
+                    :href="'/redirect?url='+ company.link"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(company.name)"
                   >
                     <span class="text"> Check My Rate </span>
                     <span class="iconfont">&#xe63c;</span>
@@ -118,10 +120,11 @@
                   <Star :score="Number(company.score)"/>
                 </div>
                 <a
-                  :href="'/redirect/payday-loans/'+company.name"
+                  :href="'/redirect?url='+company.link"
                   class="btn"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
+                  @click="tracking(company.name)"
                 >
                   <span class="text"> Check My Rate </span>
                   <span class="iconfont">&#xe63c;</span>
@@ -142,10 +145,11 @@
                 <p class="desc" v-html="company.desc"></p>
                 <div class="detail-box">
                   <a
-                    :href="'/redirect/payday-loans/'+company.name"
+                    :href="'/redirect?url='+company.link"
                     class="detail-btn"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(company.name)"
                   >
                     <span class="text"
                     >Click here for official site, terms, and details.</span
@@ -651,6 +655,7 @@
 import Star from "../components/star/index.vue";
 import Message from '../components/Message6/index.vue'
 import {updateTime} from "../utils/date";
+import {tracking} from "../utils/ga-event";
 
 export default {
   components: {
@@ -669,6 +674,7 @@ export default {
   },
   methods: {
     updateTime,
+    tracking
   },
 };
 </script>

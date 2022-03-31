@@ -33,6 +33,7 @@
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('Credible')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -104,6 +105,7 @@
           class="btn"
           rel="noopener noreferrer nofollow"
           target="_blank"
+          @click="tracking('Credible')"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -576,6 +578,7 @@
 
 <script>
 import Message3 from '../components/Message3/index'
+import {tracking} from "../utils/ga-event";
 
 export default {
   components: {
@@ -584,9 +587,12 @@ export default {
   data() {
     return {
       mainLink:
-        "/redirect/best-mortgage-loan/main",
+        "/redirect?url=https://www.credible.com/mortgage-refinance?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_refi&utm_content=",
     };
 
+  },
+  methods: {
+    tracking
   },
   created() {
     this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];

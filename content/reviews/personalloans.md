@@ -9,7 +9,7 @@ author:
 title: Personalloans Review |  Toploansadviser.com
 description: PersonalLoans.com is a lead generator or personal loan marketplace. They don’t underwrite or fund the loans. Instead, they bring together borrowers (like you) and lenders in one place.
 product: {
-"name": "personalLoans",
+"name": "PersonalLoans.com",
 "review_key": "personalloans",
 "link": "https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
 "logo": "/data/images/personal.png",
@@ -51,7 +51,7 @@ Most PersonalLoan.com lenders offer loan amounts from $1,000 - $35,000 and you o
 
 Learn how the PersonalLoans.com platform works to get the loan that’s right for you.
 
-<div class="btn-box"><a href="/redirect/review/personalLoans" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 
 
@@ -152,4 +152,4 @@ You aren’t obligated to use any of the lenders or offers provided to you and P
 
 You have nothing to lose to try PersonalLoans.com out to see what type of loan you may be able to get. No matter where you get your loan, check out the bottom line and make sure you can afford the loan both monthly and over its entire term.
 
-<div class="btn-box"><a href="/redirect/review/personalLoans" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

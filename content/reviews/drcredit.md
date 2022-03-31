@@ -9,7 +9,7 @@ author:
 title: Drcredit Review |  Toploansadviser.com
 description: Dr. Credit is an online marketplace that matches you with lenders offering personal loans to anyone, including people with bad credit.
 product: {
-"name": "drcredit",
+"name": "DrCredit",
 "review_key": "drcredit",
 "link": "https://www.drcredit.com/591.html",
 "logo": "/data/images/drcredit.png",
@@ -48,7 +48,7 @@ It’s a nice change from most lenders who want perfect credit yet don’t provi
 
 Dr. Credit doesn’t underwrite, fund, or approve loans. They are strictly the marketplace that brings together borrowers looking for a loan and lenders with the programs borrowers with bad credit need.
 
-<div class="btn-box"><a href="/redirect/review/drcredit" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.drcredit.com/591.html" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 
 
@@ -150,4 +150,4 @@ If you have bad credit and need a personal loan, Dr. Credit may be the right pla
 
 Dr. Credit makes applying for loans with multiple lenders easy with one loan application and the ability to secure offers from many lenders within a matter of minutes. Use the platform for what it’s worth and find the loan that works the best for you and your financial situation.
 
-<div class="btn-box"><a href="/redirect/review/drcredit" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.drcredit.com/591.html" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

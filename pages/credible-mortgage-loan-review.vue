@@ -104,6 +104,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="content-link"
+            @click="tracking('Credible')"
             ><strong
               >Credible not only provided one pre-approval letter but several –
               one from each lender I qualified for</strong
@@ -176,6 +177,7 @@
             :href="mainLink"
             target="_blank"
             rel="noopener noreferrer nofollow"
+            @click="tracking('Credible')"
             class="content-link"
             >applying for a purchase loan or refinance</a
           >, you apply for the loan online and see your options. You can compare
@@ -202,6 +204,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="content-link"
+            @click="tracking('Credible')"
             >Once you clear all conditions, you are ready to close on the
             loan.</a
           >
@@ -345,6 +348,7 @@
           <a
             :href="mainLink"
             target="_blank"
+            @click="tracking('Credible')"
             rel="noopener noreferrer nofollow"
             class="content-link"
             >Credible application process</a
@@ -360,6 +364,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="mainLink"
+            @click="tracking('Credible')"
             >I had to complete only one application and yet I received offers
             from five lenders</a
           >. Credible sends your information to every lender whose requirements
@@ -425,6 +430,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="content-link"
+            @click="tracking('Credible')"
             ><span class="highlight">Credible</span></a
           >
           review if I didn’t point out the good AND bad points about Credible.
@@ -519,6 +525,7 @@
           target="_blank"
           rel="noopener noreferrer nofollow"
           class="btn"
+          @click="tracking('Credible')"
         >
           <span class="text"
             >Go and Get Your Refiancing Mortgage Rates Now</span
@@ -562,6 +569,7 @@
           <a
             :href="mainLink"
             target="_blank"
+            @click="tracking('Credible')"
             rel="noopener noreferrer nofollow"
             class="btn"
           >
@@ -587,16 +595,18 @@
 
 <script>
 import {updateTime} from "../utils/date";
+import {tracking} from "../utils/ga-event";
 
 export default {
   data() {
     return {
       mainLink:
-        "/redirect/credible-mortgage-loan-review/main",
+        "/redirect?url=https://www.credible.com/mortgage?utm_source=westwin&utm_medium=referral&utm_campaign=mortgage_purchase&utm_content=",
     };
   },
   methods:{
-    updateTime
+    updateTime,
+    tracking
   },
   mounted() {
     this.mainLink = this.mainLink + '?gclid=' + this.$route.query['gclid'];

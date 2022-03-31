@@ -370,7 +370,7 @@
                   </div>
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                       class="btn"
                       rel="noopener noreferrer nofollow"
                       target="_blank"
@@ -378,8 +378,8 @@
                         handleTracking({
                           name: item.name,
                           click_time: new Date().getTime(),
-                          link: item.link,
-                        })
+                          link: item.link
+                        });tracking(item.name);
                       "
                     >
                       <h3
@@ -391,10 +391,11 @@
                       <span class="iconfont">&#xe63c;</span>
                     </a>
                     <a
-                      :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                       class="visit-btn"
                       rel="noopener noreferrer nofollow"
                       target="_blank"
+                      @click="tracking(item.name)"
                     >Visit site »</a
                     >
                   </div>
@@ -535,7 +536,7 @@
               </div>
               <div class="btn-box">
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                   class="btn"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
@@ -544,7 +545,7 @@
                       name: item.name,
                       click_time: new Date().getTime(),
                       link: item.link,
-                    })
+                    });tracking(item.name);
                   "
                 >
                   <h3 class="text" style="display: inline;">
@@ -553,10 +554,11 @@
                   <span class="iconfont">&#xe63c;</span>
                 </a>
                 <a
-                  :href="'/redirect/best-personal-loans-2021/'+item.name + '?gclid=' + item.gclid"
+                  :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                   class="visit-btn"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
+                  @click="tracking(item.name)"
                 >Visit site »</a
                 >
               </div>
@@ -633,6 +635,7 @@ import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 import {seo} from "../utils/seo"
+import {tracking} from "../utils/ga-event";
 
 export default {
   head() {
@@ -709,6 +712,7 @@ export default {
   },
   methods: {
     seo,
+    tracking,
     computeScore,
     formatNum,
     updateTime, handleShowDisclosure() {

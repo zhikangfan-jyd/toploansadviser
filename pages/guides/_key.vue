@@ -52,15 +52,16 @@
           <li v-for="(item, index) in toploans" :key="index" class="top-item">
             <img :alt="item.name" :src="item.logo" class="logo"/>
             <a
-              :href="'/redirect/personal-loan/'+item.name"
-              rel="noopener noreferrer"
+              :href="'/redirect?url='+item.link"
+              rel="noopener noreferrer nofollow"
               target="_blank"
               @click="
                 handleTracking({
                   name: item.name,
                   click_time: new Date().getTime(),
-                  link: item.link,
-                })
+                  link: item.link
+                });
+                tracking(item.name);
               "
             >Visit Site >></a
             >
@@ -95,6 +96,7 @@ import {shareToFB, shareToTwitter} from "../../utils/share";
 import {updateTime} from "../../utils/date";
 import {seo} from '../../utils/seo'
 import {jsonLd} from '../../utils/json-ld'
+import {tracking} from "../../utils/ga-event";
 
 export default {
   head() {
@@ -168,6 +170,7 @@ export default {
   methods: {
     shareToFB,
     shareToTwitter,
+    tracking,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

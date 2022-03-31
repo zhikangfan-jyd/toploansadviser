@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "name": "Lightsteam",
+      "name": "LightStream",
       "review_key": "lightstream",
       "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
       "logo": "/data/images/lightstream.svg",
@@ -105,7 +105,7 @@
       "disclaimer": ""
     },
     {
-      "name": "Lending club",
+      "name": "LendingClub",
       "review_key": "lending-club",
       "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
       "logo": "/data/images/lendingclub.svg",

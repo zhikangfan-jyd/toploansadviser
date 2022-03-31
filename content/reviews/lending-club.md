@@ -9,9 +9,9 @@ author:
 title: Lending Club Review |  Toploansadviser.com
 description: Lending Club is based in San Francisco in the United States. It operates through an online platform from where they allot loans such as personal loans and branchless banking to people in need.
 product: {
-"name": "lendingclub",
+"name": "LendingClub",
 "review_key": "",
-"link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
+"link": "https://www.credible.com/a/dd-lendingclub?utm_source=westwin&utm_medium=referral&utm_campaign=pl_lc_tt&utm_content=&gclid=undefined",
 "logo": "/data/images/lendingclub.webp",
 "upto": "1000000",
 "introduce": "Choice for debt consolidation",
@@ -43,7 +43,7 @@ Lending Club operates through an online platform from where they allot loans suc
 The company is based in San Francisco in the United States, from where it carries out all its operations like offering personal loans. These loans could be used to pay off credit card bills, the expense incurred on events like weddings, vacations, etc., amongst other things.
 
 
-<div class="btn-box"><a href="/redirect/review/lendingclub" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-lendingclub?utm_source=westwin&utm_medium=referral&utm_campaign=pl_lc_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Basic Loan Information</h2></div>
 

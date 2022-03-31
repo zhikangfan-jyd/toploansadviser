@@ -233,9 +233,10 @@
                   </div>
                   <div class="logo-box">
                     <a
-                      :href="'/redirect/personal-loans/'+product.name"
+                      :href="'/redirect?url='+product.link"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
+                      @click="tracking(product.name)"
                     >
                       <img
                         :src="product.logo"
@@ -262,17 +263,19 @@
                   </div>
                   <div class="details-box">
                     <a
-                      :href="'/redirect/personal-loans/'+product.name"
+                      :href="'/redirect?url='+product.link"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="name"
+                      @click="tracking(product.name)"
                     >{{ product.name }}</a
                     >
                     <a
-                      :href="'/redirect/personal-loans/'+product.name"
+                      :href="'/redirect?url='+product.link"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="min-debt"
+                      @click="tracking(product.name)"
                     >{{ product.introduce }}</a
                     >
 
@@ -293,17 +296,19 @@
 
                   <div class="btn-box">
                     <a
-                      :href="'/redirect/personal-loans/'+product.name"
+                      :href="'/redirect?url='+product.link"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="btn"
+                      @click="tracking(product.name)"
                     >Get my rate</a
                     >
                     <a
-                      :href="'/redirect/personal-loans/'+product.name"
+                      :href="'/redirect?url='+product.link"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       class="visit-site"
+                      @click="tracking(product.name)"
                     >Visit site »</a
                     >
                   </div>
@@ -885,7 +890,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
+              <a target="_blank" :href="'/redirect?url='+product.link" rel="noopener noreferrer nofollow" @click="tracking(product.name)">
                 <img :src="product.logo" :alt="product.name" :title="product.name"/>
               </a>
             </div>
@@ -896,7 +901,7 @@
               v-for="(product, index) in products"
               :key="index"
             >
-              <a target="_blank" :href="'/redirect/personal-loans/'+product.name" rel="noopener noreferrer nofollow">
+              <a target="_blank" :href="'/redirect?url='+product.link" rel="noopener noreferrer nofollow" @click="tracking(product.name)">
                 <img :src="product.logo" :alt="product.name" :title="product.name"/>
               </a>
             </div>
@@ -910,6 +915,7 @@
 <script>
 import {updateTime} from "../utils/date";
 import {formatNum} from "../utils/index";
+import {tracking} from "../utils/ga-event";
 
 export default {
   layout: "personal",
@@ -988,6 +994,7 @@ export default {
   methods: {
     formatNum,
     updateTime,
+    tracking,
     async getData() {
       let results = await this.$axios.$get("/data/copy.json");
 

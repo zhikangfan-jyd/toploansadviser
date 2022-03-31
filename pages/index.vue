@@ -390,7 +390,7 @@
                   :key="index"
                   class="single-brand"
                 >
-                  <a :href="product.link" target="_blank">
+                  <a :href="'/redirect?url=' + product.link" target="_blank" @click="tracking(product.name)">
                     <img :alt="product.name" :src="product.logo"/>
                   </a>
                 </div>
@@ -401,7 +401,7 @@
                   :key="index"
                   class="single-brand"
                 >
-                  <a :href="product.link" target="_blank">
+                  <a :href="'/redirect?url=' + product.link" target="_blank" @click="tracking(product.name)">
                     <img :alt="product.name" :src="product.logo"/>
                   </a>
                 </div>
@@ -451,6 +451,7 @@
 import {updateTime} from "../utils/date";
 import {directive, Swiper, SwiperSlide} from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: {
@@ -535,6 +536,7 @@ export default {
     };
   },
   methods: {
+    tracking,
     updateTime,
     // 获取博客
     async getBlog() {

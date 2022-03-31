@@ -220,11 +220,11 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
-
+                    @click="tracking(item.name)"
                   >
                     <h3
                       class="text"
@@ -235,10 +235,11 @@
                     <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(item.name)"
                   >Visit site >></a
                   >
                 </div>
@@ -472,7 +473,7 @@ import {updateTime} from "../utils/date";
 import {computeScore, formatNum} from "../utils/index";
 import NewStar from '~/components/NewStar/index.vue'
 import {seo} from '../utils/seo'
-
+import {tracking} from "../utils/ga-event";
 export default {
   components: {
     NewStar
@@ -511,6 +512,7 @@ export default {
     updateTime,
     computeScore,
     formatNum,
+    tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     }

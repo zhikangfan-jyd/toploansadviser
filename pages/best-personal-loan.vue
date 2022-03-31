@@ -33,6 +33,7 @@
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('Credible')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -92,6 +93,7 @@
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('Credible')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -448,7 +450,7 @@
                     <span class="iconfont">&#xe63c;</span>
                   </a>
                   <a v-else
-                     :href="'/redirect/personal-loan/'+item.name"
+                     :href="'/redirect?url='+item.link"
                      class="btn"
                      rel="noopener noreferrer nofollow"
                      target="_blank"
@@ -456,8 +458,8 @@
                       handleTracking({
                         name: item.name,
                         click_time: new Date().getTime(),
-                        link: item.link,
-                      })
+                        link: item.link
+                      });tracking(item.name);
                     "
                   >
                     <h3
@@ -477,10 +479,11 @@
                   >
                   <a
                     v-else
-                    :href="'/redirect/personal-loan/'+item.name"
+                    :href="'/redirect?url='+item.link"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(item.name)"
                   >Visit site »</a
                   >
                 </div>
@@ -531,6 +534,7 @@
           class="btn"
           rel="noopener noreferrer nofollow"
           target="_blank"
+          @click="tracking('Credible')"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -596,6 +600,7 @@ import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import {seo} from '../utils/seo'
+import {tracking} from "../utils/ga-event";
 
 export default {
   head() {
@@ -644,7 +649,7 @@ export default {
           ele.link = changeLink(ele.link);
         }
         if (ele.name === 'credible') {
-          ele.link = '/redirect/best-personal-loan/goodloans'
+          ele.link = '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content='
         }
       });
 
@@ -661,8 +666,8 @@ export default {
   data() {
     return {
       mainLink:
-        "/redirect/best-personal-loan/goodloans",
-      messageLink: '/redirect/best-personal-loan/goodloans',
+        "/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=",
+      messageLink: '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=',
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -685,6 +690,7 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    tracking,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

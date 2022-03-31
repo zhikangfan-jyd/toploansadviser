@@ -1,7 +1,7 @@
 {
     "data": [
       {
-        "name": "best_egg",
+        "name": "Best Egg",
         "review_key": "",
         "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl",
         "logo": "/data/images/best_egg.webp",
@@ -27,7 +27,7 @@
         "disclaimer": ""
       },
         {
-            "name": "credible",
+            "name": "Credible",
             "review_key": "credible",
             "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
             "logo": "/data/images/credible.webp",
@@ -53,7 +53,7 @@
             "disclaimer": ""
         },
         {
-            "name": "lightstream",
+            "name": "LightStream",
             "review_key": "lightstream",
           "seo": {
             "title": ""
@@ -82,7 +82,7 @@
             "disclaimer": ""
         },
         {
-            "name": "avant",
+            "name": "Avant",
             "review_key": "avant",
             "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
             "logo": "/data/images/avant.webp",
@@ -109,7 +109,7 @@
         },
 
         {
-            "name": "lendingclub",
+            "name": "LendingClub",
             "review_key": "",
             "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
             "logo": "/data/images/lendingclub.webp",
@@ -135,7 +135,7 @@
             "disclaimer": ""
         },
       {
-        "name": "sofi",
+        "name": "SoFi",
         "review_key": "sofi",
         "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
         "logo": "/data/images/sofi.webp",
@@ -161,7 +161,7 @@
         "disclaimer": ""
       },
         {
-            "name": "upgrade",
+            "name": "Upgrade",
             "review_key": "",
             "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
             "logo": "/data/images/upgrade.webp",

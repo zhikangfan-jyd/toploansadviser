@@ -32,9 +32,10 @@
             today!
           </p>
           <a
-            :href="'/redirect/student-loan/'+mainName"
+            :href="'/redirect?url='+ mainLink"
             class="btn"
             rel="noopener noreferrer nofollow"
+            @click="tracking('Credible')"
             target="_blank"
           >
             <span class="text">Get My Rates</span>
@@ -141,10 +142,11 @@
             Best Student Loan Refinance Companies in {{ updateTime().year }}
           </h2>
           <a
-            :href="'/redirect/student-loan/' + mainName"
+            :href="'/redirect?url=' + mainLink"
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('Credible')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -201,9 +203,10 @@
                 <div class="img-score-box">
                   <div class="img-box">
                     <a
-                      :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
+                      :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                       rel="noopener noreferrer nofollow"
                       target="_blank"
+                      @click="tracking(item.name)"
                     >
                       <img v-lazy="item.logo" :alt="item.name"/>
                     </a>
@@ -290,7 +293,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -298,8 +301,8 @@
                       handleTracking({
                         name: item.name,
                         click_time: new Date().getTime(),
-                        link: item.link,
-                      })
+                        link: item.link
+                      });tracking(item.name);
                     "
                   >
                     <span class="text">Check My Rate</span>
@@ -338,10 +341,11 @@
         </div>
         <img alt="" class="pic" src="@/assets/img/info.webp"/>
         <a
-          :href="'/redirect/student-loan/'+mainName "
+          :href="'/redirect?url='+mainLink "
           class="btn"
           rel="noopener noreferrer nofollow"
           target="_blank"
+          @click="tracking('Credible')"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -378,6 +382,7 @@
 import FoldTheCard from "../components/FoldTheCard/index";
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: {
@@ -411,7 +416,7 @@ export default {
         count: product_results.data.length,
         allProducts: product_results.data,
         questionData: question_results.data,
-        mainLink: product_results.data[0].link,
+        mainLink: product_results.data[0].link + '?gclid=' + route.query['gclid'],
         mainName: product_results.data[0].name + '?gclid=' + route.query['gclid']
       };
     } catch (e) {
@@ -429,6 +434,7 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    tracking,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

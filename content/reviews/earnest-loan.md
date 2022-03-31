@@ -9,7 +9,7 @@ author:
 title: Earnest Review |  Toploansadviser.com
 description: Earnest is a student loan service that offers loan refinancing and private loans for both graduate and undergraduate students. They offer very flexible repayment options.
 product: {
-"name": "earnest",
+"name": "Earnest",
 "review_key": "",
 "link": "https://www.earnest.com",
 "logo": "/data/images/earnest.webp",

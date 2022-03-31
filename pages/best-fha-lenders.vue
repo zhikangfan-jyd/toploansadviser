@@ -212,7 +212,7 @@
                   </ul>
                 </div>
                 <div class="btn-box">
-                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                  <a :href="'/redirect?url=' + product.link" class="btn" rel="noreferrer noopener nofollow" @click="tracking(product.name)">View Rates >></a>
                 </div>
               </div>
             </div>
@@ -221,7 +221,7 @@
         </div>
         <div class="website-btn-container">
           <p class="text">Check if you qualify for an FHA loan</p>
-          <a class="btn" href="" rel="noopener noreferrer nofollow">
+          <a class="btn" href="" rel="noopener noreferrer nofollow" target="_blank">
             Get Started >>
           </a>
         </div>
@@ -236,7 +236,7 @@
           <p>This FAQs section will guide first-time readers regarding FHA loans. Here are the most frequent questions
             we get asked:</p>
           <h6 class="question-title">What are the requirements to qualify for FHA loans?</h6>
-          <p>To <a href="/best-fha-lenders"><strong>get approval for an FHA loan</strong></a>, a person needs to fulfil
+          <p>To <a href="/best-fha-lenders" target="_blank"><strong>get approval for an FHA loan</strong></a>, a person needs to fulfil
             some minimum
             credit requirements. FHA loans are
             <a href="/guides/how-to-get-a-loan-with-bad-credit" rel="noreferrer noopener" target="_blank">for people
@@ -310,6 +310,7 @@
 import NewStar from '@/components/NewStar/index.vue';
 import {updateTime} from "../utils/date";
 import {seo} from '../utils/seo'
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: seo({
@@ -352,6 +353,7 @@ export default {
   },
   methods: {
     updateTime,
+    tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },

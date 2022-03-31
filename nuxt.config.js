@@ -180,7 +180,7 @@ export default {
       lastmod: new Date(),
       priority: 0.8
     },
-    exclude: ['/error'],
+    exclude: ['/error', '/redirect'],
     filter: sitemapFilter,
     routes: createSitemapRoutes
   },

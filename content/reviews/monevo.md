@@ -9,7 +9,7 @@ author:
 title: Monevo Review |  Toploansadviser.com
 description: Monevo is a website that matches personal loan applicants with eligible lenders. It takes the stress out of looking for a personal loan, including completing multiple applications with different lenders.
 product: {
-"name": "monevo",
+"name": "Monevo",
 "review_key": "monevo",
 "link": "https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w",
 "logo": "/data/images/monevo.png",
@@ -52,7 +52,7 @@ Monevo asks you simple questions when you apply for the loan including the loan�
 
 Once you get matched with a lender, you deal directly with the lender, and Monevo’s job is done. Monevo doesn’t cost a penny to use and yet it makes shopping for a personal loan easier than ever.
 
-<div class="btn-box"><a href="/redirect/review/monevo" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
@@ -165,4 +165,4 @@ If you’re in the market for a personal loan, using a loan aggregator like Mone
 
 Monevo costs consumers nothing and yet it can save them thousands of dollars on interest and fees. Monevo makes it easy to shop around for the best personal loan without feeling like it’s consuming your life.
 
-<div class="btn-box"><a href="/redirect/review/monevo" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.monevo.us/?campaign_code=cF1XbQMGCwdHQ3w" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

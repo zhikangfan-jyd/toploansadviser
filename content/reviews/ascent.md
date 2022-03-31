@@ -9,7 +9,7 @@ author:
 title: Ascent Review |  Toploansadviser.com
 description: Ascent offers loan options for both undergraduate and graduate students. If you don’t have a credit score high enough, Ascent will allow you to apply for a loan with a creditworthy cosigner.
 product: {
-"name": "ascent",
+"name": "Ascent",
 "review_key": "ascent",
 "link": "",
 "logo": "/data/images/ascent.webp",

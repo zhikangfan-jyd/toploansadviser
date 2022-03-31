@@ -223,11 +223,11 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/best-consolidation-loans/'+ item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
-
+                    @click="tracking(item.name)"
                   >
                     <h3
                       class="text"
@@ -238,10 +238,11 @@
                     <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
-                    :href="'/redirect/best-consolidation-loans/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(item.name)"
                   >Visit site >></a
                   >
                 </div>
@@ -386,7 +387,7 @@ import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
 import {seo} from '../utils/seo'
-
+import {tracking} from "../utils/ga-event";
 export default {
 
   head: seo({
@@ -429,7 +430,7 @@ export default {
     computeScore,
     formatNum,
     updateTime,
-
+    tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     }

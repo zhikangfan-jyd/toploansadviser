@@ -35,6 +35,7 @@
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('eaglecashloans')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -94,6 +95,7 @@
             class="btn"
             rel="noopener noreferrer nofollow"
             target="_blank"
+            @click="tracking('eaglecashloans')"
           >
             <span class="text">Get My Rates</span>
             <span class="iconfont">&#xe63c;</span>
@@ -429,7 +431,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -437,8 +439,8 @@
                       handleTracking({
                         name: item.name,
                         click_time: new Date().getTime(),
-                        link: item.link,
-                      })
+                        link: item.link
+                      });tracking(item.name);
                     "
                   >
 
@@ -451,10 +453,11 @@
                     <span class="iconfont">&#xe63c;</span>
                   </a>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
+                    @click="tracking(item.name)"
                   >Visit site »</a
                   >
                 </div>
@@ -505,6 +508,7 @@
           class="btn"
           rel="noopener noreferrer nofollow"
           target="_blank"
+          @click="tracking('eaglecashloans')"
         >
           <span class="text">Get My Rates</span>
           <span class="iconfont">&#xe63c;</span>
@@ -568,6 +572,7 @@
 import {computeScore, formatNum} from "../utils/index";
 import {updateTime} from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: {
@@ -606,7 +611,7 @@ export default {
   },
   data() {
     return {
-      mainLink: "/redirect/online-personal-loans/main",
+      mainLink: "/redirect?url=https://secureconv-wh.com/?a=126374&c=279173&mt=4",
       isNull: true,
       page: 1,
       pageSize: 5,
@@ -629,6 +634,7 @@ export default {
     computeScore,
     formatNum,
     updateTime,
+    tracking,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {

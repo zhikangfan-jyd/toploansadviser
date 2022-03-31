@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "name": "credible",
+            "name": "Credible",
             "review_key": "credible",
             "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
             "logo": "/data/images/credible.webp",
@@ -27,7 +27,7 @@
             "disclaimer": ""
         },
         {
-            "name": "lightstream",
+            "name": "LightStream",
             "review_key": "lightstream",
             "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl&utm_content=",
             "logo": "/data/images/lightstream.webp",
@@ -53,7 +53,7 @@
             "disclaimer": ""
         },
         {
-            "name": "best_egg",
+            "name": "Best Egg",
             "review_key": "",
             "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
             "logo": "/data/images/best_egg.webp",
@@ -79,7 +79,7 @@
             "disclaimer": ""
         },
         {
-            "name": "lendingclub",
+            "name": "LendingClub",
             "review_key": "",
             "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content=",
             "logo": "/data/images/lendingclub.webp",
@@ -105,7 +105,7 @@
             "disclaimer": ""
         },
         {
-            "name": "sofi",
+            "name": "SoFi",
             "review_key": "sofi",
             "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
             "logo": "/data/images/sofi.webp",
@@ -131,7 +131,7 @@
             "disclaimer": ""
         },
         {
-            "name": "upgrade",
+            "name": "Upgrade",
             "review_key": "",
             "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
             "logo": "/data/images/upgrade.webp",
@@ -157,7 +157,7 @@
             "disclaimer": ""
         },
         {
-            "name": "avant",
+            "name": "Avant",
             "review_key": "avant",
             "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl&utm_content=",
             "logo": "/data/images/avant.webp",

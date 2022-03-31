@@ -335,16 +335,16 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                    class="btn"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
+                    class="btn gtag"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="
                         handleTracking({
                           name: item.name,
                           click_time: new Date().getTime(),
-                          link: item.link,
-                        })
+                          link: item.link
+                        });tracking(item.name);
                       "
                   >
                     <span class="text">View Rates >></span>
@@ -408,10 +408,11 @@
                     </div>
                     <div class="review-link-box">
                       <a
-                        :href="'/redirect/mortgage-loan/'+item.name+'?category='+category + '&gclid=' + item.gclid"
-                        class="review-btn"
-                        rel="noopener noreferrer"
+                        :href="'/redirect?url=' + item.link+ '&gclid=' + item.gclid"
+                        class="review-btn gtag"
+                        rel="noopener noreferrer nofollow"
                         target="_blank"
+                        @click="tracking(item.name)"
                       >
                         <span class="text">Check My Rate</span>
                         <span class="iconfont">&#xe63c;</span>
@@ -666,6 +667,7 @@
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
 import {seo} from '../utils/seo'
+import {tracking} from "../utils/ga-event";
 
 export default {
   head: seo({
@@ -804,6 +806,7 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    tracking,
     showDisclosure() {
       this.isShow = !this.isShow;
     },

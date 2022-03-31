@@ -9,12 +9,12 @@ author:
 title: Lightstream Review |  Toploansadviser.com
 description: Lightstream is an affiliate of SunTrust Bank. It’s the online version of SunTrust Bank, which many people know well. And it is so easy to get the funds you need fast.
 product: {
-"name": "lightstream",
+"name": "LightStream",
 "review_key": "lightstream",
 "seo": {
 "title": ""
 },
-"link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
+"link": "https://www.credible.com/a/dd-lightstream?utm_source=westwin&utm_medium=referral&utm_campaign=pl_ls_tt&utm_content=&gclid=undefined",
 "logo": "/data/images/lightstream.webp",
 "upto": "1000000",
 "introduce": "Low fixed rates ",
@@ -51,7 +51,7 @@ Lightstream is an affiliate of SunTrust Bank. It’s the online version of SunTr
 
 Lightstream is flexible in its underwriting and charges its APRs according to your risk level. If you are a ‘risky’ borrower, you’ll pay a higher interest rate, **but you won’t pay any fees as they don’t charge fees on any loan, not even prepayment penalties.**
 
-<div class="btn-box"><a href="/redirect/review/lightstream" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-lightstream?utm_source=westwin&utm_medium=referral&utm_campaign=pl_ls_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Loan Amount</h2></div>
 

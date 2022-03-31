@@ -28,7 +28,7 @@
             "desc": "PersonalLoans.com <strong style=\"font-weight: 700; color: #000;\">does not charge any fee</strong> or cost to submit a loan request and there is no obligation to agree to the terms of any loan offer presented to you."
         },
         {
-            "name": "Bad Credit Loan",
+            "name": "Bad Credit Loans",
             "logo": "/data/images/bad-credit-loans.webp",
             "link": "https://www.badcreditloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}",
             "interest": "5.99%-35.99%",
@@ -76,7 +76,7 @@
             "desc": "Representative Example: If you borrow $1500 over a term of 2 years with a representative APR of 7.9%, you will have 24 monthly payments of $67.77, for a total amount payable of $1626.54"
         },
         {
-            "name": "Loan Ploner",
+            "name": "Loan Pioneer",
             "logo": "/data/images/loan-ploner.webp",
             "link": "https://www.anrdoezrs.net/click-100176895-13904365",
             "interest": "5.9%-35.99%",
@@ -126,7 +126,7 @@
         {
             "name": "Up Lenders",
             "logo": "/data/images/up-lenders.webp",
-            "link": " https://secureconv-wh.com/?a=126374&c=256887&mt=4",
+            "link": "https://secureconv-wh.com/?a=126374&c=256887&mt=4",
             "interest": "5.99%-35.99%",
             "term": "7-day-72 months",
             "loan_amount": "$100-$2,500",

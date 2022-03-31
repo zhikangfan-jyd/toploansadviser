@@ -274,7 +274,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/student-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -282,8 +282,8 @@
                         handleTracking({
                           name: item.name,
                           click_time: new Date().getTime(),
-                          link: item.link,
-                        })
+                          link: item.link
+                        });tracking(item.name);
                       "
                   >
                     <span class="text">Check My Rate >></span>
@@ -372,6 +372,7 @@ import FoldTheCard from "../components/FoldTheCard/index";
 import {computeScore} from "../utils/index";
 import {updateTime} from "../utils/date";
 import {seo} from '../utils/seo'
+import {tracking} from "../utils/ga-event";
 
 export default {
 
@@ -431,6 +432,7 @@ export default {
   methods: {
     computeScore,
     updateTime,
+    tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
     },

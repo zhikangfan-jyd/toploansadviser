@@ -9,7 +9,7 @@ author:
 title: Upstart Review |  Toploansadviser.com
 description: Upstart is a personal loan lender that looks at more than your credit score. And it focuses on the potential in your career, whether you just graduated college or you’re climbing the corporate ladder.
 product: {
-"name": "upstart",
+"name": "Upstart",
 "review_key": "upstart",
 "link": "https://upstart.9c65.net/Gv3Y9",
 "logo": "/data/images/upstart.png",
@@ -50,7 +50,7 @@ Upstart focuses on the potential in your career, whether you just graduated coll
 
 If you’re looking for a lender who doesn’t look at the standard credit score and debt-to-income ratio, you’ve found it in Upstart. Your credit score matters, but it’s not the only factor they’ll consider.
 
-<div class="btn-box"><a href="/redirect/review/upstart" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://upstart.9c65.net/Gv3Y9" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
@@ -149,4 +149,4 @@ Watch out for the origination fees and do your best to maximize your credit scor
 
 It doesn’t cost anything to get a quote and see your rate, give Upstart a try and see what they may offer you.
 
-<div class="btn-box"><a href="/redirect/review/upstart" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://upstart.9c65.net/Gv3Y9" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

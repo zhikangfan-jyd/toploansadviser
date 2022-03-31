@@ -1,14 +1,15 @@
 <template>
   <div class="contact-component-container">
-    <img src="@/assets/img/email-icon.png" alt="email" class="email-icon">
+    <img alt="email" class="email-icon" src="@/assets/img/email-icon.png">
     <span class="iconfont cancel-icon" @click="hiddenForm">&#xe614;</span>
     <div class="contact-title">Newsletter</div>
     <div class="text">Stay up to date with the lowest rate loans.</div>
     <form class="contact-component-form">
       <div class="form-item-block">
-        <input type="text" name="email" placeholder="Your email address" autocomplete="off" class="email-input"
-               v-model.trim="form.email"></input>
-        <button type="button" class="submit-btn" @click="submitForm">Subscribe »
+        <input v-model.trim="form.email" autocomplete="off" class="email-input" name="email"
+               placeholder="Your email address"
+               type="text"></input>
+        <button class="submit-btn" type="button" @click="submitForm">Subscribe »
         </button>
       </div>
     </form>

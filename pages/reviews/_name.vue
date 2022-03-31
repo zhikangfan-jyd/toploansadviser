@@ -89,10 +89,11 @@
 
           <div class="btn-box">
             <a
-              :href="'/redirect/review/'+ product.name"
+              :href="'/redirect?url='+ product.link"
               class="btn"
               rel="noopener noreferrer nofollow"
               target="_blank"
+              @click="tracking(product.name)"
             >Check Rate >></a
             >
             <p class="small-text">Via Credible.com's Secure Website</p>
@@ -126,9 +127,10 @@
             <li v-for="(item, index) in topLoans" :key="index" class="top-item">
               <img :alt="item.name" :src="item.logo" class="logo"/>
               <a
-                :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
+                @click="tracking(item.name)"
               >Visit Site >></a
               >
             </li>
@@ -158,6 +160,7 @@ import {computeScore, formatNum} from "../../utils/index";
 import {updateTime} from '../../utils/date'
 import {shareToFB, shareToTwitter} from "../../utils/share";
 import {seo} from '../../utils/seo'
+import {tracking} from "../../utils/ga-event";
 
 export default {
   head() {
@@ -194,6 +197,7 @@ export default {
     updateTime,
     shareToFB,
     shareToTwitter,
+    tracking,
     handleScroll() {
       let reviewsContainer = $(".reviews-container");
       let topArea = $(".reviews-container .top-area");

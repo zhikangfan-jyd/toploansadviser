@@ -9,7 +9,7 @@ author:
 title: Loan Depot Review |  Toploansadviser.com
 description: Loan Depot came into operation in 2010, and it is a type of direct lender that offers services like home loans, refinancing mortgages, and other types of loan products.
 product: {
-"name": "LoanDepot",
+"name": "Loan Depot",
 "review_key": "",
 "link": "",
 "logo": "/data/images/loandepot.webp",
