@@ -14,7 +14,7 @@ product: {
 "seo": {
 "title": ""
 },
-"link": "https://www.credible.com/a/dd-lightstream?utm_source=westwin&utm_medium=referral&utm_campaign=pl_ls_tt&utm_content=&gclid=undefined",
+"link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
 "logo": "/data/images/lightstream.webp",
 "upto": "1000000",
 "introduce": "Low fixed rates ",
@@ -51,7 +51,7 @@ Lightstream is an affiliate of SunTrust Bank. It’s the online version of SunTr
 
 Lightstream is flexible in its underwriting and charges its APRs according to your risk level. If you are a ‘risky’ borrower, you’ll pay a higher interest rate, **but you won’t pay any fees as they don’t charge fees on any loan, not even prepayment penalties.**
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-lightstream?utm_source=westwin&utm_medium=referral&utm_campaign=pl_ls_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Loan Amount</h2></div>
 
@@ -175,4 +175,4 @@ Lightstream also offers a Loan Experience Guarantee. This guarantee ensures that
 
 If you have good credit, Lightstream may be a great option for your personal loan. They mostly focus on your credit score and credit history, allowing them to fund loans fast for their customers. As long as you know that you have decent credit, it’s acceptable to apply directly through Lightstream. Just know that they’ll pull your credit right away – it’s not a soft pull, so it affects your credit score. Make sure that you know that you’ll be able to qualify for the loan based on your credit score before applying to avoid causing damage to your credit score without knowing if you’ll qualify.
 
-<div class="btn-box"><a href="/redirect/review/lightstream" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

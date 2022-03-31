@@ -11,7 +11,7 @@ description: Credible is a marketplace that brings together consumers and lender
 product: {
 "name": "Credible",
 "review_key": "credible",
-"link": "https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_tt&utm_content=&gclid=undefined",
+"link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
 "logo": "/data/images/credible.webp",
 "upto": "100000",
 "introduce": "Free to use, no hidden fees",
@@ -63,7 +63,7 @@ one credit inquiry won’t hurt your credit score a lot as it usually only hits 
 
 Are you ready to see if Credible is right for you? Read on.
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 

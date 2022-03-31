@@ -11,7 +11,7 @@ description: Avant offers a user-friendly process online. With an online applica
 product: {
 "name": "Avant",
 "review_key": "avant",
-"link": "https://www.credible.com/a/dd-avant?utm_source=westwin&utm_medium=referral&utm_campaign=pl_avnt_tt&utm_content=&gclid=undefined",
+"link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
 "logo": "/data/images/avant.webp",
 "upto": "1000000",
 "introduce": "Clear and transparent process",
@@ -51,7 +51,7 @@ Consumers use Avant personal loans for some of the following reasons:
 
 Of course, <a href="/guides/what-kind-of-loan-do-you-need" target="_blank" rel="noopener noreferrer">each person has their own reason for needing a personal loan</a>. Avant doesn’t discriminate based on the reason you need the funds – they base your approval on your qualifying factors only.
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-avant?utm_source=westwin&utm_medium=referral&utm_campaign=pl_avnt_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 
 <div class="title-box"><img src="/data/images/r-7.webp" /><h2 class="title">Pros & Cons</h2></div>
@@ -182,4 +182,4 @@ If you are unable to secure a personal loan from your local bank, Avant personal
 
 Avant offers a great way to get funds you need fast. With fixed interest rates, transparent fees, and no prepayment penalty, it’s a viable alternative for anyone looking for a personal loan.
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-avant?utm_source=westwin&utm_medium=referral&utm_campaign=pl_avnt_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

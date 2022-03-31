@@ -375,31 +375,31 @@
                   </div>
                 </div>
                 <div class="btn-box">
-                  <h3
-                    class="text"
-                    style="display: inline;"
-                  >
-                    <a
-                      :data-label=item.name
-                      :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
-                      class="btn gtag"
-                      data-event="click"
-                      rel="noopener noreferrer nofollow"
-                      target="_blank"
-                      @click="
+
+                  <a
+                    :data-label=item.name
+                    :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
+                    class="btn gtag"
+                    data-event="click"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                    @click="
                             handleTracking({
                               name: item.name,
                               click_time: new Date().getTime(),
                               link: item.link,
                             });tracking(item.name);
                           "
+                  >
+                    <h3
+                      class="text"
+                      style="display: inline;"
                     >
-
                       Check My Rates >>
+                    </h3>
+                    <!--                      <span class="iconfont">&#xe63c;</span>-->
+                  </a>
 
-                      <!--                      <span class="iconfont">&#xe63c;</span>-->
-                    </a>
-                  </h3>
                   <a
                     :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
                     class="visit-btn gtag"

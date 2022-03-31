@@ -648,9 +648,9 @@ export default {
         if (ele.link.indexOf("www.credible.com") !== -1) {
           ele.link = changeLink(ele.link);
         }
-        if (ele.name === 'credible') {
-          ele.link = '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content='
-        }
+        // if (ele.name === 'credible') {
+        //   ele.link = '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content='
+        // }
       });
 
 
@@ -666,8 +666,8 @@ export default {
   data() {
     return {
       mainLink:
-        "/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=",
-      messageLink: '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_fb&utm_content=',
+        "/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_tt&utm_content=",
+      messageLink: '/redirect?url=https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_tt&utm_content=',
       isNull: true,
       page: 1,
       pageSize: 5,

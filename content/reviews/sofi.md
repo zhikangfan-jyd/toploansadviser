@@ -11,7 +11,7 @@ description: SoFi calls themselves the finance company ‘that helps you get ahe
 product: {
 "name": "SoFi",
 "review_key": "sofi",
-"link": "https://www.credible.com/a/dd-sofipl?utm_source=westwin&utm_medium=referral&utm_campaign=pl_sofi_tt&utm_content=&gclid=undefined",
+"link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
 "logo": "/data/images/sofi.webp",
 "upto": "1000000",
 "introduce": "Prequalify for your rate in 3 minutes",
@@ -50,7 +50,7 @@ SoFi calls themselves the finance company ‘that helps you get ahead.’ They p
 
 Operating on the ‘What you See is What you Get’ philosophy, you don’t have to worry about hidden fees or unpleasant surprises when working with SoFi. Because SoFi doesn’t have brick-and-mortar locations (all business is done online), they are able to pass along their savings on lower overhead to its customers. With customer support professionals located in California and Utah, they offer support 7 days a week for new and existing customers.
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-sofipl?utm_source=westwin&utm_medium=referral&utm_campaign=pl_sofi_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Loan Amount</h2></div>
 
@@ -66,7 +66,7 @@ SoFi’s interest rates start at 5.99% for the best qualifying borrowers that al
 
 As we stated above, SoFi focuses on borrowers with high credit scores. On average, they want you to have at least a 680 credit score to qualify; however, they will take lower scores with other compensating factors. The most commonly accepted compensating factor is a large cash flow as this lowers the risk of you defaulting on your loan.
 
-<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/dd-sofipl?utm_source=westwin&utm_medium=referral&utm_campaign=pl_sofi_tt&utm_content=&gclid=undefined" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
@@ -199,4 +199,4 @@ If you are among the ‘elite credit borrowers’, you may have a good chance at
 
 If you think you’re a good candidate for a SoFi loan, apply for the loan right on their website. It takes just a matter of minutes to find out how much they may offer you and at what rate. The rest of the process is simple, getting you the funds that you need in a matter of a few days.
 
-<div class="btn-box"><a href="/redirect/review/sofi" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

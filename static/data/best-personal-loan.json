@@ -3,7 +3,7 @@
         {
             "name": "Credible",
             "review_key": "credible",
-            "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans&utm_content=",
+            "link": "https://www.credible.com/personal-loan?utm_source=westwin&utm_medium=referral&utm_campaign=pl_tt&utm_content=",
             "logo": "/data/images/credible.webp",
             "upto": "100000",
             "introduce": "Free to use, no hidden fees",
@@ -29,7 +29,7 @@
         {
             "name": "LightStream",
             "review_key": "lightstream",
-            "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-lightstream?utm_source=westwin&utm_medium=referral&utm_campaign=pl_ls_tt&utm_content=",
             "logo": "/data/images/lightstream.webp",
             "upto": "1000000",
             "introduce": "Low fixed rates ",
@@ -55,7 +55,7 @@
         {
             "name": "Best Egg",
             "review_key": "",
-            "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-bestegg?utm_source=westwin&utm_medium=referral&utm_campaign=pl_be_tt&utm_content=",
             "logo": "/data/images/best_egg.webp",
             "upto": "1000000",
             "introduce": "Get funding in as little as 1 day",
@@ -81,7 +81,7 @@
         {
             "name": "LendingClub",
             "review_key": "",
-            "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-lendingclub?utm_source=westwin&utm_medium=referral&utm_campaign=pl_lc_tt&utm_content=",
             "logo": "/data/images/lendingclub.webp",
             "upto": "1000000",
             "introduce": "Choice for debt consolidation",
@@ -107,7 +107,7 @@
         {
             "name": "SoFi",
             "review_key": "sofi",
-            "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-sofipl?utm_source=westwin&utm_medium=referral&utm_campaign=pl_sofi_tt&utm_content=",
             "logo": "/data/images/sofi.webp",
             "upto": "1000000",
             "introduce": "Prequalify for your rate in 3 minutes",
@@ -133,7 +133,7 @@
         {
             "name": "Upgrade",
             "review_key": "",
-            "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-upgrade?utm_source=westwin&utm_medium=referral&utm_campaign=pl_upg_tt&utm_content=",
             "logo": "/data/images/upgrade.webp",
             "upto": "1000000",
             "introduce": "No fees",
@@ -159,7 +159,7 @@
         {
             "name": "Avant",
             "review_key": "avant",
-            "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl&utm_content=",
+            "link": "https://www.credible.com/a/dd-avant?utm_source=westwin&utm_medium=referral&utm_campaign=pl_avnt_tt&utm_content=",
             "logo": "/data/images/avant.webp",
             "upto": "1000000",
             "introduce": "Clear and transparent process",

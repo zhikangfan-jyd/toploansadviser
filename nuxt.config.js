@@ -108,26 +108,27 @@ export default {
   content: {
     liveEdit: false
   },
-
   build: {
-    extractCSS: true,
+    extractCSS: true, //抽离css
     optimization: {
       minimize: true,
-      // 控制分包，但总体积不变，效果不大
       splitChunks: {
-        chunks: 'all',
+        chunks: 'all', //有效值为all、async和initial
+        minChunks: 2, //在拆分之前，模块必须在块之间共享的最少次数
         automaticNameDelimiter: '.',//控制新生成的名字连接符号
-        maxAsyncRequests: 5,
-        maxSize: 300000, //每个包的最大字节（慎用ß）
+        maxAsyncRequests: 30, //按需加载时的最大并行请求数。
+        maxInitialRequests: 30, //入口点的最大并行请求数
+        minSize: 2048, //要生成的块的最小大小（以字节为单位）
+        maxSize: 102400, //每个包的最大字节（慎用ß）
 
         cacheGroups: {
-          antdesignvue: {
+          element_ui: {
             test: /node_modules[\\/]element-ui/,
             chunks: 'all',
             priority: 20,
             name: true
           },
-          vuelazyload: {
+          vue_lazy_load: {
             test: /node_modules[\\/]vue-lazyload/,
             chunks: 'all',
             priority: 20,
@@ -135,6 +136,24 @@ export default {
           },
           jquery: {
             test: /node_modules[\\/]jquery/,
+            chunks: 'all',
+            priority: 20,
+            name: true
+          },
+          aos: {
+            test: /node_modules[\\/]aos/,
+            chunks: 'all',
+            priority: 20,
+            name: true
+          },
+          swiper: {
+            test: /node_modules[\\/]swiper/,
+            chunks: 'all',
+            priority: 20,
+            name: true
+          },
+          axios: {
+            test: /node_modules[\\/]axios/,
             chunks: 'all',
             priority: 20,
             name: true
@@ -185,10 +204,10 @@ export default {
     routes: createSitemapRoutes
   },
   axios: {
-    baseURL: 'http://192.168.50.107:3100'
+    baseURL: 'http://127.0.0.1:3100'
   },
   server: {
     port: '3100',
-    host: '192.168.50.107'
+    host: '127.0.0.1'
   }
 }
