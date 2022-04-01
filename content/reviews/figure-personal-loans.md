@@ -33,7 +33,7 @@ Figure also offers personal loans that are quick and easy to apply for. In this 
 
 For starters, Figure offers fixed rate loans with low APRs and multiple fixed term options . The minimum credit score you need to have in order to qualify for their personal loan is 640. The good news is that Figure personal loans are available in all states except for Mississippi. With such wide coverage, Figure is able to serve thousands of people who meet their simple requirements.
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/personal-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 
 
@@ -107,7 +107,7 @@ Another benefit of opting for Figure’s financial services is that they have a 
 
 <div class="title-box"><img src="/data/images/r-14.svg"/><h2 class="title">Bottom Line</h2></div>
 
-Overall, Figure’s personal loan is a great option for employed applicants looking for a quick cash solution. As long as you meet their credit score and DTI requirements, you should be able to access your borrowed money within a few days.
+Overall, <a href="/personal-loan" target="_blank" rel="noopener noreferrer">Figure’s personal loan is a great option</a> for employed applicants looking for a quick cash solution. As long as you meet their credit score and DTI requirements, you should be able to access your borrowed money within a few days.
 
 Westwin is a Figure partner and may receive compensation for this content.
 
@@ -122,4 +122,4 @@ Figure Personal Loan is available in AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA,
 2 Next Day Funding requires the application to be approved and documents signed prior to 4PM PST, 7PM EST. Please check with your institution to ensure funds availability before attempting to access the funds.
 
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/personal-loan-calculator" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

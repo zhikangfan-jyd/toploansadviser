@@ -38,7 +38,7 @@ product: {
 
 When you’re shopping for a personal loan, LendingTree should be on your short list of places to shop. In a few minutes and after answering a few simple questions, you can have a variety of loan options at your fingertips.
 
-LendingTree offers personal loans for a variety of reasons and has a large network of lenders that cater to borrowers with various qualifying factors.
+LendingTree <a href="/guides/why-you-need-a-personal-loan" target="_blank" rel="noopener noreferrer">offers personal loans for a variety of reasons</a> and has a large network of lenders that cater to borrowers with various qualifying factors.
 
 Are you curious about how LendingTree can help you get a loan? Keep reading to see how they stack up.
 
@@ -50,7 +50,7 @@ Consumers complete one loan application and are able to obtain quotes from sever
 
 LendingTree isn’t a lender. They don’t underwrite your loan or fund it. Instead, they work as the ‘middleman’ between you and the lenders. Once you choose a lender to work with, all communication and exchange of documentation will go directly through the lender. LendingTree only gathers your information and serves as the ‘marketing company’ to bring you and the lender together.
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/personal-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Loan Amount</h2></div>
 
@@ -58,7 +58,7 @@ Most LendingTree lenders offer personal loans in amounts ranging from $1,000 to 
 
 <div class="title-box"><img src="/data/images/r-3.webp"/><h2 class="title">APR</h2></div>
 
-Personal loans are unsecured. This means you don’t have to put collateral down on them. This also makes them riskier loans for lenders because you won’t lose anything personal if you don’t pay your loan.
+<a href="/personal-loan" target="_blank" rel="noopener noreferrer">Personal loans are unsecured</a>. This means you don’t have to put collateral down on them. This also makes them riskier loans for lenders because you won’t lose anything personal if you don’t pay your loan.
 
 Because of this risk personal loans often have higher APRS. Lenders need to make sure they’re protected in the event that you default on your loan.
 
@@ -74,7 +74,7 @@ Most LendingTree lenders allow credit scores as low as 640, but again, you pay t
 
 LendingTree lenders offer loans starting at just one year all the way up to 180 months (15 years). The longer that you borrow the funds, though, the higher the APR you’ll pay. Because you borrow the money for the long-term, you’ll not only pay a higher interest rate, but more interest over the life of the loan.
 
-Don’t focus on the interest rate alone, but also on the total cost of interest over the life of the loan. If you borrow money for as long as 12 years, for example, you’ll pay interest every month for 12 years – that interest can really add to the cost of what you borrowed.
+Don’t focus on the interest rate alone, but also <a href="/personal-loan-calculator" target="_blank" rel="noopener noreferrer">on the total cost of interest over the life of the loan</a>. If you borrow money for as long as 12 years, for example, you’ll pay interest every month for 12 years – that interest can really add to the cost of what you borrowed.
 
 <div class="title-box"><img src="/data/images/r-7.webp" /><h2 class="title">Pros & Cons</h2></div>
 
@@ -110,7 +110,7 @@ LendingTree has a great reputation, but every lender has its pros and cons, chec
 
 <div class="title-box"><img src="/data/images/r-8.webp"/><h2 class="title">Application</h2></div>
 
-The application process is simple. You answer some basic questions about yourself and your finances online. You do have to divulge pretty personal information, but that’s so the lenders can get a good feel for your situation to decide if they want to compete for your business. The information you’ll provide includes information about your credit score range, your income, assets, employment, and the loan amount you desire.
+<a href="/guides/how-to-apply-a-personal-loan" target="_blank" rel="noopener noreferrer">The application process is simple</a>. You answer some basic questions about yourself and your finances online. You do have to divulge pretty personal information, but that’s so the lenders can get a good feel for your situation to decide if they want to compete for your business. The information you’ll provide includes information about your credit score range, your income, assets, employment, and the loan amount you desire.
 
 The application itself only takes a few minutes and you should have an answer within a few short minutes as long as you provide accurate information. Remember that lenders will verify the information you provide by pulling your credit report and verifying any other qualifying information by asking for documentation to prove it.
 
@@ -125,7 +125,7 @@ On average, LendingTree lenders want a 640 credit score or higher, but the occas
 
 LendingTree matches you with lenders that offer personal loans for a variety of reasons including:
 
-- Home improvement
+- <a href="/best-home-improvement-loan" target="_blank" rel="noopener noreferrer">Home improvement</a>
 
 - Car Repairs
 
@@ -139,7 +139,7 @@ LendingTree matches you with lenders that offer personal loans for a variety of 
 
 - Moving expenses
 
-- Emergencies
+- <a href="/best-emergency-loan" target="_blank" rel="noopener noreferrer">Emergencies</a>
 
 <div class="title-box"><img src="/data/images/r-11.webp"/><h2 class="title">Rates & Fees</h2></div>
 
@@ -179,4 +179,4 @@ You can also find answers to commonly asked questions onLendingTree’s Contact 
 LendingTree offers the opportunity to comparison shop for a personal loan without dealing with the headache of shopping around and completing multiple applications. While you’ll still have to talk to multiple lenders as you make your decisions, the work is done for you and the lenders compete for your business rather than the other way around.
 
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/best-emergency-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

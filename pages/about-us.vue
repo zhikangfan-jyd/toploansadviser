@@ -1,4 +1,5 @@
 <template>
+<!--  <a href="" target="_blank" rel="noopener noreferrer"></a>-->
   <main class="main-container">
     <section class="banner-area">
       <div class="banner-container">

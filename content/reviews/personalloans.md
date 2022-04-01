@@ -45,13 +45,13 @@ Check out our review on PersonalLoans.com to see if it’s right for you.
 
 PersonalLoans.com is a lead generator or personal loan marketplace. They don’t underwrite or fund the loans. Instead, they bring together borrowers (like you) and lenders in one place. Lenders partner with them to advertise their services and bring in more borrowers, and borrowers use it to get access to multiple offers in one place.
 
-It’s a great service for both sides of the transaction. Lenders get access to more borrowers – including borrowers who may have never know about the lender without PersonalLoans.com. Borrowers have access to more lenders and opportunities they may not have had if they applied to lenders individually.
+It’s a great service for both sides of the transaction. Lenders get access to more borrowers – including borrowers who may have never know about the lender without PersonalLoans.com. <a href="/personal-loan" target="_blank" rel="noopener noreferrer">Borrowers have access to more lenders</a> and opportunities they may not have had if they applied to lenders individually.
 
 Most PersonalLoan.com lenders offer loan amounts from $1,000 - $35,000 and you often receive funds as soon as the next business day after approval. How much you receive, at what APR, and when you receive the funds all varies by lender.
 
 Learn how the PersonalLoans.com platform works to get the loan that’s right for you.
 
-<div class="btn-box"><a href="/redirect?url=https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/personal-loan-calculator" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 
 
@@ -67,7 +67,7 @@ Each lender on the PersonalLoans.com platform has different qualifying requireme
 
 - Avoiding any collections or public records or taking care of them right away if it happens
 
-The number one driving factor to qualifying for a personal loan and getting the best rates is ensuring your credit score is as high as possible. Obtain a [free copy of your credit report](http://www.annualcreditreport.com/) and check for the following:
+The number one driving factor to qualifying for a personal loan and getting the best rates is ensuring your credit score is as high as possible. Obtain a free copy of your credit report and check for the following:
 
 - Late payments – If you paid any bills 30 days or more late, it can hurt your credit score quite a bit. As quickly as you can, bring the payments current. It won’t erase the late payments but will help increase your credit score faster. Keep making your payments on time to avoid any more credit score decreases.
 
@@ -86,7 +86,7 @@ All loans and financial platforms have pros and cons. Understanding both sides c
                 <span class="text">Pros</span>
               </div>
               <ul class="list">
-                <li>You have more options from a variety of lenders than you’d have if you applied with each lender yourself</li>
+                <li><a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">You have more options from a variety of lenders</a> than you’d have if you applied with each lender yourself</li>
 <li>There are options for borrowers with low, average, and great credit scores, not just perfect credit score borrowers</li>
 <li>The platform is free to use and there’s no obligation to take a loan if you don’t like your options</li>
 <li>PersonalLoans.com offers a variety of loan options including peer-to-peer loans which are good for borrowers with less than perfect credit</li>
@@ -125,7 +125,7 @@ PersonalLoans.com lenders also charge different interest rates. Most lenders det
 
 - Income and debt ratio – You don’t need to make a certain amount of money, but how you use your money determines what interest rate lenders offer. The more stable your income and the lower your debts, the lower the APR you may receive.
 
-- Loan amount – The more money you borrow, the riskier it is for lenders. They usually increase your APR accordingly to ensure they make up for the risk of lending to you. If you borrow $5,000 you’ll get a lower APR than if you borrowed $35,000 in most cases.
+- Loan amount – The more money you borrow, the riskier it is for lenders. They usually increase your APR accordingly to ensure they make up for the risk of lending to you. <a href="/personal-loan-calculator" target="_blank" rel="noopener noreferrer">If you borrow $5,000 you’ll get a lower APR</a> than if you borrowed $35,000 in most cases.
 
 - Reason for the loan – If you’re borrowing the money to reinvest in your home, for example, you may get a lower APR than if you borrow the money for debt consolidation. Investing in your home, which is an asset, is a good risk whereas investing in high interest credit card debt can be risky.
 
@@ -137,7 +137,7 @@ Once you complete the application, you’ll receive offers in a matter of minute
 
 For example, sometimes a lower APR comes at a much higher origination cost. If you look at the loan’s total cost, you’ll see which option is right for you. Total up the costs (interest and origination) for the entire term and see which loan offers the lowest cost.
 
-Once you choose a loan, you work directly with the chosen lender. PersonalLoans.com doesn’t ask for documentation or any other information – only the lender you work with will determine what you must provide.
+<a href="/personal-loan" target="_blank" rel="noopener noreferrer">Once you choose a loan, you work directly with the chosen lender</a>. PersonalLoans.com doesn’t ask for documentation or any other information – only the lender you work with will determine what you must provide.
 
 <div class="title-box"><img src="/data/images/r-13.webp" /><h2 class="title">Customer Support</h2></div>
 
@@ -152,4 +152,4 @@ You aren’t obligated to use any of the lenders or offers provided to you and P
 
 You have nothing to lose to try PersonalLoans.com out to see what type of loan you may be able to get. No matter where you get your loan, check out the bottom line and make sure you can afford the loan both monthly and over its entire term.
 
-<div class="btn-box"><a href="/redirect?url=https://personalloans.com/?aid=13342&cid=3818&note={SUBID}&atrk={CLICK_ID}" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/personal-loan-calculator" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

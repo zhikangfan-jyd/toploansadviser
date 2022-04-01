@@ -36,7 +36,7 @@ product: {
 }
 ---
 
-Upstart is an online lender that works with borrowers with fair or even bad credit. They use a variety of different qualifying requirements and technology to help borrowers that might be turned down by other lenders secure a loan.
+Upstart is an online lender that <a href="/guides/how-to-get-a-loan-with-bad-credit" target="_blank" rel="noopener noreferrer">works with borrowers with fair or even bad credit</a>. They use a variety of different qualifying requirements and technology to help borrowers that might be turned down by other lenders secure a loan.
 
 Upstart credits its unique qualifying abilities to its use of Artificial Intelligence which opens up more opportunities for borrowers with less than perfect credit.
 
@@ -50,14 +50,14 @@ Upstart focuses on the potential in your career, whether you just graduated coll
 
 If you’re looking for a lender who doesn’t look at the standard credit score and debt-to-income ratio, you’ve found it in Upstart. Your credit score matters, but it’s not the only factor they’ll consider.
 
-<div class="btn-box"><a href="/redirect?url=https://upstart.9c65.net/Gv3Y9" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/best-consolidation-loans" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
 Upstart works differently when qualifying borrowers for the loan. While they have a rule of a minimum 580 credit score, they look at other factors too. For example, if you just graduated college and have barely any credit, but you have many job offers available and will work in a high-demand industry, Upstart may consider that and give you the loan.
 
-It’s always helpful to make sure your credit score is as high as it can be before applying though. Before you apply, pull your [free credit report](http://www.annualcreditreport.com/) and fix any of the following:
+It’s always helpful to make sure your credit score is as high as it can be before applying though. Before you apply, pull your free credit report and fix any of the following:
 
 - Bring late payments current – If you missed a payment or two, bring them current immediately. Give it a few months after bringing the accounts current for your credit score to increase again.
 
@@ -67,7 +67,7 @@ It’s always helpful to make sure your credit score is as high as it can be bef
 
 Upstart also looks at your current (and future) income compared to your debts. They are unique because they’ll consider your future possibilities, especially if you’re a recent college graduate. While they prefer stable income like most lenders, they’ll look at the big picture to see what you’re capable of doing.
 
-Like most lenders, Upstart looks at your current debts. If they are too high, they may suggest you use the funds to pay off your credit card debt. This will bring your debt-to-income ratio down and help you improve your credit score. If you don’t have a lot of outstanding debt, though, it can work in your favor and you may qualify for an Upstart loan.
+Like most lenders, <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer">Upstart looks at your current debts</a>. If they are too high, they may suggest you use the funds to pay off your credit card debt. This will bring your debt-to-income ratio down and help you improve your credit score. If you don’t have a lot of outstanding debt, though, it can work in your favor and you may qualify for an Upstart loan.
 
 Ideally, you want a stable income and employment history, decent credit, and as many qualifying factors as possible. If there is anything unique about your situation, especially your income, talk to your Upstart representative about it. They may have a program for you just because you have potential in your career.
 
@@ -123,7 +123,7 @@ Upstart charges origination fees up to 8% depending on your qualifying factors. 
 
 - Loan amount – Upstart offers loans up to $50,000, but you’ll pay higher interest rates to get a loan of that size. Depending on your credit and qualifying factors though, you may also pay much higher origination fees, so always know what it costs to get the loan. If you pay 8% on a $50,000 loan, that’s a $4,000 fee.
 
-- Reason for the loan – You can take out an Upstart loan for any reason, but Upstart may grant you a lower APR or fees if the reason is ‘good.’ If you’re investing in your home, for example, you may get a lower APR than someone using the money to pay off credit card debt. There’s a higher risk in debt consolidation than there is in lending money to someone who will reinvest it in an asset like real estate.
+- Reason for the loan – You can take out an Upstart loan for any reason, but Upstart may grant you a lower APR or fees if the reason is ‘good.’ <a href="/best-home-improvement-loan" target="_blank" rel="noopener noreferrer">If you’re investing in your home</a>, for example, you may get a lower APR than someone using the money to pay off credit card debt. There’s a higher risk in debt consolidation than there is in lending money to someone who will reinvest it in an asset like real estate.
 
 <div class="title-box"><img src="/data/images/r-12.webp"/><h2 class="title">Loan Process</h2></div>
 
@@ -149,4 +149,4 @@ Watch out for the origination fees and do your best to maximize your credit scor
 
 It doesn’t cost anything to get a quote and see your rate, give Upstart a try and see what they may offer you.
 
-<div class="btn-box"><a href="/redirect?url=https://upstart.9c65.net/Gv3Y9" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/best-consolidation-loans" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
