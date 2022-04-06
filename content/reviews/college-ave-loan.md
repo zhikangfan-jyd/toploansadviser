@@ -85,7 +85,7 @@ College Ave is a private lender that offers both private student loans and refin
 
 <div class="title-box"><img src="/data/images/r-9.webp"/><h2 class="title">Who Is This Loan Good For?</h2></div>
 
-College Ave loans are best for students who want to start cutting down their debt while still in school. If you have an income source or you’re financially able to make payments while in school, College Ave will offer you several options to help you get the best out of your repayment plan. Choose between immediate payments, interest-only payments, and fixed $25 payments to make a dent in your college debt before graduation.
+<a href="/best-parent-loan" target="_blank" rel="noopener noreferrer">College Ave loans are best for students</a> who want to start cutting down their debt while still in school. If you have an income source or you’re financially able to make payments while in school, College Ave will offer you several options to help you get the best out of your repayment plan. Choose between immediate payments, interest-only payments, and fixed $25 payments to make a dent in your college debt before graduation.
 
 <div class="title-box"><img src="/data/images/r-10.webp"/><h2 class="title">Customer Service</h2></div>
 
@@ -100,7 +100,7 @@ Keep in mind that some lenders charge a prepayment penalty fee as they don’t w
 
 <div class="title-box"><img src="/data/images/r-12.webp"/><h2 class="title">Requirements</h2></div>
 
-When it comes to financial requirements for College Ave loans, we must say that this lender is far more rigorous than similar lenders such as Earnest or Ascent Loans. College Ave requires you to have a minimum credit score of 650 to be qualified for their loans, although the majority of their borrowers or co-signers have a credit score of around 750. This doesn’t mean you cannot qualify with a score below 700 but you must have a minimum income of $35 000 per year to get a shot at one of these loan options.
+When it comes to financial requirements for College Ave loans, we must say that this lender is far more rigorous than similar lenders such as Earnest or Ascent Loans. <a href="/best-parent-loan" target="_blank" rel="noopener noreferrer">College Ave requires you to have a minimum credit score of 650</a> to be qualified for their loans, although the majority of their borrowers or co-signers have a credit score of around 750. This doesn’t mean you cannot qualify with a score below 700 but you must have a minimum income of $35 000 per year to get a shot at one of these loan options.
 
 While some lenders allow borrowers to apply even though they’ve filed for bankruptcy a couple of years earlier, that’s not the case with College Ave. If you’ve got bankruptcy written anywhere on your financial files, even if it was 5 years ago, you won’t pass the qualification round. Moreover, international students can apply for loans only if they have a US citizen or permanent resident as a co-signer. The loans are available in all 50 states and are available only for borrowers who are enrolled in eligible schools. While you technically can apply for a loan on your own, 95% of borrowers at College Ave have a co-signer.
 
@@ -115,4 +115,4 @@ When it comes to post-school repayment options, College Ave offers a 6 month gra
 
 To sum it all up, College Ave is a great online lender that offers student loan refinancing and private student loan options. Although they have strict qualification requirements, it’s not impossible to land a loan with a good interest rate, as long as you have a creditworthy co-signer by your side. If you don’t want to waste any time and you want to start making payments while still in school, then College Ave is a great option to consider. Those who are looking for future income-based loans to finance their education will have to look elsewhere.
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/best-parent-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

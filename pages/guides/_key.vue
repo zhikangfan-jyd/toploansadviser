@@ -1,5 +1,6 @@
 <template>
   <main class="main-container">
+    <a href="" target="_blank" rel="noopener noreferrer"></a>
     <section class="banner-area">
       <div class="banner-container">
         <div class="history-nav">
@@ -15,12 +16,17 @@
     <div class="guides-container">
       <div class="guides-left">
         <div class="author-info">
-          <img :alt="author.name" :src="author.avatar" class="author-img"/>
+          <img :alt="blog.author.name" :src="'https://service.toploansadviser.com' + blog.author.picture"
+               class="author-img"/>
           <div class="info-box">
-            <span class="name">Written by <span class="author-name">{{ author.name }}</span></span>
+            <span class="name">Written by <span class="author-name">{{ blog.author.name }}</span></span>
             <div class="updated">
               <span><span
-                class="iconfont">&#xe645;</span> <span>Last updated: {{ blog.date }}</span></span>
+                class="iconfont">&#xe645;</span> <span>Last updated: {{
+                  updateTime(blog.date).month.short
+                }}.{{ updateTime(blog.date).day }},{{
+                  updateTime(blog.date).year
+                }}</span></span>
             </div>
           </div>
         </div>
@@ -56,13 +62,13 @@
               rel="noopener noreferrer nofollow"
               target="_blank"
               @click="
-                handleTracking({
-                  name: item.name,
-                  click_time: new Date().getTime(),
-                  link: item.link
-                });
-                tracking(item.name);
-              "
+                      handleTracking({
+                        name: item.name,
+                        click_time: new Date().getTime(),
+                        link: item.link
+                      });
+                      tracking(item.name);
+                    "
             >Visit Site >></a
             >
           </li>
@@ -74,10 +80,10 @@
         <h5 class="title">Keep Reading</h5>
         <ul class="read-list">
           <li v-for="(item, index) in relatedBlogs" :key="index">
-            <nuxt-link :to="'/guides/' + item.change_title">
+            <nuxt-link :to="'/guides/' + item.link">
               <div class="img-box">
-                <img v-lazy="item.main_picture" :alt="item.title" class="pic"/>
-                <span class="tags">{{ item.public_api_column.title }}</span>
+                <img v-lazy="'https://service.toploansadviser.com' + item.picture" :alt="item.title" class="pic"/>
+                <span class="tags">{{ blog.article_category.name }}</span>
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{ item.title }}</h6>
@@ -93,10 +99,10 @@
 
 <script>
 import {shareToFB, shareToTwitter} from "../../utils/share";
-import {updateTime} from "../../utils/date";
-import {seo} from '../../utils/seo'
 import {jsonLd} from '../../utils/json-ld'
 import {tracking} from "../../utils/ga-event";
+import {seo} from "../../utils/seo";
+import {updateTime} from "../../utils/date";
 
 export default {
   head() {
@@ -106,7 +112,7 @@ export default {
       keywords: this.blog.keywords,
       url: this.pageUrl,
       type: 'article',
-      img: this.blog.main_picture,
+      img: 'https://service.toploansadviser.com' + this.blog.picture,
       img_size: {
         width: '325',
         height: '295'
@@ -114,52 +120,27 @@ export default {
       img_type: ''
     })
   },
-  async asyncData({$axios, params, error}) {
+  async asyncData({$axios, $api, params, error}) {
     try {
-      let title = params.key.split('-').join(' ');
-
-      let results = await $axios.$get(
-        `https://api.toploansadviser.com/articles/findbytitle?title=${title}`
-      );
+      // let results = await $api.articleApi.getArticleContentByKey(params.key);
+      let results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find_by_key?key=' + params.key);
       let blog = results.data;
-      let d = updateTime(blog.date);
-      blog.date = `${d.month.short}.${d.day},${d.year}`;
-      let authorId = blog.author_id;
-      let author = {
-        name: "",
-        introduce: "",
-        avatar: "",
-      };
-
-      let authorInfo = await $axios.$get(
-        `https://api.toploansadviser.com/author/find?author_id=${authorId}`
-      );
-      if (authorInfo.status === "success") {
-        author = authorInfo.data;
-      }
 
       let topLoans_results = await $axios.$get(
         "/data/person_loan_product.json"
       );
-      let blogList = await $axios.$get(
-        `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=${1}&limit=1000&status=done`
-      );
-      let randomIndex = Math.floor(Math.random() * (blogList.data.count - 5));
-      // 随机取4篇blog
-      let randomBlogs = blogList.data.rows.slice(randomIndex, randomIndex + 4);
-      randomBlogs.forEach(ele => {
-        ele.change_title = ele.title.toLowerCase().split(' ').join('-');
-      })
 
+      // let articles_results = await $api.articleApi.getArticleByCategory(blog.acid, 1, 4);
+      let articles_results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + blog.acid);
+      let articles = articles_results.data.rows[0].article.slice(0, 4);
       return {
         blog: blog,
         pageUrl: 'https://www.toploansadviser.com/guides/' + params.key,
-        author: author,
-        relatedBlogs: randomBlogs,
+        relatedBlogs: articles,
         toploans: topLoans_results.data.slice(0, 5),
       };
     } catch (e) {
-      error({statusCode: 404});
+      error({statusCode: 500});
     }
   },
   data() {
@@ -171,6 +152,7 @@ export default {
     shareToFB,
     shareToTwitter,
     tracking,
+    updateTime,
     handleTracking(params) {
       // window.tracking();
       if (typeof window.uba != "function") {
@@ -246,11 +228,11 @@ export default {
           title: this.blog.title + ' | Toploansadviser',
           url: this.pageUrl,
           author: {
-            name: this.author.name
+            name: this.blog.author.name
           },
           date: this.blog.date,
           body: this.blog.description,
-          image: this.blog.main_picture
+          image: 'https://service.toploansadviser.com' + this.blog.picture
         });
       }
 
@@ -264,7 +246,7 @@ export default {
       }, 100);
       let options = {
         title: this.blog.title,
-        image: this.blog.main_picture,
+        image: 'https://service.toploansadviser.com' + this.blog.picture,
         description: "",
         url: "https://www.toploansadviser.com" + this.$route.path,
       };

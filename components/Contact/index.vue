@@ -41,10 +41,10 @@ export default {
         });
         return;
       }
-
-      let res = await this.$axios.$post('https://store.toploansadviser.com/send', {email: this.form.email});
-
-      if (res.code === 'success') {
+      // let res = await this.$api.messageApi.sendMsg(this.form.email)
+      // let res = await this.$axios.$post('https://store.toploansadviser.com/send', {email: this.form.email});
+      let res = await this.$axios.$post('https://service.toploansadviser.com/api/v1/message/send', {email: this.form.email})
+      if (res.status === 'success') {
         this.form.email = '';
 
         this.$message({

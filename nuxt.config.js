@@ -21,13 +21,12 @@ const createSitemapRoutes = async () => {
   }
 
   try {
-    let results = await axios.get('https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0');
+    let results = await axios.get('https://service.toploansadviser.com/api/v1/article');
     if (results.data.status === 'success') {
       results.data.data.rows.forEach(article => {
-        let title = article.title.toLowerCase().split(' ').join('-');
         articleRoutes.push({
-          url: `/guides/${title}`,
-          lastmod: new Date(),
+          url: `/guides/${article.link}`,
+          lastmod: article.utime,
           priority: 0.8
         })
       })
@@ -104,7 +103,6 @@ export default {
     // 重定向选项在这里
     {from: '/new-personal-loan', to: '/personal-loan', statusCode: 301}
   ],
-
   content: {
     liveEdit: false
   },
@@ -204,6 +202,7 @@ export default {
     routes: createSitemapRoutes
   },
   axios: {
+
     baseURL: 'http://127.0.0.1:3100'
   },
   server: {

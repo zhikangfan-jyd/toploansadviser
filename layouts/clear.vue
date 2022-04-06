@@ -149,27 +149,46 @@ export default {
 
   methods: {
     updateTime,
-    sendMail() {
+    async sendMail() {
+
       const reg = new RegExp(
         "^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"
       );
-      if (this.email == "" || !reg.test(this.email)) {
+      if (this.email === "" || !reg.test(this.email)) {
         this.$message({
           showClose: false,
           message: "Please fill in your email address correctly!",
           type: "error",
         });
       } else {
-        this.timer = setTimeout(() => {
-          this.email = "";
+
+        try {
+          // let res = await this.$api.messageApi.sendMsg(this.email);
+          let res = await this.$axios.$post('https://service.toploansadviser.com/api/v1/message/send', {email: this.email})
+          if (res.status === 'success') {
+            this.email = "";
+            this.$message({
+              showClose: false,
+              type: "success",
+              message: "Send successful!",
+            });
+          } else {
+            this.$message({
+              showClose: false,
+              message: "The system is busy, please try again later!",
+              type: "error",
+            });
+          }
+        } catch (e) {
           this.$message({
             showClose: false,
-            type: "success",
-            message: "Send successful!",
+            message: "The system is busy, please try again later!",
+            type: "error",
           });
 
-          clearTimeout(this.timer);
-        }, 800);
+        }
+
+
       }
     },
     handleClick() {

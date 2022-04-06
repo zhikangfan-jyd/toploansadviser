@@ -24,7 +24,7 @@ product: {
 }
 ---
 
-Earnest is a student loan service that offers loan refinancing and private loans for undergraduate and graduate students. You may want to look into Earnest loans out of so many other loan services out there because they offer flexible repayment options, which can come in handy for those who might struggle to make their monthly payments. In this review, we’ll look into Earnest’s customizable payments, loan terms, fees, and other features this service can offer you.
+Earnest is a student loan service that offers loan refinancing and <a href="/student-loan" target="_blank" rel="noopener noreferrer">private loans for undergraduate and graduate students</a>. You may want to look into Earnest loans out of so many other loan services out there because they offer flexible repayment options, which can come in handy for those who might struggle to make their monthly payments. In this review, we’ll look into Earnest’s customizable payments, loan terms, fees, and other features this service can offer you.
 
 <div class="title-box"><img src="/data/images/r-1.webp"/><h2 class="title">Basic Info</h2></div>
 
@@ -55,7 +55,7 @@ Earnest is a student loan service that offers loan refinancing and private loans
   </tr>
 </table>
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/student-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 
 
@@ -94,7 +94,7 @@ If you’re looking for a loan service that allows you to customize your repayme
 
 <div class="title-box"><img src="/data/images/r-11.webp"/><h2 class="title">Rates & Fees</h2></div>
 
-As with many money lending services, Earnest requires a soft credit check before you can find out what kind of interest rates you qualify for. With that said, the exact interest rates will depend on your credit score and financial situation. The good thing about Earnest is that they don’t charge application or origination fees, and there are no prepayment or late payment fees.
+As with many money lending services, Earnest requires a soft credit check before you can find out <a href="/student-loan" target="_blank" rel="noopener noreferrer">what kind of interest rates you qualify for</a>. With that said, the exact interest rates will depend on your credit score and financial situation. The good thing about Earnest is that they don’t charge application or origination fees, and there are no prepayment or late payment fees.
 
 That makes Earnest loans one of the best options for those wanting to avoid additional payments on top of their loan repayment plan. When it comes to loan amounts, Earnest allows loans ranging from as little as $5,000 up to $500,000. Their loan terms range from 5 to 20 years, although they allow you to choose a precise loan term, including the month of your final payment.
 
@@ -116,7 +116,7 @@ Earnest has an online system to set up monthly or biweekly payments via autopay,
 
 
 
-<div class="title-box"><img src="/data/images/r-13.webp" /><h2 class="title">Customer Servicet</h2></div>
+<div class="title-box"><img src="/data/images/r-13.webp" /><h2 class="title">Customer Service</h2></div>
 
 Earnest loan service has its own in-house customer support team, which is good for those who need help with their loan-related questions. However, the average response time of their customer support team has not been disclosed.
 
@@ -127,4 +127,4 @@ Overall, Earnest is a reputable online lender that allows you to take out privat
 Either way, Earnest is a great lender offering plenty of repayment plans and longer repayment terms of up to 20 years. Keep in mind that you will need to do a soft check with them to see what rates you qualify for. On top of that, you will not be allowed to bring on a co-signer.
 
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/student-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

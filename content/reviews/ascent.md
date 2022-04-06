@@ -26,7 +26,7 @@ product: {
 "disclaimer": ""
 }
 ---
-Ascent is a loan provider that offers loan options for both undergraduate and graduate students. What makes Ascent a good choice to look into is the fact that they offer student loans both with and without a co-signer. If you don’t have a credit score high enough to secure a loan from other lenders, Ascent will allow you to apply for a loan with a creditworthy cosigner. After all, having a co-signer join the loan means you’ll get far lower interest rates compared to signing for the loan on your own.
+Ascent is a loan provider that offers loan options for both undergraduate and graduate students. What makes Ascent a good choice to look into is the fact that <a href="/student-loan" target="_blank" rel="noopener noreferrer">they offer student loans both with and without a co-signer</a>. If you don’t have a credit score high enough to secure a loan from other lenders, Ascent will allow you to apply for a loan with a creditworthy cosigner. After all, having a co-signer join the loan means you’ll get far lower interest rates compared to signing for the loan on your own.
 
 Those who don’t have a co-signer can apply for either credit-based or future income-based loans. However, keep in mind that the future income-based loans are only available to students with a 2.9 GPA, which is a great deal. This makes Ascent one of very few loan providers who offer loans without requiring credit, income, or co-signers. Here’s an overview of Ascent loan terms, rates, repayment plans, as well as other features this lender has to offer.
 
@@ -69,7 +69,7 @@ Borrowers who are looking for credit-based loans need a minimum credit score of 
 The minimum income for credit-based loans (regardless whether they are co-signed or not) is $24 000. Besides the said financial requirements, the borrowers must be enrolled at a college part-time or full-time and they can be either US citizens, permanent residents, or international students.
 
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/student-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-2.webp"/><h2 class="title">Repayment Options</h2></div>
 
@@ -129,4 +129,4 @@ When it comes to loan terms, Ascent allows terms ranging from 5 to 20 years, whi
 
 Overall, Ascent is a great online lender that offers plenty of options to students with or without a co-signer. Whether you’re looking for a traditional co-signed loan, a credit-based loan without a co-signer, or even a future income-based loan, Ascent has plenty of options to offer. Most importantly, they offer flexible repayment plans and long terms that allow students to finance their years of education without having too big of a burden on their shoulders after finishing school.
 
-<div class="btn-box"><a href="" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/student-loan" rel="noopener noreferrer" target="_blank" class="btn">Check My Rate</a></div>

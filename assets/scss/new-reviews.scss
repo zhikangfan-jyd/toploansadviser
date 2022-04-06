@@ -14,6 +14,31 @@
       width: $rootWidth;
       margin: 0 auto;
 
+      .breadcrumb-navigation {
+        display: flex;
+        margin-top: 25px;
+
+        li {
+          .iconfont {
+            margin: 0 5px;
+            color: #6a6a6a;
+          }
+
+          a {
+            text-decoration: none;
+            color: #6a6a6a;
+            &:hover {
+              color: #001139;
+              text-decoration: underline;
+            }
+            &.current {
+              font-weight: 600;
+              color: #001139;
+            }
+          }
+        }
+      }
+
       .banner-content-box {
         align-self: flex-start;
 

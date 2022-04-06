@@ -19,31 +19,23 @@
     </section>
     <div class="learn-container">
       <ul class="category-list">
-        <li :class="{'current': currentCategory === 'personal-loan'}" @click="handleCategory('personal-loan')">
-          <span>Personal Loan</span>
-        </li>
-        <li :class="{'current': currentCategory === 'mortgage-loan'}" @click="handleCategory('mortgage-loan')">
-          <span>Mortgage Loan</span>
-        </li>
-        <li :class="{'current': currentCategory === 'student-loan'}" @click="handleCategory('student-loan')">
-          <span>Student Loan</span>
-        </li>
-        <li :class="{'current': currentCategory === 'home-equity'}" @click="handleCategory('home-equity')">
-          <span>Home Equity</span>
+        <li v-for="category in categories" :class="{'current': current_category === category.acid}"
+            @click="handleCategory(category.acid)">
+          <span>{{ category.name }}</span>
         </li>
       </ul>
-      <div v-if="blogs.length !== 0 && !isLoad" class="category-item">
-        <ul class="blog-list">
-          <li v-for="(blog, index) in blogs" :key="index" class="blog-item">
+      <div v-if="!isLoad" class="category-item">
+        <ul v-if="articles.length !== 0" class="blog-list">
+          <li v-for="(article, index) in articles" :key="index" class="blog-item">
             <div class="img-box">
-              <nuxt-link :to="'/guides/' + blog.change_title" target="_blank">
-                <img v-lazy="blog.main_picture" :alt="blog.title"/>
+              <nuxt-link :to="'/guides/' + article.link" target="_blank">
+                <img v-lazy="'https://service.toploansadviser.com' + article.picture" :alt="article.title"/>
               </nuxt-link>
             </div>
-            <nuxt-link :to="'/guides/' + blog.change_title" class="title-link" target="_blank"
-            ><h2 class="blog-title">{{ blog.title }}</h2></nuxt-link
+            <nuxt-link :to="'/guides/' + article.link" class="title-link" target="_blank"
+            ><h2 class="blog-title">{{ article.title }}</h2></nuxt-link
             >
-            <nuxt-link :to="'/guides/' + blog.change_title" class="link" target="_blank"
+            <nuxt-link :to="'/guides/' + article.link" class="link" target="_blank"
             >Read full Article
             </nuxt-link
             >
@@ -398,7 +390,6 @@
     </div>
   </main>
 </template>
-<a href="" target="_blank" rel="noopener noreferrer"></a>
 <script>
 import {seo} from "../../utils/seo";
 
@@ -416,77 +407,52 @@ export default {
       img_type: 'image/webp',
     });
   },
-  data() {
-    return {
-      blogs: [],
-      page: 1,
-      pageSize: 20,
-      count: 0,
-      isLoad: true,
-      currentCategory: 'personal-loan'
-    };
+  async asyncData({error, $api, $axios}) {
+    try {
+      // let results = await $api.articleApi.getArticleCategory();
+      let results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/category');
+      let categories = results.data.rows ? results.data.rows : [];
+      categories.sort((a, b) => {
+        return a.order - b.order
+      })
+      let default_category = categories[0];
+      let isLoad = true;
+      // let articles_results = await $api.articleApi.getArticleByCategory(default_category.acid);
+      let articles_results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + default_category.acid)
+      isLoad = false;
+      let articles = articles_results.data.rows[0].article;
+      articles.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date)
+      })
+      return {
+        isLoad: isLoad,
+        categories: categories,
+        articles: articles,
+        current_category: default_category.acid
+      }
+    } catch (e) {
+      await error({statusCode: 500});
+    }
   },
   methods: {
-    async getBlogs(page) {
+    async handleCategory(category_id) {
+      this.current_category = category_id;
       try {
-        let results = await this.$axios.get(
-          `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=${page}&limit=${this.pageSize}`
-        );
-        results.data.data.rows.forEach(ele => {
-
-          ele.change_title = ele.title.toLowerCase().split(' ').join('-');
-
-        })
-        this.blogs = this.blogs.concat(results.data.data.rows);
-
-        this.counts = results.data.data.count;
-        this.isLoad = page < this.count;
-      } catch (e) {
-        await this.$router.push('/error');
-      }
-    },
-    async getBlogByCategory(uuid) {
-      this.isLoad = true;
-      try {
-        let {
-          status,
-          data
-        } = await this.$axios.$get('https://api.toploansadviser.com/articles/findbycolumns?columns_id=' + uuid);
+        this.isLoad = true;
+        // let results = await this.$api.articleApi.getArticleByCategory(category_id);
+        let results = await this.$axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + category_id)
         this.isLoad = false;
-        if (status === 'success') {
 
-          data.rows.forEach(blog => {
-            blog.change_title = blog.title.toLowerCase().split(' ').join('-');
-          })
-          data.rows.sort(function (a, b) {
-            return new Date(b.ctime) - new Date(a.ctime);
-          })
-          this.blogs = data.rows;
+        if (results.status === 'success') {
+          this.articles = results.data.rows[0].article;
         } else {
-          this.blogs = [];
+          this.articles = [];
         }
       } catch (e) {
-        this.isLoad = false;
-        await this.$router.push('/error');
+        this.isLoad = true;
       }
-    },
-    handleCategory(category) {
-      let setting = {};
-      setting['personal-loan'] = 'c73af2d2-f8b2-41f6-b3ad-3f6ff4bf429d';
-      setting['mortgage-loan'] = 'e2466262-b3ff-4a86-850c-3846054f49a8';
-      setting['student-loan'] = 'a52fa2da-0e6f-484d-afc5-179a75aa1aee';
-      setting['home-equity'] = 'bf433dff-da58-42ea-9c93-f36cceb03357';
-      this.getBlogByCategory(setting[category]);
-      this.currentCategory = category;
-    },
-    handleLoad() {
-      this.page++;
-      this.getBlogs();
-    },
-  },
-  created() {
-    this.handleCategory(this.currentCategory);
-  },
+    }
+  }
 };
 </script>
 

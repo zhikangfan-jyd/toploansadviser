@@ -3,6 +3,19 @@
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
+<!--          <ul class="breadcrumb-navigation">-->
+<!--            <li>-->
+<!--              <a href="/personal-loan" target="_blank" rel="noopener noreferrer" class="link">Home</a>-->
+<!--              <span class="iconfont">&#xe616;</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="/reviews" target="_blank" rel="noopener noreferrer" class="link">Reviews</a>-->
+<!--              <span class="iconfont">&#xe616;</span>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <a href="/reviews/" target="_blank" rel="noopener noreferrer" class="link current">{{ doc.name }} Review {{ updateTime().year }}</a>-->
+<!--            </li>-->
+<!--          </ul>-->
           <h1 class="title">{{ doc.name }} Review {{ updateTime().year }}</h1>
           <p class="info">
             <span><span class="iconfont">&#xe62d;</span> By {{ doc.author.name }}</span>
