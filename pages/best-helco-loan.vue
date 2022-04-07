@@ -273,6 +273,7 @@
                 <div class="logo-box">
                   <img :alt="product.name" :src="product.logo" class="logo">
                   <div class="read-review-btn">Read Review <span>>></span></div>
+                  <span class="nmls" v-if="index === 0" style="font-size: 12px; margin-top: 8px;">NMLS #1717824</span>
                 </div>
                 <div class="rate-box">
 
@@ -318,7 +319,50 @@
                     </li>
                     <li>
                       <span class="iconfont">&#xe604;</span>
-                      <p class="text">APR: {{ product.compare.apr }}</p>
+                      <div class="text">APR: {{ product.compare.apr }}
+                        <div class="pop">
+                        <el-popover v-if="product.name === 'Figure'" placement="bottom"
+                                    style="vertical-align: top;" trigger="hover"
+                                    width="350">
+
+                          <span slot="reference" class="iconfont question-mark">&#xe669;</span>
+                          <div class="content" style="font-size: 12px;">
+                            <p>For licensing information, go to www.nmlsconsumeraccess.org
+                              Toploansadviser is a Figure partner and may receive compensation for this content.
+                              Figure Home Equity Line is available in AK, AL, AR, AZ, CA, CO, CT, DC, FL, GA, IA, ID,
+                              IL, IN, KS, LA, MA, ME, MI, MN, MO, MS, MT, NC, ND, NE, NH, NJ, NM, NV, OH, OK, OR, PA,
+                              RI, SD, TN, VA, VT, WA, WI, WY with more states to come.
+                            </p>
+                            <p> For Figure Home Equity Line, APRs can be as low as 3.50% for the most qualified
+                              applicants and will be higher for other applicants, depending on credit profile and the
+                              state where the property is located. For example, for a borrower with a CLTV of 45% and a
+                              credit score of 800 who is eligible for and chooses to pay a 4.99% origination fee in
+                              exchange for a reduced APR, a five-year Figure Home Equity Line with an initial draw
+                              amount of $50,000 would have a fixed annual percentage rate (APR) of 3.50%. The total loan
+                              amount would be $52,495. Alternatively, a borrower with the same credit profile who pays a
+                              3% origination fee would have an APR of 4.25% and a total loan amount of $51,500. Your
+                              actual rate will depend on many factors such as your credit, combined loan to value ratio,
+                              loan term, occupancy status, and whether you are eligible for and choose to pay an
+                              origination fee in exchange for a lower rate. Payment of origination fees in exchange for
+                              a reduced APR is not available in all states. In addition to paying the origination fee in
+                              exchange for a reduced rate, the advertised rates include a combined discount of 0.50% for
+                              opting into a credit union membership (0.25%) and enrolling in autopay (0.25%). APRs for
+                              home equity lines of credit do not include costs other than interest. Property insurance
+                              is required as a condition of the loan and flood insurance may be required if your
+                              property is located in a flood zone.</p>
+                            <p>For the Figure Home Equity Line, approval may be granted in five minutes but is
+                              ultimately subject to verification of income and employment. Five business day funding
+                              timeline assumes closing the loan with our remote online notary. Funding timelines may be
+                              longer for loans secured by properties located in counties that do not permit recording of
+                              e-signatures or that otherwise require an in-person closing. In addition, funding
+                              timelines may be longer if we cannot readily verify that your property is in at least
+                              average condition with no adverse external factors with a property condition report and
+                              need to order a desktop appraisal to confirm the value of your property.</p>
+                          </div>
+                        </el-popover>
+                      </div>
+                      </div>
+
                     </li>
                     <li>
                       <span class="iconfont">&#xe604;</span>
@@ -453,14 +497,12 @@ export default {
   async asyncData({$axios, error}) {
     try {
       let results = await $axios.$get('/data/best-helco-loan.json');
-
       return {
         products: results.data
       }
     } catch (e) {
       error({statusCode: 404})
     }
-
   },
   data() {
     return {

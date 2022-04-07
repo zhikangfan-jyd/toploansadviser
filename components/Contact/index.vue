@@ -1,6 +1,6 @@
 <template>
   <div class="contact-component-container">
-    <img alt="email" class="email-icon" src="@/assets/img/email-icon.png">
+    <img alt="email" class="email-icon" src="@/assets/img/email-icon.webp">
     <span class="iconfont cancel-icon" @click="hiddenForm">&#xe614;</span>
     <div class="contact-title">Newsletter</div>
     <div class="text">Stay up to date with the lowest rate loans.</div>
