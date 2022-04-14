@@ -1,6 +1,6 @@
 <template>
   <div class="contact-component-container">
-    <img alt="email" class="email-icon" src="@/assets/img/email-icon.webp">
+    <img alt="email" class="email-icon" src="@/assets/img/email-icon.png">
     <span class="iconfont cancel-icon" @click="hiddenForm">&#xe614;</span>
     <div class="contact-title">Newsletter</div>
     <div class="text">Stay up to date with the lowest rate loans.</div>
@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     async submitForm() {
-
       const reg = new RegExp(
         "^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"
       );
@@ -41,12 +40,9 @@ export default {
         });
         return;
       }
-      // let res = await this.$api.messageApi.sendMsg(this.form.email)
-      // let res = await this.$axios.$post('https://store.toploansadviser.com/send', {email: this.form.email});
-      let res = await this.$axios.$post('https://service.toploansadviser.com/api/v1/message/send', {email: this.form.email})
+      let res = await this.$axios.$post('https://service.toploansadviser.com/api/v1/message/send', {email: this.form.email});
       if (res.status === 'success') {
         this.form.email = '';
-
         this.$message({
           message: 'Submitted successfully',
           type: 'success'
@@ -92,7 +88,6 @@ export default {
           bottom: 30
         }, 1000)
       })
-
       this.form.email = '';
     }
   },

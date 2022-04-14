@@ -103,7 +103,6 @@ import {jsonLd} from '../../utils/json-ld'
 import {tracking} from "../../utils/ga-event";
 import {seo} from "../../utils/seo";
 import {updateTime} from "../../utils/date";
-
 export default {
   head() {
     return seo({
@@ -125,11 +124,9 @@ export default {
       // let results = await $api.articleApi.getArticleContentByKey(params.key);
       let results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find_by_key?key=' + params.key);
       let blog = results.data;
-
       let topLoans_results = await $axios.$get(
         "/data/person_loan_product.json"
       );
-
       // let articles_results = await $api.articleApi.getArticleByCategory(blog.acid, 1, 4);
       let articles_results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + blog.acid);
       let articles = articles_results.data.rows[0].article.slice(0, 4);
@@ -173,7 +170,6 @@ export default {
       let authorTop = $(".keep-reading-area").offset().top;
       $(window).on("scroll", function () {
         scrollTop = $(this).scrollTop();
-
         if (scrollTop > top - navHeight && scrollTop < authorTop - top) {
           fixedBox.css({
             position: "fixed",
@@ -213,7 +209,6 @@ export default {
             meta.setAttribute("property", "og:url");
             meta.setAttribute("content", value);
           }
-
           document.head.appendChild(meta);
         }
       }
@@ -235,7 +230,6 @@ export default {
           image: 'https://service.toploansadviser.com' + this.blog.picture
         });
       }
-
     })
   },
   mounted() {

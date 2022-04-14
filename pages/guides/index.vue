@@ -392,7 +392,6 @@
 </template>
 <script>
 import {seo} from "../../utils/seo";
-
 export default {
   head() {
     return seo({
@@ -442,7 +441,6 @@ export default {
         // let results = await this.$api.articleApi.getArticleByCategory(category_id);
         let results = await this.$axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + category_id)
         this.isLoad = false;
-
         if (results.status === 'success') {
           this.articles = results.data.rows[0].article;
         } else {

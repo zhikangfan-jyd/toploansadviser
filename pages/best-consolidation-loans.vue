@@ -389,7 +389,6 @@ import CalculatorPopup from "../components/CalculatorPopup/index";
 import {seo} from '../utils/seo'
 import {tracking} from "../utils/ga-event";
 export default {
-
   head: seo({
     title: 'Debt Consolidation Personal Loans  | Toploansadviser.com',
     description: "A Debt consolidation loan is a type of personal loan you can use to pay off high-interest debt, specially credit cards. And it allows one low-interest monthly payment.",
@@ -412,11 +411,9 @@ export default {
   async asyncData({$axios, error, route}) {
     try {
       let results = await $axios.$get('/data/best-consolidation-loans.json');
-
       return {
         products: results.data
       }
-
     } catch (e) {
       error({statusCode: 404});
     }
@@ -436,15 +433,12 @@ export default {
     }
   },
   mounted() {
-
     function showSlogan() {
       let clientWidth = $(window).width();
       if (clientWidth <= 750) {
         let top = $('.banner-container .website-title').offset().top;
-
         $(window).on('scroll', function () {
           let headerHeight = document.querySelector('.header-container').clientHeight;
-
           let websiteTitleJqDom = $('.banner-container .website-title');
           if ($(this).scrollTop() > top) {
             websiteTitleJqDom.text('Compare Best Personal Loans Rates');
@@ -474,12 +468,8 @@ export default {
         })
       }
     }
-
     // showSlogan();
-
     // $(window).on('resize', showSlogan)
-
-
   },
 };
 </script>
