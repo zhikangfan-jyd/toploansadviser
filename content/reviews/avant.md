@@ -11,7 +11,7 @@ description: Avant offers a user-friendly process online. With an online applica
 product: {
 "name": "Avant",
 "review_key": "avant",
-"link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+"link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl&gclid=undefined",
 "logo": "/data/images/avant.webp",
 "upto": "1000000",
 "introduce": "Clear and transparent process",

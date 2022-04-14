@@ -1,4 +1,6 @@
-import {$content} from "@nuxt/content";
+import {
+  $content
+} from "@nuxt/content";
 
 const webpack = require('webpack');
 const axios = require('axios');
@@ -7,7 +9,9 @@ const createSitemapRoutes = async () => {
   let routes = [];
   let articleRoutes = [];
   try {
-    const {$content} = require('@nuxt/content');
+    const {
+      $content
+    } = require('@nuxt/content');
     let posts = await $content('/reviews').fetch();
     for (const post of posts) {
       routes.push({
@@ -37,7 +41,10 @@ const createSitemapRoutes = async () => {
   return routes.concat(articleRoutes);
 }
 
-const sitemapFilter = ({routes, options}) => {
+const sitemapFilter = ({
+  routes,
+  options
+}) => {
 
   routes.forEach(route => {
     if (route.url === '/' || route.url === '/personal-loan' || route.url === '/student-loan' || route.url === '/mortgage-loan') {
@@ -53,18 +60,25 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
-    meta: [
-      {charset: 'utf-8'},
+    meta: [{
+        charset: 'utf-8'
+      },
       {
         hid: 'description',
         name: 'description',
         content: 'We reviewed the Best Rated Personal Loans and Mortgage Loans, you can compare them and choose the best one for you. Get started with Toploansadviser.'
       },
-      {hid: 'keywords', name: 'keywords', content: 'personal loans, mortgage loans, loan reviews'}
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'personal loans, mortgage loans, loan reviews'
+      }
     ],
-    link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
-    ]
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    }]
   },
   // css: [
   //   '~assets/scss/init.scss'
@@ -75,7 +89,11 @@ export default {
   plugins: [
     '~plugins/vuelazyload',
     '~plugins/element-ui',
-    {src: '~/plugins/aos', ssr: false, mode: 'client'}
+    {
+      src: '~/plugins/aos',
+      ssr: false,
+      mode: 'client'
+    }
   ],
   loading: false,
   components: false,
@@ -101,7 +119,11 @@ export default {
   },
   redirect: [
     // 重定向选项在这里
-    {from: '/new-personal-loan', to: '/personal-loan', statusCode: 301}
+    {
+      from: '/new-personal-loan',
+      to: '/personal-loan',
+      statusCode: 301
+    }
   ],
   content: {
     liveEdit: false
@@ -113,7 +135,7 @@ export default {
       splitChunks: {
         chunks: 'all', //有效值为all、async和initial
         minChunks: 2, //在拆分之前，模块必须在块之间共享的最少次数
-        automaticNameDelimiter: '.',//控制新生成的名字连接符号
+        automaticNameDelimiter: '.', //控制新生成的名字连接符号
         maxAsyncRequests: 30, //按需加载时的最大并行请求数。
         maxInitialRequests: 30, //入口点的最大并行请求数
         minSize: 2048, //要生成的块的最小大小（以字节为单位）

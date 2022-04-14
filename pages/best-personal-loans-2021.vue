@@ -637,6 +637,7 @@ import CalculatorPopup from "../components/CalculatorPopup/index";
 import {tracking} from "../utils/ga-event";
 
 export default {
+  layout: 'best-personal-loans-2021',
   head() {
     return {
       title: 'Best 10 Online Personal Loans 2022- Toploansadviser',

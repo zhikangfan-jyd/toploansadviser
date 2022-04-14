@@ -20,7 +20,7 @@
     <div class="learn-container">
       <ul class="category-list">
         <li v-for="category in categories" :class="{'current': current_category === category.acid}"
-            @click="handleCategory(category.acid)">
+            @click="handleCategory(category.acid)" :key="category.acid">
           <span>{{ category.name }}</span>
         </li>
       </ul>

@@ -2,21 +2,34 @@
   <main class="main-container">
     <section class="banner-area">
       <div class="banner-container">
-        <h1 class="title">Best Private Student Loans {{ updateTime().year }}</h1>
+        <h1 class="title">
+          Best Private Student Loans {{ updateTime().year }}
+        </h1>
         <div class="introduce-container">
           <div class="author-info">
-            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
-            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
-            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
-                updateTime().month.short
-              }} {{ updateTime().year }}</span></p>
+            <img
+              alt=""
+              class="author-image"
+              src="@/assets/img/Kimberly-Rotter.png"
+            />
+            <p class="author-desc">
+              Written by <span class="author-name">Kimberly Rotter</span>
+            </p>
+            <p class="updated">
+              <span class="iconfont">&#xe645;</span>
+              <span
+                >Last updated: {{ updateTime().month.short }}
+                {{ updateTime().year }}</span
+              >
+            </p>
           </div>
           <div class="introduce-content">
-            <p>Toploansadviser has outlined the best student loans for multiple needs, so you can choose the loan for
-              your specific situation.</p>
+            <p>
+              Toploansadviser has outlined the best student loans for multiple
+              needs, so you can choose the loan for your specific situation.
+            </p>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -25,8 +38,9 @@
         <h2 class="title">Compare Top Student Loan Rates</h2>
         <div class="preface-content">
           <p>
-            We compared and reviewed loans from more than 10 student loan lenders to find the best rates and loan
-            features.</p>
+            We compared and reviewed loans from more than 10 student loan
+            lenders to find the best rates and loan features.
+          </p>
         </div>
       </div>
     </section>
@@ -34,18 +48,21 @@
       <div class="product-container">
         <div class="product-container-top-box">
           <div class="disclosure">
-              <span class="title"
-                    @click="handleShowDisclosure"
+            <span class="title" @click="handleShowDisclosure"
               >Advertising Disclosure</span
-              >
-            <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-              The information shared through this website is based on our team’s personal judgements and views. We use
-              our own comparisons to assign values, which are not intended to reflect a certain benchmark of
-              precision. To keep our website free for use, we accept referral fees from various service providers,
-              which have the potential to influence their respective appointed scores. A third party’s participation
-              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
-              this site is subject to change at any time.The site does not include all companies offering loan
-              products or all available loan offers.
+            >
+            <div :class="{ disclosure_content: true, show: isShowDisclosure }">
+              The information shared through this website is based on our team’s
+              personal judgements and views. We use our own comparisons to
+              assign values, which are not intended to reflect a certain
+              benchmark of precision. To keep our website free for use, we
+              accept referral fees from various service providers, which have
+              the potential to influence their respective appointed scores. A
+              third party’s participation on toploansadviser.com is not an
+              indication of endorsement. The information and vendors which
+              appear on this site is subject to change at any time.The site does
+              not include all companies offering loan products or all available
+              loan offers.
             </div>
           </div>
         </div>
@@ -53,27 +70,27 @@
           <div class="product-title-box">
             <div class="title lenders"><span class="text">Lenders</span></div>
             <div class="title score">
-                <span class="text">
-                  Score
-                  <el-popover
-                    placement="bottom"
-                    popper-class="popper"
-                    trigger="hover"
-                    width="320"
-                  >
-                    <span slot="reference" class="iconfont">&#xe669;</span>
-                    <div class="content">
-                      <p>
-                        The ratings and ranking on our website are determined by
-                        our editorial team. The scoring mechanism for loan
-                        products takes into account more than 10 data points
-                        across multiple categories, such as APR, repayment
-                        options, customer service, lender transparency, loan
-                        eligibility and others.
-                      </p>
-                    </div>
-                  </el-popover>
-                </span>
+              <span class="text">
+                Score
+                <el-popover
+                  placement="bottom"
+                  popper-class="popper"
+                  trigger="hover"
+                  width="320"
+                >
+                  <span slot="reference" class="iconfont">&#xe669;</span>
+                  <div class="content">
+                    <p>
+                      The ratings and ranking on our website are determined by
+                      our editorial team. The scoring mechanism for loan
+                      products takes into account more than 10 data points
+                      across multiple categories, such as APR, repayment
+                      options, customer service, lender transparency, loan
+                      eligibility and others.
+                    </p>
+                  </div>
+                </el-popover>
+              </span>
             </div>
             <div class="title features">
               <span class="text">Loan Features</span>
@@ -94,14 +111,14 @@
               <div v-if="index == 0" class="visited-box">
                 <span class="iconfont"></span>
                 <span class="text"
-                ><strong>354 users</strong> chose this site today</span
+                  ><strong>354 users</strong> chose this site today</span
                 >
               </div>
 
               <div class="product-item-container">
                 <div class="img-score-box">
                   <div class="img-box">
-                    <img v-lazy="item.logo" :alt="item.name"/>
+                    <img v-lazy="item.logo" :alt="item.name" />
                   </div>
                   <div class="rate-box">
                     <div class="rate">
@@ -140,9 +157,8 @@
                         v-if="item.review_key != ''"
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
-                      >Read Review
-                      </nuxt-link
-                      >
+                        >Read Review
+                      </nuxt-link>
                     </div>
                   </div>
                 </div>
@@ -162,49 +178,71 @@
                       <dd>
                         <span class="iconfont">&#xe65a;</span>
                         <div class="text">
-                          Fixed rate：{{ item.compare.fixed_rate.min_rate }}%
-                          - {{ item.compare.fixed_rate.max_rate }}%
+                          Fixed rate：{{ item.compare.fixed_rate.min_rate }}% -
+                          {{ item.compare.fixed_rate.max_rate }}%
                           <div class="popup">
-                            <el-popover v-if="item.name === 'College Ave'" placement="bottom"
-                                        style="vertical-align: top;" trigger="hover"
-                                        width="325">
-                              <span slot="reference" class="iconfont question-mark">&#xe669;</span>
-                              <div class="content" style="font-size: 12px;">
+                            <el-popover
+                              v-if="item.name === 'College Ave'"
+                              placement="bottom"
+                              style="vertical-align: top"
+                              trigger="hover"
+                              width="325"
+                            >
+                              <span
+                                slot="reference"
+                                class="iconfont question-mark"
+                                >&#xe669;</span
+                              >
+                              <div class="content" style="font-size: 12px">
                                 <p>
-                                  College Ave Student Loans products are made available through Firstrust Bank, member
-                                  FDIC,
-                                  First Citizens Community Bank, member FDIC, or M.Y. Safra Bank, FSB, member FDIC. All
-                                  loans
-                                  are subject to individual approval and adherence to underwriting guidelines. Program
-                                  restrictions, other terms, and conditions apply.
+                                  College Ave Student Loans products are made
+                                  available through Firstrust Bank, member FDIC,
+                                  First Citizens Community Bank, member FDIC, or
+                                  M.Y. Safra Bank, FSB, member FDIC. All loans
+                                  are subject to individual approval and
+                                  adherence to underwriting guidelines. Program
+                                  restrictions, other terms, and conditions
+                                  apply.
                                 </p>
                                 <ul style="margin: 5px 0">
-                                  <li style="margin: 5px 0">1. The 0.25% auto-pay interest rate reduction applies as
-                                    long
-                                    as a
-                                    valid bank account is
-                                    designated for required monthly payments. Variable rates may increase after
+                                  <li style="margin: 5px 0">
+                                    1. The 0.25% auto-pay interest rate
+                                    reduction applies as long as a valid bank
+                                    account is designated for required monthly
+                                    payments. Variable rates may increase after
                                     consummation.
                                   </li>
-                                  <li style="margin: 5px 0">2. This informational repayment example uses typical loan
-                                    terms
-                                    for a freshman borrower
-                                    who selects the Deferred Repayment Option with a 10-year repayment term, has a
-                                    $10,000
-                                    loan that is disbursed in one disbursement and a 8.35% fixed Annual Percentage Rate
-                                    (“APR”): 120 monthly payments of $179.18 while in the repayment period, for a total
-                                    amount
-                                    of payments of $21,501.54. Loans will never have a full principal and interest
-                                    monthly
-                                    payment of less than $50. Your actual rates and repayment terms may vary.
+                                  <li style="margin: 5px 0">
+                                    2. This informational repayment example uses
+                                    typical loan terms for a freshman borrower
+                                    who selects the Deferred Repayment Option
+                                    with a 10-year repayment term, has a $10,000
+                                    loan that is disbursed in one disbursement
+                                    and a 8.35% fixed Annual Percentage Rate
+                                    (“APR”): 120 monthly payments of $179.18
+                                    while in the repayment period, for a total
+                                    amount of payments of $21,501.54. Loans will
+                                    never have a full principal and interest
+                                    monthly payment of less than $50. Your
+                                    actual rates and repayment terms may vary.
                                   </li>
-                                  <li style="margin: 5px 0">3. As certified by your school and less any other financial
-                                    aid
-                                    you might receive.
+                                  <li style="margin: 5px 0">
+                                    3. As certified by your school and less any
+                                    other financial aid you might receive.
                                     Minimum $1,000.
                                   </li>
                                 </ul>
-                                <p>Information advertised valid as of 2/2/2022. Variable interest rates may increase after consummation. Approved interest rate will depend on creditworthiness of the applicant(s), lowest advised rates only available to the most creditworthy applicants and require selection of full principal and interest payments with the shortest available loan term.</p>
+                                <p>
+                                  Information advertised valid as of 2/2/2022.
+                                  Variable interest rates may increase after
+                                  consummation. Approved interest rate will
+                                  depend on creditworthiness of the
+                                  applicant(s), lowest advised rates only
+                                  available to the most creditworthy applicants
+                                  and require selection of full principal and
+                                  interest payments with the shortest available
+                                  loan term.
+                                </p>
                               </div>
                             </el-popover>
                           </div>
@@ -217,45 +255,67 @@
                             item.compare.variable_rate.min_rate
                           }}% - {{ item.compare.variable_rate.max_rate }}%
                           <div class="popup">
-                            <el-popover v-if="item.name === 'College Ave'" placement="bottom"
-                                        style="vertical-align: top;" trigger="hover"
-                                        width="325">
-                              <span slot="reference" class="iconfont question-mark">&#xe669;</span>
-                              <div class="content" style="font-size: 12px;">
+                            <el-popover
+                              v-if="item.name === 'College Ave'"
+                              placement="bottom"
+                              style="vertical-align: top"
+                              trigger="hover"
+                              width="325"
+                            >
+                              <span
+                                slot="reference"
+                                class="iconfont question-mark"
+                                >&#xe669;</span
+                              >
+                              <div class="content" style="font-size: 12px">
                                 <p>
-                                  College Ave Student Loans products are made available through Firstrust Bank, member
-                                  FDIC,
-                                  First Citizens Community Bank, member FDIC, or M.Y. Safra Bank, FSB, member FDIC. All
-                                  loans
-                                  are subject to individual approval and adherence to underwriting guidelines. Program
-                                  restrictions, other terms, and conditions apply.
+                                  College Ave Student Loans products are made
+                                  available through Firstrust Bank, member FDIC,
+                                  First Citizens Community Bank, member FDIC, or
+                                  M.Y. Safra Bank, FSB, member FDIC. All loans
+                                  are subject to individual approval and
+                                  adherence to underwriting guidelines. Program
+                                  restrictions, other terms, and conditions
+                                  apply.
                                 </p>
                                 <ul style="margin: 5px 0">
-                                  <li style="margin: 5px 0">1. The 0.25% auto-pay interest rate reduction applies as
-                                    long
-                                    as a
-                                    valid bank account is
-                                    designated for required monthly payments. Variable rates may increase after
+                                  <li style="margin: 5px 0">
+                                    1. The 0.25% auto-pay interest rate
+                                    reduction applies as long as a valid bank
+                                    account is designated for required monthly
+                                    payments. Variable rates may increase after
                                     consummation.
                                   </li>
-                                  <li style="margin: 5px 0">2. This informational repayment example uses typical loan
-                                    terms
-                                    for a freshman borrower
-                                    who selects the Deferred Repayment Option with a 10-year repayment term, has a
-                                    $10,000
-                                    loan that is disbursed in one disbursement and a 8.35% fixed Annual Percentage Rate
-                                    (“APR”): 120 monthly payments of $179.18 while in the repayment period, for a total
-                                    amount
-                                    of payments of $21,501.54. Loans will never have a full principal and interest
-                                    monthly
-                                    payment of less than $50. Your actual rates and repayment terms may vary.
+                                  <li style="margin: 5px 0">
+                                    2. This informational repayment example uses
+                                    typical loan terms for a freshman borrower
+                                    who selects the Deferred Repayment Option
+                                    with a 10-year repayment term, has a $10,000
+                                    loan that is disbursed in one disbursement
+                                    and a 8.35% fixed Annual Percentage Rate
+                                    (“APR”): 120 monthly payments of $179.18
+                                    while in the repayment period, for a total
+                                    amount of payments of $21,501.54. Loans will
+                                    never have a full principal and interest
+                                    monthly payment of less than $50. Your
+                                    actual rates and repayment terms may vary.
                                   </li>
-                                  <li style="margin: 5px 0">3. As certified by your school and less any other financial
-                                    aid
-                                    you might receive.
+                                  <li style="margin: 5px 0">
+                                    3. As certified by your school and less any
+                                    other financial aid you might receive.
                                     Minimum $1,000.
                                   </li>
-                                  <p>Information advertised valid as of 2/2/2022. Variable interest rates may increase after consummation. Approved interest rate will depend on creditworthiness of the applicant(s), lowest advised rates only available to the most creditworthy applicants and require selection of full principal and interest payments with the shortest available loan term.</p>
+                                  <p>
+                                    Information advertised valid as of 2/2/2022.
+                                    Variable interest rates may increase after
+                                    consummation. Approved interest rate will
+                                    depend on creditworthiness of the
+                                    applicant(s), lowest advised rates only
+                                    available to the most creditworthy
+                                    applicants and require selection of full
+                                    principal and interest payments with the
+                                    shortest available loan term.
+                                  </p>
                                 </ul>
                               </div>
                             </el-popover>
@@ -267,24 +327,27 @@
                   <div class="terms-box">
                     <span class="title">Loan Terms</span>
                     <span class="text-box"
-                    >{{ item.loan_term.min_term }} -
-                        {{ item.loan_term.max_term }} years</span
+                      >{{ item.loan_term.min_term }} -
+                      {{ item.loan_term.max_term }} years</span
                     >
                   </div>
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
+                    :href="
+                      '/redirect?url=' + item.link + '&gclid=' + item.gclid
+                    "
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="
-                        handleTracking({
-                          name: item.name,
-                          click_time: new Date().getTime(),
-                          link: item.link
-                        });tracking(item.name);
-                      "
+                      handleTracking({
+                        name: item.name,
+                        click_time: new Date().getTime(),
+                        link: item.link,
+                      });
+                      tracking(item.name);
+                    "
                   >
                     <span class="text">Check My Rate >></span>
                     <!--                      <span class="iconfont">&#xe63c;</span>-->
@@ -311,44 +374,86 @@
       <div class="question-container">
         <h2 class="title">FAQ's About Student Loans</h2>
         <div class="question-content">
-          <p>Before taking a student loan be sure you familiarize yourself with all the terms and conditions associated
-            with the loan. To help you get started, we’ve compiled some of the most frequently asked questions about
-            student loans below.</p>
-          <h6 class="question-title">Are private student loans worth applying for to fund your education</h6>
-          <p>When you choose to attend college, you know that the cost will be exorbitantly high. You have to find ways
-            to pay for the costs, such as scholarships, grants and loans. If you’ve got the maximum in grants and don’t
-            qualify for scholarships, you may still not have enough. If this is the case for you, you may want to look
-            at <a href="/guides/what-are-private-student-loans" rel="noopener noreferrer" target="_blank">private
-              student loans</a>.</p>
-          <p>Private student loans differ from federal student loans, as financial institutions and private lenders
-            finance these loans. They also use their credit score and creditworthiness to determine if you are eligible
-            for a loan. On top of that, the repayment terms are less than ideal, and a co-signer may be necessary.</p>
-          <p>Think of private student loans like <a href="/personal-loan" rel="noopener noreferrer" target="_blank">personal
-            loans</a>. They are there to close the gaps of school costs
-            federal loans do not.</p>
+          <p>
+            Before taking a student loan be sure you familiarize yourself with
+            all the terms and conditions associated with the loan. To help you
+            get started, we’ve compiled some of the most frequently asked
+            questions about student loans below.
+          </p>
+          <h6 class="question-title">
+            Are private student loans worth applying for to fund your education
+          </h6>
+          <p>
+            When you choose to attend college, you know that the cost will be
+            exorbitantly high. You have to find ways to pay for the costs, such
+            as scholarships, grants and loans. If you’ve got the maximum in
+            grants and don’t qualify for scholarships, you may still not have
+            enough. If this is the case for you, you may want to look at
+            <a
+              href="/guides/what-are-private-student-loans"
+              rel="noopener noreferrer"
+              target="_blank"
+              >private student loans</a
+            >.
+          </p>
+          <p>
+            Private student loans differ from federal student loans, as
+            financial institutions and private lenders finance these loans. They
+            also use their credit score and creditworthiness to determine if you
+            are eligible for a loan. On top of that, the repayment terms are
+            less than ideal, and a co-signer may be necessary.
+          </p>
+          <p>
+            Think of private student loans like
+            <a href="/personal-loan" rel="noopener noreferrer" target="_blank"
+              >personal loans</a
+            >. They are there to close the gaps of school costs federal loans do
+            not.
+          </p>
 
           <h6 class="question-title">Private student loan qualifications</h6>
-          <p>Eligibility of a private student loan will depend on your creditworthiness and that of your co-signer (if
-            applicable). Each lender has a set of eligibility requirements, including credit score and minimum income.
-            You may also be asked if you are a citizen of the U.S. or a permanent resident. The lender may also require
-            that you attend an approved school on their list.</p>
+          <p>
+            Eligibility of a private student loan will depend on your
+            creditworthiness and that of your co-signer (if applicable). Each
+            lender has a set of eligibility requirements, including credit score
+            and minimum income. You may also be asked if you are a citizen of
+            the U.S. or a permanent resident. The lender may also require that
+            you attend an approved school on their list.
+          </p>
 
           <h6 class="question-title">Is a co-signer necessary?</h6>
-          <p>Most private student loan lenders will require you to have a co-signer. This is especially true if your
-            credit history is negligible or non-existent. A co-signer, such as a parent or relative, may also help you
-            attain a better interest rate.</p>
-          <p>Some lenders will relieve a co-signer of the debt obligation if you have maintained a good loan repayment
-            history. This can be seen in as little as one year to as much as four years. However, it’s only approved if
-            you can meet their credit and income requirements.</p>
+          <p>
+            Most private student loan lenders will require you to have a
+            co-signer. This is especially true if your credit history is
+            negligible or non-existent. A co-signer, such as a parent or
+            relative, may also help you attain a better interest rate.
+          </p>
+          <p>
+            Some lenders will relieve a co-signer of the debt obligation if you
+            have maintained a good loan repayment history. This can be seen in
+            as little as one year to as much as four years. However, it’s only
+            approved if you can meet their credit and income requirements.
+          </p>
 
-          <h6 class="question-title">Private student loan application process</h6>
-          <p>Before you attempt <a href="/guides/how-to-apply-for-a-private-student-loan" rel="noopener noreferrer"
-                                   target="_blank">to apply for any private student loan</a>, review your
-            credit and learn your credit score.
-            Private student loan lenders tend to offer loans to those with a high credit score or a demonstrated history
-            of repayment. If your credit is less than ideal, find a person whose credit is good and ask them to be a
-            co-signer for the loan.</p>
-          <p>Your application will also need certain documents attached to it:</p>
+          <h6 class="question-title">
+            Private student loan application process
+          </h6>
+          <p>
+            Before you attempt
+            <a
+              href="/guides/how-to-apply-for-a-private-student-loan"
+              rel="noopener noreferrer"
+              target="_blank"
+              >to apply for any private student loan</a
+            >, review your credit and learn your credit score. Private student
+            loan lenders tend to offer loans to those with a high credit score
+            or a demonstrated history of repayment. If your credit is less than
+            ideal, find a person whose credit is good and ask them to be a
+            co-signer for the loan.
+          </p>
+          <p>
+            Your application will also need certain documents attached to it:
+          </p>
           <ul>
             <li>Birthdate, aliress and other identifying information</li>
             <li>Social security number</li>
@@ -356,11 +461,18 @@
             <li>Monthly mortgage or rent receipts</li>
             <li>Proof of assets</li>
           </ul>
-          <p>You must also fill out the Private Education Loan Applicant Self-Certification form the school provides, so
-            the lender will know how much the cost will be for you to attend the institute.</p>
-          <p>Make sure to get a reasonable estimate of how much money is necessary to attend the university and ask for
-            that amount. If you need a little extra for housing and books, go ahead and include it. Remember, knowing
-            what you need now will affect how small or big a loan you will need.</p>
+          <p>
+            You must also fill out the Private Education Loan Applicant
+            Self-Certification form the school provides, so the lender will know
+            how much the cost will be for you to attend the institute.
+          </p>
+          <p>
+            Make sure to get a reasonable estimate of how much money is
+            necessary to attend the university and ask for that amount. If you
+            need a little extra for housing and books, go ahead and include it.
+            Remember, knowing what you need now will affect how small or big a
+            loan you will need.
+          </p>
         </div>
       </div>
     </section>
@@ -369,31 +481,29 @@
 
 <script>
 import FoldTheCard from "../components/FoldTheCard/index";
-import {computeScore} from "../utils/index";
-import {updateTime} from "../utils/date";
-import {seo} from '../utils/seo'
-import {tracking} from "../utils/ga-event";
-
+import { computeScore } from "../utils/index";
+import { updateTime } from "../utils/date";
+import { seo } from "../utils/seo";
+import { tracking } from "../utils/ga-event";
 export default {
-
   head: seo({
-    title: 'Student Loan 2022 For Bad Credit | Toploansadviser.com',
-    description: "The toploanadviser.com website helps student loan borrowers with bad credit know all the information about best student loan, including introduction, today interest rate, and so on.",
-    keywords: "student loan,student loan interest rates,student loan interest,student loans 2022,my student loan,student loans for bad credit,student loan website,no interest student loans",
-
-    url: 'https://www.toploansadviser.com/student-loan',
-    img: 'https://www.toploansadviser.com/data/images/student-loan.webp',
+    title: "Student Loan 2022 For Bad Credit | Toploansadviser.com",
+    description:
+      "The toploanadviser.com website helps student loan borrowers with bad credit know all the information about best student loan, including introduction, today interest rate, and so on.",
+    keywords:
+      "student loan,student loan interest rates,student loan interest,student loans 2022,my student loan,student loans for bad credit,student loan website,no interest student loans",
+    url: "https://www.toploansadviser.com/student-loan",
+    img: "https://www.toploansadviser.com/data/images/student-loan.webp",
     img_size: {
-      width: '551',
-      height: '341'
+      width: "551",
+      height: "341",
     },
-    img_type: 'image/webp',
+    img_type: "image/webp",
   }),
   components: {
-    FoldTheCard
+    FoldTheCard,
   },
-  async asyncData({$axios, error, route}) {
-
+  async asyncData({ $axios, error, route }) {
     try {
       // 获取所有产品
       let product_results = await $axios.$get(
@@ -403,13 +513,10 @@ export default {
       let question_results = await $axios.$get(
         "/data/student_loan_question.json"
       );
-
       // 给所有 是www.creditble.com 的链接后面都拼接 参数
       product_results.data.forEach((ele) => {
-
-        ele.gclid = route.query['gclid']
+        ele.gclid = route.query["gclid"];
       });
-
       return {
         count: product_results.data.length,
         allProducts: product_results.data,
@@ -417,7 +524,7 @@ export default {
         overallData: product_results.data.slice(0, 2),
       };
     } catch (e) {
-      error({statusCode: 404});
+      error({ statusCode: 404 });
     }
   },
   data() {
@@ -470,45 +577,45 @@ export default {
     function showSlogan() {
       let clientWidth = $(window).width();
       if (clientWidth <= 750) {
-        let top = $('.banner-container .website-title').offset().top;
-
-        $(window).on('scroll', function () {
-          let headerHeight = document.querySelector('.header-container').clientHeight;
-
-
+        let top = $(".banner-container .website-title").offset().top;
+        $(window).on("scroll", function () {
+          let headerHeight =
+            document.querySelector(".header-container").clientHeight;
           if ($(this).scrollTop() > top) {
-            $('.banner-container .website-title').text('Compare Best Personal Loans Rates');
-            $('.banner-container .website-title').css({
-              position: 'fixed',
-              top: headerHeight + 'px',
-              fontSize: '.2rem',
-              textAlign: 'center',
-              width: '100%',
+            $(".banner-container .website-title").text(
+              "Compare Best Personal Loans Rates"
+            );
+            $(".banner-container .website-title").css({
+              position: "fixed",
+              top: headerHeight + "px",
+              fontSize: ".2rem",
+              textAlign: "center",
+              width: "100%",
               left: 0,
-              color: '#fff',
-              backgroundColor: 'rgb(26,119,129)'
-            })
+              color: "#fff",
+              backgroundColor: "rgb(26,119,129)",
+            });
           } else {
-            $('.banner-container .website-title').text('Best Personal Loans 2022');
-            $('.banner-container .website-title').css({
-              position: 'static',
-              top: headerHeight + 'px',
-              textAlign: 'left',
-              width: 'auto',
-              fontSize: '0.36rem',
-              color: '#001139',
+            $(".banner-container .website-title").text(
+              "Best Personal Loans 2022"
+            );
+            $(".banner-container .website-title").css({
+              position: "static",
+              top: headerHeight + "px",
+              textAlign: "left",
+              width: "auto",
+              fontSize: "0.36rem",
+              color: "#001139",
               left: 0,
-              backgroundColor: 'transparent'
-            })
+              backgroundColor: "transparent",
+            });
           }
-        })
+        });
       }
     }
-
     // showSlogan();
-
     // $(window).on('resize', showSlogan)
-  }
+  },
 };
 </script>
 

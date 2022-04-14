@@ -372,7 +372,7 @@
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect/personal-loan/'+ item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect?url='+ item.link + '?gclid=' + item.gclid"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -393,7 +393,7 @@
                     <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
-                    :href="'/redirect/personal-loan/'+item.name + '?gclid=' + item.gclid"
+                    :href="'/redirect/personal-loan/'+item.link + '?gclid=' + item.gclid"
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"

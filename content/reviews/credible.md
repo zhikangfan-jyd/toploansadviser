@@ -198,3 +198,5 @@ doesn’t hurt your credit to apply and you aren’t obligated to take any offer
 
 Credible is free and if anything, provides you with more knowledge and support than you’d receive trying to find a
 personal loan yourself.
+
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

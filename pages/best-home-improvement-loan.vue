@@ -191,7 +191,7 @@
                   </ul>
                 </div>
                 <div class="btn-box">
-                  <a :href="product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
+                  <a :href="'/redirect?url=' + product.link" class="btn" rel="noreferrer noopener nofollow">View Rates >></a>
                 </div>
               </div>
             </div>
