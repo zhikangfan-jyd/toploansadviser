@@ -5,7 +5,9 @@
       <div class="banner-container">
         <div class="history-nav">
           <span
-          ><nuxt-link class="link" target="_blank" to="/guides">Guides</nuxt-link>
+            ><nuxt-link class="link" target="_blank" to="/guides"
+              >Guides</nuxt-link
+            >
             <span class="iconfont">></span></span
           >
           <span class="title-box">{{ blog.title }}</span>
@@ -16,17 +18,25 @@
     <div class="guides-container">
       <div class="guides-left">
         <div class="author-info">
-          <img :alt="blog.author.name" :src="'https://service.toploansadviser.com' + blog.author.picture"
-               class="author-img"/>
+          <img
+            :alt="blog.author.name"
+            :src="'https://service.toploansadviser.com' + blog.author.picture"
+            class="author-img"
+          />
           <div class="info-box">
-            <span class="name">Written by <span class="author-name">{{ blog.author.name }}</span></span>
+            <span class="name"
+              >Written by
+              <span class="author-name">{{ blog.author.name }}</span></span
+            >
             <div class="updated">
-              <span><span
-                class="iconfont">&#xe645;</span> <span>Last updated: {{
-                  updateTime(blog.date).month.short
-                }}.{{ updateTime(blog.date).day }},{{
-                  updateTime(blog.date).year
-                }}</span></span>
+              <span
+                ><span class="iconfont">&#xe645;</span>
+                <span
+                  >Last updated: {{ updateTime(blog.date).month.short }}.{{
+                    updateTime(blog.date).day
+                  }},{{ updateTime(blog.date).year }}</span
+                ></span
+              >
             </div>
           </div>
         </div>
@@ -50,26 +60,25 @@
           </div>
         </div>
         <div class="guides-content" v-html="blog.content"></div>
-
       </div>
       <div class="top-area">
         <span class="title">TOP 5 LOANS</span>
         <ul class="top-list">
           <li v-for="(item, index) in toploans" :key="index" class="top-item">
-            <img :alt="item.name" :src="item.logo" class="logo"/>
+            <img :alt="item.name" :src="item.logo" class="logo" />
             <a
-              :href="'/redirect?url='+item.link"
+              :href="'/redirect?url=' + item.link"
               rel="noopener noreferrer nofollow"
               target="_blank"
               @click="
-                      handleTracking({
-                        name: item.name,
-                        click_time: new Date().getTime(),
-                        link: item.link
-                      });
-                      tracking(item.name);
-                    "
-            >Visit Site >></a
+                handleTracking({
+                  name: item.name,
+                  click_time: new Date().getTime(),
+                  link: item.link,
+                });
+                tracking(item.name);
+              "
+              >Visit Site >></a
             >
           </li>
         </ul>
@@ -82,12 +91,15 @@
           <li v-for="(item, index) in relatedBlogs" :key="index">
             <nuxt-link :to="'/guides/' + item.link">
               <div class="img-box">
-                <img v-lazy="'https://service.toploansadviser.com' + item.picture" :alt="item.title" class="pic"/>
+                <img
+                  v-lazy="'https://service.toploansadviser.com' + item.picture"
+                  :alt="item.title"
+                  class="pic"
+                />
                 <span class="tags">{{ blog.article_category.name }}</span>
               </div>
               <div class="title-box">
                 <h6 class="blog-title">{{ item.title }}</h6>
-
               </div>
             </nuxt-link>
           </li>
@@ -98,46 +110,52 @@
 </template>
 
 <script>
-import {shareToFB, shareToTwitter} from "../../utils/share";
-import {jsonLd} from '../../utils/json-ld'
-import {tracking} from "../../utils/ga-event";
-import {seo} from "../../utils/seo";
-import {updateTime} from "../../utils/date";
+import { shareToFB, shareToTwitter } from "../../utils/share";
+import { jsonLd } from "../../utils/json-ld";
+import { tracking } from "../../utils/ga-event";
+import { seo } from "../../utils/seo";
+import { updateTime } from "../../utils/date";
 export default {
   head() {
     return seo({
-      title: this.blog.title + ' | Toploansadviser',
+      title: this.blog.title + " | Toploansadviser",
       description: this.blog.introduce,
       keywords: this.blog.keywords,
       url: this.pageUrl,
-      type: 'article',
-      img: 'https://service.toploansadviser.com' + this.blog.picture,
+      type: "article",
+      img: "https://service.toploansadviser.com" + this.blog.picture,
       img_size: {
-        width: '325',
-        height: '295'
+        width: "325",
+        height: "295",
       },
-      img_type: ''
-    })
+      img_type: "",
+    });
   },
-  async asyncData({$axios, $api, params, error}) {
+  async asyncData({ $axios, $api, params, error }) {
     try {
       // let results = await $api.articleApi.getArticleContentByKey(params.key);
-      let results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find_by_key?key=' + params.key);
+      let results = await $axios.$get(
+        "https://service.toploansadviser.com/api/v1/article/find_by_key?key=" +
+          params.key
+      );
       let blog = results.data;
       let topLoans_results = await $axios.$get(
         "/data/person_loan_product.json"
       );
       // let articles_results = await $api.articleApi.getArticleByCategory(blog.acid, 1, 4);
-      let articles_results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + blog.acid);
-      let articles = articles_results.data.rows[0].article.slice(0, 4);
+      let articles_results = await $axios.$get(
+        "https://service.toploansadviser.com/api/v1/article/find/category?acid=" +
+          blog.acid + '&page=1&pagesize=4'
+      );
+      let articles = articles_results.data.rows;
       return {
         blog: blog,
-        pageUrl: 'https://www.toploansadviser.com/guides/' + params.key,
+        pageUrl: "https://www.toploansadviser.com/guides/" + params.key,
         relatedBlogs: articles,
         toploans: topLoans_results.data.slice(0, 5),
       };
     } catch (e) {
-      error({statusCode: 500});
+      error({ statusCode: 500 });
     }
   },
   data() {
@@ -213,24 +231,24 @@ export default {
         }
       }
     },
-    jsonLd: jsonLd
+    jsonLd: jsonLd,
   },
   created() {
     this.$nextTick(() => {
       if (process.client) {
         this.jsonLd({
-          type: 'Article',
-          title: this.blog.title + ' | Toploansadviser',
+          type: "Article",
+          title: this.blog.title + " | Toploansadviser",
           url: this.pageUrl,
           author: {
-            name: this.blog.author.name
+            name: this.blog.author.name,
           },
           date: this.blog.date,
           body: this.blog.description,
-          image: 'https://service.toploansadviser.com' + this.blog.picture
+          image: "https://service.toploansadviser.com" + this.blog.picture,
         });
       }
-    })
+    });
   },
   mounted() {
     this.$nextTick(() => {
@@ -240,7 +258,7 @@ export default {
       }, 100);
       let options = {
         title: this.blog.title,
-        image: 'https://service.toploansadviser.com' + this.blog.picture,
+        image: "https://service.toploansadviser.com" + this.blog.picture,
         description: "",
         url: "https://www.toploansadviser.com" + this.$route.path,
       };

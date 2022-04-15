@@ -14,34 +14,50 @@
             </p>
           </div>
         </div>
-
       </div>
     </section>
     <div class="learn-container">
       <ul class="category-list">
-        <li v-for="category in categories" :class="{'current': current_category === category.acid}"
-            @click="handleCategory(category.acid)" :key="category.acid">
+        <li
+          v-for="category in categories"
+          :class="{ current: current_category === category.acid }"
+          @click="handleCategory(category.acid)"
+          :key="category.acid"
+        >
           <span>{{ category.name }}</span>
         </li>
       </ul>
       <div v-if="!isLoad" class="category-item">
         <ul v-if="articles.length !== 0" class="blog-list">
-          <li v-for="(article, index) in articles" :key="index" class="blog-item">
+          <li
+            v-for="(article, index) in articles"
+            :key="index"
+            class="blog-item"
+          >
             <div class="img-box">
               <nuxt-link :to="'/guides/' + article.link" target="_blank">
-                <img v-lazy="'https://service.toploansadviser.com' + article.picture" :alt="article.title"/>
+                <img
+                  v-lazy="
+                    'https://service.toploansadviser.com' + article.picture
+                  "
+                  :alt="article.title"
+                />
               </nuxt-link>
             </div>
-            <nuxt-link :to="'/guides/' + article.link" class="title-link" target="_blank"
-            ><h2 class="blog-title">{{ article.title }}</h2></nuxt-link
+            <nuxt-link
+              :to="'/guides/' + article.link"
+              class="title-link"
+              target="_blank"
+              ><h2 class="blog-title">{{ article.title }}</h2></nuxt-link
             >
-            <nuxt-link :to="'/guides/' + article.link" class="link" target="_blank"
-            >Read full Article
-            </nuxt-link
-            >
+            <nuxt-link
+              :to="'/guides/' + article.link"
+              class="link"
+              target="_blank"
+              >Read full Article
+            </nuxt-link>
           </li>
         </ul>
-
       </div>
       <ul v-else-if="isLoad" class="loading-box">
         <li>
@@ -64,10 +80,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -121,10 +137,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -178,10 +194,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -235,10 +251,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -292,10 +308,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -349,10 +365,10 @@
             ></rect>
             <defs>
               <clipPath id="clip-path">
-                <rect height="19" rx="3" ry="3" width="303" x="27" y="229"/>
-                <rect height="19" rx="3" ry="3" width="281" x="26" y="269"/>
-                <rect height="207" rx="0" ry="0" width="345" x="26" y="0"/>
-                <rect height="18" rx="0" ry="0" width="177" x="25" y="310"/>
+                <rect height="19" rx="3" ry="3" width="303" x="27" y="229" />
+                <rect height="19" rx="3" ry="3" width="281" x="26" y="269" />
+                <rect height="207" rx="0" ry="0" width="345" x="26" y="0" />
+                <rect height="18" rx="0" ry="0" width="177" x="25" y="310" />
               </clipPath>
               <linearGradient id="fill">
                 <stop offset="0.599964" stop-color="#f3f3f3" stop-opacity="1">
@@ -391,46 +407,52 @@
   </main>
 </template>
 <script>
-import {seo} from "../../utils/seo";
+import { seo } from "../../utils/seo";
 export default {
   head() {
     return seo({
-      title: 'Guides & Tips | Toploansadviser.com',
-      description: 'Toploansadviser is a place to compare and review best loans lenders for your financial decision. Read more Toploansadviser guides & tips here.',
-      url: 'https://www.toploansadvisr.com/guides',
-      img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+      title: "Guides & Tips | Toploansadviser.com",
+      description:
+        "Toploansadviser is a place to compare and review best loans lenders for your financial decision. Read more Toploansadviser guides & tips here.",
+      url: "https://www.toploansadvisr.com/guides",
+      img: "https://www.toploansadviser.com/data/images/personal-loan.webp",
       img_size: {
-        width: '325',
-        height: '295'
+        width: "325",
+        height: "295",
       },
-      img_type: 'image/webp',
+      img_type: "image/webp",
     });
   },
-  async asyncData({error, $api, $axios}) {
+  async asyncData({ error, $api, $axios }) {
     try {
       // let results = await $api.articleApi.getArticleCategory();
-      let results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/category');
+      let results = await $axios.$get(
+        "https://service.toploansadviser.com/api/v1/article/category"
+      );
       let categories = results.data.rows ? results.data.rows : [];
       categories.sort((a, b) => {
-        return a.order - b.order
-      })
+        return a.order - b.order;
+      });
       let default_category = categories[0];
       let isLoad = true;
       // let articles_results = await $api.articleApi.getArticleByCategory(default_category.acid);
-      let articles_results = await $axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + default_category.acid)
+      let articles_results = await $axios.$get(
+        "https://service.toploansadviser.com/api/v1/article/find/category?acid=" +
+          default_category.acid
+      );
       isLoad = false;
-      let articles = articles_results.data.rows[0].article;
+      let articles = articles_results.data.rows;
       articles.sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date)
-      })
+        return new Date(b.date) - new Date(a.date);
+      });
       return {
         isLoad: isLoad,
         categories: categories,
         articles: articles,
-        current_category: default_category.acid
-      }
+        current_category: default_category.acid,
+      };
     } catch (e) {
-      await error({statusCode: 500});
+      await error({ statusCode: 500 });
     }
   },
   methods: {
@@ -439,18 +461,21 @@ export default {
       try {
         this.isLoad = true;
         // let results = await this.$api.articleApi.getArticleByCategory(category_id);
-        let results = await this.$axios.$get('https://service.toploansadviser.com/api/v1/article/find/category?acid=' + category_id)
+        let results = await this.$axios.$get(
+          "https://service.toploansadviser.com/api/v1/article/find/category?acid=" +
+            category_id
+        );
         this.isLoad = false;
-        if (results.status === 'success') {
-          this.articles = results.data.rows[0].article;
+        if (results.status === "success") {
+          this.articles = results.data.rows;
         } else {
           this.articles = [];
         }
       } catch (e) {
         this.isLoad = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
