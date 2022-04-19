@@ -21,10 +21,14 @@
         <li
           v-for="category in categories"
           :class="{ current: current_category === category.acid }"
-          @click="handleCategory(category.acid)"
           :key="category.acid"
         >
-          <span>{{ category.name }}</span>
+          <a
+            :href="'/guides?category=' + category.key"
+            rel="noopener noreferrer"
+          >
+            {{ category.name }}
+          </a>
         </li>
       </ul>
       <div v-if="!isLoad" class="category-item">
@@ -50,12 +54,15 @@
               target="_blank"
               ><h2 class="blog-title">{{ article.title }}</h2></nuxt-link
             >
-            <nuxt-link
-              :to="'/guides/' + article.link"
-              class="link"
-              target="_blank"
-              >Read full Article
-            </nuxt-link>
+            <div class="blog-item-bottom">
+              <nuxt-link
+                :to="'/guides/' + article.link"
+                class="link"
+                target="_blank"
+                >Read full Article
+              </nuxt-link>
+              <span class="date">{{ article.date }}</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -408,6 +415,7 @@
 </template>
 <script>
 import { seo } from "../../utils/seo";
+import { changeTime } from "../../utils/date";
 export default {
   head() {
     return seo({
@@ -423,9 +431,10 @@ export default {
       img_type: "image/webp",
     });
   },
-  async asyncData({ error, $api, $axios }) {
+  async asyncData({ error, $axios, route }) {
     try {
-      // let results = await $api.articleApi.getArticleCategory();
+      let { category } = route.query;
+      let default_category = null;
       let results = await $axios.$get(
         "https://service.toploansadviser.com/api/v1/article/category"
       );
@@ -433,17 +442,28 @@ export default {
       categories.sort((a, b) => {
         return a.order - b.order;
       });
-      let default_category = categories[0];
+      categories.forEach((ele) => {
+        ele.key = ele.name.toLocaleLowerCase().split(" ").join("-");
+        if (ele.key === category) {
+          default_category = ele;
+        }
+      });
+
+      default_category =
+        default_category === null ? categories[0] : default_category;
       let isLoad = true;
-      // let articles_results = await $api.articleApi.getArticleByCategory(default_category.acid);
       let articles_results = await $axios.$get(
         "https://service.toploansadviser.com/api/v1/article/find/category?acid=" +
           default_category.acid
       );
       isLoad = false;
       let articles = articles_results.data.rows;
+
       articles.sort(function (a, b) {
         return new Date(b.date) - new Date(a.date);
+      });
+      articles.forEach((ele) => {
+        ele.date = changeTime(ele.date);
       });
       return {
         isLoad: isLoad,
@@ -460,13 +480,18 @@ export default {
       this.current_category = category_id;
       try {
         this.isLoad = true;
-        // let results = await this.$api.articleApi.getArticleByCategory(category_id);
         let results = await this.$axios.$get(
           "https://service.toploansadviser.com/api/v1/article/find/category?acid=" +
             category_id
         );
         this.isLoad = false;
         if (results.status === "success") {
+          results.data.rows.sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date);
+          });
+          results.data.rows.forEach((ele) => {
+            ele.date = changeTime(ele.date);
+          });
           this.articles = results.data.rows;
         } else {
           this.articles = [];

@@ -53,8 +53,6 @@
         line-height: 40px;
         padding: 0 45px;
         cursor: pointer;
-        color: #1a7781;
-
         border-bottom: 2px solid #1a7781;
         margin-right: 5px;
 
@@ -90,6 +88,19 @@
             border-bottom: 20px solid transparent;
             border-right: 10px solid transparent;
           }
+
+          a {
+            color: #fff;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          color: #1a7781;
+
         }
       }
     }
@@ -120,6 +131,8 @@
           font-size: 38px;
           color: #001139;
         }
+
+
       }
 
       .text {
@@ -180,6 +193,12 @@
             text-decoration: none;
           }
 
+          .blog-item-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+
           .link {
             color: $theme-color;
             text-decoration: none;
@@ -189,6 +208,11 @@
               text-decoration-line: underline;
               text-decoration-color: $theme-color;
             }
+          }
+
+          .date {
+            font-size: 14px;
+            color: #666;
           }
         }
 
@@ -279,7 +303,8 @@
           padding-right: 0;
           text-align: center;
 
-          &::after, &::before {
+          &::after,
+          &::before {
             display: none;
           }
         }
