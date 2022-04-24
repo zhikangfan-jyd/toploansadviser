@@ -1,7 +1,9 @@
 ---
 id: ascent
+review_key: ascent
 name: Ascent Loan
 date: Apr.16,2021
+category: student-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -18,6 +20,12 @@ product: {
 "amount": {
 "min": 2000,
 "max": 200000
+},
+"compare": {
+"apr": {
+"min": "3.49",
+"max": "12.99"
+}
 },
 "rate": {
 "max": 10,

@@ -1,7 +1,9 @@
 ---
 id: personal-loans
+review_key: personal_loans
 name: Personal Loans
 date: Apr.16,2021
+category: personal-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp

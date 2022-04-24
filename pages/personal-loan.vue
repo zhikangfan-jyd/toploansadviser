@@ -3,6 +3,7 @@
     <section class="banner-area">
       <div class="slogan">We explore smarter online personal loan lenders rates from 2.49% fixed APR.</div>
       <div class="banner-container">
+        
         <h1 class="title">Best Personal Loans {{ updateTime().month.short }} {{ updateTime().year }}</h1>
         <div class="introduce-container">
           <div class="author-info">
@@ -533,6 +534,24 @@
 
         </div>
       </div>
+    </section>
+    <section class="breadcrumb-area">
+      <ul class="breadcrumb-navigation">
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer">
+              <span class="iconfont">&#xe606;</span>
+            </a>
+            <span class="icon">&gt;</span>
+          </li>
+           <li>
+            <a href="/best-personal-loans" target="_blank" rel="noopener noreferrer">Personal Loan</a>
+            <span class="icon">&gt;</span>
+          </li>
+           <li>
+            <a href="/personal-loan" target="_blank" rel="noopener noreferrer">Best Personal Loan</a>
+            
+          </li>
+        </ul>
     </section>
   </main>
 </template>

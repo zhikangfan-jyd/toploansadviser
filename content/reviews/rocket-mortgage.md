@@ -1,7 +1,9 @@
 ---
 id: rocket-mortgage
+review_key: rocket_mortgage
 name: Rocket Mortgage
 date: Apr.16,2021
+category: mortgage-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -17,6 +19,11 @@ product: {
 "max": 10,
 "score": "8.6"
 },
+"credit_score": {
+"min": "720",
+"max": ""
+},
+"min_down_payment": "",
 "slogan": "Discover custom home loan option",
 "key_facts": {
 "mortgage_types": "Purchase, Refinance, Jumbo, Fixed, Adjustable, FHA, VA, USDA",

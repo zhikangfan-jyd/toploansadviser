@@ -37,7 +37,7 @@
 
   var query = getQuery(window.location.search);
   if (query.url) {
-    window.location.href = query.url;
+    window.location.href = window.decodeURIComponent(query.url);
 
   } else {
     window.location.href = '/'

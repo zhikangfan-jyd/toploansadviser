@@ -1,7 +1,9 @@
 ---
 id: lendingclub
+review_key: lending_club
 name: Lending Club
 date: Apr.16,2021
+category: personal-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -154,4 +156,4 @@ Most complaints were about making payments, incorrect credit reporting, and unex
 
 Even though the company has streamlined its entire online process for the users' convenience, Lending Club personal loans are best for those who have excellent or at least fair credit ratings from the three major credit bureaus. Moreover, people who can pay back the loan amount during the application process are more suitable to apply at this company. And in this case, people who need a loan for as small as $1000 can apply for Lending club's loans.
 
-<div class="btn-box"><a href="/redirect/review/lendingclub" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>

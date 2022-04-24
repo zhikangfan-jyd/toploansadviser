@@ -1,7 +1,9 @@
 ---
 id: college-ave-loan
+review_key: college_ave_loan
 name: College Ave
 date: Apr.16,2021
+category: student-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -16,6 +18,16 @@ product: {
 "rate": {
 "max": 10,
 "score": "7.5"
+},
+"compare": {
+"apr": {
+"min": "3.49",
+"max": "12.99"
+}
+},
+"amount": {
+"min": "",
+"max": ""
 },
 "loan_term": {
 "min_term": "5",

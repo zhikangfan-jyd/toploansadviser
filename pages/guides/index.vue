@@ -59,7 +59,7 @@
                 :to="'/guides/' + article.link"
                 class="link"
                 target="_blank"
-                >Read full Article
+                >Read Full Article
               </nuxt-link>
               <span class="date">{{ article.date }}</span>
             </div>

@@ -1,7 +1,9 @@
 ---
 id: monevo
+review_key: monevo
 name: Monevo
 date: Apr.16,2021
+category: personal-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp

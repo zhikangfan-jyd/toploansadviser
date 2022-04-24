@@ -16,7 +16,6 @@ const createSitemapRoutes = async () => {
     for (const post of posts) {
       routes.push({
         url: `reviews/${post.slug}`,
-        lastmod: new Date(),
         priority: 0.8
       });
     }
@@ -30,7 +29,6 @@ const createSitemapRoutes = async () => {
       results.data.data.rows.forEach(article => {
         articleRoutes.push({
           url: `/guides/${article.link}`,
-          lastmod: article.utime,
           priority: 0.8
         })
       })
@@ -216,7 +214,6 @@ export default {
     generate: false,
     path: '/sitemap.xml',
     defaults: {
-      lastmod: new Date(),
       priority: 0.8
     },
     exclude: ['/error', '/redirect'],

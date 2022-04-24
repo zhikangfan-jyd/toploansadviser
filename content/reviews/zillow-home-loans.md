@@ -1,7 +1,9 @@
 ---
 id: zillow
+review_key: zillow
 name: Zillow
 date: Apr.16,2021
+category: mortgage-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -17,6 +19,11 @@ product: {
 "max": 10,
 "score": "9.8"
 },
+"credit_score": {
+"min": "580",
+"max": "640"
+},
+"min_down_payment": "0% -3.5%",
 "slogan": "Simple Solutions for Every Step",
 "key_facts": {
 "mortgage_types": "Home Equity Loans, Mortgage Refinance (cash in & cash out), FHA, VA",

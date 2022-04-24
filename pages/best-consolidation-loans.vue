@@ -5,19 +5,31 @@
         <h1 class="title">Best Debt Consolidation Loans</h1>
         <div class="introduce-container">
           <div class="author-info">
-            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
-            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
-            <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
-                updateTime().month.short
-              }} {{ updateTime().year }}</span></p>
+            <img
+              alt=""
+              class="author-image"
+              src="@/assets/img/Kimberly-Rotter.png"
+            />
+            <p class="author-desc">
+              Written by <span class="author-name">Kimberly Rotter</span>
+            </p>
+            <p class="updated">
+              <span class="iconfont">&#xe645;</span>
+              <span
+                >Last updated: {{ updateTime().month.short }}
+                {{ updateTime().year }}</span
+              >
+            </p>
           </div>
           <div class="introduce-content">
-            <p>If you are saddled with different kinds of debt, you can apply for a loan to consolidate those debts into
-              a single liability and pay them off. Payments are then made on the new debt until it is paid off in
-              full.</p>
+            <p>
+              If you are saddled with different kinds of debt, you can apply for
+              a loan to consolidate those debts into a single liability and pay
+              them off. Payments are then made on the new debt until it is paid
+              off in full.
+            </p>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -26,9 +38,9 @@
         <h2 class="title">Compare Top Debt Consolidation Loan Rates</h2>
         <div class="preface-content">
           <p>
-            We compared and reviewed loans from more than 10 debt consolidation loan lenders to find the best rates and
-            loan
-            features.</p>
+            We compared and reviewed loans from more than 10 debt consolidation
+            loan lenders to find the best rates and loan features.
+          </p>
         </div>
       </div>
     </section>
@@ -36,18 +48,21 @@
       <div class="product-container">
         <div class="product-container-top-box">
           <div class="disclosure">
-              <span class="title"
-                    @click="handleShowDisclosure"
+            <span class="title" @click="handleShowDisclosure"
               >Advertising Disclosure</span
-              >
-            <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-              The information shared through this website is based on our team’s personal judgements and views. We use
-              our own comparisons to assign values, which are not intended to reflect a certain benchmark of
-              precision. To keep our website free for use, we accept referral fees from various service providers,
-              which have the potential to influence their respective appointed scores. A third party’s participation
-              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
-              this site is subject to change at any time.The site does not include all companies offering loan
-              products or all available loan offers.
+            >
+            <div :class="{ disclosure_content: true, show: isShowDisclosure }">
+              The information shared through this website is based on our team’s
+              personal judgements and views. We use our own comparisons to
+              assign values, which are not intended to reflect a certain
+              benchmark of precision. To keep our website free for use, we
+              accept referral fees from various service providers, which have
+              the potential to influence their respective appointed scores. A
+              third party’s participation on toploansadviser.com is not an
+              indication of endorsement. The information and vendors which
+              appear on this site is subject to change at any time.The site does
+              not include all companies offering loan products or all available
+              loan offers.
             </div>
           </div>
         </div>
@@ -55,22 +70,22 @@
           <div class="product-title-box">
             <div class="title lenders"><span class="text">Lenders</span></div>
             <div class="title score">
-                <span class="text">
-                  Score
-                  <el-popover placement="bottom" trigger="hover" width="320">
-                    <span slot="reference" class="iconfont">&#xe669;</span>
-                    <div class="content">
-                      <p>
-                        The ratings and ranking on our website are determined by
-                        our editorial team. The scoring mechanism for loan
-                        products takes into account more than 10 data points
-                        across multiple categories, such as APR, repayment
-                        options, customer service, lender transparency, loan
-                        eligibility and others.
-                      </p>
-                    </div>
-                  </el-popover>
-                </span>
+              <span class="text">
+                Score
+                <el-popover placement="bottom" trigger="hover" width="320">
+                  <span slot="reference" class="iconfont">&#xe669;</span>
+                  <div class="content">
+                    <p>
+                      The ratings and ranking on our website are determined by
+                      our editorial team. The scoring mechanism for loan
+                      products takes into account more than 10 data points
+                      across multiple categories, such as APR, repayment
+                      options, customer service, lender transparency, loan
+                      eligibility and others.
+                    </p>
+                  </div>
+                </el-popover>
+              </span>
             </div>
             <h5 class="title features">
               <span class="text">Loan Features</span>
@@ -92,13 +107,17 @@
               <div v-if="index === 0" class="visited-box">
                 <span class="iconfont"></span>
                 <span class="text"
-                ><strong>503 users</strong> chose this site today</span
+                  ><strong>503 users</strong> chose this site today</span
                 >
               </div>
               <div class="product-item-container">
                 <div class="img-score-box">
                   <div class="img-box">
-                    <img v-lazy="item.logo" :alt="item.name" :title="item.name + ' personal loans'"/>
+                    <img
+                      v-lazy="item.logo"
+                      :alt="item.name"
+                      :title="item.name + ' personal loans'"
+                    />
                     <div v-if="item.disclaimer !== ''" class="disclaimer">
                       Disclaimer
                       <el-popover
@@ -106,9 +125,7 @@
                         trigger="hover"
                         width="320"
                       >
-                          <span slot="reference" class="iconfont"
-                          >&#xe669;</span
-                          >
+                        <span slot="reference" class="iconfont">&#xe669;</span>
                         <div class="content">
                           <p>{{ item.disclaimer }}</p>
                         </div>
@@ -154,9 +171,8 @@
                         :to="'/reviews/' + item.review_key"
                         class="reviews-link"
                         target="_blank"
-                      >Read Review
-                      </nuxt-link
-                      >
+                        >Read Review
+                      </nuxt-link>
                     </div>
                   </div>
                 </div>
@@ -174,16 +190,17 @@
                           class="text"
                           style="display: inline; font-weight: normal"
                         >
-                          Min. Credit Score: <strong>{{ item.compare.credit_score }}</strong>
+                          Min. Credit Score:
+                          <strong>{{ item.compare.credit_score }}</strong>
                           <el-popover
                             v-if="item.compare.credit_text !== ''"
                             placement="bottom"
                             trigger="hover"
                             width="280"
                           >
-                              <span slot="reference" class="iconfont"
+                            <span slot="reference" class="iconfont"
                               >&#xe669;</span
-                              >
+                            >
                             <div class="content">
                               <p>{{ item.compare.credit_text }}</p>
                             </div>
@@ -193,57 +210,60 @@
                       <dd>
                         <span class="iconfont">&#xe65a;</span>
                         <p class="text">
-                          APR：<strong>{{ item.compare.apr.min }}% -
-                          {{ item.compare.apr.max }}%</strong>
+                          APR：<strong
+                            >{{ item.compare.apr.min }}% -
+                            {{ item.compare.apr.max }}%</strong
+                          >
                         </p>
                       </dd>
                       <dd>
                         <span class="iconfont">&#xe65a;</span>
-                        <p class="text">Term：<strong>{{ item.compare.term }}</strong></p>
+                        <p class="text">
+                          Term：<strong>{{ item.compare.term }}</strong>
+                        </p>
                       </dd>
                     </dl>
                   </div>
                   <div class="terms-box">
                     <h5 class="title">Loan Amount:</h5>
-                    <span
-                      v-if="item.amount.max !== 'Infinity'"
-                      class="text-box"
-                    ><span>${{ formatNum(String(item.amount.min)) }}-</span
-                    ><span
-                    >${{ formatNum(String(item.amount.max)) }}</span
-                    ></span
+                    <span v-if="item.amount.max !== 'Infinity'" class="text-box"
+                      ><span>${{ formatNum(String(item.amount.min)) }}-</span
+                      ><span
+                        >${{ formatNum(String(item.amount.max)) }}</span
+                      ></span
                     >
                     <span v-else class="text-box"
-                    ><span>up to</span>
-                        <span
+                      ><span>up to</span>
+                      <span
                         >${{ formatNum(String(item.amount.min)) }}</span
-                        ></span
+                      ></span
                     >
                   </div>
                 </div>
                 <div class="btn-box">
                   <a
-                    :href="'/redirect?url='+ item.link + '&gclid=' + item.gclid"
+                    :href="
+                      '/redirect?url=' + item.link + '&gclid=' + item.gclid
+                    "
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="tracking(item.name)"
                   >
-                    <h3
-                      class="text"
-                      style="display: inline;"
-                    >
+                    <h3 class="text" style="display: inline">
                       Check My Rates >>
                     </h3>
                     <!--                    <span class="iconfont">&#xe63c;</span>-->
                   </a>
                   <a
-                    :href="'/redirect?url='+item.link + '&gclid=' + item.gclid"
+                    :href="
+                      '/redirect?url=' + item.link + '&gclid=' + item.gclid
+                    "
                     class="visit-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="tracking(item.name)"
-                  >Visit site >></a
+                    >Visit site >></a
                   >
                 </div>
               </div>
@@ -260,162 +280,295 @@
         <h2 class="title">FAQs About Consolidation Loans</h2>
         <div class="question-content">
           <h2 class="question-title">What is Debt Consolidation Loans？</h2>
-          <p>Even if you are easily making your monthly payments for your debt obligations, it can take months or even
-            years to finally pay it all off. Sometimes keeping track of all <a href="/personal-loan-calculator"
-                                                                               rel="noopener noreferrer"
-                                                                               target="_blank">your monthly
-              payments</a> can be exhausting if
-            you have debt from multiple different avenues. Consolidating your debt into a single payment can allow you
-            to get a lower interest rate and allow you to only have to focus on paying one bill each month.</p>
+          <p>
+            Even if you are easily making your monthly payments for your debt
+            obligations, it can take months or even years to finally pay it all
+            off. Sometimes keeping track of all
+            <a
+              href="/personal-loan-calculator"
+              rel="noopener noreferrer"
+              target="_blank"
+              >your monthly payments</a
+            >
+            can be exhausting if you have debt from multiple different avenues.
+            Consolidating your debt into a single payment can allow you to get a
+            lower interest rate and allow you to only have to focus on paying
+            one bill each month.
+          </p>
           <h2 class="question-title">How Does Debt Consolidation Work?</h2>
-          <p>Debt consolidation is the act of combining all of your debt obligations into a single payment. <a
-            href="/guides/what-kind-of-loan-do-you-need" rel="noopener noreferrer" target="_blank">Nowadays people can
-            have debt with multiple different lenders for many different reasons</a>. If you have debt from
-            multiple lenders this probably means that you have different interest rates for each loan. One of the main
-            benefits of consolidating your debt into one loan is to improve your overall interest rate. Paying a lower
-            interest rate can save you hundreds to thousands of dollars in the long run depending on how much debt you
-            are in. Debt consolidation can be used to combine many different types of debt such as:</p>
+          <p>
+            Debt consolidation is the act of combining all of your debt
+            obligations into a single payment.
+            <a
+              href="/guides/what-kind-of-loan-do-you-need"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Nowadays people can have debt with multiple different lenders for
+              many different reasons</a
+            >. If you have debt from multiple lenders this probably means that
+            you have different interest rates for each loan. One of the main
+            benefits of consolidating your debt into one loan is to improve your
+            overall interest rate. Paying a lower interest rate can save you
+            hundreds to thousands of dollars in the long run depending on how
+            much debt you are in. Debt consolidation can be used to combine many
+            different types of debt such as:
+          </p>
           <ul>
-            <li><a href="/student-loan" rel="noreferrer noopener" target="_blank">Student loans</a></li>
+            <li>
+              <a href="/student-loan" rel="noreferrer noopener" target="_blank"
+                >Student loans</a
+              >
+            </li>
             <li>Auto loans</li>
-            <li><a href="/personal-loan" rel="noreferrer noopener" target="_blank">Personal loans</a></li>
+            <li>
+              <a href="/personal-loan" rel="noreferrer noopener" target="_blank"
+                >Personal loans</a
+              >
+            </li>
             <li>Credit cards</li>
             <li>Medical debt</li>
             <li>Payday loans</li>
           </ul>
           <h2 class="question-title">How to Consolidate Your Debt？</h2>
-          <p>If you are considering consolidating your debt, there are a couple of ways to go about it. Both of the
-            methods listed below will concentrate your debt into one single payment ideally with a lower interest
-            rate. </p>
+          <p>
+            If you are considering consolidating your debt, there are a couple
+            of ways to go about it. Both of the methods listed below will
+            concentrate your debt into one single payment ideally with a lower
+            interest rate.
+          </p>
           <ul>
-            <li>The first <a href="/best-consolidation-loans" rel="noopener noreferrer" target="_blank">method to
-              consolidate your debt</a> is to get a balance-transfer
-              credit card with a good intro
-              promotional period. For example, many credit cards will give you 0% interest for the first year of
-              purchases or balance transfers. You can take advantage of this to literally get your interest rate to 0%
-              for a certain amount of time depending on the card you choose. The only downside of this is that you will
-              need a solid credit score. Otherwise, this can be a great way to save a ton of money on your interest
-              payments and reduce the number of bills you have into just one.
+            <li>
+              The first
+              <a
+                href="/best-consolidation-loans"
+                rel="noopener noreferrer"
+                target="_blank"
+                >method to consolidate your debt</a
+              >
+              is to get a balance-transfer credit card with a good intro
+              promotional period. For example, many credit cards will give you
+              0% interest for the first year of purchases or balance transfers.
+              You can take advantage of this to literally get your interest rate
+              to 0% for a certain amount of time depending on the card you
+              choose. The only downside of this is that you will need a solid
+              credit score. Otherwise, this can be a great way to save a ton of
+              money on your interest payments and reduce the number of bills you
+              have into just one.
             </li>
-            <li>Another option you have to <a href="/best-consolidation-loans" rel="noreferrer noopener"
-                                              target="_blank">consolidate your debt is to get a debt
-              consolidation loan</a>. Essentially you
-              would take out a personal loan and use this money to pay off all of your outstanding debt. At this point,
-              you would be left with just a single personal loan to pay back with a fixed interest rate.
+            <li>
+              Another option you have to
+              <a
+                href="/best-consolidation-loans"
+                rel="noreferrer noopener"
+                target="_blank"
+                >consolidate your debt is to get a debt consolidation loan</a
+              >. Essentially you would take out a personal loan and use this
+              money to pay off all of your outstanding debt. At this point, you
+              would be left with just a single personal loan to pay back with a
+              fixed interest rate.
             </li>
           </ul>
           <h2 class="question-title">Pros and Cons of Debt Consolidation</h2>
-          <p>As with everything in life, debt consolidation has both its pros and cons. Before considering debt
-            consolidation, consider the following factors:</p>
+          <p>
+            As with everything in life, debt consolidation has both its pros and
+            cons. Before considering debt consolidation, consider the following
+            factors:
+          </p>
           <dl>
             <dt>Pros</dt>
-            <dd><strong>Boost your credit score</strong>. Consolidating your debt can potentially improve your credit
-              utilization ratio and can help you make more on-time payments.
+            <dd>
+              <strong>Boost your credit score</strong>. Consolidating your debt
+              can potentially improve your credit utilization ratio and can help
+              you make more on-time payments.
             </dd>
-            <dd><strong>Fewer loans to keep track of</strong>. If you have multiple loans taken out it can become
-              difficult to keep up with all of them. Consolidating your debt into one payment can help you keep track of
-              all your debt within one payment.
+            <dd>
+              <strong>Fewer loans to keep track of</strong>. If you have
+              multiple loans taken out it can become difficult to keep up with
+              all of them. Consolidating your debt into one payment can help you
+              keep track of all your debt within one payment.
             </dd>
-            <dd><strong>Better interest rates</strong>. Generally, credit cards can have high interest rates. If you can
-              consolidate all of your debts into one loan with a good interest rate you can save a lot of money in the
-              long run.
+            <dd>
+              <strong>Better interest rates</strong>. Generally, credit cards
+              can have high interest rates. If you can consolidate all of your
+              debts into one loan with a good interest rate you can save a lot
+              of money in the long run.
             </dd>
           </dl>
           <dl>
             <dt>Cons</dt>
-            <dd><strong>Potential to incur fees</strong>. Depending on how you decide to consolidate your debt, you may
-              have to pay some fees. These fees can be balance transfer fees, origination fees, or closing costs. Make
-              sure to read the fine print and make sure consolidating your debt is truly worth it after considering
-              fees.
+            <dd>
+              <strong>Potential to incur fees</strong>. Depending on how you
+              decide to consolidate your debt, you may have to pay some fees.
+              These fees can be balance transfer fees, origination fees, or
+              closing costs. Make sure to read the fine print and make sure
+              consolidating your debt is truly worth it after considering fees.
             </dd>
-            <dd><strong>Could end up with a worse loan structure</strong>. Depending on what type of loans you have,
-              simply consolidating them into one may come with a worse deal than you had before. If the interest rate is
-              only slightly better or the same but you agree to a longer timeframe you could just end up paying more.
+            <dd>
+              <strong>Could end up with a worse loan structure</strong>.
+              Depending on what type of loans you have, simply consolidating
+              them into one may come with a worse deal than you had before. If
+              the interest rate is only slightly better or the same but you
+              agree to a longer timeframe you could just end up paying more.
             </dd>
-            <dd><strong>Put assets at risk</strong>. If you decide to take out a secured loan using your house <a
-              href="/best-home-equity-loan" rel="noopener noreferrer" target="_blank">with a home equity loan</a> or <a
-              href="/best-helco-loan" rel="noopener noreferrer" target="_blank">a HELOC</a>, then you are risking your
-              assets being seized. If you do not make your
-              payments then this could cause you to lose your house.
+            <dd>
+              <strong>Put assets at risk</strong>. If you decide to take out a
+              secured loan using your house
+              <a
+                href="/best-home-equity-loan"
+                rel="noopener noreferrer"
+                target="_blank"
+                >with a home equity loan</a
+              >
+              or
+              <a
+                href="/best-helco-loan"
+                rel="noopener noreferrer"
+                target="_blank"
+                >a HELOC</a
+              >, then you are risking your assets being seized. If you do not
+              make your payments then this could cause you to lose your house.
             </dd>
           </dl>
           <h2 class="question-title">When to Consider Debt Consolidation?</h2>
-          <p><strong>Debt consolidation personal loans</strong> can be a great solution for those who are not already in
-            deep debt. If
-            your monthly debt payments are less than 50% of your income then debt consolidation can be a good move. It
-            also helps to have a good credit score that can allow you to get approved for a good interest rate on a
-            credit card or debt consolidation loan. </p>
-          <p><a href="/guides/4-questions-to-consider-before-submitting-a-credit-card-application"
-                rel="noopener noreferrer" target="_blank">Credit cards are one of the most common forms of unpaid
-            debt</a>. Generally, credit cards can have interest
-            rates around 18% to 25%. If you are already making your payments on time and have enough to pay it off then
-            you should <strong>consider getting a debt consolidation loan</strong> which has much lower interest rates
-            than a credit
-            card. This can help some people psychologically because with a personal loan you have a payment to make each
-            month as opposed to a small minimum required payment for a credit card. Only making a minimum payment on
-            your credit card can easily lead to paying more interest over time.</p>
+          <p>
+            <strong>Debt consolidation personal loans</strong> can be a great
+            solution for those who are not already in deep debt. If your monthly
+            debt payments are less than 50% of your income then debt
+            consolidation can be a good move. It also helps to have a good
+            credit score that can allow you to get approved for a good interest
+            rate on a credit card or debt consolidation loan.
+          </p>
+          <p>
+            <a
+              href="/guides/4-questions-to-consider-before-submitting-a-credit-card-application"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Credit cards are one of the most common forms of unpaid debt</a
+            >. Generally, credit cards can have interest rates around 18% to
+            25%. If you are already making your payments on time and have enough
+            to pay it off then you should
+            <strong>consider getting a debt consolidation loan</strong> which
+            has much lower interest rates than a credit card. This can help some
+            people psychologically because with a personal loan you have a
+            payment to make each month as opposed to a small minimum required
+            payment for a credit card. Only making a minimum payment on your
+            credit card can easily lead to paying more interest over time.
+          </p>
 
-          <h2 class="question-title">When Not to Consider Debt Consolidation?</h2>
-          <p>Although debt consolidation can be a great way to reduce interest payments and simplify your loans, it may
-            not be the right choice for everybody. To be honest, many people who are stuck in debt may have excessive
-            spending habits that should be addressed before anything else. Those that are drowning in debt and will
-            still not be able to pay it off even with consolidation should consider alternative solutions. As a rule of
-            thumb, if your debt payments are more than half of your income then you may want to consider <strong><a
-              href="/best-consolidation-loans" rel=" noopener noreferrer" target="_blank">seeking debt
-              relief</a></strong>. In certain
-            situations, you would be better off filing for bankruptcy than attempting to barely make
-            their minimum payments each month.</p>
+          <h2 class="question-title">
+            When Not to Consider Debt Consolidation?
+          </h2>
+          <p>
+            Although debt consolidation can be a great way to reduce interest
+            payments and simplify your loans, it may not be the right choice for
+            everybody. To be honest, many people who are stuck in debt may have
+            excessive spending habits that should be addressed before anything
+            else. Those that are drowning in debt and will still not be able to
+            pay it off even with consolidation should consider alternative
+            solutions. As a rule of thumb, if your debt payments are more than
+            half of your income then you may want to consider
+            <strong
+              ><a
+                href="/best-consolidation-loans"
+                rel=" noopener noreferrer"
+                target="_blank"
+                >seeking debt relief</a
+              ></strong
+            >. In certain situations, you would be better off filing for
+            bankruptcy than attempting to barely make their minimum payments
+            each month.
+          </p>
           <h6 class="title">Bottom line</h6>
-          <p>Debt consolidation can help you save money in the long run by reducing your interest rates and condensing
-            your loans into a single monthly payment. Those that are responsible with their spending and keep track of
-            all their payments can really <strong><a href="/best-consolidation-loans" rel="noreferrer noopener"
-                                                     target="_blank">benefit
-              from consolidating their debt</a></strong>. However, people with excessive spending
-            habits who have no desire to pay their debt off on time may not find much use in consolidating their debt.
-            This process is not a simple fix for everybody’s debt problems. It is only recommended to consolidate your
-            debt if you stay on top of it and go through the work to calculate the pros and cons of your choice.</p>
+          <p>
+            Debt consolidation can help you save money in the long run by
+            reducing your interest rates and condensing your loans into a single
+            monthly payment. Those that are responsible with their spending and
+            keep track of all their payments can really
+            <strong
+              ><a
+                href="/best-consolidation-loans"
+                rel="noreferrer noopener"
+                target="_blank"
+                >benefit from consolidating their debt</a
+              ></strong
+            >. However, people with excessive spending habits who have no desire
+            to pay their debt off on time may not find much use in consolidating
+            their debt. This process is not a simple fix for everybody’s debt
+            problems. It is only recommended to consolidate your debt if you
+            stay on top of it and go through the work to calculate the pros and
+            cons of your choice.
+          </p>
         </div>
       </div>
     </section>
-    <CalculatorPopup/>
+    <section class="breadcrumb-area">
+      <ul class="breadcrumb-navigation">
+        <li>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <span class="iconfont">&#xe606;</span>
+          </a>
+          <span class="icon">&gt;</span>
+        </li>
+        <li>
+          <a
+            href="/best-personal-loans"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Personal Loan</a
+          >
+          <span class="icon">&gt;</span>
+        </li>
+        <li>
+          <a href="/best-consolidation-loans" target="_blank" rel="noopener noreferrer"
+            >Best Debt Consolidation Loan</a
+          >
+        </li>
+      </ul>
+    </section>
+    <CalculatorPopup />
   </main>
 </template>
 
 <script>
-import {computeScore, formatNum} from "../utils/index";
-import {updateTime} from "../utils/date";
+import { computeScore, formatNum } from "../utils/index";
+import { updateTime } from "../utils/date";
 import FoldTheCard from "../components/FoldTheCard/index";
 import CalculatorPopup from "../components/CalculatorPopup/index";
-import {seo} from '../utils/seo'
-import {tracking} from "../utils/ga-event";
+import { seo } from "../utils/seo";
+import { tracking } from "../utils/ga-event";
 export default {
   head: seo({
-    title: 'Debt Consolidation Personal Loans  | Toploansadviser.com',
-    description: "A Debt consolidation loan is a type of personal loan you can use to pay off high-interest debt, specially credit cards. And it allows one low-interest monthly payment.",
-    keywords: "personal loans for debt consolidation,debt consolidation personal loans,debt consolidation loan",
-    url: 'https://www.toploansadviser.com/best-consolidation-loans',
-    img: 'https://www.toploansadviser.com/data/images/personal-loan.webp',
+    title: "Debt Consolidation Personal Loans  | Toploansadviser.com",
+    description:
+      "A Debt consolidation loan is a type of personal loan you can use to pay off high-interest debt, specially credit cards. And it allows one low-interest monthly payment.",
+    keywords:
+      "personal loans for debt consolidation,debt consolidation personal loans,debt consolidation loan",
+    url: "https://www.toploansadviser.com/best-consolidation-loans",
+    img: "https://www.toploansadviser.com/data/images/personal-loan.webp",
     img_size: {
-      width: '325',
-      height: '295'
+      width: "325",
+      height: "295",
     },
-    img_type: 'image/webp',
+    img_type: "image/webp",
     link: [
-      {rel: "canonical", href: "https://www.toploansadviser.com/personal-loan"}
-    ]
+      {
+        rel: "canonical",
+        href: "https://www.toploansadviser.com/personal-loan",
+      },
+    ],
   }),
   components: {
     FoldTheCard,
     CalculatorPopup,
   },
-  async asyncData({$axios, error, route}) {
+  async asyncData({ $axios, error, route }) {
     try {
-      let results = await $axios.$get('/data/best-consolidation-loans.json');
+      let results = await $axios.$get("/data/best-consolidation-loans.json");
       return {
-        products: results.data
-      }
+        products: results.data,
+      };
     } catch (e) {
-      error({statusCode: 404});
+      error({ statusCode: 404 });
     }
   },
   data() {
@@ -430,42 +583,43 @@ export default {
     tracking,
     handleShowDisclosure() {
       this.isShowDisclosure = !this.isShowDisclosure;
-    }
+    },
   },
   mounted() {
     function showSlogan() {
       let clientWidth = $(window).width();
       if (clientWidth <= 750) {
-        let top = $('.banner-container .website-title').offset().top;
-        $(window).on('scroll', function () {
-          let headerHeight = document.querySelector('.header-container').clientHeight;
-          let websiteTitleJqDom = $('.banner-container .website-title');
+        let top = $(".banner-container .website-title").offset().top;
+        $(window).on("scroll", function () {
+          let headerHeight =
+            document.querySelector(".header-container").clientHeight;
+          let websiteTitleJqDom = $(".banner-container .website-title");
           if ($(this).scrollTop() > top) {
-            websiteTitleJqDom.text('Compare Best Personal Loans Rates');
+            websiteTitleJqDom.text("Compare Best Personal Loans Rates");
             websiteTitleJqDom.css({
-              position: 'fixed',
-              top: headerHeight + 'px',
-              fontSize: '.2rem',
-              textAlign: 'center',
-              width: '100%',
+              position: "fixed",
+              top: headerHeight + "px",
+              fontSize: ".2rem",
+              textAlign: "center",
+              width: "100%",
               left: 0,
-              color: '#fff',
-              backgroundColor: 'rgb(26,119,129)'
-            })
+              color: "#fff",
+              backgroundColor: "rgb(26,119,129)",
+            });
           } else {
-            websiteTitleJqDom.text('Best Personal Loans 2022');
+            websiteTitleJqDom.text("Best Personal Loans 2022");
             websiteTitleJqDom.css({
-              position: 'static',
-              top: headerHeight + 'px',
-              textAlign: 'left',
-              width: 'auto',
-              fontSize: '0.36rem',
-              color: '#001139',
+              position: "static",
+              top: headerHeight + "px",
+              textAlign: "left",
+              width: "auto",
+              fontSize: "0.36rem",
+              color: "#001139",
               left: 0,
-              backgroundColor: 'transparent'
-            })
+              backgroundColor: "transparent",
+            });
           }
-        })
+        });
       }
     }
     // showSlogan();

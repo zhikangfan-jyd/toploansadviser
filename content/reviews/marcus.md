@@ -1,7 +1,9 @@
 ---
 id: marcus
+review_key: marcus
 name: Marcus
 date: Apr.16,2021
+category: personal-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -11,7 +13,7 @@ description: Marcus by Goldman Sachs is the online branch of Goldman Sachs and p
 product: {
 "name": "Marcus",
 "review_key": "marcus",
-"link": "https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0",
+"link": "https://www.credible.com/a/marcus-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=marcus_pl&utm_content=",
 "logo": "/data/images/marcus.webp",
 "upto": "1000000",
 "introduce": "No sign-up & repayment fees",
@@ -43,7 +45,7 @@ Borrowers love the speed Marcus operates,You could receive your funds in as litt
 
 Check out our Marcus by Goldman Sachs personal loan review below.
 
-<div class="btn-box"><a href="/redirect?url=https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/marcus-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=marcus_pl&utm_content=" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><img src="/data/images/r-5.webp"/><h2 class="title">Qualifying Requirements</h2></div>
 
@@ -131,7 +133,7 @@ Customer support is one area Marcus by Goldman Sachs lacks. While you can contac
 
 If you have great credit, Marcus is a great place to get your persona loan. You’ll secure a low APR and have a fixed payment. While other lenders may have APRs that are close to Marcus, most don’t have any fees like Marcus or offer other features such as flexible payment dates, autopay discounts, or a mobile app to manage your account.
 
-<div class="btn-box"><a href="/redirect?url=https://click.linksynergy.com/fs-bin/click?id=tKghxKc1Ct0&offerid=663242.3&type=3&subid=0" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
+<div class="btn-box"><a href="/redirect?url=https://www.credible.com/a/marcus-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=marcus_pl&utm_content=" rel="noopener noreferrer nofollow" target="_blank" class="btn">Check My Rate</a></div>
 
 <div class="title-box"><h2 class="title" style="font-size: 20px;">Terms And Conditions</h2></div>
 

@@ -1,7 +1,9 @@
 ---
 id: sofi
+review_key: sofi
 name: SoFi
 date: Apr.16,2021
+category: personal-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp

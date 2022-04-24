@@ -1,7 +1,9 @@
 ---
 id: figure-helco
+review_key: figure_helco
 name: Figure
 date: Apr.16,2021
+category: home-equity
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -18,6 +20,12 @@ product: {
 "amount": {
 "min": "15000",
 "max": "250000"
+},
+"compare": {
+"apr": {
+"min":"3",
+"max": "Infinity"
+}
 },
 "rate": {
 "max": 10,

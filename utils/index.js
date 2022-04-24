@@ -15,6 +15,7 @@ export const computeScore = (score) => {
 export const formatNum = (str) => {
   let newStr = "";
   let count = 0;
+  str = String(str);
   // 当数字是整数
   if (str.indexOf(".") === -1) {
     for (let i = str.length - 1; i >= 0; i--) {

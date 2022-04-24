@@ -70,7 +70,8 @@
             font-size: 16px;
             color: #001139;
             font-weight: 600;
-
+            
+            
 
             &::before {
               display: none;
@@ -89,6 +90,11 @@
 
             &::after {
               display: none;
+            }
+
+            a {
+              color: #001139;
+              text-decoration: none;
             }
           }
 

@@ -1,6 +1,35 @@
 .main-container {
   padding-top: 80px;
 
+  
+  .breadcrumb-navigation {
+    width: $rootWidth;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 75px auto 15px auto;
+    box-sizing: border-box;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      .icon {
+        margin: 0 10px;
+      }
+
+      a {
+        color: #4a4a4a;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+
   .slogan {
 
     padding: 8px 0;

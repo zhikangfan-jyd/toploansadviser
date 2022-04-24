@@ -3,19 +3,35 @@
     <section class="banner-area">
       <div class="banner-container">
         <div class="banner-content-box">
-          <!--          <ul class="breadcrumb-navigation">-->
-          <!--            <li>-->
-          <!--              <a href="/personal-loan" target="_blank" rel="noopener noreferrer" class="link">Home</a>-->
-          <!--              <span class="iconfont">&#xe616;</span>-->
-          <!--            </li>-->
-          <!--            <li>-->
-          <!--              <a href="/reviews" target="_blank" rel="noopener noreferrer" class="link">Reviews</a>-->
-          <!--              <span class="iconfont">&#xe616;</span>-->
-          <!--            </li>-->
-          <!--            <li>-->
-          <!--              <a href="/reviews/" target="_blank" rel="noopener noreferrer" class="link current">{{ doc.name }} Review {{ updateTime().year }}</a>-->
-          <!--            </li>-->
-          <!--          </ul>-->
+          <ul class="breadcrumb-navigation">
+            <li>
+              <a href="/" target="_blank" rel="noopener noreferrer" class="link"
+                >
+                  <span class="iconfont">&#xe606;</span>
+                </a
+              >
+              <span class="icon">&gt;</span>
+            </li>
+            <li>
+              <a
+                href="/reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link"
+                >Reviews</a
+              >
+              <span class="icon">&gt;</span>
+            </li>
+            <li>
+              <a
+                :href="'/reviews/' + slug"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link"
+                >{{ doc.name }} Review {{ updateTime().year }}</a
+              >
+            </li>
+          </ul>
           <h1 class="title">{{ doc.name }} Review {{ updateTime().year }}</h1>
           <p class="info">
             <span
@@ -145,18 +161,48 @@
             >Advertising Disclosure</span
           >
           <div :class="{ disclosure_content: true, show: isShowDisclosure }">
-            <p v-if="product.name === 'Marcus'">Your loan terms are not guaranteed and are subject to our verification of your identity and credit information. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. The availability of a loan offer and the terms of your actual offer will vary due to a number of factors, including your loan purpose, our evaluation of your creditworthiness, your credit history, if we have recently declined your loan application and the number of loans you already have with us. To obtain a loan, you must submit additional documentation including an application that may affect your credit score. Rates will vary based on many factors, such as your creditworthiness (for example, credit score and credit history) and the length of your loan (for example, rates for 36 month loans are generally lower than rates for 72 month loans). Your maximum loan amount may vary depending on your loan purpose, income and creditworthiness. Your verifiable income must support your ability to repay your loan. Marcus by Goldman Sachs is a brand of Goldman Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA, Salt Lake City Branch. Applications are subject to additional terms and conditions. You may be required to have some of your funds sent directly to creditors to pay down certain types of unsecured debt. Receive a 0.25% APR reduction when you enroll in AutoPay. This reduction will not be applied if AutoPay is not in effect. When enrolled, a larger portion of your monthly payment will be applied to your principal loan amount and less interest will accrue on your loan, which may result in a smaller final payment. See loan agreement for details.</p>
-            <p v-else>The information shared through this website is based on our team’s
-            personal judgements and views. We use our own comparisons to assign
-            values, which are not intended to reflect a certain benchmark of
-            precision. To keep our website free for use, we accept referral fees
-            from various service providers, which have the potential to
-            influence their respective appointed scores. A third party’s
-            participation on toploansadviser.com is not an indication of
-            endorsement. The information and vendors which appear on this site
-            is subject to change at any time.The site does not include all
-            companies offering loan products or all available loan offers.</p>
-            
+            <p v-if="product.name === 'Marcus'">
+              Your loan terms are not guaranteed and are subject to our
+              verification of your identity and credit information. To obtain a
+              loan, you must submit additional documentation including an
+              application that may affect your credit score. The availability of
+              a loan offer and the terms of your actual offer will vary due to a
+              number of factors, including your loan purpose, our evaluation of
+              your creditworthiness, your credit history, if we have recently
+              declined your loan application and the number of loans you already
+              have with us. To obtain a loan, you must submit additional
+              documentation including an application that may affect your credit
+              score. Rates will vary based on many factors, such as your
+              creditworthiness (for example, credit score and credit history)
+              and the length of your loan (for example, rates for 36 month loans
+              are generally lower than rates for 72 month loans). Your maximum
+              loan amount may vary depending on your loan purpose, income and
+              creditworthiness. Your verifiable income must support your ability
+              to repay your loan. Marcus by Goldman Sachs is a brand of Goldman
+              Sachs Bank USA and all loans are issued by Goldman Sachs Bank USA,
+              Salt Lake City Branch. Applications are subject to additional
+              terms and conditions. You may be required to have some of your
+              funds sent directly to creditors to pay down certain types of
+              unsecured debt. Receive a 0.25% APR reduction when you enroll in
+              AutoPay. This reduction will not be applied if AutoPay is not in
+              effect. When enrolled, a larger portion of your monthly payment
+              will be applied to your principal loan amount and less interest
+              will accrue on your loan, which may result in a smaller final
+              payment. See loan agreement for details.
+            </p>
+            <p v-else>
+              The information shared through this website is based on our team’s
+              personal judgements and views. We use our own comparisons to
+              assign values, which are not intended to reflect a certain
+              benchmark of precision. To keep our website free for use, we
+              accept referral fees from various service providers, which have
+              the potential to influence their respective appointed scores. A
+              third party’s participation on toploansadviser.com is not an
+              indication of endorsement. The information and vendors which
+              appear on this site is subject to change at any time.The site does
+              not include all companies offering loan products or all available
+              loan offers.
+            </p>
           </div>
         </div>
         <div class="top-area">
@@ -210,19 +256,19 @@ export default {
   },
   async asyncData({ $content, params, $axios }) {
     const doc = await $content("reviews/" + params.name).fetch();
-
     const { data } = await $axios.$get("/data/person_loan_product.json");
     return {
       url: "https://www.toploansadviser.com/reviews/" + params.name,
       doc,
       product: doc.product,
       topLoans: data.slice(0, 5),
+      slug: params.name,
     };
   },
   data() {
     return {
       timer: null,
-      isShowDisclosure: false
+      isShowDisclosure: false,
     };
   },
   methods: {

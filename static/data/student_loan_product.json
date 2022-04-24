@@ -1,6 +1,30 @@
 {
   "data": [
-    
+    {
+      "name": "College Ave",
+      "review_key": "",
+      "link": "https://www.collegeavestudentloans.com/lp/refinance-student-loans/?utm_campaign=affiliate%20ongoing&utm_source=westwin&utm_medium=aggregator&utm_content=learn%20more&brand=college%20ave&product=refi&p_aff=westwin&goal=acquisition&agg_ref_id=placeholder",
+      "logo": "/data/images/collegeave.webp",
+      "rate": {
+        "max": 10,
+        "score": "9.9"
+      },
+      "compare": {
+        "credit_score": "600",
+        "fixed_rate": {
+          "min_rate": "3.49",
+          "max_rate": "12.99"
+        },
+        "variable_rate": {
+          "min_rate": "0.94",
+          "max_rate": "11.98"
+        }
+      },
+      "loan_term": {
+        "min_term": "5",
+        "max_term": "15"
+      }
+    },
     {
       "name": "Credible",
       "review_key": "credible",
@@ -8,7 +32,7 @@
       "logo": "/data/images/credible.webp",
       "rate": {
         "max": 10,
-        "score": "9.8"
+        "score": "9.7"
       },
       "compare": {
         "credit_score": "600",
@@ -33,7 +57,7 @@
       "logo": "/data/images/citizens_bank.webp",
       "rate": {
         "max": 10,
-        "score": "9.6"
+        "score": "9.5"
       },
       "compare": {
         "credit_score": "600",
@@ -174,31 +198,6 @@
       "loan_term": {
         "min_term": "5",
         "max_term": "20"
-      }
-    },
-    {
-      "name": "College Ave",
-      "review_key": "",
-      "link": "https://www.collegeave.com",
-      "logo": "/data/images/collegeave.webp",
-      "rate": {
-        "max": 10,
-        "score": "7.5"
-      },
-      "compare": {
-        "credit_score": "600",
-        "fixed_rate": {
-          "min_rate": "3.49",
-          "max_rate": "12.99"
-        },
-        "variable_rate": {
-          "min_rate": "0.94",
-          "max_rate": "11.98"
-        }
-      },
-      "loan_term": {
-        "min_term": "5",
-        "max_term": "15"
       }
     }
   ]

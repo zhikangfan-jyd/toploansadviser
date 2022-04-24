@@ -11,7 +11,9 @@
         </a>
         <ul class="header-nav-list">
           <li>
-            <div class="link column">Personal Loan</div>
+            <div class="link column">
+              <a href="/best-personal-loans" target="_blank" rel="noopener noreferrer">Personal Loan</a>
+            </div>
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">
@@ -124,12 +126,7 @@
                       <span>Upstart Review</span></a
                     >
                   </dd>
-                  <dd class="menu-item">
-                    <a href="/reviews/figure-personal-loans" target="_blank"
-                      ><span class="iconfont">&#xe602;</span>
-                      <span>Figure Review</span></a
-                    >
-                  </dd>
+                  
                 </dl>
               </div>
               <div class="menu-column-item">
@@ -163,7 +160,9 @@
             </div>
           </li>
           <li>
-            <div class="link column">Mortgage Loan</div>
+            <div class="link column">
+              <a href="/best-mortgage-loans" target="_blank" rel="noopener noreferrer">Mortgage Loan</a>
+            </div>
             <div class="menu-column">
               <div class="menu-column-item">
                 <dl class="menu-list">

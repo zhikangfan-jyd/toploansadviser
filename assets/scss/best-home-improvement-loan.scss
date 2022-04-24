@@ -15,6 +15,34 @@
     }
   }
 
+  .breadcrumb-navigation {
+    width: $rootWidth;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 75px auto 15px auto;
+    box-sizing: border-box;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      .icon {
+        margin: 0 10px;
+      }
+
+      a {
+        color: #4a4a4a;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+
   .more-from-toploansadviser-container {
     width: $rootWidth;
     margin: 0 auto;
@@ -296,9 +324,7 @@
           left: 0;
           top: 0;
 
-          .corner {
-
-          }
+          .corner {}
         }
 
         .col {
@@ -394,7 +420,9 @@
         }
 
 
-        .credit-score-col, .loan-types-col, .btn-box-col {
+        .credit-score-col,
+        .loan-types-col,
+        .btn-box-col {
           width: 19.5%;
         }
 
@@ -402,7 +430,8 @@
           width: 23%;
         }
 
-        .loan-types-box, .credit-score-box {
+        .loan-types-box,
+        .credit-score-box {
           .key {
             font-size: 14px;
             font-weight: 500;
@@ -649,7 +678,9 @@
               }
             }
 
-            .rate-box, .content-box, .btn-box {
+            .rate-box,
+            .content-box,
+            .btn-box {
               flex: 1;
               display: flex;
               flex-direction: column;

@@ -1,7 +1,9 @@
 ---
 id: better
+review_key: better
 name: Better
 date: Apr.16,2021
+category: mortgage-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -17,6 +19,11 @@ product: {
 "max": 10,
 "score": "9.8"
 },
+"credit_score": {
+"min": "620",
+"max": ""
+},
+"min_down_payment": "3%",
 "slogan": "Homeownership Simplified",
 "key_facts": {
 "mortgage_types": "purchase or refinance",

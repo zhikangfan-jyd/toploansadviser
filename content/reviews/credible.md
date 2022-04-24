@@ -1,7 +1,9 @@
 ---
 id: credible
+review_key: credible
 name: Credible 
 date: Apr.16,2021
+category: personal-loan
 author: 
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp

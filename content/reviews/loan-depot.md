@@ -1,7 +1,9 @@
 ---
 id: loan-depot
+review_key: loan_depot
 name: Loan Depot
 date: Apr.16,2021
+category: mortgage-loan
 author:
   name: Jessica Cotzin
   headImg: /data/blogs/img/jessica.webp
@@ -11,12 +13,17 @@ description: Loan Depot came into operation in 2010, and it is a type of direct 
 product: {
 "name": "Loan Depot",
 "review_key": "",
-"link": "",
+"link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
 "logo": "/data/images/loandepot.webp",
 "rate": {
 "max": 10,
 "score": "9.8"
 },
+"credit_score": {
+"min": "620",
+"max": "700"
+},
+"min_down_payment": "0% - 5%",
 "slogan": "No Login/Registration Required",
 "key_facts": {
 "mortgage_types": "purchase, refinance, adjustable & fixed rates, jumbo & more",
