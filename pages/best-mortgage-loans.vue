@@ -172,9 +172,9 @@
                   <li>
                     Min.Down Payment:
                     {{
-                      product.min_down_payment === ""
+                      product.min_down_payments === ""
                         ? "-"
-                        : product.min_down_payment
+                        : product.min_down_payments
                     }}
                   </li>
                   <li>
