@@ -498,7 +498,7 @@ export default {
       width: "551",
       height: "341",
     },
-    img_type: "image/webp",
+    img_type: "image/webp"
   }),
   components: {
     FoldTheCard,

@@ -121,6 +121,11 @@ export default {
       from: '/new-personal-loan',
       to: '/personal-loan',
       statusCode: 301
+    },
+    {
+      from: '/best-helco-loan',
+      to: '/best-heloc-loan',
+      statusCode: 301
     }
   ],
   content: {

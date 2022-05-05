@@ -752,12 +752,12 @@ export default {
   data() {
     return {
       swiperOptions: {
-        // autoplay: {
-        //   delay: 3000,
-        //   stopOnLastSlide: false,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true,
-        // },
+        autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
         delay: 3500,
         speed: 1000,
         loop: true,
