@@ -126,6 +126,41 @@ export default {
       from: '/best-helco-loan',
       to: '/best-heloc-loan',
       statusCode: 301
+    },
+    {
+      from: '/guides/2a22d685-25b6-4bec-aaf9-5367f599b2b4',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/guides/cfe39712-211f-4f86-813a-1bafdf09b0dd',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/guides/b1',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/guides/6-advantages-to-filling-an-early-fafsa',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/guides/s2',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/guides/questions-about-credit-card-application',
+      to: '/',
+      statusCode: 301
+    },
+    {
+      from: '/reviews/temp',
+      to: '/',
+      statusCode: 301
     }
   ],
   content: {
