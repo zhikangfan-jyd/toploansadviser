@@ -227,7 +227,7 @@
     </section>
     <section class="question-area" v-if="questions.length !== 0">
       <div class="question-container">
-        <h2 class="title">FAQ's About Personal Loans</h2>
+        <h2 class="title">FAQ's About Best Unsecured Loans</h2>
         <div
           class="question-content"
           v-for="(question, idx) in questions"

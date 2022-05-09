@@ -48,7 +48,6 @@
               >
                 <span class="tag-value">$5,000 - $20,000</span>
               </button>
-
             </div>
             <div class="box">
               <button
@@ -72,8 +71,9 @@
                 rel="noopener noreferrer nofollow"
                 class="start-btn disabled"
                 v-if="isDisabled"
-              >Get Started <span class="iconfont">&#xe63c;</span></div
               >
+                Get Started <span class="iconfont">&#xe63c;</span>
+              </div>
               <a
                 :href="url"
                 target="_blank"
@@ -81,11 +81,11 @@
                 class="start-btn"
                 v-else
                 @click="closeAlert"
-              >Get Started <span class="iconfont">&#xe63c;</span></a
+                >Get Started <span class="iconfont">&#xe63c;</span></a
               >
               <div class="power">
                 <span class="text">Powered by</span>
-                <img src="/data/images/credible.webp" alt="" class="logo"/>
+                <img src="/data/images/credible.webp" alt="" class="logo" />
               </div>
             </div>
           </div>
@@ -126,12 +126,34 @@ export default {
       }
       window.uba(params);
     },
+    showAlert() {
+      this.isHidden = false;
+      this.isDisabled = true;
+      this.btnIndex = -1;
+      this.step = 1;
+      $(".alert-wrapper")
+        .css({
+          display: "block",
+        })
+        .animate(
+          {
+            opacity: 1,
+          },
+          200
+        );
+      $(".alert-content").animate(
+        {
+          top: "50%",
+          opacity: 1,
+        },
+        400
+      );
+    },
     closeAlert() {
       this.$nextTick(() => {
-
         $(".alert-wrapper").css({
-          display: 'none'
-        })
+          display: "none",
+        });
       });
     },
     nextStep(num) {
@@ -143,8 +165,30 @@ export default {
       this.btnIndex = index;
     },
   },
+  mounted() {
+    // this.showAlert();
+    this.timer2 = setTimeout(() => {
+      if ($(window).width() < 750) {
+        return;
+      }
+      this.showAlert();
+
+      this.timer3 = setTimeout(() => {
+        $("body").on("mouseenter", () => {
+          $("body").one("mouseleave", () => {
+            if (this.count == 0) {
+              this.showAlert();
+            }
+            this.count++;
+          });
+        });
+      }, 10000);
+    }, 15000);
+  },
   destroyed() {
     clearInterval(this.timer);
+    clearTimeout(this.timer2);
+    clearTimeout(this.timer3);
   },
 };
 </script>

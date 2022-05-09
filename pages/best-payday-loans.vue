@@ -4,7 +4,8 @@
       <div class="banner-container">
         <div class="banner-content">
           <h1 class="website-title">
-            <span>Best Payday Loans</span> <span>For Bad Credit of {{ updateTime().year }}</span>
+            <span>Best Payday Loans</span>
+            <span>For Bad Credit of {{ updateTime().year }}</span>
           </h1>
           <p class="desc">
             A payday lender can spot you some cash until your next payday,
@@ -43,7 +44,7 @@
             href="/disclosure"
             rel="noopener noreferrer"
             target="_blank"
-          >Advertising Disclosure</a
+            >Advertising Disclosure</a
           >
         </div>
         <div class="company-card-container">
@@ -72,12 +73,12 @@
             <div class="card-top">
               <div class="company-logo-box">
                 <a
-                  :href="'/redirect?url='+company.link"
+                  :href="'/redirect?url=' + company.link"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
                   @click="tracking(company.name)"
                 >
-                  <img :alt="company.name" :src="company.logo" class="logo"/>
+                  <img :alt="company.name" :src="company.logo" class="logo" />
                 </a>
               </div>
               <div class="interest-box">
@@ -96,10 +97,10 @@
                 <span class="loan-amount">{{ company.loan_amount }}</span>
                 <div class="btn-star-box">
                   <div class="start-box">
-                    <Star :score="Number(company.score)"/>
+                    <Star :score="Number(company.score)" />
                   </div>
                   <a
-                    :href="'/redirect?url='+ company.link"
+                    :href="'/redirect?url=' + company.link"
                     class="btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
@@ -117,10 +118,10 @@
               </div>
               <div class="btn-star-box">
                 <div class="start-box">
-                  <Star :score="Number(company.score)"/>
+                  <Star :score="Number(company.score)" />
                 </div>
                 <a
-                  :href="'/redirect?url='+company.link"
+                  :href="'/redirect?url=' + company.link"
                   class="btn"
                   rel="noopener noreferrer nofollow"
                   target="_blank"
@@ -145,14 +146,14 @@
                 <p class="desc" v-html="company.desc"></p>
                 <div class="detail-box">
                   <a
-                    :href="'/redirect?url='+company.link"
+                    :href="'/redirect?url=' + company.link"
                     class="detail-btn"
                     rel="noopener noreferrer nofollow"
                     target="_blank"
                     @click="tracking(company.name)"
                   >
                     <span class="text"
-                    >Click here for official site, terms, and details.</span
+                      >Click here for official site, terms, and details.</span
                     >
                   </a>
                 </div>
@@ -164,7 +165,7 @@
     </section>
     <section class="faq-area">
       <div class="faq-area-title-box">
-        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp"/>
+        <img alt="Toploansadviser" class="pic" src="@/assets/img/faq.webp" />
         <div class="faq-content">
           <h4 class="faq-title">
             <span>FAQ's</span>
@@ -591,7 +592,7 @@
             </p>
             <p>
               <i
-              >“This culture of coercion drained millions of dollars from
+                >“This culture of coercion drained millions of dollars from
                 cash-strapped consumers who had few options to fight back. The
                 CFPB was created to stand up for consumers and today we are
                 taking action to put an end to this illegal, predatory
@@ -653,28 +654,40 @@
 
 <script>
 import Star from "../components/star/index.vue";
-import Message from '../components/Message6/index.vue'
-import {updateTime} from "../utils/date";
-import {tracking} from "../utils/ga-event";
-
+import Message from "../components/Message6/index.vue";
+import { updateTime } from "../utils/date";
+import { tracking } from "../utils/ga-event";
+import { seo } from "../utils/seo";
 export default {
+  head: seo({
+    title: "Online Personal Loans for Bad Credit | Toploansadviser.com",
+    description:
+      "Find best personal loan direct lenders with bad credit, come to toploansadviser.com, we compared and reviewed 10 online lenders for bad credit score people.",
+    url: "https://www.toploansadviser.com/best-payday-loans",
+    img: "https://www.toploansadviser.com/data/images/personal-loan.webp",
+    img_size: {
+      width: "325",
+      height: "295",
+    },
+    img_type: "image/webp",
+  }),
   components: {
     Star,
-    Message
+    Message,
   },
-  async asyncData({$axios, error}) {
+  async asyncData({ $axios, error }) {
     try {
       let results = await $axios.$get("/data/payday-loans.json");
       return {
         companys: results.data,
       };
     } catch (e) {
-      error({statusCode: 404});
+      error({ statusCode: 404 });
     }
   },
   methods: {
     updateTime,
-    tracking
+    tracking,
   },
 };
 </script>
