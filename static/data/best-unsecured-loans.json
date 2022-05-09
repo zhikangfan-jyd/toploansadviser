@@ -1,0 +1,620 @@
+{
+    "data": [
+        {
+            "category": {
+                "name": "Best Personal Loan"
+            },
+            "data": [
+                {
+                    "name": "Credible",
+                    "review_key": "credible",
+                    "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
+                    "logo": "/data/images/credible.webp",
+                    "amount": {
+                        "min": 1000,
+                        "max": 100000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "2.49",
+                            "max": "35.99"
+                        },
+                        "term": "12-84 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "LightStream",
+                    "review_key": "lightstream",
+                    "seo": {
+                        "title": ""
+                    },
+                    "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
+                    "logo": "/data/images/lightstream.webp",
+                    "upto": "1000000",
+                    "introduce": "Low fixed rates ",
+                    "amount": {
+                        "min": 5000,
+                        "max": 100000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.8"
+                    },
+                    "compare": {
+                        "credit_score": "660",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "3.49",
+                            "max": "19.99"
+                        },
+                        "term": "24-84 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Avant",
+                    "review_key": "avant",
+                    "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+                    "logo": "/data/images/avant.webp",
+                    "upto": "1000000",
+                    "introduce": "Clear and transparent process",
+                    "amount": {
+                        "min": 2000,
+                        "max": 35000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.6"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "9.95",
+                            "max": "35.99"
+                        },
+                        "term": "24-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "LendingClub",
+                    "review_key": "lending-club",
+                    "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
+                    "logo": "/data/images/lendingclub.webp",
+                    "upto": "1000000",
+                    "introduce": "Choice for debt consolidation",
+                    "amount": {
+                        "min": 1000,
+                        "max": 40000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.5"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "8.05",
+                            "max": "25.89"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "SoFi",
+                    "review_key": "sofi",
+                    "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
+                    "logo": "/data/images/sofi.webp",
+                    "upto": "1000000",
+                    "introduce": "Prequalify for your rate in 3 minutes",
+                    "amount": {
+                        "min": 5000,
+                        "max": 100000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "8.8"
+                    },
+                    "compare": {
+                        "credit_score": "680",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "5.99",
+                            "max": "18.85"
+                        },
+                        "term": "24-84 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Upgrade",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
+                    "logo": "/data/images/upgrade.webp",
+                    "upto": "1000000",
+                    "introduce": "No fees",
+                    "amount": {
+                        "min": 1000,
+                        "max": 35000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "8.5"
+                    },
+                    "compare": {
+                        "credit_score": "670",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "7.99",
+                            "max": "35.97"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Best Egg",
+                    "review_key": "best-egg",
+                    "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl",
+                    "logo": "/data/images/best_egg.webp",
+                    "upto": "1000000",
+                    "introduce": "Get funding in as little as 1 day",
+                    "amount": {
+                        "min": "50000",
+                        "max": "Infinity"
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "8.3"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "5.99",
+                            "max": "29.99"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                }
+            ]
+        },
+        {
+            "category": {
+                "name": "Best Debt Consolidation Loan"
+            },
+            "data": [
+                {
+                    "name": "LightStream",
+                    "review_key": "lightstream",
+                    "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
+                    "logo": "/data/images/lightstream.svg",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 5000,
+                        "max": 100000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "660",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "4.49",
+                            "max": "20.49"
+                        },
+                        "term": "24-84 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Upgrade",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
+                    "logo": "/data/images/upgrade.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 50000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.6"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "5.94",
+                            "max": "35.97"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Avant",
+                    "review_key": "avant",
+                    "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+                    "logo": "/data/images/avant.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 2000,
+                        "max": 35000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.5"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "9.95",
+                            "max": "35.99"
+                        },
+                        "term": "24-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "Upstart",
+                    "review_key": "upstart",
+                    "link": "/",
+                    "logo": "/data/images/upstart.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 50000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.1"
+                    },
+                    "compare": {
+                        "credit_score": "",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "3.50",
+                            "max": "35.99"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                },
+                {
+                    "name": "LendingClub",
+                    "review_key": "lending-club",
+                    "link": "https://www.credible.com/a/lendingclub-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lendingclub_pl",
+                    "logo": "/data/images/lendingclub.svg",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 40000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "8.8"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "7.04",
+                            "max": "35.89"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": ""
+                }
+            ]
+        },
+        {
+            "category": {
+                "name": "Best Home Improvement Loan"
+            },
+            "data": [
+                {
+                    "name": "Credible",
+                    "review_key": "",
+                    "logo": "/data/images/credible.webp",
+                    "link": "https://www.credible.com/personal-loan/?utm_source=westwin&utm_medium=referral&utm_campaign=personal_loans",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "640",
+                        "apr": {
+                            "min": "2.49",
+                            "max": "35.99"
+                        },
+                        "term": "24-96 Months"
+                    },
+                    "amount": {
+                        "min": "600",
+                        "max": "100000"
+                    }
+                },
+                {
+                    "name": "LightStream",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/lightstream-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=lightstream_pl",
+                    "logo": "/data/images/lightstream.webp",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.7"
+                    },
+                    "compare": {
+                        "credit_score": "660",
+                        "apr": {
+                            "min": "3.99",
+                            "max": "16.99"
+                        },
+                        "term": "24-144 Months"
+                    },
+                    "amount": {
+                        "min": "5000",
+                        "max": "100000"
+                    }
+                },
+                {
+                    "name": "Avant",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.5"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "apr": {
+                            "min": "9.95",
+                            "max": "35.99"
+                        },
+                        "term": "24-60 Months"
+                    },
+                    "amount": {
+                        "min": "",
+                        "max": "35000"
+                    }
+                }
+            ]
+        },
+        {
+            "category": {
+                "name": "Best Emergency Loan"
+            },
+            "data": [
+                {
+                    "name": "Best Egg",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/bestegg-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=bestegg_pl",
+                    "logo": "/data/images/best_egg.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 5000,
+                        "max": 100000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "4.49",
+                            "max": "20.49"
+                        },
+                        "term": "36-60 months"
+                    },
+                    "disclaimer": "",
+                    "feature": "",
+                    "description": "<p>It takes just a few minutes to complete the application. You get free access to your credit score, so you can check how timely payments benefit your score. In some instances, loans are funded one business day after approval. </p><dl><dt>Pros:</dt><dd>Loan payments are sent directly to creditors if you consolidate debts.</dd><dd>Borrowers can take out loans starting from just $2,000 to even $50,000, so you have the flexibility to cover small expenditures, or even bigger costs required for moving, home improvement projects, etc.</dd><dd>Borrowers can get both secured and unsecured personal loans. </dd><dd>As mentioned, free access to credit score is provided.</dd></dl><dl><dt>Cons:</dt><dd>Borrowers can select from three or five year repayment terms.</dd><dd>There is no extra discount for setting up automatic payments (an option offered by many other lenders).</dd><dd>Borrowers have to pay an origination fee between 0.99% and 5.99%.</dd><dd>There is no mobile app to manage the loans.</dd></dl>"
+                },
+                {
+                    "name": "Upgrade",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
+                    "logo": "/data/images/upgrade.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 50000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "5.94",
+                            "max": "35.97"
+                        },
+                        "term": "12-84 months"
+                    },
+                    "disclaimer": "",
+                    "feature": "",
+                    "description": "<p>Loan funding could take up to four business days, but loans are available to those with bad credit history too. You can take out loans between $1,000 and $35,000.</p><dl><dt>Pros:</dt><dd>You don’t need a high credit score to qualify for the loan.</dd><dd>Loan amounts start at only $1,000, and there is no prepayment penalty, so borrowers can take out a small loan and repay it as fast as possible.</dd><dd>Borrowers can use loans to cover business expenses.</dd><dd>There is an option of direct lender payoff for debt consolidation loans.</dd></dl><dl><dt>Cons:</dt><dd>APR is very high - 7.99% to 35.97%.</dd><dd>There are fees involved for origination - 2.9% to 8% of the loan amount.</dd><dd>You will be charged fees for late payment and insufficient funds.</dd><dd>There are just two loan repayment periods.</dd></dl>"
+                },
+                {
+                    "name": "Avant",
+                    "review_key": "",
+                    "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+                    "logo": "/data/images/avant.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 2000,
+                        "max": 35000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "580",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "9.95",
+                            "max": "35.99"
+                        },
+                        "term": "24-60 months"
+                    },
+                    "disclaimer": "",
+                    "feature": "",
+                    "description": "<p>You can get approval within one business day, and even those with a low minimum credit score can qualify. Its annual percentage rate includes an administrative fee up to 4.75%. Payments are reported to Experian, Equifax and TransUnion, so you can build up credit.</p><dl><dt>Pros:</dt><dd>You can find out the potential loan amount and rate on an Avant loan if you pre-qualify. It won’t affect your credit, and it helps plan your monthly budget to accommodate loan payments.</dd><dd>Disbursement of funds can happen a day after your application gets approved.</dd><dd>You can change your payment date up to two times during the repayment term (you can’t select the initial payment date).</dd><dd>Manage loans, check payment history, and tweak payments date via a user-friendly app.</dd></dl><dl><dt>Cons:</dt><dd>As mentioned, an origination fee of 4.75% might be charged.</dd><dd>There is no option for secured, joint, or co-signed loans.</dd><dd>If you consolidate credit cards and other high-interest debts, the funds are deposited directly into your account instead of paying creditors.</dd></dl>"
+                },
+                {
+                    "name": "Upstart",
+                    "review_key": "",
+                    "link": "",
+                    "logo": "/data/images/upstart.webp",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 50000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "3.50",
+                            "max": "35.99"
+                        },
+                        "term": ""
+                    },
+                    "disclaimer": "",
+                    "feature": "",
+                    "description": "<p>An online lending platform that considers alternative data on an application – it includes where you reside and went to school, apart from credit and income information. It apparently funds most of its loan within one business day right after approval.</p><dl><dt>Pros:</dt><dd>Quick funding – Borrowers get to pre-qualify to see their rate in just 5 minutes. Business approval usually takes one business day. Loans are funded after borrower signs loan agreement.</dd><dd>Loan proceeds are sent to credit card issuers to make the debt consolidation process simple.</dd><dd>Monthly payment date can be changed an unlimited number of times. Original due date remains unchanged though.</dd><dd>There are several ways to pay – via check, over phone, online, and automatic payments.</dd></dl><dl><dt>Cons:</dt><dd>Repayment terms are limited – three or five year repayment terms only.</dd><dd>An origination fee is charged ranging from 0% to 8%, which cuts into your total loan amount.</dd><dd>There is no mobile app to manage the loan, check payment history, look at credit scores, etc.</dd><dd>Upstart offers unsecured loans only. Adding a co-signer or co-borrower isn’t an option.</dd></dl>"
+                },
+                {
+                    "name": "One Main",
+                    "review_key": "",
+                    "link": "",
+                    "logo": "/data/images/one-main.jpg",
+                    "upto": "",
+                    "introduce": "",
+                    "amount": {
+                        "min": 1000,
+                        "max": 40000
+                    },
+                    "rate": {
+                        "max": 10,
+                        "score": "9.9"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "credit_text": "",
+                        "apr": {
+                            "min": "18.00",
+                            "max": "35.89"
+                        },
+                        "term": ""
+                    },
+                    "disclaimer": "",
+                    "feature": "",
+                    "description": "<p>It offers personal loans to borrowers with poor credit scores, but the APR is quite high, with an origination fee involved. The lender says on average, loan applications take one day to approve.</p><dl><dt>Pros:</dt><dd>There is a joint loan options, and borrowers can secure the loan as well.</dd><dd>Borrowers are free to choose and change the payment date, within 45 days of acceptance of the offer. Payment date can be changed twice during the life of the loan.</dd><dd>The loan can be funded on the same day the borrower submits an application.</dd><dd>There are branches of OneMain in each of the states where it offers personal loans.</dd><dd>Borrowers have seven days to cancel the loan without making payments.</dd></dl><dl><dt>Cons:</dt><dd>There is no discount for setting up automatic payments.</dd><dd>An origination fee is charged between 1% and 10% of the loan amount. In some states, they might charge a flat fee too. </dd><dd>They might offer optional credit insurance with secured or unsecured loans, which adds to loan costs.</dd></dl>"
+                }
+            ]
+        },
+        {
+            "category": {
+                "name": "Best Small Business Loan"
+            },
+            "data": [
+                {
+                    "name": "BlueVine",
+                    "link": "",
+                    "logo": "/data/images/blue_vine.jpg",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.8"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "apr": {
+                            "min": "15.00",
+                            "max": "78.00"
+                        },
+                        "term": ""
+                    },
+                    "amount": {
+                        "min": "",
+                        "max": "250000"
+                    }
+                },
+                {
+                    "name": "OnDeck",
+                    "link": "",
+                    "logo": "/data/images/on_deck.jpg",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.6"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "apr": {
+                            "min": "11.00",
+                            "max": "61.90"
+                        },
+                        "term": ""
+                    },
+                    "amount": {
+                        "min": "",
+                        "max": "100000"
+                    }
+                },
+                {
+                    "name": "Fundbox",
+                    "link": "",
+                    "logo": "/data/images/fundbox.jpg",
+                    "rate": {
+                        "max": 10,
+                        "score": "9.5"
+                    },
+                    "compare": {
+                        "credit_score": "600",
+                        "apr": {
+                            "min": "10.10",
+                            "max": "79.80"
+                        },
+                        "term": ""
+                    },
+                    "amount": {
+                        "min": "",
+                        "max": "150000"
+                    }
+                }
+            ]
+        }
+    ]
+}
