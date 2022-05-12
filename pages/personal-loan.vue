@@ -607,7 +607,7 @@ export default {
       isShowDisclosure: false,
       isNull: true,
       page: 1,
-      pageSize: 5,
+      pageSize: 10,
       count: 0,
       products: [],
       filterData: [],

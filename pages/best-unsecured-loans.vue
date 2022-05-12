@@ -240,21 +240,30 @@
     </section>
     <section class="breadcrumb-area">
       <ul class="breadcrumb-navigation">
-          <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <span class="iconfont">&#xe606;</span>
-            </a>
-            <span class="icon">&gt;</span>
-          </li>
-           <li>
-            <a href="/best-personal-loans" target="_blank" rel="noopener noreferrer">Personal Loan</a>
-            <span class="icon">&gt;</span>
-          </li>
-           <li>
-            <a href="/best-unsecured-loans" target="_blank" rel="noopener noreferrer">Best Unsecured Loans</a>
-            
-          </li>
-        </ul>
+        <li>
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            <span class="iconfont">&#xe606;</span>
+          </a>
+          <span class="icon">&gt;</span>
+        </li>
+        <li>
+          <a
+            href="/best-personal-loans"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Personal Loan</a
+          >
+          <span class="icon">&gt;</span>
+        </li>
+        <li>
+          <a
+            href="/best-unsecured-loans"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Best Unsecured Loans</a
+          >
+        </li>
+      </ul>
     </section>
   </main>
 </template>

@@ -1,48 +1,54 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-        name="viewport">
+    name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <meta name="robots" content="noindex, nofollow">
   <title>Toploansadviser.com</title>
 </head>
+
 <body>
-<script>
-  // function getQuery(search) {
-  //   var query = {};
-  //
-  //   if (search === '') {
-  //     return {};
-  //   }
-  //   let p = [];
-  //   search.split('?').forEach(searchText => {
-  //     if (searchText && searchText.trim().length !== 0) {
-  //       p = p.concat(searchText.split('&'))
-  //     }
-  //   })
-  //   p.forEach(item => {
-  //     query[item.split('=')[0]] = item.split('=')[1]
-  //   })
-  //   return query;
-  // }
-  function getQuery(search) {
-    var query = {url: ''};
-    if (search && search.trim().length !== 0) {
-      query.url = search.split('?url=')[1]
+  <script>
+    // function getQuery(search) {
+    //   var query = {};
+    //
+    //   if (search === '') {
+    //     return {};
+    //   }
+    //   let p = [];
+    //   search.split('?').forEach(searchText => {
+    //     if (searchText && searchText.trim().length !== 0) {
+    //       p = p.concat(searchText.split('&'))
+    //     }
+    //   })
+    //   p.forEach(item => {
+    //     query[item.split('=')[0]] = item.split('=')[1]
+    //   })
+    //   return query;
+    // }
+
+
+
+    function getQuery(search) {
+      var query = { url: '' };
+      if (search && search.trim().length !== 0) {
+        query.url = search.split('?url=')[1]
+      }
+      return query;
     }
-    return query;
-  }
 
-  var query = getQuery(window.location.search);
-  if (query.url) {
-    window.location.href = window.decodeURIComponent(query.url);
+    var query = getQuery(window.location.search);
+    if (query.url) {
+      window.location.href = window.decodeURIComponent(query.url);
 
-  } else {
-    window.location.href = '/'
-  }
+    } else {
+      window.location.href = '/'
+    }
 
-</script>
+  </script>
 </body>
+
 </html>

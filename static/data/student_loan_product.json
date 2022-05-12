@@ -3,7 +3,7 @@
     {
       "name": "College Ave",
       "review_key": "",
-      "link": "https://www.collegeavestudentloans.com/lp/refinance-student-loans/?utm_campaign=affiliate%20ongoing&utm_source=westwin&utm_medium=aggregator&utm_content=learn%20more&brand=college%20ave&product=refi&p_aff=westwin&goal=acquisition&agg_ref_id=placeholder",
+      "link": "https://www.collegeavestudentloans.com/lp/undergrad-student-loans/?utm_campaign=affiliate%20ongoing&utm_source=westwin&utm_medium=aggregator&utm_content=learn%20more&brand=college%20ave&product=inschool&p_aff=westwin&goal=acquisition&agg_ref_id=placeholder",
       "logo": "/data/images/collegeave.webp",
       "rate": {
         "max": 10,
@@ -16,7 +16,7 @@
           "max_rate": "12.99"
         },
         "variable_rate": {
-          "min_rate": "0.94",
+          "min_rate": "1.19",
           "max_rate": "11.98"
         }
       },

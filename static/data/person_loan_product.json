@@ -26,6 +26,7 @@
       },
       "disclaimer": ""
     },
+    
     {
       "name": "LightStream",
       "review_key": "lightstream",
@@ -56,28 +57,28 @@
       "disclaimer": ""
     },
     {
-      "name": "Avant",
-      "review_key": "avant",
-      "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
-      "logo": "/data/images/avant.webp",
+      "name": "SoFi",
+      "review_key": "sofi",
+      "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
+      "logo": "/data/images/sofi.webp",
       "upto": "1000000",
-      "introduce": "Clear and transparent process",
+      "introduce": "Prequalify for your rate in 3 minutes",
       "amount": {
-        "min": 2000,
-        "max": 35000
+        "min": 5000,
+        "max": 100000
       },
       "rate": {
         "max": 10,
         "score": "9.6"
       },
       "compare": {
-        "credit_score": "580",
+        "credit_score": "680",
         "credit_text": "",
         "apr": {
-          "min": "9.95",
-          "max": "35.99"
+          "min": "5.99",
+          "max": "18.85"
         },
-        "term": "24-60 months"
+        "term": "24-84 months"
       },
       "disclaimer": ""
     },
@@ -108,54 +109,28 @@
       "disclaimer": ""
     },
     {
-      "name": "SoFi",
-      "review_key": "sofi",
-      "link": "https://www.credible.com/a/sofi-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=sofi_pl",
-      "logo": "/data/images/sofi.webp",
+      "name": "Avant",
+      "review_key": "avant",
+      "link": "https://www.credible.com/a/avant-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=avant_pl",
+      "logo": "/data/images/avant.webp",
       "upto": "1000000",
-      "introduce": "Prequalify for your rate in 3 minutes",
+      "introduce": "Clear and transparent process",
       "amount": {
-        "min": 5000,
-        "max": 100000
+        "min": 2000,
+        "max": 35000
       },
       "rate": {
         "max": 10,
         "score": "8.8"
       },
       "compare": {
-        "credit_score": "680",
+        "credit_score": "580",
         "credit_text": "",
         "apr": {
-          "min": "5.99",
-          "max": "18.85"
+          "min": "9.95",
+          "max": "35.99"
         },
-        "term": "24-84 months"
-      },
-      "disclaimer": ""
-    },
-    {
-      "name": "Upgrade",
-      "review_key": "",
-      "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
-      "logo": "/data/images/upgrade.webp",
-      "upto": "1000000",
-      "introduce": "No fees",
-      "amount": {
-        "min": 1000,
-        "max": 35000
-      },
-      "rate": {
-        "max": 10,
-        "score": "8.5"
-      },
-      "compare": {
-        "credit_score": "670",
-        "credit_text": "",
-        "apr": {
-          "min": "7.99",
-          "max": "35.97"
-        },
-        "term": "36-60 months"
+        "term": "24-60 months"
       },
       "disclaimer": ""
     },
@@ -172,7 +147,7 @@
       },
       "rate": {
         "max": 10,
-        "score": "8.3"
+        "score": "8.5"
       },
       "compare": {
         "credit_score": "600",
@@ -184,6 +159,33 @@
         "term": "36-60 months"
       },
       "disclaimer": ""
+    },
+    {
+      "name": "Upgrade",
+      "review_key": "",
+      "link": "https://www.credible.com/a/upgrade-pl/?utm_source=westwin&utm_medium=referral&utm_campaign=upgrade_pl",
+      "logo": "/data/images/upgrade.webp",
+      "upto": "1000000",
+      "introduce": "No fees",
+      "amount": {
+        "min": 1000,
+        "max": 35000
+      },
+      "rate": {
+        "max": 10,
+        "score": "8.3"
+      },
+      "compare": {
+        "credit_score": "670",
+        "credit_text": "",
+        "apr": {
+          "min": "7.99",
+          "max": "35.97"
+        },
+        "term": "36-60 months"
+      },
+      "disclaimer": ""
     }
+    
   ]
 }
