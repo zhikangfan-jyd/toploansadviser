@@ -198,103 +198,14 @@
       <div class="question-container">
         <h2 class="title">FAQ About Small Business Loan</h2>
         <div class="question-content">
-          <h6 class="question-title">
-            What Is Needed To Secure A Small Business Loan?
-          </h6>
-          <dl>
-            <dt style="font-weight: normal">
-              Upon realizing you have can repay a small business loan, you need
-              to get together the paperwork for the loan application. This
-              paperwork includes:
-            </dt>
-            <dd>2–3 years’ worth of business and personal tax returns</dd>
-            <dd>Most recent profit & loss statement</dd>
-            <dd>Most recent balance sheet</dd>
-            <dd>Previous bank statements</dd>
-            <dd>Legal filings that relate to ownership</dd>
-            <dd>Business plan</dd>
-            <dd>Business license</dd>
-            <dd>Information about current debts</dd>
-          </dl>
-          <h6 class="question-title">
-            Six Factors Small Business Loan Lenders Use to Determine Loan
-            Eligibility
-          </h6>
-          <p>
-            Prospective small business loan lenders will ask you for a plethora
-            of information to determine your eligibility. They will consider six
-            key factors to determine if you’ll be reliable enough to repay the
-            loan. What are these factors?
-          </p>
-          <ul>
-            <li>
-              <strong>Cash Flow Projection</strong>
-              <p>
-                A cash flow projection is documentation of what money is coming
-                in and going out of the business. Lenders want to know if a
-                borrower has an in-depth understanding of the business’s
-                financial operations.
-              </p>
-            </li>
-            <li>
-              <strong>Collateral</strong>
-              <p>
-                Collateral is the asset lenders will take ownership of if you
-                fail to make your payments. These can include your business
-                equipment, company building, accounts receivable, etc. While
-                it’s not advisable, some small business owners will put up their
-                personal assets as collateral.
-              </p>
-            </li>
-            <li>
-              <strong>Credit Score</strong>
-              <p>
-                Lenders look at your credit score to determine how reliable you
-                are at paying your debt. The majority of lenders want a credit
-                score of at least 600 before approving a small business loan
-                application. However,
-                <a
-                  href="/guides/how-to-get-a-loan-with-bad-credit"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >lenders will provide loans to those with lower credit
-                  scores</a
-                >. Remember, though, the higher your credit score, the more
-                favorable the loan terms.
-              </p>
-            </li>
-            <li>
-              <strong>Debt-to-Equity Ratio</strong>
-              <p>
-                How is the debt-to-equity ratio measured? It divides the
-                company’s debt by the shareholder’s equity. With this
-                measurement, a lender can determine if you can feasibly pay on
-                the new debt you take along with your current debt. A high D/E
-                is typical in some industries, but a low D/E ratio is
-                preferable.
-              </p>
-            </li>
-            <li>
-              <strong
-                >Length of Time That the Business Has Been Operating</strong
-              >
-              <p>
-                Lenders are much more likely to approve a loan for businesses
-                with an established business history because the company has a
-                proven record of making money. The same cannot be said for a
-                business that’s just started.
-              </p>
-            </li>
-            <li>
-              <strong>Working Capital</strong>
-              <p>
-                Working capital is the amount of money you have available to
-                remain in operation. You can learn how much working capital you
-                have by subtracting your debt liabilities from your currently
-                held, easily cash-convertible assets.
-              </p>
-            </li>
-          </ul>
+          <div
+            class="question-item"
+            v-for="(question, idx) in questions"
+            :key="idx"
+          >
+            <h6 class="question-title">{{ question.title }}</h6>
+            <div class="content" v-html="question.content"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -310,7 +221,7 @@
           </p>
 
           <p>
-            Borrowers also should keep a check on their credit score to be aware
+            Borrowers also should <a href="https://www.toploansadviser.com/guides/how-your-credit-score-affects-your-loan-chances" target="_blank" rel="noopener noreferrer">keep a check on their credit score</a> to be aware
             that they follow within the minimum guidelines of home equity loan
             providers. It is crucial to know the type of loan one can afford to
             pay and which lender best fits them.
@@ -380,9 +291,18 @@ export default {
   async asyncData({ $axios, error }) {
     try {
       let results = await $axios.$get("/data/small-business-loan.json");
+      let questions = [],
+          products = [];
+      let question_results = await $axios.$get(
+        "https://service.toploansadviser.com/api/v1/faq/find_by_category?qcid=b01f6832-7dfb-45c7-921a-fc3099ffabc1"
+      );
+      if (question_results.status === "success") {
+        questions = question_results.data.sort((a, b) => a.order - b.order);
+      }
 
       return {
         products: results.data,
+        questions: questions,
       };
     } catch (e) {
       error({ statusCode: 404 });

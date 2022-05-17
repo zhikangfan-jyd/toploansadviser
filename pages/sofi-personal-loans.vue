@@ -701,6 +701,7 @@ export default {
 
       products_results.data.forEach(ele => {
         ele.gclid = route.query['gclid'];
+        ele.link = ele.link + '&utm_content=' + route.query['utm_term']
       })
       return {
         allProducts: products_results.data,

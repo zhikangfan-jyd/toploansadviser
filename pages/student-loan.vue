@@ -580,8 +580,11 @@ export default {
       );
 
       product_results.data.forEach((ele) => {
+        if (ele.name === "College Ave") {
+          ele.link = ele.link + "&agg_ref_id=" + route.query["utm_term"];
+        }
         ele.gclid = route.query["gclid"];
-        // ele.link = ele.link + '&utm_content=' + route.query['utm_keywords']
+        ele.link = ele.link + "&utm_content=" + route.query["utm_term"];
       });
       return {
         count: product_results.data.length,
@@ -639,49 +642,6 @@ export default {
   },
   created() {
     this.loadMore();
-  },
-  mounted() {
-    function showSlogan() {
-      let clientWidth = $(window).width();
-      if (clientWidth <= 750) {
-        let top = $(".banner-container .website-title").offset().top;
-        $(window).on("scroll", function () {
-          let headerHeight =
-            document.querySelector(".header-container").clientHeight;
-          if ($(this).scrollTop() > top) {
-            $(".banner-container .website-title").text(
-              "Compare Best Personal Loans Rates"
-            );
-            $(".banner-container .website-title").css({
-              position: "fixed",
-              top: headerHeight + "px",
-              fontSize: ".2rem",
-              textAlign: "center",
-              width: "100%",
-              left: 0,
-              color: "#fff",
-              backgroundColor: "rgb(26,119,129)",
-            });
-          } else {
-            $(".banner-container .website-title").text(
-              "Best Personal Loans 2022"
-            );
-            $(".banner-container .website-title").css({
-              position: "static",
-              top: headerHeight + "px",
-              textAlign: "left",
-              width: "auto",
-              fontSize: "0.36rem",
-              color: "#001139",
-              left: 0,
-              backgroundColor: "transparent",
-            });
-          }
-        });
-      }
-    }
-    // showSlogan();
-    // $(window).on('resize', showSlogan)
   },
 };
 </script>
