@@ -5,9 +5,9 @@ name: Avant
 date: Apr.16,2021
 category: personal-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Preston Newton
+  headImg: https://service.toploansadviser.com/images/Preston Newton_1652434532530.webp
+  desc: Preston Newton is a certified financial planner. His tweets focus on diversity and inclusion in the finance industry.
 title: Avant Review |  Toploansadviser.com
 description: Avant offers a user-friendly process online. With an online application, competitive interest rates, and a simple process, many consumers prefer Avant personal loans over any competitors.
 product: {

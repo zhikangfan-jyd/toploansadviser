@@ -10,10 +10,10 @@
             <img
               alt=""
               class="author-image"
-              src="@/assets/img/Kimberly-Rotter.png"
+              src="https://service.toploansadviser.com/images/1-1_1651914023442.webp"
             />
             <p class="author-desc">
-              Written by <span class="author-name">Kimberly Rotter</span>
+              Written by <span class="author-name">Pete Adeney</span>
             </p>
             <p class="updated">
               <span class="iconfont">&#xe645;</span>

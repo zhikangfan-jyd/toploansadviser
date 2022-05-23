@@ -5,9 +5,9 @@ name: Drcredit
 date: Apr.16,2021
 category: personal-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Adam Brennan
+  headImg: /images/Adam Brennan_1652434630057.webp
+  desc: Instead of focusing on saving money, Adam Brennan built a financial education empire based on earning more, not spending less. His website includes over 20 programs with topics including earning a higher salary, starting an online business and understanding the psychology of money.
 title: Drcredit Review |  Toploansadviser.com
 description: Dr. Credit is an online marketplace that matches you with lenders offering personal loans to anyone, including people with bad credit.
 product: {

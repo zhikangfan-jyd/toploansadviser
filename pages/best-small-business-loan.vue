@@ -8,10 +8,10 @@
             <img
               alt=""
               class="author-image"
-              src="@/assets/img/Kimberly-Rotter.png"
+              src="https://service.toploansadviser.com/images/Naira Citlali_1652436971144.webp"
             />
             <p class="author-desc">
-              Written by <span class="author-name">Kimberly Rotter</span>
+              Written by <span class="author-name">Naira Citlali</span>
             </p>
             <p class="updated">
               <span class="iconfont">&#xe645;</span>
@@ -57,14 +57,6 @@
         </div>
       </div>
     </section>
-    <!--    <section class="preface-area">-->
-    <!--      <div class="preface-container">-->
-    <!--        <h2 class="title">Best Small Business Loans</h2>-->
-    <!--        <div class="preface-content">-->
-
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </section>-->
     <section class="product-include-area">
       <div class="product-include-container">
         <div class="product-include-container-top">

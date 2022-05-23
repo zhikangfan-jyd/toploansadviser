@@ -4,10 +4,11 @@ import {
 
 const webpack = require('webpack');
 const axios = require('axios');
-//动态生成网站地图，添加reviews 和 articles
+//动态生成网站地图，添加reviews 和 articles 和 聚合页
 const createSitemapRoutes = async () => {
   let routes = [];
   let articleRoutes = [];
+  let keywordsRoutes = [];
   try {
     const {
       $content
@@ -36,7 +37,30 @@ const createSitemapRoutes = async () => {
   } catch (e) {
     articleRoutes = [];
   }
-  return routes.concat(articleRoutes);
+
+  try {
+    let setResults = await axios.get('https://service.toploansadviser.com/api/v1/keywords/setting/');
+    let set = 0;
+    if (setResults.data.status === 'success') {
+      set = setResults.data.data.length === 0 ? 0 : setResults.data.data[0].setting;
+    }
+    let results = await axios.get('https://service.toploansadviser.com/api/v1/keywords');
+    if (results.data.status === 'success') {
+      results.data.data.rows.forEach(item => {
+        if (item.products.length >= set && item.articles.length >= set && item.questions.length >= set) {
+          keywordsRoutes.push({
+            url: '/contents/' + item.keyword.split(' ').join('-'),
+            priority: 0.8
+          })
+        };
+      })
+    }
+  } catch (e) {
+    keywordsRoutes = [];
+  }
+
+
+  return routes.concat(articleRoutes).concat(keywordsRoutes);
 }
 
 const sitemapFilter = ({
@@ -261,10 +285,10 @@ export default {
     routes: createSitemapRoutes
   },
   axios: {
-    baseURL: 'http://192.168.50.107:3100'
+    baseURL: 'http://127.0.0.1:3100'
   },
   server: {
     port: '3100',
-    host: '192.168.50.107'
+    host: '127.0.0.1'
   }
 }

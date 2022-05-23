@@ -5,9 +5,9 @@ name: Earnest
 date: Apr.16,2021
 category: student-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Nina Ailen Kimimela
+  headImg: /images/Nina Ailen Kimimela_1652436526386.webp
+  desc: Nina Ailen Kimimela is a freelance writer. You can find much more works in her own Facebook named Nina' s Area. She is good at economical proper noun explanation and analysis of current financial situation.
 title: Earnest Review |  Toploansadviser.com
 description: Earnest is a student loan service that offers loan refinancing and private loans for both graduate and undergraduate students. They offer very flexible repayment options.
 product: {

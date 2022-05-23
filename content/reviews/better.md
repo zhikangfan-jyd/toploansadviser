@@ -5,10 +5,9 @@ name: Better
 date: Apr.16,2021
 category: mortgage-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
-title: Better Review |  Toploansadviser.com
+  name: Javier Enrile
+  headImg: /images/3-1_1651915946010.webp
+  desc: Javier is a results-driven executive with 16 years of experience in middle market M&A and venture capital with 35 completed transactions and hundreds of others evaluated and negotiated. Javier is also an experienced business operator with a particular focus on FP&A, fundraising, financial reporting, treasury management, and market analysis. As a freelancer, he enjoys working with management teams to unlock value and grow their organizations.
 description: Better Mortgage is an online lender that started its operation in 2016, where the entire application process is fully integrated through its online platform.
 product: {
 "name": "Better",

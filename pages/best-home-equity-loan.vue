@@ -6,8 +6,8 @@
         <h1 class="title">Best Home Equity Loan</h1>
         <div class="introduce-container">
           <div class="author-info">
-            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
-            <p class="author-desc">Written by <span class="author-name">Kimberly Rotter</span></p>
+            <img alt="" class="author-image" src="https://service.toploansadviser.com/images/Garnett Jayna_1652434288931.webp">
+            <p class="author-desc">Written by <span class="author-name">Garnett Jayna</span></p>
             <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
                 updateTime().month.short
               }} {{ updateTime().year }}</span></p>

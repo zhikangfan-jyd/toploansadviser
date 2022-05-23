@@ -6,8 +6,8 @@
         <h1 class="title">Best Home Equity Line of Credit (HELOC)</h1>
         <div class="introduce-container">
           <div class="author-info">
-            <img alt="" class="author-image" src="@/assets/img/Kimberly-Rotter.png">
-            <p class="author-desc">Writen by <span class="author-name">Kimberly Rotter</span></p>
+            <img alt="" class="author-image" src="https://service.toploansadviser.com/images/Nina Ailen Kimimela_1652436526386.webp">
+            <p class="author-desc">Writen by <span class="author-name">Nina Ailen Kimimela</span></p>
             <p class="updated"><span class="iconfont">&#xe645;</span> <span>Last updated: {{
                 updateTime().month.short
               }} {{ updateTime().year }}</span></p>

@@ -5,9 +5,9 @@ name: Lightstream
 date: Apr.16,2021
 category: personal-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Sidney Keith
+  headImg: /images/Sidney Keith_1652435866136.webp
+  desc: Sidney Keith graduated in economics major from Stanford University. He publishes many popular articles about economic knowledge in his school life. Now he works in bank and writes different types financial articles in his website.
 title: Lightstream Review |  Toploansadviser.com
 description: Lightstream is an affiliate of SunTrust Bank. It’s the online version of SunTrust Bank, which many people know well. And it is so easy to get the funds you need fast.
 product: {

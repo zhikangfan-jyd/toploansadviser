@@ -8,7 +8,7 @@
       <div class="form-item-block">
         <input v-model.trim="form.email" autocomplete="off" class="email-input" name="email"
                placeholder="Your email address"
-               type="text"></input>
+               type="text">
         <button class="submit-btn" type="button" @click="submitForm">Subscribe »
         </button>
       </div>

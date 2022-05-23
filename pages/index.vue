@@ -25,14 +25,16 @@
                     class="pic"
                     src="@/assets/img/banner.webp"
                   />
-                  <h1 class="website-title">Best Personal Loan {{ updateTime().year }}</h1>
+                  <h1 class="website-title">
+                    Best Personal Loan {{ updateTime().year }}
+                  </h1>
 
                   <a
                     class="btn"
                     href="/personal-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -44,7 +46,8 @@
                     src="@/assets/img/student-banner.webp"
                   />
                   <h1 class="website-title">
-                    Best Student Loan Refinance Companies {{ updateTime().year }}
+                    Best Student Loan Refinance Companies
+                    {{ updateTime().year }}
                   </h1>
 
                   <a
@@ -52,7 +55,7 @@
                     href="/student-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -63,14 +66,16 @@
                     class="pic"
                     src="@/assets/img/mortgage-banner.webp"
                   />
-                  <h1 class="website-title">Best Mortgage Lenders {{ updateTime().year }}</h1>
+                  <h1 class="website-title">
+                    Best Mortgage Lenders {{ updateTime().year }}
+                  </h1>
 
                   <a
                     class="btn"
                     href="/mortgage-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </div>
               </swiper-slide>
@@ -111,7 +116,9 @@
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <h1 class="title">Best Personal Loan {{ updateTime().year }}</h1>
+                  <h1 class="title">
+                    Best Personal Loan {{ updateTime().year }}
+                  </h1>
                   <div class="desc-content">
                     <p>
                       To find the best personal loan for your financial
@@ -124,7 +131,7 @@
                     href="/personal-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -135,7 +142,8 @@
                   target="_blank"
                 >
                   <h1 class="title">
-                    Best Student Loan Refinance Companies {{ updateTime().year }}
+                    Best Student Loan Refinance Companies
+                    {{ updateTime().year }}
                   </h1>
                   <div class="desc-content">
                     <p>
@@ -149,7 +157,7 @@
                     href="/student-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -159,7 +167,9 @@
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <h1 class="title">Best Mortgage Lenders {{ updateTime().year }}</h1>
+                  <h1 class="title">
+                    Best Mortgage Lenders {{ updateTime().year }}
+                  </h1>
                   <div class="desc-content">
                     <p>
                       Lower interest rates mean that you can save real money on
@@ -172,7 +182,7 @@
                     href="/mortgage-loan"
                     rel="noopener noreferrer"
                     target="_blank"
-                  >Find more</a
+                    >Find more</a
                   >
                 </a>
               </swiper-slide>
@@ -188,11 +198,8 @@
           <h6 class="title">Who we are?</h6>
           <div class="card-bottom">
             <p class="sub-title">
-              <a
-                href="/about-us"
-                rel="noopener noreferrer"
-                target="_blank"
-              >about Toploansadviser</a
+              <a href="/about-us" rel="noopener noreferrer" target="_blank"
+                >about Toploansadviser</a
               >
               <span class="icon"></span><span class="icon"></span>
             </p>
@@ -201,12 +208,12 @@
               href="/personal-loan"
               rel="noopener noreferrer"
               target="_blank"
-            >more information here</a
+              >more information here</a
             >
           </div>
         </div>
         <div class="content-box" data-aos="fade-up">
-          <h1 class="text" data-aos="fade-up" style="font-weight: normal;">
+          <h1 class="text" data-aos="fade-up" style="font-weight: normal">
             Toploansadviser was founded to help consumers make educated
             financial decisions while learning more about various financial
             products.
@@ -340,16 +347,16 @@
             <div class="form-item">
               <span class="item-title">Rate annually</span>
               <div class="rate-input-box">
-                <input v-model="form.rate" type="text" @input="changeRate"/>
+                <input v-model="form.rate" type="text" @input="changeRate" />
               </div>
             </div>
             <div class="form-item">
               <span class="item-title year-title">Year</span>
-              <input v-model="form.year" type="text" @input="changeYear"/>
+              <input v-model="form.year" type="text" @input="changeYear" />
             </div>
             <div class="form-item">
               <span class="item-title">Months</span>
-              <input v-model="form.month" type="text" @input="changeMonth"/>
+              <input v-model="form.month" type="text" @input="changeMonth" />
             </div>
           </div>
           <div class="btn-box">
@@ -373,12 +380,12 @@
           <div class="compare-title">
             <span class="icon"></span><span class="icon"></span>
             <span class="text"
-            ><a
-              href="/personal-loan"
-              rel="noopener noreferrer"
-              target="_blank"
-            >Compare rates</a
-            ></span
+              ><a
+                href="/personal-loan"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Compare rates</a
+              ></span
             >
           </div>
 
@@ -390,8 +397,12 @@
                   :key="index"
                   class="single-brand"
                 >
-                  <a :href="'/redirect?url=' + product.link" target="_blank" @click="tracking(product.name)">
-                    <img :alt="product.name" :src="product.logo"/>
+                  <a
+                    :href="'/redirect?url=' + product.link"
+                    target="_blank"
+                    @click="tracking(product.name)"
+                  >
+                    <img :alt="product.name" :src="product.logo" />
                   </a>
                 </div>
               </div>
@@ -401,8 +412,12 @@
                   :key="index"
                   class="single-brand"
                 >
-                  <a :href="'/redirect?url=' + product.link" target="_blank" @click="tracking(product.name)">
-                    <img :alt="product.name" :src="product.logo"/>
+                  <a
+                    :href="'/redirect?url=' + product.link"
+                    target="_blank"
+                    @click="tracking(product.name)"
+                  >
+                    <img :alt="product.name" :src="product.logo" />
                   </a>
                 </div>
               </div>
@@ -415,19 +430,30 @@
           </h2>
           <ul class="blog-list">
             <li
-              v-for="(blog, index) in personal_blogs"
+              v-for="(blog, index) in blogs"
               :key="index"
               class="blog-item"
               data-aos="fade-up"
             >
               <div class="img-box">
-                <img v-lazy="blog.main_picture" :alt="blog.title"/>
+                <nuxt-link :to="'/guides/' + blog.link" target="_blank">
+                  <img v-lazy="blog.picture" :alt="blog.title" />
+                </nuxt-link>
               </div>
-              <h6 class="blog-title">{{ blog.title }}</h6>
-              <nuxt-link :to="'/guides/' + blog.change_title" class="link"
-              >Read full Article
-              </nuxt-link
-              >
+              <h6 class="blog-title">
+                <nuxt-link
+                  :to="'/guides/' + blog.link"
+                  class="title-link"
+                  target="_blank"
+                  >{{ blog.title }}</nuxt-link
+                >
+              </h6>
+              <div class="blog-item-bottom">
+                <nuxt-link :to="'/guides/' + blog.link" class="link"
+                  >Read full Article
+                </nuxt-link>
+                <span class="date">{{ blog.date }}</span>
+              </div>
             </li>
           </ul>
           <div class="more-link-box">
@@ -448,15 +474,18 @@
 </template>
 
 <script>
-import {updateTime} from "../utils/date";
-import {directive, Swiper, SwiperSlide} from "vue-awesome-swiper";
+import { updateTime, changeTime } from "../utils/date";
+import { directive, Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
-import {tracking} from "../utils/ga-event";
+import { tracking } from "../utils/ga-event";
 
 export default {
   head: {
     meta: [
-      {name: "google-site-verification", content: "KUEIIjMUtW5R4Xdhy-iXspBpXbYZ3qSOrwcCO7L6C9g"}
+      {
+        name: "google-site-verification",
+        content: "KUEIIjMUtW5R4Xdhy-iXspBpXbYZ3qSOrwcCO7L6C9g",
+      },
     ],
     link: [
       {
@@ -474,14 +503,26 @@ export default {
     swiper: directive,
   },
 
-  async asyncData({app, error}) {
+  async asyncData({ app, error }) {
     try {
+      let blogs = [];
       let results = await app.$axios.$get("/data/person_loan_product.json");
+      let blog_results = await app.$axios.$get(
+        "https://service.toploansadviser.com/api/v1/article?page=1&pagesize=3"
+      );
+      if (blog_results.status === "success") {
+        blogs = blog_results.data.rows;
+        blogs.forEach((ele) => {
+          ele.picture = "https://service.toploansadviser.com" + ele.picture;
+          ele.date = changeTime(ele.date);
+        });
+      }
       return {
         products: results.data,
+        blogs: blogs,
       };
     } catch (e) {
-      error({statusCode: 404});
+      error({ statusCode: 404 });
     }
   },
   data() {
@@ -494,7 +535,7 @@ export default {
         per_month: 0,
         total: 0,
       },
-      personal_blogs: [],
+      blogs: [],
       swiperOptions: {
         autoplay: {
           delay: 3000,
@@ -538,20 +579,6 @@ export default {
   methods: {
     tracking,
     updateTime,
-    // 获取博客
-    async getBlog() {
-      try {
-        let results = await this.$axios.get(
-          `https://api.toploansadviser.com/articles/all?website_id=96291576-b82f-47cd-ba81-28d9a33160a0&page=1&limit=3`
-        );
-        results.data.data.rows.forEach(ele => {
-          ele.change_title = ele.title.toLowerCase().split(' ').join('-');
-        })
-        this.personal_blogs = this.personal_blogs.concat(results.data.data.rows);
-      } catch (e) {
-        this.personal_blogs = [];
-      }
-    },
     changeYear(e) {
       let value = e.target.value;
       if (isNaN(Number(value))) {
@@ -577,7 +604,8 @@ export default {
         return;
       }
 
-      this.form.year = (value / 12).toFixed(1) == 0 ? "" : (value / 12).toFixed(1);
+      this.form.year =
+        (value / 12).toFixed(1) == 0 ? "" : (value / 12).toFixed(1);
     },
     changeAmount(e) {
       let value = e.target.value;
@@ -655,9 +683,6 @@ export default {
         this.form.amount
       ).toFixed(2);
     },
-  },
-  created() {
-    this.getBlog();
   },
 };
 </script>

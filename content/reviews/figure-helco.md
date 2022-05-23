@@ -5,9 +5,9 @@ name: Figure
 date: Apr.16,2021
 category: home-equity
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Sean Heberling
+  headImg: /images/Sean Heberling_1652176728071.webp
+  desc: With Morgan Stanley, BNY Mellon, Sailfish Capital, and Marion Street Capital, Sean has analyzed 10,000+ companies, built complex models, and helped facilitate $1+ billion in investment transactions. He freelances to leverage his expertise in financial modeling, investor presentations, investment analysis, and M&A. He is on the boards of several early-stage companies, advising on operations, growth strategy, and fundraising.
 title: Figure Review |  Toploansadviser.com
 description: Figure is a unique financial service provider powered by blockchain technology to provide customizable financial services including mortgage refinance, HELOCs, and personal loans.
 product: {

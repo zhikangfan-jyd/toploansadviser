@@ -5,9 +5,9 @@ name: Monevo
 date: Apr.16,2021
 category: personal-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Nicole Lapin
+  headImg: /images/8-1_1652173630120.webp
+  desc: Nicole Lapin is a financial expert, news anchor, and host. She's also the best-selling author of the personal finance book "Rich Bitch". She has worked for various news outlets from CNN to CNBC and started with a goal to work in journalism.
 title: Monevo Review |  Toploansadviser.com
 description: Monevo is a website that matches personal loan applicants with eligible lenders. It takes the stress out of looking for a personal loan, including completing multiple applications with different lenders.
 product: {

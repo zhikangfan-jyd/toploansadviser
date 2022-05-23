@@ -5,9 +5,9 @@ name: Best Egg
 date: Apr.16,2021
 category: personal-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Canna Campbell
+  headImg: /images/Canna Campbell_1652173825482.webp
+  desc: Canna is a financial advisor based in Australia and the author of a book called the $1,000 project. Her $1,000 project is a financial strategy that focuses on saving and earning money in smaller increments to accomplish big money goals. I'm also a huge fan of her YouTube channel called Suga Mamma TV.
 title: Best Egg Review |  Toploansadviser.com
 description: Best Egg is an online lender backed by Marlette Funding and offers personal loans to borrowers with a fair or excellent credit rating. And the company offers several loan products.
 product: {

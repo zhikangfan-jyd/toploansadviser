@@ -5,9 +5,9 @@ name: Loan Depot
 date: Apr.16,2021
 category: mortgage-loan
 author:
-  name: Jessica Cotzin
-  headImg: /data/blogs/img/jessica.webp
-  desc: Jessica Cotzin is our resident small business and personal loans whiz. She is a skilled writer with a bachelor’s in journalism from Florida Atlantic University, providing information to her readers on the loans industry and personal finance.
+  name: Canna Campbell
+  headImg: /images/Canna Campbell_1652173825482.webp
+  desc: Canna is a financial advisor based in Australia and the author of a book called the $1,000 project. Her $1,000 project is a financial strategy that focuses on saving and earning money in smaller increments to accomplish big money goals. I'm also a huge fan of her YouTube channel called Suga Mamma TV.
 title: Loan Depot Review |  Toploansadviser.com
 description: Loan Depot came into operation in 2010, and it is a type of direct lender that offers services like home loans, refinancing mortgages, and other types of loan products.
 product: {
