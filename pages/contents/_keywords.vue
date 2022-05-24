@@ -4,15 +4,17 @@
       <div class="banner-container">
         <h1 class="title">{{ title }}</h1>
         <div class="introduce-container">
-          <div class="author-info">
-            <img
-              alt=""
-              class="author-image"
-              src="https://service.toploansadviser.com/images/3-1_1651915946010.webp"
-            />
-            <p class="author-desc">
-              Written by <span class="author-name">Javier Enrile</span>
-            </p>
+          <div class="introduce-container-top">
+            <div class="author-info">
+              <img
+                alt=""
+                class="author-image"
+                src="https://service.toploansadviser.com/images/3-1_1651915946010.webp"
+              />
+              <p class="author-desc">
+                Written by <span class="author-name">Javier Enrile</span>
+              </p>
+            </div>
             <p class="updated">
               <span class="iconfont">&#xe645;</span>
               <span
@@ -21,8 +23,8 @@
               >
             </p>
           </div>
-          <div class="introduce-content" v-html="description">
-          </div>
+
+          <div class="introduce-content" v-html="description"></div>
         </div>
       </div>
     </section>
@@ -30,23 +32,30 @@
       <div class="product-container">
         <div class="product-module">
           <div class="product-module-top">
-            <div class="keywords"><span>Our Choices</span>-<span>{{title}}: </span></div>
-            
-            <div class="disclosure">
-                  <span class="title"
-                        @click="handleShowDisclosure"
-                  >Advertising Disclosure</span
-                  >
-            <div :class="{'disclosure_content': true, 'show': isShowDisclosure}">
-              The information shared through this website is based on our team’s personal judgements and views. We use
-              our own comparisons to assign values, which are not intended to reflect a certain benchmark of
-              precision. To keep our website free for use, we accept referral fees from various service providers,
-              which have the potential to influence their respective appointed scores. A third party’s participation
-              on toploansadviser.com is not an indication of endorsement. The information and vendors which appear on
-              this site is subject to change at any time.The site does not include all companies offering loan
-              products or all available loan offers.
+            <div class="keywords">
+              <span>Our Choices</span>-<span>{{ title }}: </span>
             </div>
-          </div>
+
+            <div class="disclosure">
+              <span class="title" @click="handleShowDisclosure"
+                >Advertising Disclosure</span
+              >
+              <div
+                :class="{ disclosure_content: true, show: isShowDisclosure }"
+              >
+                The information shared through this website is based on our
+                team’s personal judgements and views. We use our own comparisons
+                to assign values, which are not intended to reflect a certain
+                benchmark of precision. To keep our website free for use, we
+                accept referral fees from various service providers, which have
+                the potential to influence their respective appointed scores. A
+                third party’s participation on toploansadviser.com is not an
+                indication of endorsement. The information and vendors which
+                appear on this site is subject to change at any time.The site
+                does not include all companies offering loan products or all
+                available loan offers.
+              </div>
+            </div>
           </div>
           <div class="product-list-box">
             <div class="product-title-box">
@@ -107,22 +116,13 @@
                             disabled
                           ></el-rate>
                         </div>
-                        <!-- <nuxt-link
-                        v-if="item.review_key !== ''"
-                        :to="'/reviews/' + item.review_key"
-                        class="reviews-link"
-                        target="_blank"
-                        >Read Review
-                      </nuxt-link> -->
                       </div>
                     </div>
                   </div>
-                  <!-- <p class="phone-slogan">{{item.introduce}}</p> -->
                   <div class="features-terms-box">
                     <div class="list-box">
                       <dl class="features-list">
                         <dt>
-                          <!-- <span class="pc-text">{{ item.slogan }}</span> -->
                           <h5 class="phone-text">Loan Features</h5>
                         </dt>
                         <dd>
@@ -139,38 +139,49 @@
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
                             APR：<strong
+                              v-if="item.apr_min !== '' && item.apr_max !== ''"
                               >{{ item.apr_min }}% - {{ item.apr_max }}%</strong
-                            >
+                            ><span v-else>-</span>
                           </p>
                         </dd>
                         <dd>
                           <span class="iconfont">&#xe65a;</span>
                           <p class="text">
                             Term：<strong
+                              v-if="
+                                item.loan_term_min !== '' &&
+                                item.loan_term_max !== ''
+                              "
                               >{{ item.loan_term_min }}-{{
                                 item.loan_term_max
                               }}
                               months</strong
-                            >
+                            ><span v-else>-</span>
                           </p>
                         </dd>
                       </dl>
                     </div>
                     <div class="terms-box">
                       <h5 class="title">Loan Amount:</h5>
-                      <span v-if="item.loan_amount_max !== ''" class="text-box"
+                      <span v-if="item.loan_amount_max !== '' && item.loan_amount_min !== ''" class="text-box"
                         ><span
                           >${{ formatNum(String(item.loan_amount_min)) }}-</span
                         ><span
                           >${{ formatNum(String(item.loan_amount_max)) }}</span
                         ></span
                       >
-                      <span v-else class="text-box"
+                      <span
+                        v-else-if="
+                          item.loan_amount_max === '' &&
+                          item.loan_amount_min !== ''
+                        "
+                        class="text-box"
                         ><span>up to</span>
                         <span
                           >${{ formatNum(String(item.loan_amount_min)) }}</span
                         ></span
                       >
+                      <span v-else>-</span>
                     </div>
                   </div>
                   <div class="btn-box">
@@ -186,7 +197,6 @@
                       <h3 class="text" style="display: inline">
                         Check My Rates >>
                       </h3>
-                      <!--                    <span class="iconfont">&#xe63c;</span>-->
                     </a>
                     <a
                       :href="
@@ -301,7 +311,9 @@ export default {
   head() {
     return seo({
       title: this.title + " | Toploanadviser.com",
-      description: this.title + ' from  Toploansadviser.com loans comparing marketplace to help you decide the best personal loans interest rates and loan amount, keep your financial plan be safe and best.',
+      description:
+        this.title +
+        " from  Toploansadviser.com loans comparing marketplace to help you decide the best personal loans interest rates and loan amount, keep your financial plan be safe and best.",
       keywords: this.keyword,
       url: this.pageUrl,
       img: "https://www.toploansadviser.com/data/images/mortgage-loan.webp",
@@ -325,15 +337,12 @@ export default {
     let articles = [];
     let products = [];
     let questions = [];
-    let title = "", description="";
+    let title = "",
+      description = "";
     let keyword = "";
     try {
-      // let res = await $axios.$get(
-      //   "https://service.toploansadviser.com/api/v1/keywords/find?keyword=" +
-      //     keywords
-      // );
       let res = await $axios.$get(
-        "http://127.0.0.1:3240/api/v1/keywords/find?keyword=" +
+        "https://service.toploansadviser.com/api/v1/keywords/find?keyword=" +
           keywords
       );
       if (res.status === "success") {
@@ -348,9 +357,9 @@ export default {
           description = res.data.text.text;
           keyword = res.data.keyword;
           questions = res.data.questions;
-          products = res.data.products.sort((a,b) => {
-            return b.score - a.score
-          })
+          products = res.data.products.sort((a, b) => {
+            return b.score - a.score;
+          });
           let arr = res.data.keyword.split(" ");
           arr.forEach((ele, idx) => {
             ele = ele[0].toUpperCase() + ele.substr(1);

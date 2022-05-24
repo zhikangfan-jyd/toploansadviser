@@ -65,6 +65,7 @@
 
   .review-area {
     padding-bottom: 50px;
+
     .review-container {
       width: $rootWidth;
       margin: 0 auto;
@@ -125,7 +126,8 @@
 
           }
 
-          &:hover , &.active{
+          &:hover,
+          &.active {
             transform: translateY(-8px);
             -webkit-transform: translateY(-8px);
             -moz-transform: translateY(-8px);
@@ -162,7 +164,7 @@
             }
 
           }
-          
+
         }
       }
 
@@ -531,6 +533,173 @@
               ul li {
                 list-style: none;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.main-container {
+  @media screen and (max-width: 750px) {
+    padding-top: 70px;
+
+    .banner-area {
+      .banner-container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        .content-container {
+          .website-title {
+            margin-top: 30px;
+            font-size: 40px;
+            line-height: 42px;
+          }
+
+          .description {
+            line-height: 26px;
+            margin-top: 20px;
+          }
+        }
+
+        .related-pages {
+          flex-wrap: wrap;
+          margin-top: 30px;
+          margin-bottom: 20px;
+
+          .single-related-page {
+            width: 48%;
+            margin: 10px 0;
+
+            .link-box {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .review-area {
+      .review-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .related-pages {
+          flex-wrap: wrap;
+          margin-top: 30px;
+
+          .single-related-page {
+            width: 48%;
+            margin-bottom: 18px;
+
+            .link-box {
+              width: 100%;
+              padding: 0;
+            }
+          }
+        }
+
+        .review-list-title-box {
+
+          .score-title-box,
+          .apr-title-box,
+          .amount-title-box {
+            display: none;
+          }
+        }
+
+        .review-item {
+
+          .score-box,
+          .apr-box,
+          .amount-box {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .guides-area {
+      padding: 30px 0;
+
+      .guides-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .guides {
+          flex-direction: column;
+          margin-top: 30px;
+
+          .recommend-guides {
+
+            .recommend-guides-container {
+              margin-bottom: 20px;
+
+              .recommend-guides-container-top {
+                height: auto;
+              }
+
+              .recommend-guides-container-bottom {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .guides-list {
+            padding-left: 0;
+
+            .guides-item {
+              height: 140px;
+              padding: 20px 0;
+
+              .image-container {
+                width: 200px;
+                height: 140px;
+              }
+
+              .guides-item-container {
+                .description {
+                  -webkit-line-clamp: 2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .question-area {
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+
+        .question-list {
+          .question-item {
+            margin: 20px 0;
+
+            .question-title-box {
+              height: 100px;
+
+              .question-title {
+                font-size: 20px;
+                line-height: 28px;
+              }
+
+              .icon {
+                width: 28px;
+                height: 28px;
+              }
+            }
+
+            .question-content {
+              line-height: 26px;
+              font-size: 16px;
             }
           }
         }

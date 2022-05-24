@@ -21,7 +21,7 @@
           <li
             :class="{
               'single-related-page': true,
-              'active': category === 'personal-loan' || !category,
+              active: category === 'personal-loan' || !category,
             }"
           >
             <a
@@ -41,7 +41,7 @@
           <li
             :class="{
               'single-related-page': true,
-              'active': category === 'mortgage-loan',
+              active: category === 'mortgage-loan',
             }"
           >
             <a
@@ -60,7 +60,7 @@
           <li
             :class="{
               'single-related-page': true,
-              'active': category === 'student-loan',
+              active: category === 'student-loan',
             }"
           >
             <a
@@ -79,7 +79,7 @@
           <li
             :class="{
               'single-related-page': true,
-              'active': category === 'home-equity',
+              active: category === 'home-equity',
             }"
           >
             <a

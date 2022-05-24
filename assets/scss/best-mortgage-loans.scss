@@ -739,3 +739,224 @@
     }
   }
 }
+
+.main-container {
+  @media screen and (max-width: 750px) {
+
+    padding-top: 70px;
+
+    .area-title {
+      font-size: 35px;
+    }
+
+
+
+    .banner-area {
+      .banner-container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+
+        .content-container {
+          .website-title {
+            margin-top: 20px;
+            font-size: 40px;
+          }
+        }
+
+        .related-pages {
+          flex-wrap: wrap;
+          margin-top: 20px;
+
+          .single-related-page {
+            width: 48%;
+            margin: 10px 0;
+
+            .link-box {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .comparision-area {
+      margin: 40px 0;
+
+      .comparision-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .area-title {
+          margin-bottom: 30px;
+        }
+
+        .page-card-container {
+          flex-direction: column;
+
+          .card-item {
+            height: 180px;
+            margin-bottom: 15px;
+
+            .card-item-container {
+              .card-title {
+                font-size: 25px;
+              }
+            }
+
+            &.first-card {
+              height: 180px;
+            }
+
+            &.second-card {
+              height: 180px;
+              margin-bottom: 15px;
+            }
+
+            &.three-card {
+              height: 180px;
+              flex: inherit;
+              margin-right: 0;
+            }
+
+            &.four-card {
+              height: 180px;
+              flex: inherit;
+              margin-left: 0;
+            }
+
+            &.five-card {
+              height: 180px;
+            }
+          }
+
+          .page-card-container-left {
+            padding-right: 0;
+
+            .page-card-container-left-bottom {
+              flex-direction: column;
+              height: auto;
+              margin-top: 0
+            }
+          }
+
+          .page-card-container-right {
+            padding-left: 0;
+          }
+
+        }
+      }
+    }
+
+    .swiper-area {
+      .custom-swiper-container {
+        width: 100%;
+
+        .area-title {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 20px;
+        }
+
+        .swiper {
+          margin-top: 30px;
+
+          .button-prev {
+            z-index: 9;
+            left: 0;
+          }
+
+          .button-next {
+            z-index: 9;
+            right: 0;
+          }
+        }
+      }
+    }
+
+
+    .guides-area {
+      padding: 30px 0;
+
+      .guides-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+
+        .guides {
+          flex-direction: column;
+          margin-top: 30px;
+
+          .recommend-guides {
+
+            .recommend-guides-container {
+              margin-bottom: 20px;
+
+              .recommend-guides-container-top {
+                height: auto;
+              }
+
+              .recommend-guides-container-bottom {
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .guides-list {
+            padding-left: 0;
+
+            .guides-item {
+              height: 140px;
+              padding: 20px 0;
+
+              .image-container {
+                width: 200px;
+                height: 140px;
+              }
+
+              .guides-item-container {
+                .description {
+                  -webkit-line-clamp: 2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .question-area {
+      .question-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 15px;
+
+        .question-list {
+          .question-item {
+            margin: 20px 0;
+
+            .question-title-box {
+              height: 100px;
+
+              .question-title {
+                font-size: 20px;
+                line-height: 28px;
+              }
+
+              .icon {
+                width: 28px;
+                height: 28px;
+              }
+            }
+
+            .question-content {
+              line-height: 26px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

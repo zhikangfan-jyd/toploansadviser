@@ -178,7 +178,6 @@
                   />
                 </div>
                 <span class="separate-icon"></span>
-                <!-- <img src="@/assets/img/separate-icon.png" alt="separate" class="separate-icon"> -->
                 <ul class="product-features">
                   <li>
                     APR: {{ product.compare.apr.min }}-{{

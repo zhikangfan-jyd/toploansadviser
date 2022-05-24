@@ -185,6 +185,36 @@ export default {
       from: '/reviews/temp',
       to: '/',
       statusCode: 301
+    },
+    {
+      from: '/guides/is+an+unsecured+loan+the+right+way+to+go+for+financial+assistance',
+      to: '/guides/is-an-unsecured-loan-the-right-way-to-go-for-financial-assistance',
+      statusCode: 301
+    },
+    {
+      from: '/guides/should+you+consider+getting+a+coronavirus+hardship+loan',
+      to: '/guides/why-you-should-consider-getting-a-coronavirus-hardship-loan',
+      statusCode: 301
+    },
+    {
+      from: '/guides/what+kind+of+loan+do+you+need',
+      to: '/guides/what-kind-of-loan-do-you-need',
+      statusCode: 301
+    },
+    {
+      from: '/guides/how+to+get+a+loan+with+bad+credit',
+      to: '/guides/how-to-get-a-loan-with-bad-credit',
+      statusCode: 301
+    },
+    {
+      from: '/guides/how+your+credit+score+affects+your+loan+chances',
+      to: '/guides/how-your-credit-score-affects-your-loan-chances',
+      statusCode: 301
+    },
+    {
+      from: '/guides/do+you+qualify+for+the+student+loan+payment+and+interest+pause',
+      to: '/guides/do-you-qualify-for-the-student-loan-payment-and-interest-pause',
+      statusCode: 301
     }
   ],
   content: {
