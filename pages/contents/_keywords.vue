@@ -24,7 +24,11 @@
             </p>
           </div>
 
-          <div class="introduce-content" v-html="description"></div>
+          <div
+            class="introduce-content"
+            v-if="description !== ''"
+            v-html="description"
+          ></div>
         </div>
       </div>
     </section>
@@ -163,7 +167,12 @@
                     </div>
                     <div class="terms-box">
                       <h5 class="title">Loan Amount:</h5>
-                      <span v-if="item.loan_amount_max !== '' && item.loan_amount_min !== ''" class="text-box"
+                      <span
+                        v-if="
+                          item.loan_amount_max !== '' &&
+                          item.loan_amount_min !== ''
+                        "
+                        class="text-box"
                         ><span
                           >${{ formatNum(String(item.loan_amount_min)) }}-</span
                         ><span
@@ -354,7 +363,7 @@ export default {
         } else {
           // let { text, keyword, products, articles, questions } = res.data;
           articles = res.data.articles;
-          description = res.data.text.text;
+          description = res.data.text ? res.data.text.text : "";
           keyword = res.data.keyword;
           questions = res.data.questions;
           products = res.data.products.sort((a, b) => {
@@ -370,17 +379,18 @@ export default {
             }
           });
         }
-        return {
-          pageUrl:
-            "https://www.toploansadviser.com/pages/" + route.params.keywords,
-          keyword: keyword,
-          title: title,
-          description: description,
-          articles: articles,
-          products: products,
-          questions: questions,
-        };
       }
+
+      return {
+        pageUrl:
+          "https://www.toploansadviser.com/pages/" + route.params.keywords,
+        keyword: keyword,
+        title: title,
+        description: description,
+        articles: articles,
+        products: products,
+        questions: questions,
+      };
     } catch (err) {
       error({
         statusCode: 404,
