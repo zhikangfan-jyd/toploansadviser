@@ -7,7 +7,7 @@ export const tracking = (label, event, event_category) => {
   if (label && event) {
     gtag('event', event, {
       'event_category': event_category,
-      'event_label': label
+      'event_label': label + '_' + event_category
     });
   }
 }
