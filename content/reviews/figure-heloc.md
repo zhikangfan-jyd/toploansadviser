@@ -1,6 +1,6 @@
 ---
-id: figure-helco
-review_key: figure_helco
+id: figure-heloc
+review_key: figure_heloc
 name: Figure
 date: Apr.16,2021
 category: home-equity
@@ -45,7 +45,7 @@ A HELOC, on the other hand, is a line of credit that allows you to borrow only a
 
 <div class="title-box"><img src="/data/images/r-10.webp"/><h2 class="title">Figure’s HELOC Features</h2></div>
 
-Figure uses blockchain technology which helps improve financial transactions behind the scenes to make them more efficient, secure, and less costly. Thanks to their artificial intelligence systems, <a href="/best-helco-loan" target="_blank" rel="noopener noreferrer">it can fund HELOCs in as little as five days<sub>1</sub></a>. Traditionally, it takes around two months to close the deal on a mortgage loan. With Figure, it could be done in a matter of days. They allow homeowners to borrow up to $3000,000<sub>2</sub> with a one-time origination fee on flexible terms and use the money to finance their next project or pay off existing debts.
+Figure uses blockchain technology which helps improve financial transactions behind the scenes to make them more efficient, secure, and less costly. Thanks to their artificial intelligence systems, <a href="/best-heloc-loan" target="_blank" rel="noopener noreferrer">it can fund HELOCs in as little as five days<sub>1</sub></a>. Traditionally, it takes around two months to close the deal on a mortgage loan. With Figure, it could be done in a matter of days. They allow homeowners to borrow up to $3000,000<sub>2</sub> with a one-time origination fee on flexible terms and use the money to finance their next project or pay off existing debts.
 
 Here’s a quick rundown of Figure’s HELOC features:
 

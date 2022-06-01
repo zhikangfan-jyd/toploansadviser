@@ -333,7 +333,7 @@
                 <dl class="menu-list">
                   <dt class="column-title">Reviews</dt>
                   <dd class="menu-item">
-                    <a href="/reviews/figure-helco" target="_blank"
+                    <a href="/reviews/figure-heloc" target="_blank"
                       ><span class="iconfont">&#xe602;</span>
                       <span>Figure Review</span></a
                     >

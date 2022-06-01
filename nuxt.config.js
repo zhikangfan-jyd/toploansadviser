@@ -152,6 +152,11 @@ export default {
       statusCode: 301
     },
     {
+      from: '/reviews/figure-helco',
+      to: '/reviews/figure-heloc',
+      statusCode: 301
+    },
+    {
       from: '/guides/2a22d685-25b6-4bec-aaf9-5367f599b2b4',
       to: '/',
       statusCode: 301

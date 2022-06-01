@@ -466,7 +466,7 @@
           <li>
             <span class="circle"></span>
             <a class="link text" href="/guides/how-to-refinance-a-heloc" rel="noopener noreferrer">How to refinance a
-              helco
+              heloc
             </a>
           </li>
           <li>
@@ -496,7 +496,7 @@ export default {
   },
   async asyncData({$axios, error}) {
     try {
-      let results = await $axios.$get('/data/best-helco-loan.json');
+      let results = await $axios.$get('/data/best-heloc-loan.json');
       return {
         products: results.data
       }
@@ -526,5 +526,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '~/assets/scss/best-helco-loan.scss';
+@import '~/assets/scss/best-heloc-loan.scss';
 </style>

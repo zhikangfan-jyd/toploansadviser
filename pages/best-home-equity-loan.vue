@@ -161,7 +161,7 @@
             financially speaking. To calculate your equity in a property, divide the market value of the home with the
             amount you owe on your mortgage. Now, equity loans operate as a second mortgage, which means that taking out
             this loan would put your home at risk of foreclosure in case you fail to make the agreed payments.</p>
-          <p>It’s important to address that home equity loans are not the same thing as a <a href="/best-helco-loan" target="_blank" rel="noopener noreferrer">home equity line of credit</a>. In
+          <p>It’s important to address that home equity loans are not the same thing as a <a href="/best-heloc-loan" target="_blank" rel="noopener noreferrer">home equity line of credit</a>. In
             short, home equity loans provide a one-time amount at a fixed interest rate. A HELOC on the other hand is a
             revolving source of funds that can operate like a credit card - you can access the funds whenever you need
             them. Equity loans are offered by banks and other financial institutions, which means you can choose from

@@ -229,11 +229,11 @@
         <h3 class="read-title">Read More»</h3>
         <ul class="read-list">
           <li>
-            <a class="read-link" href="/best-helco-loan" rel="noreferrer noopener" target="_blank">Best HELCO loan</a>
+            <a class="read-link" href="/best-heloc-loan" rel="noreferrer noopener" target="_blank">Best HELOC loan</a>
           </li>
           <li>
             <a class="read-link" href="/guides/how-to-refinance-a-heloc" rel="noreferrer noopener" target="_blank">How
-              to refinance a helco</a>
+              to refinance a heloc</a>
           </li>
         </ul>
 
