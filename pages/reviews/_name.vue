@@ -5,11 +5,14 @@
         <div class="banner-content-box">
           <ul class="breadcrumb-navigation">
             <li>
-              <a href="/" target="_blank" rel="noopener noreferrer" class="link"
-                >
-                  <span class="iconfont">&#xe606;</span>
-                </a
+              <a
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link"
               >
+                <span class="iconfont">&#xe606;</span>
+              </a>
               <span class="icon">&gt;</span>
             </li>
             <li>
@@ -244,8 +247,9 @@ import { tracking } from "../../utils/ga-event";
 export default {
   head() {
     return seo({
-      title: this.doc.title,
-      description: this.doc.description,
+      title: this.pageData.page_title || this.pageData.title || this.doc.title,
+      description: this.pageData.page_description || this.doc.description,
+      keywords: this.pageData.page_keywords,
       url: this.url,
       img: "https://www.toploansadviser.com" + this.doc.product.logo,
       img_size: {
@@ -255,11 +259,25 @@ export default {
     });
   },
   async asyncData({ $content, params, $axios }) {
+    let pageData = {
+      page_title: "",
+      page_description: "",
+      page_keywords: "",
+    };
     const doc = await $content("reviews/" + params.name).fetch();
     const { data } = await $axios.$get("/data/person_loan_product.json");
+    const results = await $axios.$get(
+      "https://service.toploansadviser.com/api/v1/reviews/find_by_key?key=" +
+        params.name
+    );
+    if (results.status === "success" && results.data !== null) {
+      pageData = results.data;
+    }
+
     return {
       url: "https://www.toploansadviser.com/reviews/" + params.name,
       doc,
+      pageData: pageData,
       product: doc.product,
       topLoans: data.slice(0, 5),
       slug: params.name,

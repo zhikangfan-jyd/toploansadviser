@@ -717,7 +717,6 @@ export default {
         monthlyInterestPaid = (this.loan_amount - Number(this.loan_amount * this.monthlyInterestRate * Math.pow((1 + this.monthlyInterestRate), this.month) / (Math.pow((1 + this.monthlyInterestRate), this.month) - 1)) * (i - 1)) * this.monthlyInterestRate;
 
         totalInterestPaid = (Number(totalInterestPaid) + Number(monthlyInterestPaid)).toFixed(2);
-        // console.log(monthlyInterestPaid);
         monthlyAllocationPlan = {
           month: i,
           monthlyInterestPaid: monthlyInterestPaid

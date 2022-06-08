@@ -502,7 +502,6 @@ export default {
           "https://service.toploansadviser.com/api/v1/message/send",
           { email: this.email }
         );
-        console.log(res);
         if (res.status === "success") {
           this.email = "";
           this.$message({

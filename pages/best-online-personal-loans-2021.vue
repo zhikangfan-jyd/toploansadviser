@@ -864,7 +864,6 @@ export default {
 
         $(window).on('scroll', function () {
           let headerHeight = document.querySelector('.header-container').clientHeight;
-          console.log(top, $(this).scrollTop());
 
           if ($(this).scrollTop() > top) {
             $('.banner-container .website-title').text('Compare Best Personal Loans Rates');

@@ -593,7 +593,6 @@ export default {
         overallData: product_results.data.slice(0, 2),
       };
     } catch (e) {
-      // console.log(e);
       error({ statusCode: 404 });
     }
   },
